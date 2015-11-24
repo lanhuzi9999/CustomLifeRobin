@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/putao_header_view" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:clipToPadding="false"
+        android:paddingBottom="50dp"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/putao_header_fl"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="@drawable/putao_list_white_transblack_selector" >
+
+                <ImageView
+                    android:id="@+id/menu_acc_head_icon"
+                    android:layout_width="58dp"
+                    android:layout_height="58dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/putao_activity_horizontal_margin"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/putao_menu_acc_headimg_nologin" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/menu_acc_head_icon"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/putao_login"
+                        style="@style/putao_TextAppearance"
+                        android:layout_width="68dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="11dp"
+                        android:background="@drawable/putao_icon_denglu"
+                        android:gravity="center"
+                        android:text="@string/putao_menu_login" />
+
+                    <TextView
+                        android:id="@+id/menu_acc_logintip"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/putao_login"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="11dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_toRightOf="@id/menu_acc_head_icon"
+                        android:text="@string/putao_menu_acc_logintip2"
+                        android:textColor="@color/putao_text_color_second"
+                        android:textSize="@dimen/putao_text_tertiary_size" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/menu_acc_name"
+                    style="@style/putao_Text_PrimaryColor_SecondSize"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="16dp"
+                    android:layout_toRightOf="@id/menu_acc_head_icon" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/putao_activity_horizontal_margin"
+                    android:src="@drawable/putao_card_all_show" />
+
+                <View style="@style/putao_DividerStyle_Horizontal_Bottom" />
+            </RelativeLayout>
+
+            <View
+                style="@style/putao_DividerStyle_Horizontal"
+                android:layout_marginTop="12dp" />
+
+            <RelativeLayout
+                android:id="@+id/menu_myremind"
+                style="@style/putaoMenuItemLayout"
+                android:layout_height="wrap_content" >
+
+                <RelativeLayout
+                    android:id="@+id/putao_myremind"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:gravity="center_vertical" >
+
+                    <TextView
+                        style="@style/putaoMenuItemTxtStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="48dp"
+                        android:drawableLeft="@drawable/putao_menu_item_icon_tixing"
+                        android:text="@string/putao_message_center" />
+
+<!--                     <so.contacts.hub.basefunction.operate.remind.widget.SimpleRemindView -->
+<!--                         android:id="@+id/menu_srv_myremind" -->
+<!--                         android:layout_width="wrap_content" -->
+<!--                         android:layout_height="wrap_content" -->
+<!--                         android:layout_alignParentRight="true" -->
+<!--                         android:layout_centerVertical="true" -->
+<!--                         android:layout_marginRight="48dp" -->
+<!--                         android:gravity="center" /> -->
+                </RelativeLayout>
+
+                <View
+                    android:id="@+id/putao_remind_divider"
+                    style="@style/putao_DividerStyle_Horizontal"
+                    android:layout_below="@id/putao_myremind"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:id="@+id/menu_myremind_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/putao_myremind"
+                    android:orientation="vertical"
+                    android:paddingBottom="15dp"
+                    android:paddingTop="15dp"
+                    android:visibility="gone" >
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/putao_activity_horizontal_margin"
+                    android:scaleType="center"
+                    android:src="@drawable/putao_card_all_show" />
+            </RelativeLayout>
+
+            <View
+                style="@style/putao_DividerStyle_Horizontal"
+                android:layout_marginBottom="12dp" />
+
+            <View style="@style/putao_DividerStyle_Horizontal" />
+
+            <RelativeLayout
+                android:id="@+id/menu_myorder"
+                style="@style/putaoMenuItemLayout" >
+
+                <TextView
+                    style="@style/putaoMenuItemTxtStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:drawableLeft="@drawable/putao_menu_item_icon_order"
+                    android:text="@string/putao_menu_item_txt_myorder" />
+
+<!--                 <so.contacts.hub.basefunction.operate.remind.widget.SimpleRemindView -->
+<!--                     android:id="@+id/menu_srv_myorder" -->
+<!--                     style="@style/putaoMenuItemPointStyle" /> -->
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/putao_activity_horizontal_margin"
+                    android:src="@drawable/putao_card_all_show" />
+            </RelativeLayout>
+
+            <View style="@style/putao_DividerStyle_Horizontal" />
+
+            <RelativeLayout
+                android:id="@+id/menu_my_voucher"
+                style="@style/putaoMenuItemLayout" >
+
+                <TextView
+                    style="@style/putaoMenuItemTxtStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:drawableLeft="@drawable/putao_menu_item_icon_act"
+                    android:text="@string/putao_menu_item_txt_myvoucher" />
+
+<!--                 <so.contacts.hub.basefunction.operate.remind.widget.SimpleRemindView -->
+<!--                     android:id="@+id/voucher_remind_icon_point" -->
+<!--                     style="@style/putaoMenuItemPointStyle" /> -->
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/putao_activity_horizontal_margin"
+                    android:src="@drawable/putao_card_all_show" />
+            </RelativeLayout>
+
+            <View style="@style/putao_DividerStyle_Horizontal" />
+
+            <RelativeLayout
+                android:id="@+id/menu_mygroupon"
+                style="@style/putaoMenuItemLayout" >
+
+                <TextView
+                    style="@style/putaoMenuItemTxtStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:drawableLeft="@drawable/putao_menu_item_icon_meituanorder"
+                    android:text="@string/putao_menu_item_txt_mygroupon" />
+
+<!--                 <so.contacts.hub.basefunction.operate.remind.widget.SimpleRemindView -->
+<!--                     android:id="@+id/menu_srv_mygroupon" -->
+<!--                     style="@style/putaoMenuItemPointStyle" /> -->
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/putao_activity_horizontal_margin"
+                    android:src="@drawable/putao_card_all_show" />
+            </RelativeLayout>
+
+            <View style="@style/putao_DividerStyle_Horizontal" />
+
+            <View
+                style="@style/putao_DividerStyle_Horizontal"
+                android:layout_marginTop="12dp" />
+
+            <TextView
+                android:id="@+id/menu_remindset"
+                style="@style/putaoMenuItemTxtStyle"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@drawable/putao_listview_item_selector"
+                android:drawableLeft="@drawable/putao_menu_item_icon_remindset"
+                android:drawableRight="@drawable/putao_card_all_show"
+                android:paddingRight="@dimen/putao_activity_horizontal_margin"
+                android:text="@string/putao_menu_item_txt_remindset" />
+
+            <View
+                style="@style/putao_DividerStyle_Horizontal"
+                android:layout_marginBottom="12dp" />
+
+            <View style="@style/putao_DividerStyle_Horizontal" />
+
+            <TextView
+                android:id="@+id/menu_aboutus"
+                style="@style/putaoMenuItemTxtStyle"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@drawable/putao_listview_item_selector"
+                android:drawableLeft="@drawable/putao_menu_item_icon_aboutus"
+                android:drawableRight="@drawable/putao_card_all_show"
+                android:paddingRight="@dimen/putao_activity_horizontal_margin"
+                android:text="@string/putao_menu_item_txt_aboutus" />
+
+            <View
+                style="@style/putao_DividerStyle_Horizontal"
+                android:layout_marginBottom="12dp" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

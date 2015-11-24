@@ -1,0 +1,33 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+    android:background="@color/putao_screen_background_light">
+
+    <!-- <LinearLayout -->
+    <!-- android:id="@+id/head_layout" -->
+    <!-- android:layout_width="fill_parent" -->
+    <!-- android:layout_height="wrap_content" -->
+    <!-- android:background="@color/putao_app_bg" > -->
+
+
+    <!-- <include layout="@layout/putao_header_view" /> -->
+    <!-- </LinearLayout> -->
+
+    <LinearLayout
+        android:id="@+id/network_exception_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:visibility="gone" >
+
+        <include layout="@layout/putao_network_not_login_exception_layout" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/activities_lv"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" 
+        android:background="@color/putao_white">
+    </ListView>
+
+</LinearLayout>

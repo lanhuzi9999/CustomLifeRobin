@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/putao_activity_vertical_margin"
+        android:paddingLeft="@dimen/putao_activity_horizontal_margin"
+        android:paddingRight="@dimen/putao_activity_horizontal_margin"
+        android:paddingTop="8dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/putao_bg_list_card"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="33dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="@string/putao_assistant_guide_tip6"
+                android:textColor="@color/putao_text_color_second"
+                android:textSize="14sp" />
+            
+            <View
+                style="@style/putao_DividerStyle_Horizontal"
+                android:layout_marginBottom="20dp" >
+			</View>
+
+<!--             <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/putao_divider_line_size"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/putao_line_horizontal" /> -->
+
+            <!-- modify by wxy 2015-04-15  修改我的提醒UI 
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/putao_assistant_guide_tip2"
+                android:textSize="14sp" /> -->
+
+           <!--  <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="26dp"
+                android:orientation="vertical"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp" > -->
+
+                <LinearLayout
+                    android:layout_marginBottom="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                     >
+
+                    <TextView
+                        style="@style/putaoAssistantGuideSeritemStyle"
+                        android:drawableTop="@drawable/putao_icon_order_hcp"
+                        android:text="@string/putao_assistant_guide_service_hc" />
+
+                    <TextView
+                        style="@style/putaoAssistantGuideSeritemStyle"
+                        android:drawableTop="@drawable/putao_icon_order_jd"
+                        android:text="@string/putao_assistant_guide_service_jd" />
+
+                    <TextView
+                        style="@style/putaoAssistantGuideSeritemStyle"
+                        android:drawableTop="@drawable/putao_icon_order_dy"
+                        android:text="@string/putao_assistant_guide_service_dy" />
+
+                    <TextView
+                        style="@style/putaoAssistantGuideSeritemStyle"
+                        android:drawableTop="@drawable/putao_icon_order_sr"
+                        android:text="@string/putao_assistant_guide_service_sr" />
+
+                    <TextView
+                        style="@style/putaoAssistantGuideSeritemStyle"
+                        android:layout_marginRight="0dp"
+                        android:drawableTop="@drawable/putao_icon_order_kd"
+                        android:text="@string/putao_assistant_guide_service_kd" />
+                </LinearLayout>
+
+                <!-- <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="26dp"
+                    android:text="@string/putao_assistant_guide_tip3"
+                    android:textSize="12sp" /> -->
+
+              <!--   <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/putao_assistant_guide_tip4"
+                    android:textColor="@color/putao_text_color_second"
+                    android:textSize="12sp" /> -->
+           <!--  </LinearLayout> -->
+
+            <!-- <Button
+                android:id="@+id/assistant_guide_start"
+                android:layout_width="190dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="26dp"
+                android:layout_marginTop="26dp"
+                android:text="@string/putao_assistant_guide_open" /> 
+                -->
+
+            <View
+                style="@style/putao_DividerStyle_Horizontal"/>
+
+            <RelativeLayout
+                android:id="@+id/assistant_guide_add_samplecard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/putao_list_selecter_transparent"
+                android:paddingLeft="10dp" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:text="@string/putao_assistant_guide_tip5"
+                    android:textColor="@color/putao_text_green"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:id="@+id/assistant_guide_open_samplecard"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:scaleType="center"
+                    android:src="@drawable/putao_icon_list_show" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

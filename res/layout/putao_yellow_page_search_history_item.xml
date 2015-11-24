@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/putao_List_SINGLE_ITEM_Style"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:descendantFocusability="blocksDescendants" >
+
+<!--     <View -->
+<!--         android:id="@+id/divider_view_top" -->
+<!--         android:layout_width="fill_parent" -->
+<!--         android:layout_height="@dimen/putao_divider_line_size" -->
+<!--         android:background="@color/putao_pt_line_light_gray" -->
+<!--         android:visibility="gone" /> -->
+
+<!--     <RelativeLayout -->
+<!--         android:layout_width="match_parent" -->
+<!--         android:layout_height="@dimen/putao_listview_item_height" -->
+<!--         android:layout_marginLeft="@dimen/putao_listview_item_leftrightpadding" -->
+<!--         android:layout_marginRight="@dimen/putao_listview_item_leftrightpadding" -->
+<!--         android:paddingBottom="@dimen/putao_listview_item_topbottompadding" -->
+<!--         android:paddingTop="@dimen/putao_listview_item_topbottompadding" > -->
+
+        <ImageView
+            android:id="@+id/history_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:contentDescription="@string/putao_app_name"
+            android:src="@drawable/putao_icon_search_record" />
+
+        <TextView
+            android:id="@+id/search_words_tv"
+            style="@style/putao_List_SIGNLE_ITEM_PRIMARY_TEXT_STYLE"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/putao_listview_item_imgcontentgap"
+            android:layout_toLeftOf="@+id/copy_imgbtn"
+            android:layout_toRightOf="@+id/history_icon"
+            android:text="@string/putao_zxing_url" />
+
+        <ImageButton
+            android:id="@+id/copy_imgbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@color/putao_transparent"
+            android:contentDescription="@string/putao_app_name"
+            android:focusable="false"
+            android:scaleType="fitCenter"
+            android:src="@drawable/putao_icon_search_del_h"
+            android:visibility="visible" />
+<!--     </RelativeLayout> -->
+
+<!--     <View -->
+<!--         android:id="@+id/divider_view_bottom" -->
+<!--         android:layout_width="fill_parent" -->
+<!--         android:layout_height="@dimen/putao_divider_line_size" -->
+<!--         android:layout_alignParentBottom="true" -->
+<!--         android:background="@color/putao_pt_line_light_gray" /> -->
+
+</RelativeLayout>

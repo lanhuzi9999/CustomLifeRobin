@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"   
+    android:paddingTop="12dp" 
+    android:orientation="vertical" >
+    
+    <TextView
+        android:id="@+id/address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/putao_listview_item_leftrightpadding"
+        android:ellipsize="end"
+        android:singleLine="true"    
+        android:textColor="@color/putao_black"
+        android:textSize="15sp" />
+
+    <RelativeLayout
+        android:id="@+id/item_middile_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="@dimen/putao_listview_item_height"
+        android:layout_marginLeft="@dimen/putao_listview_item_leftrightpadding"
+        android:layout_marginRight="@dimen/putao_listview_item_leftrightpadding"
+        android:paddingBottom="12dp"
+        android:paddingTop="12dp" >
+
+        <TextView
+            android:id="@+id/reason"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@+id/item_info"
+            android:layout_marginRight="@dimen/putao_listview_item_leftrightpadding"
+            android:ellipsize="end"
+            android:textColor="@color/putao_pt_heavy_black"
+            android:textSize="@dimen/putao_listview_firstline_textsize" />
+
+        <LinearLayout
+            android:id="@+id/item_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/fine"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:textColor="@color/putao_pt_heavy_black"
+                android:textSize="@dimen/putao_listview_firstline_textsize" />
+
+            <TextView
+                android:id="@+id/point"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:textColor="@color/putao_pt_heavy_black"
+                android:textSize="@dimen/putao_listview_firstline_textsize" />
+        </LinearLayout>
+    </RelativeLayout>
+    
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/putao_listview_item_leftrightpadding"
+        android:paddingBottom="12dp"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:textColor="#7f7f7f"
+        android:textSize="@dimen/putao_listview_secondline_textsize" />    
+
+</LinearLayout>

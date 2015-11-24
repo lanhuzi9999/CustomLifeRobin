@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/putao_taxi_history_list_item_height" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" >
+
+        <ImageView
+            android:id="@+id/icon"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="12dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/putao_icon_taxi_history" />
+
+        <TextView
+            android:id="@+id/title"
+            style="@style/putao_List_SIGNLE_ITEM_PRIMARY_TEXT_STYLE"
+            android:layout_alignTop="@+id/icon"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="-3dp"
+            android:layout_toRightOf="@+id/icon"
+            android:ellipsize="end"
+            android:singleLine="true" />
+
+        <TextView
+            android:id="@+id/addr"
+            style="@style/putao_List_SIGNLE_ITEM_SECOND_TEXT_STYLE"
+            android:layout_alignLeft="@+id/title"
+            android:layout_below="@+id/title"
+            android:layout_marginTop="5dp"
+            android:ellipsize="end"
+            android:singleLine="true" />
+    </RelativeLayout>
+
+</RelativeLayout>

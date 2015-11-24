@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/putao_header_view" />
+
+    <RelativeLayout
+        android:id="@+id/search_content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+
+        <!--
+        <so.contacts.hub.widget.pull2refresh.VerticalPullToRefreshLayout
+            android:id="@+id/p2r_layout"
+            style="@style/putao_f_f"
+            android:background="@color/putao_white" >
+
+            <ListView
+                android:id="@+id/search_list"
+                style="@style/putao_ListStyle"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" />
+        </so.contacts.hub.widget.pull2refresh.VerticalPullToRefreshLayout>
+        -->
+
+        <so.contacts.hub.widget.CustomListView
+            android:id="@+id/search_list"
+            style="@style/putao_ListStyle"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@color/putao_white"
+            android:divider="@null"
+            android:fadingEdgeLength="0dp" />
+
+        <LinearLayout
+            android:id="@+id/result_source_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/putao_bg_yellow_page_result"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:visibility="gone" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/putao_calling_dzdp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/putao_yellow_page_result_source"
+                android:textColor="@color/putao_white" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/network_exception_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone" >
+
+        <include layout="@layout/putao_network_exception_layout" />
+    </RelativeLayout>
+
+</LinearLayout>

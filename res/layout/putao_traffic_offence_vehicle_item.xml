@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/putao_List_SINGLE_ITEM_Style" 
+    android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    android:descendantFocusability="blocksDescendants">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="@dimen/putao_listview_item_imgcontentgap"
+        android:layout_toLeftOf="@+id/multi_select" >
+
+        <TextView
+            android:id="@+id/province_code"
+            style="@style/putao_List_SIGNLE_ITEM_PRIMARY_TEXT_STYLE"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:id="@+id/car_num"
+            style="@style/putao_List_SIGNLE_ITEM_PRIMARY_TEXT_STYLE"
+            android:layout_marginLeft="@dimen/putao_listview_item_imgcontentgap"
+            android:layout_toRightOf="@id/province_code"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:id="@+id/location"
+            style="@style/putao_List_SIGNLE_ITEM_PRIMARY_TEXT_STYLE"
+            android:layout_marginLeft="@dimen/putao_listview_item_imgcontentgap"
+            android:layout_toRightOf="@id/car_num"
+            android:layout_centerVertical="true" 
+            android:gravity="right"
+            android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+
+    <CheckBox
+        android:id="@+id/multi_select"
+        android:layout_marginRight="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:duplicateParentState="true"
+        android:clickable="false" />
+
+    <View 
+        style="@style/putao_DividerStyle_Horizontal_Bottom"/>
+</RelativeLayout>

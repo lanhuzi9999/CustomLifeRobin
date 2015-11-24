@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/putao_header_view" />
+
+    <ListView
+        android:id="@+id/discount_voucher_list"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:paddingTop="@dimen/putao_order_detail_margin_top"
+        android:paddingBottom="@dimen/putao_order_detail_margin_top"
+        android:layout_marginLeft="@dimen/putao_activity_horizontal_margin"
+        android:layout_marginRight="@dimen/putao_activity_horizontal_margin"
+        android:dividerHeight="8dp"
+        android:background="@color/putao_transparent"
+        android:divider="@color/putao_transparent"
+        android:clipToPadding="false"
+        android:fadingEdgeLength="0dp" />
+
+    <include
+        android:id="@+id/network_exception_layout"
+        layout="@layout/putao_network_not_login_exception_layout"
+        android:visibility="gone" />
+
+</LinearLayout>

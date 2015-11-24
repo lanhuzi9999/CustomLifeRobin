@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <so.contacts.hub.widget.CustomListView
+            android:id="@id/list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clipToPadding="false"
+            android:divider="#00000000"
+            android:dividerHeight="16dp"
+            style="@style/putao_ListStyle.Itembg"
+            android:paddingBottom="16dp" />
+
+        <include
+            android:id="@+id/my_nodata_layout"
+            layout="@layout/putao_network_exception_layout"
+            android:visibility="gone" />
+    </FrameLayout>
+
+</LinearLayout>

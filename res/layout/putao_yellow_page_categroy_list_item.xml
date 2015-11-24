@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:background="@color/putao_white" >
+
+    <ImageView
+        android:id="@+id/putao_category_list_indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:contentDescription="@string/putao_about_us"
+        android:src="@drawable/putao_icon_category_indicator"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/putao_category_list_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:textColor="@color/putao_text_color_primary"
+        android:textSize="@dimen/putao_service_text_size" />
+
+    <so.contacts.hub.remind.simple.SimpleRemindView
+        android:id="@+id/remind_point_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="@dimen/putao_offen_remind_point_marginright"
+        android:layout_marginTop="@dimen/putao_offen_remind_point_margintop"
+        android:layout_toRightOf="@id/putao_category_list_name"
+        android:gravity="center"
+        android:visibility="gone" />
+</RelativeLayout>

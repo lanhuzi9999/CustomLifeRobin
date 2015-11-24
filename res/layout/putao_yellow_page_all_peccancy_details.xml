@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <so.contacts.hub.widget.MyListView
+        android:id="@+id/all_peccancy_details_listview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@color/putao_transparent"
+        android:divider="@color/putao_yellow_page_line_color"
+        android:dividerHeight="@dimen/putao_divider_line_size"
+        android:scrollbars="none"
+        android:splitMotionEvents="false" />
+    
+    <View 
+        android:id="@+id/divider_view"
+        style="@style/putao_DividerStyle_Horizontal"
+        android:layout_below="@+id/all_peccancy_details_listview"
+        />
+    
+<!--     <View
+        android:id="@+id/divider_view"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/putao_divider_line_size"
+        android:layout_below="@+id/all_peccancy_details_listview"
+        android:background="@color/putao_yellow_page_line_color" /> -->
+
+</RelativeLayout>

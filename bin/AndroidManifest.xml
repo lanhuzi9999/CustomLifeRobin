@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.putao.live"
+    android:versionCode="252"
+    android:versionName="2.5.2" >
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="19" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <application
+        android:name="so.contacts.hub.ContactsApp"
+        android:allowBackup="true"
+        android:icon="@drawable/putao_ic_launcher"
+        android:label="@string/putao_app_name"
+        android:theme="@style/putao_AppTheme" >
+        
+        <meta-data
+            android:name="versionCode"
+            android:value="310" />
+        <meta-data
+            android:name="versionName"
+            android:value="3.1.0" />
+        
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="2dea0e0d2d2962ccfcc5555878842512" />
+
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="54b52f59fd98c5df81000e39" />
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="putao_live_01" />
+        
+        <activity
+            android:name="so.contacts.hub.YellowpageMainActivity"
+            android:label="@string/putao_app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="so.contacts.hub.services.baseservices.ui.YellowPageGuideActivity"
+            android:launchMode="singleTop" >
+        </activity>
+
+        <service android:name="so.contacts.hub.basefunction.service.PlugService" >
+        </service>
+    </application>
+
+</manifest>

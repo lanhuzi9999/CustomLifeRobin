@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="horizontal"
+    android:paddingBottom="@dimen/putao_listview_item_topbottompadding"
+    android:paddingLeft="@dimen/putao_listview_item_leftrightpadding"
+    android:paddingRight="@dimen/putao_listview_item_leftrightpadding"
+    android:paddingTop="@dimen/putao_listview_item_topbottompadding" >
+
+    <TextView
+        android:id="@+id/type_name"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_centerVertical="true"
+        android:gravity="center_vertical"
+        android:textColor="@color/putao_express_result_blod"
+        android:textSize="@dimen/putao_listview_firstline_textsize"
+         />
+
+</RelativeLayout>

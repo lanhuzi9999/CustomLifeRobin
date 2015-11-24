@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <so.contacts.hub.widget.CommEmptyView
+        android:id="@+id/empty_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:noDataTxt="@string/putao_cinemalist_nocinema" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/filter_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="48dp"
+            android:background="@color/putao_white"
+            android:gravity="center_vertical" >
+
+            <RelativeLayout
+                android:id="@+id/cinemalist_area_layout"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/putao_list_selecter_s" >
+
+                <TextView
+                    android:id="@+id/cinemalist_area"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:drawableRight="@drawable/putao_icon_list_down"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="@string/putao_cinemalist_area_title"
+                    android:textColor="@color/putao_text_color_second" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="@dimen/putao_divider_line_size"
+                android:layout_height="15dp"
+                android:layout_gravity="center_vertical"
+                android:background="@color/putao_pt_line_light_gray" />
+
+            <RelativeLayout
+                android:id="@+id/cinemalist_order_layout"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/putao_list_selecter_s" >
+
+                <TextView
+                    android:id="@+id/cinemalist_order"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:drawableRight="@drawable/putao_icon_list_down"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="@string/putao_cinemalist_sort_title"
+                    android:textColor="@color/putao_text_color_second" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <View
+            style="@style/putao_DividerStyle_Horizontal_Bottom"
+            />
+
+        <ListView
+            android:id="@+id/cinema_list"
+            style="@style/putao_ListStyle.Itembg.NoDivider"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+</FrameLayout>

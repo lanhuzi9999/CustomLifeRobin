@@ -1,0 +1,390 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+        
+        <so.contacts.hub.widget.AdOperatLayout
+            android:id="@id/ad_view_layout_top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/putao_white"
+            android:visibility="gone" >
+        </so.contacts.hub.widget.AdOperatLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/putao_white"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/city_relativelayout"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/putao_edit_layout_item_height"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/putao_edit_bg_grey"
+                android:gravity="center_vertical"
+                android:paddingBottom="5dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="5dp" >
+
+                <TextView
+                    android:id="@+id/city_tip"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text="@string/putao_water_eg_tag_city_tip"
+                    android:textColor="@color/putao_text_color_second"
+                    android:textSize="@dimen/putao_water_eg_tag_text_size" />
+
+                <TextView
+                    android:id="@+id/city_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/city_tip"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text=""
+                    android:textColor="@color/putao_tab_text_color_selected"
+                    android:textSize="@dimen/putao_water_eg_tag_text_size" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/putao_icon_arrow"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/unit_relativelayout"
+                android:layout_below="@id/city_relativelayout"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/putao_edit_layout_item_height"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/putao_edit_bg_grey"
+                android:gravity="center_vertical"
+                android:paddingBottom="5dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="5dp" >
+
+                <TextView
+                    android:id="@+id/unit_tip"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text="@string/putao_water_eg_tag_unit_tip"
+                    android:textColor="@color/putao_text_color_second"
+                    android:textSize="@dimen/putao_water_eg_tag_text_size" />
+
+                <TextView
+                    android:id="@+id/unit_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/unit_tip"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text=""
+                    android:textColor="@color/putao_tab_text_color_selected"
+                    android:textSize="@dimen/putao_listview_firstline_textsize" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/putao_icon_arrow"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/edit_layout"
+                android:layout_below="@id/unit_relativelayout"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/putao_edit_layout_item_height"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:addStatesFromChildren="true"
+                android:background="@drawable/putao_edit_bg_selector"
+                android:gravity="center_vertical"
+                android:paddingBottom="5dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="5dp" >
+
+                <TextView
+                    android:id="@+id/user_code_tip"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text="@string/putao_water_eg_tag_user_code_tip"
+                    android:textColor="@color/putao_text_color_second"
+                    android:textSize="@dimen/putao_water_eg_tag_text_size" />
+
+                <RelativeLayout
+                    android:id="@+id/edit_layout_two"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/user_code_tip" >
+
+                    <EditText
+                        android:id="@+id/charge_edit"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerVertical="true"
+                        android:layout_toLeftOf="@+id/clear_img"
+                        android:background="@color/putao_transparent"
+                        android:digits="1234567890"
+                        android:hint="@string/putao_water_eg_tag_user_edit_tip"
+                        android:inputType="number"
+                        android:maxLength="15"
+                        android:minWidth="100dp"
+                        android:singleLine="true"
+                        android:textColor="@color/putao_tab_text_color_selected"
+                        android:textColorHint="@color/putao_edit_text_hint_color"
+                        android:textSize="@dimen/putao_listview_firstline_textsize" />
+
+                    <TextView
+                        android:id="@+id/user_code_state_tip"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="5dp"
+                        android:layout_toLeftOf="@+id/clear_img"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:textColor="@color/putao_express_result_no_data_info"
+                        android:textSize="12sp"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:id="@+id/clear_img"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/putao_icon_list_cancel"
+                        android:visibility="gone" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/fee_relativelayout"
+                android:layout_below="@id/edit_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/putao_edit_layout_item_height"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/putao_edit_bg_selector"
+                android:gravity="center_vertical"
+                android:paddingBottom="5dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="5dp" >
+
+                <TextView
+                    android:id="@+id/fee_tip"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text="@string/putao_water_eg_tag_user_fee_tip"
+                    android:textColor="@color/putao_text_color_second"
+                    android:textSize="@dimen/putao_water_eg_tag_text_size" />
+
+                <TextView
+                    android:id="@+id/fee_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/fee_tip"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text=""
+                    android:textColor="@color/putao_tab_text_color_selected"
+                    android:textSize="@dimen/putao_water_eg_tag_text_size" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/bill_relativelayout"
+                android:layout_below="@id/fee_relativelayout"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/putao_edit_layout_item_height"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/putao_edit_bg_grey"
+                android:gravity="center_vertical"
+                android:paddingBottom="5dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="5dp" >
+
+                <TextView
+                    android:id="@+id/bill_tip"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text="@string/putao_water_eg_tag_bill_tip"
+                    android:textColor="@color/putao_text_color_second"
+                    android:textSize="@dimen/putao_water_eg_tag_text_size" />
+
+                <TextView
+                    android:id="@+id/bill_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/bill_tip"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text=""
+                    android:textColor="@color/putao_tab_text_color_selected"
+                    android:textSize="@dimen/putao_listview_firstline_textsize" />
+            </RelativeLayout>
+            
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/pay_body"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" 
+                    android:paddingBottom="16dp">
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="22dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:paddingLeft="16dp"
+                        android:paddingRight="16dp"
+                        android:text="@string/putao_choice_charge_way"
+                        android:textColor="@color/putao_tag_group_text"
+                        android:textSize="@dimen/putao_tag_group_text_size" />
+
+                    <so.contacts.hub.payment.PaymentViewGroup
+                        android:id="@+id/charge_payment_view"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/choice_discount_coupon_text"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dip"
+                        android:layout_marginRight="10dip"
+                        android:layout_marginTop="10dip"
+                        android:drawableRight="@drawable/putao_icon_arrow"
+                        android:gravity="center_vertical"
+                        android:paddingBottom="5dip"
+                        android:paddingLeft="10dip"
+                        android:paddingRight="10dip"
+                        android:paddingTop="5dip"
+                        android:textColor="@color/putao_coupon_color"
+                        android:visibility="gone" />
+
+                    <RelativeLayout
+                        android:id="@+id/charge_confirm"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dip"
+                        android:layout_marginRight="16dip"
+                        android:layout_marginTop="16dp"
+                        android:background="@drawable/putao_click_btn_bg"
+                        android:minHeight="@dimen/putao_btn_height" >
+
+                        <TextView
+                            android:id="@+id/charge_confirm_content"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:text="@string/putao_charge_immediately"
+                            android:textColor="@color/putao_btn_text_color"
+                            android:textSize="@dimen/putao_btn_text_size" />
+
+                        <TextView
+                            android:id="@+id/charge_confirm_wait"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="5dp"
+                            android:layout_toRightOf="@+id/charge_confirm_content"
+                            android:textColor="@color/putao_btn_text_color"
+                            android:textSize="@dimen/putao_btn_text_size"
+                            android:visibility="gone" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/chargehistory_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/putao_edit_bg_grey"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+                <ListView
+                    android:id="@+id/chargehistory_list"
+                    style="@style/putao_ListStyle"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/putao_bg_white_select"
+                    android:divider="@color/putao_yellow_page_line_color"
+                    android:dividerHeight="@dimen/putao_divider_line_size"
+                    android:paddingLeft="1dp"
+                    android:paddingRight="1dp"
+                    android:scrollbars="none" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

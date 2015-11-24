@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:paddingLeft="@dimen/putao_activity_horizontal_margin" >
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:background="@drawable/putao_bg_card_fujin"
+        android:orientation="vertical"
+      	android:paddingLeft="@dimen/putao_moviedetail_ordercontent_leftrightpadding"
+   		android:paddingRight="@dimen/putao_moviedetail_ordercontent_leftrightpadding" 
+        android:paddingTop="@dimen/putao_orderitem_contenttoppadding" >
+
+        <include
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/putao_order_list_head_height"
+            layout="@layout/putao_my_order_item_head" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <TextView
+                android:id="@+id/tv_moviename"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/putao_orderitem_movie_textcontent_marginbottom"
+                android:layout_marginTop="@dimen/putao_orderitem_movie_textcontent_margintop"
+                android:textColor="@color/putao_white"
+                android:textSize="@dimen/putao_common_text_size_large" />
+
+            <TableLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                
+                android:layout_below="@id/tv_moviename" >
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="20dp"
+                        android:text="@string/putao_film_time"
+                        android:textColor="@color/putao_order_list_white_Shadow_color"
+                        android:textSize="@dimen/putao_common_text_size_small_3" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/putao_seat"
+                        android:textColor="@color/putao_order_list_white_Shadow_color"
+                        android:textSize="@dimen/putao_common_text_size_small_3" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:id="@+id/tv_filmtime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginBottom="20dp" 
+                        android:textColor="@color/putao_common_white"
+                        android:textSize="@dimen/putao_common_text_size_small_3" />
+
+                    <TextView
+                        android:id="@+id/tv_filmseat"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="20dp" 
+                        android:textColor="@color/putao_common_white"
+                        android:textSize="@dimen/putao_common_text_size_small_3" />
+                </TableRow>
+            </TableLayout>
+
+            <ImageView
+                android:id="@+id/orderdetail_movie_logo"
+                android:layout_width="72dp"
+                android:layout_height="96dp"
+                android:layout_alignParentRight="true"
+                android:scaleType="fitXY"
+                android:visibility="visible" />
+        </RelativeLayout>
+
+        <include
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/putao_order_list_foot_height"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="0dp"
+            layout="@layout/putao_my_order_item_foot" />
+    </LinearLayout>
+	 <ImageView
+        android:id="@+id/point"
+        android:layout_width="@dimen/putao_activity_horizontal_margin"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:visibility="invisible"
+        android:src="@drawable/putao_icon_prompt_s" />
+</LinearLayout>

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@+id/charge_result_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/putao_chargetel_result_paddingbottom"
+        android:paddingLeft="@dimen/putao_chargetel_result_paddingleft"
+        android:paddingTop="@dimen/putao_chargetel_result_paddingtop"
+        android:visibility="gone" >
+
+        <ImageView
+            android:id="@+id/charge_result_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/putao_icon_transaction_success" />
+
+        <LinearLayout
+            android:id="@+id/charge_stuats_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_weight="1"
+                android:id="@+id/charge_result_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/putao_chargetel_result_paddingleft"
+                android:text="@string/putao_charge_deal_success"
+                android:textColor="@color/putao_contents_text"
+                android:textSize="@dimen/putao_chargetel_result_result_textsize" />
+
+            <TextView
+                android:layout_weight="1"
+                android:id="@+id/charge_result_hint"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/putao_chargetel_result_paddingleft"
+                android:paddingTop="5dp"
+                android:textColor="@color/putao_pt_deep_gray"
+                android:textSize="@dimen/putao_chargetel_result_small_textsize" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View 
+        android:id="@+id/view_divider"
+        android:layout_below="@id/charge_result_layout"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="@dimen/putao_chargetel_result_paddingleft"
+        android:layout_marginRight="@dimen/putao_chargetel_result_paddingleft"
+        style="@style/putao_DividerStyle_Horizontal"/>
+    
+<!--     <View
+        android:id="@+id/view_divider"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/putao_divider_line_size"
+        android:layout_below="@id/charge_result_layout"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="@dimen/putao_chargetel_result_paddingleft"
+        android:layout_marginRight="@dimen/putao_chargetel_result_paddingleft"
+        android:background="#dcdcdc" /> -->
+
+    <LinearLayout
+        android:id="@+id/business_label_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/view_divider"
+        android:orientation="vertical" >
+    </LinearLayout>
+    
+    <View 
+        android:id="@+id/view_divider2"
+        android:layout_below="@id/business_label_layout"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="@dimen/putao_chargetel_result_paddingleft"
+        android:layout_marginRight="@dimen/putao_chargetel_result_paddingleft"
+        android:layout_marginTop="20dip"
+        style="@style/putao_DividerStyle_Horizontal"/>
+
+<!--     <View
+        android:id="@+id/view_divider2"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/putao_divider_line_size"
+        android:layout_below="@id/business_label_layout"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="@dimen/putao_chargetel_result_paddingleft"
+        android:layout_marginRight="@dimen/putao_chargetel_result_paddingleft"
+        android:layout_marginTop="20dip"
+        android:background="#dcdcdc" /> -->
+
+    <TextView
+        android:id="@+id/charge_result_success_money"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/view_divider2"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center_vertical"
+        android:textColor="@color/putao_black"
+        android:textSize="35sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/question"
+        style="@style/putao_w_w"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="20dp"
+        android:textColor="@color/putao_contents_text" />
+
+    <Button
+        android:id="@+id/back_to_main"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/charge_result_success_money"
+        android:layout_margin="16dp"
+        android:gravity="center"
+        android:visibility="invisible"
+        android:text="@string/putao_pay_back_main" />
+
+</RelativeLayout>

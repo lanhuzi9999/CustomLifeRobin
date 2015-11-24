@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:paddingLeft="@dimen/putao_activity_horizontal_margin" >
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="160dp"
+        android:layout_weight="1"
+        android:background="@drawable/putao_bg_card_shuidianmei"
+        android:orientation="vertical"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp" >
+
+        <include layout="@layout/putao_my_order_item_head" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="96dp" >
+
+            <TextView
+                android:id="@+id/type_logo"
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/putao_icon_btn_id_dian_b"
+                android:gravity="center"
+                android:scaleType="fitXY"
+                android:textColor="#f1b131"
+                android:textSize="48dp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/type_logo"
+                android:layout_alignTop="@id/type_logo"
+                android:gravity="center_vertical"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/fee"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/putao_white"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/user_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#7fffffff"
+                    android:textSize="@dimen/putao_text_second_size" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <include layout="@layout/putao_my_order_item_foot" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/point"
+        android:layout_width="@dimen/putao_activity_horizontal_margin"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:src="@drawable/putao_icon_prompt_s"
+        android:visibility="invisible" />
+
+</LinearLayout>

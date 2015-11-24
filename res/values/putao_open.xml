@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string name="putao_open_srvintro_svrnotexists">服务不存在！</string>
+    <string name="putao_open_srvintro_svrname">"%s 提供服务"</string>
+    <string name="putao_open_srvintro_ucomment">用户评价</string>
+    <string name="putao_open_srvintro_ucomment_count">%d评论</string>
+    <string name="putao_open_srvintro_ucomment_none">目前没有评论，快来写第一条评论</string>
+    <string name="putao_open_srvintro_citylist">服务城市</string>
+    <string name="putao_open_srvintro_svrdesc">服务说明</string>
+    <string name="putao_open_srvintro_svrtel">客服电话</string>
+    <string name="putao_open_srvintro_entrysvr">进入服务</string>
+    <string name="putao_open_srvintro_hadcommented_tip">您已评价过该服务</string>
+    <string name="putao_open_srvcomt_nodata">无评论数据，快去评论吧</string>
+    <string name="putao_open_srvcomt_title">用户评价</string>
+    <string name="putao_open_srvcomt_add">写评价</string>
+    <string name="putao_open_srvcomt_head_percent_txt">%1$d%%</string>
+    <string name="putao_open_srvcomt_listitem_user">用户：%s</string>
+    <string name="putao_open_srvcomtadd_title">写评论</string>
+    <string name="putao_open_srvcomtadd_star_tip">给服务评星</string>
+    <string name="putao_open_srvcomtadd_commit">提交</string>
+    <string name="putao_open_srvcomtadd_commit_success">评论已提交</string>
+    <string name="putao_open_srvcomtadd_commit_fail">评论提交失败，请稍后再试！</string>
+    <string name="putao_open_srvcomtadd_commit_fail_nonet">评论提交失败，请检查网络！</string>
+    <string name="putao_open_srvcomtadd_commit_invalid_star">请给服务评星</string>
+    <string name="putao_open_srvcomtadd_commit_invalid_len">请输入至少5个字 &#8230;</string>
+    <string name="putao_open_srvcomtadd_commit_invalid_acc">亲，评价前请用手机号码登录</string>
+    <string name="putao_open_srvcomtadd_content_hint">服务周到吗？服务员礼貌吗？快来说说你的感受，至少写5个字,最多140个字哦！</string>
+
+    <string-array name="putao_open_srvcomtadd_star_txts">
+        <item>很差</item>
+        <item>一般</item>
+        <item>满意</item>
+        <item>非常满意</item>
+        <item>无可挑剔</item>
+    </string-array>
+
+</resources>

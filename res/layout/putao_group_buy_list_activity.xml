@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/putao_filter_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="48dp"
+            android:background="@color/putao_white"
+            android:gravity="center_vertical" >
+
+            <RelativeLayout
+                android:id="@+id/putao_selector_categories"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:background="@drawable/putao_list_selecter_s" >
+
+                <TextView
+                    android:id="@+id/putao_category"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:drawableRight="@drawable/putao_icon_list_down"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="@string/putao_group_buy_all_categories"
+                    android:textColor="@color/putao_text_color_second" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="@dimen/putao_divider_line_size"
+                android:layout_height="15dp"
+                android:layout_gravity="center_vertical"
+                android:background="@color/putao_pt_line_light_gray" />
+
+            <RelativeLayout
+                android:id="@+id/putao_selector_region"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:background="@drawable/putao_list_selecter_s" >
+
+                <TextView
+                    android:id="@+id/putao_region"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:drawableRight="@drawable/putao_icon_list_down"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="@string/putao_group_buy_all_region"
+                    android:textColor="@color/putao_text_color_second" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="@dimen/putao_divider_line_size"
+                android:layout_height="15dp"
+                android:layout_gravity="center_vertical"
+                android:background="@color/putao_pt_line_light_gray" />
+
+            <RelativeLayout
+                android:id="@+id/putao_selector_sort"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:background="@drawable/putao_list_selecter_s" >
+
+                <TextView
+                    android:id="@+id/putao_sort"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:drawableRight="@drawable/putao_icon_list_down"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="@string/putao_group_buy_smart_sort"
+                    android:textColor="@color/putao_text_color_second" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <View style="@style/putao_DividerStyle_Horizontal_Bottom" />
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent" >
+
+            <so.contacts.hub.widget.CustomListView
+                android:id="@+id/putao_list"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:clipToPadding="false"
+                android:fadingEdgeLength="0dp"
+                android:footerDividersEnabled="false"
+                android:headerDividersEnabled="false"/>
+
+            <include
+                android:id="@+id/putao_my_nodata_layout"
+                layout="@layout/putao_network_exception_layout"
+                android:visibility="gone" />
+        </FrameLayout>
+    </LinearLayout>
+
+</LinearLayout>

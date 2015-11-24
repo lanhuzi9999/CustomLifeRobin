@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/hot_railway"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="1dp"
+        android:layout_marginRight="1dp"
+        android:layout_marginTop="3dp"
+        android:background="#ffffff"
+        android:gravity="center"
+        android:padding="10dp"
+        android:singleLine="true"
+        android:textColor="@color/putao_birthday_tag_green"
+        android:textSize="14sp" />
+
+

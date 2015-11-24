@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/putao_tv_show_all"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:text="@string/putao_around_get_all"
+        android:textColor="@color/putao_theme"
+        android:gravity="center"
+        android:background="@color/putao_white"
+        android:textSize="@dimen/putao_text_primary_size" />
+
+</LinearLayout>

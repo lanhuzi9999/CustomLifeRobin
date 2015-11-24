@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <so.contacts.hub.widget.AdOperatLayout
+        android:id="@id/ad_view_layout_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:visibility="gone" >
+    </so.contacts.hub.widget.AdOperatLayout>
+
+    <RelativeLayout
+        android:id="@+id/bus_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ad_view_layout_top"
+        android:layout_marginTop="12dp"
+        android:background="@color/putao_white" >
+
+		<View 
+			android:id="@+id/top_line"
+			style="@style/putao_DividerStyle_Horizontal"/>
+
+        <ImageView
+            android:id="@+id/swap"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="@dimen/putao_btn_margin_size"
+            android:contentDescription="@string/putao_about_us"
+            android:src="@drawable/putao_bus_swap_selector" />
+
+        <LinearLayout
+            android:id="@+id/putao_from_and_to"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/top_line"
+            android:layout_toLeftOf="@id/swap"
+            android:orientation="vertical" >
+
+            <!-- 起始站 -->
+            <!-- android:background="@drawable/bg_white_up" -->
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/putao_edit_layout_item_height"
+                android:addStatesFromChildren="true"
+                android:background="@drawable/putao_edit_bg_selector" >
+
+                <ImageView
+                    android:id="@+id/from_mark"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="12dp"
+                    android:contentDescription="@string/putao_about_us"
+                    android:src="@drawable/putao_icon_marker_star" />
+
+                <EditText
+                    android:id="@+id/from"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="12dp"
+                    android:layout_toLeftOf="@+id/clear"
+                    android:layout_toRightOf="@id/from_mark"
+                    android:background="@null"
+                    android:hint="@string/putao_bus_from_hit"
+                    android:singleLine="true"
+                    android:textSize="@dimen/putao_bus_text_size" />
+
+                <ImageView
+                    android:id="@+id/clear"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:contentDescription="@string/putao_about_us"
+                    android:src="@drawable/putao_icon_list_cancel"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+			<View style="@style/putao_DividerStyle_Horizontal"/>
+            <!-- 终点站 -->
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/putao_edit_layout_item_height"
+                android:addStatesFromChildren="true"
+                android:background="@drawable/putao_edit_bg_selector" >
+
+                <ImageView
+                    android:id="@+id/to_mark"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="12dp"
+                    android:contentDescription="@string/putao_about_us"
+                    android:src="@drawable/putao_icon_marker_finish" />
+
+                <EditText
+                    android:id="@+id/to"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="12dp"
+                    android:layout_toLeftOf="@+id/clear_to"
+                    android:layout_toRightOf="@id/to_mark"
+                    android:background="@null"
+                    android:hint="@string/putao_bus_to_hit"
+                    android:singleLine="true"
+                    android:textSize="@dimen/putao_bus_text_size" />
+
+                <ImageView
+                    android:id="@+id/clear_to"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:contentDescription="@string/putao_about_us"
+                    android:src="@drawable/putao_icon_list_cancel"
+                    android:visibility="gone" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <View style="@style/putao_DividerStyle_Horizontal"
+            android:layout_below="@id/putao_from_and_to"/>
+        
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/bus_line_query_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bus_container"
+        android:layout_margin="@dimen/putao_btn_margin_size"
+        android:text="@string/putao_bus_line_text" />
+
+    <ListView
+        android:id="@+id/expand"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bus_container"
+        android:visibility="visible" 
+        android:layout_marginTop="10dp"/>
+
+</RelativeLayout>

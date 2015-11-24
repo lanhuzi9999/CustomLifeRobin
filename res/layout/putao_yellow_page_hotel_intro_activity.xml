@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/putao_header_view" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/putao_hotel_intro_service_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" 
+    			 >
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="22dp"
+                    android:gravity="left|center_vertical"
+                    android:paddingLeft="16dp"
+                    android:text="@string/putao_hoteldetail_facility"
+                    android:textColor="#bdbdbd"
+                    android:textSize="12sp" />
+
+                <View style="@style/putao_DividerStyle_Horizontal_Bottom" />
+
+                <so.contacts.hub.widget.CustomGridView
+                    android:id="@+id/putao_hotel_intro_service_gridview"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/putao_white"
+                    android:numColumns="2" />
+
+                <View style="@style/putao_DividerStyle_Horizontal_Bottom" />
+
+                <View
+                    style="@style/putao_DividerStyle_Horizontal_Bottom"
+                    android:layout_marginTop="10dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" 
+                android:background="@color/putao_white" >
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/putao_hotel_intro_textview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="@string/putao_hoteldetail_intro"
+                        android:textColor="@color/putao_text_color_primary"
+                        android:textSize="14sp" />
+
+                    <View
+                        android:id="@+id/putao_hotel_intro_textview_bottom_line"
+                        android:layout_width="@dimen/putao_tag_bar_width"
+                        android:layout_height="@dimen/putao_tag_bar_footerLineHeight"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@color/putao_text_color_green" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/putao_hotel_traffic_textview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="@string/putao_hoteldetail_traffic"
+                        android:textColor="@color/putao_text_color_second"
+                        android:textSize="14sp" />
+
+                    <View
+                        android:id="@+id/putao_hotel_traffic_textview_bottom_line"
+                        android:layout_width="@dimen/putao_tag_bar_width"
+                        android:layout_height="@dimen/putao_tag_bar_footerLineHeight"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@color/putao_text_color_green"
+                        android:visibility="gone" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <View style="@style/putao_DividerStyle_Horizontal_Bottom" />
+
+            <TextView
+                android:id="@+id/putao_hotel_info_bottom_textview"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="left"
+                android:background="@color/putao_white" 
+                android:padding="24dp"
+                android:textColor="@color/putao_text_color_second"
+                android:textSize="14sp" />
+
+            <View
+                android:id="@+id/putao_hotel_intro_bottom_line"
+                style="@style/putao_DividerStyle_Horizontal_Bottom" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

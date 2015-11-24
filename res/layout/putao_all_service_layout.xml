@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/putao_category_all_service_padding"
+    android:paddingRight="@dimen/putao_category_all_service_padding" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/putao_category_layout_height"
+        android:gravity="center" >
+
+        <TextView
+            android:id="@+id/category_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@color/putao_transparent_background"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/putao_category_all_service_title_padding"
+            android:paddingRight="@dimen/putao_category_all_service_title_padding"
+            android:textColor="@color/putao_category_content"
+            android:textSize="@dimen/putao_service_text_size" />
+
+        <ImageView
+            android:id="@+id/putao_category_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/category_name"
+            android:contentDescription="@string/putao_about_us"
+            android:src="@drawable/putao_icon_cateory_leftline" />
+
+        <ImageView
+            android:id="@+id/putao_category_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/category_name"
+            android:contentDescription="@string/putao_about_us"
+            android:src="@drawable/putao_icon_cateory_rightline" />
+    </RelativeLayout>
+
+    <so.contacts.hub.widget.MyGridView
+        android:id="@+id/all_services_gridView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="9dp"
+        android:horizontalSpacing="@dimen/putao_category_all_service_grid_space"
+        android:listSelector="@color/putao_transparent"
+        android:numColumns="3"
+        android:scrollbars="none"
+        android:scrollingCache="false"
+        android:splitMotionEvents="false"
+        android:verticalSpacing="@dimen/putao_category_all_service_grid_space" />
+
+</LinearLayout>

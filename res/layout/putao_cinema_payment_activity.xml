@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:scrollbars="none" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/putao_order_detail_margin_top"
+        android:orientation="vertical"
+        android:visibility="visible" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/putao_white"
+            android:orientation="vertical" >
+
+            <include layout="@layout/putao_movie_orderpay_head_layout" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/putao_divider_line_size"
+                android:background="@color/putao_yellow_page_line_color" />
+
+            <TextView
+                android:id="@+id/limit_time"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:gravity="center_vertical"
+                android:paddingBottom="10dp"
+                android:paddingLeft="@dimen/putao_activity_horizontal_margin"
+                android:paddingTop="10dp"
+                android:textColor="@color/putao_text_color_second"
+                android:textSize="@dimen/putao_text_size_d" />
+        </LinearLayout>
+
+        <View style="@style/putao_DividerStyle_Horizontal_Bottom" />
+
+        <so.contacts.hub.widget.CommGroupView
+            android:id="@+id/cpay_discount_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            app:groupTxt="@string/putao_cinema_coupon_group" >
+
+            <TextView
+                android:id="@+id/cpay_discount_text"
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:background="@drawable/putao_bg_white_right_angle"
+                android:drawableRight="@drawable/putao_icon_arrow"
+                android:gravity="center_vertical"
+                android:paddingLeft="16dip"
+                android:paddingRight="10dip"
+                android:textColor="@color/putao_coupon_color"
+                android:textSize="16sp" />
+        </so.contacts.hub.widget.CommGroupView>
+
+        <so.contacts.hub.widget.CommGroupView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:groupTxt="@string/putao_choice_charge_way" >
+
+            <so.contacts.hub.payment.PaymentViewGroup
+                android:id="@+id/payment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </so.contacts.hub.widget.CommGroupView>
+
+        <RelativeLayout
+            android:id="@+id/confirm"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/putao_activity_horizontal_margin"
+            android:layout_marginRight="@dimen/putao_activity_horizontal_margin"
+            android:layout_marginTop="@dimen/putao_activity_vertical_margin"
+            android:background="@drawable/putao_click_btn_bg"
+            android:minHeight="@dimen/putao_btn_height" >
+
+            <TextView
+                android:id="@+id/charge_confirm_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/putao_confirm_payment"
+                android:textColor="@color/putao_white"
+                android:textSize="@dimen/putao_express_item_text_size" />
+
+            <TextView
+                android:id="@+id/charge_confirm_wait"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/charge_confirm_content"
+                android:textColor="@color/putao_white"
+                android:textSize="@dimen/putao_express_item_text_size"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:paddingBottom="@dimen/putao_activity_vertical_margin"
+            android:paddingLeft="@dimen/putao_activity_horizontal_margin"
+            android:paddingRight="@dimen/putao_activity_horizontal_margin"
+            android:paddingTop="@dimen/putao_activity_vertical_margin"
+            android:text="@string/putao_movie_order_remind"
+            android:textColor="@color/putao_text_color_importance"
+            android:textSize="@dimen/putao_text_tertiary_size" />
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/content"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/putao_white"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/city_name"
+        style="@style/putao_List_SINGLE_ITEM_Style"
+        android:background="@drawable/putao_list_selecter_s"
+        android:gravity="center_vertical"
+        android:textColor="#0d0d0d"
+        android:textSize="16sp" />
+    
+    <View 
+        android:id="@+id/divider"
+        style="@style/putao_DividerStyle_Horizontal"/>
+
+<!--     <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/putao_divider_line_size"
+        android:background="@drawable/putao_line_horizontal" /> -->
+
+</LinearLayout>

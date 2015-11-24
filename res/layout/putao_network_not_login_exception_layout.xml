@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/exception_refresh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:scaleType="center"
+        android:layout_marginTop="@dimen/putao_empty_view_margin_top"
+        android:src="@drawable/putao_icon_coolui_empty" />
+
+    <TextView
+        android:id="@+id/exception_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/putao_empty_view_icon_and_text_padding"
+        android:singleLine="true"
+        android:text="@string/putao_netexception_hint"
+        android:textColor="@color/putao_empty_tip_text"
+        android:textSize="@dimen/putao_empty_tip_text_size" /> 
+
+</LinearLayout>

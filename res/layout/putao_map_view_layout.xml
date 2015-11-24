@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/head_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/putao_app_bg" >
+
+        <include layout="@layout/putao_header_view" />
+    </LinearLayout>
+
+    <com.baidu.mapapi.map.MapView
+        android:id="@+id/mapView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/head_layout"
+        android:clickable="true" />
+
+    <LinearLayout
+        android:id="@+id/item_info"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/putao_white"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/putao_map_item_info_height"
+            android:paddingLeft="@dimen/putao_listview_item_leftrightpadding"
+            android:layout_marginTop="16dp"
+             >
+
+            <LinearLayout
+                android:id="@+id/show_detail"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:orientation="horizontal"
+                android:paddingRight="@dimen/putao_listview_item_leftrightpadding" >
+
+                <TextView
+                    android:id="@+id/btn_detail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text="@string/putao_map_item_detail"
+                    android:textColor="@color/putao_text_color_green"
+                    android:textSize="@dimen/putao_map_item_btn_text_size" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/vertical_line_view_2"
+                android:layout_width="@dimen/putao_divider_line_size"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginBottom="@dimen/putao_map_item_divider_margin"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="@dimen/putao_listview_item_leftrightpadding"
+                android:layout_marginTop="@dimen/putao_map_item_divider_margin"
+                android:layout_toLeftOf="@id/show_detail"
+                android:background="#cbcbcb" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="5dp"
+                android:layout_toLeftOf="@id/vertical_line_view_2"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:textColor="@color/putao_pt_heavy_black"
+                        android:textSize="@dimen/putao_map_item_btn_text_size" />
+
+                    <ImageView
+                        android:id="@+id/additional_tuan"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="2dp"
+                        android:layout_toRightOf="@id/name"
+                        android:src="@drawable/putao_icon_logo_tuan"
+                        android:visibility="gone" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/star_price_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="2dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/distance"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:ellipsize="end"
+                        android:gravity="center_vertical"
+                        android:singleLine="true"
+                        android:textColor="@color/putao_pt_heavy_black"
+                        android:textSize="@dimen/putao_map_item_btn_text_size" />
+
+                    <View
+                        android:id="@+id/vertical_line_view"
+                        android:layout_width="@dimen/putao_divider_line_size"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="5dip"
+                        android:layout_marginRight="5dip"
+                        android:layout_marginTop="5dp"
+                        android:background="#cbcbcb"
+                        android:gravity="center_vertical"
+                        android:visibility="gone" />
+
+                    <RatingBar
+                        android:id="@+id/star_layout"
+                        style="@style/putao_ratingbar_style"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:gravity="center_vertical"
+                        android:isIndicator="true"
+                        android:numStars="5"
+                        android:visibility="gone" />
+
+                    <View
+                        android:id="@+id/vertical_secondline_view"
+                        android:layout_width="@dimen/putao_divider_line_size"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="5dip"
+                        android:layout_marginRight="5dip"
+                        android:layout_marginTop="5dp"
+                        android:background="#cbcbcb"
+                        android:gravity="center_vertical"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/average_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:ellipsize="end"
+                        android:gravity="center_vertical"
+                        android:singleLine="true"
+                        android:textColor="@color/putao_pt_heavy_black"
+                        android:textSize="@dimen/putao_map_item_btn_text_size"
+                        android:visibility="gone" />
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/bottom_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:paddingBottom="@dimen/putao_map_item_btn_margin"
+            android:paddingLeft="@dimen/putao_listview_item_leftrightpadding"
+            android:paddingRight="@dimen/putao_listview_item_leftrightpadding"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+             >
+
+            <Button
+                android:id="@+id/btn_home_page"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_marginRight="@dimen/putao_map_item_btn_gap_margin"
+                android:layout_weight="1"
+                android:background="@drawable/putao_click_btn_bg"
+                android:text="@string/putao_map_item_home_page"
+                android:textColor="@color/putao_white"
+                android:textSize="@dimen/putao_map_item_btn_text_size" />
+
+            <Button
+                android:id="@+id/btn_show_route"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="@drawable/putao_click_btn_bg"
+                android:text="@string/putao_map_item_route"
+                android:textColor="@color/putao_white"
+                android:textSize="@dimen/putao_map_item_btn_text_size" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

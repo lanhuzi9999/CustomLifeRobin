@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item android:id="@android:id/background">
+        <shape>
+            <corners android:radius="0dip" />
+
+            <!-- pt_gray -->
+            <gradient
+                android:angle="360"
+                android:centerColor="@color/putao_transparent"
+                android:centerY="1"
+                android:endColor="@color/putao_transparent"
+                android:startColor="@color/putao_transparent" />
+        </shape>
+    </item>
+    <item android:id="@android:id/secondaryProgress">
+        <clip>
+            <shape>
+                <corners android:radius="0dip" />
+                
+                <!-- pt_gray -->
+                <gradient
+                    android:angle="360"
+                    android:centerColor="@color/putao_transparent"
+                    android:centerY="1"
+                    android:endColor="@color/putao_transparent"
+                    android:startColor="@color/putao_transparent" />
+            </shape>
+        </clip>
+    </item>
+    <item android:id="@android:id/progress">
+        <clip>
+            <shape>
+                <corners android:radius="0dip" />
+
+                <gradient
+                    android:angle="360"
+                    android:centerColor="@color/putao_h5page_progress_bg"
+                    android:centerY="1"
+                    android:endColor="@color/putao_h5page_progress_bg"
+                    android:startColor="@color/putao_h5page_progress_bg" />
+            </shape>
+        </clip>
+    </item>
+
+</layer-list>

@@ -1,0 +1,1423 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string name="putao_app_name">葡萄生活</string>
+    <string name="putao_no_net">网络连接不可用</string>
+    <string name="putao_server_busy">服务器繁忙,请稍后再试</string>
+    <string name="putao_netexception">网络异常</string> 
+    <string name="putao_netexception_hint">网络异常，请确认网络后，轻触页面刷新</string>
+    <string name="putao_nometroexception_hint">您所在城市未开通地铁线路</string>
+    <string name="putao_netexception_connect_timedout">服务器连接超时，请确认网络后，轻触页面刷新</string>
+    <string name="putao_contacts_edit_finish">完成</string>
+    <string name="putao_footer_view_more">载入中…</string>
+ 	<string name="putao_pay_by_no_wechat">未检测到微信客户端，请确认</string>
+ 	<string name="putao_pay_back_main">返回首页</string>
+ 	<item type="id" name="putao_tag_first"></item>
+ 	<item type="id" name="putao_tag_second"></item>
+
+ 	<!-- 首页 -->
+ 	<string name="putao_main_tab_life">生活</string>
+ 	<string name="putao_main_tab_navigation">分类</string>
+ 	<string name="putao_main_tab_my">我的</string>
+ 	<string name="putao_main_service_more">更多</string>
+ 	<string name="putao_main_navi_foot">足迹:</string>
+ 	<string name="putao_main_navi_add">添加常用</string>
+ 	<string name="putao_main_navi_operate">主题活动</string>
+ 	<string name="putao_main_navi_coupon">疯狂抢券</string>
+ 	
+    <!-- 授权 -->
+    <string name="putao_logout">退出登录</string>
+    <string name="putao_logining">正在登录</string>
+    <string name="putao_waiting">请稍等</string>
+    <string name="putao_login_success">登录成功!</string>
+    <string name="putao_login_title">帐号登录</string>
+    <string name="putao_login">登录</string>
+    <string name="putao_login_get_captchar">获取验证码</string>
+    <string name="putao_login_verify_mobile">1 手机号验证</string>
+    <string name="putao_login_modify_password">2 修改密码</string>
+    <string name="putao_login_phone_hint">输入手机号码</string>
+    <string name="putao_login_password_hint">输入密码</string>
+    <string name="putao_login_captchar_hint">验证码</string>
+    <string name="putao_login_forget_password">忘记密码</string>
+    <string name="putao_login_set_password">设置密码</string>
+    <string name="putao_login_set_password_ok">密码设置成功</string> 
+    <string name="putao_login_no_password">您没有设置过密码</string>
+    <string name="putao_login_no_account">用户不存在</string>
+    <string name="putao_login_net_wrong">网络异常</string>
+    <string name="putao_login_input_wrong">手机号或者密码输入有误</string>
+    <string name="putao_login_password_wrong">密码输入有误</string>
+    <string name="putao_login_by_captchar">手机验证码登录</string>
+    <string name="putao_login_by_password">密码登录</string>
+    <string name="putao_login_next">下一步</string>
+    <string name="putao_disable_phone_number">停用手机号码</string>
+    <string name="putao_verify_code_error">验证码错误</string>
+    <string name="putao_send_captcha_error">获取验证码失败，重新获取，请点击获取验证码按钮。</string>
+    <string name="putao_to">对</string>
+<string name="putao_input_new_password">输入新密码</string>
+<string name="putao_confirm_new_password">确认新密码</string>
+<string name="putao_login_input_wrong_captchar">手机号或者验证码输入有误</string>
+<string name="putao_login_password_invalid">请输入6-15位数字和字母</string>
+<string name="putao_input_password_tip">6-15位数字和字母</string>
+<string name="putao_input_not_equal">密码不一致,请重新输入</string>
+<string name="putao_login_pwok_relogin">密码设置成功,请重新登录</string> 
+    <!-- 短信注册验证码输入框提示内容修改，应该是3位验证码 -->
+    <string name="putao_checking_msg">根据不同的网络情况，验证时长不等，请耐心等待…</string>
+    <!-- 定义自助验证码短信尾巴 -->
+    <!-- 联系人列表 -->
+    <string name="putao_is_me">我</string>
+    <!-- 个人详情 名片 -->
+
+    <string name="putao_search_contact_hint">输入关键字搜索，比如 美食</string>
+    <string name="putao_homepage_search_contact_hint">搜索电影、团购、商家、服务</string>
+    <string name="putao_homepage_search_hint">输入关键字搜索，比如 </string>
+    <string name="putao_confirm">确定</string>
+    <string name="putao_cancel">取消</string>
+
+    <!-- 圈子列表 -->
+    <string name="putao_point_out">提示</string>
+
+    <!-- 默认圈子 -->
+
+    <!-- ip拨号 -->
+    <string name="putao_smart_ip_call">智能IP拨号</string>
+
+
+
+    <!-- 微博来电秀 -->
+    <string name="putao_account_alert">登录提示</string>
+    <string name="putao_force_account_logout_alert">您的通讯录plus账号已在其他地方登录，请注意账号安全.</string>
+    <!-- call -->
+    <string name="putao_place_a_call1">卡 A</string>
+    <string name="putao_place_a_call2">卡 B</string>
+    <string name="putao_menu_call_settings_dialpad">通话设置</string>
+    <string name="putao_net_unuseable">网络连接不可用</string>
+
+    <!-- other -->
+    <string name="putao_cancle_all_choose">取消全选</string>
+    <string name="putao_all_choose">全选</string>
+    <string name="putao_city_hot">热门城市</string>
+    <string name="putao_city_all">全部城市</string>
+	<string name="putao_city_offen_used">常用城市</string>
+	
+    <!-- ContactsHubUtils -->
+    <string name="putao_number_not_correct">号码不正确</string>
+    <!-- TelAreaUtil -->
+    <string name="putao_move">移动</string>
+    <string name="putao_unicom">联通</string>
+    <string name="putao_telecom">电信</string>
+    <string name="putao_mobile_service">中国移动客服</string>
+    <string name="putao_unicom_service">中国联通客服</string>
+    <string name="putao_telecom_service">中国电信客服</string>
+    <string name="putao_yellow_page_detail_customsprice">%s元</string>
+    <string name="putao_time_suffix">%s次</string>
+    <string name="putao_purchase_count_prefix">已售%s</string>
+    <string name="putao_download_count_suffix">下载量</string>
+    <string name="putao_yellow_page_detail_customslastprice">原价:%s元</string>
+    <string name="putao_yellow_page_detail_reviews_hint">来自大众点评网</string>
+    <string name="putao_yellow_page_food">美食</string>
+    <string name="putao_yellow_page_services">公众服务</string>
+    <string name="putao_yellow_page_shopping">购物</string>
+    <string name="putao_yellow_page_deal_title">团购</string>
+    <string name="putao_yellow_page_coupon_title">优惠</string>
+    <string name="putao_yellow_page_search_btn">搜索</string>
+    <string name="putao_yellow_page_search_more_btn">查看更多</string>
+    <string name="putao_location_text">定位中</string>
+    <string name="putao_yellow_page_locating_try">正在定位，请稍后再试</string>
+    <string name="putao_yellow_page_location_failed">定位失败</string>
+    <string name="putao_yellow_page_position_change">位置变更</string>
+    <string name="putao_yellow_page_position_change_msg">GPS定位到您当前在【%s】,是否切换？</string>
+    <string name="putao_yellow_page_change_position">切换</string>
+    <string name="putao_yellow_page_city_list">地理位置</string>
+    <string name="putao_yellow_page_your_position">当前位置</string>
+    <string name="putao_yellow_page_distance_meter">%sm</string>
+    <string name="putao_yellow_page_distance_kilometer">%skm</string>
+    <string name="putao_yellow_page_avr_price">￥%s/人</string>
+    <string name="putao_yellow_page_result_source">以上结果来自大众点评</string>
+    <string name="putao_get_city_list_failed">获取城市列表失败</string>
+    <string name="putao_yellow_page_select_express">选择快递公司</string>
+
+    <!-- 黄页公众服务 -->
+    <string name="putao_services_special">特种服务</string>
+    <string name="putao_services_commumication">通讯服务</string>
+    <string name="putao_services_complaint">投诉热线</string>
+    <string name="putao_services_110_name">匪警</string>
+    <string name="putao_services_110_value">110</string>
+    <string name="putao_services_119_name">火警</string>
+    <string name="putao_services_119_value">119</string>
+    <string name="putao_services_120_name">急救中心</string>
+    <string name="putao_services_120_value">120</string>
+    <string name="putao_services_train_name">火车订票</string>
+    <string name="putao_services_train_value">95105105</string>
+    <string name="putao_services_122_name">交通事故</string>
+    <string name="putao_services_122_value">122</string>
+    <string name="putao_services_114_name">查号台</string>
+    <string name="putao_services_114_value">114</string>
+    <string name="putao_services_weather_name">天气预报</string>
+    <string name="putao_services_weather_value">12121</string>
+    <string name="putao_services_117_name">报时台</string>
+    <string name="putao_services_117_value">117</string>
+    <string name="putao_services_184_name">邮编查询</string>
+    <string name="putao_services_184_value">184</string>
+    <string name="putao_services_999_name">红十字急救</string>
+    <string name="putao_services_999_value">999</string>
+    <string name="putao_services_water_name">水上求救专用</string>
+    <string name="putao_services_water_value">12395</string>
+    <string name="putao_services_high_name">高速公路救援</string>
+    <string name="putao_services_high_value">12122</string>
+    <string name="putao_services_china_mobile_name">中国移动</string>
+    <string name="putao_services_china_mobile_value">10086</string>
+    <string name="putao_services_china_unicom_name">中国联通</string>
+    <string name="putao_services_china_unicom_value">10010</string>
+    <string name="putao_services_china_telecom_name">中国电信</string>
+    <string name="putao_services_china_telecom_value">10000</string>
+    <string name="putao_services_china_railway_name">中国铁通</string>
+    <string name="putao_services_china_railway_value">10050</string>
+    <string name="putao_services_china_netcom_name">中国网通</string>
+    <string name="putao_services_china_netcom_value">10060</string>
+    <string name="putao_services_12580_name">移动管家</string>
+    <string name="putao_services_12580_value">12580</string>
+    <string name="putao_services_12530_name">移动彩铃</string>
+    <string name="putao_services_12530_value">12530</string>
+    <string name="putao_services_broadband_name">华数宽带</string>
+    <string name="putao_services_broadband_value">96171</string>
+    <string name="putao_services_IP_name">移动IP</string>
+    <string name="putao_services_IP_value">17951</string>
+    <string name="putao_services_television_name">华数电视</string>
+    <string name="putao_services_television_value">96371</string>
+    <string name="putao_services_comsumer_name">消费者投诉</string>
+    <string name="putao_services_comsumer_value">12315</string>
+    <string name="putao_services_mayor_name">市长热线</string>
+    <string name="putao_services_mayor_value">123456</string>
+    <string name="putao_services_rights_name">保护知识产权</string>
+    <string name="putao_services_rights_value">12312</string>
+    <string name="putao_services_price_name">价格举报</string>
+    <string name="putao_services_price_value">12358</string>
+    <string name="putao_services_taxation_name">税务通用</string>
+    <string name="putao_services_taxation_value">12366</string>
+    <string name="putao_services_institution_name">机构编制违规</string>
+    <string name="putao_services_institution_value">12310</string>
+    <string name="putao_services_quality_name">质量监督电话</string>
+    <string name="putao_services_quality_value">12365</string>
+    <string name="putao_services_safeguarding_name">民工维权热线</string>
+    <string name="putao_services_safeguarding_value">12333</string>
+    <string name="putao_services_organization_name">组织部热线</string>
+    <string name="putao_services_organization_value">12380</string>
+    <string name="putao_services_environment_name">环保局热线</string>
+    <string name="putao_services_environment_value">12369</string>
+    <string name="putao_search_empty_result1">搜索无结果</string>
+    <string name="putao_search_empty_result2">请换个关键词试试</string>
+    <string name="putao_search_empty_result3">比如直接搜酒店、快递、快餐</string>
+    <string name="putao_search_time_out">网络连接异常，请稍后再试</string>
+
+    <!-- 号码反查 -->
+    <string name="putao_search_name_unknown">身份不详</string>
+    <string name="putao_search_address_unknown">归属地不详</string>
+    <string name="putao_search_operator_unknown">运营商不详</string>
+    <string name="putao_search_operator_full_name">中国%s</string>
+
+    <!-- 黄页plug -->
+    <string name="putao_yellow_page_source_dp">数据来自大众点评</string>
+    <string name="putao_yellow_page_source_bd">数据来自百度商户</string>
+    <string name="putao_yellow_page_source_pt">数据来自葡萄信息</string>
+    <string name="putao_yellow_page_source_sg">数据来自搜狗号码通</string>
+    <string name="putao_yellow_page_source_gdmap">数据来自高德地图</string>
+<!--     <string name="putao_yellow_page_source_dhb">数据来自电话帮</string> -->
+    <string name="putao_yellow_page_watch_homepage">查看主页</string>
+    <string name="putao_yellow_page_watch_homepage_tongcheng">查看更多房型</string>
+    <string name="putao_yellow_page_collect">加入收藏</string>
+    <string name="putao_yellow_page_collectable">已收藏</string>
+    <string name="putao_yellow_page_collect_cancel">已取消收藏</string>
+    <string name="putao_yellow_page_collect_ok">已收藏成功</string>
+    <string name="putao_yellow_page_error_collect">内容纠错</string>
+    <string name="putao_yellow_page_error_reason">纠错原因</string>
+    <string name="putao_yellow_page_error_collect_hint1">私人号码，希望隐藏</string>
+    <string name="putao_yellow_page_error_collect_hint2">号码信息有误</string>
+    <string name="putao_yellow_page_error_collect_others">其他补充</string>
+    <string name="putao_yellow_page_error_collect_others_info">请填写你想补充的内容</string>
+    <string name="putao_yellow_page_error_collect_contacts">你的联系方式</string>
+    <string name="putao_yellow_page_error_collect_contacts_info">请留下你的联系方式，便于沟通确认</string>
+    <string name="putao_yellow_page_error_collect_commit">提交</string>
+    <string name="putao_yellow_page_error_collect_cotent_tip">您的反馈很重要，我们真正聆听..</string>
+    <string name="putao_yellow_page_error_collect_contact_method">输入手机/邮箱/QQ</string>
+    <string name="putao_yellow_page_error_collect_qq_group">QQ群:145395697</string>
+    <string name="putao_yellow_page_error_collect_commit_success">提交成功,玩命给您答复中!</string>
+    <string name="putao_yellow_page_error_collect_phone_notnull">联系方式不能为空</string>
+    <string name="putao_yellow_page_error_collect_check_legal">请输入合法的手机/邮箱/QQ</string>
+    <string name="putao_yellow_page_error_collect_feedback_empty">反馈内容不能为空</string>
+    <string name="putao_yellow_page_error_collect_commit_hint">亲，请完善您所提交的信息!</string>
+    <string name="putao_yellow_page_error_collect_commit_repeat">亲，该修改信息已提交!</string>
+    <string name="putao_yellow_page_no_mapapp">未安装地图应用</string>
+    <string name="putao_yellow_page_about">关于</string>
+    <string name="putao_p2refresh_head_load_more">正在加载</string>
+    <string name="putao_p2refresh_end_load_more">没有更多数据了</string>
+    <string name="putao_p2refresh_end_load_more_more">加载更多</string>
+    <string name="putao_p2refresh_end_click_load_more">点击加载</string>
+    <string name="putao_p2refresh_release_refresh">松开刷新</string>
+    <string name="putao_p2refresh_pull_to_refresh">下拉刷新</string>
+    <string name="putao_p2refresh_doing_head_refresh">正在加载</string>
+    <string name="putao_p2refresh_doing_end_refresh">加载中&#8230;</string>
+    <string name="putao_p2refresh_refresh_lasttime">最近更新&#160;&#058;&#160;</string>
+    <string name="putao_p2refresh_searching_and_wait">网络搜索中,请稍后&#8230;</string>
+    <string name="putao_yellow_page_phonenum_filter">转</string>
+    <string name="putao_yellow_page_cannot_watch_homepage">不能查看主页</string>
+
+    <!-- 话费查询 -->
+    <string name="putao_query_telcharge_hint_head">查余额</string>
+    <string name="putao_query_telcharge_hint">将发送免费短信至运营商，查询您的话费余额</string>
+    <string name="putao_query_telecharge_hint_ok">确认</string>
+    <string name="putao_query_telecharge_hint_cancel">取消</string>
+    <string name="putao_query_telecharge_sendinghint">正在发送</string>
+    <string name="putao_query_telecharge_success_hint">发送成功</string>
+    <string name="putao_query_telecharge_failed_hint">发送失败</string>
+    <string name="putao_sim_state_info">请确认您的SIM在可用状态</string>
+    
+    <string name="putao_querytel_queryhint">查询余额</string>
+    <string name="putao_querytel_querying">正在查询中</string>
+    <string name="putao_querytel_chargehint">当前余额(元)</string>
+    <string name="putao_querytel_state_welcome">您尚未进行查询</string>
+    <string name="putao_querytel_state_querying">正在查询余额，请稍等…</string>
+    <string name="putao_querytel_state_failed">短信发送失败，网络异常或欠费</string>
+    <string name="putao_querytel_state_showdate">最近查询日期：%s</string>
+    <string name="putao_querytel_state_timeout">未收到余额短信，请重试</string>
+    <string name="putao_querytel_state_parse_error">短信不能解析，请人工查阅</string>
+    <string name="putao_querytel_state_no_simcard">未检测到SIM卡，不能查询余额</string>
+    <string name="putao_querytel_hint">系统将发送免费短信查询话费余额</string>
+    
+    <string name="putao_querytel_balance_name1">余额</string>
+    <string name="putao_querytel_balance_name2">金额</string>
+    <string name="putao_querytel_balance_rmb">元</string>
+
+    <!-- 快递字符 -->
+    <!-- <string name="putao_app_name">条码扫描器</string> -->
+    <string name="putao_express_check_title">查快递</string>
+    <string name="putao_express_send_express">寄快递</string>
+    <string name="putao_express_delivery_com">快递公司</string>
+    <string name="putao_express_select">查询</string>
+    <string name="putao_express_select_history_title">快递历史查询</string>
+    <string name="putao_express_select_history_btn_text">查询历史</string>
+    <string name="putao_express_select_hint">请输入要查询的快递单号</string>
+    <string name="putao_express_select_error_num">请输入正确的快递单号</string>
+    <string name="putao_express_result_try_again">重试一下</string>
+    <string name="putao_express_result_status_complete">已签收</string>
+    <string name="putao_express_result_status_in_transit">运送中</string>
+    <string name="putao_express_result_status_unknow"></string>
+    <string name="putao_express_history_delete">删除</string>
+    <string name="putao_express_history_select_all">全选</string>
+    <string name="putao_express_home_tips">将复制的内容进行查询?</string>
+    <string name="putao_msg_default_status">将条码放入框内，即可自动扫描</string>
+    <string name="putao_preferences_actions_title">找到条码时</string>
+    <string name="putao_preferences_bulk_mode_summary">连续扫描并保存多个条形码</string>
+    <string name="putao_preferences_bulk_mode_title">批量扫描模式</string>
+    <string name="putao_preferences_copy_to_clipboard_title">复制到剪切板</string>
+    <string name="putao_preferences_custom_product_search_summary" formatted="false">替换：％s=内容，％f=格式，％t=类型</string>
+    <string name="putao_preferences_custom_product_search_title">自定义搜索网址</string>
+    <string name="putao_preferences_decode_1D_title">扫描 一维条码</string>
+    <string name="putao_preferences_decode_Data_Matrix_title">扫描 DM码</string>
+    <string name="putao_preferences_decode_QR_title">扫描 QR码</string>
+    <string name="putao_preferences_front_light_summary">前灯可用时，打开前灯</string>
+    <string name="putao_preferences_front_light_title">前灯</string>
+    <string name="putao_preferences_general_title">一般设置</string>
+    <string name="putao_preferences_play_beep_title">提示音</string>
+    <string name="putao_preferences_remember_duplicates_summary">在历史记录中保存重复记录</string>
+    <string name="putao_preferences_remember_duplicates_title">记住重复</string>
+    <string name="putao_preferences_result_title">结果设置</string>
+    <string name="putao_preferences_reverse_image_summary">设备上启用了前置摄像头只</string>
+    <string name="putao_preferences_reverse_image_title">反转摄像机的图像</string>
+    <string name="putao_preferences_scanning_title">条码类型选择</string>
+    <string name="putao_preferences_search_country">搜索国家</string>
+    <string name="putao_preferences_supplemental_summary">尝试检索关于条码内容的更多信息</string>
+    <string name="putao_preferences_supplemental_title">检索更多信息</string>
+    <string name="putao_preferences_vibrate_title">振动</string>
+    <string name="putao_zxing_url">http://code.google.com/p/zxing</string>
+    <string name="putao_express_num">快递单号：</string>
+    <string name="putao_express_reslut_info_no_data">信息尚未录入 · 单号有误 · 刚刚寄出</string>
+    <string name="putao_express_no_history">没有历史记录</string>
+    <string name="putao_express_history_item_number">单号：%s</string>
+    <string name="putao_express_history_item_info">%1$s&#160;&#160;%2$s</string>
+    <string name="putao_express_history_no_select_history">未选择历史记录</string>
+    <string name="putao_express_history_delete_dialog_title">删除</string>
+    <string name="putao_express_history_delete_confirm">确定要删除所选的历史记录？</string>
+    <string name="putao_express_source_company_text">数据由快递助手提供</string>
+    <string name="putao_express_has_sign_in">已签收</string>
+    <string name="putao_express_setting_hint">根据您搜索的快递单号，进行快递同城到达、快递员派件和签收提醒。</string>
+    <string name="putao_express_search">输入快递公司名称或者拼音缩写搜索</string>
+    <!-- 快递字符 END -->
+    
+    <string name="putao_yellow_page_my_activities">我的活动</string>
+    <string name="putao_yellow_page_my_favorite">我的收藏</string>
+    <string name="putao_yellow_page_my_history">浏览历史</string>
+	<string name="putao_yellow_page_my_user_feedback">反馈建议</string>
+	<string name="putao_yellow_page_my_user_feedback_hint">输入意见或问题</string>
+	<string name="putao_yellow_page_my_user_feedback_phone">联系方式</string>
+    
+    <string name="putao_yellow_page_favorite_title">我的收藏</string>
+    <string name="putao_yellow_page_favorite_no_data">没有收藏</string>
+    <string name="putao_yellow_page_favorite_no_selected">未选择收藏记录</string>
+    <string name="putao_yellow_page_favorite_delete_dialog_title">删除</string>
+    <string name="putao_yellow_page_favorite_delete_confirm">确定要删除所选的收藏？</string>
+    
+    <string name="putao_yellow_page_history_title">历史</string>
+    <string name="putao_yellow_page_history_no_data">没有访问历史</string>
+    <string name="putao_yellow_page_history_no_selected">未选择历史记录</string>
+    <string name="putao_yellow_page_history_delete_confirm">确定要删除所选的历史记录？</string>
+    
+    <string name="putao_yellow_page_try_login">账户未登录，正在尝试登录</string>
+    <string name="putao_yellow_page_try_login_success">账户登录成功</string>
+    <string name="putao_yellow_page_try_login_fail">账户登录失败，暂无法进行充值.</string>
+    
+    <!-- 充话费 -->
+    <string name="putao_charge_tag_title">充值</string>
+    <string name="putao_charge_tag_title_charge">充话费</string>
+    <string name="putao_charge_tag_title_tiffic">充流量</string>
+    <string name="putao_charge_traffic_order_title">充流量-%s</string>
+    <string name="putao_charge_traffic_order_content">%1$s%2$s流量充值</string>
+    <string name="putao_charge_telephone_order_content">%1$s%2$s元话费充值</string>
+    <string name="putao_charge_telephone_order_content_detail">%1$s%2$s元话费充值</string>
+    <string name="putao_charge_subject">话费充值</string>
+    <string name="putao_charge_traffic_subject">流量充值</string>
+    <string name="putao_input_charge_no">手机号码（移动、联通、电信）</string>
+    <string name="putao_traffic_type_unkown">未选择</string>
+    <string name="putao_choice_charge_par">选择充值额度</string>
+    <string name="putao_traffic_per_value">流量面值</string>
+    <string name="putao_choice_flow_par">选择充值流量包</string>
+    <string name="putao_traffic_tips_first_telecom">1.中国电信流量充值提示</string>
+    <string name="putao_traffic_tips_second_telecom">生效时间：充值成功，及时生效。\n使用范围：支持全国漫游。\n充值次数：不限。\n使用有效期：充值当日起90天有效，跟自然月(每月1号到月底)无关。\n充值类型：支持全国2G、3G、4G用户。</string>
+    <string name="putao_traffic_tips_first_unicom">2.中国联通流量充值提示</string>
+    <string name="putao_traffic_tips_second_unicom">生效时间：充值成功，及时生效。\n使用范围：支持全国漫游。\n使用有效期：当月有效。\n充值次数：每个号码每个面值仅限充值3次。\n使用有效期：当月有效。\n充值类型：支持全国2G、3G、4G用户，以下省份不支持2G用户（广西、江西、云南、天津、北京、黑龙江、河北、辽宁、四川、吉林、安徽）</string>
+    <string name="putao_traffic_tips_first_mobile">3.中国移动流量充值提示</string>
+    <string name="putao_traffic_tips_second_mobile">生效时间：充值成功，及时生效。\n使用范围：支持全国漫游。\n使用有效期：当月有效。\n充值次数：不限。\n使用有效期：当月有效。\n充值类型：支持全国2G、3G、4G用户。</string>
+    <string name="putao_traffic_tips_first_mobile_server">4.充值客服热线</string>
+    <string name="putao_charge_tips_first_telecom">1.为什么我的话费没到账</string>
+    <string name="putao_charge_tips_first_unicom">2.手机充值和到营业厅充值有何不同</string>
+    <string name="putao_charge_tips_first_mobile_gd">3.充值失败何时能退款</string>
+    <string name="putao_charge_tips_first_mobile_bj">4.充值客服热线</string>
+    <string name="putao_traffic_tips_mobile">* 除广东、北京以外地区，暂不支持中国移动客户充值</string>
+    <string name="putao_traffic_tips_provider">话费流量充值服务由北京高阳捷迅提供</string>
+    
+    <!-- add by hyl 2014-10-9 start -->
+    <string name="putao_choice_charge_way">支付方式</string>
+    <!-- add by hyl 2014-10-9 end -->
+    
+    <string name="putao_charge_immediately">立即充值</string>
+    <string name="putao_charge_charging">充值中</string>
+    <string name="putao_charge_querying">查询中</string>
+    <string name="putao_charge_price">%s元</string>
+    <string name="putao_pay_charge_price">%s元</string>
+    <string name="putao_charge_getchargeinfo_failed">暂不支持该号码充值</string>
+    <string name="putao_charge_getcontact_hint_error">获取联系人号码失败</string>
+    <string name="putao_charge_getcontact_hint_empty">您所选择的联系人暂无号码</string>
+    <string name="putao_charge_phonenum_hint">充值号码</string>
+    <string name="putao_charge_phonenum_error">手机号码有误</string>
+    <string name="putao_charge_serialnum_hint">交易流水号</string>
+    <string name="putao_charge_money_hint">充值话费</string>
+    <string name="putao_charge_traffic_hint">充值流量</string>
+    <string name="putao_charge_charge_hint">请输入充值号码</string> 
+    <string name="putao_charge_chy_data">¥ %s</string>
+    <string name="putao_charge_question">充值注意事项</string>
+    <string name="putao_charge_tips">*微信游戏充值账号为绑定QQ号，到账为Q点，请在游戏中使用Q点购买游戏物品。</string>
+    <string name="putao_charge_question_url">file:///android_asset/faq.html</string>
+    <string name="putao_charge_qry_status_ing">正在查询</string>
+    <string name="putao_charge_subject_for_alipay">话费充值%s元</string>    
+    <string name="putao_charge_server_checking">充值服务器正在例行维护，将在%s恢复服务，请稍候</string>
+    <string name="putao_charge_query_price_fail">查询价格失败，请检查您的网络</string>
+    <string name="putao_charge_query_traffic_fail">查询流量产品失败，请检查您的网络</string>
+    <string name="putao_charge_query_traffic_default">未选择</string>
+        
+    <string name="putao_charge_deal_success">充值成功</string>
+    <string name="putao_charge_deal_failed">充值失败</string>
+    <string name="putao_charge_deal_success_hint">将在2小时内充值到账，请注意查收短信</string>
+    <string name="putao_charge_deal_failed_hint">支付失败，如有问题请致电支付宝客服</string>
+    <string name="putao_charge_deal_failed_hint_weixin">支付失败，如有问题请致电微信客服</string>
+    <string name="putao_charge_deal_failed_cancel">支付被取消</string>
+    <string name="putao_charge_deal_failed_coupon_timeout">您使用的优惠券已过期</string>
+    <string name="putao_charge_deal_ask_for_refund">退款中</string>
+    <string name="putao_charge_deal_refunded">退款成功</string>
+    <string name="putao_charge_deal_out_of_date">订单过期</string>
+    <string name="putao_charge_no_trade_num">交易无流水号</string>
+        
+    <string name="putao_charge_tips_for_success">已经成功充值%s元，请关注话费余额变化</string>
+    <string name="putao_charge_traffic_tips_for_success">将在2小时内充值到账，请注意查收短信</string>
+    <string name="putao_charge_tips_for_pending">正在处理，请关注话费余额变化</string>
+    <string name="putao_charge_traffic_tips_for_pending">正在处理，请关注流量余额变化</string>
+    <string name="putao_charge_tips_for_failed">充值系统正在为您处理全额退款，本次退款金额%s元</string>
+    <string name="putao_charge_traffic_tips_for_ask_for_refund">充值系统正在为您处理全额退款</string>
+    <string name="putao_charge_traffic_tips_for_ask_for_refund_alipay">充值系统将在48小时内为您退款</string>
+    <string name="putao_charge_traffic_tips_for_ask_for_refund_wechat">充值系统将在1-5个工作日为您退款</string>
+    <string name="putao_charge_traffic_tips_for_refund">充值系统已为您全额退款</string>
+    <string name="putao_charge_traffic_tips_for_out_of_date">订单已经过期，请重新下单</string>
+    
+    <!-- <string name="putao_charge_question_a">1. 月初和月末运营商系统比较繁忙,可能会延迟到账.</string>
+    <string name="putao_charge_question_b">2. 本充值不参加当地运营商活动.</string>
+    <string name="putao_charge_question_c">3. 支持全国各省市(不包括港澳台地区)充值,部分地区充值后无短信提醒.</string>
+    <string name="putao_charge_question_d">4. 支付成功后，即会为您处理充值，遇到订单数量太多时，查询订单状态时可能会被显示为超时、异常或失败，请等待短信通知.</string>
+    <string name="putao_charge_question_e">5. 若遇到连连科技或运营商系统故障，导致充值失败，我们会自动在24小时内退款，请注意查询.</string>
+    <string name="putao_charge_question_f">6. 其他问题,请联系4007116666 连连科技客服详细咨询.</string> -->
+    
+    <string name="putao_charge_question_a">月初和月末运营商系统比较繁忙，可能会延迟到帐.</string>
+    <string name="putao_charge_question_b">本充值不参加当地运营商活动，发票请在使用后到运营商营业厅领取.</string>
+    <string name="putao_charge_question_c">如遇运营商系统故障或其它原因导致充值失败，系统将在24小时内全额退款.</string>
+    <string name="putao_charge_question_d">充值客服热线：</string>
+    <string name="putao_charge_question_e">4008112580</string>
+    <string name="putao_charge_question_f">.</string>
+    
+    <!-- 充流量  -->
+    <string name="putao_traffic_authcode_hint">输入验证码</string>
+    <string name="putao_traffic_authcode_title">流量充值验证码</string>
+    
+    <!-- 充值历史 -->
+    <string name="putao_charge_history">充值历史</string>    
+    <string name="putao_charge_history_success">充值成功</string>    
+    <string name="putao_charge_history_closed">交易关闭</string>    
+    <string name="putao_charge_history_waitcharge">等待付款</string>    
+    <string name="putao_charge_history_failed_return">充值失败正在退款</string>    
+    <string name="putao_charge_history_chargefailed_returnsuccess">退款成功</string>    
+    <string name="putao_charge_history_pay_sucess">支付成功正在充值</string>  
+    
+    <string name="putao_charge_history_order">订单号: %s</string>   
+    <string name="putao_charge_favorable">优惠%s元</string>
+    <string name="putao_charge_history_money">金额:</string>    
+    <string name="putao_charge_history_nodata">暂无充值历史</string> 
+    <string name="putao_charge_history_nomoredata">暂无更多充值历史</string>    
+    
+    <string name="putao_map_item_detail">详情</string>
+    <string name="putao_map_item_home_page">查看主页</string>
+    <string name="putao_map_item_route">到这里去</string>
+    
+    <!-- 公交 -->
+    <string name="putao_server_head_title_bus">公交</string>
+    <string name="putao_bus_from_hit">起始站</string>
+    <string name="putao_bus_to_hit">终点站</string>
+    <string name="putao_bus_change_text">公交换乘</string>
+    <string name="putao_bus_line_text">查询线路</string>
+    <string name="putao_bus_form_location_ok_text">当前位置</string>
+    <string name="putao_bus_query">站点线路</string>
+    <string name="putao_bus_query_btn">查询</string>
+    <string name="putao_bus_query_input_hit">搜索站点、线路</string>
+    <string name="putao_near_station_text">附近站点</string>
+    <string name="putao_bus_query_input_empty">请输入要查询的地点、公交车、线路</string>
+    <string name="putao_bus_query_line_empty">起点或终点不能为空</string>
+    <string name="putao_bus_query_hint">查公交</string>
+    <string name="putao_bus_current_loction">当前位置</string>
+    <string name="putao_city_search">输入城市名称或拼音缩写搜索</string>
+        
+    <!-- 编辑快捷服务 -->
+    <string name="putao_servermanager_title">编辑快捷服务</string>
+    <string name="putao_servermanager_added">已添加</string>
+    <string name="putao_servermanager_all">全部</string>
+    <string name="putao_servermanager_not_del_hint">亲,该服务不可删除</string>
+
+    <string name="putao_servermanager_del_quick_search">从快捷服务 移除成功</string>
+    <string name="putao_servermanager_add_quick_search">添加到快捷服务 成功</string>
+    <string name="putao_servermanager_dialog_title">自定义常用服务</string>
+    <string name="putao_servermanager_dialog_edittext_hint">例如输入 美食，即可快速查询“附近的美食”</string>
+    <string name="putao_servermanager_dialog_null_edittext_content">搜索字为空</string>
+    <string name="putao_servermanager_add_quick_search_btn">+自定义常用服务</string>
+    
+    <!-- 酒店 start -->
+    <string name="putao_hotelhome_city">城&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;市</string>
+    <string name="putao_hotelhome_in">入住日期</string>
+    <string name="putao_hotelhome_out">离店日期</string>
+    <string name="putao_hotelhome_hotword">关&#160;&#160;键&#160;&#160;词</string>
+    <string name="putao_hotelhome_price">价&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;格</string>
+    <string name="putao_hotelhome_star">星&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;级</string>
+    <string name="putao_hotelbook_area">区域</string>
+    <string name="putao_hotelbook_sort">排序</string>
+    <string name="putao_hotelbook_price">价格</string>
+    <string name="putao_hotelbook_star">星级</string>
+    <string name="putao_hotelbook_search">搜索酒店</string>
+    <string name="putao_hotel_select_error_hint">离店日期不能早于入住日期</string>
+    <string name="putao_hotel_title_area">区域选择</string>
+    <string name="putao_hotel_title_price">价格选择</string>
+    <string name="putao_hotel_title_star">星级选择</string>
+    <string name="putao_hotel_title_sort">排序选择</string>
+    <string name="putao_hotel_hotel_in">入住</string>
+    <string name="putao_hotel_hotel_out">离店</string>
+    <string name="putao_hotel_unlimited">不限</string>
+    <string name="putao_hotel_hotword_hint">酒店名称或地址</string>
+    <string name="putao_hotel_orderlist_location_failed_search_hint">抱歉，当前城市没有定位数据，不能按照按照“离我最近”排序。</string>
+    <string name="putao_hotel_search_title">酒店搜索</string>
+    <string name="putao_hotel_near_search_title">附近的酒店</string>
+    <string name="putao_hotel_search_list_title">酒店列表</string>
+    <string name="putao_hotel_item_showmoney">￥%s</string> 
+    <string name="putao_hotel_item_marknum">%s分</string> 
+    <string name="putao_hotel_item_distance">%skm</string> 
+    <string name="putao_hotel_nomoredata">暂无更多酒店</string> 
+    <string name="putao_hotel_no_morearea">暂无更多区域选择</string> 
+    <string name="putao_hoteldetail">酒店详情</string> 
+    <string name="putao_roomdetail">房间详情</string>
+    <string name="putao_hoteldetail_present">礼</string>
+    <string name="putao_hoteldetail_intro">酒店简介</string>
+    <string name="putao_hoteldetail_facility">服务与设施</string> 
+    <string name="putao_hoteldetail_img_number">%1$s/%2$s张</string> 
+    <string name="putao_hoteldetail_intro_nodata">暂无数据</string> 
+    <string name="putao_hoteldetail_traffic_item_with_arrival_way">【%1$s】 距离酒店约%2$s公里，%3$s。</string> 
+    <string name="putao_hoteldetail_traffic_item">【%1$s】 距离酒店约%2$s公里。</string> 
+    <string name="putao_hoteldetail_traffic">交通信息</string> 
+    <string name="putao_hoteldetail_marknum"> %s分</string> 
+    <string name="putao_hoteldetail_starratedname">%s酒店</string> 
+    <string name="putao_hoteldetail_money">%s元</string> 
+    <string name="putao_hoteldetail_money_kefan">可返￥%s</string>
+    <string name="putao_hoteldetail_fanxian_info">(返现立提)</string>
+    <string name="putao_hoteldetail_breakfast">%s早餐</string>
+    <string name="putao_hoteldetail_cannot_book">抱歉，房间已满，不可预订.</string>
+    <string name="putao_hoteldetail_no_data_hint">抱歉，暂无酒店详情.</string>
+    <string name="putao_hoteldetail_no_roomlist_hint">抱歉，暂没有符合条件的房型信息.</string>
+    <string name="putao_hotel_state_yuding">预订</string> 
+    <string name="putao_hotel_state_manfang">满房</string> 
+    <string name="putao_hotelorder_write">订单填写</string>
+    <string name="putao_hotel_in_date">入住  %s</string>
+    <string name="putao_hotel_out_date">离店  %s</string>
+    <string name="putao_hotelorder_days">%s晚</string>
+    <string name="putao_hotelorder_rooms">%s间</string>
+    <string name="putao_hotelorder_arrivetime_hint">最晚到店时间</string>
+    <string name="putao_hotelorderdetail_order_type">支付方式</string>
+    <string name="putao_hotelorder_comename">入住人</string>
+    <string name="putao_hotelorder_comename_hint">姓名</string>
+    <string name="putao_hotelorder_comemobile">手机号</string>
+    <string name="putao_hotelorder_comemobile_hint">用于接收确认短信</string>
+    <string name="putao_hotelorder_amount">订单金额</string>
+    <string name="putao_hotelorder_submit">提交订单</string>
+    <string name="putao_hotelorder_prepare_pay">预付</string>
+    <string name="putao_hotelorder_order">预订</string>
+    <string name="putao_hotelorder_prepare_danbao">担保</string>
+    <string name="putao_hotelorder_rooms_hint">入住房间数量</string>
+    <string name="putao_hotelorder_arrive_date_hint">最晚到店时间</string>
+    <string name="putao_hotelorder_submit_no_comename_hint">请输入入住人姓名</string>
+    <string name="putao_hotelorder_submit_no_mobile_hint">请输入入住人手机号码</string>
+    <string name="putao_hotelorder_submit_no_validmobile_hint">请输入有效的手机号码</string>
+    <string name="putao_hotelorderdetail_title_success">下单成功</string>
+    <string name="putao_hotelorderdetail_title_repeat">重复订单</string>
+    <string name="putao_hotelorderdetail_title_error">订单异常</string>
+    <string name="putao_hotelorderdetail_submiting_order">正在提交</string>
+    <string name="putao_hotelorderdetail_submit_success">恭喜你，订单提交成功。</string>
+    <string name="putao_hotelorderdetail_submit_success_hint">我们会尽快确认您的预订，稍后您将收到确认短信并同步订单信息。</string>
+    <string name="putao_hotelorderdetail_submit_repeat">您在本次预订中出现了重复订单</string>
+    <string name="putao_hotelorderdetail_submit_ordernum">订单号码</string>
+    <string name="putao_hotelorderdetail_submit_hotelname">酒店名称</string>
+    <string name="putao_hotelorderdetail_submit_inout">入住离店</string>
+    <string name="putao_hotelorderdetail_submit_inout_data">%1$s至%2$s</string>
+    <string name="putao_hotelorderdetail_submit_people">入&#160;&#160;住&#160;&#160;人</string>
+    <string name="putao_hotelorderdetail_submit_repeatreson_hint">重复理由</string>
+    <string name="putao_hotelorderdetail_submit_order_error_hint">异常原因</string>
+    <string name="putao_hotelorderdetail_submit_repeatreson">%1$s于%2$s至%3$s已预订该酒店，请取消现有订单或更换入住人预订。</string>
+    <string name="putao_hotelorderdetail_submit_ordermoney">￥%s元</string>
+    <string name="putao_hotelorderdetail_submit_open_order">查看订单</string>
+    <string name="putao_hotelpay_title_2">信用卡支付</string>
+    <string name="putao_hotelpay_title_1">信用卡担保</string>
+    <string name="putao_hotelpay_bank">发卡银行</string>
+    <string name="putao_hotelpay_bank_hint">请选择发卡银行</string>
+    <string name="putao_hotelpay_cardnum">卡&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;号</string>
+    <string name="putao_hotelpay_cardnum_hint">请输入您的信用卡卡号</string>
+    <string name="putao_hotelpay_securitycode">CVV2</string>
+    <string name="putao_hotelpay_securitycode_hint">卡背面末三位数字</string>
+    <string name="putao_hotelpay_validity">有&#160;&#160;效&#160;&#160;期</string>
+    <string name="putao_hotelpay_validity_hint">MM/YY</string>
+    <string name="putao_hotelpay_name">姓&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;名</string>
+    <string name="putao_hotelpay_name_hint">请输入持卡人姓名</string>
+    <string name="putao_hotelpay_mobile">手&#160;&#160;机&#160;&#160;号</string>
+    <string name="putao_hotelpay_mobile_hint">请输入有效的持卡人手机号</string>
+    <string name="putao_hotelpay_certificate_type">证件类型</string>
+    <string name="putao_hotelpay_certificate_type_hint">请选择持卡人证件类型</string>
+    <string name="putao_hotelpay_certificate_num">证件号码</string>
+    <string name="putao_hotelpay_certificate_num_hint">请输入持卡人证件号码</string>
+    <string name="putao_hotelpay_pay_money_hint">订单金额</string>
+    <string name="putao_hotelpay_pay_money">%s元</string> 
+    <string name="putao_hotelpay_pay">支付</string>
+    <string name="putao_hotelpay_credicard_selector">选择信用卡支付</string>
+    <string name="putao_hotelpay_certificatetype_selector">选择持卡人证件类型</string>
+    <string name="putao_hotelpay_select_cardbank">请选择信用卡发卡银行</string>
+    <string name="putao_hotelpay_select_cardnum">请输入信用卡卡号</string>
+    <string name="putao_hotelpay_select_securitycode">请输入卡背面三位数字</string>
+    <string name="putao_hotelpay_select_cardvalidity">请输入信用卡有效期</string>
+    <string name="putao_hotelpay_select_certificatetype">请选择证件类型</string>
+    <string name="putao_hotelpay_select_certificatenum">请输入证件号码</string>
+    <string name="putao_hotelpay_select_date">选择信用卡有效期</string>
+    <string name="putao_hotelpay_select_date_year">%s年</string>
+    <string name="putao_hotelorder_detail_hint">订单信息</string>
+    <string name="putao_hotelpay_cardinfo_hint">信用卡信息</string>
+    <string name="putao_hotelpay_cardpeople_hint">持卡人信息</string>
+    <string name="putao_hotelorderdetail_title">订单详情</string>
+    <string name="putao_hotelorder_come_name_tip_title">温馨提示</string>
+    <string name="putao_hotelorder_come_name_tip_content1">"1.所填姓名必须与入住所持证件姓名一致;"</string>
+    <string name="putao_hotelorder_come_name_tip_content2">2.姓名中不可含有称谓等词语，如：小姐、先生、太太、夫人等;</string>
+    <string name="putao_hotelorder_come_name_tip_content3">3.若您是两人入住一间房，每间房只需填写一个人的入住姓名。若帮您朋友订。请填写您朋友的姓名;</string>
+    <string name="putao_hotelorderdetail_in">入住</string>
+    <string name="putao_hotelorderdetail_out">离店</string>
+    <string name="putao_hotelorderdetail_paymoney">支付金额</string>
+    <string name="putao_hotelorderdetail_orderstatus">订单状态</string>
+    <string name="putao_hotelorderdetail_orderid">订单编号</string>
+    <string name="putao_hotelorderdetail_createtime">创建时间</string>
+    <string name="putao_hotelorderdetail_hotelname">酒店名称</string>
+    <string name="putao_hotelorderdetail_hoteladdress">酒店地址</string>
+    <string name="putao_hotelorderdetail_hotel_indate">最晚到店</string>
+    <string name="putao_hotelorderdetail_hotelmobile">酒店电话</string>
+    <string name="putao_hotelorderdetail_state_new">待确认</string>
+    <string name="putao_hotelorderdetail_state_confirm">已确认</string>
+    <string name="putao_hotelorderdetail_state_cancel">取消</string>
+    <string name="putao_hotelorderdetail_state_zancun">暂存</string>
+    <string name="putao_hotelorderdetail_service_provider_hint">服务提供</string>
+    <string name="putao_hotelorderdetail_service_provider">同程旅游</string>
+    <string name="putao_hotelorderdetail_kefudianhua_hint">客服电话</string>
+    <string name="putao_hotelorderdetail_kefudianhua">，转3酒店</string>
+    <string name="putao_hotelorderdetail_kefu_telnumber">400-777-7777</string>
+    <string name="putao_hotelorderdetail_yufutiaokuang_hint">预付条款</string>
+    <string name="putao_hotelorderdetail_yufutiaokuang">预订此产品，需要您预付全部房费。订单一经确认，不可变更/取消。未如约入住，房费将不予退还。</string>
+    <string name="putao_hotelorderdetail_cancelorder">取消订单</string>
+    <string name="putao_hotelorderdetail_cancelorder_hint">选择取消订单原因</string>
+    <string name="putao_hotelorderdetail_cancelorder_result_success">订单取消成功</string>
+    <string name="putao_hotelorderdetail_cancelorder_result_failed">订单取消失败</string>
+    <string name="putao_hotel_configview_hint">根据酒店预订时间，提醒您入住和离店。</string>
+    <string name="putao_hoteldetail_gethotelpolicy_hint">获取酒店实时价格失败</string>
+    <string name="putao_hotel_orderdetail_failed_hint">获取酒店订单详情失败</string>
+    <string name="putao_hotelorderdetail_name_pfrfix">酒店 - %1$s</string>
+    <string name="putao_hotelorderdetail_taxi_hint">打车</string>
+    <string name="putao_hotelorderdetail_modify_order">修改订单</string>
+    <string name="putao_hotelorderdetail_guarantee_type_name_1">担保</string>
+    <string name="putao_hotelorderdetail_guarantee_type_name_0">预订</string>
+    <string name="putao_hotelorderdetail_guarantee_type_name_2">预付</string>
+    <string name="putao_hotelorderdetail_guarantee_type_1">需冻结您信用卡金额￥%1$s用于担保。</string>
+    <string name="putao_hotelorderdetail_guarantee_type_0">预订不需您提前支付任何费用。</string>
+    <string name="putao_hotelorderdetail_guarantee_type_2">需使用信用卡预付房费金额￥%1$s。</string>
+    <string name="putao_hotelorderdetail_guarantee_type_1_info">订单确认后,该酒店房间保留至%1$s。如果订单不确认，将立即解冻担保金额。未如约入住，将扣除您的担保费用￥%2$s支付酒店。成功入住及付款离店，经向酒店确认后立刻操作解冻，5-7个工作日恢复额度。</string>
+    <string name="putao_hotelorderdetail_guarantee_type_0_info">如果您在%1$s前不能到店，请事先联系酒店，协商保留房间事宜，以免房间过时取消。通常酒店下午2点开始办理入住，早到可能需要稍作等待。</string>
+    <string name="putao_hotelorderdetail_guarantee_type_2_info">如果订单不确认将全额退款至您的付款账户。订单一经确认，不可变更/取消。未如约入住，将扣除您预付的￥%1$s支付酒店。</string>
+
+    <string name="putao_room_info_surplus_room">%1$d个剩余房间</string>
+    <string name="putao_room_info_floor">楼层</string>
+    <string name="putao_room_info_area">面积</string>
+    <string name="putao_room_info_area_sq">%1$s平方米</string>
+    <string name="putao_room_info_guest_num">可住</string>
+    <string name="putao_room_info_breakfast">早餐</string>
+    <string name="putao_room_info_adsl">宽带</string>
+    <string name="putao_room_info_adsl_0">无宽带</string>
+    <string name="putao_room_info_adsl_1">免费</string>
+    <string name="putao_room_info_adsl_2">部分免费</string>
+    <string name="putao_room_info_adsl_3">收费</string>
+    <string name="putao_room_info_adsl_4">部分收费</string>
+    <string name="putao_room_info_bed">床型</string>
+    <string name="putao_room_info_allow_add_bed">可加床</string>
+    <string name="putao_room_info_not_allow_add_bed">不可加床</string>
+    <string name="putao_room_info_nosmoking">无烟</string>
+    <string name="putao_room_info_nosmoking_0">有</string>
+    <string name="putao_room_info_nosmoking_1">可无烟处理</string>
+    <string name="putao_room_info_nosmoking_2">无烟房</string>
+    <string name="putao_room_info_nosmoking_3">无烟楼层</string>
+    <string name="putao_room_info_other">其它</string>
+    <string name="putao_room_info_total_price">房价</string>
+    <string name="putao_room_info_present">礼包</string>
+    <string name="putao_room_info_present_time">从%1$s到%1$s</string>
+    <string name="putao_room_info_reserve">预订</string>
+    <!-- 酒店 end -->
+    
+    
+    <!-- 日历 -->
+    <string name="putao_calendar_title">日期选择</string>
+    <string name="putao_calendar_showdate">%1$s年%2$s月</string>
+    <string name="putao_calendar_show_week_month_date">%1$s %2$s月%3$s日</string>
+    <string name="putao_calendar_showdate_month">%1$s月%2$s日</string>
+    <string name="putao_calendar_showdate_month_divider">%1$s月-%2$s日</string>
+    <string name="putao_calendar_date_today">今天</string>
+    <string name="putao_calendar_date_tomorrow">明天</string>
+    <string name="putao_calendar_date_after_tomorrow">后天</string>
+    <string name="putao_date_just_now">刚刚</string>
+    <string name="putao_date_minute">%s分钟前</string>
+    <string name="putao_date_today">今天%s</string>
+    <string name="putao_date_yesterday">昨天%s</string>
+    <string name="putao_date_one_weeks_day">%s天前</string>
+    <string name="putao_date_month_day">%1$s月%2$s日%3$s</string>
+    <string name="putao_date_month_day_simple">%1$s月%2$s日</string>
+    <string name="putao_date_year_month_day">%1$s年%2$s月%3$s日%4$s</string>
+    <string name="putao_date_year_month_day_time">%1$s年%2$s月%3$s日  %4$s</string>
+    <string name="putao_date_year_month_day_simple">%1$s年%2$s月</string>
+    <string name="putao_train_start_date_hint">出发日期不能早于当前日期</string>
+    <string name="putao_train_train_number_hint">火车票-%1$s</string>
+    <string name="putao_train_journey_depart_alert">根据火车行程时间，提醒您出发、火车到站情况。</string>
+    <string name="putao_train_quhua">%直辖县级行政区划</string>
+    <string name="putao_train_shixiaqu">市辖区</string>
+    <string name="putao_train_xian">县</string>
+
+    <!-- 我的订单 -->
+    <string name="putao_my_orderlist_name">我的订单</string>
+    <string name="putao_order_group">团购订券</string>
+    <string name="putao_order_hotel">酒店订房</string>
+    <string name="putao_order_charge_history">充值历史</string>
+	<string name="putao_order_tongcheng_train">火车票</string>
+	<string name="putao_order_cancel_title">取消订单</string>
+	<string name="putao_order_cancel_message">你确定要取消该订单吗?</string>
+	<string name="putao_order_cancel_failure">取消失败！</string>
+    <string name="putao_order_cancel_refresh_failure">刷新订单失败！</string>
+    <string name="putao_pull_to_refresh">下拉刷新</string>
+    <string name="putao_do_refresh">正在刷新</string>
+    <!-- 订单历史 -->
+    <string name="putao_order_item_showmoney">￥%s</string>
+    <string name="putao_order_item_indate">入: %s</string>
+    <string name="putao_order_item_outdate">离: %s</string>
+    <string name="putao_order_item_status_N">处理中</string>
+    <string name="putao_order_item_status_A">已确认</string>
+    <string name="putao_order_item_status_D">取消</string>
+    <string name="putao_order_item_status_C">结账</string>
+    <string name="putao_order_history_nodata">暂无酒店订单</string>
+
+    <!-- 我的账户 -->
+    <string name="putao_verification_code">你的验证码是:</string>
+    <string name="putao_exit_clean_tip">正在清理痕迹</string>
+
+    <!-- 定义自助验证码短信尾巴 -->
+    <string name="putao_verification_code_from">【%s】</string>
+    <string name="putao_bind_mobile">点击绑定账号</string>
+    <string name="putao_bind_mobile_describe">登录后可同步订单信息</string>
+    <string name="putao_check_mobile_alert">请输入您的手机号码并进行登录验证，我们将保护您的个人隐私，不会公开您的号码。</string>
+    <string name="putao_check_code_alert">验证码已发出，请注意查收。</string>
+    <string name="putao_input_phone_number_error">输入号码有误，请重新输入</string>
+    <string name="putao_phone_check_code">验证码</string>
+    <string name="putao_check_phone_number">验证手机号码</string>
+    <string name="putao_input_phone_number">输入手机号码</string>
+    <string name="putao_input_right_phone_number">输入正确的手机号码</string>
+    <string name="putao_checking_mobile">验证手机号码</string>
+    <string name="putao_checking_mobile_login">手机号登录</string>
+    <string name="putao_input_check_code">输入短信验证码</string>
+    <string name="putao_get_check_code">获取验证码</string>
+    <string name="putao_check_code_sended">已发送验证码</string>
+    <string name="putao_send_again_time">秒后重发</string>
+    <string name="putao_bind_confirm">确认</string>
+    <string name="putao_checking_authcode_error">验证码错误</string>
+    <string name="putao_checking_login_fail">登陆失败</string>
+
+    <!-- add by putao_lhq start -->
+    <!-- 分享 -->
+    <string name="putao_yellow_page_share">分享</string>
+    <string name="putao_text_shared_str_tel">"电话号码:"</string>
+    <string name="putao_text_shared_str_url">"网址:"</string>
+    <string name="putao_text_shared_str_addr">"地址:"</string>
+    <string name="putao_text_from_58">数据来自58同城</string>
+    <string name="putao_text_from_elong">数据来自艺龙</string>
+    <string name="putao_text_from_tongcheng">数据来自同程旅游</string>
+
+    <string name="putao_text_failed_express">单号未入库</string>
+    <string name="putao_login_exception_hint">服务器繁忙，轻触页面刷新</string>
+    <string name="putao_text_tip_account">您可以绑定手机号码，绑定后同步订单信息</string>
+    <string name="putao_text_status_unlogin">未登录</string>
+    <string name="putao_text_login_phone_name">手机号码</string>
+    <string name="putao_text_login_cool_cloud_name">酷云账号</string>
+    <string name="putao_account_login">账号登录</string>
+    <string name="putao_disable_kuyun">停用酷云账号</string>
+    <string name="putao_text_tip_account_change">如果您更换了手机号，可重新绑定</string>
+    <string name="putao_text_need_one_toast">至少绑定一个账号</string>
+    <string name="putao_title_show_login_kuyun_dialog">酷云登录</string>
+    <string name="putao_msg_show_login_kuyun_dialog">确认经过酷云账号进行登录</string>
+    <string name="putao_msg_logout_dialog">确认退出登录?</string>
+    <string name="putao_phone_number_bounded">已绑定手机号</string>
+    <string name="putao_set_password">设置密码</string>
+    <!-- add by putao_lhq end -->
+
+    <!-- 话费充值 -->
+    <string name="putao_pay_by_alipay">支付宝</string>
+    <string name="putao_pay_by_wechat">微信</string>
+    <string name="putao_pay_no_name">陌生号码请核对</string>
+
+    <!-- 活动历史 -->
+    <string name="putao_active_history_title">活动历史</string>
+    <string name="putao_active_history_no_data_tip">暂时没有参与活动</string>
+
+
+    <!-- 优惠券 -->
+    <string name="putao_tel_charge_coupon">优惠券</string>
+    <string name="putao_tel_charge_coupon_use">使用优惠券</string>
+    <string name="putao_tel_charge_coupon_not_use">不使用优惠券</string>
+    <string name="putao_tel_charge_coupon_use_money">%s元话费优惠券</string>
+    <string name="putao_user_tel_charge_coupon">%1$s元话费优惠券(最低充值%2$s元)</string>
+    <string name="putao_coupon_tips">原价%1$s元，已抵扣%2$s元</string>
+    <string name="putao_user_tel_charge_coupon_error">优惠券已过期</string>
+    <string name="putao_voucher_list_empty">暂无优惠券可使用</string>
+    <string name="putao_voucher_history_list_empty">暂无历史优惠券</string>
+    <string name="putao_voucher_expire_date">有效期至：%s</string>
+    <string name="putao_voucher_get_activity">参与活动：</string>
+    <string name="putao_voucher_get_date">获得时间：</string>
+    <string name="putao_voucher_use_role">使用说明：</string>
+    <string name="putao_voucher_use_history">使用历史</string>
+    <string name="putao_my_voucher">我的优惠</string>
+    <string name="putao_voucher_detail">卡券详情</string>
+    <string name="putao_voucher_used">已使用</string>
+    <string name="putao_voucher_expired">已过期</string>
+    <string name="putao_voucher_detail_btn_text">立即使用</string>
+    <string name="putao_voucher_lucky">中奖啦！</string>
+    <string name="putao_voucher_pity">未中奖</string>
+    <string name="putao_voucher_good_luck">开奖时间：%s</string>
+    <string name="putao_voucher_luck_open">开奖时间：</string>
+    <string name="putao_voucher_luck_code">抽奖号码：</string>
+    <string name="putao_voucher_voucher_code">&#160;&#160;&#160;&#160;优惠码：</string>
+<string name="putao_voucher_copy">复制优惠码</string>
+<string name="putao_voucher_has_copyed">优惠码已复制</string>
+<string name="putao_voucher_cannot_use">该券不可用，请重新选券</string>
+    <!-- 电影优惠券 -->
+    <string name="putao_cinema_coupon_group">优惠券</string>
+    <string name="putao_cinema_coupon_title">使用优惠券</string>
+    <string name="putao_cinema_coupon_item_no">不使用优惠券</string>
+    <string name="putao_cinema_coupon_item_none">没有可使用的优惠券</string>
+    <string name="putao_cinema_coupon_item">%s元电影优惠券</string>
+    <string name="putao_cinema_coupon_display_txt">使用%s元电影优惠券</string>
+    <string name="putao_cinema_coupon_error">优惠券已过期</string>
+
+    <string name="putao_about_us">关于我们</string>
+    <string name="putao_yellow_page_loading">正在载入...</string>
+    <string name="putao_yellow_page_downloading">正在下载...</string>
+    <string name="putao_bus_form_location_failed_text">定位失败，请输入出发地...</string>
+    <string name="putao_bind_process_msg">正在处理,请稍候...</string>
+    <string name="putao_yellow_page_get_city">获取城市列表中...</string>
+    <string name="putao_yellow_page_error_collect_committing">正在提交中...</string>
+    <string name="putao_yellow_page_locating">定位中...</string>
+    <string name="putao_yellow_page_error_collect_commit_failed">提交失败，请稍后再试...</string>
+    <string name="putao_unknow_name">未知</string>
+    <string name="putao_ciname_phone">联系电话</string>
+
+
+    <!-- 代码中设置的部分常量 start -->
+    <string name="putao_common_province">省</string>
+    <string name="putao_common_autonomous_regions">自治区</string>
+    <string name="putao_common_city">市</string>
+    <string name="putao_common_county">县</string>
+    <string name="putao_common_shenzhen">深圳</string>
+    <string name="putao_common_danhan">单号</string>
+    <string name="putao_common_huafei">话费</string>
+    <string name="putao_common_kuaidi">快递</string>
+    <string name="putao_common_liuliang">流量</string>
+
+    <string name="putao_common_mi">米</string>
+    <string name="putao_common_query_bus">查公交</string>
+
+    <string name="putao_common_dialog">对话框</string>
+
+	<string name="putao_common_chinese_left_kh">（</string>
+    <string name="putao_common_chinese_right_kh">）</string>
+
+    <string name="putao_network_exception">网络连接不可用</string>
+    <string name="putao_server_exception">服务器异常</string>
+    <string name="putao_account_exist_cannot_bind">账户已存在，不能绑定</string>
+    <string name="putao_common_delete">删除</string>
+
+    <!-- 拼音helper
+
+
+    <string name="putao_pyhelper_chongqin">重庆</string>
+    <string name="putao_pyhelper_chongqinpy">chong 重 qing 庆</string>
+    <string name="putao_pyhelper_changzhi">长治</string>
+    <string name="putao_pyhelper_changzhipy">chang 长 zhi 治</string>
+    <string name="putao_pyhelper_changchun">长春</string>
+    <string name="putao_pyhelper_changchunpy">chang 长 chun 春</string>
+    <string name="putao_pyhelper_leshan">乐山</string>
+    <string name="putao_pyhelper_leshanpy">le 乐 shan 山</string>
+    <string name="putao_pyhelper_ledong">乐东</string>
+    <string name="putao_pyhelper_ledongpy">le 乐 dong 东</string>
+     -->
+
+    <!-- 代码中设置的部分常量 end -->
+
+    <!-- 默认搜索配置start -->
+    <string name="putao_search_provider_dianping_group">点评团购</string>
+    <string name="putao_search_provider_putao_movie">葡萄电影</string>
+    <string name="putao_search_provider_putao_cinema">葡萄影院</string>
+    <string name="putao_search_provider_dianping">大众点评</string>
+    <string name="putao_search_provider_gaode">高德</string>
+    <string name="putao_search_provider_sogou">搜狗号码通</string>
+    <string name="putao_search_provider_58city">58同城</string>
+    <string name="putao_search_provider_elong">艺龙酒店</string>
+    <string name="putao_search_provider_tongcheng">同程旅游</string>
+    <string name="putao_search_provider_putao">葡萄服务</string>
+	<string name="putao_search_provider_putao_item">葡萄数据</string>
+	<string name="putao_search_provider_putao_goods">服务精选</string>
+
+    <string name="putao_search_word_recently_hotel">附近的酒店</string>
+    <string name="putao_search_word_hotel">酒店</string>
+    <string name="putao_search_word_banjia">搬家</string>
+    <string name="putao_search_word_baomu">保姆</string>
+
+
+    <string name="putao_search_service_hotel">{\"words\": \"酒店\",\"category\":\"酒店\"}</string>
+    <string name="putao_search_service_banjia">{\"words\": \"搬家\",\"category\":\"banjia\"}</string>
+    <string name="putao_search_service_banjia2">{\"words\": \"搬家\",\"category\":\"搬家\"}</string>
+    <string name="putao_search_service_baomu">{\"words\": \"保姆\",\"category\":\"baomu\"}</string>
+    <string name="putao_search_service_baomu2">{\"words\": \"保姆\",\"category\":\"保姆\"}</string>
+
+    <string name="putao_search_select_set">选座</string>
+
+    <!-- 搜索head配置 -->
+    <string name="putao_head_groupby">团购</string>
+	<string name="putao_head_server">服务入口</string>
+	<string name="putao_head_local_data">电话</string>
+	<string name="putao_head_movie">电影</string>
+	<string name="putao_head_cinema">影院</string>
+	<string name="putao_head_hotel">酒店</string>
+	<string name="putao_head_city58">便民</string>
+	<string name="putao_head_sp">商家</string>   
+	<string name="putao_head_goods">服务精选</string>  
+	
+	<!-- 搜索Tail配置 -->
+	<string name="putao_tail_tip">查看更多%s</string>   
+    
+    <!-- 默认搜索配置end -->
+    
+    <string name="putao_copy_to_clipboard">复制到剪贴板</string>
+    
+    <!-- 提醒中心 -->
+    <string name="putao_message_center">我的提醒</string>
+    <string name="putao_message_center_no">无提醒</string>
+    <string name="putao_message_close">关闭提醒</string>
+    <string name="putao_settings">设置</string>
+    <string name="putao_morning">上午</string>
+    <string name="putao_morning_date">上午 %1$s:%2$s</string>
+    <string name="putao_afternoon">下午</string>
+    <string name="putao_afternoon_date">下午 %1$s:%2$s</string>
+    <string name="putao_middle_date">中午 %1$s:%2$s</string>
+    <string name="putao_yesterday">昨天</string>
+    <string name="putao_order_history">历史订单</string>
+    <string name="putao_notify_type">提醒方式</string>
+    <string name="putao_vibrate_notify">振动提醒</string>
+    <string name="putao_sound_notify">声音提醒</string>
+    <string name="putao_notify_event">提醒事件</string>
+    <string name="putao_flight">航班</string>
+    <string name="putao_train">火车</string>
+    <string name="putao_hotel">酒店</string>
+    <string name="putao_nearby">附近</string>
+    <string name="putao_group_buying">团购</string>
+    <string name="putao_lottery">彩票</string>
+    <string name="putao_express">快递</string>
+    <string name="putao_express_tracking">快递跟踪</string>
+    <string name="putao_express_detail">快递详情</string>
+    <string name="putao_empty">无</string>
+    <string name="putao_lastest_process">最新进度</string>
+    <string name="putao_express_display_all">显示完整物流信息</string>
+    <string name="putao_express_display_simple">显示缩略物流信息</string>    <string name="putao_illegal">违章</string>
+    <string name="putao_texi">打车</string>
+    <string name="putao_traffic_location">地点</string>
+    <string name="putao_time">时间</string>
+    <string name="putao_fine">罚金</string>
+    <string name="putao_traffic_violation_cars_info_title">违章详情</string>
+    <string name="putao_traffic_offence_check_title">查违章</string>
+    <string name="putao_traffic_offence_setting_hint_nocar">自动查询您的交通违章情况，有新违章记录时提醒。设置车辆信息后可开启该提醒。</string>
+    <string name="putao_traffic_offence_setting_hint">有新违章时及时提醒,系统自动查询您的交通违章情况。</string>
+    <string name="putao_traffic_offence_new">您有新的违章记录</string>
+    <string name="putao_traffic_offence_one">有1次违章记录。</string>
+    <string name="putao_traffic_offence_query_all">查询本车所有违章记录</string>
+    <string name="putao_traffic_offence">交通违章</string>
+    <string name="putao_traffic_offence_point">%s分</string>
+    <string name="putao_vehicle_info_setting">设置车辆</string>
+    <string name="putao_confirm_payment">确认支付</string>
+    <string name="putao_payed">已付款</string>
+    <string name="putao_generate_orders">generate_orders</string>
+    <string name="putao_pay_order">订单支付</string>
+    <string name="putao_next_step">下一步</string>
+    <string name="putao_hotelbook_near">附近的酒店</string>
+    <string name="putao_shenzhen">深圳</string>
+    <string name="putao_msg_none">您暂时没有提醒消息</string>
+    <string name="putao_order_none">您暂时没有新订单</string>
+    <string name="putao_order_history_none">您暂时没有历史订单</string>
+    <string name="putao_order_money">订单金额</string>
+    <string name="putao_traffic_setting_hint">根据流量的充值情况，提醒您是否充值成功。</string>
+    <string name="putao_charge_tel_setting_hint">根据话费的充值情况，提醒您是否充值成功。</string>
+    <string name="putao_shui_dian_mei_setting_hint">水电煤。</string>
+	<string name="putao_birthday_notify">好友生日</string>
+	<string name="putao_birthday_detail">生日详情</string>
+    <string name="putao_birthday_title">好友的生日</string>
+    <string name="putao_no_name">未命名</string>
+    <string name="putao_birth_card_our_relationship">我们的关系</string>
+    <string name="putao_birth_card_his_constellation">Ta的星座</string>
+    <string name="putao_last_contact">最近联系</string>
+    <string name="putao_birthday_notify_detail_birth_last_contact">%s前</string>
+    <string name="putao_birthday_notify_detail_birth_last_contact_no">无联系</string>
+    <string name="putao_birthday_notify_detail_group_no">联系人</string>
+    <string name="putao_birthday_card_choose">选择贺卡</string>
+    <string name="putao_happy_birthday">生日快乐!</string>
+    <string name="putao_sdcard_disabled">SD卡不可用，分享功能无法使用</string>
+    <string name="putao_minutes">%s分钟前</string>
+    <string name="putao_hour">%s小时前</string>
+    <string name="putao_day">%s天前</string>
+    <string name="putao_birth_card_call">拨打电话</string>
+    <string name="putao_birth_card_send_card">送生日贺卡</string>
+    <string name="putao_birth_card_birthday">%1$s月%2$s号生日</string>
+    <string name="putao_birth_card_hint">点击卡片送祝福吧</string>
+    <string name="putao_birth_card_update_time">今天HH:mm</string>
+    <string name="putao_birthday_notify_content">今天是%s 的生日</string>
+    <string name="putao_lottery_title_hint">彩票-%1$s</string>
+    <string name="putao_lottery_card_lottery_result">中奖状态</string>
+    <string name="putao_lottery_card_lottery_time">购买时间</string>
+    <string name="putao_lottery_card_lottery_title_index_sign">购入</string>
+    <string name="putao_lottery_card_lottery_jiangyukaijiang">将于开奖</string>
+	
+	<string name="putao_lottery_card_lottery_ticket_hint">彩票购买成功，祝中奖</string>
+    <string name="putao_lottery_card_lottery_not_win_hint">很遗憾本次未中奖，祝下次中大奖！</string>
+	<string name="putao_lottery_card_lottery_win_hint">恭喜您中奖%1$s元</string>    
+    
+    <string name="putao_weather_notify">今日天气</string>
+    <string name="putao_weather_detail">天气详情</string>
+    <string name="putao_weather_notify_rain">今天天气%s，外出记得带伞哦亲</string>
+    <string name="putao_weather_notify_snow">亲,下雪了哦,出门注意带伞,多穿衣服</string>
+    <string name="putao_weather_notify_air">空气指数%s，建议外出戴口罩。</string>
+    <string name="putao_weather_rain">雨</string>
+    <string name="putao_weather_snow">雪</string>
+    <string name="putao_weather_city">%s 天气</string>
+    <string name="putao_birth">生日</string>
+    <string name="putao_weather">天气</string>
+    <string name="putao_back">返程</string>
+    <string name="putao_back_notify">返程回家</string>
+    <string name="putao_back_detail">返程详情</string>
+    <string name="putao_back_home">返程回家</string>
+    <string name="putao_back_notify_duration">预计耗时</string>
+    <string name="putao_back_notify_duration_minutes">%s分钟</string>
+    <string name="putao_back_notify_distance_kilometer">%s公里</string>
+    <string name="putao_back_notify_duration_drive">驾车%s分钟可以到家</string>
+    <string name="putao_back_notify_distance">回家距离</string>
+    <string name="putao_back_my_location">我在这里：</string>
+    <string name="putao_back_my_home">家：</string>
+    <string name="putao_back_navigation">导航</string>
+    <string name="putao_back_texi">打车回家</string>
+    <string name="putao_back_notify_back">可以下班啦，预计到家需要%s分钟。</string>
+    <string name="putao_weather_temperature">温度变化</string>
+    <string name="putao_weather_air">空气指数</string>
+    <string name="putao_weather_status_detail">天气指数</string>
+    <string name="putao_weather_other_day">多天天气</string>
+    <string name="putao_weather_today_weather">今天%s</string>
+    <string name="putao_air_statistics_content2_item1">优</string>
+    <string name="putao_air_statistics_content2_item2">良</string>
+    <string name="putao_air_statistics_content2_item3">轻微污染</string>
+    <string name="putao_air_statistics_content2_item4">轻度污染</string>
+    <string name="putao_air_statistics_content2_item5">中度污染</string>
+    <string name="putao_air_statistics_content2_item6">重度污染</string>
+    <string name="putao_weather_wear">穿衣</string>
+    <string name="putao_weather_wash_car">洗车</string>
+    <string name="putao_weather_trip">旅游</string>
+    <string name="putao_weather_cold">感冒</string>
+    <string name="putao_weather_sport">运动 </string>
+    <string name="putao_weather_sun">紫外线</string>
+    <string name="putao_share_weather_content">亲，今天</string>
+    <string name="putao_share_weather_string">天气</string>
+    <string name="putao_text_shared_str_share_to">分享到</string>
+    <string name="putao_weather_share_to_frends">分享天气给好友</string>
+    <string name="putao_back_setting">下班回家时提醒您返程路线的实时交通情况。\n*该提醒需要GPS定位权限。</string>
+    <string name="putao_birth_setting">提醒您联系人好友的生日，不再错过任何一个重要的生日。\n*该提醒需要开启联系人、通话记录权限。</string>
+    <string name="putao_lottery_setting">根据购彩单号，进行您开奖和中奖情况。</string>
+    <string name="putao_weather_setting">跟踪当日天气空气状况，当有特殊情况时提醒您。</string>
+    <string name="putao_express_status_singed">快递已签收</string>
+    <string name="putao_traffic_offence_title">违章查询</string>
+    <string name="putao_traffic_offence_setting">设置车辆信息</string>
+    <string name="putao_traffic_offence_car_info">车辆信息</string>
+    <string name="putao_weg_title">水电煤缴费</string>
+    <string name="putao_weg_fee_water">缴水费%s元</string>
+    <string name="putao_weg_fee_electric">缴电费%s元</string>
+    <string name="putao_weg_fee_gas">缴燃气费%s元</string>
+    <string name="putao_weg_user_id">用户编号：%s</string>
+    <string name="putao_weg_fee_detail">缴费详情</string>
+    <string name="putao_order_pay">立即支付</string>
+    <string name="putao_order_cancel">订单取消</string>
+    <string name="putao_shui_dian_mei_title">水电煤 - 缴费%s元</string>
+    <string name="putao_charge_query_my">查询本机话费</string>
+    <string name="putao_movie_cinema_list">影院列表</string>
+    
+    <!-- 订单中心 -->
+    <string name="putao_rmb">￥%s</string>
+    
+    <!-- 个人中心Menu -->
+    <string name="putao_menu_title">我的</string>
+    <string name="putao_menu_login">登录</string>
+    <string name="putao_menu_acc_logintip1">点击头像登录</string>
+    <string name="putao_menu_acc_logintip2">登录后可同步您的订单信息</string>
+    <string name="putao_menu_item_txt_myorder">我的订单</string>
+    <string name="putao_menu_item_txt_myactivity">我的活动</string>
+    <string name="putao_menu_item_txt_myvoucher">我的优惠</string>
+    <string name="putao_menu_item_txt_mygroupon">我的团购</string>
+    <string name="putao_menu_item_txt_remindset">提醒设置</string>
+    <string name="putao_menu_item_txt_aboutus">关于我们</string>
+    
+    <string name="putao_assistant_guide_tip1">欢迎使用提醒助手功能</string>
+    <string name="putao_assistant_guide_tip2">提醒助手为您提供一站式生活管理。</string>
+    <string name="putao_assistant_guide_tip3">开启提醒助手功能需要您授予权限，我们不会泄露任何隐私信息，您也可随时关闭该功能。</string>
+    <string name="putao_assistant_guide_tip4">授权GPS定位：为您搜寻附近的吃喝玩乐，提供线路导航。\n授权读取联系人和通话记录：提醒您联系人好友的生日。\n授权读发短信：帮您跟踪话费余额和流量情况。</string>
+    <string name="putao_assistant_guide_tip5">查看提醒样例卡片</string>
+    <string name="putao_assistant_guide_tip6">提醒助手为您提供一站式生活管理</string>
+    <string name="putao_assistant_guide_open">授权开启</string>
+    <string name="putao_assistant_guide_service_hc">火车</string>
+    <string name="putao_assistant_guide_service_jd">酒店</string>
+    <string name="putao_assistant_guide_service_dy">电影</string>
+    <string name="putao_assistant_guide_service_sr">生日</string>
+    <string name="putao_assistant_guide_service_kd">快递</string>
+
+    <!-- 关于我们 -->
+    <string name="putao_aboutus_title">关于我们</string>
+	<string name="putao_aboutus_version">葡萄生活v%s</string>
+	<string name="putao_aboutus_feedback">反馈建议</string>
+	<string name="putao_aboutus_update">检查版本更新</string>
+	<string name="putao_aboutus_lifeapp">关于葡萄生活</string>
+	<string name="putao_aboutus_weixin">微信公众号:葡萄生活</string>
+	<string name="putao_aboutus_qqgroup">QQ群:145395697</string>
+	<string name="putao_aboutus_copyright">深圳市葡萄信息技术有限公司 版权所有</string>
+	
+	 <!-- 关于葡萄生活 -->
+	<string name="putao_putaolife_title">关于葡萄生活</string>
+	<string name="putao_putaolife_content1">感谢您使用葡萄生活助手。</string>
+    <string name="putao_putaolife_content2">我们致力于整合用户生活中常用的O2O服务，让用户不再需要下载一堆的服务应用。并且通过优化，让服务使用体验更好。\n如果您在使用过程中有任何意见或建议，您可以通过电子邮件</string>
+    <string name="putao_putaolife_content3">lzj@putao.cn</string>
+    <string name="putao_putaolife_content4">联系我们</string>
+    <string name="putao_putaolife_content5">欢迎加入葡萄生活助手讨论群，和我们交流互动，还能体验最新版本，群号：145395697。</string>
+    <string name="putao_putaolife_sendemailhint">抱歉，暂无法发送邮件</string>
+    <string name="putao_putaolife_sendemail_head">黄页数据添加或变更申请</string>
+    
+    <string name="putao_home_hot_service">热门服务</string>
+    
+    <!-- 附近的 - 周边美食 -->
+    <string name="putao_nearby_category_food">美食</string>
+    <string name="putao_nearby_title">周边美食</string>
+    <string name="putao_nearby_restaurant_title_hint">%s 周边美食</string>
+    <string name="putao_nearby_restaurant_hint">在%1$s附近，推荐%2$s等餐厅</string>
+    <string name="putao_nearby_restaurant_hint_hotel">酒店</string>
+    <string name="putao_nearby_restaurant_hint_movie">影院</string>
+    <string name="putao_nearby_hotel_notify">酒店周边美食</string>
+    <string name="putao_nearby_cinema_notify">影院周边美食</string>
+    <string name="putao_nearby_restaurant_notify_content_hotel">在您今日入住的酒店附近，找到%s家美食</string>
+    <string name="putao_nearby_restaurant_notify_content_movie">在您今日观影的影院附近，找到%s家美食</string>
+    <string name="putao_nearby_restaurant_config_hint">当您计划入住酒店或观看电影时，为您推荐目的地附近的美食。</string>
+    <string name="putao_nearby_restaurant_more_food_hint">查看更多美食</string>
+    <string name="putao_food_map">美食地图</string>
+    <string name="putao_food_intelligent_sort">排序</string>
+    <string name="putao_food_all_categories">类别</string>
+    
+    
+    
+    <!-- 话费，流量卡片 -->
+    <string name="putao_card_charge_content">充值 - %1$s%2$s元 </string>
+    <string name="putao_card_traffic_charge_content">充值 - %1$s%2$s </string>
+    
+    <!-- 电影卡片 -->
+    <string name="putao_card_movie_status_remind">电影将于今天%1$s开演</string>
+    <string name="putao_card_movie_status_remind_1">电影将于今天30分钟后开演</string>
+    <string name="putao_card_movie_today">今天%1$s</string>
+    <string name="putao_card_movie_content">电影院 - %1$s %2$s张</string>
+    
+    <!-- 电影卡片详情 -->
+    <string name="putao_movie_order_detail_provider">服务提供</string>
+    <string name="putao_movie_order_detail_service_num">客服电话</string>
+    <string name="putao_movie_order_detail_tips">备        注</string>
+    
+    <!-- 版本更新 -->
+    <string name="putao_vupdate_check_no_version">您的版本已是最新</string>
+    <string name="putao_vupdate_check_error">检查更新失败，请稍后重试</string>
+    <string name="putao_vupdate_check_title">发现新版本</string>
+    <string name="putao_vupdate_check_cancel_update">暂不升级</string>
+    <string name="putao_vupdate_check_confirm_update">立刻升级</string>
+    <string name="putao_vupdate_download_title">下载更新中</string>
+    <string name="putao_vupdate_download_progress_txt">正在下载 %1$d%%</string>
+    <string name="putao_vupdate_download_error">软件更新异常，请检查网络或SD卡设置</string>
+    <string name="putao_vupdate_download_sdcard_unavailable">下载失败！当前SD卡不能使用，请检查您的SD卡是否正常挂载再尝试。</string>
+    <string name="putao_local_phone_num">本机</string>
+    <string name="putao_external_storage_unusable">存储卡不可用，请检查您的存储卡！</string>
+    
+    <!-- 订单状态 -->
+    <string name="putao_order_status_hint_cancel">取消</string>
+    <string name="putao_order_status_hint_waitforpayment">待付款</string>
+    <string name="putao_order_status_hint_failed">待付款</string>
+    <string name="putao_order_status_hint_pending">处理中</string>
+    <string name="putao_order_status_hint_success">交易成功</string>
+    <string name="putao_order_status_hint_askforrefund">退款中</string>
+    <string name="putao_order_status_hint_refunded">已退款</string>
+    <string name="putao_order_status_hint_outofdate">交易关闭</string>
+
+    <string name="putao_order_status_hint_askforrefund_alipay">（48小时内退款）</string>
+    <string name="putao_order_status_hint_askforrefund_weixin">（1-5工作日内退款）</string>
+    
+    <string name="putao_empty_view_nodata">无相关数据</string>
+    <string name="putao_empty_view_nonetwork">无网络连接，请确认网络后，轻触页面刷新</string>
+    <string name="putao_empty_view_locate_failed">定位失败, 请检查您是否开启GPS定位</string>
+    <string name="putao_empty_view_delicacy_nodata">无数据,请检查网络和GPS的状态后,轻触页面刷新</string>
+    
+    <!-- 快递扫描 -->
+    
+    <string name="putao_placeHolder">placeHolder</string>
+    <string name="putao_seekbar_add">+</string>
+    <string name="putao_seekbar_minus">-</string>
+    <string name="putao_create">生成</string>
+    <string name="putao_scan_failed">扫描失败</string>
+    <string name="putao_bottom_hint">建议与镜头保持10CM距离，尽量避免逆光和阴影</string>
+    <string name="putao_top_hint">条形码/二维码</string>
+    <string name="putao_msg_camera_framework_bug">抱歉，Android相机出现问题。您可能需要重启设备。</string>
+    <string name="putao_button_ok">确定</string>
+    
+    <!-- 流量红包活动 -->
+    <string name="putao_share_dialog_title">分享给好友</string>
+    <string name="putao_share_dialog_friends">分享给微信好友</string>
+    <string name="putao_share_dialog_moments">分享到朋友圈</string>
+    <string name="putao_errcode_success">发送成功</string>
+	<string name="putao_errcode_cancel">发送取消</string>
+	<string name="putao_errcode_deny">发送被拒绝</string>
+	<string name="putao_errcode_unknown">发送返回</string>
+	
+   <!-- 违章车辆 -->
+   <string name="putao_delete">删除</string>
+   <string name="putao_delete_vehicle">确定要删除车牌%1$s%2$s？</string>
+    <!-- 团购 -->
+	<string name="putao_group_buy_all_categories">全部分类</string>
+	<string name="putao_group_buy_all_region">全部商区</string>
+	<string name="putao_group_buy_smart_sort">智能排序</string>
+	<string name="putao_group_buy_select">筛选</string>
+	<string name="putao_group_buy_sort_default">智能排序</string>
+	<string name="putao_group_buy_sort_near">离我最近</string>
+	<string name="putao_group_buy_sort_most">人气最高</string>
+	<string name="putao_group_buy_sort_best">评价最好</string>
+	<string name="putao_group_buy_sort_newest">最新发布</string>
+	<string name="putao_group_buy_sort_sheapest">价格最低</string>
+	<string name="putao_group_buy_sort_expansive">价格最高</string>
+	<string name="putao_group_buy_all">全部</string>
+	<string name="putao_group_buy_not_reservation">免预约</string>
+	<string name="putao_group_buy_sold">已售</string>
+	<string name="putao_group_buy_trip">旅游</string>
+	<string name="putao_group_buy_search_none">抱歉，没有搜索到商品。轻触页面刷新</string>
+	<string name="putao_group_buy_constant_trip">旅游</string>
+	<string name="putao_group_buy_constant_cinema">院线影院</string>
+	<string name="putao_group_buy_codes">团购券码</string>
+	
+	<string name="putao_group_buy_from_dianping">来自  大众点评</string>
+	<string name="putao_group_buy_near">精选团购</string>
+	<string name="putao_group_buy_country">全国</string>
+	
+	<string name="putao_group_buy_money_unit">%s元</string>
+	<string name="putao_group_buy_distance_unit">%sm</string>
+	<string name="putao_group_buy_buy">购买</string>
+	<string name="putao_group_buy_code">团购券</string>
+	<string name="putao_group_buy_sum">购买数量</string>
+	<string name="putao_group_buy_num">%s 张</string>
+	<string name="putao_group_buy_apply_refund">申请退款</string>
+	<string name="putao_group_buy_food">美食</string>
+	<string name="putao_group_buy_xiaochi">小吃快餐</string>
+	<string name="putao_group_buy_zizhu">自助餐</string>
+	<string name="putao_group_buy_xican">西餐</string>
+	<string name="putao_group_buy_huoguo">火锅</string>
+	<string name="putao_group_buy_wait_pay">待付款</string>
+	<string name="putao_group_buy_unuse">有未消费团购券</string>
+	<string name="putao_group_buy_used">您的团购券已使用</string>
+	<string name="putao_group_buy_refund">您的团购券已退款</string>
+	<string name="putao_group_buy_order_title">团购 - %s</string>
+	<string name="putao_group_buy_order_detail_title">订单信息</string>
+	
+	<string name="putao_cp_info_text_1">来自</string>
+	<string name="putao_cp_info_text_2">等</string>
+	
+	
+	<!-- 附近精选 -->
+	<string name="putao_around_choice">精选</string>
+	<string name="putao_around_get_all">查看更多精选</string>
+	<string name="putao_around_all">全部</string>
+	<string name="putao_cp_provider">由 %s 提供</string>
+	<string name="putao_cp_provider2">%s提供</string>
+	<string name="putao_money_mark">￥%s</string> 
+	<!-- 打车 -->
+	<string name="putao_texi_pay">支付</string>
+	<string name="putao_texi_pay_money">支付金额</string>
+	<string name="putao_texi_pay_hint">请输入车费</string>
+	<string name="putao_texi_pay_cash">现金支付</string>
+	<string name="putao_texi_pay_success">打车支付成功！</string>
+	<string name="putao_texi_pay_failure">打车支付失败！</string>
+	<string name="putao_texi_pay_type">支付方式</string>
+	<string name="putao_texi_pay_car_number">车牌号</string>
+	<string name="putao_texi_pay_driver_name">司机名称</string>
+	<string name="putao_texi_pay_offer">服务提供</string>
+	<string name="putao_texi_pay_offer_kuaidi">快的打车</string>
+	<string name="putao_texi_pay_money_yuan">%s元</string>
+	<string name="putao_texi_pay_type_alipay">支付宝</string>
+	<string name="putao_texi_pay_input_money">请输入要支付的金额</string>
+	<string name="putao_texi_pay_net_error">网络不稳定，或支付金额低于限额</string>
+	<string name="putao_texi_pay_price">%s元</string>
+	<string name="putao_texi_pay_confirm_paycash">你确定使用现金支付吗？</string>
+	<string name="putao_texi_driver_receive">司机已接单</string>
+	<string name="putao_texi_driver_receive_content">%s已接单，将马上和你联系，点击返回打车。</string>
+	<string name="putao_texi_no_driver_receive">无司机接单</string>
+	<string name="putao_texi_no_driver_receive_content">暂无司机接单，试试其他打车方式或继续等待？</string>
+	<string name="putao_texi_pay_no_price">输入金额后查看售价</string>
+	<string name="putao_texi_where_start">您从哪里上车</string>
+	<string name="putao_taxi_where_end">现在您要去哪</string>
+    <string name="putao_taxi_captcha_or_mobile_cannot_be_null">手机号或验证码不能为空</string>
+	
+	
+	<!-- 公共 -->
+	<string name="putao_common_parser_unknown_error">亲，数据加载出错啦！请确认网络连接后轻触屏幕重试！</string>
+	<string name="putao_common_parser_other_ioexception">网络连接超时，请稍后轻触屏幕重试！</string>
+	<string name="putao_common_prompt">提示</string>
+	<string name="putao_common_sure">确定</string>
+	<string name="putao_common_cancel">取消</string>
+	<string name="putao_common_sign_yuan">￥%s</string>
+	
+	<!-- 订单cp -->
+	<string name="putao_cp_name_prefix">服务提供</string>
+	<string name="putao_cp_number_prefix">客服电话</string>
+	<string name="putao_cp_note_prefix">备        注</string>
+	
+	<!-- KFC优惠券 -->
+	<string name="putao_kfcdiscount_title">优惠券</string>
+	<string name="putao_tab_kfcdiscount_title">肯德基</string>
+	<string name="putao_tab_mcddiscount_title">麦当劳</string>
+	<string name="putao_valid_date_to">有效期至%s</string>
+	<string name="putao_nothis_discount">暂无此类优惠券,轻触屏幕可重试</string>
+	<string name="putao_tab_title_kfc">肯德基优惠券</string>
+	<string name="putao_tab_title_mcd">麦当劳优惠券</string>
+	<string name="putao_discount_coupon_desc">无需下载或领取，将此券展示给收银员即可。</string>
+
+    <!-- 个人中心  -->
+    <string name="putao_personal_data_title">个人中心</string>
+    <string name="putao_personal_data_setup_password">为了您的信息安全请点击设置密码</string>
+    <string name="putao_personal_data_icon">头像</string>
+    <string name="putao_personal_data_upload_icon_fail">上传个人头像失败</string>
+    <string name="putao_personal_data_uploading_icon">正在上传头像</string>
+    <string name="putao_personal_data_get_icon_from_gallery">相册获取</string>
+    <string name="putao_personal_data_get_icon_from_camera">拍照获取</string>
+    <string name="putao_personal_data_please_insert_sdcard">请确认已经插入SD卡</string>
+    <string name="putao_personal_data_base_data">基本信息</string>
+    <string name="putao_personal_data_area">地区</string>
+    <string name="putao_personal_data_gender">性别</string>
+    <string name="putao_personal_data_male">男</string>
+    <string name="putao_personal_data_femel">女</string>
+    <string name="putao_personal_data_birthday">生日</string>
+    <string name="putao_personal_data_year">年</string>
+    <string name="putao_personal_data_month">月</string>
+    <string name="putao_personal_data_day">日</string>
+    <string name="putao_personal_data_edit">编辑</string>
+    <string name="putao_personal_data_common_data">常用信息</string>
+    <string name="putao_personal_data_common_data_hint">编辑常用信息，使服务更便捷。</string>
+    <string name="putao_personal_data_personal_data">个人信息</string>
+    <string name="putao_personal_data_name">姓名</string>
+    <string name="putao_personal_data_name_too_short">姓名长度不能少于两个文字</string>
+    <string name="putao_personal_data_phone_number">手机号码</string>
+    <string name="putao_personal_data_qq_number">QQ号码</string>
+    <string name="putao_personal_data_common_address">常用地址</string>
+    <string name="putao_personal_data_car_info">车辆信息</string>
+	<string name="putao_personal_hint_text">填写业务信息,使用多个服务可快速自动填写信息</string>
+	<string name="putao_personal_edit_hint">点击设置</string>
+	<string name="putao_personal_edit_done">完成</string>
+	<string name="putao_personal_add_addr">添加新常用地址</string>
+	<string name="putao_personal_add_car">添加新车辆信息</string>
+	<string name="putao_personal_unset">未设置</string>
+	<string name="putao_personal_home_str">家：</string>
+	<string name="putao_personal_company_str">公司：</string>
+	<string name="putao_personal_home_unset">家：未设置</string>
+	<string name="putao_personal_company_unset">公司：未设置</string>
+	<string name="putao_personal_vehicel_hint">可自动获取违章信息哦！</string>
+    <string name="putao_personal_get_user_info_fail">获取个人信息失败</string>
+    <string name="putao_personal_edit_upload_fail">个人信息上传失败</string>
+    <string name="putao_personal_delete_confirm">确定要删除该记录吗?</string>
+    <string name="putao_personal_max_limit">最多只能保存10条记录哦!</string>
+    
+    <string name="putao_h5_next_btn">商家介绍</string>
+    
+    <string name="putao_voucher_center">优惠中心</string>
+    <string name="putao_voucher_center_back">返回</string>
+    <string name="putao_voucher_center_validdate">有效日期：</string>
+    <string name="putao_voucher_center_originalprice">原价￥</string>
+    <string name="putao_voucher_center_free_getvoucher">0元抢券</string>
+    <string name="putao_voucher_center_has_norest">已领完</string>
+    <string name="putao_voucher_center_has_getted">已领</string>
+    <string name="putao_voucher_center_getting">领取中</string>
+    <string name="putao_voucher_center_lookdetail">查看详情</string>
+    <string name="putao_voucher_center_sharetofriend">分享给好友</string>
+    <string name="putao_voucher_center_novouchertoget">暂无优惠券可抢</string>
+    <string name="putao_voucher_center_recommend">推荐</string>
+    <string name="putao_voucher_center_remen">热门</string>
+    <string name="putao_voucher_center_getavoucher">您抢到一张</string>
+    <string name="putao_voucher_center_noservice">该服务不支持跳转或服务被下线</string>
+    <string name="putao_voucher_center_noreset_tip">你来晚了，券已领完</string>
+    <string name="putao_voucher_center_hasgetted_tip">您已领过该券，看看其他活动吧</string>
+</resources>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/putao_order_list_foot_height"
+    android:orientation="horizontal" >
+
+    <TextView
+        android:id="@+id/payed"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:textColor="@color/putao_text_color_second"
+        android:textSize="@dimen/putao_text_size_d" />
+
+    <TextView
+        android:id="@+id/money"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="0"
+        android:gravity="right|center_vertical"
+        android:textColor="#bdbdbd"
+        android:textSize="@dimen/putao_text_size_d" />
+
+</LinearLayout>

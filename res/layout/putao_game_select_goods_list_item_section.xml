@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/putao_screen_background_light"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/category_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:clickable="false"
+        android:gravity="center_vertical"
+        android:minHeight="24dp"
+        android:paddingLeft="@dimen/putao_listview_item_leftrightpadding"
+        android:paddingRight="@dimen/putao_listview_item_leftrightpadding"
+        android:textColor="@color/putao_tag_group_text"
+        android:textSize="@dimen/putao_tag_group_text_size" />
+
+    <View 
+        android:id="@+id/divider"
+        style="@style/putao_DividerStyle_Horizontal"/>
+    
+<!--     <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/putao_divider_line_size"
+        android:background="@drawable/putao_line_horizontal" />
+ -->
+</LinearLayout>

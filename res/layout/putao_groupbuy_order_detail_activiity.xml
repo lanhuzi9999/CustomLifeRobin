@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingBottom="8dp" >
+
+        <LinearLayout
+            android:id="@+id/mcontainer"
+            android:layout_marginTop="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="vertical" >
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/putao_view_order_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/putao_order_list_head_margin"
+            android:layout_marginRight="@dimen/putao_order_list_head_margin"
+            android:layout_marginTop="@dimen/putao_order_detail_margin_top"
+            android:background="@drawable/putao_bg_list_card"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/putao_moviedetail_ordercontent_topbottompadding"
+            android:paddingTop="@dimen/putao_moviedetail_ordercontent_topbottompadding" >
+
+            <!-- <LinearLayout
+                android:id="@+id/putao_ll_codes"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/putao_moviedetail_ordercontent_leftrightpadding" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/putao_moviedetail_ordercontent_textleftmarginright"
+                    android:text="@string/putao_group_buy_codes"
+                    android:textSize="@dimen/putao_text_second_size" />
+
+                <TextView
+                    android:id="@+id/putao_tv_codes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/putao_text_second_size" />
+            </LinearLayout> -->
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/putao_moviedetail_ordercontent_leftrightpadding" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/putao_moviedetail_ordercontent_textleftmarginright"
+                    android:text="@string/putao_hotelorderdetail_orderstatus"
+                    android:textSize="@dimen/putao_text_second_size" />
+
+                <TextView
+                    android:id="@+id/putao_tv_charge_status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/putao_text_second_size" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/putao_moviedetail_ordercontent_leftrightpadding" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/putao_moviedetail_ordercontent_textleftmarginright"
+                    android:text="@string/putao_game_recharge_charge_price"
+                    android:textSize="@dimen/putao_text_second_size" />
+
+                <TextView
+                    android:id="@+id/putao_tv_charge_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/putao_text_second_size" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/putao_moviedetail_ordercontent_leftrightpadding" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/putao_moviedetail_ordercontent_textleftmarginright"
+                    android:text="@string/putao_game_recharge_orderno"
+                    android:textSize="@dimen/putao_text_second_size" />
+
+                <TextView
+                    android:id="@+id/putao_tv_charge_orderno"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/putao_text_second_size" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/putao_moviedetail_ordercontent_leftrightpadding" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/putao_moviedetail_ordercontent_textleftmarginright"
+                    android:text="@string/putao_game_recharge_create_time"
+                    android:textSize="@dimen/putao_text_second_size" />
+
+                <TextView
+                    android:id="@+id/putao_tv_charge_create_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/putao_text_second_size" />
+            </LinearLayout>
+
+            <View style="@style/putao_DividerStyle_Horizontal_Bottom" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:layout_marginTop="12dp"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/putao_moviedetail_ordercontent_leftrightpadding" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="@dimen/putao_moviedetail_ordercontent_textleftmarginright"
+                    android:text="@string/putao_game_recharge_service_name"
+                    android:textSize="@dimen/putao_text_second_size" />
+
+                <TextView
+                    android:id="@+id/putao_tv_service_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="middle"
+                    android:maxEms="9"
+                    android:singleLine="true"
+                    android:textSize="@dimen/putao_text_second_size" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/putao_moviedetail_ordercontent_leftrightpadding" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="@dimen/putao_moviedetail_ordercontent_textleftmarginright"
+                    android:text="@string/putao_game_recharge_service_phone"
+                    android:textSize="@dimen/putao_text_second_size" />
+
+                <TextView
+                    android:id="@+id/putao_tv_service_phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="middle"
+                    android:maxEms="9"
+                    android:singleLine="true"
+                    android:textColor="@color/putao_phone_num_text_color"
+                    android:textSize="@dimen/putao_text_second_size" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/putao_func_container"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

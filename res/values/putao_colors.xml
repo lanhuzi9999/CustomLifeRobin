@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 主题色,头颜色 -->
+    <color name="putao_theme">#25A159</color>
+    
+    <!-- 通用样式 start -->
+    <color name="putao_text_color_primary">#333333</color><!-- 主要文字颜色  黑色的-->
+    <color name="putao_text_color_second">#7b7b7b</color><!--  辅助文字颜色  深灰色的-->
+    <color name="putao_text_color_secondary">#bdbdbd</color><!-- 次要文字颜色 浅灰色的-->
+    <color name="putao_normal_red">#ff6653</color><!-- 通用的红色 -->
+    <color name="putao_yellow_page_line_color">#e0e0e0</color><!-- 黄页数据分割线背景色 -->
+    <color name="putao_screen_background_light">#f5f5f5</color><!-- 背景色 -->
+    <!-- 通用样式 end -->
+    
+    <!-- 主界面颜色 -->
+    <color name="putao_tab_text_color_default">#7b7b7b</color>
+    <color name="putao_tab_text_color_selected">@color/putao_theme</color>
+    <color name="putao_bg_transparent_black_10">#19000000</color>
+    <color name="putao_home_hint_text_color">#acacac</color>
+    <color name="putao_home_main_text_color">#636363</color>
+    <color name="putao_home_sub_text_color">#b1b1b1</color>
+    <color name="putao_home_search_text_color_hint">#9c9c9c</color>
+    
+    <color name="putao_birthday_card_bg">@color/putao_recommend_word_divider</color>
+    <color name="putao_pt_blue">#0ab3f9</color>
+    <color name="putao_pt_light_gray">#efefef</color>
+    <color name="putao_pt_line_light_gray">#d1d1d1</color>
+    <color name="putao_pt_deep_gray">#787878</color>
+    <color name="putao_pt_gray">#bbbbbb</color>
+    <color name="putao_white">#ffffff</color>
+    <color name="putao_white_alpha">#eeffffff</color>
+    <color name="putao_transparent">#00000000</color>
+    <color name="putao_transparent_alpha">#9000</color>
+    <color name="putao_translucent">#7D000000</color>
+    <color name="putao_black">#000000</color>
+    <color name="putao_pt_heavy_black">#333333</color>
+    <color name="putao_red">#FF0000</color>
+    <color name="putao_light_black">#ffaaaaaa</color>
+    <color name="putao_text_green">@color/putao_theme</color>
+    <color name="putao_separator_green">#1ba971</color>
+    <!-- 普通列表焦点色 -->
+    <color name="putao_list_selector">#e0e0e0</color><!-- modify for COOLUI6.0 -->
+    <color name="putao_list_item_expand_default">#eeeeee</color>
+    <color name="putao_transparent_background">#01ffffff</color>
+    <color name="putao_yp_home_listview_textcolor">#525252</color>
+
+    <!-- 生日提醒 -->
+    <color name="putao_birthday_tag_green">#42b211</color>
+    
+    <color name="putao_app_bg">#ff000000</color>
+    
+    <!-- 黄页数据来源背景色 -->
+    <color name="putao_bg_yellow_page_result">#99000000</color>
+    
+    <!-- 快递色值 -->
+    <color name="putao_contents_text">#ff000000</color>
+    <color name="putao_possible_result_points">#c0ffff00</color>
+    <color name="putao_result_view">#b0000000</color>
+    <color name="putao_viewfinder_frame">#ff000000</color>
+    <color name="putao_viewfinder_laser">#ffff0000</color>
+    <color name="putao_viewfinder_mask">#60000000</color>
+
+    <!-- 快递色值 END -->
+    <color name="putao_express_result_blod">#333333</color>
+    <color name="putao_express_result_no_data_info">#a8a8a8</color>
+    <color name="putao_express_result_info_date">#7b7b7b</color>
+    
+    <!-- 对话框色值 -->
+    <color name="putao_dialog_btn_nomalcolor">#0d0d0d</color>
+    <color name="putao_dialog_btn_pressedcolor">#0d0d0d</color>
+    <color name="putao_dialog_title">#0d0d0d</color>
+    <color name="putao_dialog_content">#0d0d0d</color>
+    <color name="putao_dialog_unchecked_text">#cbcbcb</color>
+    
+    <!-- coolpad -->
+    <color name="putao_home_gridview_item_color">#6f6f6f</color>
+    
+    <color name="putao_h5page_progress_bg">#f8c017</color>
+    <color name="putao_light_green">#32ac03</color>
+    
+    <!-- 充值优惠券颜色 -->
+    <color name="putao_coupon_color">#ff9000</color>
+  
+    <!-- putao lhq add -->
+    <!-- 窗口背景顏色 -->
+    <!-- 推荐热词分割线 -->
+    <color name="putao_recommend_word_divider">#f2f2f2</color>
+    <!-- 分组标签文字颜色 -->
+    <color name="putao_tag_group_text">#a0a0a0</color>
+    <!-- 分组标签颜色 -->
+    <color name="putao_tag_group_divider_color">#e0e0e0</color>
+    <!-- 无数据界面提示字体颜色 -->
+    <color name="putao_empty_tip_text">#a8a8a8</color>
+    <!-- 输入框文字颜色 -->
+    <color name="putao_edit_text">#0d0d0d</color>
+    <!-- 输入框预设文字颜色 -->
+    <color name="putao_edit_text_hint_color">#4d0d0d0d</color>
+    <!-- 绿色分割线 -->
+    <!-- 字体颜色 -->
+    
+    <color name="putao_text_color_second_alpha">#4d7b7b7b</color><!--  辅助文字颜色带30%透明-->
+    <color name="putao_text_color_indicative">#b1b1b1</color><!--  提示性文字颜色-->
+    <color name="putao_text_color_disable">#4d0d0d0d</color><!-- 失效 -->
+    <color name="putao_text_color_importance">#ff6655</color><!-- 重要 -->
+    <color name="putao_text_color_green">#00a54b</color><!-- 绿色提示文字 -->
+    <!-- 酒店入住日期选中颜色-->
+    <color name="putao_calendar_selected_color">#00a54b</color>
+ 	<!-- 酒店详情页透明背景条 -->
+    <color name="putao_hotel_img_alpha_background">#7F000000</color>
+    <color name="putao_hotel_img_default_bg">#cccccc</color>
+    <!-- 滑动页面 -->
+    
+    <color name="putao_common_white">#FFFFFF</color>
+    <!-- For suggestions -->
+    <color name="putao_tab_indicator_text_selected">#ffffff</color>
+    <color name="putao_tab_indicator_text_unselected">#afffffff</color>
+    <!-- <color name="putao_tab_indicator_text_unselected">#aac5d7</color> -->
+    <color name="putao_page_viewer_margin_color">#ffffff</color>
+    
+    <!-- 格瓦拉电影 -->
+    <color name="putao_gewala_tag_bar_ontouch">#0A000000</color>
+    
+    <color name="putao_bg_grey">#eaeaea</color>
+    
+    <!-- train -->
+    <color name="putao_dark_white">#616161</color>
+    <!-- 订单列表相关颜色 -->
+    <color name="putao_order_list_title_color">#616161</color>
+    <color name="putao_order_list_content_color">#0d0d0d</color>
+    <color name="putao_order_list_subcontent_color">#66000000</color>
+    <color name="putao_order_list_white_Shadow_color">#8effffff</color>
+    <color name="putao_order_content_title_color">#80ffffff</color>
+    <color name="putao_order_content_color">#ffffff</color>
+    
+    <!-- 查违章 -->
+    <color name="putao_traffic_offence_fine_color">#ff6e40</color>
+    <color name="putao_traffic_offence_query_color">#1ca972</color>
+    
+    <!-- 字体颜色 -->
+    <color name="putao_text_color_important">#ff6653</color>
+    <color name="putao_text_color_red">#ff6e40</color>
+    
+    <!-- progress dialog 字体颜色 -->
+    <color name="putao_progress_dialog_text_grey">#ababab</color>
+    <color name="putao_progress_dialog_text_white">#ffffff</color>
+    
+    <!-- 所有可拨打电话的颜色 -->
+    <color name="putao_phone_num_text_color">#00b0ff</color>
+    
+    <!-- 快递扫描 -->
+    
+    <color name="putao_exp_possible_result_points">#c0ffbd21</color> <!-- Android standard ICS color -->
+    <color name="putao_exp_result_view">#b0000000</color>
+    <color name="putao_exp_viewfinder_mask">#00000000</color>
+    <color name="putao_exp_capture_text_cover_bg">#99535353</color>
+    
+    <!-- 出租车 等待应答 -->
+    <color name="putao_taxi_waitreply_taxinum">#e0974c</color>
+    <color name="putao_taxi_cp_selected">#e9f5ed</color>
+    <color name="putao_taxi_end_text">#e0947c</color>
+    
+    <!-- 搜索 -->
+    <color name="putao_search_more">#7892ad</color>
+    
+    <!-- 常用色值 -->
+    
+    <!-- 分类 -->
+    <color name="putao_category_content">#9c9c9c</color>
+    
+   <!--  查违章 -->
+   <color name="putao_traffic_offence_car_bg_1">#50a6e8</color>
+   <color name="putao_traffic_offence_car_bg_2">#4ec58d</color>
+   <color name="putao_traffic_offence_car_bg_3">#7c89cf</color>
+   <color name="putao_traffic_offence_car_bg_4">#9575cd</color>
+   <color name="putao_navi_selected">#22a66d</color>
+   
+   <!-- 反馈 -->
+   <color name="putao_feedback_content">#0d0d0d</color>
+   
+	<!-- 活动 -->
+   <color name="putao_operate_select_backbround">#20000000</color>
+   
+   <!-- 搜索服务精选 -->
+   <color name="putao_search_goods_price_num">#fb6900</color>
+   
+    <!-- 优惠券dialog -->
+   <color name="putao_voucher_dialog_userimmediatly">#a86d11</color>
+   <color name="putao_voucher_dialog_lookdetail">#fdd865</color>
+</resources>

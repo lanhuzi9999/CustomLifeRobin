@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+    android:gravity="center_vertical">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="160dp"
+        android:layout_weight="1"
+        android:layout_marginLeft="@dimen/putao_order_list_head_margin"
+        android:background="@drawable/putao_bg_card_jipiao"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/putao_order_list_head_height"
+            android:layout_marginLeft="@dimen/putao_order_list_head_margin"
+            android:layout_marginRight="@dimen/putao_order_list_head_margin" 
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:id="@+id/logo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical" />
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:textColor="@color/putao_white"
+                android:layout_marginLeft="2dp"
+                android:textSize="@dimen/putao_text_size_d" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/putao_order_list_content_height" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/putao_order_list_head_margin"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/telephone_subject"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/putao_order_list_content_color"
+                    android:textSize="@dimen/putao_text_size_a" />
+
+                <TextView
+                    android:id="@+id/telephone_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/putao_order_list_subcontent_color"
+                    android:textSize="@dimen/putao_text_size_d" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/operator_logo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/putao_order_list_head_margin" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/putao_order_list_foot_height"
+            android:layout_marginLeft="@dimen/putao_order_list_head_margin"
+            android:layout_marginRight="@dimen/putao_order_list_head_margin" >
+
+            <TextView
+                android:id="@+id/payed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:textColor="@color/putao_order_list_title_color"
+                android:textSize="@dimen/putao_text_size_d" />
+
+            <TextView
+                android:id="@+id/money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:textColor="@color/putao_order_list_title_color"
+                android:textSize="@dimen/putao_text_size_d" />
+        </RelativeLayout>
+    </LinearLayout>
+     <ImageView
+        android:id="@+id/point"
+        android:layout_width="@dimen/putao_activity_horizontal_margin"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:visibility="invisible"
+        android:src="@drawable/putao_icon_prompt_s" />
+
+</LinearLayout>

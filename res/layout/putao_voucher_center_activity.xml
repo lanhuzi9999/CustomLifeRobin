@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <so.contacts.hub.widget.CustomListView
+        android:id="@+id/putao_vouchercenter_list"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        android:footerDividersEnabled="false"
+        android:divider="@color/putao_yellow_page_line_color"
+        android:dividerHeight="@dimen/putao_divider_line_size"
+        android:listSelector="@android:color/transparent" />
+
+    <include
+        android:id="@+id/network_exception_layout"
+        layout="@layout/putao_network_not_login_exception_layout"
+        android:visibility="gone" />
+
+</LinearLayout>

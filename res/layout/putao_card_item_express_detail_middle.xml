@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <RelativeLayout
+        android:layout_width="48dp"
+        android:layout_height="match_parent" >
+
+        <View
+            android:id="@+id/line_top"
+            android:layout_width="1.33dp"
+            android:layout_height="23dp"
+            android:layout_centerHorizontal="true"
+            android:background="#ffbdbdbd" />
+        
+        <ImageView
+            android:id="@+id/point"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/line_top"
+            android:src="@drawable/putao_card_kuaidi_ty" />
+
+        <View
+            android:id="@+id/line_bottom"
+            android:layout_width="1.33dp"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/point"
+            android:background="#ffbdbdbd" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp" >
+
+        <TextView
+            android:id="@+id/detail_text"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:lineSpacingExtra="2dp"
+            android:autoLink="phone"
+            android:textSize="12sp"
+            android:text="正在运送途中,请您准备清瘦派件人红来了撒带回去我狂汗我e1312321" />
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+        	android:layout_marginRight="16dp"
+        	android:layout_gravity="right"
+        	android:gravity="right"
+            android:lineSpacingExtra="2dp"
+            android:textSize="12sp"
+            android:text="11/09 12:23" />
+    </LinearLayout>
+
+</LinearLayout>

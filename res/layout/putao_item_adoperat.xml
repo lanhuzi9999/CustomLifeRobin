@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <so.contacts.hub.widget.AdOperatLayout
+     xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@id/ad_view_layout_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone" >
+    </so.contacts.hub.widget.AdOperatLayout>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="@dimen/putao_activity_horizontal_margin"
+    android:paddingRight="12dp" 
+    >
+
+    <ImageView
+        android:id="@+id/movie_poster"
+        android:layout_width="@dimen/putao_orderitem_movie_logowidth"
+        android:layout_height="@dimen/putao_orderitem_movie_logoheight"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="15dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/putao_bg_pic_dianying" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/movie_poster"
+        android:paddingBottom="@dimen/putao_activity_horizontal_margin"
+        android:paddingTop="@dimen/putao_activity_horizontal_margin" >
+
+        <TextView
+            android:id="@+id/movie_name"
+            style="@style/putao_TextAppearance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxWidth="135dp"
+            android:singleLine="true" />
+
+        <TextView
+            android:id="@+id/movie_star"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/movie_name"
+            android:textColor="@color/putao_normal_red"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/movie_property"
+            style="@style/putao_text_in_rect"
+            android:layout_marginLeft="3dp"
+            android:layout_marginTop="2dp"
+            android:layout_toRightOf="@id/movie_name" />
+
+        <TextView
+            android:id="@+id/movie_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/movie_name"
+            android:layout_below="@+id/movie_name"
+            android:layout_marginTop="3dp"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textColor="@color/putao_text_color_primary"
+            android:textSize="@dimen/putao_text_tertiary_size" />
+
+        <TextView
+            android:id="@+id/movie_director"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/movie_name"
+            android:layout_below="@+id/movie_description"
+            android:layout_marginTop="3dp"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textColor="@color/putao_text_color_second"
+            android:textSize="@dimen/putao_text_tertiary_size" />
+
+        <TextView
+            android:id="@+id/movie_actor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/movie_name"
+            android:layout_below="@+id/movie_director"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="3dp"
+            android:ellipsize="end"
+            android:maxWidth="160dp"
+            android:singleLine="true"
+            android:textColor="@color/putao_text_color_second"
+            android:textSize="@dimen/putao_text_tertiary_size" />
+
+        <TextView
+            android:id="@+id/putao_img_goupiao"
+            android:layout_width="56dp"
+            android:layout_height="32dp"
+            android:layout_alignBottom="@+id/movie_actor"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="3dp"
+            android:background="@drawable/putao_btn_list_green"
+            android:gravity="center"
+            android:text="@string/putao_search_select_set"
+            android:textColor="@color/putao_btn_text_color"
+            android:textSize="@dimen/putao_btn_text_size" />
+    </RelativeLayout>
+
+</RelativeLayout>

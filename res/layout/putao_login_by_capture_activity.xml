@@ -1,0 +1,158 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/putao_status_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:background="@color/putao_white"
+        android:gravity="center_vertical"
+        android:visibility="gone" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/putao_login_verify_mobile"
+            android:textColor="@color/putao_text_green"
+            android:textSize="@dimen/putao_text_second_size" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:src="@drawable/putao_icon_taxi_show" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/putao_login_modify_password"
+            android:textColor="@color/putao_text_color_second"
+            android:textSize="@dimen/putao_text_second_size" />
+    </LinearLayout>
+
+    <View
+        style="@style/putao_DividerStyle_Horizontal_Bottom"
+        android:layout_marginTop="16dp" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="54dp" >
+
+        <TextView
+            android:id="@+id/putao_username_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@color/putao_white"
+            android:gravity="center_vertical"
+            android:paddingLeft="16dp"
+            android:text="@string/putao_hotelorder_comemobile"
+            android:textColor="@color/putao_text_color_secondary" />
+
+        <EditText
+            android:id="@+id/putao_username_et"
+            style="@style/putaoLoginEdittextStyle"
+            android:layout_toRightOf="@id/putao_username_tv"
+            android:digits="1234567890"
+            android:inputType="number"
+            android:maxLength="13"
+            android:paddingLeft="10dp"
+            android:singleLine="true" />
+
+        <Button
+            android:id="@+id/putao_get_captchar_bt"
+            android:layout_width="85dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="16dp"
+            android:text="@string/putao_login_get_captchar" />
+
+        <ImageView
+            android:id="@+id/putao_clear_username_iv"
+            android:layout_width="40dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@id/putao_get_captchar_bt"
+            android:scaleType="center"
+            android:src="@drawable/putao_icon_list_cancel"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <View style="@style/putao_DividerStyle_Horizontal_Bottom" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="54dp" >
+
+        <TextView
+            android:id="@+id/putao_password_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@color/putao_white"
+            android:gravity="center_vertical"
+            android:paddingLeft="16dp"
+            android:text="@string/putao_login_captchar_hint"
+            android:textColor="@color/putao_text_color_secondary" />
+
+        <EditText
+            android:id="@+id/putao_password_et"
+            style="@style/putaoLoginEdittextStyle"
+            android:layout_toRightOf="@id/putao_password_tv"
+            android:inputType="number"
+            android:paddingLeft="10dp" />
+
+        <ImageView
+            android:id="@+id/putao_clear_password_iv"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="16dp"
+            android:scaleType="center"
+            android:src="@drawable/putao_icon_list_cancel"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <View style="@style/putao_DividerStyle_Horizontal_Bottom" />
+
+    <Button
+        android:id="@+id/putao_confirm_bt"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:text="@string/putao_login" />
+
+    <RelativeLayout
+        android:id="@+id/putao_next"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/putao_set_password_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:text="@string/putao_login_set_password"
+            android:textColor="@color/putao_text_green"
+            android:textSize="@dimen/putao_text_tertiary_size"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/putao_login_password_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="16dp"
+            android:text="@string/putao_login_by_password"
+            android:textColor="@color/putao_text_green"
+            android:textSize="@dimen/putao_text_tertiary_size" />
+    </RelativeLayout>
+
+</LinearLayout>

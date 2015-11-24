@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#000" >
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/putao_view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <TextView
+        android:id="@+id/putao_indicator_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="24dp"
+        android:layout_marginRight="@dimen/putao_activity_horizontal_margin"
+        android:textColor="@color/putao_white"
+        android:textSize="@dimen/putao_text_primary_size" />
+
+    <TextView
+        android:id="@+id/putao_desc_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/putao_indicator_txt"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="@dimen/putao_activity_horizontal_margin"
+        android:layout_toLeftOf="@+id/putao_indicator_txt"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:textColor="@color/putao_white"
+        android:textSize="@dimen/putao_text_tertiary_size" />
+
+</RelativeLayout>

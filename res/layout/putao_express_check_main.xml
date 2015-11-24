@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        
+        <View 
+            android:id="@+id/divider2"
+            android:layout_marginTop="10dp"
+            style="@style/putao_DividerStyle_Horizontal"/>
+        
+<!--         <View
+            android:id="@+id/divider2"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/putao_divider_line_size"
+            android:layout_marginTop="10dp"
+            android:background="@color/putao_yellow_page_line_color" /> -->
+
+        <RelativeLayout
+            android:id="@+id/exp_number_parent_layout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/putao_edit_layout_item_height"
+            android:layout_below="@+id/divider2"
+            android:addStatesFromChildren="true"
+            android:background="@color/putao_white"
+            android:orientation="horizontal" >
+
+            <EditText
+                android:id="@+id/express_delivery_num_edittext"
+                style="@style/putao_EditStyle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/scan_btn"
+                android:background="@color/putao_white"
+                android:digits="1234567890ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"
+                android:hint="@string/putao_express_select_hint"
+                android:paddingLeft="16dp"
+                android:paddingRight="30dp"
+                android:singleLine="true" />
+
+            <ImageButton
+                android:id="@+id/scan_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/putao_edit_layout_item_height"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="16dp"
+                android:background="@null"
+                android:contentDescription="@string/putao_app_name"
+                android:scaleType="center"
+                android:src="@drawable/putao_icon_logo_saomiao" />
+
+            <ImageView
+                android:id="@+id/clear_number_content_btn"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_alignRight="@+id/express_delivery_num_edittext"
+                android:layout_centerVertical="true"
+                android:layout_gravity="right|center_vertical"
+                android:background="@drawable/putao_icon_list_cancel"
+                android:contentDescription="@string/putao_about_us"
+                android:scaleType="fitXY"
+                android:visibility="gone" />
+        </RelativeLayout>
+        
+        <View 
+            android:id="@+id/divider"
+            android:layout_below="@+id/exp_number_parent_layout"
+            android:layout_marginTop="10dp"
+            style="@style/putao_DividerStyle_Horizontal"/>        
+
+<!--         <View
+            android:id="@+id/divider"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/putao_divider_line_size"
+            android:layout_below="@+id/exp_number_parent_layout"
+            android:background="@color/putao_yellow_page_line_color" />
+ -->
+        <Button
+            android:id="@+id/express_select_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/divider"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="@dimen/putao_express_item_margin_top"
+            android:text="@string/putao_express_select" />
+
+        <Button
+            android:id="@+id/express_select_history_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/express_select_btn"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="@dimen/putao_express_item_margin_top"
+            android:background="@drawable/putao_express_history_btn_bg"
+            android:text="@string/putao_express_select_history_btn_text"
+            android:textColor="@color/putao_text_color_green" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/putao_listview_item_height"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone" >
+
+        <View
+            android:id="@+id/v_line"
+            android:layout_width="fill_parent"
+            android:layout_height="2dip"
+            android:layout_centerVertical="true" />
+
+        <ImageView
+            android:id="@+id/express_source_comany_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/v_line"
+            android:layout_centerHorizontal="true"
+            android:contentDescription="@string/putao_app_name"
+            android:src="@drawable/putao_icon_cooperate_kdzs" />
+
+        <TextView
+            android:id="@+id/express_source_comany_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/v_line"
+            android:layout_centerHorizontal="true"
+            android:text="@string/putao_express_source_company_text"
+            android:textColor="@color/putao_express_result_info_date"
+            android:textSize="@dimen/putao_express_source_company_text_size" />
+    </RelativeLayout>
+
+    <!-- modified by ffh 把CP展示放在副标题上 -->
+    <!-- <TextView android:id="@+id/cp_name"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/putao_express_result_footer_view_height"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:textColor="@color/putao_express_result_info_date"
+        android:textSize="@dimen/putao_express_source_company_text_size" /> -->
+<!--         android:drawableLeft="@drawable/putao_icon_cooperate_kdzs" -->
+
+    <RelativeLayout
+        android:id="@+id/clipboard_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/putao_yp_detail_move_min"
+        android:layout_alignParentBottom="true"
+        android:background="@color/putao_white"
+        android:paddingLeft="@dimen/putao_express_home_bottom_padding"
+        android:paddingRight="@dimen/putao_express_home_bottom_padding"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/putao_express_home_tips"
+                android:textColor="@color/putao_express_result_info_date"
+                android:textSize="@dimen/putao_express_home_bottom_textsize" />
+
+            <TextView
+                android:id="@+id/clipboard_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/putao_express_home_tips"
+                android:textColor="@color/putao_express_result_info_date"
+                android:textSize="@dimen/putao_express_home_bottom_textsize" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/express_quick_search_btn"
+            android:layout_width="@dimen/putao_express_quick_search_with"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="@dimen/putao_express_item_margin_top"
+            android:text="@string/putao_express_select" />
+    </RelativeLayout>
+
+</RelativeLayout>

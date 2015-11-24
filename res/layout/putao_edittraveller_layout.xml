@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/head_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/putao_app_bg" >
+
+        <include layout="@layout/putao_header_view" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/name_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/putao_express_item_height"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/putao_bg_yellow_item_single"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp" >
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical|left"
+                android:text="@string/putao_traintriket_username"
+                android:textColor="@color/putao_express_result_no_data_info"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:background="@color/putao_transparent"
+                android:gravity="center_vertical"
+                android:hint="@string/putao_traintriket_hint"
+                android:imeOptions="actionSearch"
+                android:singleLine="true"
+                android:textColorHint="@color/putao_pt_deep_gray"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/phone_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/putao_express_item_height"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/putao_bg_yellow_item_single"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp" >
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical|left"
+                android:text="@string/putao_traintriket_phone"
+                android:textColor="@color/putao_express_result_no_data_info"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:background="@color/putao_transparent"
+                android:gravity="center_vertical"
+                android:hint="@string/putao_traintriket_hint"
+                android:imeOptions="actionSearch"
+                android:singleLine="true"
+                android:textColorHint="@color/putao_pt_deep_gray"
+                android:textSize="16sp" 
+                android:inputType="number"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/id_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/putao_express_item_height"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/putao_bg_yellow_item_single"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp" >
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical|left"
+                android:text="@string/putao_traintriket_idtype"
+                android:textColor="@color/putao_express_result_no_data_info"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:id="@+id/idtype"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:background="@color/putao_transparent"
+                android:gravity="center_vertical"
+                android:text="@string/putao_traintriket_hint_select"
+                android:imeOptions="actionSearch"
+                android:singleLine="true"
+                android:textColorHint="@color/putao_pt_deep_gray"
+                android:textSize="16sp" />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/putao_icon_arrow" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/birthday_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/putao_express_item_height"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/putao_bg_yellow_item_single"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp" >
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical|left"
+                android:text="@string/putao_traintriket_birthday"
+                android:textColor="@color/putao_express_result_no_data_info"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/birthday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:background="@color/putao_transparent"
+                android:gravity="center_vertical"
+                android:hint="@string/putao_traintriket_hint"
+                android:imeOptions="actionSearch"
+                android:singleLine="true"
+                android:textColorHint="@color/putao_pt_deep_gray"
+                android:textSize="16sp"
+                android:inputType="number" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/id_number_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/putao_express_item_height"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/putao_bg_yellow_item_single"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp" >
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical|left"
+                android:text="@string/putao_traintriket_id"
+                android:textColor="@color/putao_express_result_no_data_info"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/idnumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:background="@color/putao_transparent"
+                android:gravity="center_vertical"
+                android:hint="@string/putao_traintriket_hint"
+                android:imeOptions="actionSearch"
+                android:singleLine="true"
+                android:textColorHint="@color/putao_pt_deep_gray"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/bt_traveller_commit"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/putao_express_item_height"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/putao_click_btn_bg"
+        android:text="提交"
+        android:textColor="@color/putao_white"
+        android:textSize="16sp" >
+    </Button>
+
+    <Button
+        android:id="@+id/bt_traveller_delete"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/putao_express_item_height"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="15dp"
+        android:background="@color/putao_red"
+        android:text="删除地址"
+        android:textColor="@color/putao_white"
+        android:textSize="16sp" >
+    </Button>
+
+</LinearLayout>

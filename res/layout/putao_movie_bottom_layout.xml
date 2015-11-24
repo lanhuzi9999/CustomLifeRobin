@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="16dp"
+    android:layout_marginTop="60dp"
+    android:gravity="center"
+    android:orientation="horizontal" >
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/putao_movie_bottom_icon_gwl" 
+        android:visibility="gone"
+        />
+
+    <TextView android:id="@+id/cp_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="7dp"
+        android:text="@string/putao_movie_bottom_tip"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textSize="@dimen/putao_text_size_e" />
+
+</LinearLayout>

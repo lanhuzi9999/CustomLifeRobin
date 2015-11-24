@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/putao_voucher_dialog_width"
+    android:layout_height="@dimen/putao_voucher_succ_dialog_height"
+    android:layout_gravity="center"
+    android:background="@drawable/putao_bg_youhuiquan_qiangquan"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/title_tv"
+        android:layout_width="@dimen/putao_voucher_dialog_title_width"
+        android:layout_centerHorizontal="true"
+        android:layout_height="@dimen/putao_voucher_dialog_title_height"
+        android:maxLines="2"
+        android:layout_marginTop="@dimen/putao_voucher_dialog_title_margintop"
+        android:gravity="center"
+        android:textColor="@color/putao_text_color_primary"
+        android:textSize="@dimen/putao_dialog_content_textsize" />
+
+    <ImageView
+        android:id="@+id/putao_voucher_center_closedialog_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/putao_voucher_dialog_margin_right"
+        android:layout_marginTop="@dimen/putao_voucher_dialog_margin_top"
+        android:src="@drawable/putao_icon_youhuiquan_guanbi" />
+
+    <ScrollView
+        android:id="@+id/scrollview"
+        android:layout_width="@dimen/putao_voucher_center_scrollview_width"
+        android:layout_height="@dimen/putao_voucher_dialog_scrollview_height"
+        android:layout_below="@id/title_tv"
+        android:overScrollMode="never"
+        android:layout_centerHorizontal="true"
+        android:cacheColorHint="#00000000"
+        android:divider="@color/putao_pt_line_light_gray"
+        android:fadingEdge="none"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:id="@+id/putao_scrolldialog_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="@dimen/putao_voucher_center_layout_width"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/scrollview"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/putao_voucher_layout_margin_top"
+        android:layout_gravity="bottom"
+        android:orientation="horizontal"
+        android:paddingBottom="8dp" >
+
+        <TextView
+            android:id="@+id/putao_voucher_center_userimmediately"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/putao_voucher_dialog_text_height"
+            android:layout_weight="1"
+            android:background="@drawable/putao_icon_youhuiquan_lijishiyong"
+            android:textColor="@color/putao_voucher_dialog_userimmediatly"
+            android:gravity="center"
+            android:text="@string/putao_voucher_detail_btn_text" />
+
+        <TextView
+            android:id="@+id/putao_voucher_center_lookdetail"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/putao_voucher_dialog_text_height"
+            android:layout_marginLeft="11dp"
+            android:layout_weight="1"
+            android:textColor="@color/putao_voucher_dialog_lookdetail"
+            android:background="@drawable/putao_icon_youhuiquan_dianjichakan"
+            android:gravity="center"
+            android:text="@string/putao_voucher_center_lookdetail" />
+ </LinearLayout>
+       <!--  <TextView
+            android:id="@+id/putao_voucher_center_share"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:drawableLeft="@drawable/putao_icon_youhuiquan_fenxiang"
+            android:layout_marginBottom="8dp"
+            android:gravity="center"
+            android:text="@string/putao_voucher_center_sharetofriend"
+            android:textColor="@color/putao_white"
+            android:textSize="12sp" /> -->
+   
+
+</RelativeLayout>

@@ -1,0 +1,145 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/putao_white"
+    android:orientation="vertical" >
+
+   <!-- modified by lxh 2015-6-12  <TextView
+        android:id="@+id/guess_like_title"
+        style="@style/putao_yellow_page_item"
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:gravity="left|center_vertical"
+        android:layout_marginBottom="1dp"
+        android:layout_marginLeft="@dimen/putao_activity_horizontal_margin"
+        android:layout_marginTop="@dimen/putao_offen_textview_margintop"
+        android:layout_weight="1"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:text="@string/putao_main_navi_operate"
+        android:textColor="@color/putao_text_color_indicative"
+        android:textSize="@dimen/putao_guess_like_desc_text_size" />
+
+    <View style="@style/putao_DividerStyle_Horizontal"/> -->
+    
+<!--     <View
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/putao_divider_line_size"
+        android:background="@color/putao_yellow_page_line_color" /> -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/putao_operate_big_layout_height"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:id="@+id/operatelayout1"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/title1"
+                style="@style/putao_operate_big_layout_title" />
+
+            <TextView
+                android:id="@+id/subtitle1"
+                style="@style/putao_operate_big_layout_subtitle"
+                android:layout_below="@+id/title1" />
+
+            <ImageView
+                android:id="@+id/imageView1"
+                style="@style/putao_operate_big_layout_pic" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/putao_list_selecter_transparent" />
+        </RelativeLayout>
+
+        <View style="@style/putao_DividerStyle_Vertical"/>
+        
+<!--         <View
+            android:layout_width="@dimen/putao_divider_line_size"
+            android:layout_height="fill_parent"
+            android:background="@color/putao_yellow_page_line_color" /> -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/operatelayout2"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/putao_operate_small_layout_height"
+                >
+
+                <TextView
+                    android:id="@+id/title2"
+                    style="@style/putao_operate_small_layout_title"
+                    android:layout_toLeftOf="@+id/imageView2"
+               		android:layout_alignParentLeft="true"
+                     />
+
+                <TextView
+                    android:id="@+id/subtitle2"
+                    style="@style/putao_operate_small_layout_subtitle"
+                    android:layout_below="@+id/title2"
+                    android:layout_toLeftOf="@+id/imageView2"
+               		android:layout_alignParentLeft="true"
+                     />
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    style="@style/putao_operate_small_layout_pic" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/putao_list_selecter_transparent" />
+            </RelativeLayout>
+
+            <View style="@style/putao_DividerStyle_Horizontal"/>
+            
+<!--             <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/putao_divider_line_size"
+                android:background="@color/putao_yellow_page_line_color" /> -->
+
+            <RelativeLayout
+                android:id="@+id/operatelayout3"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/putao_operate_small_layout_height"
+                >
+
+                <TextView
+                    android:id="@+id/title3"
+                    style="@style/putao_operate_small_layout_title"
+                    android:layout_toLeftOf="@+id/imageView3"
+               		android:layout_alignParentLeft="true"
+                     />
+
+                <TextView
+                    android:id="@+id/subtitle3"
+                    style="@style/putao_operate_small_layout_subtitle"
+                    android:layout_below="@+id/title3"
+                    android:layout_toLeftOf="@+id/imageView3"
+               		android:layout_alignParentLeft="true"
+                     />
+
+                <ImageView
+                    android:id="@+id/imageView3"
+                    style="@style/putao_operate_small_layout_pic" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/putao_list_selecter_transparent" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

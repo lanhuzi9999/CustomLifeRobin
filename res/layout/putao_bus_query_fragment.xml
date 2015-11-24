@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <so.contacts.hub.widget.AdOperatLayout
+        android:id="@id/ad_view_layout_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone" >
+    </so.contacts.hub.widget.AdOperatLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp" >
+
+		<View 
+		    android:id="@+id/top_line"
+		    style="@style/putao_DividerStyle_Horizontal"/>
+
+        <RelativeLayout
+            android:id="@+id/input_container"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/putao_edit_layout_item_height"
+            android:layout_below="@+id/top_line"
+            android:addStatesFromChildren="true"
+            android:background="@color/putao_white" >
+
+            <EditText
+                android:id="@+id/input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="16dp"
+                android:background="@null"
+                android:hint="@string/putao_bus_query_input_hit"
+                android:singleLine="true"
+                android:textSize="@dimen/putao_bus_text_size" />
+
+            <ImageView
+                android:id="@+id/clear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="16dp"
+                android:contentDescription="@string/putao_about_us"
+                android:src="@drawable/putao_icon_list_cancel"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <View style="@style/putao_DividerStyle_Horizontal"
+			android:id="@+id/putao_middle_line"
+            android:layout_below="@id/input_container"/>
+        
+        <Button
+            android:id="@+id/bus_line_query_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/input_container"
+            android:layout_margin="@dimen/putao_btn_margin_size"
+            android:text="@string/putao_bus_query_btn" />
+
+        <ListView
+            android:id="@+id/expand"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/input_container"
+            android:layout_marginTop="10dp"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+
+        <LinearLayout
+            android:id="@+id/near_station_tv"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/near_station"
+            android:orientation="horizontal"
+            android:visibility="gone" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/putao_near_station_text"
+                android:textColor="@color/putao_tag_group_text"
+                android:textSize="@dimen/putao_tag_group_text_size" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/putao_divider_line_size"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/putao_tag_divide_layout_margin_left"
+                android:background="@color/putao_tag_group_divider_color" />
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/near_station"
+            android:layout_width="match_parent"
+            android:layout_height="254dp"
+            android:layout_alignParentBottom="true"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</LinearLayout>

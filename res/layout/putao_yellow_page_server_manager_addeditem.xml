@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal" >
+
+        <ImageView
+            android:id="@+id/added_item_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/putao_icon_quick_replace" />
+
+        <ImageView
+            android:id="@+id/added_item_tagimg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:paddingRight="8dp"
+            android:gravity="center"
+            android:src="@drawable/putao_icon_edit_s" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/added_item_name"
+        style="@style/putao_yellow_page_item"
+        android:layout_marginTop="5dp"
+        android:text="@string/putao_yellow_page_shopping"
+        android:textColor="@color/putao_home_gridview_item_color"
+        android:textSize="@dimen/putao_yp_home_gridview_textsize" />
+
+</LinearLayout>

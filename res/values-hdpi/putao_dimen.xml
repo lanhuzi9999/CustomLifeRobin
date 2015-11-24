@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="putao_yp_home_gridview_textsize">11sp</dimen>
+    <dimen name="putao_yp_home_listview_item_margin_left">5dp</dimen>
+    <dimen name="putao_yp_home_listview_item_margin_right">5dp</dimen>
+    <dimen name="putao_yp_home_listview_textsize">12sp</dimen>
+    <dimen name="putao_yp_home_second_item_height">48dp</dimen>
+
+    <dimen name="putao_operate_layout_title_size">16dp</dimen>
+    
+    <dimen name="putao_voucher_center_layout_width">240dp</dimen>
+    <dimen name="putao_voucher_center_scrollview_width">212dp</dimen>
+    
+    <dimen name="putao_content_listview_title_max">150dp</dimen>
+</resources>

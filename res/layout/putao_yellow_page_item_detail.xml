@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/putao_white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/head_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/putao_app_bg" >
+
+        <include layout="@layout/putao_header_view" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/show_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/head_layout"
+        android:orientation="vertical" >
+
+        <ProgressBar
+            android:id="@+id/progressbar"
+            style="@style/putao_ProgressHStyle"
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:max="100" />
+
+        <WebView
+            android:id="@+id/yellow_page_detail"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/network_exception_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/head_layout"
+        android:visibility="gone" >
+
+        <include layout="@layout/putao_network_exception_layout" />
+    </RelativeLayout>
+
+</RelativeLayout>

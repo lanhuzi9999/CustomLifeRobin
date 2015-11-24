@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="putao_hot_station_list">
+        <item>北京</item>
+        <item>上海</item>
+        <item>广州</item>
+        <item>西安</item>
+        <item>杭州</item>
+        <item>郑州</item>
+        <item>成都</item>
+        <item>武昌</item>
+        <item>重庆</item>
+        <item>兰州</item>
+        <item>深圳</item>
+        <item>苏州</item>
+        <item>哈尔滨</item>
+        <item>南京</item>
+        <item>太原</item>
+        <item>长沙</item>
+        <item>南昌</item>
+        <item>合肥</item>
+        <item>厦门</item>
+        <item>汉口</item>
+    </array>
+    <array name="putao_provinces_simple">
+        <item>京</item>
+        <item>津</item>
+        <item>冀</item>
+        <item>晋</item>
+        <item>蒙</item>
+        <item>辽</item>
+        <item>吉</item>
+        <item>黑</item>
+        <item>沪</item>
+        <item>苏</item>
+        <item>浙</item>
+        <item>皖</item>
+        <item>闽</item>
+        <item>赣</item>
+        <item>鲁</item>
+        <item>豫</item>
+        <item>鄂</item>
+        <item>湘</item>
+        <item>粤</item>
+        <item>桂</item>
+        <item>琼</item>
+        <item>渝</item>
+        <item>川</item>
+        <item>贵</item>
+        <item>云</item>
+        <item>藏</item>
+        <item>陕</item>
+        <item>甘</item>
+        <item>青</item>
+        <item>宁</item>
+        <item>新</item>
+    </array>
+</resources>

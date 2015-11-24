@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingBottom="8dp" >
+
+        <LinearLayout
+            android:id="@+id/mcontainer"
+            android:layout_width="match_parent"
+            android:layout_height="176dp"
+            android:gravity="center_vertical"
+            android:orientation="vertical" >
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/server_provider_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/order_subject"
+            android:layout_marginLeft="@dimen/putao_order_list_head_margin"
+            android:layout_marginRight="@dimen/putao_order_list_head_margin"
+            android:layout_marginTop="@dimen/putao_order_detail_margin_top"
+            android:background="@drawable/putao_bg_list_card"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/putao_order_detail_margin_top"
+                android:layout_marginLeft="@dimen/putao_order_list_head_margin"
+                android:layout_marginRight="@dimen/putao_order_list_head_margin"
+                android:layout_marginTop="@dimen/putao_order_detail_margin_top"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="订单状态"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/putao_order_detail_margin_top"
+                        android:text="支付金额"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/putao_order_detail_margin_top"
+                        android:text="订单编号"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/putao_order_detail_margin_top"
+                        android:text="创建时间"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="36dp"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/order_status"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/order_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/putao_order_detail_margin_top"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/order_no"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/putao_order_detail_margin_top"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/order_create_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/putao_order_detail_margin_top"
+                        android:textSize="14sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <View style="@style/putao_DividerStyle_Horizontal"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                 />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/putao_order_detail_margin_top"
+                android:layout_marginLeft="@dimen/putao_order_list_head_margin"
+                android:layout_marginRight="@dimen/putao_order_list_head_margin"
+                android:layout_marginTop="@dimen/putao_order_detail_margin_top"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="缴费单位"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/putao_order_detail_margin_top"
+                        android:text="用户编号"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="36dp"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/order_company"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/order_user_id"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/putao_order_detail_margin_top"
+                        android:textSize="14sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <include
+                android:id="@+id/order_pay"
+                layout="@layout/putao_card_item_click" />
+
+            <include
+                android:id="@+id/order_cancel"
+                layout="@layout/putao_card_item_click" />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

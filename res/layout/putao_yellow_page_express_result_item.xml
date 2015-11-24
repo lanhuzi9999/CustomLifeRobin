@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/putao_express_result_item_height"
+    android:background="@color/putao_pt_light_gray"
+    android:paddingLeft="@dimen/putao_express_result_item_padding"
+    android:paddingRight="@dimen/putao_express_result_item_padding" >
+
+    <RelativeLayout
+        android:id="@+id/left_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="6dip"
+        android:layout_alignParentTop="true" >
+
+        <ImageView
+            android:id="@+id/line_imageview"
+            android:layout_width="1dip"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:background="@color/putao_express_result_info_date"
+            android:contentDescription="@string/putao_app_name" />
+
+        <ImageView
+            android:id="@+id/circle_imageview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:contentDescription="@string/putao_app_name"
+            android:src="@drawable/putao_icon_mileage_p" />
+
+        <View
+            android:id="@+id/hide_top_view"
+            android:layout_width="1dip"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/circle_imageview"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:background="@color/putao_pt_light_gray"
+            android:visibility="gone" />
+
+        <View
+            android:id="@+id/hide_bottom_view"
+            android:layout_width="1dip"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@+id/circle_imageview"
+            android:layout_centerHorizontal="true"
+            android:background="@color/putao_pt_light_gray"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/info_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/left_layout"
+        android:gravity="center_vertical|left"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/info_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dip"
+            android:autoLink="all"
+            android:textSize="@dimen/putao_express_result_item_content_text_size" />
+
+        <TextView
+            android:id="@+id/info_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dip"
+            android:singleLine="true"
+            android:textColor="@color/putao_express_result_info_date"
+            android:textSize="@dimen/putao_express_result_item_date_text_size" />
+    </LinearLayout>
+
+</RelativeLayout>

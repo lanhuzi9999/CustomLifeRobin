@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:minWidth="300dp"
+    android:orientation="vertical" >
+    <TextView
+        android:id="@+id/title_tv"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/putao_dialog_head_height"
+        android:background="@color/putao_theme"
+        android:gravity="center_vertical|left"
+        android:paddingLeft="@dimen/putao_dialog_leftandright_padding"
+        android:paddingRight="@dimen/putao_dialog_leftandright_padding"
+        android:textColor="@color/putao_white"
+        android:textSize="@dimen/putao_title" />
+    <GridView
+        android:id="@+id/hot_gridview"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/putao_white"
+        android:paddingBottom="5dp"
+        android:scrollbars="none" 
+        android:listSelector="#00000000"
+        android:numColumns="5"/>
+    <TextView
+        android:id="@+id/more_station"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/putao_dialog_head_height"
+        android:gravity="center"
+        android:textColor="@color/putao_birthday_tag_green"
+        android:textSize="@dimen/putao_title" 
+        android:background="@color/putao_white"
+        android:text="更多站点>>"/>
+    
+
+</LinearLayout>

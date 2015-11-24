@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/putao_remind_layout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+    
+    <so.contacts.hub.remind.simple.SimpleRemindView
+        android:id="@+id/remind_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:gravity="center"/>
+
+    <!-- modify by putao_lhq start -->
+    <!-- 去掉属性android:layout_marginTop="-4dip" -->
+    <so.contacts.hub.remind.simple.SimpleRemindView
+        android:id="@+id/remind_point_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/putao_offen_remind_point_marginright"
+        android:layout_marginTop="@dimen/putao_offen_remind_point_margintop"
+        android:gravity="center"
+        android:visibility="gone" />
+    <!-- modify by putao_lhq end -->
+
+    <so.contacts.hub.remind.simple.SimpleRemindView
+        android:id="@+id/remind_point_digit_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:visibility="gone" />
+
+</RelativeLayout>

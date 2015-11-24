@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_gravity="center"
+    android:layout_width="@dimen/putao_voucher_dialog_width"
+    android:layout_height="@dimen/putao_voucher_fail_dialog_height"
+    android:background="@drawable/putao_bg_youhuiquan_wuquan" >
+     <ImageView
+        android:id="@+id/putao_voucher_center_closedialog_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/putao_voucher_dialog_margin_right"
+        android:layout_marginTop="12dp"
+        android:src="@drawable/putao_icon_youhuiquan_guanbi" />
+ <TextView
+        android:id="@+id/putao_getvoucherfail_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/putao_dialog_head_height"
+        android:layout_marginTop="43dp"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal"
+        android:maxWidth="@dimen/putao_voucher_dialog_title_width"
+        android:textColor="@color/putao_text_color_primary"
+        android:textSize="@dimen/putao_dialog_head_textsize" />
+</RelativeLayout>

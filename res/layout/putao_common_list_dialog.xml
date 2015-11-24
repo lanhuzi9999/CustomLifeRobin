@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/putao_white"
+    android:minWidth="300dp"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/title_tv"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/putao_dialog_head_height"
+        android:gravity="center"
+        android:textColor="@color/putao_dialog_title"
+        android:textSize="@dimen/putao_dialog_head_textsize" />
+
+    <View style="@style/putao_DividerStyle_Horizontal"/>
+
+    <ListView
+        android:id="@+id/listview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/putao_white"
+        android:cacheColorHint="#00000000"
+        android:divider="@color/putao_pt_line_light_gray"
+        android:dividerHeight="@dimen/putao_divider_line_size"
+        android:fadingEdge="none"
+        android:listSelector="@drawable/putao_list_selecter_s"
+        android:scrollbars="none" />
+
+    <View style="@style/putao_DividerStyle_Horizontal"/>
+
+    <TextView
+        android:id="@+id/ok_btn"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:gravity="center"
+        android:text="@string/putao_confirm"
+        android:textColor="@color/putao_dialog_btn_color"
+        android:textSize="@dimen/putao_dialog_bottom_btn_textsize"
+        android:visibility="gone" />
+
+</LinearLayout>

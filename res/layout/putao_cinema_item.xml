@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/putao_listview_item_selector"
+    android:gravity="center_vertical"
+    android:orientation="vertical"
+    android:paddingBottom="18dp" >
+
+    <View
+        android:id="@+id/divider_line"
+        style="@style/putao_DividerStyle_Horizontal"
+        android:layout_alignParentTop="true" />
+
+    <TextView
+        android:id="@+id/cinema_lowprice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/divider_line"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="18dp"
+        android:paddingRight="@dimen/putao_activity_horizontal_margin"
+        android:textColor="@color/putao_text_color_importance"
+        android:textSize="@dimen/putao_text_primary_size" />
+
+    <LinearLayout
+        android:id="@+id/putao_cinema_name_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/divider_line"
+        android:layout_marginTop="18dp"
+        android:layout_toLeftOf="@+id/cinema_lowprice"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/putao_activity_horizontal_margin" >
+
+        <TextView
+            android:id="@+id/cinema_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxWidth="210dp"
+            android:singleLine="true"
+            android:textColor="@color/putao_text_color_primary"
+            android:textSize="@dimen/putao_text_primary_size" />
+
+        <TextView
+            android:id="@+id/putao_cinema_seat"
+            style="@style/putao_text_in_rect"
+            android:layout_marginLeft="3dp"
+            android:text="@string/putao_cinemalist_seat" />
+
+        <TextView
+            android:id="@+id/putao_cinema_exchange"
+            style="@style/putao_text_in_rect"
+            android:layout_marginLeft="3dp"
+            android:text="@string/putao_cinemalist_exchange" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/putao_cinema_address_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/putao_cinema_name_layout"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="@dimen/putao_activity_horizontal_margin"
+        android:paddingRight="@dimen/putao_activity_horizontal_margin" >
+
+        <TextView
+            android:id="@+id/cinema_distance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:textColor="@color/putao_text_color_second"
+            android:textSize="@dimen/putao_text_tertiary_size" />
+
+        <TextView
+            android:id="@+id/cinema_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/cinema_distance"
+            android:singleLine="true"
+            android:textColor="@color/putao_text_color_second"
+            android:textSize="@dimen/putao_text_tertiary_size" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/putao_cinema_address_layout"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="@dimen/putao_activity_horizontal_margin"
+        android:paddingRight="@dimen/putao_activity_horizontal_margin" >
+
+        <TextView
+            android:id="@+id/putao_cinema_countdes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:textColor="@color/putao_text_color_second"
+            android:textSize="@dimen/putao_text_tertiary_size" />
+
+        <TextView
+            android:id="@+id/putao_cinema_compare_price"
+            style="@style/putao_text_in_rect2"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/cinema_changqu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/putao_tag_dianying_cq" />
+
+</RelativeLayout>

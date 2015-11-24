@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/putao_activity_vertical_margin"
+    android:paddingLeft="@dimen/putao_activity_horizontal_margin"
+    android:paddingRight="@dimen/putao_activity_horizontal_margin"
+    android:paddingTop="8dp" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/putao_bg_list_card"
+        android:orientation="vertical" >
+        
+        <View style="@style/putao_DividerStyle_Horizontal"
+            android:layout_marginBottom="20dp"
+            />
+
+<!--        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/putao_divider_line_size"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/putao_line_horizontal" />-->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/putao_assistant_guide_tip2"
+            android:textSize="14sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:orientation="vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/putaoAssistantGuideSeritemStyle"
+                    android:drawableTop="@drawable/putao_icon_order_hcp"
+                    android:text="@string/putao_assistant_guide_service_hc" />
+
+                <TextView
+                    style="@style/putaoAssistantGuideSeritemStyle"
+                    android:drawableTop="@drawable/putao_icon_order_jd"
+                    android:text="@string/putao_assistant_guide_service_jd" />
+
+                <TextView
+                    style="@style/putaoAssistantGuideSeritemStyle"
+                    android:drawableTop="@drawable/putao_icon_order_dy"
+                    android:text="@string/putao_assistant_guide_service_dy" />
+
+                <TextView
+                    style="@style/putaoAssistantGuideSeritemStyle"
+                    android:drawableTop="@drawable/putao_icon_order_sr"
+                    android:text="@string/putao_assistant_guide_service_sr" />
+
+                <TextView
+                    style="@style/putaoAssistantGuideSeritemStyle"
+                    android:layout_marginRight="0dp"
+                    android:drawableTop="@drawable/putao_icon_order_kd"
+                    android:text="@string/putao_assistant_guide_service_kd" />
+            </LinearLayout>
+        </LinearLayout>
+
+      	<View style="@style/putao_DividerStyle_Horizontal"></View>
+
+        <RelativeLayout
+            android:id="@+id/assistant_guide_add_samplecard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical"
+                android:text="@string/putao_assistant_guide_tip5"
+                android:textColor="@color/putao_text_green"
+                android:textSize="14sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

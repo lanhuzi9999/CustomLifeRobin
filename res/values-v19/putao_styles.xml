@@ -1,0 +1,30 @@
+<resources>
+
+    <!--
+        Base application theme for API 19+. This theme completely replaces
+        AppBaseTheme from BOTH res/values/styles.xml and
+        res/values-v11/styles.xml on API 19+ devices.
+    -->
+    <style name="putao_AppBaseTheme" parent="@android:style/Theme.Light">
+
+        <!-- Status Bar -->
+        <item name="android:windowTranslucentStatus">true</item>
+        <!-- Navigation Bar -->
+<!--         <item name="android:windowTranslucentNavigation">true</item> -->
+    </style>
+
+    <style name="putao_MyTransparent" parent="@android:style/Theme.Translucent.NoTitleBar">
+        <item name="android:windowBackground">@color/putao_transparent_alpha</item>
+
+        <!-- <item name="android:windowNoTitle">true</item> -->
+        <item name="android:windowTranslucentStatus">true</item>
+        <!-- Navigation Bar -->
+<!--         <item name="android:windowTranslucentNavigation">true</item> -->
+    </style>
+
+    <style name="putao_BaseDialog" parent="android:style/Theme.Dialog">
+        <item name="android:listPreferredItemHeightSmall">54dp</item>
+        <item name="android:textAppearanceListItemSmall">@style/putao_TextAppearanceMedium</item>
+    </style>
+
+</resources>

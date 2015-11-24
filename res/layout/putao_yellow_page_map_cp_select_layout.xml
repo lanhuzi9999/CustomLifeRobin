@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/putao_dialog_head_height"
+        android:background="@null"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:id="@+id/cp_choose_layout_one"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/putao_taxi_cp_selector"
+            android:clickable="true" >
+
+            <ImageView
+                android:id="@+id/cp_choose_image_one"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="8dp"
+                android:src="@drawable/putao_icon_taxi_kuaidi" />
+
+            <TextView
+                android:id="@+id/cp_choose_text_one"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="6sp"
+                android:gravity="bottom"
+                android:text="@string/putao_kuaidi_name"
+                android:textColor="@color/putao_text_color_primary"
+                android:textSize="12sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/cp_choose_layout_two"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/putao_taxi_cp_selector"
+            android:clickable="true" >
+
+            <ImageView
+                android:id="@+id/cp_choose_image_two"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="8dp"
+                android:src="@drawable/putao_icon_taxi_didi" />
+
+            <TextView
+                android:id="@+id/cp_choose_text_two"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="6sp"
+                android:gravity="bottom"
+                android:text="@string/putao_didi_name"
+                android:textColor="@color/putao_text_color_primary"
+                android:textSize="12sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/cp_choose_layout_three"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/putao_taxi_cp_selector"
+            android:clickable="false" >
+
+            <ImageView
+                android:id="@+id/cp_choose_image_three"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="8dp"
+                android:src="@drawable/putao_icon_taxi_uber" />
+
+            <TextView
+                android:id="@+id/cp_choose_text_three"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="6sp"
+                android:gravity="bottom"
+                android:text="@string/putao_uber_unfinish"
+                android:textColor="@color/putao_text_color_primary"
+                android:textSize="12sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

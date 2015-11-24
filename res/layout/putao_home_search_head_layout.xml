@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/search_head_layout"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/putao_title_bar_and_status_hight"
+    android:background="@color/putao_theme"
+    android:orientation="horizontal"
+    android:paddingTop="@dimen/putao_status_bar_height" >
+
+    <TextView
+        android:id="@+id/city_btn"
+        android:layout_width="wrap_content"
+        android:maxWidth="110dp"
+        android:ellipsize="end"
+        android:layout_height="match_parent"
+        android:background="@drawable/putao_list_selecter_transparent"
+        android:drawableRight="@drawable/putao_search_down_arrow"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/putao_tag_activity_horizontal_margin"
+        android:singleLine="true"
+        android:text="@string/putao_location_text"
+        android:textColor="@color/putao_white"
+        android:textSize="@dimen/putao_home_category_item_text_size" />
+
+    <EditText
+        android:id="@+id/search_content"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/putao_homepage_search_layout_height"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="@dimen/putao_home_default_margin"
+        android:layout_marginRight="@dimen/putao_tag_activity_horizontal_margin"
+        android:background="@drawable/putao_search"
+        android:drawableLeft="@drawable/putao_icon_select"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:gravity="center_vertical"
+        android:hint="@string/putao_homepage_search_contact_hint"
+        android:longClickable="false"
+        android:paddingLeft="@dimen/putao_home_search_padding"
+        android:singleLine="true"
+        android:textColorHint="@color/putao_home_search_text_color_hint"
+        android:textSize="@dimen/putao_home_main_text_size" />
+
+</LinearLayout>

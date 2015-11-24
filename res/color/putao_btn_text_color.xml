@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 默认button字体颜色，默认button为绿色 -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_focused="true" android:color="#0d0d0d"/>
+    <item android:state_selected="true" android:color="#13ce5c"/>
+    <item android:state_activated="true" android:color="#ff2a00"/>
+    <item android:state_enabled="false" android:color="#ffffff"/>
+    <item android:state_pressed="true" android:color="#ffffff"/>
+    <item android:color="#ffffff"/>
+</selector>

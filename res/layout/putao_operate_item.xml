@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<so.contacts.hub.cms.operate.OperateItemLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+	<LinearLayout
+	    android:id="@+id/operate_item_gap"
+	    android:layout_width="match_parent"
+	    android:layout_height="@dimen/putao_guess_like_items_gap"
+	    android:visibility="gone"
+	    android:background="@color/putao_screen_background_light">
+    
+	</LinearLayout>
+            
+    <LinearLayout
+        android:id="@+id/operate_show_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/operate_item_gap"
+        android:orientation="vertical" >
+
+        <WebView
+            android:id="@+id/operate_webview"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none"  />
+    </LinearLayout>
+
+</so.contacts.hub.cms.operate.OperateItemLayout>

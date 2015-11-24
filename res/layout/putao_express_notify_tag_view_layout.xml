@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:paddingLeft="@dimen/putao_activity_horizontal_margin" >
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="160dp"
+        android:layout_weight="1"
+        android:background="@drawable/putao_bg_card_kuaidi"
+        android:orientation="vertical"
+        android:paddingLeft="14dp"
+        android:paddingRight="14dp" >
+
+        <include
+            android:id="@+id/orderlist_express_head"
+            layout="@layout/putao_my_order_item_head" />
+
+        <RelativeLayout
+            android:id="@+id/orderlist_express_info_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="96dp"
+            android:paddingBottom="16dp" >
+
+            <LinearLayout
+                android:id="@+id/express_status_layput"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_vertical"
+                android:layout_toLeftOf="@+id/express_img"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/express_status_hint"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="3dp"
+                    android:text="@string/putao_lastest_process"
+                    android:textColor="@color/putao_order_content_title_color"
+                    android:textSize="@dimen/putao_text_tertiary_size" />
+
+                <TextView
+                    android:id="@+id/express_status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    android:maxWidth="210dp"
+                    android:textColor="@color/putao_order_content_color"
+                    android:textSize="@dimen/putao_text_primary_size" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/express_img"
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/putao_icon_btn_id_huoche_a"
+                android:contentDescription="@string/putao_about_us"
+                android:gravity="center"
+                android:scaleType="fitXY" />
+        </RelativeLayout>
+
+        <include layout="@layout/putao_my_order_item_foot" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/point"
+        android:layout_width="@dimen/putao_activity_horizontal_margin"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:src="@drawable/putao_icon_prompt_s"
+        android:visibility="invisible" />
+
+</LinearLayout>

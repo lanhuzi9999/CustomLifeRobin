@@ -1,0 +1,249 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" >
+
+    <!--
+    <LinearLayout
+        android:id="@+id/title_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@color/putao_app_bg" >
+        <include layout="@layout/putao_header_view" />
+    </LinearLayout>
+    -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+<!--         android:layout_below="@+id/title_view" -->
+
+        <RelativeLayout
+            android:id="@+id/simcard_layout1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:layout_marginTop="10dp"
+            android:visibility="visible" >
+
+            <LinearLayout
+                android:id="@+id/simcard_info1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/simcard_operator1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/putao_tag_group_text"
+                    android:textSize="@dimen/putao_tag_group_text_size" />
+                
+                <View 
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/putao_tag_divide_layout_margin_left"
+                    style="@style/putao_DividerStyle_Horizontal"/>
+
+
+<!--                 <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/putao_divider_line_size"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/putao_tag_divide_layout_margin_left"
+                    android:background="@color/putao_tag_group_divider_color" /> -->
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/simcard_info1"
+                android:layout_marginTop="5dp"
+                android:minHeight="@dimen/putao_query_charge_content_height" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/simcard_money1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:singleLine="true"
+                        android:textColor="@color/putao_text_color_importance"
+                        android:textSize="@dimen/putao_query_charge_money_text_size" />
+
+                    <TextView
+                        android:id="@+id/cur_money"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/simcard_money1"
+                        android:layout_gravity="center_horizontal"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:text="@string/putao_querytel_chargehint"
+                        android:textColor="@color/putao_black" />
+
+                    <TextView
+                        android:id="@+id/simcard_querydate1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/cur_money"
+                        android:layout_gravity="center_horizontal"
+                        android:singleLine="true" />
+                </LinearLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/simcard_layout2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:layout_marginTop="10dp"
+            android:visibility="gone" >
+
+            <LinearLayout
+                android:id="@+id/simcard_info2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/simcard_operator2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/putao_tag_group_text"
+                    android:textSize="@dimen/putao_tag_group_text_size" />
+                
+                <View style="@style/putao_DividerStyle_Horizontal"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/putao_tag_divide_layout_margin_left"
+                    />
+
+<!--                 <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/putao_divider_line_size"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/putao_tag_divide_layout_margin_left"
+                    android:background="@color/putao_tag_group_divider_color" /> -->
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/simcard_info2"
+                android:layout_marginTop="5dp"
+                android:minHeight="@dimen/putao_query_charge_content_height" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/simcard_money2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:singleLine="true"
+                        android:textColor="@color/putao_text_color_importance"
+                        android:textSize="@dimen/putao_query_charge_money_text_size" />
+
+                    <TextView
+                        android:id="@+id/cur_money2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/simcard_money2"
+                        android:layout_gravity="center_horizontal"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:text="@string/putao_querytel_chargehint"
+                        android:textColor="@color/putao_black" />
+
+                    <TextView
+                        android:id="@+id/simcard_querydate2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/cur_money2"
+                        android:layout_gravity="center_horizontal"
+                        android:singleLine="true" />
+                </LinearLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <!-- 查询按钮，适配coolui6.0风格 -->
+        <!-- modify by putao_lhq -->
+
+        <RelativeLayout
+            android:id="@+id/query_confirm"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/putao_btn_height"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/putao_click_btn_bg" >
+
+            <!-- <LinearLayout -->
+            <!-- android:layout_width="wrap_content" -->
+            <!-- android:layout_height="wrap_content" -->
+
+
+            <!-- android:orientation="horizontal" > -->
+
+
+            <!-- <ImageView -->
+            <!-- android:layout_width="wrap_content" -->
+            <!-- android:layout_height="wrap_content" -->
+            <!-- android:src="@drawable/putao_icon_btn_id_chahuafei" -->
+            <!-- android:layout_gravity="center_vertical" -->
+            <!-- android:contentDescription="@string/putao_about_us"/> -->
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true" >
+
+                <TextView
+                    android:id="@+id/query_confirm_content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="@string/putao_querytel_queryhint"
+                    android:textColor="@color/putao_btn_text_color"
+                    android:textSize="@dimen/putao_btn_text_size" />
+
+                <TextView
+                    android:id="@+id/query_confirm_wait"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@+id/query_confirm_content"
+                    android:textColor="@color/putao_btn_text_color"
+                    android:textSize="@dimen/putao_btn_text_size"
+                    android:visibility="gone" />
+            </RelativeLayout>
+            <!-- </LinearLayout> -->
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:text="@string/putao_querytel_hint"
+            android:textColor="@color/putao_express_result_no_data_info"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+</RelativeLayout>

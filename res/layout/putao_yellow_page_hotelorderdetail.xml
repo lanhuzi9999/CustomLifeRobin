@@ -1,0 +1,465 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/head_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/putao_app_bg" >
+
+        <include layout="@layout/putao_header_view" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="20dp"
+            android:splitMotionEvents="false" >
+
+            <LinearLayout
+                android:id="@+id/card_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="176dp"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:paddingTop="8dp" >
+
+                <include layout="@layout/putao_hotel_order_tagview_layout" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/putao_activity_horizontal_margin"
+                android:layout_marginRight="@dimen/putao_activity_horizontal_margin"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/putao_bg_yellow_item_single"
+                android:orientation="vertical"
+                android:paddingTop="14dp" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:orientation="horizontal"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="10dp" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:text="@string/putao_hotelorderdetail_orderstatus"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/orderdetail_state"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="36dp"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:orientation="horizontal"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="10dp" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:text="@string/putao_hotelorderdetail_paymoney"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/orderdetail_money"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="36dp"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:orientation="horizontal"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="10dp" >
+
+                    <TextView
+                        android:id="@+id/orderdetail_order_hint"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:text="@string/putao_hotelorderdetail_orderid"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/orderdetail_serialid"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="36dp"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:orientation="horizontal"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="10dp" >
+
+                    <TextView
+                        android:id="@+id/orderdetail_order_createtime_hint"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:text="@string/putao_hotelorderdetail_createtime"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/orderdetail_order_createtime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="36dp"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <View style="@style/putao_DividerStyle_Horizontal"
+                    android:layout_marginTop="14dp"
+                    />
+                
+<!--                 <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/putao_divider_line_size"
+                    android:layout_marginTop="14dp"
+                    android:background="@color/putao_yellow_page_line_color" /> -->
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="14dp"
+                    android:orientation="horizontal"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="10dp" >
+
+                    <TextView
+                        android:id="@+id/orderdetail_name_hint"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:text="@string/putao_hotelorderdetail_hotelname"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/orderdetail_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="36dp"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:orientation="horizontal"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="10dp" >
+
+                    <TextView
+                        android:id="@+id/orderdetail_address_hint"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:text="@string/putao_hotelorderdetail_hoteladdress"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/orderdetail_address"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="36dp"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:orientation="horizontal"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="10dp" >
+
+                    <TextView
+                        android:id="@+id/orderdetail_lastin_date_hint"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:text="@string/putao_hotelorderdetail_hotel_indate"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/orderdetail_lastin_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="36dp"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:orientation="horizontal"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="10dp"
+                    android:visibility="gone" >
+
+                    <TextView
+                        android:id="@+id/orderdetail_order_type_hint"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:text="@string/putao_hotelorderdetail_order_type"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/orderdetail_order_type"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="36dp"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:orientation="horizontal"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="10dp" >
+
+                    <TextView
+                        android:id="@+id/orderdetail_come_name_hint"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:ellipsize="end"
+                        android:paddingRight="14dp"
+                        android:singleLine="true"
+                        android:text="@string/putao_hotelorder_comename"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/orderdetail_come_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="36dp"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:orientation="horizontal"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="10dp" >
+
+                    <TextView
+                        android:id="@+id/orderdetail_mobile_hint"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:text="@string/putao_hotelorderdetail_hotelmobile"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/orderdetail_mobile"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="36dp"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:textColor="@color/putao_phone_num_text_color"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <View style="@style/putao_DividerStyle_Horizontal"
+                    android:layout_marginTop="14dp"
+                    />
+                
+<!--                 <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/putao_divider_line_size"
+                    android:layout_marginTop="14dp"
+                    android:background="@color/putao_yellow_page_line_color" /> -->
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="14dp"
+                    android:orientation="horizontal"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="10dp" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:text="@string/putao_hotelorderdetail_service_provider_hint"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="36dp"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:text="@string/putao_hotelorderdetail_service_provider"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:orientation="horizontal"
+                    android:paddingBottom="12dp"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="10dp" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:text="@string/putao_hotelorderdetail_kefudianhua_hint"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/orderdetail_kefudianhua"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="36dp"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:text="@string/putao_hotelorderdetail_kefu_telnumber"
+                        android:textColor="@color/putao_phone_num_text_color"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:text="@string/putao_hotelorderdetail_kefudianhua"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/orderdetail_yufutiaokuan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingBottom="20dp"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="top"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:text="@string/putao_hotelorderdetail_yufutiaokuang_hint"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="top"
+                        android:layout_marginLeft="36dp"
+                        android:ellipsize="end"
+                        android:text="@string/putao_hotelorderdetail_yufutiaokuang"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <include
+                    android:id="@+id/order_cancel"
+                    layout="@layout/putao_card_item_click" />
+
+                <include
+                    android:id="@+id/order_texi"
+                    layout="@layout/putao_card_item_click" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

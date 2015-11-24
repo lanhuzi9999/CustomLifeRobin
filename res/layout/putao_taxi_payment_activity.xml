@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:background="@color/putao_white" >
+
+            <ImageView
+                android:id="@+id/putao_driver_logo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:src="@drawable/putao_pic_taxi_head" />
+
+            <TextView
+                android:id="@+id/putao_driver_car"
+                style="@style/putao_TextAppearance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="21dp"
+                android:layout_toRightOf="@id/putao_driver_logo" />
+
+            <TextView
+                android:id="@+id/putao_driver_name"
+                style="@style/putao_TextAppearanceMedium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/putao_driver_car"
+                android:layout_below="@id/putao_driver_car"
+                android:layout_marginTop="5dp" />
+
+            <ImageView
+                android:id="@+id/putao_driver_call"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:src="@drawable/putao_icon_logo_dianhua" />
+        </RelativeLayout>
+
+        <View style="@style/putao_DividerStyle_Horizontal" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="24dp"
+            android:gravity="bottom"
+            android:paddingBottom="3dp"
+            android:paddingLeft="@dimen/putao_activity_horizontal_margin"
+            android:text="@string/putao_texi_pay_money"
+            android:textColor="@color/putao_tag_group_text"
+            android:textSize="@dimen/putao_tag_group_text_size" />
+
+        <View style="@style/putao_DividerStyle_Horizontal" />
+
+        <EditText
+            android:id="@+id/putao_et_price"
+            style="@style/putao_TextAppearance"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:background="@color/putao_white"
+            android:duplicateParentState="true"
+            android:gravity="center_vertical"
+            android:hint="@string/putao_texi_pay_hint"
+            android:inputType="numberDecimal"
+            android:paddingLeft="@dimen/putao_activity_horizontal_margin"
+            android:paddingRight="@dimen/putao_activity_horizontal_margin" />
+
+        <View style="@style/putao_DividerStyle_Horizontal" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="24dp"
+            android:gravity="bottom"
+            android:paddingBottom="3dp"
+            android:paddingLeft="@dimen/putao_activity_horizontal_margin"
+            android:text="@string/putao_choice_charge_way"
+            android:textColor="@color/putao_tag_group_text"
+            android:textSize="@dimen/putao_tag_group_text_size" />
+
+        <View style="@style/putao_DividerStyle_Horizontal" />
+
+        <FrameLayout
+            android:id="@+id/putao_payment_view_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+        </FrameLayout>
+
+        <View style="@style/putao_DividerStyle_Horizontal" />
+        <!--
+             <Button
+            android:id="@+id/putao_creat_order"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="创建订单" />
+        -->
+
+        <Button
+            android:id="@+id/putao_pay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:text="@string/putao_order_pay" />
+    </LinearLayout>
+
+</ScrollView>

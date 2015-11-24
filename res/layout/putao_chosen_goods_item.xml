@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/putao_listview_item_selector"
+    tools:context="so.contacts.hub.ui.expresscheck.zxing.ScanCaptureActivity" >
+
+    <ImageView
+        android:id="@+id/goods_img"
+        android:layout_width="95dp"
+        android:layout_height="68dp"
+        android:layout_centerVertical="true"
+        android:layout_margin="8dp"
+        android:scaleType="fitXY" />
+
+    <TextView
+        android:id="@+id/goods_distance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/putao_text_color_indicative"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/goods_title"
+        style="@style/putao_TextAppearance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/goods_img"
+        android:ellipsize="end"
+        android:lines="1"
+        android:maxWidth="@dimen/putao_content_listview_title_max"
+        android:textSize="@dimen/putao_text_second_size" />
+
+    <TextView
+        android:id="@+id/goods_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/goods_title"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="8dp"
+        android:singleLine="true"
+        android:textColor="@color/putao_home_search_text_color_hint"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/goods_current_price"
+        style="@style/putao_TextAppearanceMedium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/goods_title"
+        android:layout_alignParentBottom="true"
+        android:paddingBottom="8dp"
+        android:textColor="@color/putao_text_color_importance"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/goods_prime_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="2dp"
+        android:layout_toRightOf="@id/goods_current_price"
+        android:paddingBottom="8dp"
+        android:textColor="@color/putao_text_color_indicative"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/service_name"
+        android:paddingBottom="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@id/goods_prime_price"
+        android:lines="1"
+		android:layout_marginLeft="5dp"
+        android:textColor="@color/putao_home_search_text_color_hint"
+        android:textSize="12sp"
+        android:visibility="gone" />
+    <TextView
+        android:id="@+id/goods_sold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="8dp"
+        android:paddingBottom="10dp"
+        android:textColor="@color/putao_text_color_indicative"
+        android:textSize="12sp" />
+
+</RelativeLayout>

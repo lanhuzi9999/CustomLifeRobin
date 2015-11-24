@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:paddingLeft="@dimen/putao_activity_horizontal_margin" >
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@drawable/putao_bg_card_fujin"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/putao_moviedetail_ordercontent_leftrightpadding"
+        android:paddingRight="@dimen/putao_moviedetail_ordercontent_leftrightpadding"
+        android:paddingTop="@dimen/putao_orderitem_contenttoppadding" >
+
+        <include
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/putao_order_list_head_height"
+            layout="@layout/putao_my_order_item_head" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="20dp" >
+
+            <TextView
+                android:id="@+id/putao_ctorderdtl_ticketname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginBottom="8dp"
+                android:textColor="@color/putao_white"
+                android:textSize="@dimen/putao_common_text_size_large" />
+
+            <TextView
+                android:id="@+id/putao_ctorderdtl_available_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/putao_ctorderdtl_ticketname"
+                android:textColor="@color/putao_order_list_white_Shadow_color"
+                android:textSize="@dimen/putao_common_text_size_small_3" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/putao_icon_btn_id_tongduiquan_a" />
+        </RelativeLayout>
+
+        <include
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/putao_order_list_foot_height"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="0dp"
+            layout="@layout/putao_my_order_item_foot" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/point"
+        android:layout_width="@dimen/putao_activity_horizontal_margin"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:src="@drawable/putao_icon_prompt_s"
+        android:visibility="invisible" />
+
+</LinearLayout>

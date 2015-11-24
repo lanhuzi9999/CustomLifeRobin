@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/flight_city_layout"
+        android:layout_width="match_parent"
+        android:layout_height="112dp"
+        android:background="@color/putao_white"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:layout_width="132dp"
+            android:layout_height="match_parent"
+            android:id="@+id/putao_flight_start_layout"
+            android:background="@drawable/putao_list_white_transblack_selector"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="21dp"
+                android:gravity="center"
+                android:drawableLeft="@drawable/putao_icon_plane_takeoff"
+                android:drawablePadding="8dp"
+                android:text="@string/putao_start_city"
+                android:textColor="@color/putao_text_color_second"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/putao_flight_start_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="24dp"
+                android:layout_marginLeft="16dp"
+                android:textColor="@color/putao_text_color_primary"
+                android:text="@string/putao_city_shenzhen"
+                android:singleLine="true"
+                android:textSize="24sp" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/putao_flight_swapimg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:contentDescription="@string/putao_about_us"
+            android:src="@drawable/putao_icon_plane_switchover" />
+
+        <RelativeLayout
+            android:id="@+id/putao_flight_arrive_layout"
+            android:background="@drawable/putao_list_white_transblack_selector"
+            android:layout_width="132dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:gravity="center"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="21dp"
+                android:drawableLeft="@drawable/putao_icon_plane_landing"
+                android:drawablePadding="8dp"
+                android:text="@string/putao_arrive_city"
+                android:textColor="@color/putao_text_color_second"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/putao_flight_arrive_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="24dp"
+                android:layout_marginRight="16dp"
+                android:textColor="@color/putao_text_color_primary"
+                android:text="@string/putao_city_beijing"
+                android:singleLine="true"
+                android:textSize="24sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <View 
+        android:id="@+id/putao_flight_divider"
+        android:layout_below="@id/flight_city_layout"
+        style="@style/putao_DividerStyle_Horizontal"/>
+    
+<!--     <View
+        android:id="@+id/putao_flight_divider"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/putao_divider_line_size"
+        android:layout_below="@id/flight_city_layout"
+        android:background="@color/putao_yellow_page_line_color" /> -->
+
+    <LinearLayout
+        android:id="@+id/putao_flightdate_layout"
+        android:layout_width="match_parent"
+        android:layout_height="112dp"
+        android:layout_below="@id/putao_flight_divider"
+        android:baselineAligned="false"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:background="@drawable/putao_list_white_transblack_selector"
+            android:id="@+id/putao_flight_startdate_layout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="21dp"
+                android:gravity="center"
+                android:drawableLeft="@drawable/putao_icon_plane_date"
+                android:drawablePadding="8dp"
+                android:text="@string/putao_start_date"
+                android:textColor="@color/putao_text_color_second"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/putao_flight_startdate_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="24dp"
+                android:layout_marginLeft="16dp"
+                android:text="@string/putao_calendar_date_tomorrow"
+                android:textColor="@color/putao_text_color_primary"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/putao_flight_startdateinfo_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="24dp"
+                android:layout_marginLeft="8dp"
+                android:textColor="@color/putao_text_color_primary"
+                android:layout_toRightOf="@id/putao_flight_startdate_tv"
+                android:text="@string/putao_calendar_date_tomorrow"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:background="@drawable/putao_list_white_transblack_selector"
+            android:id="@+id/putao_flight_arrivedate_layout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="21dp"
+                android:drawableLeft="@drawable/putao_icon_plane_date"
+                android:gravity="center"
+                android:drawablePadding="8dp"
+                android:text="@string/putao_return_date"
+                android:textColor="@color/putao_text_color_second"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/putao_flight_arrivedateinfo_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="24dp"
+                android:layout_marginRight="16dp"
+                android:textColor="@color/putao_text_color_primary"
+                android:text="@string/putao_calendar_date_tomorrow" />
+
+            <TextView
+                android:id="@+id/putao_flight_arrivedate_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="24dp"
+                android:layout_marginRight="8dp"
+                android:layout_toLeftOf="@id/putao_flight_arrivedateinfo_tv"
+                android:textColor="@color/putao_text_color_primary"
+                android:text="@string/putao_calendar_date_tomorrow"
+                android:textSize="24sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/putao_flight_query_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/putao_flightdate_layout"
+        android:layout_margin="16dp"
+        android:background="@drawable/putao_click_btn_bg"
+        android:text="@string/putao_express_select"
+        android:textColor="@color/putao_white" />
+
+    <Button
+        android:id="@+id/putao_flight_queryorder_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/putao_flight_query_btn"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/putao_express_history_btn_bg"
+        android:text="@string/putao_flight_order"
+        android:textColor="@color/putao_text_color_green" />
+
+</RelativeLayout>

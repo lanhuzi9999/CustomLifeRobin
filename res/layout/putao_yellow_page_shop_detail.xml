@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <!-- modify for COOLUI6.0 -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="245dp"
+        android:background="@drawable/putao_shop_detail_bg"
+        android:paddingTop="@dimen/putao_status_bar_height"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:minHeight="@dimen/putao_title_bar_bg_hight" >
+
+            <!-- android:layout_height="@dimen/putao_title_bar_back_arrow_widthandheight" -->
+            <!-- android:layout_width="@dimen/putao_title_bar_back_arrow_widthandheight" -->
+
+            <ImageView
+                android:id="@+id/back_img"
+                style="@style/putao_Titlebar_Icon_Style"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:contentDescription="@string/putao_about_us"
+                android:src="@drawable/putao_icon_back" />
+
+            <!-- remove android:layout_toLeftOf="@+id/right_img" -->
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="96dp"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/name_text"
+                    style="@style/putao_Titlebar_Primary_Text_Style"
+                    android:layout_gravity="center_horizontal"
+                    android:ellipsize="marquee"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:paddingLeft="4dp"
+                    android:paddingRight="4dp" >
+
+                    <TextView
+                        android:id="@+id/source_text"
+                        style="@style/putao_Titlebar_Second_Text_Style" />
+
+                    <View
+                        android:id="@+id/price_divider"
+                        android:layout_width="@dimen/putao_divider_line_size"
+                        android:layout_height="14dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="5dp"
+                        android:background="#dcdcdc"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/average_price"
+                        style="@style/putao_Titlebar_Second_Text_Style"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="5dp"
+                        android:gravity="center"
+                        android:visibility="gone" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!--
+                 <ImageView
+                android:id="@+id/right_img"
+                android:layout_width="@dimen/putao_title_bar_back_arrow_widthandheight"
+                android:layout_height="@dimen/putao_title_bar_back_arrow_widthandheight"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:scaleType="center"
+                android:src="@drawable/putao_icon_back"
+                android:visibility="invisible" />
+            -->
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="19dp"
+            android:orientation="vertical" >
+
+            <RatingBar
+                android:id="@+id/rating_text"
+                style="@style/putao_ratingbar_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="15dp"
+                android:isIndicator="true"
+                android:numStars="5"
+                android:rating="3.5"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/logo_img"
+                android:layout_width="@dimen/putao_yp_detail_item_image_size"
+                android:layout_height="@dimen/putao_yp_detail_item_image_size"
+                android:layout_gravity="center"
+                android:contentDescription="@string/putao_about_us" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <so.contacts.hub.widget.MyScrollView
+        style="@style/putao_f_f"
+        android:layout_marginTop="@dimen/putao_yp_detail_head_height"
+        android:background="@color/putao_screen_background_light"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:id="@+id/more_layout"
+            style="@style/putao_f_f"
+            android:layout_marginBottom="5dp"
+            android:orientation="vertical" />
+    </so.contacts.hub.widget.MyScrollView>
+
+</RelativeLayout>

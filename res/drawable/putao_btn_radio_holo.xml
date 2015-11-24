@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@drawable/putao_radio_button_on" android:state_checked="true"  android:state_window_focused="false"/>
+    <item android:drawable="@drawable/putao_radio_button_off" android:state_checked="false" android:state_window_focused="false"/>
+    <item android:drawable="@drawable/putao_radio_button_on" android:state_checked="true"  android:state_pressed="true"/>
+    <item android:drawable="@drawable/putao_radio_button_on" android:state_checked="false"  android:state_pressed="true"/>
+    <item android:drawable="@drawable/putao_radio_button_on_focused" android:state_checked="true"  android:state_focused="true"/>
+    <item android:drawable="@drawable/putao_radio_button_off_focused" android:state_checked="false"  android:state_focused="true"/>
+    <item android:drawable="@drawable/putao_radio_button_off" android:state_checked="false" />
+    <item android:drawable="@drawable/putao_radio_button_on" android:state_checked="true" />
+
+    <!-- Disabled states -->
+
+
+    <!-- <item android:state_checked="true" android:state_window_focused="false" -->
+    <!-- android:drawable="@drawable/btn_radio_on_disabled_holo_dark" /> -->
+    <!-- <item android:state_checked="false" android:state_window_focused="false" -->
+    <!-- android:drawable="@drawable/btn_radio_off_disabled_holo_dark" /> -->
+
+
+    <!-- <item android:state_checked="true" android:state_focused="true" -->
+    <!-- android:drawable="@drawable/btn_radio_on_disabled_focused_holo_dark" /> -->
+    <!-- <item android:state_checked="false" android:state_focused="true" -->
+    <!-- android:drawable="@drawable/btn_radio_off_disabled_focused_holo_dark" /> -->
+
+
+    <!-- <item android:state_checked="false" android:drawable="@drawable/btn_radio_off_disabled_holo_dark" /> -->
+    <!-- <item android:state_checked="true" android:drawable="@drawable/btn_radio_on_disabled_holo_dark" /> -->
+
+</selector>

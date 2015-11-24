@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/nearby_item_layout"
+    style="@style/putao_List_THREE_ITEM_Style"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <ImageView
+        android:id="@+id/nearby_item_img"
+        android:layout_width="@dimen/putao_listview_multirow_item_imgsize"
+        android:layout_height="@dimen/putao_listview_multirow_item_imgsize"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:contentDescription="@string/putao_about_us"
+        android:scaleType="fitXY" />
+
+    <LinearLayout
+        android:id="@+id/nearby_item_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/putao_listview_item_imgcontentgap"
+        android:layout_toRightOf="@+id/nearby_item_img"
+        android:gravity="center_vertical"
+        android:minHeight="@dimen/putao_listview_item_imgsize"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/nearby_name"
+                style="@style/putao_List_Two_ITEM_PRIMARY_TEXT_STYLE"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/nearby_additional_tuan"
+                android:ellipsize="end"
+                android:paddingRight="3dp"
+                android:singleLine="true" />
+
+            <ImageView
+                android:id="@+id/nearby_additional_tuan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="2dp"
+                android:contentDescription="@string/putao_about_us"
+                android:src="@drawable/putao_icon_logo_tuan"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/nearby_star_price_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp" >
+
+            <RatingBar
+                android:id="@+id/nearby_star_layout"
+                style="@style/putao_ratingbar_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:isIndicator="true"
+                android:numStars="5" />
+
+            <View
+                android:id="@+id/nearby_vertical_line_view"
+                android:layout_width="1dip"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/star_layout"
+                android:layout_alignTop="@id/star_layout"
+                android:layout_centerVertical="true"
+                android:layout_marginBottom="2dip"
+                android:layout_marginLeft="5dip"
+                android:layout_marginRight="5dip"
+                android:layout_marginTop="2dip"
+                android:layout_toRightOf="@id/star_layout"
+                android:background="#7f7f7f"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/nearby_average_price"
+                style="@style/putao_List_Two_ITEM_SECOND_TEXT_STYLE"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/vertical_line_view"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/nearby_region_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp" >
+
+            <TextView
+                android:id="@+id/nearby_distance"
+                style="@style/putao_List_Two_ITEM_Tip_TEXT_STYLE"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:singleLine="true" />
+
+            <TextView
+                android:id="@+id/nearby_region"
+                style="@style/putao_List_Two_ITEM_SECOND_TEXT_STYLE"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_toLeftOf="@+id/nearby_distance"
+                android:ellipsize="end"
+                android:paddingRight="5dp"
+                android:singleLine="true" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

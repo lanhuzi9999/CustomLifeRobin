@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/putao_List_Two_ITEM_Style"
+    android:background="@drawable/putao_listview_item_selector"
+    android:paddingLeft="0dp"
+    android:paddingRight="0dp" >
+
+    <!--
+             <ImageView
+            android:id="@+id/head_img"
+            android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:layout_centerVertical="true"
+        	android:layout_alignParentLeft="true"
+            android:src="@drawable/putao_icon_data_call" 
+            android:visibility="gone"/>
+    -->
+
+
+    <!-- android:layout_toRightOf="@id/head_img" -->
+
+    <LinearLayout
+        style="@style/putao_f_w"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="16dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/number_text"
+            style="@style/putao_List_Two_ITEM_PRIMARY_TEXT_STYLE"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/decription_text"
+            style="@style/putao_List_Two_ITEM_SECOND_TEXT_STYLE"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/callPhone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="16dp"
+        android:src="@drawable/putao_icon_logo_dianhua"
+        android:visibility="visible" />
+
+    <View 
+        android:id="@+id/divider_line"
+        android:layout_marginTop="16dp"
+        style="@style/putao_DividerStyle_Horizontal_Bottom"/>
+    
+<!--     <View
+        android:id="@+id/divider_line"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/putao_divider_line_size"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="16dp"
+        android:background="@color/putao_yellow_page_line_color" /> -->
+
+
+    <View 
+        android:layout_alignParentTop="true"
+        style="@style/putao_DividerStyle_Horizontal"/>
+    
+<!--      <View
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/putao_divider_line_size"
+        android:layout_alignParentTop="true"
+        android:background="@color/putao_yellow_page_line_color" /> -->
+</RelativeLayout>

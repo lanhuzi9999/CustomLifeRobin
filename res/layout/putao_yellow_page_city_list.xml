@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+     <LinearLayout
+         android:id="@+id/putao_cityselect_tab"
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:background="@color/putao_white"
+         android:baselineAligned="false"
+         android:orientation="horizontal"
+         android:visibility="gone" >
+
+         <LinearLayout
+             android:layout_width="0dp"
+             android:layout_height="wrap_content"
+             android:layout_weight="1"
+             android:orientation="vertical" >
+
+             <TextView
+                 android:id="@+id/putao_city_chinese_textview"
+                 android:layout_width="wrap_content"
+                 android:layout_height="40dp"
+                 android:layout_gravity="center"
+                 android:gravity="center"
+                 android:text="@string/putao_flight_chinese_city"
+                 android:textColor="@color/putao_text_color_primary"
+                 android:textSize="14sp" />
+
+             <View
+                 android:id="@+id/putao_city_chinese_textview_bottom_line"
+                 android:layout_width="@dimen/putao_tag_bar_width"
+                 android:layout_height="@dimen/putao_tag_bar_footerLineHeight"
+                 android:layout_gravity="center_horizontal"
+                 android:background="@color/putao_text_color_green" />
+         </LinearLayout>
+
+         <LinearLayout
+             android:layout_width="0dp"
+             android:layout_height="wrap_content"
+             android:layout_weight="1"
+             android:orientation="vertical" >
+
+             <TextView
+                 android:id="@+id/putao_city_foreign_textview"
+                 android:layout_width="wrap_content"
+                 android:layout_height="40dp"
+                 android:layout_gravity="center"
+                 android:gravity="center"
+                 android:text="@string/putao_flight_foreign_city"
+                 android:textColor="@color/putao_text_color_second"
+                 android:textSize="14sp" />
+
+             <View
+                 android:id="@+id/putao_city_foreign_textview_bottom_line"
+                 android:layout_width="@dimen/putao_tag_bar_width"
+                 android:layout_height="@dimen/putao_tag_bar_footerLineHeight"
+                 android:layout_gravity="center_horizontal"
+                 android:background="@color/putao_text_color_green"
+                 android:visibility="gone" />
+         </LinearLayout>
+     </LinearLayout>
+
+    <RelativeLayout
+        android:layout_below="@id/putao_cityselect_tab"
+        android:id="@+id/city_search_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/putao_homepage_search_layout_height"
+        android:layout_margin="@dimen/putao_home_default_margin" >
+
+        <EditText
+            android:id="@+id/city_search"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/putao_homepage_search_layout_height"
+            android:background="@drawable/putao_bg_white_select"
+            android:drawableLeft="@drawable/putao_icon_select"
+            android:gravity="center_vertical"
+            android:hint="@string/putao_city_search"
+            android:paddingLeft="@dimen/putao_home_search_left_padding"
+            android:singleLine="true"
+            android:textColorHint="@color/putao_home_hint_text_color"
+            android:textSize="@dimen/putao_home_main_text_size" />
+
+        <ImageView
+            android:id="@+id/clear_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="16dp"
+            android:scaleType="centerCrop"
+            android:visibility="invisible"
+            android:src="@drawable/putao_icon_list_cancel" />
+    </RelativeLayout>
+
+    <View style="@style/putao_DividerStyle_Horizontal"
+        android:layout_below="@id/city_search_layout"
+        android:id="@+id/divider"
+        />
+    
+<!--     <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/putao_divider_line_size"
+        android:layout_below="@id/city_search_layout"
+        android:background="@drawable/putao_line_horizontal" /> -->
+
+    <so.contacts.hub.widget.PinnedHeaderListView.PinnedHeaderListView
+        android:id="@+id/city_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        style="@style/putao_ListStyle.Itembg.NoDivider"
+        android:layout_below="@id/divider"
+        android:clipToPadding="false"
+        >
+    </so.contacts.hub.widget.PinnedHeaderListView.PinnedHeaderListView>
+
+    <so.contacts.hub.widget.IndexBarContacts
+        android:id="@+id/sideBar"
+        android:layout_width="40dp"
+        android:layout_height="fill_parent"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/city_search_layout"
+        android:layout_marginTop="2dp"
+        android:padding="5dp" />
+
+    <TextView
+        android:id="@+id/tips"
+        style="@style/putao_StyleForIndexTips"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:minHeight="53dp"
+        android:minWidth="53dp"
+        android:visibility="gone" />
+
+</RelativeLayout>

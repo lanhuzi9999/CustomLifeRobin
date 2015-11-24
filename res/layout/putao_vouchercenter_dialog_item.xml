@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/putao_tv_title"
+        style="@style/putao_List_Two_ITEM_SECOND_TEXT_STYLE"
+        android:textColor="#4b4b4b" />
+
+    <TextView
+        android:id="@+id/putao_tv_name"
+        style="@style/putao_List_Two_ITEM_SECOND_TEXT_STYLE"
+        android:textColor="@color/putao_text_color_primary"
+        android:textStyle="bold"
+        android:layout_toRightOf="@id/putao_tv_title" />
+
+    <TextView
+        android:id="@+id/putao_tv_remark"
+        style="@style/putao_List_Two_ITEM_SECOND_TEXT_STYLE"
+        android:layout_below="@id/putao_tv_title"
+        android:visibility="gone" />
+
+</RelativeLayout>

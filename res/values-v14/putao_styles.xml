@@ -1,0 +1,20 @@
+<resources>
+
+    <!--
+        Base application theme for API 14+. This theme completely replaces
+        AppBaseTheme from BOTH res/values/styles.xml and
+        res/values-v11/styles.xml on API 14+ devices.
+    -->
+    <style name="putao_AppBaseTheme" parent="@android:style/Theme.Light">
+
+        <!-- API 14 theme customizations can go here. -->
+        <item name="android:listPreferredItemHeightSmall">54dp</item>
+        <item name="android:textAppearanceListItemSmall">@style/putao_TextAppearanceMedium</item>
+    </style>
+    
+    <style name="putao_BaseDialog" parent="android:style/Theme.Dialog">
+        <item name="android:listPreferredItemHeightSmall">54dp</item>
+        <item name="android:textAppearanceListItemSmall">@style/putao_TextAppearanceMedium</item>
+    </style>
+
+</resources>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/putao_list_white_transblack_selector"
+    android:orientation="vertical" >
+
+    <!-- modified by ffh 去掉多余的层级 -->
+    <!--
+         <LinearLayout
+        style="@style/putao_PopupWindow_List_SINGLE_ITEM_Style"
+        android:descendantFocusability="blocksDescendants"
+        android:orientation="horizontal" >
+    -->
+    <TextView
+        android:id="@+id/putao_habit_textview"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_marginLeft="102dp"
+        android:gravity="center_vertical"
+        android:textColor="@color/putao_express_result_blod"
+        android:textSize="@dimen/putao_listview_firstline_textsize" />
+    <!-- </LinearLayout> -->
+	<View style="@style/putao_DividerStyle_Horizontal_Bottom"/>
+</LinearLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="@dimen/putao_express_result_footer_view_height"
+    android:layout_marginTop="10dip" >
+
+    <TextView
+        android:id="@+id/express_source_comany_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:drawableLeft="@drawable/putao_icon_cooperate_kdzs"
+        android:text="@string/putao_express_source_company_text"
+        android:textColor="@color/putao_express_result_info_date"
+        android:textSize="@dimen/putao_express_source_company_text_size" />
+
+</RelativeLayout>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/putao_btn_margin_size"
+        android:paddingRight="@dimen/putao_btn_margin_size" >
+
+        <TextView
+            style="@style/putao_TextAppearance"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/putao_game_question_q1" />
+
+        <TextView
+            style="@style/putao_TextAppearanceMedium"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/putao_game_question_a1" />
+
+        <TextView
+            style="@style/putao_TextAppearance"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/putao_game_question_q2" />
+
+        <TextView
+            style="@style/putao_TextAppearanceMedium"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/putao_game_question_a2" />
+
+        <TextView
+            style="@style/putao_TextAppearance"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/putao_game_question_q3" />
+
+        <LinearLayout
+            android:id="@+id/putao_game_cptel"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="vertical" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/putao_game_cpname"
+            style="@style/putao_List_SIGNLE_ITEM_SECOND_TEXT_STYLE"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/putao_game_question_tips_provider" />
+    </LinearLayout>
+
+</RelativeLayout>

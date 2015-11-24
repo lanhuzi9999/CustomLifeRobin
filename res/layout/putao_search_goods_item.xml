@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/putao_list_white_transblack_selector" >
+
+    <View
+        android:id="@+id/putao_divider"
+        style="@style/putao_DividerStyle_Horizontal"
+        android:layout_alignParentTop="true" >
+    </View>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="8dp"
+        android:paddingTop="8dp" >
+
+        <ImageView
+            android:id="@+id/icon"
+            android:layout_width="67dp"
+            android:layout_height="48dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/putao_a0501" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            android:layout_toLeftOf="@+id/price"
+            android:layout_toRightOf="@+id/icon" >
+
+            <TextView
+                android:id="@+id/title"
+                style="@style/putao_TextAppearance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:singleLine="true" />
+
+            <TextView
+                android:id="@+id/serive_name"
+                style="@style/putao_text_in_rect"
+                android:layout_marginLeft="4dp"
+                android:layout_toRightOf="@id/title"
+				android:lines="1"                
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/des"
+                style="@style/putao_TextAppearanceMedium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/title"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:textSize="12sp" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/price"
+            style="@style/putao_TextAppearanceMedium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="16dp"
+            android:textColor="@color/putao_text_color_importance"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

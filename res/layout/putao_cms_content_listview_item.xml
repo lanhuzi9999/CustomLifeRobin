@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/putao_content_listview_item_height"
+    android:padding="@dimen/putao_content_listview_padding"
+    android:orientation="horizontal" 
+    android:background="@drawable/putao_listview_item_selector" >
+    
+    <ImageView android:id="@+id/putao_content_imageView"
+        android:layout_width="@dimen/putao_content_listview_img_width"
+        android:layout_height="@dimen/putao_content_listview_img_height"
+        />
+	<LinearLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:orientation="vertical"
+	    >
+	    <TextView android:id="@+id/putao_title_textView"
+	        android:layout_width="fill_parent"
+	        android:layout_height="0dp"
+	        android:layout_weight="1"
+	        />
+	    <TextView android:id="@+id/putao_description_textView"
+	        android:layout_width="fill_parent"
+	        android:layout_height="0dp"
+	        android:layout_weight="1"
+	        />
+	    <RelativeLayout android:layout_width="fill_parent"
+	        android:layout_height="0dp"
+	        android:layout_weight="1">
+	        <TextView android:id="@+id/putao_price_textView"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_alignParentLeft="true"
+		        />
+	        <TextView android:id="@+id/putao_source_price_textView"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_toRightOf="@id/putao_price_textView"
+		        />
+	        <TextView android:id="@+id/putao_distance_textView"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_alignParentRight="true"
+		        />
+	    </RelativeLayout>
+	</LinearLayout>
+</LinearLayout>
