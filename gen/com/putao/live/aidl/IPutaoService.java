@@ -1,6 +1,6 @@
 /*
  * This file is auto-generated.  DO NOT MODIFY.
- * Original file: E:\\GitWorkspace\\PutaoLifeRobin\\PutaoLifeRobin\\PutaoLifeRobin\\src\\com\\putao\\live\\aidl\\IPutaoService.aidl
+ * Original file: E:\\myGitWorkspace\\PutaoLifeRobin\\PutaoLifeRobin\\src\\com\\putao\\live\\aidl\\IPutaoService.aidl
  */
 package com.putao.live.aidl;
 public interface IPutaoService extends android.os.IInterface

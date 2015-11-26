@@ -2,6 +2,7 @@ package so.contacts.hub.basefunction.account.manager;
 
 import so.contacts.hub.basefunction.account.IPutaoAccount;
 import so.contacts.hub.basefunction.account.PutaoAccountImpl;
+import so.contacts.hub.basefunction.account.bean.PTUser;
 
 /**
  * ****************************************************************
@@ -41,5 +42,10 @@ public class PutaoAccountManager
     private PutaoAccountManager()
     {
         mPutaoAccount = new PutaoAccountImpl();
+    }
+    
+    public PTUser getPtUser()
+    {
+        return null;
     }
 }

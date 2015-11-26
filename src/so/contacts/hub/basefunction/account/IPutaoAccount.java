@@ -1,5 +1,6 @@
 package so.contacts.hub.basefunction.account;
 
+import so.contacts.hub.basefunction.account.bean.PTUser;
 import android.content.Context;
 
 /**
@@ -15,5 +16,20 @@ import android.content.Context;
 public interface IPutaoAccount
 {
 
+    /**
+     * 获取葡萄账号信息
+     * @return 没有登陆的时候返回null
+     * PTUser
+     */
+    public PTUser getPtUser();
+        
+    /**
+     * 请求服务器发送验证码到手机
+     * @param context
+     * @param mobile
+     * @param actionCode 200001登录      200004设置密码
+     * @param cb 回调到主线程，修改ui
+     * void
+     */
     public void sendCaptchar(Context context, String mobile, String actionCode, IAccCallbackAdv<String> cb);
 }
