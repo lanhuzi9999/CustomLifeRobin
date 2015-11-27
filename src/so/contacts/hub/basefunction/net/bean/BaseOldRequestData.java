@@ -1,6 +1,11 @@
 package so.contacts.hub.basefunction.net.bean;
 
 import so.contacts.hub.ContactsApp;
+import so.contacts.hub.basefunction.account.bean.PTUser;
+import so.contacts.hub.basefunction.account.manager.PutaoAccountManager;
+import so.contacts.hub.basefunction.config.Config;
+import so.contacts.hub.basefunction.imageloader.utils.Md5Util;
+import so.contacts.hub.basefunction.utils.SystemUtil;
 import android.content.Context;
 
 public abstract class BaseOldRequestData<T extends BaseResponseData>
@@ -36,6 +41,29 @@ public abstract class BaseOldRequestData<T extends BaseResponseData>
     public BaseOldRequestData(String actionCode)
     {
         Context context = ContactsApp.getInstance();
+        PTUser ptUser = PutaoAccountManager.getInstance().getPtUser();
+        if (ptUser != null)
+        {
+            pt_token = ptUser.pt_token;
+        }
         action_code = actionCode;
+        ua = new UaInfo();
+        timestamp = System.currentTimeMillis();
+        version = new VersionInfo(SystemUtil.getAppVersion(context), "", "");
+        secret_key = Md5Util.md5(actionCode + SystemUtil.getAppVersion(context) + timestamp + Config.KEY);
+        active_status = Config.STATE;
+        channel_no = SystemUtil.getChannelNo(context);
+        app_id = Integer.parseInt(SystemUtil.getAppid(context));
+        device_code = SystemUtil.getPutaoDeviceId(context);
+
+    }
+
+    protected abstract T getNewInstance();
+
+    protected T fromJson(String content)
+    {
+        T t = getNewInstance();
+        t = (T) Config.mGson.fromJson(content, t.getClass());
+        return t;
     }
 }

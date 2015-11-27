@@ -10,6 +10,8 @@ import so.contacts.hub.basefunction.storage.db.DatabaseHelper;
 
 public class Config
 {
+    public static final String KEY = "233&*Adc^%$$per";
+    public static int STATE = 1;
     /**
      * 服务器域名
      */

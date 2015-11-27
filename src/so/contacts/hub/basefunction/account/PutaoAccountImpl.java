@@ -3,6 +3,7 @@ package so.contacts.hub.basefunction.account;
 import so.contacts.hub.ContactsApp;
 import so.contacts.hub.basefunction.account.bean.PTUser;
 import so.contacts.hub.basefunction.config.Config;
+import so.contacts.hub.basefunction.net.bean.GetCaptchaRequestData;
 import so.contacts.hub.basefunction.storage.sharedprefrences.PrefConstants;
 import so.contacts.hub.basefunction.storage.sharedprefrences.SharedPreManager;
 import android.content.Context;
@@ -27,7 +28,7 @@ public class PutaoAccountImpl implements IPutaoAccount
     }
 
     @Override
-    public void sendCaptchar(Context context, String mobile, String actionCode, IAccCallbackAdv<String> cb)
+    public void sendCaptchar(Context context, final String mobile, final String actionCode, IAccCallbackAdv<String> cb)
     {
         Config.execute(new Runnable()
         {
@@ -35,6 +36,7 @@ public class PutaoAccountImpl implements IPutaoAccount
             @Override
             public void run()
             {
+                GetCaptchaRequestData captchaRequestData = new GetCaptchaRequestData(actionCode, mobile);
 
             }
         });

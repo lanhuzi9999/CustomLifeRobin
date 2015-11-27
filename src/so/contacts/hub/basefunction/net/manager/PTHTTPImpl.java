@@ -19,6 +19,7 @@ import android.text.TextUtils;
 import so.contacts.hub.basefunction.net.BasePTStrRequest;
 import so.contacts.hub.basefunction.net.CMSRequest;
 import so.contacts.hub.basefunction.net.VolleyQueue;
+import so.contacts.hub.basefunction.net.bean.BaseOldRequestData;
 import so.contacts.hub.basefunction.net.bean.BaseRequestData;
 
 /**
@@ -250,4 +251,13 @@ public class PTHTTPImpl implements IPTHTTP
             e.printStackTrace();
         }
     }
+
+    @Override
+    public String syncPostString(String url, BaseOldRequestData baseOldRequestData)
+    {
+        RequestFuture<String> future = RequestFuture.newFuture();
+        return null;
+    }
+    
+    
 }

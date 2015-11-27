@@ -46,6 +46,6 @@ public class PutaoAccountManager
     
     public PTUser getPtUser()
     {
-        return null;
+        return mPutaoAccount.getPtUser();
     }
 }
