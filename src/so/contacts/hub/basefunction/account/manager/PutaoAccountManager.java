@@ -1,5 +1,8 @@
 package so.contacts.hub.basefunction.account.manager;
 
+import android.content.Context;
+import so.contacts.hub.basefunction.account.IAccCallback;
+import so.contacts.hub.basefunction.account.IAccCallbackAdv;
 import so.contacts.hub.basefunction.account.IPutaoAccount;
 import so.contacts.hub.basefunction.account.PutaoAccountImpl;
 import so.contacts.hub.basefunction.account.bean.PTUser;
@@ -44,8 +47,31 @@ public class PutaoAccountManager
         mPutaoAccount = new PutaoAccountImpl();
     }
     
+    /**
+     * 获取ptuser
+     * @return
+     * PTUser
+     */
     public PTUser getPtUser()
     {
         return mPutaoAccount.getPtUser();
+    }
+    
+    /**
+     * 请求服务器发送验证码到相应手机号
+     * @param context
+     * @param mobile
+     * @param actionCode
+     * @param cb
+     * void
+     */
+    public void sendCaptchar(Context context, String mobile, String actionCode, IAccCallbackAdv<String> cb)
+    {
+        mPutaoAccount.sendCaptchar(context, mobile, actionCode, cb);
+    }
+    
+    public void loginByCaptcha(Context context, String accName, int checkCode, IAccCallback cb)
+    {
+        mPutaoAccount.loginByCaptcha(context, accName, checkCode, cb);
     }
 }

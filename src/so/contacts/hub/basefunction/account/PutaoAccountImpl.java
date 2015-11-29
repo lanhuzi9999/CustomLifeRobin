@@ -1,14 +1,21 @@
 package so.contacts.hub.basefunction.account;
 
-import so.contacts.hub.ContactsApp;
 import so.contacts.hub.basefunction.account.bean.PTUser;
 import so.contacts.hub.basefunction.config.Config;
+import so.contacts.hub.basefunction.net.bean.CheckCaptchaRequestData;
+import so.contacts.hub.basefunction.net.bean.CheckCaptchaResponseData;
 import so.contacts.hub.basefunction.net.bean.GetCaptchaRequestData;
+import so.contacts.hub.basefunction.net.bean.GetCaptchaResponse;
+import so.contacts.hub.basefunction.net.manager.PTHTTPManager;
 import so.contacts.hub.basefunction.storage.sharedprefrences.PrefConstants;
 import so.contacts.hub.basefunction.storage.sharedprefrences.SharedPreManager;
+import android.R.integer;
 import android.content.Context;
-import android.content.SharedPreferences;
+import android.os.Handler;
+import android.os.Looper;
+import android.os.Message;
 import android.text.TextUtils;
+import android.util.Log;
 
 /**
  * **************************************************************** 文件名称 :
@@ -27,8 +34,36 @@ public class PutaoAccountImpl implements IPutaoAccount
 
     }
 
+    private static final int MSG_LOGIN_SUCCESS = 100;
+
+    private static final int MSG_LOGIN_FAIL = 101;
+
+    private static final int MSG_LOGIN_CANCEL = 102;
+
+    private Handler mainHandler = new Handler(Looper.getMainLooper())
+    {
+        public void handleMessage(Message msg)
+        {
+            switch (msg.what)
+            {
+                case MSG_LOGIN_SUCCESS:
+
+                    break;
+                case MSG_LOGIN_FAIL:
+
+                    break;
+                case MSG_LOGIN_CANCEL:
+
+                    break;
+                default:
+                    break;
+            }
+        };
+    };
+
     @Override
-    public void sendCaptchar(Context context, final String mobile, final String actionCode, IAccCallbackAdv<String> cb)
+    public void sendCaptchar(final Context context, final String mobile, final String actionCode,
+            final IAccCallbackAdv<String> cb)
     {
         Config.execute(new Runnable()
         {
@@ -37,7 +72,33 @@ public class PutaoAccountImpl implements IPutaoAccount
             public void run()
             {
                 GetCaptchaRequestData captchaRequestData = new GetCaptchaRequestData(actionCode, mobile);
+                String content = PTHTTPManager.getHttp().syncPostString(Config.SERVER, captchaRequestData);
 
+                final GetCaptchaResponse response = captchaRequestData.getObject(content);
+                if (response != null && response.isSuccess())
+                {
+                    mainHandler.post(new Runnable()
+                    {
+
+                        @Override
+                        public void run()
+                        {
+                            cb.onSuccess(response.send_num);
+                        }
+                    });
+                }
+                else
+                {
+                    mainHandler.post(new Runnable()
+                    {
+
+                        @Override
+                        public void run()
+                        {
+                            cb.onFail(IAccCallback.LOGIN_FAILED_CODE_SERVER_EXCEPTION);
+                        }
+                    });
+                }
             }
         });
     }
@@ -94,5 +155,27 @@ public class PutaoAccountImpl implements IPutaoAccount
     public void cleanPtUser(String fileName, String key)
     {
         SharedPreManager.getInstance().remove(fileName, key);
+    }
+
+    @Override
+    public void loginByCaptcha(Context context, final String accName, final int checkCode, IAccCallback cb)
+    {
+        Config.execute(new Runnable()
+        {
+
+            @Override
+            public void run()
+            {
+                CheckCaptchaRequestData requestData = new CheckCaptchaRequestData(accName, checkCode);
+
+                String content = PTHTTPManager.getHttp().syncPostString(Config.SERVER, requestData);
+
+                CheckCaptchaResponseData response = requestData.getObject(content);
+                if (response != null && response.isSuccess())
+                {
+                    Log.d("PutaoAccountImpl", "pxy--" + response.toString());
+                }
+            }
+        });
     }
 }

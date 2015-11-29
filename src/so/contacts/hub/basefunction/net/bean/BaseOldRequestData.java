@@ -1,5 +1,13 @@
 package so.contacts.hub.basefunction.net.bean;
 
+import java.io.UnsupportedEncodingException;
+
+import org.apache.http.HttpEntity;
+import org.apache.http.entity.StringEntity;
+import org.apache.http.protocol.HTTP;
+
+import com.putao.live.R;
+
 import so.contacts.hub.ContactsApp;
 import so.contacts.hub.basefunction.account.bean.PTUser;
 import so.contacts.hub.basefunction.account.manager.PutaoAccountManager;
@@ -53,9 +61,15 @@ public abstract class BaseOldRequestData<T extends BaseResponseData>
         secret_key = Md5Util.md5(actionCode + SystemUtil.getAppVersion(context) + timestamp + Config.KEY);
         active_status = Config.STATE;
         channel_no = SystemUtil.getChannelNo(context);
-        app_id = Integer.parseInt(SystemUtil.getAppid(context));
+        try
+        {
+            app_id = Integer.parseInt(SystemUtil.getAppid(context));
+        }
+        catch (NumberFormatException e)
+        {
+            e.printStackTrace();
+        }
         device_code = SystemUtil.getPutaoDeviceId(context);
-
     }
 
     protected abstract T getNewInstance();
@@ -65,5 +79,47 @@ public abstract class BaseOldRequestData<T extends BaseResponseData>
         T t = getNewInstance();
         t = (T) Config.mGson.fromJson(content, t.getClass());
         return t;
+    }
+    
+    public T getObject(String content)
+    {
+        T data;
+        try
+        {
+            data = fromJson(content);
+        }
+        catch (Exception e)
+        {
+            e.printStackTrace();
+            data = getNewInstance();
+            data.ret_code = "9999";
+            data.error_remark = ContactsApp.getInstance().getResources().getString(R.string.putao_net_unuseable);
+        }
+        
+        if(data == null)
+        {
+            data = getNewInstance();
+            data.ret_code = "9999";
+            data.error_remark = ContactsApp.getInstance().getResources().getString(R.string.putao_net_unuseable);
+        }
+        return data;
+    }
+    
+    public String getJsonData() {
+        String cotent = Config.mGson.toJson(this);
+        return cotent;
+    }
+    
+    public HttpEntity getData() {
+        String cotent = getJsonData();
+        StringEntity entity = null;
+        try {
+            entity = new StringEntity(cotent, HTTP.UTF_8);
+        } catch (UnsupportedEncodingException e) {
+            e.printStackTrace();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return entity;
     }
 }

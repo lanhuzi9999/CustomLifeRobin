@@ -66,4 +66,10 @@ public class Config
         }
         return mExecutorService;
     }
+    /**
+     * 账户
+     */
+    public static final String ACCOUNT_SERVER_HOST = SERVER_HOST + "/sandroid1";
+    
+    public static final String SERVER = ACCOUNT_SERVER_HOST + "/PT_SERVER/interface.s";
 }

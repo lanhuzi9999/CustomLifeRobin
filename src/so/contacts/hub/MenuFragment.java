@@ -1,5 +1,9 @@
 package so.contacts.hub;
 
+import so.contacts.hub.basefunction.account.IAccCallbackAdv;
+import so.contacts.hub.basefunction.account.manager.PutaoAccountManager;
+import so.contacts.hub.basefunction.account.ui.YellowpageLoginByCaptureActivity;
+import so.contacts.hub.basefunction.net.bean.RelateUser;
 import android.R.integer;
 import android.content.Intent;
 import android.os.Bundle;
@@ -117,7 +121,28 @@ public class MenuFragment extends BaseFragment implements OnClickListener
         switch (id)
         {
             case R.id.putao_header_fl:
-
+//                PutaoAccountManager.getInstance().sendCaptchar(getActivity(), "18589032823", "200001", new IAccCallbackAdv<String>()
+//                {
+//                    
+//                    @Override
+//                    public void onSuccess(String t)
+//                    {
+//                        
+//                    }
+//                    
+//                    @Override
+//                    public void onFail(int failed_code)
+//                    {
+//                        
+//                    }
+//                    
+//                    @Override
+//                    public void onCancel()
+//                    {
+//                        
+//                    }
+//                });
+                intent.setClass(getContext(), YellowpageLoginByCaptureActivity.class);
                 break;
 
             default:

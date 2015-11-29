@@ -12,10 +12,12 @@ import org.apache.http.protocol.HTTP;
 
 import com.android.volley.AuthFailureError;
 import com.android.volley.Request;
+import com.android.volley.Request.Method;
 import com.android.volley.toolbox.RequestFuture;
 
 import android.R.integer;
 import android.text.TextUtils;
+import so.contacts.hub.basefunction.net.BaseOldHttpRequest;
 import so.contacts.hub.basefunction.net.BasePTStrRequest;
 import so.contacts.hub.basefunction.net.CMSRequest;
 import so.contacts.hub.basefunction.net.VolleyQueue;
@@ -256,7 +258,31 @@ public class PTHTTPImpl implements IPTHTTP
     public String syncPostString(String url, BaseOldRequestData baseOldRequestData)
     {
         RequestFuture<String> future = RequestFuture.newFuture();
-        return null;
+        //初始化volley请求
+        BaseOldHttpRequest oldHttpRequest = new BaseOldHttpRequest(Method.POST, url, baseOldRequestData, future, future);
+        //添加头文件
+        setDefaultHeader(oldHttpRequest);
+        //添加到volley请求队列
+        VolleyQueue.getQueue().add(oldHttpRequest);
+        //请求得到结果
+        String content = null;
+        try
+        {
+            content = future.get(TIME_OUT, TimeUnit.MILLISECONDS);
+        }
+        catch (InterruptedException e)
+        {
+            e.printStackTrace();
+        }
+        catch (ExecutionException e)
+        {
+            e.printStackTrace();
+        }
+        catch (TimeoutException e)
+        {
+            e.printStackTrace();
+        }
+        return content;
     }
     
     

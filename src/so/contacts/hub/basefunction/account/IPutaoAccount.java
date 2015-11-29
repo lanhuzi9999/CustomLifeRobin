@@ -32,4 +32,15 @@ public interface IPutaoAccount
      * void
      */
     public void sendCaptchar(Context context, String mobile, String actionCode, IAccCallbackAdv<String> cb);
+    
+    /**
+     * 
+     * 验证手机号码登录
+     * @param context
+     * @param accName
+     * @param checkCode
+     * @param cb
+     * void
+     */
+    public void loginByCaptcha(Context context, String accName, int checkCode, IAccCallback cb);
 }

@@ -14,6 +14,16 @@ public interface IAccCallback
 {
 
     /**
+     * 账号已存在
+     */
+    public static final int LOGIN_FAILED_CODE_HAS_BIND = 1001;
+
+    /**
+     * 服务端异常
+     */
+    public static final int LOGIN_FAILED_CODE_SERVER_EXCEPTION = 1002;
+    
+    /**
      * 登录成功
      * 方法表述
      * void

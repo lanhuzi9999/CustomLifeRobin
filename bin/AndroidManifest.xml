@@ -18,6 +18,8 @@
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
     <uses-permission android:name="android.permission.CHANGE_CONFIGURATION" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS"/>
+    <uses-permission android:name="android.permission.READ_SMS"/>  
     <application
         android:name="so.contacts.hub.ContactsApp"
         android:allowBackup="true"
@@ -37,6 +39,18 @@
             android:value="2dea0e0d2d2962ccfcc5555878842512" />
 
         <meta-data
+            android:name="PUTAO_APPID"
+            android:value="10" />
+        
+        <meta-data
+            android:name="PUTAO_CHANNEL"
+            android:value="putao_live_01" />
+        
+        <meta-data
+            android:name="PUTAO_APPKEY"
+            android:value="ccc9819e5b314164a19ba986d9363152" />
+        
+        <meta-data
             android:name="UMENG_APPKEY"
             android:value="54b52f59fd98c5df81000e39" />
         <meta-data
@@ -54,6 +68,11 @@
         </activity>
         <activity
             android:name="so.contacts.hub.services.baseservices.ui.YellowPageGuideActivity"
+            android:launchMode="singleTop" >
+        </activity>
+        
+        <activity
+            android:name="so.contacts.hub.basefunction.account.ui.YellowpageLoginByCaptureActivity"
             android:launchMode="singleTop" >
         </activity>
 

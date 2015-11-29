@@ -1,5 +1,6 @@
 package so.contacts.hub.basefunction.storage.sharedprefrences;
 
+import java.util.HashMap;
 import java.util.Map;
 
 import so.contacts.hub.ContactsApp;
@@ -22,7 +23,7 @@ public class SharedPreManager
 
     private SharedPreferences mDefaultSharedPreferences;
 
-    private Map<String, SharedPreferences> mSharedMap;
+    private Map<String, SharedPreferences> mSharedMap = new HashMap<String, SharedPreferences>();
 
     public SharedPreManager()
     {
