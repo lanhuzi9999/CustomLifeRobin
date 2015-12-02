@@ -62,48 +62,6 @@ public class PutaoAccountImpl implements IPutaoAccount
     };
 
     @Override
-    public void sendCaptchar(final Context context, final String mobile, final String actionCode,
-            final IAccCallbackAdv<String> cb)
-    {
-        Config.execute(new Runnable()
-        {
-
-            @Override
-            public void run()
-            {
-                GetCaptchaRequestData captchaRequestData = new GetCaptchaRequestData(actionCode, mobile);
-                String content = PTHTTPManager.getHttp().syncPostString(Config.SERVER, captchaRequestData);
-
-                final GetCaptchaResponse response = captchaRequestData.getObject(content);
-                if (response != null && response.isSuccess())
-                {
-                    mainHandler.post(new Runnable()
-                    {
-
-                        @Override
-                        public void run()
-                        {
-                            cb.onSuccess(response.send_num);
-                        }
-                    });
-                }
-                else
-                {
-                    mainHandler.post(new Runnable()
-                    {
-
-                        @Override
-                        public void run()
-                        {
-                            cb.onFail(IAccCallback.LOGIN_FAILED_CODE_SERVER_EXCEPTION);
-                        }
-                    });
-                }
-            }
-        });
-    }
-
-    @Override
     public PTUser getPtUser()
     {
         if (mPtUser == null)
@@ -157,6 +115,52 @@ public class PutaoAccountImpl implements IPutaoAccount
         SharedPreManager.getInstance().remove(fileName, key);
     }
 
+    /**
+     * 发送验证码接口
+     */
+    @Override
+    public void sendCaptchar(final Context context, final String mobile, final String actionCode,
+            final IAccCallbackAdv<String> cb)
+    {
+        Config.execute(new Runnable()
+        {
+
+            @Override
+            public void run()
+            {
+                GetCaptchaRequestData captchaRequestData = new GetCaptchaRequestData(actionCode, mobile);
+                String content = PTHTTPManager.getHttp().syncPostString(Config.SERVER, captchaRequestData);
+
+                final GetCaptchaResponse response = captchaRequestData.getObject(content);
+                if (response != null && response.isSuccess())
+                {
+                    mainHandler.post(new Runnable()
+                    {
+
+                        @Override
+                        public void run()
+                        {
+                            cb.onSuccess(response.send_num);
+                            
+                        }
+                    });
+                }
+                else
+                {
+                    mainHandler.post(new Runnable()
+                    {
+
+                        @Override
+                        public void run()
+                        {
+                            cb.onFail(IAccCallback.LOGIN_FAILED_CODE_SERVER_EXCEPTION);
+                        }
+                    });
+                }
+            }
+        });
+    }
+    
     @Override
     public void loginByCaptcha(Context context, final String accName, final int checkCode, IAccCallback cb)
     {

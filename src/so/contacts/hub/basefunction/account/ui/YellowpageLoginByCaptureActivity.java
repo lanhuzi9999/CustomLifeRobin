@@ -2,17 +2,12 @@ package so.contacts.hub.basefunction.account.ui;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
-
-import com.amap.api.services.core.p;
-import com.amap.api.services.core.r;
-import com.putao.live.R;
-
-import android.R.integer;
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
 import android.os.Bundle;
+import android.os.CountDownTimer;
 import android.telephony.SmsMessage;
 import android.text.TextUtils;
 import android.view.View;
@@ -27,6 +22,7 @@ import so.contacts.hub.basefunction.account.manager.PutaoAccountManager;
 import so.contacts.hub.basefunction.net.bean.GetCaptchaResponse;
 import so.contacts.hub.basefunction.utils.NetUtil;
 import so.contacts.hub.basefunction.utils.TelAreaUtil;
+import com.putao.live.R;
 
 public class YellowpageLoginByCaptureActivity extends BaseActivity implements OnClickListener
 {
@@ -44,6 +40,9 @@ public class YellowpageLoginByCaptureActivity extends BaseActivity implements On
     private String mPhoneNumber;
 
     private SMSBroadcastReceiver mSMSBroadcastReceiver;
+
+    // 验证码重发计时器
+    private TimeCount mTimeCount;
 
     @Override
     protected void onCreate(Bundle savedInstance)
@@ -169,27 +168,28 @@ public class YellowpageLoginByCaptureActivity extends BaseActivity implements On
 
             String checkCode = mPassWordEditText.getText().toString().trim();
             checkCode = checkCode.replace(" ", "");
-            PutaoAccountManager.getInstance().loginByCaptcha(this, phoneNum, Integer.parseInt(checkCode), new IAccCallback()
-            {
+            PutaoAccountManager.getInstance().loginByCaptcha(this, phoneNum, Integer.parseInt(checkCode),
+                    new IAccCallback()
+                    {
 
-                @Override
-                public void onSuccess()
-                {
-                    
-                }
+                        @Override
+                        public void onSuccess()
+                        {
 
-                @Override
-                public void onFail(int failed_code)
-                {
+                        }
 
-                }
+                        @Override
+                        public void onFail(int failed_code)
+                        {
 
-                @Override
-                public void onCancel()
-                {
+                        }
 
-                }
-            });
+                        @Override
+                        public void onCancel()
+                        {
+
+                        }
+                    });
         }
         else
         {
@@ -212,6 +212,7 @@ public class YellowpageLoginByCaptureActivity extends BaseActivity implements On
                 String actionCode = "200001";
                 String phoneNum = mUserNamEditText.getText().toString().trim();
                 phoneNum = phoneNum.replace(" ", "");
+                mTimeCount = new TimeCount(60000, 1000);
 
                 PutaoAccountManager.getInstance().sendCaptchar(this, phoneNum, actionCode,
                         new IAccCallbackAdv<String>()
@@ -226,6 +227,7 @@ public class YellowpageLoginByCaptureActivity extends BaseActivity implements On
                             @Override
                             public void onFail(int failed_code)
                             {
+                                // 发送验证码失败按钮需要做处理
 
                             }
 
@@ -235,7 +237,8 @@ public class YellowpageLoginByCaptureActivity extends BaseActivity implements On
 
                             }
                         });
-
+                // handler发送消息处理按钮变化
+                mTimeCount.start();
             }
             else
             {
@@ -262,5 +265,32 @@ public class YellowpageLoginByCaptureActivity extends BaseActivity implements On
             }
         }
         return false;
+    }
+
+    class TimeCount extends CountDownTimer
+    {
+
+        public TimeCount(long millisInFuture, long countDownInterval)
+        {
+            super(millisInFuture, countDownInterval);
+        }
+
+        @Override
+        public void onTick(long millisUntilFinished)
+        {
+            mGetCaptcharButton.setText(+millisUntilFinished / 1000 + "秒后重发");
+            mGetCaptcharButton.getBackground().setAlpha(255);
+            mGetCaptcharButton.setEnabled(false);
+            mGetCaptcharButton.setClickable(false);
+        }
+
+        @Override
+        public void onFinish()
+        {
+            mGetCaptcharButton.setText(getString(R.string.putao_get_check_code));
+            mGetCaptcharButton.getBackground().setAlpha(125);
+            mGetCaptcharButton.setEnabled(false);
+            mGetCaptcharButton.setClickable(false);
+        }
     }
 }
