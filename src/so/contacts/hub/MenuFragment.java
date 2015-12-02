@@ -1,6 +1,9 @@
 package so.contacts.hub;
 
+import java.util.List;
+
 import so.contacts.hub.basefunction.account.IAccCallbackAdv;
+import so.contacts.hub.basefunction.account.bean.PTUser;
 import so.contacts.hub.basefunction.account.manager.PutaoAccountManager;
 import so.contacts.hub.basefunction.account.ui.YellowpageLoginByCaptureActivity;
 import so.contacts.hub.basefunction.net.bean.RelateUser;
@@ -44,6 +47,7 @@ public class MenuFragment extends BaseFragment implements OnClickListener
     /** 账号名字 */
     private TextView mAccNameTv;
 
+    private PTUser mPtUser;
     @Override
     public void onCreate(Bundle savedInstanceState)
     {
@@ -86,6 +90,12 @@ public class MenuFragment extends BaseFragment implements OnClickListener
             {
                 case MSG_INIT_USER_INFO:
                     inflateMyLayout();
+                    //加载账户信息,这里就先不考虑静默登录了
+                     mPtUser = PutaoAccountManager.getInstance().getPtUser();
+                    if(mPtUser != null)
+                    {
+                        initAccoutInfo();
+                    }
                     break;
 
                 default:
@@ -93,7 +103,11 @@ public class MenuFragment extends BaseFragment implements OnClickListener
             }
         };
     };
-
+    
+    /**
+     * 初始化布局
+     * void
+     */
     private void inflateMyLayout()
     {
         if (mMyLayoutStub != null)
@@ -111,6 +125,41 @@ public class MenuFragment extends BaseFragment implements OnClickListener
             mView.findViewById(R.id.putao_header_fl).setOnClickListener(this);
 
         }
+    }
+    
+    /**
+     * 初始化
+     * void
+     */
+    protected void initAccoutInfo()
+    {
+        mPtUser = PutaoAccountManager.getInstance().getPtUser();
+        if(mPtUser != null)
+        {
+            List<RelateUser> relateUsers = mPtUser.getRelateUsers();
+            if(relateUsers != null && relateUsers.size() >0)
+            {
+                for(RelateUser relateUser : relateUsers)
+                {
+                    if(relateUser.accType == RelateUser.TYPE_PHONE)
+                    {
+                        showAccountInfo(true, relateUser);
+                    }
+                }
+            }
+        }
+        showAccountInfo(false, null);
+    }
+
+    /**
+     * 显示账户信息
+     * @param isLogin
+     * @param relateUser
+     * void
+     */
+    private void showAccountInfo(boolean isLogin, RelateUser relateUser)
+    {
+        
     }
 
     @Override

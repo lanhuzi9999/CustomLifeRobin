@@ -19,12 +19,11 @@ import so.contacts.hub.BaseActivity;
 import so.contacts.hub.basefunction.account.IAccCallback;
 import so.contacts.hub.basefunction.account.IAccCallbackAdv;
 import so.contacts.hub.basefunction.account.manager.PutaoAccountManager;
-import so.contacts.hub.basefunction.net.bean.GetCaptchaResponse;
 import so.contacts.hub.basefunction.utils.NetUtil;
 import so.contacts.hub.basefunction.utils.TelAreaUtil;
 import com.putao.live.R;
 
-public class YellowpageLoginByCaptureActivity extends BaseActivity implements OnClickListener
+public class YellowpageLoginByCaptureActivity extends BaseActivity implements OnClickListener, IAccCallback
 {
     private static final String SMS_RECEIVED_ACTION = "android.provider.Telephony.SMS_RECEIVED";
 
@@ -168,28 +167,7 @@ public class YellowpageLoginByCaptureActivity extends BaseActivity implements On
 
             String checkCode = mPassWordEditText.getText().toString().trim();
             checkCode = checkCode.replace(" ", "");
-            PutaoAccountManager.getInstance().loginByCaptcha(this, phoneNum, Integer.parseInt(checkCode),
-                    new IAccCallback()
-                    {
-
-                        @Override
-                        public void onSuccess()
-                        {
-
-                        }
-
-                        @Override
-                        public void onFail(int failed_code)
-                        {
-
-                        }
-
-                        @Override
-                        public void onCancel()
-                        {
-
-                        }
-                    });
+            PutaoAccountManager.getInstance().loginByCaptcha(this, phoneNum, Integer.parseInt(checkCode),this);
         }
         else
         {
@@ -228,7 +206,10 @@ public class YellowpageLoginByCaptureActivity extends BaseActivity implements On
                             public void onFail(int failed_code)
                             {
                                 // 发送验证码失败按钮需要做处理
-
+                                mGetCaptcharButton.setText(getString(R.string.putao_get_check_code));
+                                mGetCaptcharButton.getBackground().setAlpha(125);
+                                mGetCaptcharButton.setEnabled(false);
+                                mGetCaptcharButton.setClickable(false);
                             }
 
                             @Override
@@ -292,5 +273,32 @@ public class YellowpageLoginByCaptureActivity extends BaseActivity implements On
             mGetCaptcharButton.setEnabled(false);
             mGetCaptcharButton.setClickable(false);
         }
+    }
+
+    /**
+     * 登录成功
+     */
+    @Override
+    public void onSuccess()
+    {
+        //登录成功后，直接finish返回到menufagment
+    }
+
+    /**
+     * 登录失败
+     */
+    @Override
+    public void onFail(int failed_code)
+    {
+        
+    }
+
+    /**
+     * 取消登录
+     */
+    @Override
+    public void onCancel()
+    {
+        
     }
 }

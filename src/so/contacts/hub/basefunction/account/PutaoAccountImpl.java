@@ -9,7 +9,6 @@ import so.contacts.hub.basefunction.net.bean.GetCaptchaResponse;
 import so.contacts.hub.basefunction.net.manager.PTHTTPManager;
 import so.contacts.hub.basefunction.storage.sharedprefrences.PrefConstants;
 import so.contacts.hub.basefunction.storage.sharedprefrences.SharedPreManager;
-import android.R.integer;
 import android.content.Context;
 import android.os.Handler;
 import android.os.Looper;
@@ -29,6 +28,8 @@ public class PutaoAccountImpl implements IPutaoAccount
 
     private PTUser mPtUser;
 
+    private IAccCallback mIAccCallback;
+
     public PutaoAccountImpl()
     {
 
@@ -47,7 +48,11 @@ public class PutaoAccountImpl implements IPutaoAccount
             switch (msg.what)
             {
                 case MSG_LOGIN_SUCCESS:
-
+                    //回调给验证码登录界面
+                    if(mIAccCallback != null)
+                    {
+                        mIAccCallback.onSuccess();
+                    }
                     break;
                 case MSG_LOGIN_FAIL:
 
@@ -141,7 +146,7 @@ public class PutaoAccountImpl implements IPutaoAccount
                         public void run()
                         {
                             cb.onSuccess(response.send_num);
-                            
+
                         }
                     });
                 }
@@ -160,10 +165,11 @@ public class PutaoAccountImpl implements IPutaoAccount
             }
         });
     }
-    
+
     @Override
-    public void loginByCaptcha(Context context, final String accName, final int checkCode, IAccCallback cb)
+    public void loginByCaptcha(Context context, final String accName, final int checkCode, final IAccCallback cb)
     {
+        mIAccCallback = cb;
         Config.execute(new Runnable()
         {
 
@@ -178,6 +184,12 @@ public class PutaoAccountImpl implements IPutaoAccount
                 if (response != null && response.isSuccess())
                 {
                     Log.d("PutaoAccountImpl", "pxy--" + response.toString());
+                    // 清除账户信息
+                    cleanPtUser(PrefConstants.PrefAccountTable.TABLE_NAME, PrefConstants.PrefAccountTable.KEY_PT_USER);
+                    // 保存最新的账户信息
+                    savePtUser(content);
+                    // 通知主线程，登录成功
+                    mainHandler.sendEmptyMessage(MSG_LOGIN_SUCCESS);
                 }
             }
         });
