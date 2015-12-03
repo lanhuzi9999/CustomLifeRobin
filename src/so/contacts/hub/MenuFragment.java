@@ -6,12 +6,14 @@ import so.contacts.hub.basefunction.account.IAccCallbackAdv;
 import so.contacts.hub.basefunction.account.bean.PTUser;
 import so.contacts.hub.basefunction.account.manager.PutaoAccountManager;
 import so.contacts.hub.basefunction.account.ui.YellowpageLoginByCaptureActivity;
+import so.contacts.hub.basefunction.account.ui.YellowpagePersonalInfoActivity;
 import so.contacts.hub.basefunction.net.bean.RelateUser;
 import android.R.integer;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
+import android.text.TextUtils;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -48,6 +50,7 @@ public class MenuFragment extends BaseFragment implements OnClickListener
     private TextView mAccNameTv;
 
     private PTUser mPtUser;
+
     @Override
     public void onCreate(Bundle savedInstanceState)
     {
@@ -90,11 +93,15 @@ public class MenuFragment extends BaseFragment implements OnClickListener
             {
                 case MSG_INIT_USER_INFO:
                     inflateMyLayout();
-                    //加载账户信息,这里就先不考虑静默登录了
-                     mPtUser = PutaoAccountManager.getInstance().getPtUser();
-                    if(mPtUser != null)
+                    // 加载账户信息,这里就先不考虑静默登录了
+                    mPtUser = PutaoAccountManager.getInstance().getPtUser();
+                    if (mPtUser != null)
                     {
                         initAccoutInfo();
+                    }
+                    else
+                    {
+                        showAccountInfo(false, null);
                     }
                     break;
 
@@ -103,14 +110,13 @@ public class MenuFragment extends BaseFragment implements OnClickListener
             }
         };
     };
-    
+
     /**
-     * 初始化布局
-     * void
+     * 初始化布局 void
      */
     private void inflateMyLayout()
     {
-        if (mMyLayoutStub != null)
+        if (mMyLayoutStub != null && mMyLayout == null)
         {
             mMyLayout = (LinearLayout) mMyLayoutStub.inflate();
             // 设置headerview
@@ -118,34 +124,28 @@ public class MenuFragment extends BaseFragment implements OnClickListener
             mView.findViewById(R.id.back_layout).setVisibility(View.INVISIBLE);
 
             mAccHeadImv = (ImageView) mView.findViewById(R.id.menu_acc_head_icon);
+            mAccNameTv = (TextView) mView.findViewById(R.id.menu_acc_name);
             mLoginTv = (TextView) mView.findViewById(R.id.putao_login);
             mLogintip = (TextView) mView.findViewById(R.id.menu_acc_logintip);
-            mAccNameTv = (TextView) mView.findViewById(R.id.menu_acc_name);
 
             mView.findViewById(R.id.putao_header_fl).setOnClickListener(this);
 
         }
     }
-    
+
     /**
-     * 初始化
-     * void
+     * 初始化 void
      */
     protected void initAccoutInfo()
     {
         mPtUser = PutaoAccountManager.getInstance().getPtUser();
-        if(mPtUser != null)
+        if (mPtUser != null)
         {
-            List<RelateUser> relateUsers = mPtUser.getRelateUsers();
-            if(relateUsers != null && relateUsers.size() >0)
+            RelateUser relateUser = PutaoAccountManager.getInstance().getRelateUser(RelateUser.TYPE_PHONE);
+            if (relateUser != null)
             {
-                for(RelateUser relateUser : relateUsers)
-                {
-                    if(relateUser.accType == RelateUser.TYPE_PHONE)
-                    {
-                        showAccountInfo(true, relateUser);
-                    }
-                }
+                showAccountInfo(true, relateUser);
+                return;
             }
         }
         showAccountInfo(false, null);
@@ -153,13 +153,33 @@ public class MenuFragment extends BaseFragment implements OnClickListener
 
     /**
      * 显示账户信息
+     * 
      * @param isLogin
-     * @param relateUser
-     * void
+     * @param relateUser void
      */
     private void showAccountInfo(boolean isLogin, RelateUser relateUser)
     {
-        
+        // 区分是否登陆，分别显示
+        if (isLogin)
+        {
+            // 有账户登陆，名称显示顺序：手机号码，帐户名accName
+            String displayName = PutaoAccountManager.getInstance().getDisplayName(relateUser);
+            if (TextUtils.isEmpty(displayName))
+            {
+                displayName = relateUser.accName;
+            }
+            mAccHeadImv.setImageResource(R.drawable.putao_menu_acc_headimg_logined);
+            mAccNameTv.setText(displayName);
+            mLoginTv.setVisibility(View.INVISIBLE);
+            mLogintip.setVisibility(View.INVISIBLE);
+        }
+        else
+        {
+            mAccHeadImv.setImageResource(R.drawable.putao_menu_acc_headimg_nologin);
+            mAccNameTv.setVisibility(View.INVISIBLE);
+            mLoginTv.setVisibility(View.VISIBLE);
+            mLogintip.setVisibility(View.VISIBLE);
+        }
     }
 
     @Override
@@ -170,28 +190,15 @@ public class MenuFragment extends BaseFragment implements OnClickListener
         switch (id)
         {
             case R.id.putao_header_fl:
-//                PutaoAccountManager.getInstance().sendCaptchar(getActivity(), "18589032823", "200001", new IAccCallbackAdv<String>()
-//                {
-//                    
-//                    @Override
-//                    public void onSuccess(String t)
-//                    {
-//                        
-//                    }
-//                    
-//                    @Override
-//                    public void onFail(int failed_code)
-//                    {
-//                        
-//                    }
-//                    
-//                    @Override
-//                    public void onCancel()
-//                    {
-//                        
-//                    }
-//                });
-                intent.setClass(getContext(), YellowpageLoginByCaptureActivity.class);
+                RelateUser relateUser = PutaoAccountManager.getInstance().getRelateUser(RelateUser.TYPE_PHONE);
+                if (relateUser != null)
+                {
+                    intent.setClass(getContext(), YellowpagePersonalInfoActivity.class);
+                }
+                else
+                {
+                    intent.setClass(getContext(), YellowpageLoginByCaptureActivity.class);
+                }
                 break;
 
             default:

@@ -282,6 +282,8 @@ public class YellowpageLoginByCaptureActivity extends BaseActivity implements On
     public void onSuccess()
     {
         //登录成功后，直接finish返回到menufagment
+        setResult(RESULT_OK);
+        finish();
     }
 
     /**
