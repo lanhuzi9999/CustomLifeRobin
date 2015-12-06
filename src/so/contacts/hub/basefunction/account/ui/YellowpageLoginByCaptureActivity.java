@@ -83,6 +83,7 @@ public class YellowpageLoginByCaptureActivity extends BaseActivity implements On
     protected void onDestroy()
     {
         super.onDestroy();
+        unregisterReceiver(mSMSBroadcastReceiver);
     }
 
     class SMSBroadcastReceiver extends BroadcastReceiver

@@ -35,6 +35,7 @@
     <string name="putao_login_get_captchar">获取验证码</string>
     <string name="putao_login_verify_mobile">1 手机号验证</string>
     <string name="putao_login_modify_password">2 修改密码</string>
+    <string name="putao_not_safty">安全性低</string>
     <string name="putao_login_phone_hint">输入手机号码</string>
     <string name="putao_login_password_hint">输入密码</string>
     <string name="putao_login_captchar_hint">验证码</string>

@@ -1,14 +1,11 @@
 package so.contacts.hub;
 
-import java.util.List;
 
-import so.contacts.hub.basefunction.account.IAccCallbackAdv;
 import so.contacts.hub.basefunction.account.bean.PTUser;
 import so.contacts.hub.basefunction.account.manager.PutaoAccountManager;
 import so.contacts.hub.basefunction.account.ui.YellowpageLoginByCaptureActivity;
 import so.contacts.hub.basefunction.account.ui.YellowpagePersonalInfoActivity;
 import so.contacts.hub.basefunction.net.bean.RelateUser;
-import android.R.integer;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
@@ -170,6 +167,7 @@ public class MenuFragment extends BaseFragment implements OnClickListener
             }
             mAccHeadImv.setImageResource(R.drawable.putao_menu_acc_headimg_logined);
             mAccNameTv.setText(displayName);
+            mAccNameTv.setVisibility(View.VISIBLE);
             mLoginTv.setVisibility(View.INVISIBLE);
             mLogintip.setVisibility(View.INVISIBLE);
         }
@@ -191,14 +189,14 @@ public class MenuFragment extends BaseFragment implements OnClickListener
         {
             case R.id.putao_header_fl:
                 RelateUser relateUser = PutaoAccountManager.getInstance().getRelateUser(RelateUser.TYPE_PHONE);
-                if (relateUser != null)
-                {
+//                if (relateUser != null)
+//                {
                     intent.setClass(getContext(), YellowpagePersonalInfoActivity.class);
-                }
-                else
-                {
-                    intent.setClass(getContext(), YellowpageLoginByCaptureActivity.class);
-                }
+//                }
+//                else
+//                {
+//                    intent.setClass(getContext(), YellowpageLoginByCaptureActivity.class);
+//                }
                 break;
 
             default:

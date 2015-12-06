@@ -4,7 +4,6 @@ import com.putao.live.R;
 
 import android.content.Context;
 import android.text.TextUtils;
-import android.view.TextureView;
 import so.contacts.hub.ContactsApp;
 import so.contacts.hub.basefunction.location.action.GaodeAction;
 import so.contacts.hub.basefunction.location.action.ILocateAction;
@@ -85,11 +84,26 @@ public class LBSManager
                 // 定位成功
                 if (listener != null && item != null)
                 {
+                    item.city = cityRedress(item.city);
                     mLbsInfoItem = item;
                     listener.onLocationChanged(item);
                 }
             }
         });
+    }
+    
+    /**
+     * 城市矫正
+     */
+    private String cityRedress(String city)
+    {
+        String cityNew = new String(city);
+        if (!TextUtils.isEmpty(cityNew)
+                && cityNew.endsWith(ContactsApp.getInstance().getString(R.string.putao_common_city)))
+        {
+            cityNew = city.substring(0, cityNew.length() - 1);
+        }
+        return cityNew;
     }
 
     /**

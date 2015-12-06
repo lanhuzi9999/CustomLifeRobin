@@ -2,488 +2,389 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:orientation="vertical" >
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="170dp"
-        android:background="@drawable/putao_icon_personal_bg"
-        android:gravity="center_horizontal"
-        android:orientation="vertical">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="25dp"
-            android:gravity="center_vertical"
-            android:orientation="horizontal">
-
-            <ImageView
-                android:id="@+id/putao_personal_data_back_iv"
-                android:layout_width="40dp"
-                android:layout_height="40dp"
-                android:layout_marginLeft="12dp"
-                android:scaleType="center"
-                android:background="@drawable/putao_list_selecter_transparent"
-                android:src="@drawable/putao_icon_back" />
-
-
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:gravity="center_horizontal"
-                android:text="@string/putao_personal_data_personal_data"
-                android:textColor="@color/putao_white" />
-
-            <ImageView
-                android:id="@+id/putao_personal_data_login_iv"
-                android:layout_width="40dp"
-                android:layout_height="40dp"
-                android:layout_marginRight="12dp"
-                android:scaleType="center"
-                android:background="@drawable/putao_list_selecter_transparent"
-                android:src="@drawable/putao_icon_setting" />
-
-
-        </LinearLayout>
-
-
-        <RelativeLayout
-            android:layout_width="82dp"
-            android:layout_height="82dp"
-            android:layout_marginTop="5dp">
-
-            <ImageView
-                android:id="@+id/putao_personal_data_icon_iv"
-                android:layout_width="82dp"
-                android:layout_height="82dp"
-                android:scaleType="fitXY"
-                android:src="@drawable/putao_icon_morentouxiang" />
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentBottom="true"
-                android:layout_alignParentRight="true"
-                android:src="@drawable/putao_icon_camera" />
-
-        </RelativeLayout>
-
-
-    </LinearLayout>
-
-
-    <LinearLayout
-        android:visibility="gone"
-        android:id="@+id/putao_personal_data_hint_ll"
-        android:layout_width="match_parent"
-        android:layout_height="40dp"
-        android:background="@color/putao_white"
-        android:gravity="center_vertical"
-        android:orientation="horizontal">
-
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="20dp"
-            android:src="@drawable/putao_icon_jinggao" />
-
-        <TextView
-            android:id="@+id/putao_personal_data_hint_tv"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
-            android:layout_weight="1"
-            android:textColor="@color/putao_text_color_second"
-            android:textSize="14sp" />
-
-        <ImageView
-            android:id="@+id/putao_personal_data_hint_disappear_iv"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:layout_marginRight="12dp"
-            android:scaleType="center"
-            android:background="@drawable/putao_list_selecter_transparent"
-            android:src="@drawable/putao_icon_delete" />
-
-    </LinearLayout>
+    <include layout="@layout/putao_header_view" />
 
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:scrollbars="none">
+        android:scrollbars="none" >
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
-
-            <View style="@style/putao_DividerStyle_Horizontal_Bottom" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="33dp"
-                android:background="@color/putao_white"
-                android:gravity="center_vertical"
-                android:paddingLeft="20dp"
-                android:text="@string/putao_personal_data_base_data"
-                android:textColor="@color/putao_text_color_second"
-                android:textSize="14sp" />
-
-            <View style="@style/putao_DividerStyle_Horizontal_Bottom" />
+            android:orientation="vertical" >
 
             <LinearLayout
-                android:id="@+id/putao_personal_data_city_ll"
-                android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:background="@drawable/putao_list_white_transblack_selector"
-                android:gravity="center_vertical">
-
-                <TextView
-                    android:layout_width="100dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="20dp"
-                    android:text="@string/putao_personal_data_area"
-                    android:textColor="@color/putao_text_color_second"
-                    android:textSize="16sp" />
-
-                <TextView
-                    android:id="@+id/putao_personal_data_city_tv"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:textColor="@color/putao_text_color_primary"
-                    android:textSize="16sp" />
-
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginRight="20dp"
-                    android:src="@drawable/putao_arrow_right" />
-            </LinearLayout>
-
-            <View style="@style/putao_DividerStyle_Horizontal_Bottom" />
-
-            <LinearLayout
-                android:id="@+id/putao_personal_data_gender_ll"
-                android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:background="@drawable/putao_list_white_transblack_selector"
-                android:gravity="center_vertical">
-
-                <TextView
-                    android:layout_width="100dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="20dp"
-                    android:text="@string/putao_personal_data_gender"
-                    android:textColor="@color/putao_text_color_second"
-                    android:textSize="16sp" />
-
-                <TextView
-                    android:id="@+id/putao_personal_data_gender_tv"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:textColor="@color/putao_text_color_primary"
-                    android:textSize="16sp" />
-
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginRight="20dp"
-                    android:src="@drawable/putao_arrow_right" />
-            </LinearLayout>
-
-            <View style="@style/putao_DividerStyle_Horizontal_Bottom" />
-
-            <LinearLayout
-                android:id="@+id/putao_personal_data_birthday_ll"
-                android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:background="@drawable/putao_list_white_transblack_selector"
-                android:gravity="center_vertical">
-
-                <TextView
-                    android:layout_width="100dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="20dp"
-                    android:text="@string/putao_personal_data_birthday"
-                    android:textColor="@color/putao_text_color_second"
-                    android:textSize="16sp" />
-
-                <TextView
-                    android:id="@+id/putao_personal_data_birthday_tv"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:textColor="@color/putao_text_color_primary"
-                    android:textSize="16sp" />
-
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginRight="20dp"
-                    android:src="@drawable/putao_arrow_right" />
-            </LinearLayout>
-
-            <View style="@style/putao_DividerStyle_Horizontal_Bottom" />
-
-            <View style="@style/putao_DividerStyle_Horizontal_Bottom"
-                android:layout_marginTop="10dp"/>
-
-            <LinearLayout
+                android:id="@+id/putao_personal_data_hint_ll"
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
-                android:background="@color/putao_white"
-                android:gravity="center_vertical">
+                android:background="#fffbef"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:visibility="gone" >
 
                 <TextView
+                    android:id="@+id/putao_personal_data_hint_tv"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="20dp"
+                    android:layout_marginLeft="@dimen/putao_activity_horizontal_margin"
                     android:layout_weight="1"
-                    android:text="@string/putao_personal_data_common_data"
-                    android:textColor="@color/putao_text_color_second"
+                    android:drawablePadding="4dp"
+                    android:gravity="center_vertical"
+                    android:drawableLeft="@drawable/putao_icon_shezhimimatixing"
+                    android:text="@string/putao_personal_data_setup_password"
+                    android:textColor="#f2a650"
                     android:textSize="14sp" />
 
                 <ImageView
-                    android:id="@+id/putao_personal_data_common_info_iv"
+                    android:id="@+id/putao_personal_data_hint_disappear_iv"
                     android:layout_width="40dp"
                     android:layout_height="40dp"
                     android:layout_marginRight="12dp"
-                    android:scaleType="center"
+                    android:layout_weight="0"
                     android:background="@drawable/putao_list_selecter_transparent"
-                    android:src="@drawable/putao_icon_edit" />
-
+                    android:scaleType="center"
+                    android:src="@drawable/putao_icon_search_del_h" />
             </LinearLayout>
 
-            <View
-                style="@style/putao_DividerStyle_Horizontal_Bottom" />
+            <View style="@style/putao_DividerStyle_Horizontal" />
 
             <RelativeLayout
-                android:id="@+id/putao_personal_data_common_data_hint_rl"
+                android:id="@+id/putao_personal_data_icon_rl"
                 android:layout_width="match_parent"
-                android:layout_height="100dp"
-                android:background="@drawable/putao_list_white_transblack_selector">
+                android:layout_height="80dp"
+                android:background="@drawable/putao_list_white_transblack_selector" >
 
                 <TextView
+                    style="@style/putao_Text_PrimaryColor_SecondSize"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_centerInParent="true"
-                    android:text="@string/putao_personal_data_common_data_hint"
-                    android:textColor="@color/putao_text_color_primary"
-                    android:textSize="14sp" />
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/putao_activity_horizontal_margin"
+                    android:text="@string/putao_personal_data_icon" />
 
-                <View
-                    android:layout_alignParentBottom="true"
-                    style="@style/putao_DividerStyle_Horizontal_Bottom" /> 
+                <ImageView
+                    android:id="@+id/putao_arrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/putao_activity_horizontal_margin"
+                    android:src="@drawable/putao_card_all_show" />
+
+                <ImageView
+                    android:id="@+id/putao_personal_data_icon_iv"
+                    android:layout_width="58dp"
+                    android:layout_height="58dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="8dp"
+                    android:layout_toLeftOf="@id/putao_arrow"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/putao_menu_acc_headimg_logined" />
+
+                <View style="@style/putao_DividerStyle_Horizontal_Bottom" />
             </RelativeLayout>
 
-            <LinearLayout
-                android:id="@+id/putao_personal_data_common_data_ll"
+            <RelativeLayout
+                android:id="@+id/putao_personal_data_city_ll"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:visibility="visible">
+                android:layout_height="48dp"
+                android:background="@drawable/putao_list_white_transblack_selector" >
 
-                <RelativeLayout
-                    android:id="@+id/putao_personal_data_name_rl"
-                    android:layout_width="match_parent"
-                    android:layout_height="50dp"
-                    android:background="@color/putao_white">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_alignParentLeft="true"
-                        android:layout_centerInParent="true"
-                        android:layout_marginLeft="20dp"
-                        android:text="@string/putao_personal_data_name"
-                        android:textColor="@color/putao_text_color_second"
-                        android:textSize="16sp" />
-
-                    <TextView
-                        android:id="@+id/putao_personal_data_name_tv"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_alignParentLeft="true"
-                        android:layout_centerInParent="true"
-                        android:layout_marginLeft="120dp"
-                        android:textColor="@color/putao_text_color_primary"
-                        android:textSize="16sp" />
-
-                    <View
-                        android:layout_alignParentBottom="true"
-                        style="@style/putao_DividerStyle_Horizontal_Bottom" /> 
-                </RelativeLayout>
-
-                <RelativeLayout
-                    android:id="@+id/putao_personal_data_phone_number_rl"
-                    android:layout_width="match_parent"
-                    android:layout_height="50dp"
-                    android:background="@color/putao_white">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_alignParentLeft="true"
-                        android:layout_centerInParent="true"
-                        android:layout_marginLeft="20dp"
-                        android:text="@string/putao_personal_data_phone_number"
-                        android:textColor="@color/putao_text_color_second"
-                        android:textSize="16sp" />
-
-                    <TextView
-                        android:id="@+id/putao_personal_data_phone_number_tv"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_alignParentLeft="true"
-                        android:layout_centerInParent="true"
-                        android:layout_marginLeft="120dp"
-                        android:textColor="@color/putao_text_color_primary"
-                        android:textSize="16sp" />
-
-                    <View
-                        android:layout_alignParentBottom="true"
-                        style="@style/putao_DividerStyle_Horizontal_Bottom" />
-                </RelativeLayout>
-
-                <RelativeLayout
-                    android:id="@+id/putao_personal_data_qq_rl"
-                    android:layout_width="match_parent"
-                    android:layout_height="50dp"
-                    android:background="@color/putao_white">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_alignParentLeft="true"
-                        android:layout_centerInParent="true"
-                        android:layout_marginLeft="20dp"
-                        android:text="@string/putao_personal_data_qq_number"
-                        android:textColor="@color/putao_text_color_second"
-                        android:textSize="16sp" />
-
-                    <TextView
-                        android:id="@+id/putao_personal_data_qq_tv"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_alignParentLeft="true"
-                        android:layout_centerInParent="true"
-                        android:layout_marginLeft="120dp"
-                        android:textColor="@color/putao_text_color_primary"
-                        android:textSize="16sp" />
-
-                    <View
-                        android:layout_alignParentBottom="true"
-                        style="@style/putao_DividerStyle_Horizontal_Bottom" /> 
-                </RelativeLayout>
-
-                <RelativeLayout
-                    android:id="@+id/putao_personal_data_home_address_rl"
-                    android:layout_width="match_parent"
-                    android:layout_height="50dp"
-                    android:background="@color/putao_white">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_alignParentLeft="true"
-                        android:layout_centerInParent="true"
-                        android:layout_marginLeft="20dp"
-                        android:text="@string/putao_personal_data_common_address"
-                        android:textColor="@color/putao_text_color_second"
-                        android:textSize="16sp" />
-
-                    <TextView
-                        android:id="@+id/putao_personal_data_home_address_tv"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_alignParentLeft="true"
-                        android:layout_centerInParent="true"
-                        android:layout_marginLeft="120dp"
-                        android:textColorHint="@color/putao_edit_text_hint_color"
-                        android:hint="@string/putao_personal_home_unset"
-                        android:textColor="@color/putao_text_color_primary"
-                        android:textSize="16sp" />
-
-                    <View
-                        android:layout_alignParentBottom="true"
-                        style="@style/putao_DividerStyle_Horizontal_Bottom" /> 
-                </RelativeLayout>
-
-                <RelativeLayout
-                    android:id="@+id/putao_personal_data_company_address_rl"
-                    android:layout_width="match_parent"
-                    android:layout_height="50dp"
-                    android:background="@color/putao_white">
-
-                    <TextView
-                        android:id="@+id/putao_personal_data_company_address_tv"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_alignParentLeft="true"
-                        android:layout_centerInParent="true"
-                        android:paddingLeft="120dp"
-                        android:textColorHint="@color/putao_edit_text_hint_color"
-                        android:hint="@string/putao_personal_company_unset"
-                        android:textColor="@color/putao_text_color_primary"
-                        android:textSize="16sp" />
-
-                    <View
-                        android:layout_alignParentBottom="true"
-                        style="@style/putao_DividerStyle_Horizontal_Bottom" /> 
-                </RelativeLayout>
-
-                <LinearLayout
-                    android:id="@+id/putao_personal_data_address_footer_ll"
-                    android:layout_width="match_parent"
+                <TextView
+                    style="@style/putao_Text_PrimaryColor_SecondSize"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical">
-                </LinearLayout>
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/putao_activity_horizontal_margin"
+                    android:text="@string/putao_personal_data_area" />
 
+                <ImageView
+                    android:id="@+id/putao_arrow1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/putao_activity_horizontal_margin"
+                    android:src="@drawable/putao_card_all_show" />
+
+                <TextView
+                    android:id="@+id/putao_personal_data_city_tv"
+                    style="@style/putao_TextAppearanceMedium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="8dp"
+                    android:layout_toLeftOf="@id/putao_arrow1" />
+
+                <View style="@style/putao_DividerStyle_Horizontal_Bottom" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/putao_personal_data_gender_ll"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@drawable/putao_list_white_transblack_selector" >
+
+                <TextView
+                    style="@style/putao_Text_PrimaryColor_SecondSize"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/putao_activity_horizontal_margin"
+                    android:text="@string/putao_personal_data_gender" />
+
+                <ImageView
+                    android:id="@+id/putao_arrow2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/putao_activity_horizontal_margin"
+                    android:src="@drawable/putao_card_all_show" />
+
+                <TextView
+                    android:id="@+id/putao_personal_data_gender_tv"
+                    style="@style/putao_TextAppearanceMedium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="8dp"
+                    android:layout_toLeftOf="@id/putao_arrow2" />
+
+                <View style="@style/putao_DividerStyle_Horizontal_Bottom" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/putao_personal_data_birthday_ll"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@drawable/putao_list_white_transblack_selector" >
+
+                <TextView
+                    style="@style/putao_Text_PrimaryColor_SecondSize"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/putao_activity_horizontal_margin"
+                    android:text="@string/putao_personal_data_birthday" />
+
+                <ImageView
+                    android:id="@+id/putao_arrow3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/putao_activity_horizontal_margin"
+                    android:src="@drawable/putao_card_all_show" />
+
+                <TextView
+                    android:id="@+id/putao_personal_data_birthday_tv"
+                    style="@style/putao_TextAppearanceMedium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="8dp"
+                    android:layout_toLeftOf="@id/putao_arrow3" />
+
+                <View style="@style/putao_DividerStyle_Horizontal_Bottom" />
+            </RelativeLayout>
+
+            <View
+                style="@style/putao_DividerStyle_Horizontal"
+                android:layout_marginTop="10dp" />
+
+            <RelativeLayout
+                android:id="@+id/putao_common_info"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@drawable/putao_list_white_transblack_selector" >
+
+                <TextView
+                    style="@style/putao_Text_PrimaryColor_SecondSize"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/putao_activity_horizontal_margin"
+                    android:text="@string/putao_personal_data_common_data" />
+
+                <ImageView
+                    android:id="@+id/putao_arrow4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/putao_activity_horizontal_margin"
+                    android:src="@drawable/putao_card_all_show" />
+
+                <TextView
+                    android:id="@+id/putao_common_info_hint_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="8dp"
+                    android:text="@string/putao_personal_edit_hint"
+                    android:layout_toLeftOf="@id/putao_arrow4"
+                    android:textColor="@color/putao_text_color_secondary"
+                    android:textSize="@dimen/putao_text_second_size" />
+
+                <View style="@style/putao_DividerStyle_Horizontal_Bottom" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/putao_personal_data_home_address_rl"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@drawable/putao_list_white_transblack_selector" >
+
+                <TextView
+                    style="@style/putao_Text_PrimaryColor_SecondSize"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="@dimen/putao_activity_horizontal_margin"
+                    android:text="@string/putao_personal_data_common_address" />
+
+                <ImageView
+                    android:id="@+id/putao_arrow5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/putao_activity_horizontal_margin"
+                    android:src="@drawable/putao_card_all_show" />
+
+                <TextView
+                    android:id="@+id/putao_personal_data_home_address_hint_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="8dp"
+                    android:layout_toLeftOf="@id/putao_arrow5"
+                    android:text="@string/putao_personal_edit_hint"
+                    android:textColor="@color/putao_text_color_secondary"
+                    android:textSize="@dimen/putao_text_second_size" />
+
+                <View style="@style/putao_DividerStyle_Horizontal_Bottom" />
+            </RelativeLayout>
 
             <RelativeLayout
                 android:id="@+id/putao_personal_data_license_number_rl"
                 android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:background="@color/putao_white">
+                android:layout_height="48dp"
+                android:background="@drawable/putao_list_white_transblack_selector" >
 
                 <TextView
+                    style="@style/putao_Text_PrimaryColor_SecondSize"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentLeft="true"
                     android:layout_centerInParent="true"
-                    android:layout_marginLeft="20dp"
-                    android:text="@string/putao_personal_data_car_info"
-                    android:textColor="@color/putao_text_color_second"
-                    android:textSize="16sp" />
+                    android:layout_marginLeft="@dimen/putao_activity_horizontal_margin"
+                    android:text="@string/putao_personal_data_car_info" />
 
-                <TextView
-                    android:id="@+id/putao_personal_data_license_number_tv"
+                <ImageView
+                    android:id="@+id/putao_arrow6"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_alignParentLeft="true"
-                    android:layout_centerInParent="true"
-                    android:layout_marginLeft="120dp"
-                    android:textColor="@color/putao_text_color_primary"
-                    android:textSize="16sp" />
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/putao_activity_horizontal_margin"
+                    android:src="@drawable/putao_card_all_show" />
 
-                <View
-                    android:layout_alignParentBottom="true"
-                    style="@style/putao_DividerStyle_Horizontal_Bottom" /> 
+                <TextView
+                    android:id="@+id/putao_personal_data_license_number_hint_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="8dp"
+                    android:text="@string/putao_personal_edit_hint"
+                    android:layout_toLeftOf="@id/putao_arrow6"
+                    android:textColor="@color/putao_text_color_secondary"
+                    android:textSize="@dimen/putao_text_second_size" />
+
+                <View style="@style/putao_DividerStyle_Horizontal_Bottom" />
             </RelativeLayout>
 
-            <LinearLayout
-                android:id="@+id/putao_personal_data_license_number_footer_ll"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
-            </LinearLayout>
+            <View
+                style="@style/putao_DividerStyle_Horizontal"
+                android:layout_marginTop="10dp" />
 
-            </LinearLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@drawable/putao_list_white_transblack_selector" >
+
+                <TextView
+                    style="@style/putao_Text_PrimaryColor_SecondSize"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/putao_activity_horizontal_margin"
+                    android:text="@string/putao_phone_number_bounded" />
+
+                <TextView
+                    android:id="@+id/putao_personal_data_phone_number_tv"
+                    style="@style/putao_TextAppearanceMedium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginRight="20dp" />
+
+                <View style="@style/putao_DividerStyle_Horizontal_Bottom" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/putao_set_password"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@drawable/putao_list_white_transblack_selector" >
+
+                <TextView
+                    style="@style/putao_Text_PrimaryColor_SecondSize"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/putao_activity_horizontal_margin"
+                    android:text="@string/putao_set_password" />
+
+                <ImageView
+                    android:id="@+id/putao_arrow7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/putao_activity_horizontal_margin"
+                    android:src="@drawable/putao_card_all_show" />
+
+                <TextView
+                    android:id="@+id/putao_not_safty"
+                    style="@style/putao_TextAppearanceMedium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="8dp"
+                    android:layout_toLeftOf="@id/putao_arrow7"
+                    android:text="@string/putao_not_safty"
+                    android:visibility="invisible" />
+            </RelativeLayout>
+
+            <View style="@style/putao_DividerStyle_Horizontal" />
+
+            <Button
+                android:id="@+id/login_out_btn"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/putao_activity_horizontal_margin"
+                android:background="@drawable/putao_express_history_btn_bg"
+                android:text="@string/putao_logout"
+                android:textColor="@color/putao_text_color_importance" />
         </LinearLayout>
     </ScrollView>
+
 </LinearLayout>
