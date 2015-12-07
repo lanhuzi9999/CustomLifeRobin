@@ -39,10 +39,10 @@ import so.contacts.hub.BaseActivity;
 import so.contacts.hub.basefunction.account.bean.BasicUserInfoBean;
 import so.contacts.hub.basefunction.config.Config;
 import so.contacts.hub.basefunction.imageloader.DataLoader;
-import so.contacts.hub.basefunction.imageloader.image.ImageLoader;
 import so.contacts.hub.basefunction.imageloader.image.ImageLoaderFactory;
 import so.contacts.hub.basefunction.storage.db.PersonInfoDB;
 import so.contacts.hub.basefunction.utils.QiNiuCloudManager;
+import so.contacts.hub.basefunction.utils.SystemUtil;
 import so.contacts.hub.basefunction.widget.dialog.CommonDialog;
 import so.contacts.hub.basefunction.widget.dialog.CommonDialogFactory;
 
@@ -131,7 +131,7 @@ public class YellowpagePersonalInfoActivity extends BaseActivity implements OnCl
     private Uri mHeadIconUri = null;
 
     // 头像上传到七牛服务器后返回的图片地址
-    private String mHeadPicStr;
+    private String mHeadIconStr;
 
     // 头像加载器
     private DataLoader mImageLoader;
@@ -161,7 +161,7 @@ public class YellowpagePersonalInfoActivity extends BaseActivity implements OnCl
                 case CODE_UPLOAD_SUCCESS:
                     if (mImageLoader != null)
                     {
-                        mImageLoader.loadData(mHeadPicStr, mHeadImageView);
+                        mImageLoader.loadData(mHeadIconStr, mHeadImageView);
                     }
                     break;
                 case CODE_UPLOAD_FIAL:
@@ -210,7 +210,7 @@ public class YellowpagePersonalInfoActivity extends BaseActivity implements OnCl
     private void saveUserBasicInfo()
     {
         // 1.保存到数据库里面
-        BasicUserInfoBean bean = new BasicUserInfoBean(0, mHeadPicStr, null, 0, null);
+        BasicUserInfoBean bean = new BasicUserInfoBean(0, mHeadIconStr, null, 0, null);
         mPersonInfoDB.insertData(bean);
 
         // 2.上传到服务器
@@ -233,6 +233,7 @@ public class YellowpagePersonalInfoActivity extends BaseActivity implements OnCl
      */
     private void initView()
     {
+        initTitleView();
         initHeadImageView();
         initCityInfoView();
         initGenderInfoView();
@@ -241,6 +242,16 @@ public class YellowpagePersonalInfoActivity extends BaseActivity implements OnCl
         initSetPasswordView();
     }
 
+    /**
+     * 初始化title
+     * void
+     */
+    private void initTitleView()
+    {
+        setTitle(R.string.putao_personal_data_title);
+        findViewById(R.id.back_layout).setOnClickListener(this);
+    }
+    
     /**
      * 初始化设置密码布局 void
      */
@@ -358,7 +369,14 @@ public class YellowpagePersonalInfoActivity extends BaseActivity implements OnCl
      */
     protected void takePictureByCamera()
     {
-
+        // 没有sd卡，直接返回
+        if (!SystemUtil.hasSdcard())
+        {
+            return;
+        }
+        Intent intentByCapture = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
+        intentByCapture.putExtra(MediaStore.EXTRA_OUTPUT, mHeadIconUri);
+        startActivityForResult(intentByCapture, CODE_CAMERA_REQUEST);
     }
 
     /**
@@ -371,10 +389,6 @@ public class YellowpagePersonalInfoActivity extends BaseActivity implements OnCl
         intentFromGallery.setType("image/*");
         intentFromGallery.setAction(Intent.ACTION_PICK);
         startActivityForResult(intentFromGallery, CODE_GALLERY_REQUEST);
-
-        // Intent intentFromGallery = new Intent(Intent.ACTION_PICK,
-        // MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
-        // startActivityForResult(intentFromGallery, CODE_GALLERY_REQUEST);
     }
 
     @Override
@@ -394,7 +408,7 @@ public class YellowpagePersonalInfoActivity extends BaseActivity implements OnCl
                     cropRawPhoto(galleryUri);
                     break;
                 case CODE_CAMERA_REQUEST:
-
+                    cropRawPhoto(mHeadIconUri);
                     break;
                 case CODE_RESULT_REQUEST:
                     if (mHeadIconUri != null)
@@ -414,7 +428,6 @@ public class YellowpagePersonalInfoActivity extends BaseActivity implements OnCl
                         }
                         if (photo != null)
                         {
-                            // mHeadImageView.setImageBitmap(photo);
                             // 同时将图片上传到七牛服务器
                             uploadImgFile(photo);
                         }
@@ -478,7 +491,7 @@ public class YellowpagePersonalInfoActivity extends BaseActivity implements OnCl
                         if (info.isOK())
                         {
                             // 上传成功,存储于七牛服务器中的图片地址
-                            mHeadPicStr = Config.BUCKET_NAME_URL + key;
+                            mHeadIconStr = Config.BUCKET_NAME_URL + key;
                             // handler发消息到主线程更新ui
                             if (mHandler != null)
                             {
@@ -508,20 +521,6 @@ public class YellowpagePersonalInfoActivity extends BaseActivity implements OnCl
      */
     private void cropRawPhoto(Uri uri)
     {
-        // Intent intentCrop = new Intent("com.android.camera.action.CROP");
-        // intentCrop.setDataAndType(uri, "image/*");
-        // // 设置裁剪
-        // intentCrop.putExtra("crop", "true");
-        //
-        // // aspectX , aspectY :宽高的比例
-        // intentCrop.putExtra("aspectX", 1);
-        // intentCrop.putExtra("aspectY", 1);
-        //
-        // // outputX , outputY : 裁剪图片宽高
-        // intentCrop.putExtra("outputX", output_X);
-        // intentCrop.putExtra("outputY", output_Y);
-        // intentCrop.putExtra("return-data", true);
-
         Intent intentCrop = new Intent("com.android.camera.action.CROP");
         intentCrop.setDataAndType(uri, "image/*");
         intentCrop.putExtra("crop", "true");
@@ -548,6 +547,9 @@ public class YellowpagePersonalInfoActivity extends BaseActivity implements OnCl
         int id = view.getId();
         switch (id)
         {
+            case R.id.back_layout:
+                onBackPressed();
+                break;
             case R.id.putao_personal_data_icon_rl:
                 mHeadImageDialog.show();
                 break;
