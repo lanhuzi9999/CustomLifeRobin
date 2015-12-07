@@ -72,4 +72,14 @@ public class Config
     public static final String ACCOUNT_SERVER_HOST = SERVER_HOST + "/sandroid1";
     
     public static final String SERVER = ACCOUNT_SERVER_HOST + "/PT_SERVER/interface.s";
+    
+    /**
+     * 用户从葡萄服务端获取上传图片token的接口地址
+     */
+    public static final String YELLOW_PAGE_FEEDBACK_IMG_UPLOAD_TOKEN = SERVER_HOST + "/scms/uptoken";
+    
+    /**
+     * 在七牛服务器中对应的域名
+     */
+    public static final String BUCKET_NAME_URL = "http://img.putao.so/";
 }

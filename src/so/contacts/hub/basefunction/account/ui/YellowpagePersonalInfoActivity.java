@@ -1,20 +1,30 @@
 package so.contacts.hub.basefunction.account.ui;
 
+import java.io.ByteArrayOutputStream;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.IOException;
-import java.text.BreakIterator;
+import java.util.HashMap;
+import java.util.Map;
+
+import org.json.JSONObject;
 
 import com.putao.live.R;
+import com.qiniu.android.http.ResponseInfo;
+import com.qiniu.android.storage.UpCompletionHandler;
+import com.qiniu.android.storage.UploadManager;
+import com.qiniu.android.storage.UploadOptions;
 
-import android.R.integer;
 import android.content.Intent;
 import android.graphics.Bitmap;
+import android.graphics.Bitmap.CompressFormat;
 import android.net.Uri;
 import android.os.Bundle;
+import android.os.Handler;
+import android.os.Message;
 import android.provider.MediaStore;
 import android.provider.MediaStore.Images.Media;
-import android.text.style.BulletSpan;
+import android.text.TextUtils;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.AdapterView;
@@ -24,7 +34,15 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 import so.contacts.hub.BaseActivity;
+import so.contacts.hub.basefunction.account.bean.BasicUserInfoBean;
+import so.contacts.hub.basefunction.config.Config;
+import so.contacts.hub.basefunction.imageloader.DataLoader;
+import so.contacts.hub.basefunction.imageloader.image.ImageLoader;
+import so.contacts.hub.basefunction.imageloader.image.ImageLoaderFactory;
+import so.contacts.hub.basefunction.storage.db.PersonInfoDB;
+import so.contacts.hub.basefunction.utils.QiNiuCloudManager;
 import so.contacts.hub.basefunction.widget.dialog.CommonDialog;
 import so.contacts.hub.basefunction.widget.dialog.CommonDialogFactory;
 
@@ -34,22 +52,17 @@ public class YellowpagePersonalInfoActivity extends BaseActivity implements OnCl
 
     private static final String IMAGE_FILE_NAME = "head_image.jpg";
 
-    private Uri mHeadIconUri = null;
-
     private static final int CODE_GALLERY_REQUEST = 0xa0;
 
     private static final int CODE_CAMERA_REQUEST = 0xa1;
 
     private static final int CODE_RESULT_REQUEST = 0xa2;
 
-    // 裁剪后图片的宽(X)和高(Y),480 X 480的正方形。
-    private static int output_X = 480;
+    private static final int CODE_UPLOAD_SUCCESS = 0xa3;
 
-    private static int output_Y = 480;
+    private static final int CODE_UPLOAD_FIAL = 0xa4;
 
-    /**
-     * view start
-     */
+    // ===============================view start========================
     // 设置密码提示
     private LinearLayout mDataHintLayout;
 
@@ -105,12 +118,70 @@ public class YellowpagePersonalInfoActivity extends BaseActivity implements OnCl
     // 退出登录
     private Button mLogOutButton;
 
+    // ===============================view end========================
+    // 个人信息是否有修改
+    private boolean mChangeFlag = false;
+
+    // 裁剪后图片的宽(X)和高(Y),480 X 480的正方形。
+    private static int output_X = 480;
+
+    private static int output_Y = 480;
+
+    // 保存头像的uri
+    private Uri mHeadIconUri = null;
+
+    // 头像上传到七牛服务器后返回的图片地址
+    private String mHeadPicStr;
+
+    // 头像加载器
+    private DataLoader mImageLoader;
+
+    // 是否已经设置过密码
+    private int mHasSetPassword;
+
+    // 选中的地区
+    private String mCitySTR;
+
+    // 选择的性别
+    private String mGenderSTR;
+
+    // 选择的生日
+    private String mBirthdaySTR;
+
+    private PersonInfoDB mPersonInfoDB;
+
+    // 主线程handler
+    private Handler mHandler = new Handler()
+    {
+        public void handleMessage(Message msg)
+        {
+            super.handleMessage(msg);
+            switch (msg.what)
+            {
+                case CODE_UPLOAD_SUCCESS:
+                    if (mImageLoader != null)
+                    {
+                        mImageLoader.loadData(mHeadPicStr, mHeadImageView);
+                    }
+                    break;
+                case CODE_UPLOAD_FIAL:
+                    Toast.makeText(YellowpagePersonalInfoActivity.this,
+                            getString(R.string.putao_personal_data_upload_icon_fail), Toast.LENGTH_SHORT).show();
+                    break;
+                default:
+                    break;
+            }
+        }
+    };
+
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.putao_personal_data_layout);
         mHeadIconUri = Uri.fromFile(new File(getExternalCacheDir(), IMAGE_FILE_NAME));
+        mImageLoader = new ImageLoaderFactory(this).getStatusAvatarLoader();
+        mPersonInfoDB = Config.getDatabaseHelper().getPersonInfoDB();
         initView();
     }
 
@@ -121,12 +192,40 @@ public class YellowpagePersonalInfoActivity extends BaseActivity implements OnCl
         initData();
     }
 
+    @Override
+    protected void onPause()
+    {
+        super.onPause();
+        // 在onpause里面做数据保存操作，只要个人中心界面不可见，就进行数据保存。保存主要分为两个方面：1.保存到数据库
+        // 2.上传到服务器。当然了每次有信息修改的时候才会做保存，所以需要设置开关
+        if (mChangeFlag)
+        {
+            saveUserBasicInfo();
+        }
+    }
+
+    /**
+     * 用户信息有变化的时候，保存用户信息 void
+     */
+    private void saveUserBasicInfo()
+    {
+        // 1.保存到数据库里面
+        BasicUserInfoBean bean = new BasicUserInfoBean(0, mHeadPicStr, null, 0, null);
+        mPersonInfoDB.insertData(bean);
+
+        // 2.上传到服务器
+    }
+
     /**
      * 初始化数据 void
      */
     private void initData()
     {
-
+        String imageUrl = mPersonInfoDB.queryImgUrl();
+        if (!TextUtils.isEmpty(imageUrl) && mImageLoader != null)
+        {
+            mImageLoader.loadData(imageUrl, mHeadImageView);
+        }
     }
 
     /**
@@ -300,7 +399,25 @@ public class YellowpagePersonalInfoActivity extends BaseActivity implements OnCl
                 case CODE_RESULT_REQUEST:
                     if (mHeadIconUri != null)
                     {
-                        setImageToHeadView();
+                        Bitmap photo = null;
+                        try
+                        {
+                            photo = Media.getBitmap(getContentResolver(), mHeadIconUri);
+                        }
+                        catch (FileNotFoundException e)
+                        {
+                            e.printStackTrace();
+                        }
+                        catch (IOException e)
+                        {
+                            e.printStackTrace();
+                        }
+                        if (photo != null)
+                        {
+                            // mHeadImageView.setImageBitmap(photo);
+                            // 同时将图片上传到七牛服务器
+                            uploadImgFile(photo);
+                        }
                     }
                     break;
                 default:
@@ -310,30 +427,78 @@ public class YellowpagePersonalInfoActivity extends BaseActivity implements OnCl
     }
 
     /**
-     * 提取裁剪之后的图片，设置头像
+     * 账户头像上传到七牛服务器
      * 
-     * @param intent void
+     * @param photo void
      */
-    private void setImageToHeadView()
+    private void uploadImgFile(final Bitmap photo)
     {
-        Bitmap photo = null;
-        try
+        mChangeFlag = true;
+        Config.execute(new Runnable()
         {
-            photo = Media.getBitmap(getContentResolver(), mHeadIconUri);
-        }
-        catch (FileNotFoundException e)
-        {
-            e.printStackTrace();
-        }
-        catch (IOException e)
-        {
-            e.printStackTrace();
-        }
-        if (photo != null)
-        {
+            @Override
+            public void run()
+            {
+                if (photo == null)
+                {
+                    if (mHandler != null)
+                    {
+                        mHandler.sendEmptyMessage(CODE_UPLOAD_FIAL);
+                    }
+                }
+                // 首先将photo转成字节数组
+                ByteArrayOutputStream stream = new ByteArrayOutputStream();
+                photo.compress(CompressFormat.JPEG, 100, stream);
+                // 上传到七牛服务器的具体内容，字节数组
+                byte[] data = stream.toByteArray();
 
-            mHeadImageView.setImageBitmap(photo);
-        }
+                // 上传管理器
+                UploadManager uploadManager = new UploadManager();
+                Map<String, String> params = new HashMap<String, String>();
+                UploadOptions opt = new UploadOptions(params, null, true, null, null);
+                // 从葡萄服务器获取token
+                String token = QiNiuCloudManager.getInstance().getUploadToken(
+                        Config.YELLOW_PAGE_FEEDBACK_IMG_UPLOAD_TOKEN);
+                if (TextUtils.isEmpty(token))
+                {
+                    if (mHandler != null)
+                    {
+                        mHandler.sendEmptyMessage(CODE_UPLOAD_FIAL);
+                    }
+                }
+                // 上传文件需要的key，对应的是指定七牛服务上的文件名
+                String key = QiNiuCloudManager.getInstance().getExpectKey(mHeadIconUri.toString());
+                // 上传结果回调
+                UpCompletionHandler upCompletionHandler = new UpCompletionHandler()
+                {
+
+                    @Override
+                    public void complete(String key, ResponseInfo info, JSONObject res)
+                    {
+                        if (info.isOK())
+                        {
+                            // 上传成功,存储于七牛服务器中的图片地址
+                            mHeadPicStr = Config.BUCKET_NAME_URL + key;
+                            // handler发消息到主线程更新ui
+                            if (mHandler != null)
+                            {
+                                mHandler.sendEmptyMessage(CODE_UPLOAD_SUCCESS);
+                            }
+                        }
+                        else
+                        {
+                            if (mHandler != null)
+                            {
+                                mHandler.sendEmptyMessage(CODE_UPLOAD_FIAL);
+                            }
+                        }
+                    }
+                };
+                // 上传操作
+                uploadManager.put(data, key, token, upCompletionHandler, null);
+            }
+        });
+
     }
 
     /**

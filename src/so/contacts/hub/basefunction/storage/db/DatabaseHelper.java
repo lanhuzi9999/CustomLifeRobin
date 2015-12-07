@@ -14,6 +14,8 @@ public class DatabaseHelper extends SQLiteOpenHelper
 
     private CMSDataDB mCmsDataDB;
 
+    private PersonInfoDB mPersonaInfoDB;
+
     public static synchronized DatabaseHelper getInstance(Context context)
     {
         if (mInstance == null)
@@ -38,6 +40,15 @@ public class DatabaseHelper extends SQLiteOpenHelper
         return mCmsDataDB;
     }
 
+    public synchronized PersonInfoDB getPersonInfoDB()
+    {
+        if (mPersonaInfoDB == null)
+        {
+            mPersonaInfoDB = new PersonInfoDB(this);
+        }
+        return mPersonaInfoDB;
+    }
+
     @Override
     public void onCreate(SQLiteDatabase db)
     {
@@ -45,6 +56,7 @@ public class DatabaseHelper extends SQLiteOpenHelper
         // 创建cmsdb表的sql
         db.execSQL(CMSDataDB.getCreateCommonServicesTableSQL());
         db.execSQL(CMSDataDB.getCreateContentConfigTableSQL());
+        db.execSQL(PersonInfoDB.getCreatePersonalInfoDBSQL());
         db.setTransactionSuccessful();
         db.endTransaction();
     }

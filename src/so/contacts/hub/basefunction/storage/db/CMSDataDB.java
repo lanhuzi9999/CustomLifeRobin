@@ -20,7 +20,7 @@ import com.putao.live.R;
 
 public class CMSDataDB
 {
-    private static final String PackageName = R.class.getPackage().getName();
+    private static final String PackageName = "CMSDataDB";
 
     SQLiteDatabase dataBase;
 
