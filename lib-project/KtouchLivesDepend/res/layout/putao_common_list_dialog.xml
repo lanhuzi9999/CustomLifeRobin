@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/putao_popup_bg"
+    android:minWidth="300dp"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/putao_dialog_leftandright_padding"
+    android:paddingLeft="@dimen/putao_dialog_leftandright_padding"
+    android:paddingRight="@dimen/putao_dialog_leftandright_padding" >
+
+    <TextView
+        android:id="@+id/dialog_title_tv"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/putao_dialog_head_height"
+        android:gravity="center"
+        android:textColor="@color/putao_dialog_title"
+        android:textSize="@dimen/putao_dialog_head_textsize" />
+
+    <View style="@style/Theme.Ptui.Divider.Horizontal" />
+        
+    <ListView
+        android:id="@+id/listview"
+        style="@style/Theme.Ptui.ListView.Itembg"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:id="@+id/dialog_bottom_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/dialog_bootom_cancel_btn"
+            style="@style/Theme.Ptui.Button.White_Black"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/putao_dialog_bottom_btn_height"
+            android:layout_marginRight="@dimen/putao_dialog_leftandright_padding"
+            android:layout_marginTop="@dimen/putao_dialog_leftandright_padding"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/putao_cancel"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/dialog_bootom_ok_btn"
+            style="@style/Theme.Ptui.Button.White_Black"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/putao_dialog_bottom_btn_height"
+            android:layout_marginTop="@dimen/putao_dialog_leftandright_padding"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/putao_confirm"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</LinearLayout>

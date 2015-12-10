@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 查余额 -->
+    <dimen name="putao_query_charge_content_height">130dp</dimen><!-- 内容高度 -->
+    <dimen name="putao_query_charge_money_text_size">40sp</dimen><!-- 余额金额字体大小 -->
+    
+    <!-- 充話費 -->
+    <dimen name="putao_recharge_money_height">40dp</dimen>
+    <dimen name="putao_chargetel_result_result_textsize">18sp</dimen>
+    <dimen name="putao_chargetel_result_small_textsize">14sp</dimen>
+    <!-- Button -->
+    <dimen name="putao_button_height">36dp</dimen><!-- 高度 -->
+    
+    <!-- 編輯框 -->
+    <dimen name="putao_edit_layout_item_height">53.66dp</dimen><!-- 自定義編輯框高度 -->
+    
+    <!-- 标题栏高度 -->
+    <dimen name="putao_title_bar_and_status_hight">73dip</dimen>
+    <!-- 状态栏高度 -->
+    <dimen name="putao_status_bar_height">25dp</dimen>
+</resources>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/putao_voucher_dialog_width"
+    android:layout_height="@dimen/putao_voucher_succ_dialog_height"
+    android:layout_gravity="center"
+    android:background="@drawable/putao_bg_youhuiquan_qiangquan"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/dialog_title_tv"
+        android:layout_width="@dimen/putao_voucher_dialog_title_width"
+        android:layout_height="@dimen/putao_voucher_dialog_title_height"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/putao_voucher_dialog_title_margintop"
+        android:gravity="center"
+        android:maxLines="2"
+        android:textColor="@color/putao_text_color_primary"
+        android:textSize="@dimen/putao_dialog_content_textsize" />
+
+    <ImageView
+        android:id="@+id/putao_voucher_center_closedialog_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/putao_voucher_dialog_margin_right"
+        android:layout_marginTop="@dimen/putao_voucher_dialog_margin_top"
+        android:src="@drawable/putao_icon_youhuiquan_guanbi" />
+
+    <ScrollView
+        android:id="@+id/scrollview"
+        android:layout_width="@dimen/putao_voucher_center_scrollview_width"
+        android:layout_height="@dimen/putao_voucher_dialog_scrollview_height"
+        android:layout_below="@id/dialog_title_tv"
+        android:layout_centerHorizontal="true"
+        android:fadingEdge="none"
+        android:overScrollMode="never"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:id="@+id/putao_scrolldialog_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="@dimen/putao_voucher_center_layout_width"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/scrollview"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="bottom"
+        android:layout_marginTop="@dimen/putao_voucher_layout_margin_top"
+        android:orientation="horizontal"
+        android:paddingBottom="8dp" >
+
+        <TextView
+            android:id="@+id/putao_voucher_center_userimmediately"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/putao_voucher_dialog_text_height"
+            android:layout_weight="1"
+            android:background="@drawable/putao_icon_youhuiquan_lijishiyong"
+            android:gravity="center"
+            android:text="@string/putao_voucher_detail_btn_text"
+            android:textColor="@color/putao_voucher_dialog_userimmediatly" />
+
+        <TextView
+            android:id="@+id/putao_voucher_center_lookdetail"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/putao_voucher_dialog_text_height"
+            android:layout_marginLeft="11dp"
+            android:layout_weight="1"
+            android:background="@drawable/putao_icon_youhuiquan_dianjichakan"
+            android:gravity="center"
+            android:text="@string/putao_voucher_center_lookdetail"
+            android:textColor="@color/putao_voucher_dialog_lookdetail" />
+    </LinearLayout>
+
+</RelativeLayout>

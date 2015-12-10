@@ -15,8 +15,7 @@
 
         <View 
             android:layout_width="match_parent"
-            android:layout_height="@dimen/putao_divider_line_size"
-            android:background="@drawable/putao_line_horizontal"/>
+            android:layout_height="@dimen/putao_divider_line_size"/>
         
         <TextView
             android:id="@+id/message_tv"

@@ -217,15 +217,6 @@
         <item name="android:focusable">false</item>
     </style>
 
-    <style name="putao_CheckBox_express_history_select_all">
-        <item name="android:layout_width">wrap_content</item>
-        <item name="android:layout_height">wrap_content</item>
-        <item name="android:button">@drawable/putao_icon_check_box_express_history_select_all</item>
-        <item name="android:scaleType">center</item>
-        <item name="android:gravity">center_vertical</item>
-        <item name="android:focusable">false</item>
-    </style>
-
     <style name="putao_SmallCheckBox">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
@@ -396,18 +387,6 @@
         <item name="android:layout_marginRight">20dp</item>
     </style>
 
-    <style name="putao_MyItemStyle_Card_Top" parent="@style/putao_MyItemStyle_Card">
-        <item name="android:background">@drawable/putao_bg_list_card_1</item>
-    </style>
-
-    <style name="putao_MyItemStyle_Card_Middle" parent="@style/putao_MyItemStyle_Card">
-        <item name="android:background">@drawable/putao_bg_list_card_2</item>
-    </style>
-
-    <style name="putao_MyItemStyle_Card_Bottom" parent="@style/putao_MyItemStyle_Card">
-        <item name="android:background">@drawable/putao_bg_list_card_3</item>
-    </style>
-
     <style name="putao_TagWidget" parent="@android:style/Theme" />
 
     <style name="putao_TagWidget.TabText">
@@ -417,15 +396,6 @@
         <item name="android:ellipsize">marquee</item>
     </style>
 
-<!--     <style name="putao_MyItemLineStyle">
-        <item name="android:layout_width">fill_parent</item>
-        <item name="android:layout_height">@dimen/putao_divider_line_size</item>
-        <item name="android:background">@color/putao_yellow_page_line_color</item>
-        <item name="android:layout_gravity">center_vertical</item>
-        <item name="android:layout_marginLeft">16dp</item>
-        <item name="android:layout_marginRight">16dp</item>
-    </style>
- -->
     <!-- 无间距分割线 -->
     <style name="putao_DividerStyle_Horizontal">
         <item name="android:layout_width">fill_parent</item>

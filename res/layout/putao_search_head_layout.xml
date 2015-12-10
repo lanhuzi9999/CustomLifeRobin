@@ -78,8 +78,8 @@
                 android:layout_marginRight="4dp"
                 android:contentDescription="@string/putao_about_us"
                 android:scaleType="fitXY"
-                android:src="@drawable/putao_search_delete"
                 android:visibility="gone" />
+<!--                 android:src="@drawable/putao_search_delete" -->
         </RelativeLayout>
     </LinearLayout>
 

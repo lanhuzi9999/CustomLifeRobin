@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 自定义（模仿效果）Spinner的属性 -->
+    <declare-styleable name="CustomSpinner">
+
+        <!-- 显示的内容 -->
+        <attr name="spinner_text" format="reference" />
+        <!-- 文字大小 -->
+        <attr name="spinner_textSize" format="reference|dimension" />
+        <!-- 默认文字颜色 -->
+        <attr name="spinner_textColor" format="reference|color" />
+        <!-- 选中文字颜色 -->
+        <attr name="spinner_textColor_selected" format="reference|color" />
+        <!-- 默认图标 -->
+        <attr name="spinner_drawableRight" format="reference|color" />
+        <!-- 选中图标 -->
+        <attr name="spinner_drawableRight_selected" format="reference|color" />
+        <!-- 背景色 -->
+        <attr name="spinner_background" format="reference|color" />
+    </declare-styleable>
+
+    <!-- 自定义（模仿效果）SearchView的属性 -->
+    <declare-styleable name="CustomSearchView">
+
+        <!-- 背景色 -->
+        <attr name="searchview_background" format="reference|color" />
+        <!-- 清除图片 -->
+        <attr name="searchview_drawable_clear" format="reference|color" />
+        <!-- 搜索图片 -->
+        <attr name="searchview_drawableLeft" format="reference|color" />
+        <!-- 内容文字大小 -->
+        <attr name="searchview_textSize" format="reference|dimension" />
+        <!-- 内容颜色 -->
+        <attr name="searchview_textColor" format="reference|color" />
+        <!-- 提示内容颜色 -->
+        <attr name="searchview_textColorHint" format="reference|color" />
+        <!-- 是否可以获取焦点 -->
+        <attr name="searchview_focusable" format="boolean" />
+        <!-- 显示的提示内容 -->
+        <attr name="searchview_hint" format="reference" />
+    </declare-styleable>
+
+    <!-- 自定义SwitchButton的属性 -->
+    <declare-styleable name="SwitchButton">
+        <attr name="frameDrawable" format="reference|color" />
+        <attr name="stateDrawable" format="reference|color" />
+        <attr name="stateMaskDrawable" format="reference|color" />
+        <attr name="sliderDrawable" format="reference|color" />
+        <attr name="withTextInterval" format="dimension" />
+    </declare-styleable>
+
+</resources>

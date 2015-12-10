@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/putao_white"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/putao_dialog_leftandright_padding"
+    android:paddingLeft="@dimen/putao_dialog_leftandright_padding"
+    android:paddingRight="@dimen/putao_dialog_leftandright_padding" >
+
+    <so.contacts.hub.basefunction.widget.TwoGridViewLayout
+        android:id="@+id/dialog_twogridview_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp" />
+
+    <LinearLayout
+        android:id="@+id/dialog_bottom_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="@dimen/putao_dialog_leftandright_padding" 
+        android:paddingBottom="@dimen/putao_dialog_leftandright_padding">
+
+        <Button
+            android:id="@+id/dialog_bootom_ok_btn"
+            style="@style/Theme.Ptui.Button.White_Green"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@string/putao_confirm" />
+    </LinearLayout>
+
+</LinearLayout>

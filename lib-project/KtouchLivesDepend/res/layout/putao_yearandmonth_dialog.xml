@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/putao_popup_bg"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/putao_dialog_leftandright_padding"
+    android:paddingLeft="@dimen/putao_dialog_leftandright_padding"
+    android:paddingRight="@dimen/putao_dialog_leftandright_padding" >
+
+    <TextView
+        android:id="@+id/dialog_title_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingBottom="@dimen/putao_dialog_leftandright_padding"
+        android:paddingTop="@dimen/putao_dialog_leftandright_padding"
+        android:textColor="@color/putao_dialog_title"
+        android:textSize="@dimen/putao_dialog_head_textsize" />
+
+    <View
+        android:id="@+id/dialog_title_divider"
+        style="@style/Theme.Ptui.Divider.Horizontal" />
+
+    <so.contacts.hub.basefunction.widget.YearAndMonthLayout
+        android:id="@+id/dialog_yearandmonth_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp" />
+
+</LinearLayout>

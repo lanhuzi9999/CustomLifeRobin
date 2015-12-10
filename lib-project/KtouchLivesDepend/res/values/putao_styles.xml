@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- 分割线 start -->
+    <style name="Theme.Ptui.Divider"></style>
+
+    <style name="Theme.Ptui.Divider.Vertical" parent="@style/Theme.Ptui.Divider">
+        <item name="android:layout_width">@dimen/putao_divider_line_size</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:background">@color/putao_yellow_page_line_color</item>
+    </style>
+
+    <style name="Theme.Ptui.Divider.Horizontal" parent="@style/Theme.Ptui.Divider">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">@dimen/putao_divider_line_size</item>
+        <item name="android:background">@color/putao_yellow_page_line_color</item>
+    </style>
+
+    <style name="Theme.Ptui.Divider.Horizontal.Bottom" parent="@style/Theme.Ptui.Divider.Horizontal">
+        <item name="android:layout_alignParentBottom">true</item>
+    </style>
+    <!-- 分割线 end -->
+
+
+    <!-- 动画 start -->
+    <style name="putao_Animations" />
+
+    <style name="Theme.Ptui.Animation"></style>
+
+    <style name="Theme.Ptui.Animation.Dialog" parent="@style/Theme.Ptui.Animation">
+        <item name="android:windowEnterAnimation">@anim/putao_dialog_enter</item>
+        <item name="android:windowExitAnimation">@anim/putao_dialog_exit</item>
+    </style>
+
+    <style name="Theme.Ptui.Animation.PopUpMenu"></style>
+
+    <style name="Theme.Ptui.Animation.PopUpMenu.Center" panrent="@style/Theme.Ptui.Animation.PopUpMenu">
+        <item name="@android:windowEnterAnimation">@anim/putao_grow_from_bottom</item>
+        <item name="@android:windowExitAnimation">@anim/putao_shrink_from_top</item>
+    </style>
+    <!-- 动画 end -->
+
+	<!-- 进度条 start -->
+    <style name="Theme.Ptui.ProgressBar"></style>
+
+    <style name="Theme.Ptui.ProgressBar.CustomHorizontal" parent="@style/Theme.Ptui.ProgressBar">
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:progressDrawable">@drawable/putao_progress_style_h5page_bg</item>
+        <item name="android:indeterminateDrawable">@android:drawable/progress_indeterminate_horizontal</item>
+        <item name="android:minHeight">10dip</item>
+        <item name="android:maxHeight">20dip</item>
+    </style>
+
+    <style name="Theme.Ptui.ProgressBar.Horizontal" parent="android:Widget.ProgressBar.Horizontal"></style>
+
+    <style name="Theme.Ptui.ProgressBar.Horizontal.Gray" parent="@style/Theme.Ptui.ProgressBar.Horizontal">
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:progressDrawable">@drawable/putao_progress_style_gray_bg</item>
+        <item name="android:minHeight">3dip</item>
+        <item name="android:maxHeight">30dip</item>
+    </style>
+	<!-- 进度条 end -->
+
+</resources>

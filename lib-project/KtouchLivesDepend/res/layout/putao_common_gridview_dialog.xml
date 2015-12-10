@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@color/putao_traffic_offence_province_dialog_bg"
+    android:padding="@dimen/putao_dialog_leftandright_padding">
+
+    <GridView
+        android:id="@+id/dialog_gridview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:verticalSpacing="10dp"
+        android:horizontalSpacing="5dp"
+        android:numColumns="8"
+       	android:listSelector="@null"
+       	android:background="@color/putao_transparent"
+        android:scrollbars="none" />
+
+    <TextView
+        android:id="@+id/dialog_more_action"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/putao_dialog_bottom_btn_height"
+        android:layout_marginLeft="@dimen/putao_dialog_leftandright_margin"
+        android:layout_marginRight="@dimen/putao_dialog_leftandright_margin"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="22dp"
+        android:gravity="center"
+        android:background="@drawable/putao_click_btn_bg"
+        android:text="@string/putao_cancel"
+        android:textColor="@color/putao_btn_text_color"
+        android:textSize="@dimen/putao_btn_text_size"/>
+
+</LinearLayout>
