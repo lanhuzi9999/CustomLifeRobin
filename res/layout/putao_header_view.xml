@@ -14,7 +14,7 @@
 
         <ImageView
             android:id="@id/back"
-            style="@style/putao_Titlebar_Icon_Style"
+            style="@style/Theme.Ptui.TitleBar.Icon"
             android:contentDescription="@string/putao_about_us"
             android:duplicateParentState="true"
             android:scaleType="center"
@@ -32,13 +32,13 @@
 
         <TextView
             android:id="@+id/title"
-            style="@style/putao_Titlebar_Primary_Text_Style"
+            style="@style/Theme.Ptui.TitleBar.PrimaryText"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="5dp" />
 
         <TextView
             android:id="@+id/subtitle"
-            style="@style/putao_Titlebar_Second_Text_Style"
+            style="@style/Theme.Ptui.TitleBar.SecondText"
             android:layout_below="@id/title"
             android:layout_centerHorizontal="true"
             android:layout_marginBottom="3dp"
@@ -56,14 +56,15 @@
 
         <ImageView
             android:id="@+id/next_step_img"
-            style="@style/putao_Titlebar_Icon_Style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_centerVertical="true"
             android:contentDescription="@string/putao_about_us"
             android:visibility="gone" />
 
         <TextView
             android:id="@+id/next_step_btn"
-            style="@style/putao_Titlebar_Second_Text_Style"
+            style="@style/Theme.Ptui.TitleBar.SecondText"
             android:textColor="@color/putao_white"
             android:layout_centerVertical="true"
             android:layout_toRightOf="@id/next_step_img"

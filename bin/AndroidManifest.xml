@@ -26,7 +26,7 @@
         android:allowBackup="true"
         android:icon="@drawable/putao_ic_launcher"
         android:label="@string/putao_app_name"
-        android:theme="@style/putao_AppTheme" >
+        android:theme="@style/Theme.Ptui" >
         
         <meta-data
             android:name="versionCode"

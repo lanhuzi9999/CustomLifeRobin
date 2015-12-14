@@ -4,7 +4,6 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import so.contacts.hub.basefunction.utils.YellowUtil;
-import so.contacts.hub.basefunction.widget.dialog.ProgressDialog;
 import so.contacts.hub.services.baseservices.bean.YellowParams;
 import android.content.Intent;
 import android.os.Bundle;
@@ -12,6 +11,8 @@ import android.text.TextUtils;
 import android.view.View;
 import android.widget.TextView;
 
+import com.lives.depend.theme.dialog.CommonDialogFactory;
+import com.lives.depend.theme.dialog.progress.AbstractProgressDialog;
 import com.putao.live.R;
 
 
@@ -19,7 +20,7 @@ public class BaseActivity extends BaseUIActivity {
 	
 	private static final String TAG = BaseActivity.class.getSimpleName();
 	
-	protected ProgressDialog mProgressDialog = null;
+	protected AbstractProgressDialog mProgressDialog = null;
 
 	// CommonDialog commonDialog = null;
 
@@ -108,7 +109,7 @@ public class BaseActivity extends BaseUIActivity {
 			return;
 		}
 		if (mProgressDialog == null) {
-			mProgressDialog = new ProgressDialog(this, isHaveContent);
+			mProgressDialog = CommonDialogFactory.getProgressDialog(this, R.style.Theme_Ptui_Dialog_Progress);
 			mProgressDialog
 					.setMessage(getString(R.string.putao_yellow_page_loading));
 			mProgressDialog.setCanceledOnTouchOutside(false);

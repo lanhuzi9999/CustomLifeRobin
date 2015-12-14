@@ -26,11 +26,11 @@
         <item name="android:listChoiceIndicatorSingle">@drawable/putao_btn_radio_holo</item>
     </style>
 
-    <style name="Theme.Ptui.H5" parent="@style/Theme.Ptui.NoTitle"></style>
-
     <style name="Theme.Ptui.NoTitle" parent="@style/Theme.Ptui">
         <item name="android:windowNoTitle">true</item>
     </style>
+
+    <style name="Theme.Ptui.H5" parent="@style/Theme.Ptui.Transparent"></style>
 
     <style name="Theme.Ptui.Welcome" parent="@style/Theme.Ptui.NoTitle">
         <item name="android:windowBackground">@drawable/putao_splash_layers</item>
@@ -38,6 +38,8 @@
 
     <style name="Theme.Ptui.Transparent" parent="@android:style/Theme.Translucent.NoTitleBar">
         <item name="android:windowBackground">@color/putao_transparent_alpha</item>
+         <!-- Button样式 -->
+        <item name="android:buttonStyle">@style/Theme.Ptui.Button</item>
     </style>
 
     <!-- Button style start -->
@@ -59,7 +61,7 @@
     <!-- 提示样式：白底绿字 -->
     <style name="Theme.Ptui.Button.White_Green" parent="@style/Theme.Ptui.Button">
         <item name="android:background">@drawable/putao_express_history_btn_bg</item>
-        <item name="android:textColor">@color/putao_text_color_gray</item>
+        <item name="android:textColor">@color/putao_text_color_green</item>
     </style>
 
     <!-- 重要样式：白底红字 -->

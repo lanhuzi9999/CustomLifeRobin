@@ -6,14 +6,14 @@
 
     <View
         android:id="@+id/top_divider"
-        style="@style/putao_DividerStyle_Horizontal"
+        style="@style/Theme.Ptui.Divider.Horizontal"
         android:layout_height="6dp"
         android:layout_alignParentTop="true"
         android:background="@color/putao_screen_background_light" />
 
     <View
         android:id="@+id/top_storke_line"
-        style="@style/putao_DividerStyle_Horizontal"
+        style="@style/Theme.Ptui.Divider.Horizontal"
         android:layout_below="@id/top_divider" />
 
     <ImageView
@@ -37,14 +37,13 @@
 
         <TextView
             android:id="@+id/goods_title"
-            style="@style/putao_TextAppearance"
+            style="@style/Theme.Ptui.TextAppearance"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="19dp"
             android:ellipsize="end"
             android:gravity="center_vertical"
-            android:lines="1"
-            android:maxWidth="@dimen/putao_content_listview_title_max"
+            android:singleLine="true"
             android:textColor="#bf000000"
             android:textSize="17sp"
             android:textStyle="bold" />
@@ -82,8 +81,8 @@
 
             <TextView
                 android:id="@+id/goods_current_price"
-                style="@style/putao_TextAppearanceMedium"
-                android:layout_width="55dp"
+                style="@style/Theme.Ptui.TextAppearance.Medium"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="10dp"
                 android:textColor="#ff7d1f"
@@ -93,7 +92,7 @@
     </RelativeLayout>
 
     <View
-        style="@style/putao_DividerStyle_Horizontal"
+        style="@style/Theme.Ptui.Divider.Horizontal"
         android:layout_alignParentBottom="true" />
 
     <View

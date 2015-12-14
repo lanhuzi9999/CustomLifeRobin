@@ -2,7 +2,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:background="@drawable/putao_list_selecter_s"
+    android:background="@drawable/putao_listview_item_selector"
     android:minHeight="54dp"
     android:orientation="vertical" >
 
@@ -27,7 +27,7 @@
 
         <TextView
             android:id="@+id/name"
-            style="@style/putao_List_SIGNLE_ITEM_PRIMARY_TEXT_STYLE"
+            style="@style/Theme.Ptui.CustomList.SingleItemPrimaryText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -35,7 +35,7 @@
 
         <TextView
             android:id="@+id/description"
-            style="@style/putao_List_SIGNLE_ITEM_SECOND_TEXT_STYLE"
+            style="@style/Theme.Ptui.CustomList.SingleItemSecondText"
             android:layout_width="200dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -53,7 +53,7 @@
     <!-- android:contentDescription="@string/putao_app_name" -->
     <!-- android:src="@drawable/putao_icon_arrow" /> -->
 
-    <so.contacts.hub.remind.simple.SimpleRemindView
+    <so.contacts.hub.basefunction.operate.remind.widget.SimpleRemindView
         android:id="@+id/remind_view"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -62,12 +62,6 @@
         android:layout_toRightOf="@id/name_layout"
         android:gravity="center" />
 
-    <View style="@style/putao_DividerStyle_Horizontal_Bottom"/>
-    
-<!--     <View
-        android:layout_width="match_parent"
-        android:layout_height="@dimen/putao_divider_line_size"
-        android:layout_alignParentBottom="true"
-        android:background="@color/putao_yellow_page_line_color" /> -->
+    <View style="@style/Theme.Ptui.Divider.Horizontal.Bottom"/>
 
 </RelativeLayout>

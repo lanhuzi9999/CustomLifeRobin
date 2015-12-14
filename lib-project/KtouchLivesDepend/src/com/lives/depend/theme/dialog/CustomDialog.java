@@ -213,7 +213,7 @@ public class CustomDialog extends CommonDialog
             mDialog.dismiss();
         }
     }
-    
+
     @Override
     public void cancel()
     {
@@ -240,7 +240,7 @@ public class CustomDialog extends CommonDialog
      */
     public void setMessage(int message)
     {
-        if (message > 0)
+        if (message > 0 && mMessageTv != null)
         {
             mMessageTv.setText(message);
             mMessageTv.setVisibility(View.VISIBLE);
@@ -254,20 +254,26 @@ public class CustomDialog extends CommonDialog
      */
     public void setMessage(CharSequence message)
     {
-        mMessageTv.setText(message);
+        if (mMessageTv != null)
+        {
+            mMessageTv.setText(message);
+        }
     }
 
     @Override
     public void setMessageVisible(boolean isVisible)
     {
         // TODO Auto-generated method stub
-        if (isVisible)
+        if (mMessageTv != null)
         {
-            mMessageTv.setVisibility(View.VISIBLE);
-        }
-        else
-        {
-            mMessageTv.setVisibility(View.GONE);
+            if (isVisible)
+            {
+                mMessageTv.setVisibility(View.VISIBLE);
+            }
+            else
+            {
+                mMessageTv.setVisibility(View.GONE);
+            }
         }
     }
 
@@ -304,13 +310,16 @@ public class CustomDialog extends CommonDialog
     public void setPositiveButtonResource(int textColor, int bgResId)
     {
         // TODO Auto-generated method stub
-        if (textColor > 0)
+        if (mOkBtn != null)
         {
-            mOkBtn.setTextColor(mContext.getResources().getColor(textColor));
-        }
-        if (bgResId > 0)
-        {
-            mOkBtn.setBackgroundResource(bgResId);
+            if (textColor > 0)
+            {
+                mOkBtn.setTextColor(mContext.getResources().getColor(textColor));
+            }
+            if (bgResId > 0)
+            {
+                mOkBtn.setBackgroundResource(bgResId);
+            }
         }
     }
 
@@ -318,13 +327,16 @@ public class CustomDialog extends CommonDialog
     public void setPositiveButtonResource(ColorStateList colorStateList, int bgResId)
     {
         // TODO Auto-generated method stub
-        if (colorStateList != null)
+        if (mOkBtn != null)
         {
-            mOkBtn.setTextColor(colorStateList);
-        }
-        if (bgResId > 0)
-        {
-            mOkBtn.setBackgroundResource(bgResId);
+            if (colorStateList != null)
+            {
+                mOkBtn.setTextColor(colorStateList);
+            }
+            if (bgResId > 0)
+            {
+                mOkBtn.setBackgroundResource(bgResId);
+            }
         }
     }
 
@@ -332,13 +344,16 @@ public class CustomDialog extends CommonDialog
     public void setPositiveButtonVisable(boolean isVisible)
     {
         // TODO Auto-generated method stub
-        if (isVisible)
+        if (mOkBtn != null)
         {
-            mOkBtn.setVisibility(View.VISIBLE);
-        }
-        else
-        {
-            mOkBtn.setVisibility(View.GONE);
+            if (isVisible)
+            {
+                mOkBtn.setVisibility(View.VISIBLE);
+            }
+            else
+            {
+                mOkBtn.setVisibility(View.GONE);
+            }
         }
     }
 
@@ -383,13 +398,16 @@ public class CustomDialog extends CommonDialog
     public void setNegativeButtonVisible(boolean isVisible)
     {
         // TODO Auto-generated method stub
-        if (isVisible)
+        if (mCancelBtn != null)
         {
-            mCancelBtn.setVisibility(View.VISIBLE);
-        }
-        else
-        {
-            mCancelBtn.setVisibility(View.GONE);
+            if (isVisible)
+            {
+                mCancelBtn.setVisibility(View.VISIBLE);
+            }
+            else
+            {
+                mCancelBtn.setVisibility(View.GONE);
+            }
         }
 
     }
@@ -402,8 +420,14 @@ public class CustomDialog extends CommonDialog
         {
             view.setVisibility(View.GONE);
         }
-        mCancelBtn.setVisibility(View.GONE);
-        mOkBtn.setVisibility(View.GONE);
+        if (mCancelBtn != null)
+        {
+            mCancelBtn.setVisibility(View.GONE);
+        }
+        if (mOkBtn != null)
+        {
+            mOkBtn.setVisibility(View.GONE);
+        }
     }
 
     @Override

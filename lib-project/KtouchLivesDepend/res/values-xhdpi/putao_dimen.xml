@@ -20,9 +20,9 @@
     <dimen name="putao_image_round_corner_hotel_room">8px</dimen>
     
     <!-- 对话框 标准 -->
-    <dimen name="putao_dialog_leftandright_padding">21dp</dimen>
-    <dimen name="putao_dialog_head_height">48dp</dimen>
-    <dimen name="putao_dialog_head_textsize">16sp</dimen>
+    <dimen name="putao_dialog_leftandright_padding">24dp</dimen>
+    <dimen name="putao_dialog_head_height">64dp</dimen>
+    <dimen name="putao_dialog_head_textsize">20sp</dimen>
     <dimen name="putao_dialog_content_minheight">64dp</dimen>
     <dimen name="putao_dialog_content_maxheight">360dp</dimen>
     <dimen name="putao_dialog_content_textsize">16sp</dimen>

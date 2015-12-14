@@ -22,11 +22,11 @@
             android:layout_above="@id/centre"
             android:gravity="center_horizontal" >
 
-<!--             <ImageView -->
-<!--                 android:layout_width="wrap_content" -->
-<!--                 android:layout_height="wrap_content" -->
-<!--                 android:layout_centerInParent="true" -->
-<!--                 android:src="@drawable/putao_bg_loading_logo" /> -->
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@drawable/putao_bg_loading_logo" />
 
             <ProgressBar
                 android:id="@+id/progress"

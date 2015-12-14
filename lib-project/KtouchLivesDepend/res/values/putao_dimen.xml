@@ -78,7 +78,6 @@
     <!-- putao_lhq modify for CoolUI6.0 start -->
     <!-- <dimen name="putao_title_bar_hight">44dip</dimen> -->
     <dimen name="putao_title_bar_hight">48dip</dimen>
-    <dimen name="putao_title_bar_padding_left">30dip</dimen>
     <dimen name="putao_title_bar_and_status_hight">48dip</dimen>
     <!-- putao_lhq modify for CoolUI6.0 end -->
     

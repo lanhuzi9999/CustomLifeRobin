@@ -3,8 +3,8 @@
     <!-- 主题色,头颜色 -->
     <color name="putao_theme">#46c578</color>
     <!-- 顶栏底色 -->
-    <color name="putao_head_title_color">#ededf0</color>
-    <color name="putao_head_title_divider_color">#d7d6d9</color>
+    <color name="putao_head_title_color">#f9f9f9</color>
+    <color name="putao_head_title_divider_color">#b4b4b4</color>
     
     <!-- 通用样式 start -->
     <color name="putao_text_color_primary">#d9000000</color><!-- 主要文字颜色  黑色的85%-->
@@ -13,7 +13,7 @@
     <color name="putao_text_color_secondary">#4c000000</color><!-- 次要文字颜色 黑色的30%-->
     <color name="putao_normal_red">#ff6653</color><!-- 通用的红色 -->
     <color name="putao_yellow_page_line_color">#ffe2e2e2</color><!-- 黄页数据分割线背景色 -->
-    <color name="putao_screen_background_light">#ededf0</color><!-- 背景色 -->
+    <color name="putao_screen_background_light">#f3f3f3</color><!-- 背景色 -->
     <color name="putao_blue">#0ca3e9</color><!-- 蓝色 -->
     <!-- 通用样式 end -->
   
@@ -106,7 +106,6 @@
     <color name="putao_text_color_disable">#4d0d0d0d</color><!-- 失效 -->
     <color name="putao_text_color_importance">#ff6655</color><!-- 重要 -->
     <color name="putao_text_color_green">#46c578</color><!-- 绿色提示文字 -->
-    <color name="putao_text_color_gray">#808080</color><!-- 灰色提示文字 -->
     <!-- 酒店入住日期选中颜色-->
     <color name="putao_calendar_selected_color">#46c578</color>
     <color name="putao_calendar_month_color">#f7f7f7</color>

@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EEEEEE" >
+
+    <ImageView
+        android:id="@+id/aboutus_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:scaleType="center"
+        android:src="@drawable/putao_aboutus_logo" />
+
+    <TextView
+        android:id="@+id/aboutus_version"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/aboutus_logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:textColor="#bdbdbd"
+        android:textSize="16sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/aboutus_version"
+        android:layout_marginTop="32dp"
+        android:background="#FFF"
+        android:orientation="vertical" >
+
+        <View style="@style/Theme.Ptui.Divider.Horizontal" />
+
+        <RelativeLayout
+            android:id="@+id/aboutus_feedback_layout"
+            style="@style/Theme.Ptui.AboutusItemLayoutStyle" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:text="@string/putao_aboutus_feedback"
+                android:textColor="@color/putao_text_color_second"
+                android:textSize="@dimen/putao_text_second_size" />
+
+            <ImageView
+                android:id="@+id/aboutus_feedback_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:scaleType="center"
+                android:src="@drawable/putao_card_all_show" />
+
+            <so.contacts.hub.basefunction.operate.remind.widget.SimpleRemindView
+                android:id="@+id/aboutus_feedback_srv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dp"
+                android:layout_toLeftOf="@+id/aboutus_feedback_iv" />
+        </RelativeLayout>
+
+        <View style="@style/Theme.Ptui.Divider.Horizontal" />
+
+        <RelativeLayout
+            android:id="@+id/aboutus_update_layout"
+            style="@style/Theme.Ptui.AboutusItemLayoutStyle" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/putao_aboutus_update"
+                android:textColor="@color/putao_text_color_second"
+                android:textSize="@dimen/putao_text_second_size" />
+
+            <ImageView
+                android:id="@+id/aboutus_update_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:scaleType="center"
+                android:src="@drawable/putao_card_all_show" />
+
+            <so.contacts.hub.basefunction.operate.remind.widget.SimpleRemindView
+                android:id="@+id/aboutus_update_srv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dp"
+                android:layout_toLeftOf="@+id/aboutus_update_iv" />
+        </RelativeLayout>
+
+        <View style="@style/Theme.Ptui.Divider.Horizontal" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/aboutus_copyright"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:paddingBottom="24dp"
+        android:text="@string/putao_aboutus_copyright"
+        android:textColor="#bdbdbd"
+        android:textSize="12sp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/aboutus_copyright"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="8dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:text="@string/putao_aboutus_weixin"
+            android:textColor="#bdbdbd"
+            android:textSize="12sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/putao_aboutus_qqgroup"
+            android:textColor="#bdbdbd"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -297,7 +297,7 @@ public class CommonPopWinowHelper
             if (mSelectedIndex >= 0 && (position == mSelectedIndex))
             {
                 holder.phoneTv.setTextColor(mContext.getResources().getColor(R.color.putao_theme));
-                holder.line.setBackgroundColor(mContext.getResources().getColor(R.color.putao_list_selector));
+                holder.line.setBackgroundColor(mContext.getResources().getColor(R.color.putao_theme));
             }
             else
             {

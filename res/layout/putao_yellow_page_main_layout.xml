@@ -4,9 +4,7 @@
     android:layout_height="match_parent"
     android:background="@color/putao_screen_background_light" >
 
-    <include layout="@layout/putao_home_search_head_layout" />
-
-    <android.support.v4.view.ViewPager
+    <so.contacts.hub.basefunction.widget.CustomViewPager
         android:id="@+id/main_viewpager"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
@@ -21,29 +19,70 @@
         android:orientation="horizontal"
         android:splitMotionEvents="false" >
 
-        <TextView
-            android:id="@+id/putao_main_tab_life_text"
+        <RelativeLayout
+            android:id="@+id/putao_main_tab_life"
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:layout_gravity="center_vertical"
-            android:drawableTop="@drawable/putao_tab_icon_logo_p"
-            android:gravity="center"
-            android:text="@string/putao_main_tab_life"
-            android:textColor="@color/putao_tab_text_color_selected"
-            android:textSize="@dimen/putao_tab_text_size" />
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
 
-        <TextView
-            android:id="@+id/putao_main_tab_navigation_text"
+            <TextView
+                android:id="@+id/putao_main_tab_life_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:drawableTop="@drawable/putao_tab_icon_logo_p"
+                android:gravity="center"
+                android:text="@string/putao_main_tab_life"
+                android:textColor="@color/putao_tab_text_color_selected"
+                android:textSize="@dimen/putao_tab_text_size" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/putao_main_tab_find"
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:layout_gravity="center_vertical"
-            android:drawableTop="@drawable/putao_tab_icon_navigation"
-            android:gravity="center"
-            android:text="@string/putao_main_tab_navigation"
-            android:textColor="@color/putao_tab_text_color_default"
-            android:textSize="@dimen/putao_tab_text_size" />
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+
+            <TextView
+                android:id="@+id/putao_main_tab_find_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:drawableTop="@drawable/putao_tab_icon_discover"
+                android:gravity="center"
+                android:text="@string/putao_main_tab_find"
+                android:textColor="@color/putao_tab_text_color_default"
+                android:textSize="@dimen/putao_tab_text_size" />
+
+            <ImageView
+                android:id="@+id/putao_main_tab_find_remind"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@id/putao_main_tab_find_text"
+                android:layout_alignTop="@id/putao_main_tab_find_text"
+                android:layout_marginRight="-3dp"
+                android:layout_marginTop="-3dp"
+                android:src="@drawable/putao_icon_prompt_s"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/putao_main_tab_navigation"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+
+            <TextView
+                android:id="@+id/putao_main_tab_navigation_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:drawableTop="@drawable/putao_tab_icon_navigation"
+                android:gravity="center"
+                android:text="@string/putao_main_tab_navigation"
+                android:textColor="@color/putao_tab_text_color_default"
+                android:textSize="@dimen/putao_tab_text_size" />
+        </RelativeLayout>
 
         <RelativeLayout
             android:id="@+id/putao_main_tab_my"
@@ -68,6 +107,8 @@
                 android:layout_height="wrap_content"
                 android:layout_alignRight="@id/putao_main_tab_my_text"
                 android:layout_alignTop="@id/putao_main_tab_my_text"
+                android:layout_marginRight="-3dp"
+                android:layout_marginTop="-3dp"
                 android:src="@drawable/putao_icon_prompt_s"
                 android:visibility="gone" />
         </RelativeLayout>
@@ -75,7 +116,7 @@
 
     <View
         android:id="@+id/line"
-        style="@style/putao_DividerStyle_Horizontal"
+        style="@style/Theme.Ptui.Divider.Horizontal"
         android:layout_above="@id/putao_main_tab"
         android:layout_alignParentBottom="false" />
 

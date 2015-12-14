@@ -17,8 +17,6 @@
         android:textColor="@color/putao_dialog_title"
         android:textSize="@dimen/putao_dialog_head_textsize" />
 
-    <View style="@style/Theme.Ptui.Divider.Horizontal" />
-        
     <ListView
         android:id="@+id/listview"
         style="@style/Theme.Ptui.ListView.Itembg"

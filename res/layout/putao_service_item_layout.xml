@@ -12,19 +12,19 @@
         android:layout_marginTop="@dimen/putao_offen_imgview_margintop"
         android:contentDescription="@string/putao_about_us" />
 
-<!--     <ViewStub -->
-<!--         android:id="@+id/yellow_page_item_remind_layout" -->
-<!--         android:layout_width="wrap_content" -->
-<!--         android:layout_height="wrap_content" -->
-<!--         android:layout_alignParentTop="true" -->
-<!--         android:layout_marginLeft="-7dp" -->
-<!--         android:layout_marginTop="2dp" -->
-<!--         android:layout_toRightOf="@id/yellow_page_img_item" -->
-<!--         android:layout="@layout/putao_remind_layout" /> -->
+    <ViewStub
+        android:id="@+id/yellow_page_item_remind_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="-10dp"
+        android:layout_marginTop="2dp"
+        android:layout_toRightOf="@id/yellow_page_img_item"
+        android:layout="@layout/putao_remind_layout" />
 
     <TextView
         android:id="@+id/yellow_page_item"
-        style="@style/putao_yellow_page_item"
+        style="@style/Theme.Ptui.YellowPageItem"
         android:layout_below="@id/yellow_page_img_item"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="@dimen/putao_offen_textview_margintop"

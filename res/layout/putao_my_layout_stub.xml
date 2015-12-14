@@ -43,7 +43,7 @@
 
                     <TextView
                         android:id="@+id/putao_login"
-                        style="@style/putao_TextAppearance"
+                        style="@style/Theme.Ptui.TextAppearance"
                         android:layout_width="68dp"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="11dp"
@@ -67,7 +67,7 @@
 
                 <TextView
                     android:id="@+id/menu_acc_name"
-                    style="@style/putao_Text_PrimaryColor_SecondSize"
+                    style="@style/Theme.Ptui.TextView.PrimaryColor_SecondSize"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_centerVertical="true"
@@ -82,16 +82,16 @@
                     android:layout_marginRight="@dimen/putao_activity_horizontal_margin"
                     android:src="@drawable/putao_card_all_show" />
 
-                <View style="@style/putao_DividerStyle_Horizontal_Bottom" />
+                <View style="@style/Theme.Ptui.Divider.Horizontal.Bottom" />
             </RelativeLayout>
 
             <View
-                style="@style/putao_DividerStyle_Horizontal"
+                style="@style/Theme.Ptui.Divider.Horizontal"
                 android:layout_marginTop="12dp" />
 
             <RelativeLayout
                 android:id="@+id/menu_myremind"
-                style="@style/putaoMenuItemLayout"
+                style="@style/Theme.Ptui.MenuItem.Layout"
                 android:layout_height="wrap_content" >
 
                 <RelativeLayout
@@ -101,25 +101,25 @@
                     android:gravity="center_vertical" >
 
                     <TextView
-                        style="@style/putaoMenuItemTxtStyle"
+                        style="@style/Theme.Ptui.MenuItem.Text"
                         android:layout_width="wrap_content"
                         android:layout_height="48dp"
                         android:drawableLeft="@drawable/putao_menu_item_icon_tixing"
                         android:text="@string/putao_message_center" />
 
-<!--                     <so.contacts.hub.basefunction.operate.remind.widget.SimpleRemindView -->
-<!--                         android:id="@+id/menu_srv_myremind" -->
-<!--                         android:layout_width="wrap_content" -->
-<!--                         android:layout_height="wrap_content" -->
-<!--                         android:layout_alignParentRight="true" -->
-<!--                         android:layout_centerVertical="true" -->
-<!--                         android:layout_marginRight="48dp" -->
-<!--                         android:gravity="center" /> -->
+                    <so.contacts.hub.basefunction.operate.remind.widget.SimpleRemindView
+                        android:id="@+id/menu_srv_myremind"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="48dp"
+                        android:gravity="center" />
                 </RelativeLayout>
 
                 <View
                     android:id="@+id/putao_remind_divider"
-                    style="@style/putao_DividerStyle_Horizontal"
+                    style="@style/Theme.Ptui.Divider.Horizontal"
                     android:layout_below="@id/putao_myremind"
                     android:visibility="gone" />
 
@@ -144,26 +144,26 @@
             </RelativeLayout>
 
             <View
-                style="@style/putao_DividerStyle_Horizontal"
+                style="@style/Theme.Ptui.Divider.Horizontal"
                 android:layout_marginBottom="12dp" />
 
-            <View style="@style/putao_DividerStyle_Horizontal" />
+            <View style="@style/Theme.Ptui.Divider.Horizontal" />
 
             <RelativeLayout
                 android:id="@+id/menu_myorder"
-                style="@style/putaoMenuItemLayout" >
+                style="@style/Theme.Ptui.MenuItem.Layout" >
 
                 <TextView
-                    style="@style/putaoMenuItemTxtStyle"
+                    style="@style/Theme.Ptui.MenuItem.Text"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:layout_alignParentLeft="true"
                     android:drawableLeft="@drawable/putao_menu_item_icon_order"
                     android:text="@string/putao_menu_item_txt_myorder" />
 
-<!--                 <so.contacts.hub.basefunction.operate.remind.widget.SimpleRemindView -->
-<!--                     android:id="@+id/menu_srv_myorder" -->
-<!--                     style="@style/putaoMenuItemPointStyle" /> -->
+                <so.contacts.hub.basefunction.operate.remind.widget.SimpleRemindView
+                    android:id="@+id/menu_srv_myorder"
+                    style="@style/Theme.Ptui.MenuItem.PointStyle" />
 
                 <ImageView
                     android:layout_width="wrap_content"
@@ -174,23 +174,23 @@
                     android:src="@drawable/putao_card_all_show" />
             </RelativeLayout>
 
-            <View style="@style/putao_DividerStyle_Horizontal" />
+            <View style="@style/Theme.Ptui.Divider.Horizontal" />
 
             <RelativeLayout
                 android:id="@+id/menu_my_voucher"
-                style="@style/putaoMenuItemLayout" >
+                style="@style/Theme.Ptui.MenuItem.Layout" >
 
                 <TextView
-                    style="@style/putaoMenuItemTxtStyle"
+                    style="@style/Theme.Ptui.MenuItem.Text"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:layout_alignParentLeft="true"
                     android:drawableLeft="@drawable/putao_menu_item_icon_act"
                     android:text="@string/putao_menu_item_txt_myvoucher" />
 
-<!--                 <so.contacts.hub.basefunction.operate.remind.widget.SimpleRemindView -->
-<!--                     android:id="@+id/voucher_remind_icon_point" -->
-<!--                     style="@style/putaoMenuItemPointStyle" /> -->
+                <so.contacts.hub.basefunction.operate.remind.widget.SimpleRemindView
+                    android:id="@+id/voucher_remind_icon_point"
+                    style="@style/Theme.Ptui.MenuItem.PointStyle" />
 
                 <ImageView
                     android:layout_width="wrap_content"
@@ -201,23 +201,23 @@
                     android:src="@drawable/putao_card_all_show" />
             </RelativeLayout>
 
-            <View style="@style/putao_DividerStyle_Horizontal" />
+            <View style="@style/Theme.Ptui.Divider.Horizontal" />
 
             <RelativeLayout
                 android:id="@+id/menu_mygroupon"
-                style="@style/putaoMenuItemLayout" >
+                style="@style/Theme.Ptui.MenuItem.Layout" >
 
                 <TextView
-                    style="@style/putaoMenuItemTxtStyle"
+                    style="@style/Theme.Ptui.MenuItem.Text"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:layout_alignParentLeft="true"
                     android:drawableLeft="@drawable/putao_menu_item_icon_meituanorder"
                     android:text="@string/putao_menu_item_txt_mygroupon" />
 
-<!--                 <so.contacts.hub.basefunction.operate.remind.widget.SimpleRemindView -->
-<!--                     android:id="@+id/menu_srv_mygroupon" -->
-<!--                     style="@style/putaoMenuItemPointStyle" /> -->
+                <so.contacts.hub.basefunction.operate.remind.widget.SimpleRemindView
+                    android:id="@+id/menu_srv_mygroupon"
+                    style="@style/Theme.Ptui.MenuItem.PointStyle" />
 
                 <ImageView
                     android:layout_width="wrap_content"
@@ -226,34 +226,19 @@
                     android:layout_centerVertical="true"
                     android:layout_marginRight="@dimen/putao_activity_horizontal_margin"
                     android:src="@drawable/putao_card_all_show" />
+
+                <View
+                    style="@style/Theme.Ptui.Divider.Horizontal"
+                    android:layout_alignParentBottom="true" />
             </RelativeLayout>
 
-            <View style="@style/putao_DividerStyle_Horizontal" />
-
             <View
-                style="@style/putao_DividerStyle_Horizontal"
+                style="@style/Theme.Ptui.Divider.Horizontal"
                 android:layout_marginTop="12dp" />
 
             <TextView
-                android:id="@+id/menu_remindset"
-                style="@style/putaoMenuItemTxtStyle"
-                android:layout_width="match_parent"
-                android:layout_height="48dp"
-                android:background="@drawable/putao_listview_item_selector"
-                android:drawableLeft="@drawable/putao_menu_item_icon_remindset"
-                android:drawableRight="@drawable/putao_card_all_show"
-                android:paddingRight="@dimen/putao_activity_horizontal_margin"
-                android:text="@string/putao_menu_item_txt_remindset" />
-
-            <View
-                style="@style/putao_DividerStyle_Horizontal"
-                android:layout_marginBottom="12dp" />
-
-            <View style="@style/putao_DividerStyle_Horizontal" />
-
-            <TextView
                 android:id="@+id/menu_aboutus"
-                style="@style/putaoMenuItemTxtStyle"
+                style="@style/Theme.Ptui.MenuItem.Text"
                 android:layout_width="match_parent"
                 android:layout_height="48dp"
                 android:background="@drawable/putao_listview_item_selector"
@@ -263,7 +248,7 @@
                 android:text="@string/putao_menu_item_txt_aboutus" />
 
             <View
-                style="@style/putao_DividerStyle_Horizontal"
+                style="@style/Theme.Ptui.Divider.Horizontal"
                 android:layout_marginBottom="12dp" />
         </LinearLayout>
     </ScrollView>

@@ -1,328 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <!-- 给ViewPager的Indicator设置的风格 -->
-    <!-- <style name="putao_Theme.PageIndicatorDefaults" parent="@android:style/Theme"> -->
-    <!-- <item name="circlePageIndicatorStyle">@style/putao_Widget.CirclePageIndicator</item> -->
-    <!-- <item name="titlePageIndicatorStyle">@style/putao_Widget.TitlePageIndicator</item> -->
-    <!-- </style> -->
+    <style name="Theme.Ptui.Layout"></style>
 
-    <style name="putao_Widget.CirclePageIndicator" parent="@android:style/Widget">
-        <item name="centered">@bool/putao_default_circle_indicator_centered</item>
-        <item name="fillColor">@color/putao_default_circle_indicator_fill_color</item>
-        <item name="orientation">@integer/putao_default_circle_indicator_orientation</item>
-        <item name="radius">@dimen/putao_default_circle_indicator_radius</item>
-        <item name="snap">@bool/putao_default_circle_indicator_snap</item>
-        <item name="strokeColor">@color/putao_default_circle_indicator_stroke_color</item>
-        <item name="strokeWidth">@dimen/putao_default_circle_indicator_stroke_width</item>
-    </style>
-
-    <style name="putao_AppBaseTheme" parent="@android:style/Theme.Light"></style>
-
-    <!-- 应用主题样式，控制应用基本控件样式，如 -->
-    <style name="putao_AppTheme" parent="@style/putao_AppBaseTheme">
-
-        <!-- 背景 -->
-        <item name="android:windowBackground">@color/putao_screen_background_light</item>
-        <item name="android:windowNoTitle">true</item>
-        <!-- button样式 -->
-        <item name="android:buttonStyle">@style/putao_ButtonStyle</item>
-        <!-- EditText样式 -->
-        <item name="android:editTextColor">@color/putao_edit_text</item>
-        <item name="android:editTextBackground">@drawable/putao_edit_bg_selector</item>
-        <!-- TextView樣式 -->
-        <item name="android:textColorPrimary">@color/putao_primary_text_light</item>
-        <item name="android:textSize">@dimen/putao_text_primary_size</item>
-        <item name="android:textAppearance">@style/putao_TextAppearance</item>
-        <item name="android:textAppearanceLarge">@style/putao_TextAppearanceLarge</item>
-        <item name="android:textAppearanceMedium">@style/putao_TextAppearanceMedium</item>
-        <!-- ListView樣式 -->
-        <item name="android:listViewStyle">@style/putao_ListStyle</item>
-        <!-- RadioButton样式 -->
-        <item name="android:listChoiceIndicatorSingle">@drawable/putao_btn_radio_holo</item>
-    </style>
-
-    <style name="putao_TextAppearance" parent="@android:style/TextAppearance">
-        <item name="android:textColor">@color/putao_text_color_primary</item>
-        <item name="android:textSize">@dimen/putao_text_primary_size</item>
-    </style>
-
-    <style name="putao_TextAppearanceMedium" parent="@android:style/TextAppearance.Medium">
-        <item name="android:textColor">@color/putao_text_color_second</item>
-        <item name="android:textSize">@dimen/putao_text_second_size</item>
-    </style>
-
-    <style name="putao_TextAppearanceLarge" parent="@android:style/TextAppearance.Large">
-        <item name="android:textColor">@color/putao_text_color_primary</item>
-        <item name="android:textSize">@dimen/putao_text_size_a</item>
-        <item name="android:textStyle">bold</item>
-    </style>
-
-    <style name="putao_Text_PrimaryColor_SecondSize" parent="@android:style/TextAppearance">
-        <item name="android:textColor">@color/putao_text_color_primary</item>
-        <item name="android:textSize">@dimen/putao_text_second_size</item>
-    </style>
-    
-    <!-- button style -->
-    <style name="putao_ButtonStyle" parent="@android:style/Widget.Button">
-        <item name="android:background">@drawable/putao_click_btn_bg</item>
-        <item name="android:minHeight">@dimen/putao_btn_height</item>
-        <item name="android:textColor">@color/putao_btn_text_color</item>
-        <item name="android:gravity">center_vertical|center_horizontal</item>
-        <item name="android:textSize">@dimen/putao_btn_text_size</item>
-        <item name="android:layout_margin">16dp</item>
-    </style>
-
-    <!-- EditText style -->
-    <style name="putao_EditStyle" parent="@android:style/Widget.EditText">
-        <item name="android:minHeight">@dimen/putao_edit_min_height</item>
-        <item name="android:textColor">@color/putao_edit_text</item>
-        <item name="android:background">@drawable/putao_edit_bg_selector</item>
-        <item name="android:textColorHint">@color/putao_edit_text_hint_color</item>
-        <item name="android:textSize">@dimen/putao_text_second_size</item>
-    </style>
-
-    <!-- CheckBox style -->
-    <!--
-    <style name="putao_CheckBoxStyle" parent="@android:style/Widget.CompoundButton.CheckBox">
-        <item name="android:button">@drawable/putao_btn_checkbox</item>
-    </style>
-    -->
-
-    <style name="putao_MyTransparent" parent="@android:style/Theme.Translucent.NoTitleBar">
-
-        <!-- <item name="android:windowNoTitle">true</item> -->
-        <item name="android:windowBackground">@color/putao_transparent_alpha</item>
-    </style>
-
-    <!-- 用于通知栏的样式 -->
-    <style name="putao_NotificationText" parent="android:TextAppearance.StatusBar.EventContent" />
-
-    <style name="putao_NotificationTitle" parent="android:TextAppearance.StatusBar.EventContent.Title" />
-
-    <!-- 索引字母提示文本框样式 -->
-    <style name="putao_StyleForIndexTips">
-        <item name="android:layout_marginTop">@dimen/putao_index_tip_margin_top</item>
-        <item name="android:layout_marginRight">40dp</item>
-        <item name="android:textSize">30sp</item>
-        <item name="android:textColor">@color/putao_white</item>
-        <item name="android:gravity">center</item>
-        <!-- <item name="android:background">@color/putao_theme</item> -->
-        <item name="android:background">@drawable/putao_index_tips_bg</item>
-    </style>
-
-    <style name="putao_w_w">
+    <style name="Theme.Ptui.Layout.W_W" parent="@style/Theme.Ptui.Layout">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:textColor">@color/putao_pt_deep_gray</item>
         <!-- <item name="android:layout_marginLeft">@dimen/putao_yp_home_listview_hot_icon_margin_left</item> -->
     </style>
 
-    <!-- <style name="putao_icon_send_fail"> -->
-    <!-- <item name="android:layout_width">15dp</item> -->
-    <!-- <item name="android:layout_height">15dp</item> -->
-    <!-- <item name="android:textColor">@color/putao_pt_deep_gray</item> -->
-    <!-- </style> -->
-
-    <style name="putao_f_w" parent="@style/putao_w_w">
+    <style name="Theme.Ptui.Layout.F_W" parent="@style/Theme.Ptui.Layout.W_W">
         <item name="android:layout_width">fill_parent</item>
     </style>
 
-    <style name="putao_w_f" parent="@style/putao_w_w">
+    <style name="Theme.Ptui.Layout.W_F" parent="@style/Theme.Ptui.Layout.W_W">
         <item name="android:layout_height">fill_parent</item>
     </style>
 
-    <style name="putao_f_f" parent="@style/putao_w_w">
+    <style name="Theme.Ptui.Layout.F_F" parent="@style/Theme.Ptui.Layout.W_W">
         <item name="android:layout_width">fill_parent</item>
         <item name="android:layout_height">fill_parent</item>
     </style>
 
-    <style name="putao_show_orginal_header_btn" parent="@style/putao_w_w">
-        <item name="android:gravity">center</item>
-        <item name="android:textColor">@color/putao_white</item>
-    </style>
-
-    <!-- pop -->
-    <style name="putao_Animations" />
-    <!-- PopDownMenu -->
-    <style name="putao_Animations.PopDownMenu" />
-
-    <style name="putao_Animations.PopDownMenu.Center">
-        <item name="@android:windowEnterAnimation">@anim/putao_grow_from_top</item>
-        <item name="@android:windowExitAnimation">@anim/putao_shrink_from_bottom</item>
-    </style>
-
-    <style name="putao_Animations.PopDownMenu.Left">
-        <item name="@android:windowEnterAnimation">@anim/putao_grow_from_topleft_to_bottomright</item>
-        <item name="@android:windowExitAnimation">@anim/putao_shrink_from_bottomright_to_topleft</item>
-    </style>
-
-    <style name="putao_Animations.PopDownMenu.Right">
-        <item name="@android:windowEnterAnimation">@anim/putao_grow_from_topright_to_bottomleft</item>
-        <item name="@android:windowExitAnimation">@anim/putao_shrink_from_bottomleft_to_topright</item>
-    </style>
-
-    <style name="putao_Animations.PopDownMenu.Reflect">
-        <item name="@android:windowEnterAnimation">@anim/putao_pump_top</item>
-        <item name="@android:windowExitAnimation">@anim/putao_disappear</item>
-    </style>
-
-    <!-- PopUpMenu -->
-    <style name="putao_Animations.PopUpMenu" />
-
-    <style name="putao_Animations.PopUpMenu.Center">
-        <item name="@android:windowEnterAnimation">@anim/putao_grow_from_bottom</item>
-        <item name="@android:windowExitAnimation">@anim/putao_shrink_from_top</item>
-    </style>
-
-    <style name="putao_Animations.PopUpMenu.Left">
-        <item name="@android:windowEnterAnimation">@anim/putao_grow_from_bottomleft_to_topright</item>
-        <item name="@android:windowExitAnimation">@anim/putao_shrink_from_topright_to_bottomleft</item>
-    </style>
-
-    <style name="putao_Animations.PopUpMenu.Right">
-        <item name="@android:windowEnterAnimation">@anim/putao_grow_from_bottomright_to_topleft</item>
-        <item name="@android:windowExitAnimation">@anim/putao_shrink_from_topleft_to_bottomright</item>
-    </style>
-
-    <style name="putao_Animations.PopUpMenu.Reflect">
-        <item name="@android:windowEnterAnimation">@anim/putao_pump_bottom</item>
-        <item name="@android:windowExitAnimation">@anim/putao_disappear</item>
-    </style>
-
-    <!-- Circle -->
-    <style name="putao_Input">
-        <item name="android:layout_width">match_parent</item>
-        <item name="android:layout_height">wrap_content</item>
-        <item name="android:background">@drawable/putao_bg_input_field</item>
-        <!-- <item name="android:paddingBottom">2dp</item> -->
-        <item name="android:focusable">true</item>
-    </style>
-
-    <style name="putao_CheckBox">
+    <style name="Theme.Ptui.OrderItemKey">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:button">@drawable/putao_icon_check_box</item>
-        <item name="android:scaleType">center</item>
-        <item name="android:gravity">center_vertical</item>
-        <item name="android:focusable">false</item>
+        <item name="android:textSize">@dimen/putao_text_second_size</item>
     </style>
 
-    <style name="putao_CheckBox_express_history_item">
-        <item name="android:layout_width">wrap_content</item>
-        <item name="android:layout_height">wrap_content</item>
-        <item name="android:button">@drawable/putao_sl_checkbox</item>
-        <item name="android:scaleType">center</item>
-        <item name="android:gravity">center_vertical</item>
-        <item name="android:focusable">false</item>
-    </style>
+    <style name="Theme.Ptui.OrderItemValue" parent="@style/Theme.Ptui.OrderItemKey"></style>
 
-    <style name="putao_SmallCheckBox">
-        <item name="android:layout_width">wrap_content</item>
-        <item name="android:layout_height">wrap_content</item>
-        <item name="android:button">@drawable/putao_icon_checkbox_s</item>
-        <item name="android:scaleType">center</item>
-        <item name="android:gravity">center_vertical</item>
-        <item name="android:focusable">false</item>
-    </style>
-
-    <!-- From Putao -->
-
-    <style name="putao_w_w.tab_radio">
-        <item name="android:layout_weight">1</item>
-        <item name="android:button">@null</item>
-        <item name="android:gravity">center</item>
-        <item name="android:background">@android:color/transparent</item>
-    </style>
-
-    <style name="putao_w_w.TitleRadio">
-        <item name="android:gravity">center</item>
-        <item name="android:button">@null</item>
-        <item name="android:textSize">18sp</item>
-        <item name="android:paddingTop">1dp</item>
-        <item name="android:paddingBottom">1dp</item>
-        <item name="android:layout_height">32dp</item>
-    </style>
-
-    <style name="putao_progressBarHorizontal_black" parent="android:Widget.ProgressBar.Horizontal">
-        <item name="android:indeterminateOnly">false</item>
-        <item name="android:progressDrawable">@drawable/putao_progress_style_black_bg</item>
-        <item name="android:minHeight">3dip</item>
-        <item name="android:maxHeight">3dip</item>
-    </style>
-
-    <style name="putao_progressBarHorizontal_gray" parent="android:Widget.ProgressBar.Horizontal">
-        <item name="android:indeterminateOnly">false</item>
-        <item name="android:progressDrawable">@drawable/putao_progress_style_gray_bg</item>
-        <item name="android:minHeight">3dip</item>
-        <item name="android:maxHeight">30dip</item>
-    </style>
-
-    <style name="putao_progressBarHorizontal_drakgray" parent="android:Widget.ProgressBar.Horizontal">
-        <item name="android:indeterminateOnly">false</item>
-        <item name="android:progressDrawable">@drawable/putao_progress_style_gray_bg</item>
-        <item name="android:minHeight">200dip</item>
-        <item name="android:maxHeight">300dip</item>
-    </style>
-
-    <style name="putao_Transparent" parent="android:style/Theme.Dialog">
-        <item name="android:windowBackground">@color/putao_transparent_background</item>
-        <item name="android:windowNoTitle">true</item>
-        <item name="android:windowIsTranslucent">true</item>
-        <item name="android:windowAnimationStyle">@android:style/Animation.Translucent</item>
-    </style>
-
-    <style name="putao_captcha_dialog" parent="android:style/Theme.Dialog">
-        <item name="android:windowBackground">@color/putao_white</item>
-        <item name="android:windowFrame">@null</item>
-        <item name="android:windowNoTitle">true</item>
-        <item name="android:windowIsFloating">true</item>
-        <item name="android:windowContentOverlay">@null</item>
-        <item name="android:editTextColor">@color/putao_edit_text</item>
-        <item name="android:editTextBackground">@drawable/putao_edit_bg_selector</item>
-    </style>
-
-    <style name="putao_AnimationDialog">
-        <item name="android:windowEnterAnimation">@anim/putao_dialog_enter</item>
-        <item name="android:windowExitAnimation">@anim/putao_dialog_exit</item>
-    </style>
-
-    <!-- modify for COOLUI6.0 -->
-    <style name="putao_ListStyle">
-        <item name="android:cacheColorHint">#00000000</item>
-        <item name="android:listSelector">@drawable/putao_list_selecter_s</item>
-        <item name="android:background">@color/putao_white</item>
-        <item name="android:divider">@color/putao_yellow_page_line_color</item>
-        <item name="android:fadingEdge">none</item>
-        <item name="android:scrollbars">none</item>
-        <item name="android:visibility">visible</item>
-        <item name="android:dividerHeight">@dimen/putao_divider_line_size</item>
-    </style>
-    
-    <style name="putao_PopupWindowListStyle" parent="@style/putao_ListStyle">
-        <item name="android:background">@drawable/putao_bg_white_select</item>
-    </style>
-    
-    <style name="putao_ListStyle.NoDivider" parent="@style/putao_ListStyle">
-        <item name="android:divider">@null</item>
-        <item name="android:dividerHeight">0dp</item>
-        <item name="android:footerDividersEnabled">false</item>
-        <item name="android:headerDividersEnabled">false</item>
-    </style>
-    <!-- 在item上设置背景，有分割线的样式 -->
-    <style name="putao_ListStyle.Itembg" parent="@style/putao_ListStyle">
-        <item name="android:listSelector">@color/putao_transparent</item>
-        <item name="android:background">@null</item>
-    </style>
-    <!-- 在item上设置背景，没有分割线的样式 -->
-    <style name="putao_ListStyle.Itembg.NoDivider" parent="@style/putao_ListStyle.Itembg">
-        <item name="android:divider">@null</item>
-        <item name="android:dividerHeight">0dp</item>
-        <item name="android:footerDividersEnabled">false</item>
-        <item name="android:headerDividersEnabled">false</item>
-    </style>
-
-    <style name="putao_yellow_page_item">
+    <style name="Theme.Ptui.YellowPageItem">
 
         <!-- <item name="android:layout_width">@dimen/putao_yp_item_width</item> -->
         <item name="android:layout_width">wrap_content</item>
@@ -335,126 +44,45 @@
         <!-- <item name="android:padding">@dimen/putao_yp_item_padding</item> -->
     </style>
 
-    <style name="putao_ratingbar_style" parent="@android:style/Widget.Holo.RatingBar.Small">
-        <item name="android:progressDrawable">@drawable/putao_rating_bar</item>
-        <!-- <item name="android:indeterminateDrawable">@drawable/icon_star_1</item> -->
-    </style>
+    <style name="Theme.Ptui.TagWidget"></style>
 
-    <style name="putao_ratingbar_style_small" parent="@android:style/Widget.Holo.RatingBar.Small">
-        <item name="android:progressDrawable">@drawable/putao_rating_bar_small</item>
-    </style>
-    <style name="putao_ratingbar_style_large" parent="@android:style/Widget.Holo.RatingBar">
-        <item name="android:progressDrawable">@drawable/putao_rating_bar_large</item>
-    </style>
-
-    <style name="putao_ActivityDialogTheme" parent="android:style/Theme.Dialog">
-        <item name="android:windowFrame">@null</item>
-        <item name="android:windowIsFloating">true</item>
-        <item name="android:backgroundDimEnabled">true</item>
-        <item name="android:backgroundDimAmount">0.7</item>
-        <item name="android:windowBackground">@android:color/transparent</item>
-        <item name="android:windowCloseOnTouchOutside">true</item>
-        <item name="android:windowIsTranslucent">true</item>
-        <item name="android:windowNoTitle">true</item>
-        <item name="android:windowFullscreen">true</item>
-    </style>
-
-    <style name="putao_ProgressHStyle">
-        <item name="android:indeterminateOnly">false</item>
-        <item name="android:progressDrawable">@drawable/putao_progress_style_h5page_bg</item>
-        <item name="android:indeterminateDrawable">@android:drawable/progress_indeterminate_horizontal</item>
-        <item name="android:minHeight">10dip</item>
-        <item name="android:maxHeight">20dip</item>
-    </style>
-
-    <style name="putao_MyItemStyle" parent="@style/putao_List_SINGLE_ITEM_Style">
-        <!--
-        <item name="android:layout_width">fill_parent</item>
-        <item name="android:layout_height">@dimen/putao_listview_item_height</item>
-        <item name="android:background">@drawable/putao_my_item_seclector</item>
-        <item name="android:paddingLeft">12dp</item>
-        <item name="android:paddingRight">20dp</item>
-        <item name="android:layout_marginLeft">10dp</item>
-        <item name="android:layout_marginRight">10dp</item>
-        -->
-    </style>
-
-    <style name="putao_MyItemStyle_Card">
-        <item name="android:minHeight">54dp</item>
-        <item name="android:layout_width">match_parent</item>
-        <item name="android:layout_height">wrap_content</item>
-        <item name="android:layout_marginLeft">20dp</item>
-        <item name="android:layout_marginRight">20dp</item>
-    </style>
-
-    <style name="putao_TagWidget" parent="@android:style/Theme" />
-
-    <style name="putao_TagWidget.TabText">
+    <style name="Theme.Ptui.TagWidget.TabText" parent="@style/Theme.Ptui.TagWidget">
         <item name="android:textSize">14sp</item>
         <item name="android:textColor">@color/putao_tab_indicator_text</item>
         <item name="android:singleLine">true</item>
         <item name="android:ellipsize">marquee</item>
     </style>
 
-    <!-- 无间距分割线 -->
-    <style name="putao_DividerStyle_Horizontal">
-        <item name="android:layout_width">fill_parent</item>
-        <item name="android:layout_height">@dimen/putao_divider_line_size</item>
-        <item name="android:background">@color/putao_pt_line_light_gray</item>
-        <!--@drawable/putao_line_horizontal  -->
-    </style>
-    
-  	<style name="putao_DividerStyle_Horizontal_Bottom" parent="@style/putao_DividerStyle_Horizontal">
-        <item name="android:layout_alignParentBottom">true</item>
-        <!--@drawable/putao_line_horizontal  -->
-    </style>
-    
-    <style name="putao_DividerStyle_Vertical">
-        <item name="android:layout_width">@dimen/putao_divider_line_size</item>
-        <item name="android:layout_height">fill_parent</item>
-        <item name="android:background">@color/putao_pt_line_light_gray</item>
-    </style>
-
-<!--     <style name="putao_MyItemLineStyle_fill">
-        <item name="android:layout_width">fill_parent</item>
-        <item name="android:layout_height">@dimen/putao_divider_line_size</item>
-        <item name="android:background">@color/putao_yellow_page_line_color</item>
-        <item name="android:layout_gravity">center_vertical</item>
-    </style> -->
-
-    <!-- add by putao_lhq for COOLUI6.0 start -->
-
-
     <!-- 标题栏文字规范 -->
-    <style name="putao_Titlebar_Primary_Text_Style">
+    <style name="Theme.Ptui.TitleBar"></style>
+
+    <style name="Theme.Ptui.TitleBar.PrimaryText" parent="@style/Theme.Ptui.TitleBar">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:textSize">16sp</item>
-        <item name="android:textColor">#ffffff</item>
+        <item name="android:textSize">16dp</item>
+        <item name="android:textColor">@color/putao_text_color_primary</item>
         <item name="android:singleLine">true</item>
         <item name="android:gravity">center</item>
     </style>
 
-    <style name="putao_Titlebar_Second_Text_Style">
+    <style name="Theme.Ptui.TitleBar.SecondText" parent="@style/Theme.Ptui.TitleBar">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">match_parent</item>
-        <item name="android:textSize">12sp</item>
-        <item name="android:textColor">#99ffffff</item>
+        <item name="android:textSize">14dp</item>
+        <item name="android:textColor">@color/putao_text_color_primary</item>
         <item name="android:gravity">center</item>
     </style>
     <!-- 标题栏icon规范 -->
-    <style name="putao_Titlebar_Icon_Style">
+    <style name="Theme.Ptui.TitleBar.Icon" parent="@style/Theme.Ptui.TitleBar">
         <item name="android:layout_width">48dp</item>
         <item name="android:layout_height">48dp</item>
         <item name="android:scaleType">center</item>
     </style>
-    <!-- List Item 图标规范 -->
-    <style name="putao_List_Icon_Style">
-        <item name="android:layout_width">40dp</item>
-        <item name="android:layout_height">40dp</item>
-    </style>
+
+    <style name="Theme.Ptui.CustomList"></style>
+
     <!-- 单行列表样式 -->
-    <style name="putao_List_SINGLE_ITEM_Style">
+    <style name="Theme.Ptui.CustomList.SingleItem" parent="@style/Theme.Ptui.CustomList">
         <item name="android:minHeight">56dp</item>
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
@@ -462,8 +90,20 @@
         <item name="android:paddingRight">@dimen/putao_listview_item_leftrightpadding</item>
         <item name="android:background">@drawable/putao_list_selecter_s</item>
     </style>
+    
+    <!-- 单行列表样式 非定高 -->
+    <style name="Theme.Ptui.CustomList.SingleItem.RandomHeight" parent="@style/Theme.Ptui.CustomList">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:paddingTop">@dimen/putao_listview_item_topbottompadding</item>
+        <item name="android:paddingBottom">@dimen/putao_listview_item_topbottompadding</item>
+        <item name="android:background">@drawable/putao_list_white_transblack_selector</item>
+        <item name="android:paddingLeft">@dimen/putao_listview_item_leftrightpadding</item>
+        <item name="android:paddingRight">@dimen/putao_listview_item_leftrightpadding</item>
+    </style>
+    
     <!-- popupWindow单行列表样式 -->
-    <style name="putao_PopupWindow_List_SINGLE_ITEM_Style">
+    <style name="Theme.Ptui.CustomList.SingleItemPopupWindow" parent="@style/Theme.Ptui.CustomList">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">48dip</item>
         <item name="android:paddingLeft">@dimen/putao_popwin_listview_item_leftrightpadding</item>
@@ -471,14 +111,14 @@
         <item name="android:background">@drawable/putao_list_selecter_s</item>
     </style>
     <!-- 单行列表主文字样式 -->
-    <style name="putao_List_SIGNLE_ITEM_PRIMARY_TEXT_STYLE">
+    <style name="Theme.Ptui.CustomList.SingleItemPrimaryText" parent="@style/Theme.Ptui.CustomList">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:textSize">16sp</item>
         <item name="android:textColor">#0d0d0d</item>
     </style>
     <!-- 单行列表辅助文字样式 -->
-    <style name="putao_List_SIGNLE_ITEM_SECOND_TEXT_STYLE">
+    <style name="Theme.Ptui.CustomList.SingleItemSecondText" parent="@style/Theme.Ptui.CustomList">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:textSize">14sp</item>
@@ -486,7 +126,7 @@
     </style>
 
     <!-- 两行列表样式 -->
-    <style name="putao_List_Two_ITEM_Style">
+    <style name="Theme.Ptui.CustomList.TwoItem" parent="@style/Theme.Ptui.CustomList">
         <item name="android:layout_width">fill_parent</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:minHeight">64dp</item>
@@ -495,21 +135,21 @@
         <item name="android:background">@drawable/putao_list_selecter_s</item>
     </style>
     <!-- 两行列表主文字样式 -->
-    <style name="putao_List_Two_ITEM_PRIMARY_TEXT_STYLE">
+    <style name="Theme.Ptui.CustomList.TwoItemPrimaryText" parent="@style/Theme.Ptui.CustomList">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:textSize">14sp</item>
         <item name="android:textColor">#0d0d0d</item>
     </style>
     <!-- 两行列表辅助文字样式 -->
-    <style name="putao_List_Two_ITEM_SECOND_TEXT_STYLE">
+    <style name="Theme.Ptui.CustomList.TwoItemSecondText" parent="@style/Theme.Ptui.CustomList">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:textSize">12sp</item>
         <item name="android:textColor">#7B7B7B</item>
     </style>
 
-    <style name="putao_List_Two_ITEM_Tip_TEXT_STYLE">
+    <style name="Theme.Ptui.CustomList.TwoItemTipText" parent="@style/Theme.Ptui.CustomList">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:textSize">12sp</item>
@@ -517,89 +157,57 @@
     </style>
 
     <!-- 三行列表样式 -->
-    <style name="putao_List_THREE_ITEM_Style">
+    <style name="Theme.Ptui.CustomList.ThreeItem" parent="@style/Theme.Ptui.CustomList">
         <item name="android:minHeight">80dp</item>
         <item name="android:paddingLeft">@dimen/putao_listview_item_leftrightpadding</item>
         <item name="android:paddingRight">@dimen/putao_listview_item_leftrightpadding</item>
-        <item name="android:background">@drawable/putao_list_selecter_s</item>
+        <item name="android:background">@drawable/putao_listview_item_selector</item>
     </style>
     <!-- 搜索列表item -->
-    <style name="putao_List_SEARCH_ITEM_Style">
+    <style name="Theme.Ptui.CustomList.SearchItem" parent="@style/Theme.Ptui.CustomList.ThreeItem">
         <item name="android:minHeight">60dp</item>
-        <item name="android:paddingLeft">@dimen/putao_listview_item_leftrightpadding</item>
-        <item name="android:paddingRight">@dimen/putao_listview_item_leftrightpadding</item>
-        <item name="android:background">@drawable/putao_list_selecter_s</item>
     </style>
     <!-- 三行列表主文字样式 -->
-    <style name="putao_List_THREE_ITEM_PRIMARY_TEXT_STYLE">
+    <style name="Theme.Ptui.CustomList.ThreeItemPrimaryText" parent="@style/Theme.Ptui.CustomList">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:textSize">16sp</item>
         <item name="android:textColor">#0d0d0d</item>
     </style>
     <!-- 三行列表辅助文字样式 -->
-    <style name="putao_List_THREE_ITEM_SECOND_TEXT_STYLE">
+    <style name="Theme.Ptui.CustomList.ThreeItemSecondText" parent="@style/Theme.Ptui.CustomList">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:textSize">12sp</item>
         <item name="android:textColor">#7B7B7B</item>
     </style>
-    <!-- add by putao_lhq for COOLUI6.0 end -->
 
+    <style name="Theme.Ptui.MenuItem"></style>
 
-    <!-- Common list view styles -->
-    <style name="putao_TagWidget.ListView">
-        <item name="android:layout_width">match_parent</item>
-        <item name="android:cacheColorHint">#00ffffff</item>
-        <item name="android:dividerHeight">2px</item>
-        <item name="android:listSelector">@android:color/transparent</item>
-        <item name="android:fadeScrollbars">true</item>
-    </style>
-
-    <declare-styleable name="TitleIndicator">
-        <attr name="tag_titlePadding" format="dimension" />
-        <!-- Left/right padding of not active view titles. -->
-        <attr name="tag_clipPadding" format="dimension" />
-        <attr name="tag_textColor" format="color|reference" />
-        <attr name="tag_textSizeNormal" format="dimension" />
-        <attr name="tag_textSizeSelected" format="dimension" />
-        <attr name="tag_footerLineHeight" format="dimension" />
-        <attr name="tag_footerLineWidth" format="dimension" />
-        <attr name="tag_footerColor" format="color" />
-        <attr name="tag_footerTriangleHeight" format="dimension" />
-        <attr name="tag_onTouchStyle" format="integer" />
-    </declare-styleable>
-
-    <style name="Putao.Welcome" parent="@style/putao_AppTheme">
-        <item name="android:windowBackground">@drawable/putao_splash_layers</item>
-    </style>
-
-    <style name="Putao.Guide" parent="@android:style/Theme.Light.NoTitleBar.Fullscreen"></style>
-
-    <style name="putaoMenuItemLayout">
+    <style name="Theme.Ptui.MenuItem.Layout" parent="@style/Theme.Ptui.MenuItem">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">48dp</item>
         <item name="android:background">@drawable/putao_listview_item_selector</item>
     </style>
 
-    <style name="putaoMenuItemTxtStyle">
+    <style name="Theme.Ptui.MenuItem.Text" parent="@style/Theme.Ptui.MenuItem">
         <item name="android:paddingLeft">16dp</item>
         <item name="android:gravity">center_vertical</item>
-        <item name="android:drawablePadding">32dp</item>
+        <item name="android:drawablePadding">12dp</item>
         <item name="android:textSize">@dimen/putao_text_second_size</item>
         <item name="android:textColor">#4d4d4d</item>
     </style>
 
-    <style name="putaoMenuItemPointStyle">
+    <style name="Theme.Ptui.MenuItem.PointStyle" parent="@style/Theme.Ptui.MenuItem">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_alignParentRight">true</item>
         <item name="android:layout_centerVertical">true</item>
-        <item name="android:layout_marginRight">32dp</item>
+        <item name="android:layout_marginRight">48dp</item>
         <item name="android:gravity">center</item>
     </style>
 
-    <style name="putaoAssistantGuideSeritemStyle">
+    <style name="Theme.Ptui.AssistantGuideSeritemStyle">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:gravity">center</item>
@@ -609,108 +217,135 @@
         <item name="android:textSize">12sp</item>
     </style>
 
-    <style name="putaoAboutusItemLayoutStyle">
-        <item name="android:layout_width">match_parent</item>
-        <item name="android:layout_height">48dp</item>
-        <item name="android:background">@drawable/putao_list_selecter_transparent</item>
-        <item name="android:paddingLeft">32dp</item>
-        <item name="android:paddingRight">24dp</item>
-    </style>
+    <style name="Theme.Ptui.Text"></style>
 
-    <style name="putao_text_style_phone">
-        <item name="android:textColor">@color/putao_phone_num_text_color</item>
-        <item name="android:autoLink">phone</item>
-    </style>
-
-    <style name="putao_text_in_rect">
+    <style name="Theme.Ptui.Text.Rect" parent="@style/Theme.Ptui.Text">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:background">@drawable/putao_bg_state_green</item>
-        <item name="android:textColor">@color/putao_text_green</item>
+        <item name="android:paddingLeft">2dp</item>
+        <item name="android:paddingRight">2dp</item>
         <item name="android:textSize">10sp</item>
         <item name="android:gravity">center</item>
     </style>
 
-    <style name="putao_text_in_rect2">
+    <style name="Theme.Ptui.Text.Rect2" parent="@style/Theme.Ptui.Text">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:background">@drawable/putao_bg_state_red</item>
         <item name="android:textColor">@color/putao_white</item>
-        <item name="android:textSize">11sp</item>
+        <item name="android:textSize">10sp</item>
+        <item name="android:paddingLeft">2dp</item>
+        <item name="android:paddingRight">2dp</item>
         <item name="android:gravity">center</item>
     </style>
-    
-    <style name="putao_text_in_rect3">
+
+    <style name="Theme.Ptui.Text.Rect3" parent="@style/Theme.Ptui.Text">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:background">@drawable/putao_icon_movie_youhui</item>
         <item name="android:textColor">@color/putao_text_color_importance</item>
+        <item name="android:paddingLeft">2dp</item>
+        <item name="android:paddingRight">2dp</item>
         <item name="android:textSize">11sp</item>
         <item name="android:gravity">center</item>
     </style>
-    
-    <!-- 首页活动样式 add ljq 2015_05_11 start -->
-    <style name="putao_operate_big_layout_title">
+
+    <style name="Theme.Ptui.Text.Rect4" parent="@style/Theme.Ptui.Text">
         <item name="android:layout_width">wrap_content</item>
-        <item name="android:layout_height">wrap_content</item>
-        <item name="android:layout_marginLeft">@dimen/putao_operate_big_layout_title_left_margin</item>
-        <item name="android:layout_marginTop">@dimen/putao_operate_layout_title_top_margin</item>
-        <item name="android:textSize">@dimen/putao_operate_layout_title_size</item>
-		<item name="android:ellipsize">end</item>
-        <item name="android:singleLine">true</item>
+        <item name="android:layout_height">13dp</item>
+        <item name="android:background">@drawable/putao_fuwujingxuan_jiage</item>
+        <item name="android:textColor">#ff7d1f</item>
+        <item name="android:textSize">8sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingLeft">4dp</item>
+        <item name="android:paddingRight">4dp</item>
+    </style>
+
+    <!-- 绿色 -->
+    <style name="Theme.Ptui.Text.Rect7" parent="@style/Theme.Ptui.Text.Rect">
+        <item name="android:background">@drawable/putao_bg_state_green</item>
+        <item name="android:textColor">@color/putao_white</item>
     </style>
     
-  	<style name="putao_operate_small_layout_title">
+    <style name="Theme.Ptui.Text.Rect8" parent="@style/Theme.Ptui.Text.Rect">
+        <item name="android:background">#ff6633</item>
+        <item name="android:textColor">@color/putao_white</item>
+        <item name="android:textSize">10dp</item>
+    </style>
+
+    <style name="Theme.Ptui.Text.Opencoupontip" parent="@style/Theme.Ptui.Text">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:layout_marginTop">@dimen/putao_operate_layout_title_top_margin</item>
-        <item name="android:textSize">@dimen/putao_operate_layout_title_size</item>
-        <item name="android:ellipsize">end</item>
-        <item name="android:singleLine">true</item>
-        <item name="android:layout_marginLeft">@dimen/putao_operate_small_layout_title_left_margin</item>
+        <item name="android:background">@drawable/putao_goodsdetails_preferential</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">10dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingLeft">2dp</item>
+        <item name="android:paddingRight">2dp</item>
     </style>
-    
-	<style name="putao_operate_big_layout_subtitle">
-        <item name="android:layout_width">wrap_content</item>
-        <item name="android:layout_height">wrap_content</item>
-        <item name="android:layout_marginLeft">@dimen/putao_operate_big_layout_title_left_margin</item>
-        <item name="android:layout_marginTop">@dimen/putao_operate_layout_title_bottom_margin</item>
-        <item name="android:textSize">@dimen/putao_operate_layout_subtitle_size</item>
-        <item name="android:textColor">@color/putao_text_color_second</item>
-		<item name="android:ellipsize">end</item>
-        <item name="android:singleLine">true</item>
-    </style>
-    
- 	<style name="putao_operate_small_layout_subtitle">
-        <item name="android:layout_width">wrap_content</item>
-        <item name="android:layout_height">wrap_content</item>
-        <item name="android:layout_marginTop">@dimen/putao_operate_layout_title_bottom_margin</item>
-        <item name="android:textSize">@dimen/putao_operate_layout_subtitle_size</item>
-        <item name="android:textColor">@color/putao_text_color_second</item>
-		<item name="android:ellipsize">end</item>
-		<item name="android:singleLine">true</item>  
-        <item name="android:layout_marginLeft">@dimen/putao_operate_small_layout_title_left_margin</item>      
-    </style>
-    
-	<style name="putao_operate_big_layout_pic">
+
+    <!-- 首页活动样式  start -->
+    <style name="Theme.Ptui.Operate"></style>
+
+    <style name="Theme.Ptui.Operate.BigLayoutPic" parent="@style/Theme.Ptui.Operate">
         <item name="android:layout_width">@dimen/putao_operate_big_layout_pic_width</item>
         <item name="android:layout_height">@dimen/putao_operate_big_layout_pic_height</item>
         <item name="android:layout_alignParentBottom">true</item>
         <item name="android:layout_centerHorizontal">true</item>
         <item name="android:scaleType">fitXY</item>
     </style>
-    
-	<style name="putao_operate_small_layout_pic">
-        <item name="android:layout_width">@dimen/putao_operate_small_layout_big_pic_width</item>
+
+    <style name="Theme.Ptui.Operate.BigLayoutTitle" parent="@style/Theme.Ptui.Operate">
+        <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">@dimen/putao_operate_big_layout_title_left_margin</item>
+        <item name="android:layout_marginTop">@dimen/putao_operate_layout_title_top_margin</item>
+        <item name="android:textSize">@dimen/putao_operate_layout_title_size</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="Theme.Ptui.Operate.BigLayoutSubtitle" parent="@style/Theme.Ptui.Operate">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">@dimen/putao_operate_big_layout_title_left_margin</item>
+        <item name="android:layout_marginTop">@dimen/putao_operate_layout_title_bottom_margin</item>
+        <item name="android:textSize">@dimen/putao_operate_layout_subtitle_size</item>
+        <item name="android:textColor">@color/putao_text_color_second</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="Theme.Ptui.Operate.SmallLayoutTitle" parent="@style/Theme.Ptui.Operate">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/putao_operate_layout_title_size</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:layout_marginLeft">@dimen/putao_operate_small_layout_title_left_margin</item>
+    </style>
+
+    <style name="Theme.Ptui.Operate.SmallLayoutSubtitle" parent="@style/Theme.Ptui.Operate">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/putao_operate_layout_title_bottom_margin</item>
+        <item name="android:textSize">@dimen/putao_operate_layout_subtitle_size</item>
+        <item name="android:textColor">@color/putao_text_color_second</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:layout_marginLeft">@dimen/putao_operate_small_layout_title_left_margin</item>
+    </style>
+
+    <style name="Theme.Ptui.Operate.SmallLayoutPic" parent="@style/Theme.Ptui.Operate">
+        <item name="android:layout_width">@dimen/putao_operate_small_layout_big_pic_width</item>
+        <item name="android:layout_height">@dimen/putao_operate_small_layout_height</item>
         <item name="android:layout_alignParentRight">true</item>
         <item name="android:layout_centerVertical">true</item>
         <item name="android:scaleType">fitXY</item>
     </style>
-    <!-- 首页活动样式 add ljq 2015_05_11 end -->
-    
-    
-    <style name="putaoLoginEdittextStyle" parent="putao_TextAppearance">
+    <!-- 首页活动样式 end -->
+
+    <style name="Theme.Ptui.TextAppearance.LoginEdittext" parent="Theme.Ptui.TextAppearance">
         <item name="android:layout_width">fill_parent</item>
         <item name="android:layout_height">54dp</item>
         <item name="android:background">@color/putao_white</item>
@@ -720,6 +355,28 @@
         <item name="android:paddingRight">16dp</item>
         <item name="android:textColorHint">@color/putao_text_color_secondary</item>
         <item name="android:cursorVisible">true</item>
+    </style>
+
+    <style name="Theme.Ptui.IndexTips">
+        <item name="android:layout_marginTop">@dimen/putao_index_tip_margin_top</item>
+        <item name="android:layout_marginRight">40dp</item>
+        <item name="android:textSize">30sp</item>
+        <item name="android:textColor">@color/putao_white</item>
+        <item name="android:gravity">center</item>
+        <!-- <item name="android:background">@color/putao_theme</item> -->
+        <item name="android:background">@drawable/putao_index_tips_bg</item>
+    </style>
+
+    <style name="Theme.Ptui.Widget" parent="@android:style/Widget"></style>
+
+    <style name="Theme.Ptui.Widget.CirclePageIndicator" parent="@style/Theme.Ptui.Widget">
+        <item name="centered">@bool/putao_default_circle_indicator_centered</item>
+        <item name="fillColor">@color/putao_default_circle_indicator_fill_color</item>
+        <item name="orientation">@integer/putao_default_circle_indicator_orientation</item>
+        <item name="radius">@dimen/putao_default_circle_indicator_radius</item>
+        <item name="snap">@bool/putao_default_circle_indicator_snap</item>
+        <item name="strokeColor">@color/putao_default_circle_indicator_stroke_color</item>
+        <item name="strokeWidth">@dimen/putao_default_circle_indicator_stroke_width</item>
     </style>
 
 </resources>

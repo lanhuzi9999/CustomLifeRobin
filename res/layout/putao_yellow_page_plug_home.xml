@@ -1,44 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical" >
 
-    <!-- add by zj 把搜索框移到activity中,通过这个透明布局把点击事件映射到activity中的搜索框,后续如果首页布局改变,不需要时,请删除 -->
-
-    <LinearLayout
-        android:id="@+id/search_head_layout"
-        android:layout_width="match_parent"
-        android:layout_height="@dimen/putao_title_bar_and_status_hight"
-        android:orientation="horizontal"
-        android:paddingTop="@dimen/putao_status_bar_height" >
-
-        <TextView
-            android:id="@+id/city_btn"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:background="@drawable/putao_list_selecter_transparent"
-            android:ellipsize="end"
-            android:maxWidth="110dp"
-            android:paddingLeft="@dimen/putao_home_default_padding"
-            android:paddingRight="@dimen/putao_home_default_padding"
-            android:text="@string/putao_location_text"
-            android:textColor="#00000000"
-            android:textSize="@dimen/putao_home_category_item_text_size" />
-
-        <View
-            android:id="@+id/search_content"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent" />
-    </LinearLayout>
-    <!-- end by zj -->
-
     <so.contacts.hub.basefunction.widget.CustomListView
         android:id="@+id/putao_content_listView"
-        style="@style/putao_ListStyle.Itembg.NoDivider"
+        style="@style/Theme.Ptui.ListView.Itembg.NoDivider"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:clipToPadding="false"
         android:paddingBottom="0dp" />
+    <include layout="@layout/putao_home_search_head_layout" />
 
-</LinearLayout>
+</RelativeLayout>

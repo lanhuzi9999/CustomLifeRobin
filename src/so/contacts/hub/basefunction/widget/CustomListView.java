@@ -1,5 +1,7 @@
 package so.contacts.hub.basefunction.widget;
 
+import com.putao.live.R;
+
 import so.contacts.hub.basefunction.widget.adapter.BaseListViewAdapter;
 import android.app.Activity;
 import android.content.Context;
@@ -22,8 +24,6 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.TextView;
-
-import com.putao.live.R;
 
 /**
  * ListView下拉刷新和加载更多<p>

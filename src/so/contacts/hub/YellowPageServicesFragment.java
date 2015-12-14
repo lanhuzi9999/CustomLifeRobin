@@ -182,12 +182,12 @@ public class YellowPageServicesFragment extends BaseFragment implements ContentC
         mOffenGridView.setVerticalSpacing(getResources().getDimensionPixelSize(R.dimen.putao_live_commserver_vspacing));
         int commServerVPdding = getResources().getDimensionPixelSize(R.dimen.putao_live_commserver_vpadding);
         mOffenGridView.setPadding(0, commServerVPdding, 0, commServerVPdding);
-        mContentListView.addHeaderView(View.inflate(getActivity(), R.layout.putao_comm_divider_horizontal, null), null,
-                false);
+//        mContentListView.addHeaderView(View.inflate(getActivity(), R.layout.putao_comm_divider_horizontal, null), null,
+//                false);
         // 添加常用服务的数据
         mContentListView.addHeaderView(mOffenGridView, null, false);
-        mContentListView.addHeaderView(View.inflate(getActivity(), R.layout.putao_comm_divider_horizontal, null), null,
-                false);
+//        mContentListView.addHeaderView(View.inflate(getActivity(), R.layout.putao_comm_divider_horizontal, null), null,
+//                false);
         //添加
         mContentListViewAdapter = new ContentBeanAdapter(getContext(), mContentBeans);
         mContentListView.setAdapter(mContentListViewAdapter);

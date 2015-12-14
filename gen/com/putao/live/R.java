@@ -1240,100 +1240,6 @@ theme attribute (in the form
 containing a value of this type.
          */
         public static final int strokeWidth=0x7f010025;
-        /**  Left/right padding of not active view titles. 
-         <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
-Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
-in (inches), mm (millimeters).
-<p>This may also be a reference to a resource (in the form
-"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
-theme attribute (in the form
-"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
-containing a value of this type.
-         */
-        public static final int tag_clipPadding=0x7f0100a6;
-        /** <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
-"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
-<p>This may also be a reference to a resource (in the form
-"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
-theme attribute (in the form
-"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
-containing a value of this type.
-         */
-        public static final int tag_footerColor=0x7f0100ac;
-        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
-Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
-in (inches), mm (millimeters).
-<p>This may also be a reference to a resource (in the form
-"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
-theme attribute (in the form
-"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
-containing a value of this type.
-         */
-        public static final int tag_footerLineHeight=0x7f0100aa;
-        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
-Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
-in (inches), mm (millimeters).
-<p>This may also be a reference to a resource (in the form
-"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
-theme attribute (in the form
-"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
-containing a value of this type.
-         */
-        public static final int tag_footerLineWidth=0x7f0100ab;
-        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
-Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
-in (inches), mm (millimeters).
-<p>This may also be a reference to a resource (in the form
-"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
-theme attribute (in the form
-"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
-containing a value of this type.
-         */
-        public static final int tag_footerTriangleHeight=0x7f0100ad;
-        /** <p>Must be an integer value, such as "<code>100</code>".
-<p>This may also be a reference to a resource (in the form
-"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
-theme attribute (in the form
-"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
-containing a value of this type.
-         */
-        public static final int tag_onTouchStyle=0x7f0100ae;
-        /** <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
-or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-<p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
-"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
-         */
-        public static final int tag_textColor=0x7f0100a7;
-        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
-Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
-in (inches), mm (millimeters).
-<p>This may also be a reference to a resource (in the form
-"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
-theme attribute (in the form
-"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
-containing a value of this type.
-         */
-        public static final int tag_textSizeNormal=0x7f0100a8;
-        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
-Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
-in (inches), mm (millimeters).
-<p>This may also be a reference to a resource (in the form
-"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
-theme attribute (in the form
-"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
-containing a value of this type.
-         */
-        public static final int tag_textSizeSelected=0x7f0100a9;
-        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
-Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
-in (inches), mm (millimeters).
-<p>This may also be a reference to a resource (in the form
-"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
-theme attribute (in the form
-"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
-containing a value of this type.
-         */
-        public static final int tag_titlePadding=0x7f0100a5;
         /**  Color of regular titles. 
          <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
@@ -1414,14 +1320,14 @@ containing a value of this type.
         public static final int putao_default_circle_indicator_snap=0x7f0c0001;
     }
     public static final class color {
-        public static final int putao_app_bg=0x7f07007d;
-        public static final int putao_bg_grey=0x7f070053;
+        public static final int putao_app_bg=0x7f07007c;
+        public static final int putao_bg_grey=0x7f070052;
         public static final int putao_bg_transparent_black_10=0x7f07000d;
         /**  黄页数据来源背景色 
  黄页数据来源背景色 
          */
         public static final int putao_bg_yellow_page_result=0x7f07002b;
-        public static final int putao_birthday_card_bg=0x7f07007a;
+        public static final int putao_birthday_card_bg=0x7f070079;
         /**  生日提醒 
  生日提醒 
          */
@@ -1433,29 +1339,29 @@ containing a value of this type.
         /**  背景色 
          */
         public static final int putao_blue=0x7f07000a;
-        public static final int putao_btn_text_color=0x7f07008b;
-        public static final int putao_calendar_month_color=0x7f070048;
-        /**  灰色提示文字 
+        public static final int putao_btn_text_color=0x7f07008a;
+        public static final int putao_calendar_month_color=0x7f070047;
+        /**  绿色提示文字 
  酒店入住日期选中颜色
  绿色提示文字 
  酒店入住日期选中颜色
          */
-        public static final int putao_calendar_selected_color=0x7f070047;
+        public static final int putao_calendar_selected_color=0x7f070046;
         /**  常用色值 
  分类 
  常用色值 
  分类 
          */
-        public static final int putao_category_content=0x7f07006c;
+        public static final int putao_category_content=0x7f07006b;
         /**  黑色 50%透明度 
          */
-        public static final int putao_category_search_hint=0x7f07006d;
-        public static final int putao_comm_radio_txt2_selector=0x7f07008c;
-        public static final int putao_comm_radio_txt_selector=0x7f07008d;
+        public static final int putao_category_search_hint=0x7f07006c;
+        public static final int putao_comm_radio_txt2_selector=0x7f07008b;
+        public static final int putao_comm_radio_txt_selector=0x7f07008c;
         /**  滑动页面 
  滑动页面 
          */
-        public static final int putao_common_white=0x7f07004b;
+        public static final int putao_common_white=0x7f07004a;
         /**  快递色值 
  快递色值 
          */
@@ -1468,14 +1374,14 @@ containing a value of this type.
         /**  train 
  train 
          */
-        public static final int putao_dark_white=0x7f070054;
-        public static final int putao_darkgray=0x7f070079;
-        public static final int putao_default_circle_indicator_fill_color=0x7f070089;
-        public static final int putao_default_circle_indicator_stroke_color=0x7f07008a;
+        public static final int putao_dark_white=0x7f070053;
+        public static final int putao_darkgray=0x7f070078;
+        public static final int putao_default_circle_indicator_fill_color=0x7f070088;
+        public static final int putao_default_circle_indicator_stroke_color=0x7f070089;
         /**  蓝色 
          */
-        public static final int putao_deposite_state_line_color=0x7f07005c;
-        public static final int putao_dialog_btn_color=0x7f07008e;
+        public static final int putao_deposite_state_line_color=0x7f07005b;
+        public static final int putao_dialog_btn_color=0x7f07008d;
         /**  对话框色值 
  对话框色值 
          */
@@ -1497,20 +1403,20 @@ containing a value of this type.
  无数据界面提示字体颜色 
          */
         public static final int putao_empty_tip_text=0x7f07003e;
-        public static final int putao_exp_capture_text_cover_bg=0x7f070067;
+        public static final int putao_exp_capture_text_cover_bg=0x7f070066;
         /**  快递扫描 
  快递扫描 
          */
-        public static final int putao_exp_possible_result_points=0x7f070064;
+        public static final int putao_exp_possible_result_points=0x7f070063;
         /**  Android standard ICS color 
  Android standard ICS color 
          */
-        public static final int putao_exp_result_view=0x7f070065;
-        public static final int putao_exp_viewfinder_mask=0x7f070066;
+        public static final int putao_exp_result_view=0x7f070064;
+        public static final int putao_exp_viewfinder_mask=0x7f070065;
         /**  快递色值 END 
          */
-        public static final int putao_express_result_blod=0x7f070083;
-        public static final int putao_express_result_info_date=0x7f070084;
+        public static final int putao_express_result_blod=0x7f070082;
+        public static final int putao_express_result_info_date=0x7f070083;
         public static final int putao_express_result_line_color=0x7f07002e;
         /**  快递色值 END 
          */
@@ -1519,11 +1425,11 @@ containing a value of this type.
         /**  反馈 
  反馈 
          */
-        public static final int putao_feedback_content=0x7f070073;
+        public static final int putao_feedback_content=0x7f070072;
         /**  格瓦拉电影 
  格瓦拉电影 
          */
-        public static final int putao_gewala_tag_bar_ontouch=0x7f07004f;
+        public static final int putao_gewala_tag_bar_ontouch=0x7f07004e;
         public static final int putao_goods_unavailable_gray=0x7f070039;
         /**  <color name="putao_h5page_progress_bg">#f8c017</color> 
          */
@@ -1546,12 +1452,12 @@ containing a value of this type.
         /**  酒店详情页透明背景条 
  酒店详情页透明背景条 
          */
-        public static final int putao_hotel_img_alpha_background=0x7f070049;
-        public static final int putao_hotel_img_default_bg=0x7f07004a;
+        public static final int putao_hotel_img_alpha_background=0x7f070048;
+        public static final int putao_hotel_img_default_bg=0x7f070049;
         public static final int putao_light_black=0x7f070022;
         public static final int putao_light_green=0x7f070038;
         public static final int putao_line_stroke_color=0x7f070029;
-        public static final int putao_list_item_button_text=0x7f07008f;
+        public static final int putao_list_item_button_text=0x7f07008e;
         /**  modify for COOLUI6.0 
  modify for COOLUI6.0 
          */
@@ -1560,59 +1466,58 @@ containing a value of this type.
  普通列表焦点色 
          */
         public static final int putao_list_selector=0x7f070025;
-        public static final int putao_movie_list_buy=0x7f070051;
-        public static final int putao_movie_list_point=0x7f070052;
+        public static final int putao_movie_list_buy=0x7f070050;
+        public static final int putao_movie_list_point=0x7f070051;
         /**  电影 
          */
-        public static final int putao_movie_list_presell=0x7f070050;
+        public static final int putao_movie_list_presell=0x7f07004f;
         /** 白色的40%  
          */
         public static final int putao_navi_index_bg=0x7f070015;
-        public static final int putao_navi_selected=0x7f070072;
-        public static final int putao_normal_blue=0x7f07005b;
+        public static final int putao_navi_selected=0x7f070071;
+        public static final int putao_normal_blue=0x7f07005a;
         /**  次要文字颜色 黑色的30%
  次要文字颜色 浅灰色的
          */
         public static final int putao_normal_red=0x7f070007;
         /**  开放平台 
          */
-        public static final int putao_open_goodsdtl_sku_pitchon=0x7f070076;
-        public static final int putao_open_number_text_color=0x7f070077;
-        public static final int putao_open_remin_bg_color=0x7f070078;
+        public static final int putao_open_goodsdtl_sku_pitchon=0x7f070075;
+        public static final int putao_open_number_text_color=0x7f070076;
+        public static final int putao_open_remin_bg_color=0x7f070077;
         /**  活动 
          */
-        public static final int putao_operate_select_backbround=0x7f070087;
-        public static final int putao_order_content_color=0x7f07005a;
-        public static final int putao_order_content_title_color=0x7f070059;
-        public static final int putao_order_list_content_color=0x7f070056;
-        public static final int putao_order_list_subcontent_color=0x7f070057;
+        public static final int putao_operate_select_backbround=0x7f070086;
+        public static final int putao_order_content_color=0x7f070059;
+        public static final int putao_order_content_title_color=0x7f070058;
+        public static final int putao_order_list_content_color=0x7f070055;
+        public static final int putao_order_list_subcontent_color=0x7f070056;
         /**  订单列表相关颜色 
  订单列表相关颜色 
          */
-        public static final int putao_order_list_title_color=0x7f070055;
-        public static final int putao_order_list_white_Shadow_color=0x7f070058;
+        public static final int putao_order_list_title_color=0x7f070054;
+        public static final int putao_order_list_white_Shadow_color=0x7f070057;
         /**  <color name="putao_tab_indicator_text_unselected">#aac5d7</color> 
  <color name="putao_tab_indicator_text_unselected">#aac5d7</color> 
          */
-        public static final int putao_page_viewer_margin_color=0x7f07004e;
-        public static final int putao_payment_amount_selector=0x7f070090;
+        public static final int putao_page_viewer_margin_color=0x7f07004d;
         /**  所有可拨打电话的颜色 
  所有可拨打电话的颜色 
          */
-        public static final int putao_phone_num_text_color=0x7f070063;
-        public static final int putao_possible_result_points=0x7f07007e;
-        public static final int putao_primary_text_light=0x7f070091;
+        public static final int putao_phone_num_text_color=0x7f070062;
+        public static final int putao_possible_result_points=0x7f07007d;
+        public static final int putao_primary_text_light=0x7f07008f;
         /**  progress dialog 字体颜色 
  progress dialog 字体颜色 
          */
-        public static final int putao_progress_dialog_text_grey=0x7f070061;
-        public static final int putao_progress_dialog_text_white=0x7f070062;
+        public static final int putao_progress_dialog_text_grey=0x7f070060;
+        public static final int putao_progress_dialog_text_white=0x7f070061;
         public static final int putao_pt_blue=0x7f070017;
         public static final int putao_pt_deep_gray=0x7f070019;
         public static final int putao_pt_gray=0x7f07001a;
         public static final int putao_pt_heavy_black=0x7f070020;
         public static final int putao_pt_light_gray=0x7f070018;
-        public static final int putao_pt_line_light_gray=0x7f07007b;
+        public static final int putao_pt_line_light_gray=0x7f07007a;
         /**  putao lhq add 
  窗口背景顏色 
  推荐热词分割线 
@@ -1622,25 +1527,25 @@ containing a value of this type.
          */
         public static final int putao_recommend_word_divider=0x7f07003c;
         public static final int putao_red=0x7f070021;
-        public static final int putao_result_view=0x7f07007f;
+        public static final int putao_result_view=0x7f07007e;
         /**  黄页数据分割线背景色 
  黄页数据分割线背景色 
          */
         public static final int putao_screen_background_light=0x7f070009;
         /**  搜索服务精选 
          */
-        public static final int putao_search_goods_price_num=0x7f070088;
+        public static final int putao_search_goods_price_num=0x7f070087;
         /**  搜索 
  搜索 
          */
-        public static final int putao_search_more=0x7f07006b;
+        public static final int putao_search_more=0x7f07006a;
         public static final int putao_separator_green=0x7f070024;
-        public static final int putao_tab_indicator_text=0x7f070092;
+        public static final int putao_tab_indicator_text=0x7f070090;
         /**  For suggestions 
  For suggestions 
          */
-        public static final int putao_tab_indicator_text_selected=0x7f07004c;
-        public static final int putao_tab_indicator_text_unselected=0x7f07004d;
+        public static final int putao_tab_indicator_text_selected=0x7f07004b;
+        public static final int putao_tab_indicator_text_unselected=0x7f07004c;
         /**  蓝色 
  通用样式 end 
  主界面颜色 
@@ -1652,24 +1557,21 @@ containing a value of this type.
         public static final int putao_tab_text_color_selected=0x7f07000c;
         /**  分组标签颜色 
          */
-        public static final int putao_tag_group_divider_color=0x7f070085;
+        public static final int putao_tag_group_divider_color=0x7f070084;
         /**  分组标签文字颜色 
  分组标签文字颜色 
          */
         public static final int putao_tag_group_text=0x7f07003d;
-        public static final int putao_taxi_cp_selected=0x7f070069;
-        public static final int putao_taxi_end_text=0x7f07006a;
+        public static final int putao_taxi_cp_selected=0x7f070068;
+        public static final int putao_taxi_end_text=0x7f070069;
         /**  出租车 等待应答 
  出租车 等待应答 
          */
-        public static final int putao_taxi_waitreply_taxinum=0x7f070068;
+        public static final int putao_taxi_waitreply_taxinum=0x7f070067;
         /**   提示性文字颜色
   提示性文字颜色
          */
         public static final int putao_text_color_disable=0x7f070043;
-        /**  绿色提示文字 
-         */
-        public static final int putao_text_color_gray=0x7f070046;
         /**  重要 
  重要 
          */
@@ -1681,7 +1583,7 @@ containing a value of this type.
         /**  字体颜色 
  字体颜色 
          */
-        public static final int putao_text_color_important=0x7f07005f;
+        public static final int putao_text_color_important=0x7f07005e;
         /**   辅助文字颜色带30%透明
   辅助文字颜色带30%透明
          */
@@ -1690,7 +1592,7 @@ containing a value of this type.
  通用样式 start 
          */
         public static final int putao_text_color_primary=0x7f070003;
-        public static final int putao_text_color_red=0x7f070060;
+        public static final int putao_text_color_red=0x7f07005f;
         /**  主要文字颜色  黑色的85%
  主要文字颜色  黑色的
          */
@@ -1719,31 +1621,31 @@ containing a value of this type.
         /**   查违章 
   查违章 
          */
-        public static final int putao_traffic_offence_car_bg_1=0x7f07006e;
-        public static final int putao_traffic_offence_car_bg_2=0x7f07006f;
-        public static final int putao_traffic_offence_car_bg_3=0x7f070070;
-        public static final int putao_traffic_offence_car_bg_4=0x7f070071;
+        public static final int putao_traffic_offence_car_bg_1=0x7f07006d;
+        public static final int putao_traffic_offence_car_bg_2=0x7f07006e;
+        public static final int putao_traffic_offence_car_bg_3=0x7f07006f;
+        public static final int putao_traffic_offence_car_bg_4=0x7f070070;
         /**  查违章 
          */
-        public static final int putao_traffic_offence_fine_color=0x7f070086;
-        public static final int putao_traffic_offence_province_dialog_bg=0x7f07005e;
+        public static final int putao_traffic_offence_fine_color=0x7f070085;
+        public static final int putao_traffic_offence_province_dialog_bg=0x7f07005d;
         /**  查违章 
          */
-        public static final int putao_traffic_offence_query_color=0x7f07005d;
+        public static final int putao_traffic_offence_query_color=0x7f07005c;
         public static final int putao_translucent=0x7f07001e;
         public static final int putao_transparent=0x7f07001c;
         public static final int putao_transparent_alpha=0x7f07001d;
         public static final int putao_transparent_background=0x7f070027;
-        public static final int putao_viewfinder_frame=0x7f070080;
-        public static final int putao_viewfinder_laser=0x7f070081;
-        public static final int putao_viewfinder_mask=0x7f070082;
-        public static final int putao_voucher_dialog_lookdetail=0x7f070075;
+        public static final int putao_viewfinder_frame=0x7f07007f;
+        public static final int putao_viewfinder_laser=0x7f070080;
+        public static final int putao_viewfinder_mask=0x7f070081;
+        public static final int putao_voucher_dialog_lookdetail=0x7f070074;
         /**  优惠券dialog 
  优惠券dialog 
          */
-        public static final int putao_voucher_dialog_userimmediatly=0x7f070074;
+        public static final int putao_voucher_dialog_userimmediatly=0x7f070073;
         public static final int putao_white=0x7f07001b;
-        public static final int putao_white_alpha=0x7f07007c;
+        public static final int putao_white_alpha=0x7f07007b;
         /**  黑色的30% 
          */
         public static final int putao_white_alpha_50=0x7f070013;
@@ -1760,23 +1662,23 @@ containing a value of this type.
          would include 7" and 10" devices in landscape (~960dp and ~1280dp respectively).
     
          */
-        public static final int activity_horizontal_margin=0x7f080111;
-        public static final int putao_BottomTextSize=0x7f08012b;
-        public static final int putao__order_img_round_corner=0x7f080104;
-        public static final int putao_activity_comm_go_marginbottom=0x7f080050;
+        public static final int activity_horizontal_margin=0x7f080110;
+        public static final int putao_BottomTextSize=0x7f08012a;
+        public static final int putao__order_img_round_corner=0x7f080103;
+        public static final int putao_activity_comm_go_marginbottom=0x7f08004f;
         /**  通用跳转下界面或者悬浮的button 
          */
-        public static final int putao_activity_comm_go_margintop=0x7f08004f;
-        public static final int putao_activity_horizontal_margin=0x7f08004d;
-        public static final int putao_activity_vertical_margin=0x7f08004e;
-        public static final int putao_ad_sort_icon_marin_bottom=0x7f0800cc;
+        public static final int putao_activity_comm_go_margintop=0x7f08004e;
+        public static final int putao_activity_horizontal_margin=0x7f08004c;
+        public static final int putao_activity_vertical_margin=0x7f08004d;
+        public static final int putao_ad_sort_icon_marin_bottom=0x7f0800cb;
         /**  首页广告 
  首页广告 
          */
-        public static final int putao_ad_sort_icon_marin_right=0x7f0800cb;
+        public static final int putao_ad_sort_icon_marin_right=0x7f0800ca;
         /**  modify by ptuao_lhq for fix bug:2848 end 
          */
-        public static final int putao_adlayout_height=0x7f08013b;
+        public static final int putao_adlayout_height=0x7f08013a;
         /**  广告栏中间间隔 
  modify by ptuao_lhq for fix bug:2848 start 
  <dimen name="putao_adlayout_hgap">10dp</dimen> 
@@ -1784,118 +1686,117 @@ containing a value of this type.
  modify by ptuao_lhq for fix bug:2848 start 
  <dimen name="putao_adlayout_hgap">10dp</dimen> 
          */
-        public static final int putao_adlayout_hgap=0x7f080069;
+        public static final int putao_adlayout_hgap=0x7f080068;
         /**  modify by ptuao_lhq for fix bug:2848 end 
          */
-        public static final int putao_adlayout_margin=0x7f08006a;
-        public static final int putao_adlayout_middle_height=0x7f080140;
-        public static final int putao_adlayout_top_height=0x7f08013f;
-        public static final int putao_adlayout_top_hgap=0x7f08013e;
-        public static final int putao_adlayout_width_max=0x7f08013d;
-        public static final int putao_adlayout_width_min=0x7f08013c;
+        public static final int putao_adlayout_margin=0x7f080069;
+        public static final int putao_adlayout_middle_height=0x7f08013f;
+        public static final int putao_adlayout_top_height=0x7f08013e;
+        public static final int putao_adlayout_top_hgap=0x7f08013d;
+        public static final int putao_adlayout_width_max=0x7f08013c;
+        public static final int putao_adlayout_width_min=0x7f08013b;
         /**  button height 
  button height 
          */
-        public static final int putao_btn_height=0x7f080039;
-        public static final int putao_btn_margin_size=0x7f08007a;
+        public static final int putao_btn_height=0x7f080038;
+        public static final int putao_btn_margin_size=0x7f080079;
         /**  button 
  button 
          */
-        public static final int putao_btn_text_size=0x7f080079;
+        public static final int putao_btn_text_size=0x7f080078;
         /**  公交 
  公交 
          */
-        public static final int putao_bus_text_size=0x7f080067;
+        public static final int putao_bus_text_size=0x7f080066;
         /**   button height 
  Button 
   button height 
  Button 
   button height 
- Button 
   button height 
  Button 
          */
-        public static final int putao_button_height=0x7f080041;
+        public static final int putao_button_height=0x7f080040;
         public static final int putao_category_all_service_grid_space=0x7f08000a;
         public static final int putao_category_all_service_padding=0x7f080009;
         public static final int putao_category_all_service_title_padding=0x7f08000b;
         public static final int putao_category_category_list=0x7f08000c;
-        public static final int putao_category_foot_padding=0x7f080123;
-        public static final int putao_category_item_height=0x7f080121;
-        public static final int putao_category_item_img_margin_top=0x7f080122;
+        public static final int putao_category_foot_padding=0x7f080122;
+        public static final int putao_category_item_height=0x7f080120;
+        public static final int putao_category_item_img_margin_top=0x7f080121;
         public static final int putao_category_item_img_width=0x7f080008;
         public static final int putao_category_item_width=0x7f080007;
         /**  导航页 
  导航页 
          */
         public static final int putao_category_layout_height=0x7f080004;
-        public static final int putao_category_padding=0x7f080124;
-        public static final int putao_category_service_title_height=0x7f080120;
-        public static final int putao_category_text_size=0x7f08011f;
+        public static final int putao_category_padding=0x7f080123;
+        public static final int putao_category_service_title_height=0x7f08011f;
+        public static final int putao_category_text_size=0x7f08011e;
         /**  话费充值 
  话费充值 
          */
-        public static final int putao_charge_pay_way_padding=0x7f08006b;
-        public static final int putao_chargetel_result_big_textsize=0x7f080066;
-        public static final int putao_chargetel_result_paddingbottom=0x7f080063;
+        public static final int putao_charge_pay_way_padding=0x7f08006a;
+        public static final int putao_chargetel_result_big_textsize=0x7f080065;
+        public static final int putao_chargetel_result_paddingbottom=0x7f080062;
         /**  话费充值 
  话费充值 
          */
-        public static final int putao_chargetel_result_paddingleft=0x7f080061;
-        public static final int putao_chargetel_result_paddingtop=0x7f080062;
-        public static final int putao_chargetel_result_result_textsize=0x7f080064;
-        public static final int putao_chargetel_result_small_textsize=0x7f080065;
+        public static final int putao_chargetel_result_paddingleft=0x7f080060;
+        public static final int putao_chargetel_result_paddingtop=0x7f080061;
+        public static final int putao_chargetel_result_result_textsize=0x7f080063;
+        public static final int putao_chargetel_result_small_textsize=0x7f080064;
         /**  通用内容上下间距 
          */
-        public static final int putao_comm_item_vertical_padding=0x7f080051;
+        public static final int putao_comm_item_vertical_padding=0x7f080050;
         /**  For buttons 
  For buttons 
          */
-        public static final int putao_common_text_size_large=0x7f08009e;
+        public static final int putao_common_text_size_large=0x7f08009d;
         /**  For list texts (top line) 
  For list texts (top line) 
          */
-        public static final int putao_common_text_size_middle_2=0x7f08009f;
+        public static final int putao_common_text_size_middle_2=0x7f08009e;
         /**  For list texts (bottom line), summary texts, icon texts, descriptions, tag texts 
  For list texts (bottom line), summary texts, icon texts, descriptions, tag texts 
          */
-        public static final int putao_common_text_size_small_3=0x7f0800a0;
+        public static final int putao_common_text_size_small_3=0x7f08009f;
         /**  联系人详情 名片 
  联系人详情 名片 
  联系人详情 名片 
  联系人详情 名片 
          */
-        public static final int putao_contact_group_item_padding=0x7f08003e;
+        public static final int putao_contact_group_item_padding=0x7f08003d;
         public static final int putao_contentTitle=0x7f080034;
-        public static final int putao_content_listview_img_height=0x7f0800af;
+        public static final int putao_content_listview_img_height=0x7f0800ae;
         /** 生活 附件精选  
 生活 附件精选  
          */
-        public static final int putao_content_listview_img_width=0x7f0800ae;
-        public static final int putao_content_listview_item_height=0x7f0800b0;
-        public static final int putao_content_listview_padding=0x7f0800b1;
+        public static final int putao_content_listview_img_width=0x7f0800ad;
+        public static final int putao_content_listview_item_height=0x7f0800af;
+        public static final int putao_content_listview_padding=0x7f0800b0;
         /**  自定義編輯框高度 
          */
-        public static final int putao_content_listview_title_max=0x7f0800b2;
+        public static final int putao_content_listview_title_max=0x7f0800b1;
         /**  优惠券 start 
          */
-        public static final int putao_coupon_content_height=0x7f0800da;
-        public static final int putao_coupon_content_padding_h=0x7f0800db;
-        public static final int putao_coupon_content_padding_left=0x7f0800e1;
-        public static final int putao_coupon_content_price_textsize=0x7f0800e0;
-        public static final int putao_coupon_content_textsize=0x7f0800dc;
-        public static final int putao_coupon_hint_content_height=0x7f0800dd;
-        public static final int putao_coupon_hint_content_padding_h=0x7f0800de;
-        public static final int putao_coupon_hint_content_textsize=0x7f0800df;
-        public static final int putao_coupon_item_height=0x7f0800e3;
-        public static final int putao_coupon_quan_padding=0x7f0800e2;
-        public static final int putao_default_circle_indicator_radius=0x7f080119;
-        public static final int putao_default_circle_indicator_stroke_width=0x7f08011a;
+        public static final int putao_coupon_content_height=0x7f0800d9;
+        public static final int putao_coupon_content_padding_h=0x7f0800da;
+        public static final int putao_coupon_content_padding_left=0x7f0800e0;
+        public static final int putao_coupon_content_price_textsize=0x7f0800df;
+        public static final int putao_coupon_content_textsize=0x7f0800db;
+        public static final int putao_coupon_hint_content_height=0x7f0800dc;
+        public static final int putao_coupon_hint_content_padding_h=0x7f0800dd;
+        public static final int putao_coupon_hint_content_textsize=0x7f0800de;
+        public static final int putao_coupon_item_height=0x7f0800e2;
+        public static final int putao_coupon_quan_padding=0x7f0800e1;
+        public static final int putao_default_circle_indicator_radius=0x7f080118;
+        public static final int putao_default_circle_indicator_stroke_width=0x7f080119;
         /**  开放平台 end 
          */
-        public static final int putao_deposit_layout_leftright_margin=0x7f0800f9;
-        public static final int putao_deposit_layout_top_margin=0x7f0800fb;
-        public static final int putao_deposit_text_padding=0x7f0800fa;
+        public static final int putao_deposit_layout_leftright_margin=0x7f0800f8;
+        public static final int putao_deposit_layout_top_margin=0x7f0800fa;
+        public static final int putao_deposit_text_padding=0x7f0800f9;
         public static final int putao_dialog_bottom_btn_height=0x7f08002e;
         public static final int putao_dialog_bottom_btn_textsize=0x7f08002f;
         public static final int putao_dialog_bottom_height=0x7f08002d;
@@ -1905,7 +1806,7 @@ containing a value of this type.
         public static final int putao_dialog_edit_text_size=0x7f080032;
         public static final int putao_dialog_head_height=0x7f080028;
         public static final int putao_dialog_head_textsize=0x7f080029;
-        public static final int putao_dialog_leftandright_margin=0x7f080106;
+        public static final int putao_dialog_leftandright_margin=0x7f080105;
         /**  对话框 标准 
  对话框 标准 
  对话框 标准 
@@ -1916,8 +1817,6 @@ containing a value of this type.
         public static final int putao_dialog_padding_smallscreen=0x7f080031;
         /**  自定義編輯框高度 
  分割線高度 
- 自定義編輯框高度 
- 分割線高度 
          */
         public static final int putao_divider_line_size=0x7f08000d;
         /**  高度 
@@ -1926,142 +1825,139 @@ containing a value of this type.
  編輯框 
  高度 
  編輯框 
- 高度 
- 編輯框 
          */
-        public static final int putao_edit_layout_item_height=0x7f080101;
+        public static final int putao_edit_layout_item_height=0x7f080100;
         /**  编辑框的高度 
      <dimen name="putao_edit_layout_item_height">40dip</dimen> 
  编辑框的高度 
      <dimen name="putao_edit_layout_item_height">40dip</dimen> 
          */
-        public static final int putao_edit_min_height=0x7f080074;
+        public static final int putao_edit_min_height=0x7f080073;
         /**  无数据界面提示字体大小 
  无数据界面提示字体大小 
          */
-        public static final int putao_empty_tip_text_size=0x7f080078;
+        public static final int putao_empty_tip_text_size=0x7f080077;
         /**  无数据界面图标与文字之间的间距 
  无数据界面图标与文字之间的间距 
          */
-        public static final int putao_empty_view_icon_and_text_padding=0x7f08007c;
+        public static final int putao_empty_view_icon_and_text_padding=0x7f08007b;
         /**  无数据界面距离顶部距离 
  无数据界面距离顶部距离 
          */
-        public static final int putao_empty_view_margin_top=0x7f08007b;
-        public static final int putao_express_history_delete_select_all_text_size=0x7f080138;
-        public static final int putao_express_history_item_margin=0x7f080153;
-        public static final int putao_express_history_item_number_text_size=0x7f080137;
-        public static final int putao_express_history_item_padding_vertical=0x7f08005f;
-        public static final int putao_express_history_item_status_text_size=0x7f080152;
-        public static final int putao_express_history_item_title_text_size=0x7f080136;
-        public static final int putao_express_home_bottom_padding=0x7f08005d;
-        public static final int putao_express_home_bottom_textsize=0x7f080139;
+        public static final int putao_empty_view_margin_top=0x7f08007a;
+        public static final int putao_express_history_delete_select_all_text_size=0x7f080137;
+        public static final int putao_express_history_item_margin=0x7f080150;
+        public static final int putao_express_history_item_number_text_size=0x7f080136;
+        public static final int putao_express_history_item_padding_vertical=0x7f08005e;
+        public static final int putao_express_history_item_status_text_size=0x7f08014f;
+        public static final int putao_express_history_item_title_text_size=0x7f080135;
+        public static final int putao_express_home_bottom_padding=0x7f08005c;
+        public static final int putao_express_home_bottom_textsize=0x7f080138;
         /**  查快递 
  查快递 
  查快递 
  查快递 
          */
-        public static final int putao_express_item_height=0x7f080052;
-        public static final int putao_express_item_margin_top=0x7f080053;
-        public static final int putao_express_item_padding=0x7f080055;
-        public static final int putao_express_item_text_size=0x7f080054;
-        public static final int putao_express_quick_search_with=0x7f08005e;
-        public static final int putao_express_result_exp_info_title_padding=0x7f080131;
-        public static final int putao_express_result_footer_view_height=0x7f08005b;
-        public static final int putao_express_result_item_content_text_size=0x7f080134;
-        public static final int putao_express_result_item_date_text_size=0x7f080135;
-        public static final int putao_express_result_item_height=0x7f080058;
-        public static final int putao_express_result_item_height_x=0x7f080059;
-        public static final int putao_express_result_item_padding=0x7f08005a;
-        public static final int putao_express_result_no_data_info_text_size=0x7f080132;
-        public static final int putao_express_result_no_data_item_margin=0x7f080056;
-        public static final int putao_express_result_no_data_item_margin_bottom=0x7f080108;
-        public static final int putao_express_result_no_data_margin_top=0x7f080057;
-        public static final int putao_express_result_try_again_btn_width=0x7f080133;
-        public static final int putao_express_scan_btn_width=0x7f080130;
-        public static final int putao_express_scaner_width=0x7f080060;
-        public static final int putao_express_source_company_text_size=0x7f08005c;
+        public static final int putao_express_item_height=0x7f080051;
+        public static final int putao_express_item_margin_top=0x7f080052;
+        public static final int putao_express_item_padding=0x7f080054;
+        public static final int putao_express_item_text_size=0x7f080053;
+        public static final int putao_express_quick_search_with=0x7f08005d;
+        public static final int putao_express_result_exp_info_title_padding=0x7f080130;
+        public static final int putao_express_result_footer_view_height=0x7f08005a;
+        public static final int putao_express_result_item_content_text_size=0x7f080133;
+        public static final int putao_express_result_item_date_text_size=0x7f080134;
+        public static final int putao_express_result_item_height=0x7f080057;
+        public static final int putao_express_result_item_height_x=0x7f080058;
+        public static final int putao_express_result_item_padding=0x7f080059;
+        public static final int putao_express_result_no_data_info_text_size=0x7f080131;
+        public static final int putao_express_result_no_data_item_margin=0x7f080055;
+        public static final int putao_express_result_no_data_item_margin_bottom=0x7f080107;
+        public static final int putao_express_result_no_data_margin_top=0x7f080056;
+        public static final int putao_express_result_try_again_btn_width=0x7f080132;
+        public static final int putao_express_scan_btn_width=0x7f08012f;
+        public static final int putao_express_scaner_width=0x7f08005f;
+        public static final int putao_express_source_company_text_size=0x7f08005b;
         /** 发现页面
          */
         public static final int putao_find_recommend_subject_item_height=0x7f08001c;
         public static final int putao_find_recommend_subject_item_margin_top=0x7f08001d;
-        public static final int putao_game_item_minheight=0x7f0800fd;
-        public static final int putao_guess_like_desc_text_size=0x7f0800b6;
-        public static final int putao_guess_like_img2name_padding=0x7f0800b4;
-        public static final int putao_guess_like_item_hight=0x7f08014a;
-        public static final int putao_guess_like_items_gap=0x7f0800b8;
+        public static final int putao_game_item_minheight=0x7f0800fc;
+        public static final int putao_guess_like_desc_text_size=0x7f0800b5;
+        public static final int putao_guess_like_img2name_padding=0x7f0800b3;
+        public static final int putao_guess_like_item_hight=0x7f080149;
+        public static final int putao_guess_like_items_gap=0x7f0800b7;
         /** 生活 附件精选  
 生活 猜你需要  
 生活 附件精选  
 生活 猜你需要  
          */
-        public static final int putao_guess_like_layout_hight=0x7f0800b3;
-        public static final int putao_guess_like_name_text_size=0x7f0800b5;
-        public static final int putao_guess_like_title_margin_left=0x7f0800b7;
-        public static final int putao_habit_data_listview_width=0x7f08014e;
+        public static final int putao_guess_like_layout_hight=0x7f0800b2;
+        public static final int putao_guess_like_name_text_size=0x7f0800b4;
+        public static final int putao_guess_like_title_margin_left=0x7f0800b6;
+        public static final int putao_habit_data_listview_width=0x7f08014d;
         public static final int putao_home_category_item_text_size=0x7f080003;
-        public static final int putao_home_category_title_text_size=0x7f08011b;
-        public static final int putao_home_coupon_height=0x7f0800ca;
+        public static final int putao_home_category_title_text_size=0x7f08011a;
+        public static final int putao_home_coupon_height=0x7f0800c9;
         /**  首页优惠券 
  首页优惠券 
          */
-        public static final int putao_home_coupon_width=0x7f0800c9;
+        public static final int putao_home_coupon_width=0x7f0800c8;
         /**  各个块之间的距离 
  各个块之间的距离 
          */
-        public static final int putao_home_default_margin=0x7f0800a8;
+        public static final int putao_home_default_margin=0x7f0800a7;
         /**  模块内左边距 
  模块内左边距 
          */
-        public static final int putao_home_default_padding=0x7f0800a9;
+        public static final int putao_home_default_padding=0x7f0800a8;
         /**  首页标题栏高度 
- 首页标题栏高度 
          */
-        public static final int putao_home_header_height=0x7f08011d;
+        public static final int putao_home_header_height=0x7f08011c;
         /**  首页葡萄图标宽度 
          */
-        public static final int putao_home_header_img_width=0x7f08011e;
-        public static final int putao_home_hot_title_height=0x7f080147;
+        public static final int putao_home_header_img_width=0x7f08011d;
+        public static final int putao_home_hot_title_height=0x7f080146;
         public static final int putao_home_main_text_size=0x7f080002;
-        public static final int putao_home_search_left_padding=0x7f0800aa;
-        public static final int putao_home_search_margin_right=0x7f08011c;
-        public static final int putao_home_search_padding=0x7f0800ab;
+        public static final int putao_home_search_left_padding=0x7f0800a9;
+        public static final int putao_home_search_margin_right=0x7f08011b;
+        public static final int putao_home_search_padding=0x7f0800aa;
         public static final int putao_homepage_item_gap=0x7f08000f;
         public static final int putao_homepage_search_layout_height=0x7f08000e;
-        public static final int putao_homepage_searchleftright_padding=0x7f080125;
+        public static final int putao_homepage_searchleftright_padding=0x7f080124;
         /**  add by hyl 2014-12-20 for COOLUI6.0 
  add by hyl 2014-12-20 for COOLUI6.0 
          */
-        public static final int putao_hotel_img_size=0x7f080110;
-        public static final int putao_hotel_pay_footer_margin=0x7f0800c5;
+        public static final int putao_hotel_img_size=0x7f08010f;
+        public static final int putao_hotel_pay_footer_margin=0x7f0800c4;
         /**  酒店  
  酒店  
          */
-        public static final int putao_hotel_pay_head_height=0x7f0800c4;
-        public static final int putao_hotel_pay_hint_content_margin=0x7f0800c7;
-        public static final int putao_hotel_pay_hint_width=0x7f0800c6;
+        public static final int putao_hotel_pay_head_height=0x7f0800c3;
+        public static final int putao_hotel_pay_hint_content_margin=0x7f0800c6;
+        public static final int putao_hotel_pay_hint_width=0x7f0800c5;
         /**  提醒中心 
  modified by wcy 2015-4-15 根据UI效果调整布局 
  提醒中心 
  modified by wcy 2015-4-15 根据UI效果调整布局 
          */
-        public static final int putao_hotle_item_height=0x7f0800c8;
+        public static final int putao_hotle_item_height=0x7f0800c7;
         /**  modify for COOLUI6.0 
  modify for COOLUI6.0 
          */
         public static final int putao_image_round_corner=0x7f080026;
-        public static final int putao_image_round_corner_hotel_room=0x7f080105;
+        public static final int putao_image_round_corner_hotel_room=0x7f080104;
         /**  动态图片最大长宽和最小长宽尺寸 
  动态图片最大长宽和最小长宽尺寸 
  动态图片最大长宽和最小长宽尺寸 
  动态图片最大长宽和最小长宽尺寸 
          */
-        public static final int putao_image_threshold=0x7f08003f;
-        public static final int putao_index_tip_margin_top=0x7f0800ac;
-        public static final int putao_item_margin=0x7f080040;
+        public static final int putao_image_threshold=0x7f08003e;
+        public static final int putao_index_tip_margin_top=0x7f0800ab;
+        public static final int putao_item_margin=0x7f08003f;
         /**  各个列表高度标准 
          */
-        public static final int putao_list_item_height=0x7f080151;
+        public static final int putao_list_item_height=0x7f08014e;
         public static final int putao_listview_firstline_textsize=0x7f080023;
         /**  列表项 
  列表项 
@@ -2080,12 +1976,12 @@ containing a value of this type.
         public static final int putao_listview_item_imgsize=0x7f080020;
         /** 列表项第二行字体大小 
          */
-        public static final int putao_listview_item_imgsize2=0x7f080128;
+        public static final int putao_listview_item_imgsize2=0x7f080127;
         /**  ListView 左右間距 
  ListView 左右間距 
          */
         public static final int putao_listview_item_leftrightpadding=0x7f08001f;
-        public static final int putao_listview_item_topbottompadding=0x7f080102;
+        public static final int putao_listview_item_topbottompadding=0x7f080101;
         /** 列表项第二行字体大小 
  多行列表项item高度 
 列表项第二行字体大小 
@@ -2103,93 +1999,92 @@ containing a value of this type.
 列表项第一行字体大小 
          */
         public static final int putao_listview_secondline_textsize=0x7f080024;
-        public static final int putao_live_commserver_vpadding=0x7f0800ba;
+        public static final int putao_live_commserver_vpadding=0x7f0800b9;
         /** 生活 猜你需要  
  生活 常用服务 
 生活 运营活动  
  生活 常用服务 
          */
-        public static final int putao_live_commserver_vspacing=0x7f0800b9;
-        public static final int putao_map_edit_phonenum_editer_height=0x7f080157;
-        public static final int putao_map_edit_phonenum_editer_width=0x7f080156;
-        public static final int putao_map_edit_phonenum_height_one=0x7f08010e;
-        public static final int putao_map_edit_phonenum_height_two=0x7f08010f;
-        public static final int putao_map_edit_phonenum_width=0x7f080155;
-        public static final int putao_map_item_btn_gap_margin=0x7f08010c;
-        public static final int putao_map_item_btn_margin=0x7f08010b;
-        public static final int putao_map_item_btn_text_size=0x7f08010a;
-        public static final int putao_map_item_divider_margin=0x7f08010d;
+        public static final int putao_live_commserver_vspacing=0x7f0800b8;
+        public static final int putao_map_edit_phonenum_editer_height=0x7f080154;
+        public static final int putao_map_edit_phonenum_editer_width=0x7f080153;
+        public static final int putao_map_edit_phonenum_height_one=0x7f08010d;
+        public static final int putao_map_edit_phonenum_height_two=0x7f08010e;
+        public static final int putao_map_edit_phonenum_width=0x7f080152;
+        public static final int putao_map_item_btn_gap_margin=0x7f08010b;
+        public static final int putao_map_item_btn_margin=0x7f08010a;
+        public static final int putao_map_item_btn_text_size=0x7f080109;
+        public static final int putao_map_item_divider_margin=0x7f08010c;
         /**  地图 
          */
-        public static final int putao_map_item_height=0x7f080154;
+        public static final int putao_map_item_height=0x7f080151;
         /**  地图 
          */
-        public static final int putao_map_item_info_height=0x7f080109;
+        public static final int putao_map_item_info_height=0x7f080108;
         /**  菜单图片相对顶部距离 
- 菜单图片相对顶部距离 
          */
-        public static final int putao_menu_img_margin_top=0x7f080148;
-        public static final int putao_movie_detail_buybtn=0x7f08008c;
-        public static final int putao_movie_detail_header_height=0x7f080088;
-        public static final int putao_movie_detail_header_paddingtop=0x7f080089;
-        public static final int putao_movie_detail_item_vertical_margin=0x7f08008b;
-        public static final int putao_movie_detail_stills_padding=0x7f08008a;
-        public static final int putao_movie_opi_gallery_highlight_height=0x7f080091;
-        public static final int putao_movie_opi_gallery_highlight_width=0x7f080090;
-        public static final int putao_movie_opi_gallery_normall_height=0x7f08008f;
-        public static final int putao_movie_opi_gallery_normall_width=0x7f08008e;
-        public static final int putao_movie_opi_mlist_height=0x7f08008d;
-        public static final int putao_movie_stills_grid_img_spacing=0x7f080092;
+        public static final int putao_menu_img_margin_top=0x7f080147;
+        public static final int putao_movie_detail_buybtn=0x7f08008b;
+        public static final int putao_movie_detail_header_height=0x7f080087;
+        public static final int putao_movie_detail_header_paddingtop=0x7f080088;
+        public static final int putao_movie_detail_item_vertical_margin=0x7f08008a;
+        public static final int putao_movie_detail_stills_padding=0x7f080089;
+        public static final int putao_movie_opi_gallery_highlight_height=0x7f080090;
+        public static final int putao_movie_opi_gallery_highlight_width=0x7f08008f;
+        public static final int putao_movie_opi_gallery_normall_height=0x7f08008e;
+        public static final int putao_movie_opi_gallery_normall_width=0x7f08008d;
+        public static final int putao_movie_opi_mlist_height=0x7f08008c;
+        public static final int putao_movie_stills_grid_img_spacing=0x7f080091;
         /**  	电影订单详情 
          */
-        public static final int putao_moviedetail_ordercontent_leftrightpadding=0x7f080116;
-        public static final int putao_moviedetail_ordercontent_textleftmarginright=0x7f080118;
-        public static final int putao_moviedetail_ordercontent_topbottompadding=0x7f080117;
+        public static final int putao_moviedetail_ordercontent_leftrightpadding=0x7f080115;
+        public static final int putao_moviedetail_ordercontent_textleftmarginright=0x7f080117;
+        public static final int putao_moviedetail_ordercontent_topbottompadding=0x7f080116;
         /**  通讯录+ 字体标准 
  通讯录+ 字体标准 
          */
-        public static final int putao_navigator_title=0x7f080129;
+        public static final int putao_navigator_title=0x7f080128;
         /**  putao_lhq modify 12 to 8
  各个列表高度标准 
  各个列表高度标准 
  putao_lhq modify 12 to 8
  各个列表高度标准 
          */
-        public static final int putao_normal_item_height=0x7f08003d;
-        public static final int putao_offen_imgview_margintop=0x7f08006e;
+        public static final int putao_normal_item_height=0x7f08003c;
+        public static final int putao_offen_imgview_margintop=0x7f08006d;
         /**  首页-常用打点的位置 
  首页-常用打点的位置 
          */
-        public static final int putao_offen_item_width_height=0x7f08006c;
-        public static final int putao_offen_remind_marginright=0x7f080142;
-        public static final int putao_offen_remind_point_marginright=0x7f08006f;
-        public static final int putao_offen_remind_point_margintop=0x7f080070;
-        public static final int putao_offen_textview_marginright=0x7f080141;
-        public static final int putao_offen_textview_margintop=0x7f08006d;
-        public static final int putao_open_coupon_dialog_desc_margintop=0x7f0800f7;
-        public static final int putao_open_coupon_dialog_divider_margintop=0x7f0800f8;
-        public static final int putao_open_coupon_dialog_item_margintop=0x7f0800f6;
-        public static final int putao_open_goodscomt_photo_height=0x7f0800f2;
+        public static final int putao_offen_item_width_height=0x7f08006b;
+        public static final int putao_offen_remind_marginright=0x7f080141;
+        public static final int putao_offen_remind_point_marginright=0x7f08006e;
+        public static final int putao_offen_remind_point_margintop=0x7f08006f;
+        public static final int putao_offen_textview_marginright=0x7f080140;
+        public static final int putao_offen_textview_margintop=0x7f08006c;
+        public static final int putao_open_coupon_dialog_desc_margintop=0x7f0800f6;
+        public static final int putao_open_coupon_dialog_divider_margintop=0x7f0800f7;
+        public static final int putao_open_coupon_dialog_item_margintop=0x7f0800f5;
+        public static final int putao_open_goodscomt_photo_height=0x7f0800f1;
         /**  优惠券 end 
  开放平台start 
          */
-        public static final int putao_open_goodscomtadd_gname_height=0x7f0800e4;
-        public static final int putao_open_goodscomtadd_star_between_margin_top=0x7f0800e8;
-        public static final int putao_open_goodscomtadd_star_height=0x7f0800e5;
-        public static final int putao_open_goodscomtadd_star_title_margin_right=0x7f0800e6;
-        public static final int putao_open_goodscomtadd_star_txt_margin_left=0x7f0800e7;
-        public static final int putao_open_goodscomtlist_item_hmargin=0x7f0800f1;
-        public static final int putao_open_goodscomtlist_item_vmargin=0x7f0800f0;
-        public static final int putao_open_goodsdtl_buy_layout_height=0x7f0800e9;
-        public static final int putao_open_goodsdtl_buynote_margin_top=0x7f0800ea;
-        public static final int putao_open_goodsdtl_buynotes_hpadding=0x7f0800eb;
-        public static final int putao_open_goodsdtl_buynotes_vpadding=0x7f0800ec;
-        public static final int putao_open_goodsdtl_content_linespacing=0x7f0800ed;
-        public static final int putao_open_goodsdtl_content_text_size=0x7f0800f4;
-        public static final int putao_open_goodsdtl_content_vpadding=0x7f0800ee;
-        public static final int putao_open_goodsdtl_group_height=0x7f0800ef;
-        public static final int putao_open_goodsdtl_toptext_vmargin=0x7f0800f5;
-        public static final int putao_open_order_text_size=0x7f0800f3;
+        public static final int putao_open_goodscomtadd_gname_height=0x7f0800e3;
+        public static final int putao_open_goodscomtadd_star_between_margin_top=0x7f0800e7;
+        public static final int putao_open_goodscomtadd_star_height=0x7f0800e4;
+        public static final int putao_open_goodscomtadd_star_title_margin_right=0x7f0800e5;
+        public static final int putao_open_goodscomtadd_star_txt_margin_left=0x7f0800e6;
+        public static final int putao_open_goodscomtlist_item_hmargin=0x7f0800f0;
+        public static final int putao_open_goodscomtlist_item_vmargin=0x7f0800ef;
+        public static final int putao_open_goodsdtl_buy_layout_height=0x7f0800e8;
+        public static final int putao_open_goodsdtl_buynote_margin_top=0x7f0800e9;
+        public static final int putao_open_goodsdtl_buynotes_hpadding=0x7f0800ea;
+        public static final int putao_open_goodsdtl_buynotes_vpadding=0x7f0800eb;
+        public static final int putao_open_goodsdtl_content_linespacing=0x7f0800ec;
+        public static final int putao_open_goodsdtl_content_text_size=0x7f0800f3;
+        public static final int putao_open_goodsdtl_content_vpadding=0x7f0800ed;
+        public static final int putao_open_goodsdtl_group_height=0x7f0800ee;
+        public static final int putao_open_goodsdtl_toptext_vmargin=0x7f0800f4;
+        public static final int putao_open_order_text_size=0x7f0800f2;
         /**  首页活动 addby ljq 2015/05/09 
          */
         public static final int putao_operate_big_layout_height=0x7f080010;
@@ -2200,8 +2095,8 @@ containing a value of this type.
         /** 生活 猜你需要  
 生活 运营活动  
          */
-        public static final int putao_operate_items_gap=0x7f08014b;
-        public static final int putao_operate_layout_height=0x7f080127;
+        public static final int putao_operate_items_gap=0x7f08014a;
+        public static final int putao_operate_layout_height=0x7f080126;
         public static final int putao_operate_layout_subtitle_size=0x7f080013;
         public static final int putao_operate_layout_title_bottom_margin=0x7f080014;
         public static final int putao_operate_layout_title_size=0x7f080012;
@@ -2211,90 +2106,85 @@ containing a value of this type.
         public static final int putao_operate_small_layout_title_left_margin=0x7f080019;
         /**  首页活动 addby ljq 2015/05/09 
          */
-        public static final int putao_operate_title_height=0x7f080126;
-        public static final int putao_order_common_margin_top=0x7f0800fc;
-        public static final int putao_order_detail_margin_top=0x7f0800a7;
+        public static final int putao_operate_title_height=0x7f080125;
+        public static final int putao_order_common_margin_top=0x7f0800fb;
+        public static final int putao_order_detail_margin_top=0x7f0800a6;
         /**  打车 
  订单 
  打车 
  订单 
          */
-        public static final int putao_order_interval=0x7f0800c3;
-        public static final int putao_order_list_content_height=0x7f0800a6;
-        public static final int putao_order_list_foot_height=0x7f0800a4;
+        public static final int putao_order_interval=0x7f0800c2;
+        public static final int putao_order_list_content_height=0x7f0800a5;
+        public static final int putao_order_list_foot_height=0x7f0800a3;
         /**  提醒中心设置 
  提醒中心设置 
          */
-        public static final int putao_order_list_head_height=0x7f0800a3;
-        public static final int putao_order_list_head_margin=0x7f0800a5;
+        public static final int putao_order_list_head_height=0x7f0800a2;
+        public static final int putao_order_list_head_margin=0x7f0800a4;
         /**      订单相关 
      订单相关 
          */
-        public static final int putao_orderitem_contenttoppadding=0x7f0800a2;
-        public static final int putao_orderitem_movie_logoheight=0x7f080113;
+        public static final int putao_orderitem_contenttoppadding=0x7f0800a1;
+        public static final int putao_orderitem_movie_logoheight=0x7f080112;
         /**  	电影订单条目 
          */
-        public static final int putao_orderitem_movie_logowidth=0x7f080112;
-        public static final int putao_orderitem_movie_textcontent_marginbottom=0x7f080115;
-        public static final int putao_orderitem_movie_textcontent_margintop=0x7f080114;
-        public static final int putao_page_margin_width=0x7f0800a1;
-        public static final int putao_popwin_listview_item_leftrightpadding=0x7f080103;
+        public static final int putao_orderitem_movie_logowidth=0x7f080111;
+        public static final int putao_orderitem_movie_textcontent_marginbottom=0x7f080114;
+        public static final int putao_orderitem_movie_textcontent_margintop=0x7f080113;
+        public static final int putao_page_margin_width=0x7f0800a0;
+        public static final int putao_popwin_listview_item_leftrightpadding=0x7f080102;
         /**  查余额 
  查余额 
  查余额 
- 查余额 
          */
-        public static final int putao_query_charge_content_height=0x7f0800fe;
+        public static final int putao_query_charge_content_height=0x7f0800fd;
         /**  内容高度 
  内容高度 
  内容高度 
- 内容高度 
          */
-        public static final int putao_query_charge_money_text_size=0x7f0800ff;
+        public static final int putao_query_charge_money_text_size=0x7f0800fe;
+        /**  余额金额字体大小 
+ 充話費 
+         */
+        public static final int putao_recharge_edit_body_margin_top=0x7f08015d;
         /**  余额金额字体大小 
  充話費 
  余额金额字体大小 
  充話費 
          */
-        public static final int putao_recharge_edit_body_margin_top=0x7f08014f;
-        /**  余额金额字体大小 
- 充話費 
- 余额金额字体大小 
- 充話費 
-         */
-        public static final int putao_recharge_money_height=0x7f080100;
-        public static final int putao_remind_minwidth=0x7f080073;
-        public static final int putao_remind_padding=0x7f080072;
-        public static final int putao_remind_textsize=0x7f080071;
-        public static final int putao_search_bar_padding=0x7f080146;
-        public static final int putao_seat_init_height=0x7f080098;
-        public static final int putao_seat_init_width=0x7f080097;
+        public static final int putao_recharge_money_height=0x7f0800ff;
+        public static final int putao_remind_minwidth=0x7f080072;
+        public static final int putao_remind_padding=0x7f080071;
+        public static final int putao_remind_textsize=0x7f080070;
+        public static final int putao_search_bar_padding=0x7f080145;
+        public static final int putao_seat_init_height=0x7f080097;
+        public static final int putao_seat_init_width=0x7f080096;
         /**  电影 end 
          */
-        public static final int putao_seat_max_height=0x7f080093;
-        public static final int putao_seat_max_width=0x7f080095;
-        public static final int putao_seat_min_height=0x7f080094;
-        public static final int putao_seat_min_width=0x7f080096;
+        public static final int putao_seat_max_height=0x7f080092;
+        public static final int putao_seat_max_width=0x7f080094;
+        public static final int putao_seat_min_height=0x7f080093;
+        public static final int putao_seat_min_width=0x7f080095;
         public static final int putao_service_desc_text_size=0x7f080006;
         public static final int putao_service_text_size=0x7f080005;
-        public static final int putao_ss_between_offset=0x7f080144;
-        public static final int putao_ss_seat_check_size=0x7f080145;
+        public static final int putao_ss_between_offset=0x7f080143;
+        public static final int putao_ss_seat_check_size=0x7f080144;
         /**  电影 start 
  电影选座界面 
          */
-        public static final int putao_ss_seat_thum_size_h=0x7f080086;
-        public static final int putao_ss_seat_thum_size_w=0x7f080087;
+        public static final int putao_ss_seat_thum_size_h=0x7f080085;
+        public static final int putao_ss_seat_thum_size_w=0x7f080086;
         /**  间距规范 
  间距规范 
          */
-        public static final int putao_standard_search_and_button_height=0x7f080068;
+        public static final int putao_standard_search_and_button_height=0x7f080067;
         /**  状态栏高度 
  状态栏高度 
  状态栏高度 
- 状态栏高度 
          */
-        public static final int putao_status_bar_height=0x7f080075;
-        public static final int putao_subtitle_content=0x7f08012a;
+        public static final int putao_status_bar_height=0x7f080074;
+        public static final int putao_subtitle_content=0x7f080129;
         /**  首页tab的字体不随系统字体变化而变化 
          */
         public static final int putao_tab_height=0x7f080001;
@@ -2307,68 +2197,67 @@ containing a value of this type.
  滑动页面 
  Default screen margins, per the Android Design guidelines. 
          */
-        public static final int putao_tag_activity_horizontal_margin=0x7f080099;
-        public static final int putao_tag_bar_footerLineHeight=0x7f08009c;
-        public static final int putao_tag_bar_footerTriangleHeight=0x7f08009d;
-        public static final int putao_tag_bar_height_short=0x7f08009a;
-        public static final int putao_tag_bar_width=0x7f08009b;
-        public static final int putao_tag_divide_layout_margin_left=0x7f080077;
+        public static final int putao_tag_activity_horizontal_margin=0x7f080098;
+        public static final int putao_tag_bar_footerLineHeight=0x7f08009b;
+        public static final int putao_tag_bar_footerTriangleHeight=0x7f08009c;
+        public static final int putao_tag_bar_height_short=0x7f080099;
+        public static final int putao_tag_bar_width=0x7f08009a;
+        public static final int putao_tag_divide_layout_margin_left=0x7f080076;
         /**  add for COOLUI6.0 
  分组标签文字大小 
  add for COOLUI6.0 
  分组标签文字大小 
          */
-        public static final int putao_tag_group_text_size=0x7f080076;
+        public static final int putao_tag_group_text_size=0x7f080075;
         /**  分组标签高度 
          */
-        public static final int putao_tag_height=0x7f080143;
-        public static final int putao_taxi_assist_text_size=0x7f0800c0;
-        public static final int putao_taxi_confirm_send_layout_height=0x7f0800c1;
-        public static final int putao_taxi_default_margin=0x7f0800bd;
-        public static final int putao_taxi_default_padding=0x7f0800be;
+        public static final int putao_tag_height=0x7f080142;
+        public static final int putao_taxi_assist_text_size=0x7f0800bf;
+        public static final int putao_taxi_confirm_send_layout_height=0x7f0800c0;
+        public static final int putao_taxi_default_margin=0x7f0800bc;
+        public static final int putao_taxi_default_padding=0x7f0800bd;
         /**  生活 常用服务 
  打车 
  生活 常用服务 
  打车 
          */
-        public static final int putao_taxi_driver_info_height=0x7f0800bb;
-        public static final int putao_taxi_edit_addr_button_layout_height=0x7f08014d;
-        public static final int putao_taxi_edit_addr_tip_layout_height=0x7f08014c;
-        public static final int putao_taxi_history_list_item_height=0x7f0800c2;
-        public static final int putao_taxi_main_text_size=0x7f0800bf;
-        public static final int putao_taxt_distance_height=0x7f0800bc;
+        public static final int putao_taxi_driver_info_height=0x7f0800ba;
+        public static final int putao_taxi_edit_addr_button_layout_height=0x7f08014c;
+        public static final int putao_taxi_edit_addr_tip_layout_height=0x7f08014b;
+        public static final int putao_taxi_history_list_item_height=0x7f0800c1;
+        public static final int putao_taxi_main_text_size=0x7f0800be;
+        public static final int putao_taxt_distance_height=0x7f0800bb;
         /**  字體大小 
  字体标注为dp表示字体变量不变，标注为sp表示字体大小随系统变量改变 
  字體大小 
  字体标注为dp表示字体变量不变，标注为sp表示字体大小随系统变量改变 
          */
-        public static final int putao_text_primary_size=0x7f08007d;
-        public static final int putao_text_second_size=0x7f08007e;
-        public static final int putao_text_size_a=0x7f080080;
-        public static final int putao_text_size_b=0x7f080081;
-        public static final int putao_text_size_c=0x7f080082;
-        public static final int putao_text_size_d=0x7f080083;
-        public static final int putao_text_size_e=0x7f080084;
-        public static final int putao_text_size_i=0x7f080085;
-        public static final int putao_text_tertiary_size=0x7f08007f;
+        public static final int putao_text_primary_size=0x7f08007c;
+        public static final int putao_text_second_size=0x7f08007d;
+        public static final int putao_text_size_a=0x7f08007f;
+        public static final int putao_text_size_b=0x7f080080;
+        public static final int putao_text_size_c=0x7f080081;
+        public static final int putao_text_size_d=0x7f080082;
+        public static final int putao_text_size_e=0x7f080083;
+        public static final int putao_text_size_i=0x7f080084;
+        public static final int putao_text_tertiary_size=0x7f08007e;
         /**  通讯录+ 字体标准 
  通讯录+ 字体标准 
          */
         public static final int putao_title=0x7f080033;
         /**  自定義編輯框高度 
  标题栏高度 
- 标题栏高度 
          */
-        public static final int putao_title_bar_and_status_hight=0x7f080037;
-        public static final int putao_title_bar_back_arrow_widthandheight=0x7f08003b;
-        public static final int putao_title_bar_back_layout_width=0x7f08003a;
-        public static final int putao_title_bar_back_padding_left=0x7f08003c;
+        public static final int putao_title_bar_and_status_hight=0x7f080036;
+        public static final int putao_title_bar_back_arrow_widthandheight=0x7f08003a;
+        public static final int putao_title_bar_back_layout_width=0x7f080039;
+        public static final int putao_title_bar_back_padding_left=0x7f08003b;
         /**  putao_lhq modify for CoolUI6.0 end 
  头部、底部高度标准 
  putao_lhq modify for CoolUI6.0 end 
  putao_lhq modify for CoolUI6.0 end 
          */
-        public static final int putao_title_bar_bg_hight=0x7f080038;
+        public static final int putao_title_bar_bg_hight=0x7f080037;
         /**  putao_lhq modify for CoolUI6.0 start 
  <dimen name="putao_title_bar_hight">44dip</dimen> 
  putao_lhq modify for CoolUI6.0 start 
@@ -2378,1151 +2267,727 @@ containing a value of this type.
  <dimen name="putao_title_bar_hight">44dip</dimen> 
          */
         public static final int putao_title_bar_hight=0x7f080035;
-        public static final int putao_title_bar_padding_left=0x7f080036;
-        /**  顶部栏高度 
-         */
-        public static final int putao_top_bar_distance_height=0x7f080150;
         /**  流量验证码窗口 
          */
-        public static final int putao_traffic_window_body_height=0x7f080158;
-        public static final int putao_traffic_window_edittext_height=0x7f08015d;
-        public static final int putao_traffic_window_edittext_width=0x7f08015e;
-        public static final int putao_traffic_window_foot_button_height=0x7f08015a;
-        public static final int putao_traffic_window_foot_button_margin_middle=0x7f08015c;
-        public static final int putao_traffic_window_foot_button_width=0x7f08015b;
-        public static final int putao_traffic_window_foot_height=0x7f080159;
-        public static final int putao_traffic_window_title_size=0x7f08015f;
+        public static final int putao_traffic_window_body_height=0x7f080155;
+        public static final int putao_traffic_window_edittext_height=0x7f08015a;
+        public static final int putao_traffic_window_edittext_width=0x7f08015b;
+        public static final int putao_traffic_window_foot_button_height=0x7f080157;
+        public static final int putao_traffic_window_foot_button_margin_middle=0x7f080159;
+        public static final int putao_traffic_window_foot_button_width=0x7f080158;
+        public static final int putao_traffic_window_foot_height=0x7f080156;
+        public static final int putao_traffic_window_title_size=0x7f08015c;
         /**  个人信息页 
          */
-        public static final int putao_user_info_padding_left=0x7f080149;
+        public static final int putao_user_info_padding_left=0x7f080148;
         /**  个人信息页 
          */
-        public static final int putao_user_info_text_margin_left=0x7f0800ad;
-        public static final int putao_voucher_center_layout_width=0x7f0800d4;
-        public static final int putao_voucher_center_scrollview_width=0x7f0800d5;
-        public static final int putao_voucher_dialog_margin_right=0x7f0800d1;
-        public static final int putao_voucher_dialog_margin_top=0x7f0800d2;
-        public static final int putao_voucher_dialog_scrollview_height=0x7f0800d3;
-        public static final int putao_voucher_dialog_text_height=0x7f0800d7;
-        public static final int putao_voucher_dialog_title_height=0x7f0800d8;
-        public static final int putao_voucher_dialog_title_margintop=0x7f0800d9;
-        public static final int putao_voucher_dialog_title_width=0x7f0800d0;
+        public static final int putao_user_info_text_margin_left=0x7f0800ac;
+        public static final int putao_voucher_center_layout_width=0x7f0800d3;
+        public static final int putao_voucher_center_scrollview_width=0x7f0800d4;
+        public static final int putao_voucher_dialog_margin_right=0x7f0800d0;
+        public static final int putao_voucher_dialog_margin_top=0x7f0800d1;
+        public static final int putao_voucher_dialog_scrollview_height=0x7f0800d2;
+        public static final int putao_voucher_dialog_text_height=0x7f0800d6;
+        public static final int putao_voucher_dialog_title_height=0x7f0800d7;
+        public static final int putao_voucher_dialog_title_margintop=0x7f0800d8;
+        public static final int putao_voucher_dialog_title_width=0x7f0800cf;
         /**  优惠中心dialog 
  优惠中心dialog 
          */
-        public static final int putao_voucher_dialog_width=0x7f0800cd;
-        public static final int putao_voucher_fail_dialog_height=0x7f0800cf;
-        public static final int putao_voucher_layout_margin_top=0x7f0800d6;
-        public static final int putao_voucher_succ_dialog_height=0x7f0800ce;
+        public static final int putao_voucher_dialog_width=0x7f0800cc;
+        public static final int putao_voucher_fail_dialog_height=0x7f0800ce;
+        public static final int putao_voucher_layout_margin_top=0x7f0800d5;
+        public static final int putao_voucher_succ_dialog_height=0x7f0800cd;
         /**  水电煤 
          */
-        public static final int putao_water_eg_tag_text_size=0x7f080160;
-        public static final int putao_yellow_page_my_item_text=0x7f08013a;
+        public static final int putao_water_eg_tag_text_size=0x7f08015e;
+        public static final int putao_yellow_page_my_item_text=0x7f080139;
         /**  modify 125dp to 81dp for coolui6.0 
          */
-        public static final int putao_yp_detail_customs_height=0x7f08012f;
-        public static final int putao_yp_detail_customs_img_height=0x7f080047;
+        public static final int putao_yp_detail_customs_height=0x7f08012e;
+        public static final int putao_yp_detail_customs_img_height=0x7f080046;
         /**  modify 125dp to 81dp for coolui6.0 
          */
-        public static final int putao_yp_detail_customs_img_width=0x7f080046;
-        public static final int putao_yp_detail_head_height=0x7f080043;
-        public static final int putao_yp_detail_item_first_text_size=0x7f08012e;
-        public static final int putao_yp_detail_item_height=0x7f080044;
-        public static final int putao_yp_detail_item_image_size=0x7f080045;
+        public static final int putao_yp_detail_customs_img_width=0x7f080045;
+        public static final int putao_yp_detail_head_height=0x7f080042;
+        public static final int putao_yp_detail_item_first_text_size=0x7f08012d;
+        public static final int putao_yp_detail_item_height=0x7f080043;
+        public static final int putao_yp_detail_item_image_size=0x7f080044;
         /**  黄页plug 
  黄页plug 
          */
-        public static final int putao_yp_detail_move_min=0x7f080042;
-        public static final int putao_yp_detail_spaceitem_height=0x7f080107;
-        public static final int putao_yp_home_gridview_textsize=0x7f080048;
-        public static final int putao_yp_home_listview_item_margin_left=0x7f08004a;
-        public static final int putao_yp_home_listview_item_margin_right=0x7f08004b;
-        public static final int putao_yp_home_listview_textsize=0x7f08004c;
-        public static final int putao_yp_home_second_item_height=0x7f080049;
+        public static final int putao_yp_detail_move_min=0x7f080041;
+        public static final int putao_yp_detail_spaceitem_height=0x7f080106;
+        public static final int putao_yp_home_gridview_textsize=0x7f080047;
+        public static final int putao_yp_home_listview_item_margin_left=0x7f080049;
+        public static final int putao_yp_home_listview_item_margin_right=0x7f08004a;
+        public static final int putao_yp_home_listview_textsize=0x7f08004b;
+        public static final int putao_yp_home_second_item_height=0x7f080048;
         /**  黄页plug 
  黄页plug 
          */
-        public static final int putao_yp_item_left_padding=0x7f08012c;
-        public static final int putao_yp_item_right_padding=0x7f08012d;
+        public static final int putao_yp_item_left_padding=0x7f08012b;
+        public static final int putao_yp_item_right_padding=0x7f08012c;
     }
     public static final class drawable {
         public static final int classic_platform_corners_bg=0x7f020000;
-        public static final int ic_launcher=0x7f020001;
-        public static final int icon_movie_location=0x7f020002;
-        public static final int icon_movie_location_green=0x7f020003;
-        public static final int icon_movie_location_p=0x7f020004;
-        public static final int icon_movie_location_selector=0x7f020005;
-        public static final int logo_qq=0x7f020006;
-        public static final int logo_qzone=0x7f020007;
-        public static final int logo_sinaweibo=0x7f020008;
-        public static final int logo_wechat=0x7f020009;
-        public static final int logo_wechatmoments=0x7f02000a;
-        public static final int putao_a0114=0x7f02000b;
-        public static final int putao_a0501=0x7f02000c;
-        public static final int putao_a0502=0x7f02000d;
-        public static final int putao_a0503=0x7f02000e;
-        public static final int putao_a0504=0x7f02000f;
-        public static final int putao_a0505=0x7f020010;
-        public static final int putao_a0506=0x7f020011;
-        public static final int putao_a0507=0x7f020012;
-        public static final int putao_a0508=0x7f020013;
-        public static final int putao_a0509=0x7f020014;
-        public static final int putao_a0510=0x7f020015;
-        public static final int putao_a0511=0x7f020016;
-        public static final int putao_a0512=0x7f020017;
-        public static final int putao_a0513=0x7f020018;
-        public static final int putao_a0514=0x7f020019;
-        public static final int putao_a0515=0x7f02001a;
-        public static final int putao_a0516=0x7f02001b;
-        public static final int putao_a0517=0x7f02001c;
-        public static final int putao_a0518=0x7f02001d;
-        public static final int putao_a0519=0x7f02001e;
-        public static final int putao_a0521=0x7f02001f;
-        public static final int putao_a0522=0x7f020020;
-        public static final int putao_a0523=0x7f020021;
-        public static final int putao_a0524=0x7f020022;
-        public static final int putao_a0525=0x7f020023;
-        public static final int putao_a0526=0x7f020024;
-        public static final int putao_a0527=0x7f020025;
-        public static final int putao_a0528=0x7f020026;
-        public static final int putao_a0529=0x7f020027;
-        public static final int putao_a0530=0x7f020028;
-        public static final int putao_a0531=0x7f020029;
-        public static final int putao_a0532=0x7f02002a;
-        public static final int putao_a0533=0x7f02002b;
-        public static final int putao_a0534=0x7f02002c;
-        public static final int putao_a0535=0x7f02002d;
-        public static final int putao_aboutus_logo=0x7f02002e;
-        public static final int putao_arrow_left=0x7f02002f;
-        public static final int putao_arrow_left_press=0x7f020030;
-        public static final int putao_arrow_left_selector=0x7f020031;
-        public static final int putao_arrow_right=0x7f020032;
-        public static final int putao_arrow_right_press=0x7f020033;
-        public static final int putao_arrow_right_selector=0x7f020034;
-        public static final int putao_banner_blackbg=0x7f020035;
-        public static final int putao_bg_card_fujin=0x7f020036;
-        public static final int putao_bg_card_jipiao=0x7f020037;
-        public static final int putao_bg_card_kuaidi=0x7f020038;
-        public static final int putao_bg_card_shuidianmei=0x7f020039;
-        public static final int putao_bg_card_yindao=0x7f02003a;
-        public static final int putao_bg_cursor=0x7f02003b;
-        public static final int putao_bg_date_select=0x7f02003c;
-        public static final int putao_bg_feedback_add_img=0x7f02003d;
-        public static final int putao_bg_hotel_checkin=0x7f02003e;
-        public static final int putao_bg_input_field=0x7f02003f;
-        public static final int putao_bg_list_card=0x7f020040;
-        public static final int putao_bg_list_tips=0x7f020041;
-        public static final int putao_bg_loading=0x7f020042;
-        public static final int putao_bg_loading_logo=0x7f020043;
-        public static final int putao_bg_pay_selected=0x7f020044;
-        public static final int putao_bg_pic_dianying=0x7f020045;
-        public static final int putao_bg_select_pay_selector=0x7f020046;
-        public static final int putao_bg_state_blue02=0x7f020047;
-        public static final int putao_bg_state_green=0x7f020048;
-        public static final int putao_bg_state_orange=0x7f020049;
-        public static final int putao_bg_state_orange02=0x7f02004a;
-        public static final int putao_bg_state_red=0x7f02004b;
-        public static final int putao_bg_white_p=0x7f02004c;
-        public static final int putao_bg_white_right_angle=0x7f02004d;
-        public static final int putao_bg_white_select=0x7f02004e;
-        public static final int putao_bg_yellow_item_single=0x7f02004f;
-        public static final int putao_bg_youhuiquan_qiangquan=0x7f020050;
-        public static final int putao_bg_youhuiquan_wuquan=0x7f020051;
-        public static final int putao_btn_app=0x7f020052;
-        public static final int putao_btn_buy=0x7f020053;
-        public static final int putao_btn_buy_disable=0x7f020054;
-        public static final int putao_btn_buy_p=0x7f020055;
-        public static final int putao_btn_list_green=0x7f020056;
-        public static final int putao_btn_presell=0x7f020057;
-        public static final int putao_btn_presell_p=0x7f020058;
-        public static final int putao_btn_radio_holo=0x7f020059;
-        public static final int putao_bubble_bg_red=0x7f02005a;
-        public static final int putao_bubble_bg_red_big=0x7f02005b;
-        public static final int putao_bus_swap_selector=0x7f02005c;
-        public static final int putao_calling_dzdp=0x7f02005d;
-        public static final int putao_card_all_show=0x7f02005e;
-        public static final int putao_card_chaxun_cx=0x7f02005f;
-        public static final int putao_card_fujin_gd=0x7f020060;
-        public static final int putao_card_kuaidi_ck=0x7f020061;
-        public static final int putao_card_kuaidi_ks=0x7f020062;
-        public static final int putao_card_kuaidi_lx=0x7f020063;
-        public static final int putao_card_kuaidi_ty=0x7f020064;
-        public static final int putao_card_order_cancel=0x7f020065;
-        public static final int putao_card_order_pay=0x7f020066;
-        public static final int putao_card_tuangou_sqtk=0x7f020067;
-        public static final int putao_card_wangfan_dc=0x7f020068;
-        public static final int putao_category_item_mask=0x7f020069;
-        public static final int putao_chaweizhang=0x7f02006a;
-        public static final int putao_chaweizhang_btn_selector=0x7f02006b;
-        public static final int putao_classification_search=0x7f02006c;
-        public static final int putao_click_btn_bg=0x7f02006d;
-        public static final int putao_comm_radio_bg2_selector=0x7f02006e;
-        public static final int putao_comm_radio_bg_selector=0x7f02006f;
-        public static final int putao_comm_services_selector=0x7f020070;
-        public static final int putao_dialog_gridview_item_selector=0x7f020071;
-        public static final int putao_dizhixuanze_edit=0x7f020072;
-        public static final int putao_dizhixuanze_moren=0x7f020073;
-        public static final int putao_edit_bg_grey=0x7f020074;
-        public static final int putao_edit_bg_selector=0x7f020075;
-        public static final int putao_express_history_btn_bg=0x7f020076;
-        public static final int putao_found_praise=0x7f020077;
-        public static final int putao_found_praise_bg=0x7f020078;
-        public static final int putao_fuwujingxuan_jiage=0x7f020079;
-        public static final int putao_fuwurenyuan_morentouxiang=0x7f02007a;
-        public static final int putao_goodsdetails_back=0x7f02007b;
-        public static final int putao_goodsdetails_more=0x7f02007c;
-        public static final int putao_goodsdetails_preferential=0x7f02007d;
-        public static final int putao_groupbuy_icon_quick_all_s=0x7f02007e;
-        public static final int putao_groupbuy_icon_quick_cxdp_s=0x7f02007f;
-        public static final int putao_groupbuy_icon_quick_gw_s=0x7f020080;
-        public static final int putao_groupbuy_icon_quick_hg_s=0x7f020081;
-        public static final int putao_groupbuy_icon_quick_jd_s=0x7f020082;
-        public static final int putao_groupbuy_icon_quick_kdy_s=0x7f020083;
-        public static final int putao_groupbuy_icon_quick_lr_s=0x7f020084;
-        public static final int putao_groupbuy_icon_quick_ms_s=0x7f020085;
-        public static final int putao_groupbuy_icon_quick_sh_s=0x7f020086;
-        public static final int putao_groupbuy_icon_quick_wl_s=0x7f020087;
-        public static final int putao_groupbuy_icon_quick_wq_s=0x7f020088;
-        public static final int putao_groupbuy_icon_quick_yl_s=0x7f020089;
-        public static final int putao_groupbuy_icon_quick_zl_s=0x7f02008a;
-        public static final int putao_home_white=0x7f02008b;
-        public static final int putao_homepage_search=0x7f02008c;
-        public static final int putao_ic_launcher=0x7f02008d;
-        public static final int putao_icon_58=0x7f02008e;
-        public static final int putao_icon_account_password=0x7f02008f;
-        public static final int putao_icon_account_phone=0x7f020090;
-        public static final int putao_icon_arrow=0x7f020091;
-        public static final int putao_icon_back=0x7f020092;
-        public static final int putao_icon_back_movie=0x7f020093;
-        public static final int putao_icon_back_p=0x7f020094;
-        public static final int putao_icon_back_selector=0x7f020095;
-        public static final int putao_icon_back_white=0x7f020096;
-        public static final int putao_icon_banner_yuanquan01=0x7f020097;
-        public static final int putao_icon_banner_yuanquan02=0x7f020098;
-        public static final int putao_icon_btn_green=0x7f020099;
-        public static final int putao_icon_btn_green_d=0x7f02009a;
-        public static final int putao_icon_btn_green_p=0x7f02009b;
-        public static final int putao_icon_btn_id_chazhi=0x7f02009c;
-        public static final int putao_icon_btn_id_dian_b=0x7f02009d;
-        public static final int putao_icon_btn_id_dianying=0x7f02009e;
-        public static final int putao_icon_btn_id_huafei_a=0x7f02009f;
-        public static final int putao_icon_btn_id_huafei_b=0x7f0200a0;
-        public static final int putao_icon_btn_id_huafei_c=0x7f0200a1;
-        public static final int putao_icon_btn_id_huoche_a=0x7f0200a2;
-        public static final int putao_icon_btn_id_huochepiao=0x7f0200a3;
-        public static final int putao_icon_btn_id_jiudian=0x7f0200a4;
-        public static final int putao_icon_btn_id_kuaidi=0x7f0200a5;
-        public static final int putao_icon_btn_id_mei_b=0x7f0200a6;
-        public static final int putao_icon_btn_id_shui_b=0x7f0200a7;
-        public static final int putao_icon_btn_id_shuidianmei=0x7f0200a8;
-        public static final int putao_icon_btn_id_tongduiquan_a=0x7f0200a9;
-        public static final int putao_icon_btn_id_youxi=0x7f0200aa;
-        public static final int putao_icon_btn_id_youxi_dy=0x7f0200ab;
-        public static final int putao_icon_btn_id_youxi_qq=0x7f0200ac;
-        public static final int putao_icon_btn_id_youxi_sy=0x7f0200ad;
-        public static final int putao_icon_btn_press=0x7f0200ae;
-        public static final int putao_icon_btn_white=0x7f0200af;
-        public static final int putao_icon_button=0x7f0200b0;
-        public static final int putao_icon_button_p=0x7f0200b1;
-        public static final int putao_icon_car=0x7f0200b2;
-        public static final int putao_icon_car_cor=0x7f0200b3;
-        public static final int putao_icon_car_edit=0x7f0200b4;
-        public static final int putao_icon_category_indicator=0x7f0200b5;
-        public static final int putao_icon_cateory_leftline=0x7f0200b6;
-        public static final int putao_icon_cateory_line=0x7f0200b7;
-        public static final int putao_icon_cateory_rightline=0x7f0200b8;
-        public static final int putao_icon_chaweizhang=0x7f0200b9;
-        public static final int putao_icon_chaweizhang_p=0x7f0200ba;
-        public static final int putao_icon_check_box=0x7f0200bb;
-        public static final int putao_icon_checkbox=0x7f0200bc;
-        public static final int putao_icon_checkbox_p=0x7f0200bd;
-        public static final int putao_icon_checkbox_s=0x7f0200be;
-        public static final int putao_icon_checkbox_s_p=0x7f0200bf;
-        public static final int putao_icon_ckd_back=0x7f0200c0;
-        public static final int putao_icon_comment_delete=0x7f0200c1;
-        public static final int putao_icon_comment_delete_p=0x7f0200c2;
-        public static final int putao_icon_comment_delete_selector=0x7f0200c3;
-        public static final int putao_icon_comment_warning=0x7f0200c4;
-        public static final int putao_icon_contacts=0x7f0200c5;
-        public static final int putao_icon_contactthemerchant=0x7f0200c6;
-        public static final int putao_icon_contactthemerchant_p=0x7f0200c7;
-        public static final int putao_icon_contactthemerchant_selector=0x7f0200c8;
-        public static final int putao_icon_coolui_empty=0x7f0200c9;
-        public static final int putao_icon_cooperate_gyxj=0x7f0200ca;
-        public static final int putao_icon_denglu=0x7f0200cb;
-        public static final int putao_icon_dianying_add=0x7f0200cc;
-        public static final int putao_icon_dianying_add_d=0x7f0200cd;
-        public static final int putao_icon_dianying_add_selector=0x7f0200ce;
-        public static final int putao_icon_dianying_bg=0x7f0200cf;
-        public static final int putao_icon_dianying_lessen=0x7f0200d0;
-        public static final int putao_icon_dianying_lessen_d=0x7f0200d1;
-        public static final int putao_icon_dianying_lessen_selector=0x7f0200d2;
-        public static final int putao_icon_doubt=0x7f0200d3;
-        public static final int putao_icon_dy_l=0x7f0200d4;
-        public static final int putao_icon_dy_r=0x7f0200d5;
-        public static final int putao_icon_error=0x7f0200d6;
-        public static final int putao_icon_feedback_add=0x7f0200d7;
-        public static final int putao_icon_feedback_add_press=0x7f0200d8;
-        public static final int putao_icon_home_close=0x7f0200d9;
-        public static final int putao_icon_home_signin=0x7f0200da;
-        public static final int putao_icon_hotel_calendar=0x7f0200db;
-        public static final int putao_icon_hotel_city=0x7f0200dc;
-        public static final int putao_icon_hotel_pay_securitycode=0x7f0200dd;
-        public static final int putao_icon_hotel_pay_validity=0x7f0200de;
-        public static final int putao_icon_hotel_position=0x7f0200df;
-        public static final int putao_icon_hotel_position_p=0x7f0200e0;
-        public static final int putao_icon_hotel_price=0x7f0200e1;
-        public static final int putao_icon_hotel_serch=0x7f0200e2;
-        public static final int putao_icon_jinggao=0x7f0200e3;
-        public static final int putao_icon_jiudian_cx=0x7f0200e4;
-        public static final int putao_icon_jiudian_dz=0x7f0200e5;
-        public static final int putao_icon_jiudian_jianjie=0x7f0200e6;
-        public static final int putao_icon_jiudian_kd=0x7f0200e7;
-        public static final int putao_icon_jiudian_lc=0x7f0200e8;
-        public static final int putao_icon_jiudian_mj=0x7f0200e9;
-        public static final int putao_icon_jiudian_qt=0x7f0200ea;
-        public static final int putao_icon_jiudian_wy=0x7f0200eb;
-        public static final int putao_icon_jiudian_zc=0x7f0200ec;
-        public static final int putao_icon_kuaidi_shoudiantong=0x7f0200ed;
-        public static final int putao_icon_kuaidi_shoudiantong_press=0x7f0200ee;
-        public static final int putao_icon_list_cancel=0x7f0200ef;
-        public static final int putao_icon_list_down=0x7f0200f0;
-        public static final int putao_icon_list_packup=0x7f0200f1;
-        public static final int putao_icon_list_show=0x7f0200f2;
-        public static final int putao_icon_list_tips=0x7f0200f3;
-        public static final int putao_icon_list_up=0x7f0200f4;
-        public static final int putao_icon_logo_dazong=0x7f0200f5;
-        public static final int putao_icon_logo_dianhua=0x7f0200f6;
-        public static final int putao_icon_logo_gaode=0x7f0200f7;
-        public static final int putao_icon_logo_hot=0x7f0200f8;
-        public static final int putao_icon_logo_hui=0x7f0200f9;
-        public static final int putao_icon_logo_placeholder=0x7f0200fa;
-        public static final int putao_icon_logo_recomment=0x7f0200fb;
-        public static final int putao_icon_logo_saomiao=0x7f0200fc;
-        public static final int putao_icon_logo_sougou=0x7f0200fd;
-        public static final int putao_icon_logo_tongcheng=0x7f0200fe;
-        public static final int putao_icon_logo_tuan=0x7f0200ff;
-        public static final int putao_icon_marker_finish=0x7f020100;
-        public static final int putao_icon_marker_red=0x7f020101;
-        public static final int putao_icon_marker_red_select=0x7f020102;
-        public static final int putao_icon_marker_star=0x7f020103;
-        public static final int putao_icon_marker_swap=0x7f020104;
-        public static final int putao_icon_marker_white=0x7f020105;
-        public static final int putao_icon_me_message_orders=0x7f020106;
-        public static final int putao_icon_me_message_remind=0x7f020107;
-        public static final int putao_icon_me_orders_cinematicket=0x7f020108;
-        public static final int putao_icon_me_orders_game=0x7f020109;
-        public static final int putao_icon_me_orders_hotel=0x7f02010a;
-        public static final int putao_icon_me_orders_o2o=0x7f02010b;
-        public static final int putao_icon_me_orders_phonefare=0x7f02010c;
-        public static final int putao_icon_me_orders_phoneflow=0x7f02010d;
-        public static final int putao_icon_me_orders_qq=0x7f02010e;
-        public static final int putao_icon_me_orders_trainticket=0x7f02010f;
-        public static final int putao_icon_me_orders_utilities=0x7f020110;
-        public static final int putao_icon_morendizhi=0x7f020111;
-        public static final int putao_icon_movie_youhui=0x7f020112;
-        public static final int putao_icon_order_chf=0x7f020113;
-        public static final int putao_icon_order_dy=0x7f020114;
-        public static final int putao_icon_order_hcp=0x7f020115;
-        public static final int putao_icon_order_jd=0x7f020116;
-        public static final int putao_icon_order_kd=0x7f020117;
-        public static final int putao_icon_order_sdm=0x7f020118;
-        public static final int putao_icon_order_sr=0x7f020119;
-        public static final int putao_icon_order_tg=0x7f02011a;
-        public static final int putao_icon_order_wz=0x7f02011b;
-        public static final int putao_icon_order_yx=0x7f02011c;
-        public static final int putao_icon_paly=0x7f02011d;
-        public static final int putao_icon_paly_p=0x7f02011e;
-        public static final int putao_icon_paly_selector=0x7f02011f;
-        public static final int putao_icon_pay_wxzf=0x7f020120;
-        public static final int putao_icon_pay_zfbzf=0x7f020121;
-        public static final int putao_icon_phone=0x7f020122;
-        public static final int putao_icon_plane_hangban=0x7f020123;
-        public static final int putao_icon_plane_hangban_p=0x7f020124;
-        public static final int putao_icon_plane_hangban_selector=0x7f020125;
-        public static final int putao_icon_plane_jiage=0x7f020126;
-        public static final int putao_icon_plane_jiage_p=0x7f020127;
-        public static final int putao_icon_plane_jiage_selector=0x7f020128;
-        public static final int putao_icon_plane_switchover=0x7f020129;
-        public static final int putao_icon_plane_tejia=0x7f02012a;
-        public static final int putao_icon_plane_tejia_p=0x7f02012b;
-        public static final int putao_icon_plane_tejia_selector=0x7f02012c;
-        public static final int putao_icon_press=0x7f02012d;
-        public static final int putao_icon_prompt=0x7f02012e;
-        public static final int putao_icon_prompt_s=0x7f02012f;
-        public static final int putao_icon_quick_1hzc_s=0x7f020130;
-        public static final int putao_icon_quick_adc_s=0x7f020131;
-        public static final int putao_icon_quick_add=0x7f020132;
-        public static final int putao_icon_quick_ayb_s=0x7f020133;
-        public static final int putao_icon_quick_badacaixi_s=0x7f020134;
-        public static final int putao_icon_quick_bj=0x7f020135;
-        public static final int putao_icon_quick_blsh_s=0x7f020136;
-        public static final int putao_icon_quick_caipiao_s=0x7f020137;
-        public static final int putao_icon_quick_cdt_s=0x7f020138;
-        public static final int putao_icon_quick_cgj_s=0x7f020139;
-        public static final int putao_icon_quick_chf=0x7f02013a;
-        public static final int putao_icon_quick_chf_s=0x7f02013b;
-        public static final int putao_icon_quick_ckd_s=0x7f02013c;
-        public static final int putao_icon_quick_cl_s=0x7f02013d;
-        public static final int putao_icon_quick_cll=0x7f02013e;
-        public static final int putao_icon_quick_cll_s=0x7f02013f;
-        public static final int putao_icon_quick_cwz_s=0x7f020140;
-        public static final int putao_icon_quick_cxdp_s=0x7f020141;
-        public static final int putao_icon_quick_cye_s=0x7f020142;
-        public static final int putao_icon_quick_cyys_s=0x7f020143;
-        public static final int putao_icon_quick_daikuan_s=0x7f020144;
-        public static final int putao_icon_quick_daodianxiche_s=0x7f020145;
-        public static final int putao_icon_quick_dcxms_s=0x7f020146;
-        public static final int putao_icon_quick_dd=0x7f020147;
-        public static final int putao_icon_quick_dd_s=0x7f020148;
-        public static final int putao_icon_quick_ddmj_s=0x7f020149;
-        public static final int putao_icon_quick_diandao_s=0x7f02014a;
-        public static final int putao_icon_quick_dingdangkuaiyao_s=0x7f02014b;
-        public static final int putao_icon_quick_dj_s=0x7f02014c;
-        public static final int putao_icon_quick_dy=0x7f02014d;
-        public static final int putao_icon_quick_dy_s=0x7f02014e;
-        public static final int putao_icon_quick_ejj_s=0x7f02014f;
-        public static final int putao_icon_quick_ershouche_s=0x7f020150;
-        public static final int putao_icon_quick_es_s=0x7f020151;
-        public static final int putao_icon_quick_gh=0x7f020152;
-        public static final int putao_icon_quick_gh_s=0x7f020153;
-        public static final int putao_icon_quick_gjyxc_s=0x7f020154;
-        public static final int putao_icon_quick_hcp=0x7f020155;
-        public static final int putao_icon_quick_hcp_s=0x7f020156;
-        public static final int putao_icon_quick_hg_s=0x7f020157;
-        public static final int putao_icon_quick_hlj_s=0x7f020158;
-        public static final int putao_icon_quick_hqs_s=0x7f020159;
-        public static final int putao_icon_quick_huazhuangzaoxing_s=0x7f02015a;
-        public static final int putao_icon_quick_jd=0x7f02015b;
-        public static final int putao_icon_quick_jd_s=0x7f02015c;
-        public static final int putao_icon_quick_jiadianqingxi_s=0x7f02015d;
-        public static final int putao_icon_quick_jiadianweixiu_s=0x7f02015e;
-        public static final int putao_icon_quick_jianjinganmo_s=0x7f02015f;
-        public static final int putao_icon_quick_jiatingbaojie_s=0x7f020160;
-        public static final int putao_icon_quick_jiatingtaocan_s=0x7f020161;
-        public static final int putao_icon_quick_jingxuan=0x7f020162;
-        public static final int putao_icon_quick_jiyoujilv_s=0x7f020163;
-        public static final int putao_icon_quick_jkd=0x7f020164;
-        public static final int putao_icon_quick_jkd_s=0x7f020165;
-        public static final int putao_icon_quick_jp=0x7f020166;
-        public static final int putao_icon_quick_jp_s=0x7f020167;
-        public static final int putao_icon_quick_jz=0x7f020168;
-        public static final int putao_icon_quick_jz_s=0x7f020169;
-        public static final int putao_icon_quick_jzbj=0x7f02016a;
-        public static final int putao_icon_quick_kd_s=0x7f02016b;
-        public static final int putao_icon_quick_kld=0x7f02016c;
-        public static final int putao_icon_quick_kld_s=0x7f02016d;
-        public static final int putao_icon_quick_kongtiaobaoyang_s=0x7f02016e;
-        public static final int putao_icon_quick_ktv_s=0x7f02016f;
-        public static final int putao_icon_quick_kyp_s=0x7f020170;
-        public static final int putao_icon_quick_lwyd_s=0x7f020171;
-        public static final int putao_icon_quick_ly_s=0x7f020172;
-        public static final int putao_icon_quick_mianbumeirong_s=0x7f020173;
-        public static final int putao_icon_quick_more=0x7f020174;
-        public static final int putao_icon_quick_ms_s=0x7f020175;
-        public static final int putao_icon_quick_mscp_s=0x7f020176;
-        public static final int putao_icon_quick_pacx_s=0x7f020177;
-        public static final int putao_icon_quick_qichebaoyang=0x7f020178;
-        public static final int putao_icon_quick_qq=0x7f020179;
-        public static final int putao_icon_quick_qq_s=0x7f02017a;
-        public static final int putao_icon_quick_quanshenanmo=0x7f02017b;
-        public static final int putao_icon_quick_quanshenanmo_s=0x7f02017c;
-        public static final int putao_icon_quick_quanshenmeirong_s=0x7f02017d;
-        public static final int putao_icon_quick_r360_s=0x7f02017e;
-        public static final int putao_icon_quick_replace=0x7f02017f;
-        public static final int putao_icon_quick_sdm=0x7f020180;
-        public static final int putao_icon_quick_sdm_s=0x7f020181;
-        public static final int putao_icon_quick_sfjj_s=0x7f020182;
-        public static final int putao_icon_quick_sh_s=0x7f020183;
-        public static final int putao_icon_quick_shangmenxiyi_s=0x7f020184;
-        public static final int putao_icon_quick_shenduyanghu_s=0x7f020185;
-        public static final int putao_icon_quick_sr_s=0x7f020186;
-        public static final int putao_icon_quick_tbs_s=0x7f020187;
-        public static final int putao_icon_quick_tbt_s=0x7f020188;
-        public static final int putao_icon_quick_tg=0x7f020189;
-        public static final int putao_icon_quick_tg_s=0x7f02018a;
-        public static final int putao_icon_quick_tydd=0x7f02018b;
-        public static final int putao_icon_quick_wmdc=0x7f02018c;
-        public static final int putao_icon_quick_wmdc_s=0x7f02018d;
-        public static final int putao_icon_quick_wq_s=0x7f02018e;
-        public static final int putao_icon_quick_xh_s=0x7f02018f;
-        public static final int putao_icon_quick_xmj_s=0x7f020190;
-        public static final int putao_icon_quick_yhq_s=0x7f020191;
-        public static final int putao_icon_quick_yjz_s=0x7f020192;
-        public static final int putao_icon_quick_yl_s=0x7f020193;
-        public static final int putao_icon_quick_ylpw_s=0x7f020194;
-        public static final int putao_icon_quick_yx_s=0x7f020195;
-        public static final int putao_icon_quick_yxw_s=0x7f020196;
-        public static final int putao_icon_quick_yxyk_s=0x7f020197;
-        public static final int putao_icon_quick_zbss_s=0x7f020198;
-        public static final int putao_icon_quick_zbwl_s=0x7f020199;
-        public static final int putao_icon_quick_zf_s=0x7f02019a;
-        public static final int putao_icon_quick_zp_s=0x7f02019b;
-        public static final int putao_icon_redenvelope=0x7f02019c;
-        public static final int putao_icon_search_58=0x7f02019d;
-        public static final int putao_icon_search_del_h=0x7f02019e;
-        public static final int putao_icon_search_more=0x7f02019f;
-        public static final int putao_icon_search_record=0x7f0201a0;
-        public static final int putao_icon_search_select=0x7f0201a1;
-        public static final int putao_icon_select=0x7f0201a2;
-        public static final int putao_icon_shadow=0x7f0201a3;
-        public static final int putao_icon_share_coupons=0x7f0201a4;
-        public static final int putao_icon_shezhimimatixing=0x7f0201a5;
-        public static final int putao_icon_star_1=0x7f0201a6;
-        public static final int putao_icon_star_2=0x7f0201a7;
-        public static final int putao_icon_star_large_1=0x7f0201a8;
-        public static final int putao_icon_star_large_2=0x7f0201a9;
-        public static final int putao_icon_star_small_1=0x7f0201aa;
-        public static final int putao_icon_star_small_2=0x7f0201ab;
-        public static final int putao_icon_star_small_s_1=0x7f0201ac;
-        public static final int putao_icon_star_small_s_2=0x7f0201ad;
-        public static final int putao_icon_taxi_bg=0x7f0201ae;
-        public static final int putao_icon_taxi_car=0x7f0201af;
-        public static final int putao_icon_taxi_company=0x7f0201b0;
-        public static final int putao_icon_taxi_company_p=0x7f0201b1;
-        public static final int putao_icon_taxi_delete=0x7f0201b2;
-        public static final int putao_icon_taxi_dianhua=0x7f0201b3;
-        public static final int putao_icon_taxi_didi=0x7f0201b4;
-        public static final int putao_icon_taxi_end=0x7f0201b5;
-        public static final int putao_icon_taxi_history=0x7f0201b6;
-        public static final int putao_icon_taxi_home=0x7f0201b7;
-        public static final int putao_icon_taxi_home_p=0x7f0201b8;
-        public static final int putao_icon_taxi_kuaidi=0x7f0201b9;
-        public static final int putao_icon_taxi_me=0x7f0201ba;
-        public static final int putao_icon_taxi_search=0x7f0201bb;
-        public static final int putao_icon_taxi_show=0x7f0201bc;
-        public static final int putao_icon_taxi_star=0x7f0201bd;
-        public static final int putao_icon_taxi_uber=0x7f0201be;
-        public static final int putao_icon_title_cancel=0x7f0201bf;
-        public static final int putao_icon_title_cancel_selector=0x7f0201c0;
-        public static final int putao_icon_title_cx=0x7f0201c1;
-        public static final int putao_icon_title_cx_p=0x7f0201c2;
-        public static final int putao_icon_title_cx_selector=0x7f0201c3;
-        public static final int putao_icon_title_map=0x7f0201c4;
-        public static final int putao_icon_title_search_white=0x7f0201c5;
-        public static final int putao_icon_title_share=0x7f0201c6;
-        public static final int putao_icon_title_share_p=0x7f0201c7;
-        public static final int putao_icon_title_share_selector=0x7f0201c8;
-        public static final int putao_icon_title_tg=0x7f0201c9;
-        public static final int putao_icon_transaction_error=0x7f0201ca;
-        public static final int putao_icon_transaction_success=0x7f0201cb;
-        public static final int putao_icon_view_order=0x7f0201cc;
-        public static final int putao_icon_weizhang_add=0x7f0201cd;
-        public static final int putao_icon_weizhang_car=0x7f0201ce;
-        public static final int putao_icon_weizhang_fakuan=0x7f0201cf;
-        public static final int putao_icon_weizhang_none=0x7f0201d0;
-        public static final int putao_icon_weizhang_weizhang=0x7f0201d1;
-        public static final int putao_icon_xiangxidizhi=0x7f0201d2;
-        public static final int putao_icon_xianzhishijian=0x7f0201d3;
-        public static final int putao_icon_youhuiquan_dianjichakan=0x7f0201d4;
-        public static final int putao_icon_youhuiquan_guanbi=0x7f0201d5;
-        public static final int putao_icon_youhuiquan_lijishiyong=0x7f0201d6;
-        public static final int putao_icon_youhuiquan_qiangquan=0x7f0201d7;
-        public static final int putao_icon_youhuiquan_remen=0x7f0201d8;
-        public static final int putao_icon_youhuiquan_tuijian=0x7f0201d9;
-        public static final int putao_icon_youhuiquan_wuquan=0x7f0201da;
-        public static final int putao_icon_yuyueren=0x7f0201db;
-        public static final int putao_icon_zuobiao=0x7f0201dc;
-        public static final int putao_ima_home_funnel=0x7f0201dd;
-        public static final int putao_index_tips_bg=0x7f0201de;
-        public static final int putao_list_item_btn_selector=0x7f0201df;
-        public static final int putao_list_selecter_s=0x7f0201e0;
-        public static final int putao_list_selecter_transparent=0x7f0201e1;
-        public static final int putao_list_white_transblack_selector=0x7f0201e2;
-        public static final int putao_listview_img_expand=0x7f0201e3;
-        public static final int putao_listview_item_expand=0x7f0201e4;
-        public static final int putao_listview_item_selector=0x7f0201e5;
-        public static final int putao_loading_animation=0x7f0201e6;
-        public static final int putao_mask=0x7f0201e7;
-        public static final int putao_menu_acc_headimg_logined=0x7f0201e8;
-        public static final int putao_menu_acc_headimg_nologin=0x7f0201e9;
-        public static final int putao_menu_item_icon_aboutus=0x7f0201ea;
-        public static final int putao_menu_item_icon_act=0x7f0201eb;
-        public static final int putao_menu_item_icon_meituanorder=0x7f0201ec;
-        public static final int putao_menu_item_icon_order=0x7f0201ed;
-        public static final int putao_menu_item_icon_remindset=0x7f0201ee;
-        public static final int putao_menu_item_icon_tixing=0x7f0201ef;
-        public static final int putao_movie_list_buy_selector=0x7f0201f0;
-        public static final int putao_movie_list_presell_selector=0x7f0201f1;
-        public static final int putao_movie_presell=0x7f0201f2;
-        public static final int putao_mydiscount_bg=0x7f0201f3;
-        public static final int putao_mydiscount_bg2=0x7f0201f4;
-        public static final int putao_mydiscount_yiguoqi=0x7f0201f5;
-        public static final int putao_mydiscount_yishiyong=0x7f0201f6;
-        public static final int putao_open_button_selector=0x7f0201f7;
-        public static final int putao_opilist_moviedtl_bg=0x7f0201f8;
-        public static final int putao_opilist_moviedtl_bg_n=0x7f0201f9;
-        public static final int putao_opilist_moviedtl_bg_s=0x7f0201fa;
-        public static final int putao_order_button=0x7f0201fb;
-        public static final int putao_order_clock=0x7f0201fc;
-        public static final int putao_order_flow_applyforrefund=0x7f0201fd;
-        public static final int putao_order_flow_applyforrefund_gray=0x7f0201fe;
-        public static final int putao_order_flow_chufa=0x7f0201ff;
-        public static final int putao_order_flow_chufa_gray=0x7f020200;
-        public static final int putao_order_flow_chulizhong=0x7f020201;
-        public static final int putao_order_flow_daizhifu=0x7f020202;
-        public static final int putao_order_flow_dingdanqueren=0x7f020203;
-        public static final int putao_order_flow_dingdanshibai=0x7f020204;
-        public static final int putao_order_flow_dingdanshouli=0x7f020205;
-        public static final int putao_order_flow_dingdanshouli_gray=0x7f020206;
-        public static final int putao_order_flow_failed=0x7f020207;
-        public static final int putao_order_flow_failed_gray=0x7f020208;
-        public static final int putao_order_flow_fuwuzhong=0x7f020209;
-        public static final int putao_order_flow_pay=0x7f02020a;
-        public static final int putao_order_flow_pay_gray=0x7f02020b;
-        public static final int putao_order_flow_pic01=0x7f02020c;
-        public static final int putao_order_flow_quxiaozhong=0x7f02020d;
-        public static final int putao_order_flow_refund=0x7f02020e;
-        public static final int putao_order_flow_refund_gray=0x7f02020f;
-        public static final int putao_order_flow_refundfailed=0x7f020210;
-        public static final int putao_order_flow_refundfailed_gray=0x7f020211;
-        public static final int putao_order_flow_refundsuccess=0x7f020212;
-        public static final int putao_order_flow_refundsuccess_gray=0x7f020213;
-        public static final int putao_order_flow_renyuanchufa=0x7f020214;
-        public static final int putao_order_flow_service=0x7f020215;
-        public static final int putao_order_flow_service_gray=0x7f020216;
-        public static final int putao_order_flow_subscribe_failed=0x7f020217;
-        public static final int putao_order_flow_subscribe_failed_gray=0x7f020218;
-        public static final int putao_order_flow_subscribe_succeed=0x7f020219;
-        public static final int putao_order_flow_subscribe_succeed_gray=0x7f02021a;
-        public static final int putao_order_flow_succeed=0x7f02021b;
-        public static final int putao_order_flow_succeed_gray=0x7f02021c;
-        public static final int putao_order_flow_wait=0x7f02021d;
-        public static final int putao_order_flow_wait_gray=0x7f02021e;
-        public static final int putao_order_flow_yuyueshibai=0x7f02021f;
-        public static final int putao_order_form_textbg=0x7f020220;
-        public static final int putao_order_linebutton=0x7f020221;
-        public static final int putao_order_linebutton_orange=0x7f020222;
-        public static final int putao_order_reminder01=0x7f020223;
-        public static final int putao_order_succeed=0x7f020224;
-        public static final int putao_pagerslideindicator_background_tab=0x7f020225;
-        public static final int putao_pay_red_button_selector=0x7f020226;
-        public static final int putao_pic_dianying_shuru=0x7f020227;
-        public static final int putao_pic_guide1=0x7f020228;
-        public static final int putao_pic_guide2=0x7f020229;
-        public static final int putao_pic_guide3=0x7f02022a;
-        public static final int putao_pic_list_none=0x7f02022b;
-        public static final int putao_pic_list_none_transparent=0x7f02022c;
-        public static final int putao_pic_me_orders_2dticket=0x7f02022d;
-        public static final int putao_pic_me_orders_3dticket=0x7f02022e;
-        public static final int putao_pic_me_orders_bantuoguanmoren=0x7f02022f;
-        public static final int putao_pic_me_orders_chinamobile=0x7f020230;
-        public static final int putao_pic_me_orders_chinatelecom=0x7f020231;
-        public static final int putao_pic_me_orders_chinaunicom=0x7f020232;
-        public static final int putao_pic_me_orders_electric=0x7f020233;
-        public static final int putao_pic_me_orders_game=0x7f020234;
-        public static final int putao_pic_me_orders_gas=0x7f020235;
-        public static final int putao_pic_me_orders_moren=0x7f020236;
-        public static final int putao_pic_me_orders_qqpay=0x7f020237;
-        public static final int putao_pic_me_orders_quantuoguanmoren=0x7f020238;
-        public static final int putao_pic_me_orders_traintickets=0x7f020239;
-        public static final int putao_pic_me_orders_water=0x7f02023a;
-        public static final int putao_pic_quick_replace=0x7f02023b;
-        public static final int putao_pic_redbag_notify=0x7f02023c;
-        public static final int putao_pic_taxi_head=0x7f02023d;
-        public static final int putao_popup_bg=0x7f02023e;
-        public static final int putao_popup_close=0x7f02023f;
-        public static final int putao_popup_redenvelope=0x7f020240;
-        public static final int putao_popup_redenvelope_bg=0x7f020241;
-        public static final int putao_progress_style_black_bg=0x7f020242;
-        public static final int putao_progress_style_gray_bg=0x7f020243;
-        public static final int putao_progress_style_h5page_bg=0x7f020244;
-        public static final int putao_radio_button_off=0x7f020245;
-        public static final int putao_radio_button_off_focused=0x7f020246;
-        public static final int putao_radio_button_on=0x7f020247;
-        public static final int putao_radio_button_on_focused=0x7f020248;
-        public static final int putao_rating_bar=0x7f020249;
-        public static final int putao_rating_bar_large=0x7f02024a;
-        public static final int putao_rating_bar_small=0x7f02024b;
-        public static final int putao_rating_bar_small_small=0x7f02024c;
-        public static final int putao_refund_reason_selector=0x7f02024d;
-        public static final int putao_relocation=0x7f02024e;
-        public static final int putao_scan_corner_bottom_left=0x7f02024f;
-        public static final int putao_scan_corner_bottom_right=0x7f020250;
-        public static final int putao_scan_corner_top_left=0x7f020251;
-        public static final int putao_scan_corner_top_right=0x7f020252;
-        public static final int putao_scan_flashlight_normal=0x7f020253;
-        public static final int putao_scan_flashlight_pressed=0x7f020254;
-        public static final int putao_scan_laser=0x7f020255;
-        public static final int putao_scan_photo_normal=0x7f020256;
-        public static final int putao_scan_photo_pressed=0x7f020257;
-        public static final int putao_search=0x7f020258;
-        public static final int putao_search_down_arrow=0x7f020259;
-        public static final int putao_search_down_arrow_p=0x7f02025a;
-        public static final int putao_seat_checked=0x7f02025b;
-        public static final int putao_seat_lock=0x7f02025c;
-        public static final int putao_seat_normal=0x7f02025d;
-        public static final int putao_seat_rownum_bg=0x7f02025e;
-        public static final int putao_seat_xuanzuo=0x7f02025f;
-        public static final int putao_seat_yingmo=0x7f020260;
-        public static final int putao_select_normal=0x7f020261;
-        public static final int putao_select_pitch_on=0x7f020262;
-        public static final int putao_select_radio2_normal=0x7f020263;
-        public static final int putao_select_radio2_pitch_on=0x7f020264;
-        public static final int putao_select_radio_normal=0x7f020265;
-        public static final int putao_select_radio_pitch_on=0x7f020266;
-        public static final int putao_select_time=0x7f020267;
-        public static final int putao_select_time_full=0x7f020268;
-        public static final int putao_select_time_normal=0x7f020269;
-        public static final int putao_service_def_logo_big=0x7f02026a;
-        public static final int putao_service_def_logo_small=0x7f02026b;
-        public static final int putao_shangpingxiangqing_bg=0x7f02026c;
-        public static final int putao_shape_discover_opera_label=0x7f02026d;
-        public static final int putao_shop_detail_bg=0x7f02026e;
-        public static final int putao_sl_checkbox=0x7f02026f;
-        public static final int putao_splash=0x7f020270;
-        public static final int putao_splash_layers=0x7f020271;
-        public static final int putao_tab_icon_discover=0x7f020272;
-        public static final int putao_tab_icon_discover_p=0x7f020273;
-        public static final int putao_tab_icon_logo=0x7f020274;
-        public static final int putao_tab_icon_logo_p=0x7f020275;
-        public static final int putao_tab_icon_me=0x7f020276;
-        public static final int putao_tab_icon_me_p=0x7f020277;
-        public static final int putao_tab_icon_navigation=0x7f020278;
-        public static final int putao_tab_icon_navigation_p=0x7f020279;
-        public static final int putao_tag_dianying_cq=0x7f02027a;
-        public static final int putao_tag_dianying_dj=0x7f02027b;
-        public static final int putao_tag_dianying_hp=0x7f02027c;
-        public static final int putao_taxi_cp_selector=0x7f02027d;
-        public static final int putao_thetrainticket_history=0x7f02027e;
-        public static final int putao_transparent=0x7f02027f;
-        public static final int putao_transparent_transblack_selector=0x7f020280;
-        public static final int putao_voucher_center_list_selector=0x7f020281;
-        public static final int shadow=0x7f020282;
-        public static final int skyblue_platform_list_item=0x7f020283;
-        public static final int skyblue_platform_list_item_selected=0x7f020284;
-        public static final int skyblue_platform_list_selector=0x7f020285;
-        public static final int ssdk_oks_ptr_ptr=0x7f020286;
-        public static final int switch_frame=0x7f020287;
-        public static final int switch_slider_normal=0x7f020288;
-        public static final int switch_state_mask=0x7f020289;
-        public static final int switch_state_normal=0x7f02028a;
+        public static final int icon_movie_location=0x7f020001;
+        public static final int icon_movie_location_green=0x7f020002;
+        public static final int logo_qq=0x7f020003;
+        public static final int logo_qzone=0x7f020004;
+        public static final int logo_sinaweibo=0x7f020005;
+        public static final int logo_wechat=0x7f020006;
+        public static final int logo_wechatmoments=0x7f020007;
+        public static final int putao_a0114=0x7f020008;
+        public static final int putao_a0501=0x7f020009;
+        public static final int putao_a0502=0x7f02000a;
+        public static final int putao_a0503=0x7f02000b;
+        public static final int putao_a0504=0x7f02000c;
+        public static final int putao_a0505=0x7f02000d;
+        public static final int putao_a0506=0x7f02000e;
+        public static final int putao_a0507=0x7f02000f;
+        public static final int putao_a0508=0x7f020010;
+        public static final int putao_a0509=0x7f020011;
+        public static final int putao_a0510=0x7f020012;
+        public static final int putao_a0511=0x7f020013;
+        public static final int putao_a0512=0x7f020014;
+        public static final int putao_a0513=0x7f020015;
+        public static final int putao_a0514=0x7f020016;
+        public static final int putao_a0515=0x7f020017;
+        public static final int putao_a0516=0x7f020018;
+        public static final int putao_a0517=0x7f020019;
+        public static final int putao_a0518=0x7f02001a;
+        public static final int putao_a0519=0x7f02001b;
+        public static final int putao_a0521=0x7f02001c;
+        public static final int putao_a0522=0x7f02001d;
+        public static final int putao_a0523=0x7f02001e;
+        public static final int putao_a0524=0x7f02001f;
+        public static final int putao_a0525=0x7f020020;
+        public static final int putao_a0526=0x7f020021;
+        public static final int putao_a0527=0x7f020022;
+        public static final int putao_a0528=0x7f020023;
+        public static final int putao_a0529=0x7f020024;
+        public static final int putao_a0530=0x7f020025;
+        public static final int putao_a0531=0x7f020026;
+        public static final int putao_a0532=0x7f020027;
+        public static final int putao_a0533=0x7f020028;
+        public static final int putao_a0534=0x7f020029;
+        public static final int putao_a0535=0x7f02002a;
+        public static final int putao_aboutus_logo=0x7f02002b;
+        public static final int putao_arrow_left=0x7f02002c;
+        public static final int putao_arrow_left_press=0x7f02002d;
+        public static final int putao_arrow_left_selector=0x7f02002e;
+        public static final int putao_arrow_right=0x7f02002f;
+        public static final int putao_arrow_right_press=0x7f020030;
+        public static final int putao_arrow_right_selector=0x7f020031;
+        public static final int putao_banner_blackbg=0x7f020032;
+        public static final int putao_bg_card_fujin=0x7f020033;
+        public static final int putao_bg_card_jipiao=0x7f020034;
+        public static final int putao_bg_card_kuaidi=0x7f020035;
+        public static final int putao_bg_card_shuidianmei=0x7f020036;
+        public static final int putao_bg_card_yindao=0x7f020037;
+        public static final int putao_bg_cursor=0x7f020038;
+        public static final int putao_bg_date_select=0x7f020039;
+        public static final int putao_bg_feedback_add_img=0x7f02003a;
+        public static final int putao_bg_hotel_checkin=0x7f02003b;
+        public static final int putao_bg_input_field=0x7f02003c;
+        public static final int putao_bg_list_card=0x7f02003d;
+        public static final int putao_bg_list_tips=0x7f02003e;
+        public static final int putao_bg_loading=0x7f02003f;
+        public static final int putao_bg_loading_logo=0x7f020040;
+        public static final int putao_bg_pay_selected=0x7f020041;
+        public static final int putao_bg_pic_dianying=0x7f020042;
+        public static final int putao_bg_select_pay_selector=0x7f020043;
+        public static final int putao_bg_state_blue02=0x7f020044;
+        public static final int putao_bg_state_green=0x7f020045;
+        public static final int putao_bg_state_orange=0x7f020046;
+        public static final int putao_bg_state_orange02=0x7f020047;
+        public static final int putao_bg_state_red=0x7f020048;
+        public static final int putao_bg_white_p=0x7f020049;
+        public static final int putao_bg_white_right_angle=0x7f02004a;
+        public static final int putao_bg_white_select=0x7f02004b;
+        public static final int putao_bg_yellow_item_single=0x7f02004c;
+        public static final int putao_bg_youhuiquan_qiangquan=0x7f02004d;
+        public static final int putao_bg_youhuiquan_wuquan=0x7f02004e;
+        public static final int putao_btn_app=0x7f02004f;
+        public static final int putao_btn_buy=0x7f020050;
+        public static final int putao_btn_buy_disable=0x7f020051;
+        public static final int putao_btn_buy_p=0x7f020052;
+        public static final int putao_btn_list_green=0x7f020053;
+        public static final int putao_btn_presell=0x7f020054;
+        public static final int putao_btn_presell_p=0x7f020055;
+        public static final int putao_btn_radio_holo=0x7f020056;
+        public static final int putao_bubble_bg_red=0x7f020057;
+        public static final int putao_bubble_bg_red_big=0x7f020058;
+        public static final int putao_bus_swap_selector=0x7f020059;
+        public static final int putao_calling_dzdp=0x7f02005a;
+        public static final int putao_card_all_show=0x7f02005b;
+        public static final int putao_card_chaxun_cx=0x7f02005c;
+        public static final int putao_card_fujin_gd=0x7f02005d;
+        public static final int putao_card_kuaidi_ck=0x7f02005e;
+        public static final int putao_card_kuaidi_ks=0x7f02005f;
+        public static final int putao_card_kuaidi_lx=0x7f020060;
+        public static final int putao_card_kuaidi_ty=0x7f020061;
+        public static final int putao_card_order_cancel=0x7f020062;
+        public static final int putao_card_order_pay=0x7f020063;
+        public static final int putao_card_tuangou_sqtk=0x7f020064;
+        public static final int putao_card_wangfan_dc=0x7f020065;
+        public static final int putao_category_item_mask=0x7f020066;
+        public static final int putao_chaweizhang=0x7f020067;
+        public static final int putao_chaweizhang_btn_selector=0x7f020068;
+        public static final int putao_classification_search=0x7f020069;
+        public static final int putao_click_btn_bg=0x7f02006a;
+        public static final int putao_comm_radio_bg2_selector=0x7f02006b;
+        public static final int putao_comm_radio_bg_selector=0x7f02006c;
+        public static final int putao_dialog_gridview_item_selector=0x7f02006d;
+        public static final int putao_dizhixuanze_edit=0x7f02006e;
+        public static final int putao_dizhixuanze_moren=0x7f02006f;
+        public static final int putao_edit_bg_grey=0x7f020070;
+        public static final int putao_edit_bg_selector=0x7f020071;
+        public static final int putao_express_history_btn_bg=0x7f020072;
+        public static final int putao_found_praise=0x7f020073;
+        public static final int putao_found_praise_bg=0x7f020074;
+        public static final int putao_fuwujingxuan_jiage=0x7f020075;
+        public static final int putao_fuwurenyuan_morentouxiang=0x7f020076;
+        public static final int putao_goodsdetails_back=0x7f020077;
+        public static final int putao_goodsdetails_more=0x7f020078;
+        public static final int putao_goodsdetails_preferential=0x7f020079;
+        public static final int putao_groupbuy_icon_quick_all_s=0x7f02007a;
+        public static final int putao_groupbuy_icon_quick_cxdp_s=0x7f02007b;
+        public static final int putao_groupbuy_icon_quick_gw_s=0x7f02007c;
+        public static final int putao_groupbuy_icon_quick_hg_s=0x7f02007d;
+        public static final int putao_groupbuy_icon_quick_jd_s=0x7f02007e;
+        public static final int putao_groupbuy_icon_quick_kdy_s=0x7f02007f;
+        public static final int putao_groupbuy_icon_quick_lr_s=0x7f020080;
+        public static final int putao_groupbuy_icon_quick_ms_s=0x7f020081;
+        public static final int putao_groupbuy_icon_quick_sh_s=0x7f020082;
+        public static final int putao_groupbuy_icon_quick_wl_s=0x7f020083;
+        public static final int putao_groupbuy_icon_quick_wq_s=0x7f020084;
+        public static final int putao_groupbuy_icon_quick_yl_s=0x7f020085;
+        public static final int putao_groupbuy_icon_quick_zl_s=0x7f020086;
+        public static final int putao_home_white=0x7f020087;
+        public static final int putao_homepage_search=0x7f020088;
+        public static final int putao_ic_launcher=0x7f020089;
+        public static final int putao_icon_58=0x7f02008a;
+        public static final int putao_icon_account_password=0x7f02008b;
+        public static final int putao_icon_account_phone=0x7f02008c;
+        public static final int putao_icon_arrow=0x7f02008d;
+        public static final int putao_icon_back=0x7f02008e;
+        public static final int putao_icon_back_movie=0x7f02008f;
+        public static final int putao_icon_back_white=0x7f020090;
+        public static final int putao_icon_banner_yuanquan01=0x7f020091;
+        public static final int putao_icon_banner_yuanquan02=0x7f020092;
+        public static final int putao_icon_btn_green=0x7f020093;
+        public static final int putao_icon_btn_green_d=0x7f020094;
+        public static final int putao_icon_btn_green_p=0x7f020095;
+        public static final int putao_icon_btn_id_chazhi=0x7f020096;
+        public static final int putao_icon_btn_id_dian_b=0x7f020097;
+        public static final int putao_icon_btn_id_dianying=0x7f020098;
+        public static final int putao_icon_btn_id_huafei_a=0x7f020099;
+        public static final int putao_icon_btn_id_huafei_b=0x7f02009a;
+        public static final int putao_icon_btn_id_huafei_c=0x7f02009b;
+        public static final int putao_icon_btn_id_huoche_a=0x7f02009c;
+        public static final int putao_icon_btn_id_huochepiao=0x7f02009d;
+        public static final int putao_icon_btn_id_jiudian=0x7f02009e;
+        public static final int putao_icon_btn_id_kuaidi=0x7f02009f;
+        public static final int putao_icon_btn_id_mei_b=0x7f0200a0;
+        public static final int putao_icon_btn_id_shui_b=0x7f0200a1;
+        public static final int putao_icon_btn_id_shuidianmei=0x7f0200a2;
+        public static final int putao_icon_btn_id_tongduiquan_a=0x7f0200a3;
+        public static final int putao_icon_btn_id_youxi=0x7f0200a4;
+        public static final int putao_icon_btn_id_youxi_dy=0x7f0200a5;
+        public static final int putao_icon_btn_id_youxi_qq=0x7f0200a6;
+        public static final int putao_icon_btn_id_youxi_sy=0x7f0200a7;
+        public static final int putao_icon_btn_press=0x7f0200a8;
+        public static final int putao_icon_btn_white=0x7f0200a9;
+        public static final int putao_icon_button=0x7f0200aa;
+        public static final int putao_icon_button_p=0x7f0200ab;
+        public static final int putao_icon_car=0x7f0200ac;
+        public static final int putao_icon_car_cor=0x7f0200ad;
+        public static final int putao_icon_car_edit=0x7f0200ae;
+        public static final int putao_icon_category_indicator=0x7f0200af;
+        public static final int putao_icon_cateory_leftline=0x7f0200b0;
+        public static final int putao_icon_cateory_rightline=0x7f0200b1;
+        public static final int putao_icon_chaweizhang=0x7f0200b2;
+        public static final int putao_icon_chaweizhang_p=0x7f0200b3;
+        public static final int putao_icon_check_box=0x7f0200b4;
+        public static final int putao_icon_comment_delete=0x7f0200b5;
+        public static final int putao_icon_comment_delete_p=0x7f0200b6;
+        public static final int putao_icon_comment_delete_selector=0x7f0200b7;
+        public static final int putao_icon_comment_warning=0x7f0200b8;
+        public static final int putao_icon_contacts=0x7f0200b9;
+        public static final int putao_icon_contactthemerchant=0x7f0200ba;
+        public static final int putao_icon_coolui_empty=0x7f0200bb;
+        public static final int putao_icon_cooperate_gyxj=0x7f0200bc;
+        public static final int putao_icon_denglu=0x7f0200bd;
+        public static final int putao_icon_dianying_add=0x7f0200be;
+        public static final int putao_icon_dianying_add_d=0x7f0200bf;
+        public static final int putao_icon_dianying_add_selector=0x7f0200c0;
+        public static final int putao_icon_dianying_bg=0x7f0200c1;
+        public static final int putao_icon_dianying_lessen=0x7f0200c2;
+        public static final int putao_icon_dianying_lessen_d=0x7f0200c3;
+        public static final int putao_icon_dianying_lessen_selector=0x7f0200c4;
+        public static final int putao_icon_doubt=0x7f0200c5;
+        public static final int putao_icon_dy_l=0x7f0200c6;
+        public static final int putao_icon_dy_r=0x7f0200c7;
+        public static final int putao_icon_error=0x7f0200c8;
+        public static final int putao_icon_feedback_add=0x7f0200c9;
+        public static final int putao_icon_feedback_add_press=0x7f0200ca;
+        public static final int putao_icon_home_close=0x7f0200cb;
+        public static final int putao_icon_home_signin=0x7f0200cc;
+        public static final int putao_icon_hotel_calendar=0x7f0200cd;
+        public static final int putao_icon_hotel_city=0x7f0200ce;
+        public static final int putao_icon_hotel_pay_securitycode=0x7f0200cf;
+        public static final int putao_icon_hotel_pay_validity=0x7f0200d0;
+        public static final int putao_icon_hotel_position=0x7f0200d1;
+        public static final int putao_icon_hotel_position_p=0x7f0200d2;
+        public static final int putao_icon_hotel_price=0x7f0200d3;
+        public static final int putao_icon_hotel_serch=0x7f0200d4;
+        public static final int putao_icon_jinggao=0x7f0200d5;
+        public static final int putao_icon_jiudian_cx=0x7f0200d6;
+        public static final int putao_icon_jiudian_dz=0x7f0200d7;
+        public static final int putao_icon_jiudian_jc=0x7f0200d8;
+        public static final int putao_icon_jiudian_jianjie=0x7f0200d9;
+        public static final int putao_icon_jiudian_kd=0x7f0200da;
+        public static final int putao_icon_jiudian_lc=0x7f0200db;
+        public static final int putao_icon_jiudian_mj=0x7f0200dc;
+        public static final int putao_icon_jiudian_qt=0x7f0200dd;
+        public static final int putao_icon_jiudian_wy=0x7f0200de;
+        public static final int putao_icon_jiudian_zc=0x7f0200df;
+        public static final int putao_icon_kuaidi_shoudiantong=0x7f0200e0;
+        public static final int putao_icon_kuaidi_shoudiantong_press=0x7f0200e1;
+        public static final int putao_icon_list_cancel=0x7f0200e2;
+        public static final int putao_icon_list_down=0x7f0200e3;
+        public static final int putao_icon_list_packup=0x7f0200e4;
+        public static final int putao_icon_list_show=0x7f0200e5;
+        public static final int putao_icon_list_tips=0x7f0200e6;
+        public static final int putao_icon_list_up=0x7f0200e7;
+        public static final int putao_icon_logo_dazong=0x7f0200e8;
+        public static final int putao_icon_logo_dianhua=0x7f0200e9;
+        public static final int putao_icon_logo_gaode=0x7f0200ea;
+        public static final int putao_icon_logo_hot=0x7f0200eb;
+        public static final int putao_icon_logo_hui=0x7f0200ec;
+        public static final int putao_icon_logo_placeholder=0x7f0200ed;
+        public static final int putao_icon_logo_recomment=0x7f0200ee;
+        public static final int putao_icon_logo_saomiao=0x7f0200ef;
+        public static final int putao_icon_logo_sougou=0x7f0200f0;
+        public static final int putao_icon_logo_tongcheng=0x7f0200f1;
+        public static final int putao_icon_logo_tuan=0x7f0200f2;
+        public static final int putao_icon_marker_finish=0x7f0200f3;
+        public static final int putao_icon_marker_red=0x7f0200f4;
+        public static final int putao_icon_marker_red_select=0x7f0200f5;
+        public static final int putao_icon_marker_star=0x7f0200f6;
+        public static final int putao_icon_marker_swap=0x7f0200f7;
+        public static final int putao_icon_marker_white=0x7f0200f8;
+        public static final int putao_icon_me_message_orders=0x7f0200f9;
+        public static final int putao_icon_me_message_remind=0x7f0200fa;
+        public static final int putao_icon_me_orders_cinematicket=0x7f0200fb;
+        public static final int putao_icon_me_orders_game=0x7f0200fc;
+        public static final int putao_icon_me_orders_hotel=0x7f0200fd;
+        public static final int putao_icon_me_orders_o2o=0x7f0200fe;
+        public static final int putao_icon_me_orders_phonefare=0x7f0200ff;
+        public static final int putao_icon_me_orders_phoneflow=0x7f020100;
+        public static final int putao_icon_me_orders_qq=0x7f020101;
+        public static final int putao_icon_me_orders_trainticket=0x7f020102;
+        public static final int putao_icon_me_orders_utilities=0x7f020103;
+        public static final int putao_icon_morendizhi=0x7f020104;
+        public static final int putao_icon_movie_youhui=0x7f020105;
+        public static final int putao_icon_order_chf=0x7f020106;
+        public static final int putao_icon_order_dy=0x7f020107;
+        public static final int putao_icon_order_hcp=0x7f020108;
+        public static final int putao_icon_order_jd=0x7f020109;
+        public static final int putao_icon_order_kd=0x7f02010a;
+        public static final int putao_icon_order_sdm=0x7f02010b;
+        public static final int putao_icon_order_tg=0x7f02010c;
+        public static final int putao_icon_order_wz=0x7f02010d;
+        public static final int putao_icon_order_yx=0x7f02010e;
+        public static final int putao_icon_paly=0x7f02010f;
+        public static final int putao_icon_paly_p=0x7f020110;
+        public static final int putao_icon_paly_selector=0x7f020111;
+        public static final int putao_icon_pay_wxzf=0x7f020112;
+        public static final int putao_icon_pay_zfbzf=0x7f020113;
+        public static final int putao_icon_phone=0x7f020114;
+        public static final int putao_icon_plane_hangban=0x7f020115;
+        public static final int putao_icon_plane_jiage=0x7f020116;
+        public static final int putao_icon_plane_switchover=0x7f020117;
+        public static final int putao_icon_plane_tejia=0x7f020118;
+        public static final int putao_icon_prompt=0x7f020119;
+        public static final int putao_icon_prompt_s=0x7f02011a;
+        public static final int putao_icon_quick_chf=0x7f02011b;
+        public static final int putao_icon_quick_cll=0x7f02011c;
+        public static final int putao_icon_quick_dd=0x7f02011d;
+        public static final int putao_icon_quick_dy=0x7f02011e;
+        public static final int putao_icon_quick_jd=0x7f02011f;
+        public static final int putao_icon_quick_jp=0x7f020120;
+        public static final int putao_icon_quick_jz=0x7f020121;
+        public static final int putao_icon_quick_kld=0x7f020122;
+        public static final int putao_icon_quick_qq=0x7f020123;
+        public static final int putao_icon_quick_quanshenanmo=0x7f020124;
+        public static final int putao_icon_quick_replace=0x7f020125;
+        public static final int putao_icon_quick_tg=0x7f020126;
+        public static final int putao_icon_quick_tydd=0x7f020127;
+        public static final int putao_icon_quick_wmdc=0x7f020128;
+        public static final int putao_icon_redenvelope=0x7f020129;
+        public static final int putao_icon_search_58=0x7f02012a;
+        public static final int putao_icon_search_del_h=0x7f02012b;
+        public static final int putao_icon_search_more=0x7f02012c;
+        public static final int putao_icon_search_record=0x7f02012d;
+        public static final int putao_icon_search_select=0x7f02012e;
+        public static final int putao_icon_select=0x7f02012f;
+        public static final int putao_icon_shadow=0x7f020130;
+        public static final int putao_icon_share_coupons=0x7f020131;
+        public static final int putao_icon_shezhimimatixing=0x7f020132;
+        public static final int putao_icon_star_1=0x7f020133;
+        public static final int putao_icon_star_2=0x7f020134;
+        public static final int putao_icon_star_large_1=0x7f020135;
+        public static final int putao_icon_star_large_2=0x7f020136;
+        public static final int putao_icon_star_small_1=0x7f020137;
+        public static final int putao_icon_star_small_2=0x7f020138;
+        public static final int putao_icon_star_small_s_1=0x7f020139;
+        public static final int putao_icon_star_small_s_2=0x7f02013a;
+        public static final int putao_icon_taxi_bg=0x7f02013b;
+        public static final int putao_icon_taxi_car=0x7f02013c;
+        public static final int putao_icon_taxi_company=0x7f02013d;
+        public static final int putao_icon_taxi_company_p=0x7f02013e;
+        public static final int putao_icon_taxi_delete=0x7f02013f;
+        public static final int putao_icon_taxi_dianhua=0x7f020140;
+        public static final int putao_icon_taxi_didi=0x7f020141;
+        public static final int putao_icon_taxi_end=0x7f020142;
+        public static final int putao_icon_taxi_history=0x7f020143;
+        public static final int putao_icon_taxi_home=0x7f020144;
+        public static final int putao_icon_taxi_home_p=0x7f020145;
+        public static final int putao_icon_taxi_kuaidi=0x7f020146;
+        public static final int putao_icon_taxi_me=0x7f020147;
+        public static final int putao_icon_taxi_search=0x7f020148;
+        public static final int putao_icon_taxi_show=0x7f020149;
+        public static final int putao_icon_taxi_star=0x7f02014a;
+        public static final int putao_icon_taxi_uber=0x7f02014b;
+        public static final int putao_icon_title_cancel=0x7f02014c;
+        public static final int putao_icon_title_cx=0x7f02014d;
+        public static final int putao_icon_title_map=0x7f02014e;
+        public static final int putao_icon_title_share=0x7f02014f;
+        public static final int putao_icon_title_tg=0x7f020150;
+        public static final int putao_icon_transaction_error=0x7f020151;
+        public static final int putao_icon_transaction_success=0x7f020152;
+        public static final int putao_icon_view_order=0x7f020153;
+        public static final int putao_icon_weizhang_add=0x7f020154;
+        public static final int putao_icon_weizhang_car=0x7f020155;
+        public static final int putao_icon_weizhang_fakuan=0x7f020156;
+        public static final int putao_icon_weizhang_none=0x7f020157;
+        public static final int putao_icon_weizhang_weizhang=0x7f020158;
+        public static final int putao_icon_xiangxidizhi=0x7f020159;
+        public static final int putao_icon_xianzhishijian=0x7f02015a;
+        public static final int putao_icon_youhuiquan_dianjichakan=0x7f02015b;
+        public static final int putao_icon_youhuiquan_guanbi=0x7f02015c;
+        public static final int putao_icon_youhuiquan_lijishiyong=0x7f02015d;
+        public static final int putao_icon_youhuiquan_qiangquan=0x7f02015e;
+        public static final int putao_icon_youhuiquan_remen=0x7f02015f;
+        public static final int putao_icon_youhuiquan_tuijian=0x7f020160;
+        public static final int putao_icon_youhuiquan_wuquan=0x7f020161;
+        public static final int putao_icon_yuyueren=0x7f020162;
+        public static final int putao_icon_zuobiao=0x7f020163;
+        public static final int putao_ima_home_funnel=0x7f020164;
+        public static final int putao_index_tips_bg=0x7f020165;
+        public static final int putao_jpush_status_icon=0x7f020166;
+        public static final int putao_list_item_btn_selector=0x7f020167;
+        public static final int putao_list_selecter_s=0x7f020168;
+        public static final int putao_list_selecter_transparent=0x7f020169;
+        public static final int putao_list_white_transblack_selector=0x7f02016a;
+        public static final int putao_listview_img_expand=0x7f02016b;
+        public static final int putao_listview_item_expand=0x7f02016c;
+        public static final int putao_listview_item_selector=0x7f02016d;
+        public static final int putao_loading_animation=0x7f02016e;
+        public static final int putao_mask=0x7f02016f;
+        public static final int putao_menu_acc_headimg_logined=0x7f020170;
+        public static final int putao_menu_acc_headimg_nologin=0x7f020171;
+        public static final int putao_menu_item_icon_aboutus=0x7f020172;
+        public static final int putao_menu_item_icon_act=0x7f020173;
+        public static final int putao_menu_item_icon_meituanorder=0x7f020174;
+        public static final int putao_menu_item_icon_order=0x7f020175;
+        public static final int putao_menu_item_icon_tixing=0x7f020176;
+        public static final int putao_movie_list_buy_selector=0x7f020177;
+        public static final int putao_movie_list_presell_selector=0x7f020178;
+        public static final int putao_movie_presell=0x7f020179;
+        public static final int putao_mydiscount_bg=0x7f02017a;
+        public static final int putao_mydiscount_bg2=0x7f02017b;
+        public static final int putao_mydiscount_yiguoqi=0x7f02017c;
+        public static final int putao_mydiscount_yishiyong=0x7f02017d;
+        public static final int putao_open_button_selector=0x7f02017e;
+        public static final int putao_opilist_moviedtl_bg=0x7f02017f;
+        public static final int putao_opilist_moviedtl_bg_n=0x7f020180;
+        public static final int putao_opilist_moviedtl_bg_s=0x7f020181;
+        public static final int putao_order_button=0x7f020182;
+        public static final int putao_order_clock=0x7f020183;
+        public static final int putao_order_flow_applyforrefund=0x7f020184;
+        public static final int putao_order_flow_applyforrefund_gray=0x7f020185;
+        public static final int putao_order_flow_chufa=0x7f020186;
+        public static final int putao_order_flow_chufa_gray=0x7f020187;
+        public static final int putao_order_flow_chulizhong=0x7f020188;
+        public static final int putao_order_flow_daizhifu=0x7f020189;
+        public static final int putao_order_flow_dingdanqueren=0x7f02018a;
+        public static final int putao_order_flow_dingdanshibai=0x7f02018b;
+        public static final int putao_order_flow_dingdanshouli=0x7f02018c;
+        public static final int putao_order_flow_dingdanshouli_gray=0x7f02018d;
+        public static final int putao_order_flow_failed=0x7f02018e;
+        public static final int putao_order_flow_failed_gray=0x7f02018f;
+        public static final int putao_order_flow_fuwuzhong=0x7f020190;
+        public static final int putao_order_flow_pay=0x7f020191;
+        public static final int putao_order_flow_pay_gray=0x7f020192;
+        public static final int putao_order_flow_quxiaozhong=0x7f020193;
+        public static final int putao_order_flow_refund=0x7f020194;
+        public static final int putao_order_flow_refund_gray=0x7f020195;
+        public static final int putao_order_flow_refundfailed=0x7f020196;
+        public static final int putao_order_flow_refundfailed_gray=0x7f020197;
+        public static final int putao_order_flow_refundsuccess=0x7f020198;
+        public static final int putao_order_flow_refundsuccess_gray=0x7f020199;
+        public static final int putao_order_flow_renyuanchufa=0x7f02019a;
+        public static final int putao_order_flow_service=0x7f02019b;
+        public static final int putao_order_flow_service_gray=0x7f02019c;
+        public static final int putao_order_flow_subscribe_failed=0x7f02019d;
+        public static final int putao_order_flow_subscribe_failed_gray=0x7f02019e;
+        public static final int putao_order_flow_subscribe_succeed=0x7f02019f;
+        public static final int putao_order_flow_subscribe_succeed_gray=0x7f0201a0;
+        public static final int putao_order_flow_succeed=0x7f0201a1;
+        public static final int putao_order_flow_succeed_gray=0x7f0201a2;
+        public static final int putao_order_flow_wait=0x7f0201a3;
+        public static final int putao_order_flow_wait_gray=0x7f0201a4;
+        public static final int putao_order_flow_yuyueshibai=0x7f0201a5;
+        public static final int putao_order_form_textbg=0x7f0201a6;
+        public static final int putao_order_linebutton=0x7f0201a7;
+        public static final int putao_order_linebutton_orange=0x7f0201a8;
+        public static final int putao_order_reminder01=0x7f0201a9;
+        public static final int putao_order_succeed=0x7f0201aa;
+        public static final int putao_pagerslideindicator_background_tab=0x7f0201ab;
+        public static final int putao_pay_red_button_selector=0x7f0201ac;
+        public static final int putao_pic_guide1=0x7f0201ad;
+        public static final int putao_pic_guide2=0x7f0201ae;
+        public static final int putao_pic_guide3=0x7f0201af;
+        public static final int putao_pic_list_none=0x7f0201b0;
+        public static final int putao_pic_list_none_transparent=0x7f0201b1;
+        public static final int putao_pic_me_orders_2dticket=0x7f0201b2;
+        public static final int putao_pic_me_orders_3dticket=0x7f0201b3;
+        public static final int putao_pic_me_orders_bantuoguanmoren=0x7f0201b4;
+        public static final int putao_pic_me_orders_chinamobile=0x7f0201b5;
+        public static final int putao_pic_me_orders_chinatelecom=0x7f0201b6;
+        public static final int putao_pic_me_orders_chinaunicom=0x7f0201b7;
+        public static final int putao_pic_me_orders_electric=0x7f0201b8;
+        public static final int putao_pic_me_orders_game=0x7f0201b9;
+        public static final int putao_pic_me_orders_gas=0x7f0201ba;
+        public static final int putao_pic_me_orders_moren=0x7f0201bb;
+        public static final int putao_pic_me_orders_qqpay=0x7f0201bc;
+        public static final int putao_pic_me_orders_quantuoguanmoren=0x7f0201bd;
+        public static final int putao_pic_me_orders_traintickets=0x7f0201be;
+        public static final int putao_pic_me_orders_water=0x7f0201bf;
+        public static final int putao_pic_quick_replace=0x7f0201c0;
+        public static final int putao_pic_redbag_notify=0x7f0201c1;
+        public static final int putao_pic_taxi_head=0x7f0201c2;
+        public static final int putao_popup_bg=0x7f0201c3;
+        public static final int putao_popup_close=0x7f0201c4;
+        public static final int putao_popup_redenvelope=0x7f0201c5;
+        public static final int putao_popup_redenvelope_bg=0x7f0201c6;
+        public static final int putao_progress_style_black_bg=0x7f0201c7;
+        public static final int putao_progress_style_gray_bg=0x7f0201c8;
+        public static final int putao_progress_style_h5page_bg=0x7f0201c9;
+        public static final int putao_radio_button_off=0x7f0201ca;
+        public static final int putao_radio_button_off_focused=0x7f0201cb;
+        public static final int putao_radio_button_on=0x7f0201cc;
+        public static final int putao_radio_button_on_focused=0x7f0201cd;
+        public static final int putao_rating_bar=0x7f0201ce;
+        public static final int putao_rating_bar_large=0x7f0201cf;
+        public static final int putao_rating_bar_small=0x7f0201d0;
+        public static final int putao_rating_bar_small_small=0x7f0201d1;
+        public static final int putao_refund_reason_selector=0x7f0201d2;
+        public static final int putao_relocation=0x7f0201d3;
+        public static final int putao_scan_corner_bottom_left=0x7f0201d4;
+        public static final int putao_scan_corner_bottom_right=0x7f0201d5;
+        public static final int putao_scan_corner_top_left=0x7f0201d6;
+        public static final int putao_scan_corner_top_right=0x7f0201d7;
+        public static final int putao_scan_laser=0x7f0201d8;
+        public static final int putao_search=0x7f0201d9;
+        public static final int putao_search_down_arrow=0x7f0201da;
+        public static final int putao_search_down_arrow_p=0x7f0201db;
+        public static final int putao_seat_checked=0x7f0201dc;
+        public static final int putao_seat_lock=0x7f0201dd;
+        public static final int putao_seat_normal=0x7f0201de;
+        public static final int putao_seat_rownum_bg=0x7f0201df;
+        public static final int putao_seat_xuanzuo=0x7f0201e0;
+        public static final int putao_seat_yingmo=0x7f0201e1;
+        public static final int putao_select_normal=0x7f0201e2;
+        public static final int putao_select_pitch_on=0x7f0201e3;
+        public static final int putao_select_radio2_normal=0x7f0201e4;
+        public static final int putao_select_radio2_pitch_on=0x7f0201e5;
+        public static final int putao_select_radio_normal=0x7f0201e6;
+        public static final int putao_select_radio_pitch_on=0x7f0201e7;
+        public static final int putao_select_time=0x7f0201e8;
+        public static final int putao_select_time_full=0x7f0201e9;
+        public static final int putao_select_time_normal=0x7f0201ea;
+        public static final int putao_service_def_logo_big=0x7f0201eb;
+        public static final int putao_service_def_logo_small=0x7f0201ec;
+        public static final int putao_shangpingxiangqing_bg=0x7f0201ed;
+        public static final int putao_shape_discover_opera_label=0x7f0201ee;
+        public static final int putao_shop_detail_bg=0x7f0201ef;
+        public static final int putao_splash=0x7f0201f0;
+        public static final int putao_splash_layers=0x7f0201f1;
+        public static final int putao_tab_icon_discover=0x7f0201f2;
+        public static final int putao_tab_icon_discover_p=0x7f0201f3;
+        public static final int putao_tab_icon_logo=0x7f0201f4;
+        public static final int putao_tab_icon_logo_p=0x7f0201f5;
+        public static final int putao_tab_icon_me=0x7f0201f6;
+        public static final int putao_tab_icon_me_p=0x7f0201f7;
+        public static final int putao_tab_icon_navigation=0x7f0201f8;
+        public static final int putao_tab_icon_navigation_p=0x7f0201f9;
+        public static final int putao_tag_dianying_cq=0x7f0201fa;
+        public static final int putao_tag_dianying_dj=0x7f0201fb;
+        public static final int putao_tag_dianying_hp=0x7f0201fc;
+        public static final int putao_taxi_cp_selector=0x7f0201fd;
+        public static final int putao_thetrainticket_history=0x7f0201fe;
+        public static final int putao_transparent=0x7f0201ff;
+        public static final int putao_transparent_transblack_selector=0x7f020200;
+        public static final int putao_voucher_center_list_selector=0x7f020201;
+        public static final int shadow=0x7f020202;
+        public static final int skyblue_platform_list_item=0x7f020203;
+        public static final int skyblue_platform_list_item_selected=0x7f020204;
+        public static final int skyblue_platform_list_selector=0x7f020205;
+        public static final int switch_frame=0x7f020206;
+        public static final int switch_slider_normal=0x7f020207;
+        public static final int switch_state_mask=0x7f020208;
+        public static final int switch_state_normal=0x7f020209;
     }
     public static final class id {
-        public static final int aboutus_copyright=0x7f0a00a0;
+        public static final int aboutus_copyright=0x7f0a009d;
         public static final int aboutus_feedback_iv=0x7f0a0098;
         public static final int aboutus_feedback_layout=0x7f0a0097;
         public static final int aboutus_feedback_srv=0x7f0a0099;
-        public static final int aboutus_lifeapp_iv=0x7f0a009e;
-        public static final int aboutus_lifeapp_layout=0x7f0a009d;
-        public static final int aboutus_lifeapp_srv=0x7f0a009f;
         public static final int aboutus_logo=0x7f0a0095;
         public static final int aboutus_update_iv=0x7f0a009b;
         public static final int aboutus_update_layout=0x7f0a009a;
         public static final int aboutus_update_srv=0x7f0a009c;
         public static final int aboutus_version=0x7f0a0096;
-        public static final int accountnum=0x7f0a03d8;
-        public static final int activities_lv=0x7f0a03ea;
         public static final int ad_view_layout_bottom=0x7f0a0077;
         public static final int ad_view_layout_mid=0x7f0a0076;
         public static final int ad_view_layout_top=0x7f0a0075;
         public static final int add=0x7f0a004b;
         public static final int add_contacts=0x7f0a004d;
-        public static final int added_gridView=0x7f0a04c5;
-        public static final int added_layout=0x7f0a04c4;
-        public static final int additional_tuan=0x7f0a0279;
-        public static final int addr=0x7f0a00c3;
-        public static final int addr_confirm_layout=0x7f0a0269;
-        public static final int addr_layout=0x7f0a026c;
-        public static final int address=0x7f0a03ec;
-        public static final int address_layout=0x7f0a039d;
-        public static final int address_select=0x7f0a039e;
-        public static final int addressdetail_layout=0x7f0a039f;
-        public static final int all_delicacy=0x7f0a018c;
-        public static final int all_gridview=0x7f0a04c7;
-        public static final int all_layout=0x7f0a04c6;
-        public static final int all_peccancy_details_listview=0x7f0a03eb;
-        public static final int all_services_gridView=0x7f0a00ab;
-        public static final int arrow_imageview=0x7f0a01c6;
-        public static final int assistant_guide_add_samplecard=0x7f0a00ac;
-        public static final int assistant_guide_open_samplecard=0x7f0a00ad;
+        public static final int address_layout=0x7f0a017c;
+        public static final int address_select=0x7f0a017d;
+        public static final int addressdetail_layout=0x7f0a017e;
+        public static final int all_services_gridView=0x7f0a00a4;
         public static final int attribution=0x7f0a004f;
         public static final int auto_focus=0x7f0a006b;
-        public static final int average_price=0x7f0a027c;
         public static final int back=0x7f0a0058;
-        public static final int back_img=0x7f0a04c8;
-        public static final int back_layout=0x7f0a0232;
+        public static final int back_layout=0x7f0a0102;
         public static final int back_separator=0x7f0a0065;
-        public static final int back_to_main=0x7f0a02f0;
         public static final int background_layout=0x7f0a0025;
         public static final int base_profile_group=0x7f0a0040;
-        public static final int bill_num=0x7f0a03d1;
-        public static final int bill_relativelayout=0x7f0a03cf;
-        public static final int bill_tip=0x7f0a03d0;
         public static final int bind=0x7f0a0051;
-        public static final int birthday=0x7f0a01bc;
-        public static final int birthday_card=0x7f0a01b0;
-        public static final int birthday_cards=0x7f0a01af;
-        public static final int birthday_layout=0x7f0a01bb;
+        public static final int birthday=0x7f0a00f4;
+        public static final int birthday_card=0x7f0a00eb;
+        public static final int birthday_cards=0x7f0a00ea;
+        public static final int birthday_layout=0x7f0a00f3;
         public static final int bottom=0x7f0a008b;
-        public static final int bottom_bar=0x7f0a0164;
-        public static final int bottom_layout=0x7f0a027d;
-        public static final int bt_commit=0x7f0a03a7;
-        public static final int bt_traveller_commit=0x7f0a01bf;
-        public static final int bt_traveller_delete=0x7f0a01c0;
-        public static final int btn_detail=0x7f0a0277;
-        public static final int btn_home_page=0x7f0a027e;
-        public static final int btn_show_route=0x7f0a027f;
-        public static final int bus_container=0x7f0a00b6;
-        public static final int bus_line_query_btn=0x7f0a00c0;
-        public static final int business_label_layout=0x7f0a02ec;
-        public static final int calendar_date=0x7f0a00cc;
-        public static final int calendar_item_tag=0x7f0a00ca;
-        public static final int calendar_item_text=0x7f0a00c9;
-        public static final int calendar_left=0x7f0a00cb;
-        public static final int calendar_right=0x7f0a00cd;
-        public static final int calendar_year=0x7f0a03e9;
+        public static final int bt_traveller_commit=0x7f0a00f7;
+        public static final int bt_traveller_delete=0x7f0a00f8;
+        public static final int calendar_item_tag=0x7f0a00a6;
+        public static final int calendar_item_text=0x7f0a00a5;
         public static final int call=0x7f0a003e;
-        public static final int callPhone=0x7f0a019f;
-        public static final int call_express=0x7f0a00e0;
         public static final int call_log_listview=0x7f0a0013;
-        public static final int cancel_btn=0x7f0a0165;
-        public static final int cancel_layout=0x7f0a026a;
-        public static final int capture_flashlight=0x7f0a00d8;
-        public static final int capture_frame=0x7f0a00d4;
-        public static final int capture_preview_view=0x7f0a00d5;
-        public static final int capture_top_hint=0x7f0a00d9;
-        public static final int capture_viewfinder_view=0x7f0a00d6;
-        public static final int car_num=0x7f0a0370;
-        public static final int card_layout=0x7f0a0454;
-        public static final int carnum=0x7f0a04e2;
-        public static final int carnum_layout=0x7f0a036e;
-        public static final int category_item_parent_layout=0x7f0a03f0;
-        public static final int category_layout=0x7f0a03f1;
-        public static final int category_list=0x7f0a04a9;
-        public static final int category_list_divider=0x7f0a04aa;
-        public static final int category_name=0x7f0a00a8;
-        public static final int category_scroll=0x7f0a04ab;
-        public static final int cellphone_email_qq=0x7f0a03a6;
+        public static final int category_name=0x7f0a00a1;
         public static final int center=0x7f0a008c;
         public static final int center_horizontal=0x7f0a008d;
         public static final int center_vertical=0x7f0a008e;
-        public static final int centre=0x7f0a0312;
-        public static final int charge_confirm=0x7f0a03d5;
-        public static final int charge_confirm_content=0x7f0a0118;
-        public static final int charge_confirm_wait=0x7f0a0119;
-        public static final int charge_edit=0x7f0a03c9;
-        public static final int charge_payment_view=0x7f0a03d3;
-        public static final int charge_result_hint=0x7f0a02ea;
-        public static final int charge_result_img=0x7f0a02e7;
-        public static final int charge_result_layout=0x7f0a02e6;
-        public static final int charge_result_success_money=0x7f0a02ee;
-        public static final int charge_result_text=0x7f0a02e9;
-        public static final int charge_stuats_layout=0x7f0a02e8;
-        public static final int chargehistory_layout=0x7f0a03d6;
-        public static final int chargehistory_list=0x7f0a03d7;
-        public static final int choice_discount_coupon_divider_bottom=0x7f0a015f;
-        public static final int choice_discount_coupon_text=0x7f0a03d4;
-        public static final int cinema_address=0x7f0a0122;
-        public static final int cinema_changqu=0x7f0a0125;
-        public static final int cinema_distance=0x7f0a0121;
-        public static final int cinema_list=0x7f0a012c;
-        public static final int cinema_lowprice=0x7f0a011b;
-        public static final int cinema_name=0x7f0a011d;
-        public static final int cinemalist_area=0x7f0a0129;
-        public static final int cinemalist_area_layout=0x7f0a0128;
-        public static final int cinemalist_order=0x7f0a012b;
-        public static final int cinemalist_order_layout=0x7f0a012a;
-        public static final int city_btn=0x7f0a023d;
-        public static final int city_list=0x7f0a03fe;
-        public static final int city_name=0x7f0a03c2;
-        public static final int city_relativelayout=0x7f0a03c0;
-        public static final int city_search=0x7f0a03fd;
-        public static final int city_search_layout=0x7f0a0205;
-        public static final int city_tip=0x7f0a03c1;
-        public static final int clear=0x7f0a00bc;
-        public static final int clear_img=0x7f0a03ca;
-        public static final int clear_search=0x7f0a0207;
-        public static final int clear_search_content_btn=0x7f0a033e;
-        public static final int clear_search_history=0x7f0a04c2;
-        public static final int clear_to=0x7f0a00bf;
-        public static final int code_img=0x7f0a0271;
-        public static final int code_text=0x7f0a0272;
-        public static final int code_tip=0x7f0a0273;
-        public static final int commit_btn=0x7f0a0404;
-        public static final int commticket_listview=0x7f0a02ac;
+        public static final int centre=0x7f0a0165;
+        public static final int city_btn=0x7f0a010a;
         public static final int company=0x7f0a005b;
-        public static final int company_img=0x7f0a04a2;
-        public static final int company_layout=0x7f0a04a0;
-        public static final int company_text=0x7f0a04a1;
-        public static final int confirm=0x7f0a0117;
-        public static final int confirm_img=0x7f0a021c;
-        public static final int confirm_layout=0x7f0a026b;
         public static final int conracts_mood=0x7f0a002b;
-        public static final int constellation=0x7f0a00b4;
         public static final int contact=0x7f0a0033;
         public static final int contact_group=0x7f0a0036;
-        public static final int contacts_info=0x7f0a0403;
         public static final int container=0x7f0a0052;
-        public static final int content=0x7f0a010e;
-        public static final int content_layout=0x7f0a04c3;
-        public static final int copy_imgbtn=0x7f0a03d9;
         public static final int count=0x7f0a004a;
-        public static final int coupon_image1=0x7f0a0239;
-        public static final int coupon_image2=0x7f0a023a;
-        public static final int coupon_image3=0x7f0a023b;
-        public static final int cp_choose_image_one=0x7f0a0492;
-        public static final int cp_choose_image_three=0x7f0a0498;
-        public static final int cp_choose_image_two=0x7f0a0495;
-        public static final int cp_choose_layout_one=0x7f0a0491;
-        public static final int cp_choose_layout_three=0x7f0a0497;
-        public static final int cp_choose_layout_two=0x7f0a0494;
-        public static final int cp_choose_main_layout=0x7f0a0481;
-        public static final int cp_choose_text_one=0x7f0a0493;
-        public static final int cp_choose_text_three=0x7f0a0499;
-        public static final int cp_choose_text_two=0x7f0a0496;
-        public static final int cp_name=0x7f0a0153;
-        public static final int cpay_discount_group=0x7f0a0113;
-        public static final int cpay_discount_text=0x7f0a0114;
-        public static final int cur_money=0x7f0a031b;
-        public static final int cur_money2=0x7f0a0321;
-        public static final int custom_spinner_content=0x7f0a018b;
-        public static final int custom_spinner_layout=0x7f0a018a;
+        public static final int custom_list_view_foot_contentview=0x7f0a0116;
+        public static final int custom_list_view_foot_divider=0x7f0a0115;
+        public static final int custom_spinner_content=0x7f0a00e3;
+        public static final int custom_spinner_layout=0x7f0a00e2;
         public static final int dashboard=0x7f0a0084;
-        public static final int deal_info=0x7f0a0199;
-        public static final int deal_purchase_count=0x7f0a019a;
         public static final int decode=0x7f0a006c;
         public static final int decode_failed=0x7f0a006d;
         public static final int decode_succeeded=0x7f0a006e;
-        public static final int decription_text=0x7f0a019e;
-        public static final int delete_parent_layout=0x7f0a0405;
-        public static final int des=0x7f0a033c;
         public static final int description=0x7f0a0062;
-        public static final int detail_address=0x7f0a03a0;
-        public static final int detail_container=0x7f0a00de;
-        public static final int detail_display_all=0x7f0a00df;
-        public static final int detail_middle=0x7f0a00dd;
-        public static final int detail_text=0x7f0a00e4;
-        public static final int detail_top=0x7f0a00dc;
-        public static final int devide_view=0x7f0a03e4;
+        public static final int detail_address=0x7f0a017f;
+        public static final int detail_text=0x7f0a00ab;
         public static final int dialerpad=0x7f0a0011;
-        public static final int dialog_bootom_ok_btn=0x7f0a03a3;
-        public static final int dialog_bottom_layout=0x7f0a03a2;
-        public static final int dialog_gridview=0x7f0a00da;
-        public static final int dialog_more_action=0x7f0a0167;
-        public static final int dialog_screenad_layout=0x7f0a0335;
-        public static final int dialog_twogridview_layout=0x7f0a03a1;
-        public static final int discount_voucher_list=0x7f0a01a1;
-        public static final int distance=0x7f0a0216;
-        public static final int divider=0x7f0a0155;
-        public static final int divider1=0x7f0a0193;
-        public static final int divider_line=0x7f0a011a;
-        public static final int divider_view=0x7f0a018e;
-        public static final int divider_view_bottom=0x7f0a0407;
+        public static final int dialog_bootom_cancel_btn=0x7f0a00cb;
+        public static final int dialog_bootom_ok_btn=0x7f0a00cc;
+        public static final int dialog_bottom_layout=0x7f0a00ca;
+        public static final int dialog_gridview=0x7f0a00a7;
+        public static final int dialog_more_action=0x7f0a00c7;
+        public static final int dialog_screenad_layout=0x7f0a016f;
+        public static final int dialog_title_divider=0x7f0a00cd;
+        public static final int dialog_title_tv=0x7f0a00c8;
+        public static final int dialog_twogridview_layout=0x7f0a0180;
+        public static final int dialog_update_progress=0x7f0a0181;
+        public static final int dialog_update_progress_txt=0x7f0a0182;
+        public static final int dialog_yearandmonth_layout=0x7f0a0189;
+        public static final int discount_voucher_list=0x7f0a00e4;
         public static final int downToUp=0x7f0a0080;
         public static final int edit=0x7f0a0039;
-        public static final int edit_code_tip_text=0x7f0a0274;
-        public static final int edit_company_iv=0x7f0a04a4;
-        public static final int edit_company_layout=0x7f0a04a3;
-        public static final int edit_home_iv=0x7f0a049f;
-        public static final int edit_home_layout=0x7f0a049e;
-        public static final int edit_layout=0x7f0a03c6;
-        public static final int edit_layout_two=0x7f0a03c8;
-        public static final int edit_phonenum_lauout=0x7f0a0487;
-        public static final int edit_phonenum_text=0x7f0a026f;
         public static final int edit_separator=0x7f0a0050;
-        public static final int edition=0x7f0a02b4;
         public static final int eight=0x7f0a000c;
         public static final int email=0x7f0a0042;
         public static final int empty=0x7f0a0085;
-        public static final int empty_desc_imv=0x7f0a015c;
-        public static final int empty_desc_txt=0x7f0a015d;
+        public static final int empty_desc_imv=0x7f0a00c5;
+        public static final int empty_desc_txt=0x7f0a00c6;
         public static final int empty_layout=0x7f0a0078;
         public static final int empty_tip_one=0x7f0a0079;
         public static final int empty_tip_two=0x7f0a007a;
-        public static final int empty_view=0x7f0a0126;
-        public static final int end_choose_lauout=0x7f0a0482;
-        public static final int end_time=0x7f0a02b2;
-        public static final int engine_layout=0x7f0a0371;
-        public static final int engine_num=0x7f0a0372;
+        public static final int empty_view=0x7f0a0172;
         public static final int error=0x7f0a0068;
-        public static final int exception_desc=0x7f0a02ab;
-        public static final int exception_refresh=0x7f0a02aa;
+        public static final int exception_desc=0x7f0a013f;
+        public static final int exception_refresh=0x7f0a013e;
         public static final int exit=0x7f0a005c;
-        public static final int exp_status_textview=0x7f0a01c5;
-        public static final int expand=0x7f0a00c1;
-        public static final int express_company_call=0x7f0a01d4;
-        public static final int express_company_logo=0x7f0a01d1;
-        public static final int express_company_name=0x7f0a01d2;
-        public static final int express_company_name_tv=0x7f0a01c1;
-        public static final int express_company_phone=0x7f0a01d3;
-        public static final int express_company_show_layout=0x7f0a01d0;
-        public static final int express_detail_status=0x7f0a01ce;
-        public static final int express_detail_title_tag=0x7f0a01cd;
-        public static final int express_history_check_box=0x7f0a01c4;
-        public static final int express_img=0x7f0a01ca;
-        public static final int express_num_title=0x7f0a01d5;
-        public static final int express_num_tv=0x7f0a01c2;
-        public static final int express_num_value=0x7f0a01d6;
-        public static final int express_select_retry_btn=0x7f0a01df;
-        public static final int express_status=0x7f0a01cc;
-        public static final int express_status_hint=0x7f0a01cb;
-        public static final int express_status_layput=0x7f0a01c9;
-        public static final int face_price_text=0x7f0a03f4;
         public static final int fans=0x7f0a004e;
-        public static final int favorite_info_imageview=0x7f0a01dd;
-        public static final int favorite_info_textview=0x7f0a01de;
-        public static final int fee=0x7f0a029a;
-        public static final int fee_num=0x7f0a03ce;
-        public static final int fee_relativelayout=0x7f0a03cc;
-        public static final int fee_tip=0x7f0a03cd;
-        public static final int feedback_content=0x7f0a03a4;
-        public static final int film_confirm=0x7f0a014b;
-        public static final int film_confirm_layout=0x7f0a014a;
-        public static final int film_name=0x7f0a014d;
-        public static final int film_seat=0x7f0a0150;
-        public static final int film_time=0x7f0a014f;
-        public static final int film_type=0x7f0a014e;
-        public static final int filter_layout=0x7f0a0127;
-        public static final int fine=0x7f0a03ef;
+        public static final int fee=0x7f0a012b;
         public static final int five=0x7f0a0009;
-        public static final int food_category=0x7f0a04bd;
         public static final int forword=0x7f0a0054;
         public static final int four=0x7f0a0008;
-        public static final int framelayout=0x7f0a0162;
-        public static final int from=0x7f0a00bb;
-        public static final int from_mark=0x7f0a00ba;
         public static final int front_bg=0x7f0a0024;
         public static final int front_view=0x7f0a0023;
-        public static final int get_verification_code_layout=0x7f0a0270;
-        public static final int gewa_price=0x7f0a02b5;
-        public static final int goods_current_price=0x7f0a0108;
-        public static final int goods_desc=0x7f0a0107;
-        public static final int goods_distance=0x7f0a0105;
-        public static final int goods_img=0x7f0a0104;
-        public static final int goods_list=0x7f0a0208;
-        public static final int goods_name=0x7f0a020a;
-        public static final int goods_prime_price=0x7f0a0109;
-        public static final int goods_search=0x7f0a0206;
-        public static final int goods_sold=0x7f0a010b;
-        public static final int goods_title=0x7f0a0106;
-        public static final int gridView_calendar=0x7f0a00cf;
-        public static final int gridView_week=0x7f0a00ce;
+        public static final int goods_current_price=0x7f0a00be;
+        public static final int goods_desc=0x7f0a00bc;
+        public static final int goods_img=0x7f0a00ba;
+        public static final int goods_title=0x7f0a00bb;
         public static final int group=0x7f0a0032;
-        public static final int group_divider_top=0x7f0a015e;
         public static final int group_name=0x7f0a004c;
-        public static final int guess_like_title=0x7f0a0228;
         public static final int guide=0x7f0a005a;
-        public static final int guide_viewpager=0x7f0a0229;
+        public static final int guide_viewpager=0x7f0a00fa;
         public static final int hdpi=0x7f0a0087;
-        public static final int head_arrowImageView=0x7f0a022e;
-        public static final int head_contentLayout=0x7f0a022b;
-        public static final int head_lastUpdatedTextView=0x7f0a0231;
-        public static final int head_layout=0x7f0a01b4;
-        public static final int head_progressBar=0x7f0a022f;
-        public static final int head_tipsTextView=0x7f0a0230;
+        public static final int head_arrowImageView=0x7f0a00fe;
+        public static final int head_contentLayout=0x7f0a00fb;
+        public static final int head_lastUpdatedTextView=0x7f0a0101;
+        public static final int head_layout=0x7f0a00ec;
+        public static final int head_progressBar=0x7f0a00ff;
+        public static final int head_tipsTextView=0x7f0a0100;
         public static final int header=0x7f0a0031;
-        public static final int history_icon=0x7f0a04ba;
-        public static final int history_list=0x7f0a016a;
-        public static final int historyitem_account=0x7f0a03df;
-        public static final int historyitem_charge=0x7f0a03e7;
-        public static final int historyitem_date=0x7f0a03e5;
-        public static final int historyitem_favorable=0x7f0a03e0;
-        public static final int historyitem_firstrow=0x7f0a03dc;
-        public static final int historyitem_markprice=0x7f0a03de;
-        public static final int historyitem_order=0x7f0a03e6;
-        public static final int historyitem_orderinfo=0x7f0a03da;
-        public static final int historyitem_phone=0x7f0a03f5;
-        public static final int historyitem_price=0x7f0a03e3;
-        public static final int historyitem_price_hint=0x7f0a03e2;
-        public static final int historyitem_recharge_type=0x7f0a03dd;
-        public static final int historyitem_secondrow=0x7f0a03e1;
-        public static final int historyitem_state=0x7f0a03e8;
-        public static final int historyitem_state_layout=0x7f0a03db;
-        public static final int home_company_layout=0x7f0a049a;
-        public static final int home_img=0x7f0a049d;
-        public static final int home_layout=0x7f0a049b;
-        public static final int home_text=0x7f0a049c;
+        public static final int history_list=0x7f0a0162;
         public static final int home_viewpager=0x7f0a0004;
         public static final int horizontal=0x7f0a007b;
-        public static final int horizontal_line=0x7f0a01d7;
-        public static final int hot_gridview=0x7f0a039b;
-        public static final int hot_railway=0x7f0a039a;
-        public static final int hotel_pay_bank_layout=0x7f0a0410;
-        public static final int hotel_pay_bank_name=0x7f0a0411;
-        public static final int hotel_pay_cardnum=0x7f0a0413;
-        public static final int hotel_pay_cardnum_layout=0x7f0a0412;
-        public static final int hotel_pay_certificate_num=0x7f0a041f;
-        public static final int hotel_pay_certificate_num_layout=0x7f0a041e;
-        public static final int hotel_pay_certificate_type=0x7f0a041d;
-        public static final int hotel_pay_certificate_type_layout=0x7f0a041c;
-        public static final int hotel_pay_mobile=0x7f0a041b;
-        public static final int hotel_pay_mobile_layout=0x7f0a041a;
-        public static final int hotel_pay_money=0x7f0a0421;
-        public static final int hotel_pay_money_layout=0x7f0a0420;
-        public static final int hotel_pay_name=0x7f0a0419;
-        public static final int hotel_pay_name_layout=0x7f0a0418;
-        public static final int hotel_pay_securitycode=0x7f0a0415;
-        public static final int hotel_pay_securitycode_layout=0x7f0a0414;
-        public static final int hotel_pay_submit_btn=0x7f0a0422;
-        public static final int hotel_pay_validity=0x7f0a0417;
-        public static final int hotel_pay_validity_layout=0x7f0a0416;
-        public static final int hoteldetail_comedate=0x7f0a0248;
-        public static final int hoteldetail_leavedate=0x7f0a0249;
-        public static final int hoteldetail_roominfo_list=0x7f0a024a;
-        public static final int hotelorder_amount=0x7f0a044b;
-        public static final int hotelorder_amount_layout=0x7f0a044a;
-        public static final int hotelorder_arrive_date=0x7f0a0441;
-        public static final int hotelorder_arrive_date_layout=0x7f0a0440;
-        public static final int hotelorder_come_name=0x7f0a0444;
-        public static final int hotelorder_come_name_tip=0x7f0a0445;
-        public static final int hotelorder_come_name_tip_button=0x7f0a0253;
-        public static final int hotelorder_comedate=0x7f0a043a;
-        public static final int hotelorder_days=0x7f0a0439;
-        public static final int hotelorder_guarantee_text=0x7f0a044f;
-        public static final int hotelorder_guarantee_text_info=0x7f0a0450;
-        public static final int hotelorder_guarantee_type_img=0x7f0a044e;
-        public static final int hotelorder_leavedate=0x7f0a043b;
-        public static final int hotelorder_mobile=0x7f0a0448;
-        public static final int hotelorder_name=0x7f0a0438;
-        public static final int hotelorder_openorderdetail=0x7f0a047d;
-        public static final int hotelorder_romms=0x7f0a043e;
-        public static final int hotelorder_roomname=0x7f0a043d;
-        public static final int hotelorder_roomname_layout=0x7f0a043c;
-        public static final int hotelorder_submit=0x7f0a0453;
-        public static final int hotword_bottom_line=0x7f0a032e;
-        public static final int hotword_right_line=0x7f0a032d;
-        public static final int hotword_title=0x7f0a032c;
+        public static final int hot_gridview=0x7f0a017a;
+        public static final int hot_railway=0x7f0a0179;
+        public static final int hotword_bottom_line=0x7f0a0168;
+        public static final int hotword_right_line=0x7f0a0167;
+        public static final int hotword_title=0x7f0a0166;
         public static final int icon=0x7f0a0026;
         public static final int icon1=0x7f0a0028;
-        public static final int id_layout=0x7f0a01b9;
-        public static final int id_number_layout=0x7f0a01bd;
-        public static final int idnumber=0x7f0a01be;
-        public static final int idtype=0x7f0a01ba;
+        public static final int id_layout=0x7f0a00f1;
+        public static final int id_number_layout=0x7f0a00f5;
+        public static final int idnumber=0x7f0a00f6;
+        public static final int idtype=0x7f0a00f2;
         /**  From Putao 
          */
         public static final int image=0x7f0a0021;
-        public static final int imageView1=0x7f0a02cf;
-        public static final int imageView2=0x7f0a02d3;
-        public static final int imageView3=0x7f0a02d6;
-        public static final int imageView4=0x7f0a02da;
-        public static final int imageView5=0x7f0a02de;
-        public static final int imageView6=0x7f0a02e2;
-        public static final int image_search=0x7f0a0483;
-        public static final int image_vhicle=0x7f0a0360;
-        public static final int info_text=0x7f0a019b;
-        public static final int input=0x7f0a00c5;
-        public static final int input_container=0x7f0a00c4;
-        public static final int input_et=0x7f0a0161;
+        public static final int image_vhicle=0x7f0a0176;
         public static final int invite_group=0x7f0a0045;
-        public static final int item_bed=0x7f0a024e;
-        public static final int item_breakfast=0x7f0a024d;
-        public static final int item_danbao=0x7f0a024f;
-        public static final int item_date=0x7f0a00a4;
-        public static final int item_hotel_book_btn=0x7f0a0252;
-        public static final int item_img=0x7f0a0214;
-        public static final int item_info=0x7f0a0215;
-        public static final int item_layout=0x7f0a0213;
-        public static final int item_li=0x7f0a0250;
-        public static final int item_middile_layout=0x7f0a03ed;
-        public static final int item_middle_content=0x7f0a024b;
-        public static final int item_money=0x7f0a0251;
-        public static final int item_name=0x7f0a00a2;
-        public static final int item_pic=0x7f0a00a1;
-        public static final int item_right_content=0x7f0a024c;
-        public static final int item_show=0x7f0a01c3;
-        public static final int item_status=0x7f0a00a3;
-        public static final int iv=0x7f0a0254;
+        public static final int iv=0x7f0a0114;
         public static final int key=0x7f0a0069;
         public static final int keyboard_back=0x7f0a0018;
         public static final int keyboard_dial=0x7f0a0014;
@@ -3530,682 +2995,212 @@ containing a value of this type.
         public static final int keyboard_hide=0x7f0a0017;
         public static final int keyboard_phone_edit=0x7f0a0012;
         public static final int keyboard_show=0x7f0a0016;
-        public static final int language=0x7f0a02b3;
         public static final int launch_product_query=0x7f0a006f;
-        public static final int layout_handle=0x7f0a013d;
-        public static final int layout_order_params=0x7f0a0130;
-        public static final int layout_payandcancel=0x7f0a0147;
-        public static final int layout_taxi_and_entertainment=0x7f0a0144;
         public static final int ldpi=0x7f0a0088;
         public static final int left=0x7f0a008f;
         public static final int leftToRight=0x7f0a0081;
-        public static final int like_layout_content=0x7f0a0223;
-        public static final int limit_time=0x7f0a0148;
-        public static final int line=0x7f0a00e5;
-        public static final int line_bottom=0x7f0a00e3;
-        public static final int line_top=0x7f0a00e1;
+        public static final int line=0x7f0a00ac;
+        public static final int line_bottom=0x7f0a00aa;
+        public static final int line_top=0x7f0a00a8;
         public static final int list=0x7f0a0030;
-        public static final int list_container=0x7f0a030f;
-        public static final int listview=0x7f0a0169;
-        public static final int listview_delicacy=0x7f0a0191;
-        public static final int load_more=0x7f0a0256;
+        public static final int list_container=0x7f0a0161;
+        public static final int listview=0x7f0a00c9;
+        public static final int load_more=0x7f0a0118;
         public static final int loading=0x7f0a0067;
         public static final int loading_layout=0x7f0a002e;
         public static final int location=0x7f0a0041;
-        public static final int login_out_btn=0x7f0a030e;
-        public static final int logo=0x7f0a00db;
-        public static final int logo_img=0x7f0a04cd;
-        public static final int lottery_setting=0x7f0a0267;
-        public static final int ly_custom=0x7f0a0163;
-        public static final int main_layout=0x7f0a0149;
-        public static final int main_title=0x7f0a012d;
-        public static final int main_viewpager=0x7f0a048a;
-        public static final int mainlist=0x7f0a0220;
-        public static final int map=0x7f0a00af;
-        public static final int mapView=0x7f0a0275;
-        public static final int map_edit_addr_layout=0x7f0a0268;
-        public static final int map_edit_num_layout=0x7f0a026d;
-        public static final int mcontainer=0x7f0a00ae;
+        public static final int login_out_btn=0x7f0a0160;
+        public static final int logo=0x7f0a00b1;
+        public static final int lottery_setting=0x7f0a0127;
+        public static final int main_viewpager=0x7f0a018a;
         public static final int mdpi=0x7f0a0089;
-        public static final int menu_aboutus=0x7f0a02a9;
-        public static final int menu_acc_head_icon=0x7f0a029d;
-        public static final int menu_acc_logintip=0x7f0a029f;
-        public static final int menu_acc_name=0x7f0a02a0;
-        public static final int menu_my_voucher=0x7f0a02a6;
-        public static final int menu_mygroupon=0x7f0a02a7;
-        public static final int menu_myorder=0x7f0a02a5;
-        public static final int menu_myremind=0x7f0a02a1;
-        public static final int menu_myremind_container=0x7f0a02a4;
-        public static final int menu_remindset=0x7f0a02a8;
-        public static final int message_tv=0x7f0a0168;
+        public static final int menu_aboutus=0x7f0a013d;
+        public static final int menu_acc_head_icon=0x7f0a012e;
+        public static final int menu_acc_logintip=0x7f0a0130;
+        public static final int menu_acc_name=0x7f0a0131;
+        public static final int menu_my_voucher=0x7f0a0139;
+        public static final int menu_mygroupon=0x7f0a013b;
+        public static final int menu_myorder=0x7f0a0137;
+        public static final int menu_myremind=0x7f0a0132;
+        public static final int menu_myremind_container=0x7f0a0136;
+        public static final int menu_srv_mygroupon=0x7f0a013c;
+        public static final int menu_srv_myorder=0x7f0a0138;
+        public static final int menu_srv_myremind=0x7f0a0134;
+        public static final int message_tv=0x7f0a00ce;
         public static final int mobile_spinner=0x7f0a0048;
-        public static final int money=0x7f0a00f6;
-        public static final int more_layout=0x7f0a04ce;
-        public static final int more_station=0x7f0a039c;
-        public static final int movie_actor=0x7f0a028a;
-        public static final int movie_description=0x7f0a0288;
-        public static final int movie_director=0x7f0a0289;
-        public static final int movie_dtl=0x7f0a02c3;
-        public static final int movie_general_mark=0x7f0a02c4;
-        public static final int movie_list=0x7f0a04a8;
-        public static final int movie_name=0x7f0a0285;
-        public static final int movie_orderpay_head_cinema=0x7f0a0293;
-        public static final int movie_orderpay_head_content=0x7f0a028c;
-        public static final int movie_orderpay_head_img=0x7f0a028d;
-        public static final int movie_orderpay_head_money=0x7f0a0292;
-        public static final int movie_orderpay_head_name=0x7f0a028e;
-        public static final int movie_orderpay_head_num=0x7f0a0290;
-        public static final int movie_orderpay_head_phone=0x7f0a0295;
-        public static final int movie_orderpay_head_phone_hint=0x7f0a0294;
-        public static final int movie_orderpay_head_playtime=0x7f0a0291;
-        public static final int movie_orderpay_head_seat=0x7f0a028f;
-        public static final int movie_poster=0x7f0a0284;
-        public static final int movie_property=0x7f0a0287;
-        public static final int movie_star=0x7f0a0286;
-        public static final int msg=0x7f0a0258;
-        public static final int multi_select=0x7f0a037d;
+        public static final int money=0x7f0a00b7;
+        public static final int more_station=0x7f0a017b;
+        public static final int msg=0x7f0a011a;
         public static final int multiple=0x7f0a0092;
-        public static final int my_home=0x7f0a00b1;
-        public static final int my_location=0x7f0a00b0;
-        public static final int my_nodata_layout=0x7f0a0281;
+        public static final int my_nodata_layout=0x7f0a0129;
         public static final int name=0x7f0a0027;
         public static final int name1=0x7f0a0029;
-        public static final int name_layout=0x7f0a01b5;
+        public static final int name_layout=0x7f0a00ed;
         public static final int name_sns=0x7f0a0066;
-        public static final int name_text=0x7f0a04c9;
-        public static final int navigation=0x7f0a00b2;
-        public static final int near_station=0x7f0a00c8;
-        public static final int near_station_tv=0x7f0a00c7;
-        public static final int nearby_additional_tuan=0x7f0a04b1;
-        public static final int nearby_average_price=0x7f0a04b5;
-        public static final int nearby_distance=0x7f0a04b7;
-        public static final int nearby_item_img=0x7f0a04ae;
-        public static final int nearby_item_info=0x7f0a04af;
-        public static final int nearby_item_layout=0x7f0a04ad;
-        public static final int nearby_name=0x7f0a04b0;
-        public static final int nearby_region=0x7f0a04b8;
-        public static final int nearby_region_layout=0x7f0a04b6;
-        public static final int nearby_star_layout=0x7f0a04b3;
-        public static final int nearby_star_price_layout=0x7f0a04b2;
-        public static final int nearby_vertical_line_view=0x7f0a04b4;
-        public static final int network_exception_layout=0x7f0a0192;
-        public static final int next_setp_layout=0x7f0a0235;
-        public static final int next_step_btn=0x7f0a0237;
-        public static final int next_step_img=0x7f0a0236;
+        public static final int network_exception_layout=0x7f0a00e5;
+        public static final int next_setp_layout=0x7f0a0105;
+        public static final int next_step_btn=0x7f0a0107;
+        public static final int next_step_img=0x7f0a0106;
         public static final int nine=0x7f0a000d;
         public static final int none=0x7f0a007d;
         public static final int normal=0x7f0a0086;
-        public static final int now_price=0x7f0a021a;
-        public static final int number_choose1=0x7f0a0400;
-        public static final int number_choose2=0x7f0a0401;
-        public static final int number_choosegroup=0x7f0a03ff;
-        public static final int number_text=0x7f0a019d;
-        public static final int ok_btn=0x7f0a0166;
         /**  IDS FOR DialpadFragment 
          */
         public static final int one=0x7f0a0005;
-        public static final int operate_item_gap=0x7f0a02c9;
-        public static final int operate_show_layout=0x7f0a02ca;
-        public static final int operate_webview=0x7f0a02cb;
-        public static final int operatelayout1=0x7f0a02cc;
-        public static final int operatelayout2=0x7f0a02d0;
-        public static final int operatelayout3=0x7f0a02d4;
-        public static final int operatelayout4=0x7f0a02d8;
-        public static final int operatelayout5=0x7f0a02dc;
-        public static final int operatelayout6=0x7f0a02e0;
-        public static final int operator_logo=0x7f0a00f4;
-        public static final int opi_list=0x7f0a02c8;
-        public static final int opi_movie_list=0x7f0a02c2;
-        public static final int opilist_empty_view=0x7f0a02c7;
-        public static final int order_cancel=0x7f0a0100;
-        public static final int order_company=0x7f0a03be;
-        public static final int order_content=0x7f0a00f2;
-        public static final int order_create_time=0x7f0a00fb;
-        public static final int order_entertainment=0x7f0a0146;
-        public static final int order_icon=0x7f0a00f0;
-        public static final int order_no=0x7f0a00fa;
-        public static final int order_pay=0x7f0a00ff;
-        public static final int order_phone=0x7f0a00fd;
-        public static final int order_phone_num=0x7f0a00f3;
-        public static final int order_price=0x7f0a00f9;
-        public static final int order_product_des=0x7f0a00fc;
-        public static final int order_query=0x7f0a0101;
-        public static final int order_result_hint=0x7f0a046d;
-        public static final int order_result_hotelname=0x7f0a0472;
-        public static final int order_result_hotelname_layout=0x7f0a0471;
-        public static final int order_result_img=0x7f0a046b;
-        public static final int order_result_inout=0x7f0a0474;
-        public static final int order_result_inout_layout=0x7f0a0473;
-        public static final int order_result_layout=0x7f0a0469;
-        public static final int order_result_order_reson=0x7f0a047a;
-        public static final int order_result_order_reson_hint_content=0x7f0a0478;
-        public static final int order_result_order_reson_hintlayout=0x7f0a0477;
-        public static final int order_result_order_success_money=0x7f0a047c;
-        public static final int order_result_order_success_money_hint=0x7f0a047b;
-        public static final int order_result_ordernum=0x7f0a0470;
-        public static final int order_result_ordernum_layout=0x7f0a046f;
-        public static final int order_result_people=0x7f0a0476;
-        public static final int order_result_people_layout=0x7f0a0475;
-        public static final int order_result_text=0x7f0a046c;
-        public static final int order_status=0x7f0a00f8;
-        public static final int order_stuats_layout=0x7f0a046a;
-        public static final int order_subject=0x7f0a00ef;
-        public static final int order_texi=0x7f0a0145;
-        public static final int order_title=0x7f0a00f1;
-        public static final int order_user_id=0x7f0a03bf;
-        public static final int orderdetail_address=0x7f0a045e;
-        public static final int orderdetail_address_hint=0x7f0a045d;
-        public static final int orderdetail_come_name=0x7f0a0464;
-        public static final int orderdetail_come_name_hint=0x7f0a0463;
-        public static final int orderdetail_kefudianhua=0x7f0a0467;
-        public static final int orderdetail_lastin_date=0x7f0a0460;
-        public static final int orderdetail_lastin_date_hint=0x7f0a045f;
-        public static final int orderdetail_mobile=0x7f0a0466;
-        public static final int orderdetail_mobile_hint=0x7f0a0465;
-        public static final int orderdetail_money=0x7f0a0456;
-        public static final int orderdetail_movie_logo=0x7f0a03af;
-        public static final int orderdetail_name=0x7f0a045c;
-        public static final int orderdetail_name_hint=0x7f0a045b;
-        public static final int orderdetail_order_createtime=0x7f0a045a;
-        public static final int orderdetail_order_createtime_hint=0x7f0a0459;
-        public static final int orderdetail_order_hint=0x7f0a0457;
-        public static final int orderdetail_order_type=0x7f0a0462;
-        public static final int orderdetail_order_type_hint=0x7f0a0461;
-        public static final int orderdetail_serialid=0x7f0a0458;
-        public static final int orderdetail_state=0x7f0a0455;
-        public static final int orderdetail_yufutiaokuan=0x7f0a0468;
-        public static final int orderlist_express_head=0x7f0a01c7;
-        public static final int orderlist_express_info_layout=0x7f0a01c8;
-        public static final int orderlist_hotel_img=0x7f0a0246;
-        public static final int orderlist_hotel_in_date=0x7f0a0244;
-        public static final int orderlist_hotel_in_layout=0x7f0a0243;
-        public static final int orderlist_hotel_info_layout=0x7f0a0241;
-        public static final int orderlist_hotel_out_date=0x7f0a0245;
-        public static final int orderlist_hotel_roomname=0x7f0a0242;
-        public static final int org_price=0x7f0a021b;
-        public static final int others_info=0x7f0a0402;
-        public static final int pager=0x7f0a0327;
-        public static final int pagerindicator=0x7f0a0326;
-        public static final int pay_body=0x7f0a03d2;
-        public static final int payed=0x7f0a00f5;
-        public static final int payment=0x7f0a0116;
-        public static final int payment_group=0x7f0a0115;
-        public static final int personal_data_interest_label_tv=0x7f0a02f1;
+        public static final int operator_logo=0x7f0a00b5;
+        public static final int orderdetail_movie_logo=0x7f0a0186;
+        public static final int orderlist_hotel_img=0x7f0a0113;
+        public static final int orderlist_hotel_in_date=0x7f0a0111;
+        public static final int orderlist_hotel_in_layout=0x7f0a0110;
+        public static final int orderlist_hotel_info_layout=0x7f0a010e;
+        public static final int orderlist_hotel_out_date=0x7f0a0112;
+        public static final int orderlist_hotel_roomname=0x7f0a010f;
+        public static final int payed=0x7f0a00b6;
+        public static final int personal_data_interest_label_tv=0x7f0a0142;
         public static final int personal_info=0x7f0a0046;
-        public static final int phone=0x7f0a01b8;
+        public static final int phone=0x7f0a00f0;
         public static final int phone_addr=0x7f0a002f;
         public static final int phone_group=0x7f0a003f;
-        public static final int phone_img=0x7f0a0488;
-        public static final int phone_layout=0x7f0a01b7;
+        public static final int phone_layout=0x7f0a00ef;
         public static final int phone_local=0x7f0a003c;
-        public static final int phone_text=0x7f0a0489;
-        public static final int phonenum=0x7f0a03f6;
-        public static final int phonenum_tip=0x7f0a026e;
-        public static final int phoneoperator=0x7f0a03f7;
-        public static final int playdate_container=0x7f0a02c5;
-        public static final int point=0x7f0a00e2;
-        public static final int popupwin_line=0x7f0a0311;
-        public static final int popupwin_list_item_text=0x7f0a0310;
+        public static final int point=0x7f0a00a9;
+        public static final int popupwin_line=0x7f0a0164;
+        public static final int popupwin_list_item_text=0x7f0a0163;
         public static final int pound=0x7f0a0010;
-        public static final int preview_view=0x7f0a0333;
-        public static final int price=0x7f0a033a;
-        public static final int price_divider=0x7f0a04cb;
+        public static final int preview_view=0x7f0a016d;
         public static final int profile=0x7f0a003a;
         public static final int progress=0x7f0a0022;
-        public static final int progressbar=0x7f0a047f;
-        public static final int provider_name_tv=0x7f0a00ee;
-        public static final int provider_phone=0x7f0a00ed;
-        public static final int province_code=0x7f0a036f;
-        public static final int pull_to_refresh_progress=0x7f0a0255;
-        public static final int putao_add_car_layout=0x7f0a037e;
-        public static final int putao_arrow=0x7f0a02bf;
-        public static final int putao_arrow1=0x7f0a02f9;
-        public static final int putao_arrow2=0x7f0a02fc;
-        public static final int putao_arrow3=0x7f0a02ff;
-        public static final int putao_arrow4=0x7f0a0302;
-        public static final int putao_arrow5=0x7f0a0305;
-        public static final int putao_arrow6=0x7f0a0308;
-        public static final int putao_arrow7=0x7f0a030c;
-        public static final int putao_big_logo=0x7f0a0202;
-        public static final int putao_bottom_layout=0x7f0a01ac;
-        public static final int putao_btn_use_immediately=0x7f0a01a4;
-        public static final int putao_cancel_btn=0x7f0a04e1;
-        public static final int putao_captcha_dialog_cancel_tv=0x7f0a00d2;
-        public static final int putao_captcha_dialog_captcha_et=0x7f0a00d1;
-        public static final int putao_captcha_dialog_captcha_iv=0x7f0a00d0;
-        public static final int putao_captcha_dialog_confirm_tv=0x7f0a00d3;
-        public static final int putao_category=0x7f0a020e;
-        public static final int putao_category_img=0x7f0a010f;
-        public static final int putao_category_left=0x7f0a00a9;
-        public static final int putao_category_list_indicator=0x7f0a03f2;
-        public static final int putao_category_list_name=0x7f0a03f3;
-        public static final int putao_category_name=0x7f0a0110;
-        public static final int putao_category_right=0x7f0a00aa;
-        public static final int putao_charge_confirm=0x7f0a01f1;
-        public static final int putao_charge_confirm_content=0x7f0a01f2;
-        public static final int putao_charge_confirm_wait=0x7f0a01f3;
-        public static final int putao_charge_discount_coupon=0x7f0a01ec;
-        public static final int putao_charge_payment_layout=0x7f0a01f0;
-        public static final int putao_charge_type_layout=0x7f0a01ef;
-        public static final int putao_chargehistory_layout=0x7f0a01f4;
-        public static final int putao_chargehistory_list=0x7f0a01f5;
-        public static final int putao_cinema_address=0x7f0a02c1;
-        public static final int putao_cinema_address_layout=0x7f0a0120;
-        public static final int putao_cinema_compare_price=0x7f0a0124;
-        public static final int putao_cinema_countdes=0x7f0a0123;
-        public static final int putao_cinema_dtl=0x7f0a02be;
-        public static final int putao_cinema_exchange=0x7f0a011f;
-        public static final int putao_cinema_name=0x7f0a02c0;
-        public static final int putao_cinema_name_layout=0x7f0a011c;
-        public static final int putao_cinema_orderdtl_cpname=0x7f0a013f;
-        public static final int putao_cinema_orderdtl_cpremark=0x7f0a0143;
-        public static final int putao_cinema_orderdtl_cprow1=0x7f0a013e;
-        public static final int putao_cinema_orderdtl_cprow2=0x7f0a0140;
-        public static final int putao_cinema_orderdtl_cprow3=0x7f0a0142;
-        public static final int putao_cinema_orderdtl_cptel=0x7f0a0141;
-        public static final int putao_cinema_seat=0x7f0a011e;
-        public static final int putao_city_chinese_textview=0x7f0a03f9;
-        public static final int putao_city_chinese_textview_bottom_line=0x7f0a03fa;
-        public static final int putao_city_foreign_textview=0x7f0a03fb;
-        public static final int putao_city_foreign_textview_bottom_line=0x7f0a03fc;
-        public static final int putao_cityselect_tab=0x7f0a03f8;
-        public static final int putao_ckd_back_layout=0x7f0a00d7;
-        public static final int putao_clear_confirm_password_iv=0x7f0a035f;
-        public static final int putao_clear_password_iv=0x7f0a0260;
-        public static final int putao_clear_search=0x7f0a01e8;
-        public static final int putao_clear_username_iv=0x7f0a025d;
-        public static final int putao_common_info=0x7f0a0301;
-        public static final int putao_common_info_hint_tv=0x7f0a0303;
-        public static final int putao_commticket_desc=0x7f0a02af;
-        public static final int putao_commticket_name=0x7f0a02ad;
-        public static final int putao_commticket_originalprice=0x7f0a02b0;
-        public static final int putao_commticket_price=0x7f0a02ae;
-        public static final int putao_confirm_bt=0x7f0a0261;
-        public static final int putao_confirm_password_et=0x7f0a035e;
-        public static final int putao_confirm_password_tv=0x7f0a035d;
-        public static final int putao_content_imageView=0x7f0a0156;
-        public static final int putao_content_listView=0x7f0a04b9;
-        public static final int putao_cp_info=0x7f0a02e5;
-        public static final int putao_cp_layout=0x7f0a00fe;
-        public static final int putao_cp_prefix=0x7f0a02e4;
-        public static final int putao_cpcouponinfo=0x7f0a02bb;
-        public static final int putao_cplist=0x7f0a02b8;
-        public static final int putao_cplogo=0x7f0a02b9;
-        public static final int putao_cpname=0x7f0a02ba;
-        public static final int putao_ctorderdtl_available_time=0x7f0a0183;
-        public static final int putao_ctorderdtl_exchangecode=0x7f0a017b;
-        public static final int putao_ctorderdtl_exchangecode_layout=0x7f0a0179;
-        public static final int putao_ctorderdtl_exchangecode_pre=0x7f0a017a;
-        public static final int putao_ctorderdtl_offerexchangecode=0x7f0a017d;
-        public static final int putao_ctorderdtl_offerexchangecode_pre=0x7f0a017c;
-        public static final int putao_ctorderdtl_ticketname=0x7f0a0182;
-        public static final int putao_desc_txt=0x7f0a0297;
-        public static final int putao_description_textView=0x7f0a0158;
-        public static final int putao_discount_coupon_divider_top=0x7f0a01ed;
-        public static final int putao_discount_coupon_layout=0x7f0a01eb;
-        public static final int putao_discount_coupon_text=0x7f0a01ee;
-        public static final int putao_distance_textView=0x7f0a015b;
-        public static final int putao_divider=0x7f0a0339;
-        public static final int putao_divider1=0x7f0a017e;
-        public static final int putao_divider2=0x7f0a0180;
-        public static final int putao_driver_call=0x7f0a0367;
-        public static final int putao_driver_car=0x7f0a0366;
-        public static final int putao_driver_distance=0x7f0a01ab;
-        public static final int putao_driver_distance_info=0x7f0a01a5;
-        public static final int putao_driver_info=0x7f0a01a6;
-        public static final int putao_driver_license=0x7f0a01a9;
-        public static final int putao_driver_license_name=0x7f0a01a8;
-        public static final int putao_driver_logo=0x7f0a0365;
-        public static final int putao_driver_name=0x7f0a01aa;
-        public static final int putao_driver_order_map=0x7f0a01ae;
-        public static final int putao_driver_photo=0x7f0a01a7;
-        public static final int putao_edit_habit_item_content_textview=0x7f0a01b2;
-        public static final int putao_edit_habit_item_delete_img=0x7f0a01b3;
-        public static final int putao_edit_habit_item_label_textview=0x7f0a01b1;
-        public static final int putao_et_price=0x7f0a0368;
-        public static final int putao_filter_layout=0x7f0a020c;
-        public static final int putao_final_price=0x7f0a02bd;
-        public static final int putao_flight_divider=0x7f0a0328;
-        public static final int putao_flight_hangban_tv=0x7f0a032b;
-        public static final int putao_flight_jiage_tv=0x7f0a0329;
-        public static final int putao_flight_tejia_tv=0x7f0a032a;
-        public static final int putao_forget_password_tv=0x7f0a0265;
-        public static final int putao_from_and_to=0x7f0a00b9;
-        public static final int putao_func_container=0x7f0a021e;
-        public static final int putao_game_account_edit=0x7f0a01e7;
-        public static final int putao_game_account_layout=0x7f0a01e6;
-        public static final int putao_game_cpname=0x7f0a0201;
-        public static final int putao_game_cptel=0x7f0a0200;
-        public static final int putao_game_region=0x7f0a0204;
-        public static final int putao_game_type=0x7f0a01e1;
-        public static final int putao_game_type_layout=0x7f0a01e0;
-        public static final int putao_get_captchar_bt=0x7f0a025c;
-        public static final int putao_get_on_taxi_btn=0x7f0a01ad;
-        public static final int putao_getvoucherfail_tv=0x7f0a020b;
-        public static final int putao_habit_textview=0x7f0a022a;
-        public static final int putao_header_fl=0x7f0a029c;
-        public static final int putao_hotel_date_ll=0x7f0a0247;
-        public static final int putao_hotel_detail_viewpager_item_img=0x7f0a023f;
-        public static final int putao_hotel_guarantee_info_layout=0x7f0a044d;
-        public static final int putao_hotel_info_bottom_textview=0x7f0a040e;
-        public static final int putao_hotel_intro_bottom_line=0x7f0a040f;
-        public static final int putao_hotel_intro_service_gridview=0x7f0a0409;
-        public static final int putao_hotel_intro_service_layout=0x7f0a0408;
-        public static final int putao_hotel_intro_textview=0x7f0a040a;
-        public static final int putao_hotel_intro_textview_bottom_line=0x7f0a040b;
-        public static final int putao_hotel_line_1=0x7f0a043f;
-        public static final int putao_hotel_line_2=0x7f0a0442;
-        public static final int putao_hotel_line_3=0x7f0a0446;
-        public static final int putao_hotel_line_4=0x7f0a0449;
-        public static final int putao_hotel_line_5=0x7f0a044c;
-        public static final int putao_hotel_mobile_habit_data_listview=0x7f0a0451;
-        public static final int putao_hotel_mobile_layout=0x7f0a0447;
-        public static final int putao_hotel_name_habit_data_listview=0x7f0a0452;
-        public static final int putao_hotel_name_layout=0x7f0a0443;
-        public static final int putao_hotel_service_item=0x7f0a0240;
-        public static final int putao_hotel_traffic_textview=0x7f0a040c;
-        public static final int putao_hotel_traffic_textview_bottom_line=0x7f0a040d;
-        public static final int putao_img_goupiao=0x7f0a028b;
-        public static final int putao_img_movie_dtl_stills=0x7f0a0283;
-        public static final int putao_indicator_container=0x7f0a00a7;
-        public static final int putao_indicator_txt=0x7f0a0296;
-        public static final int putao_item_cp_price=0x7f0a02bc;
-        public static final int putao_item_icon=0x7f0a0361;
-        public static final int putao_item_name=0x7f0a0362;
-        public static final int putao_list=0x7f0a0185;
-        public static final int putao_list_container=0x7f0a021f;
-        public static final int putao_login=0x7f0a029e;
-        public static final int putao_login_captchar_tv=0x7f0a0266;
-        public static final int putao_login_password_tv=0x7f0a0264;
-        public static final int putao_main_tab=0x7f0a048b;
-        public static final int putao_main_tab_life_text=0x7f0a048c;
-        public static final int putao_main_tab_my=0x7f0a048e;
-        public static final int putao_main_tab_my_remind=0x7f0a0490;
-        public static final int putao_main_tab_my_text=0x7f0a048f;
-        public static final int putao_main_tab_navigation_text=0x7f0a048d;
-        public static final int putao_middle_line=0x7f0a00c6;
-        public static final int putao_movie_head_layout=0x7f0a0111;
-        public static final int putao_movie_line_1=0x7f0a0112;
-        public static final int putao_movie_ticketorder_price_layout=0x7f0a0177;
-        public static final int putao_movie_ticketorder_price_pre=0x7f0a0178;
-        public static final int putao_movie_ticketorder_status=0x7f0a0176;
-        public static final int putao_movie_ticketorder_status_pre=0x7f0a0175;
-        public static final int putao_mstills_show_img=0x7f0a0298;
-        public static final int putao_my_layout_stub=0x7f0a0280;
-        public static final int putao_my_nodata_layout=0x7f0a0186;
-        public static final int putao_myremind=0x7f0a02a2;
-        public static final int putao_near=0x7f0a021d;
-        public static final int putao_next=0x7f0a0262;
-        public static final int putao_not_safty=0x7f0a030d;
-        public static final int putao_open_srvcomt_itemaddtime=0x7f0a0349;
-        public static final int putao_open_srvcomt_itemcontent=0x7f0a0346;
-        public static final int putao_open_srvcomt_itemstar=0x7f0a0347;
-        public static final int putao_open_srvcomt_itemunickname=0x7f0a0348;
-        public static final int putao_open_srvcomtadd_commit=0x7f0a0345;
-        public static final int putao_open_srvcomtadd_content=0x7f0a0344;
-        public static final int putao_open_srvcomtadd_star=0x7f0a0342;
-        public static final int putao_open_srvcomtadd_star_tip=0x7f0a0341;
-        public static final int putao_open_srvcomtadd_star_txt=0x7f0a0343;
-        public static final int putao_open_srvintro_arrow=0x7f0a0352;
-        public static final int putao_open_srvintro_citylist=0x7f0a0356;
-        public static final int putao_open_srvintro_citylist_layout=0x7f0a0355;
-        public static final int putao_open_srvintro_entry=0x7f0a035c;
-        public static final int putao_open_srvintro_icon=0x7f0a034c;
-        public static final int putao_open_srvintro_main=0x7f0a034a;
-        public static final int putao_open_srvintro_mark=0x7f0a0351;
-        public static final int putao_open_srvintro_name=0x7f0a034d;
-        public static final int putao_open_srvintro_star=0x7f0a0350;
-        public static final int putao_open_srvintro_svrdesc=0x7f0a0358;
-        public static final int putao_open_srvintro_svrdesc_layout=0x7f0a0357;
-        public static final int putao_open_srvintro_svrtel=0x7f0a035a;
-        public static final int putao_open_srvintro_svrtel_call=0x7f0a035b;
-        public static final int putao_open_srvintro_svrtel_layout=0x7f0a0359;
-        public static final int putao_open_srvintro_topimg=0x7f0a034b;
-        public static final int putao_open_srvintro_ucomment=0x7f0a034f;
-        public static final int putao_open_srvintro_ucomment_layout=0x7f0a034e;
-        public static final int putao_open_srvintro_ucommenttv=0x7f0a0354;
-        public static final int putao_open_srvintro_usercomment_count=0x7f0a0353;
-        public static final int putao_opi_compare_price=0x7f0a02b6;
-        public static final int putao_opi_expand_imv=0x7f0a02b7;
-        public static final int putao_opilist_group_view=0x7f0a02c6;
-        public static final int putao_out=0x7f0a0222;
-        public static final int putao_password_et=0x7f0a025f;
-        public static final int putao_password_tv=0x7f0a025e;
-        public static final int putao_pay=0x7f0a036a;
-        public static final int putao_payment_view_container=0x7f0a0369;
-        public static final int putao_personal_data_birthday_ll=0x7f0a02fe;
-        public static final int putao_personal_data_birthday_tv=0x7f0a0300;
-        public static final int putao_personal_data_city_ll=0x7f0a02f8;
-        public static final int putao_personal_data_city_tv=0x7f0a02fa;
-        public static final int putao_personal_data_gender_ll=0x7f0a02fb;
-        public static final int putao_personal_data_gender_tv=0x7f0a02fd;
-        public static final int putao_personal_data_hint_disappear_iv=0x7f0a02f5;
-        public static final int putao_personal_data_hint_ll=0x7f0a02f3;
-        public static final int putao_personal_data_hint_tv=0x7f0a02f4;
-        public static final int putao_personal_data_home_address_hint_tv=0x7f0a0306;
-        public static final int putao_personal_data_home_address_rl=0x7f0a0304;
-        public static final int putao_personal_data_icon_iv=0x7f0a02f7;
-        public static final int putao_personal_data_icon_rl=0x7f0a02f6;
-        public static final int putao_personal_data_item_tv=0x7f0a02f2;
-        public static final int putao_personal_data_license_number_hint_tv=0x7f0a0309;
-        public static final int putao_personal_data_license_number_rl=0x7f0a0307;
-        public static final int putao_personal_data_phone_number_tv=0x7f0a030a;
-        public static final int putao_price_textView=0x7f0a0159;
-        public static final int putao_product_name=0x7f0a0203;
-        public static final int putao_progress_dialog_bg=0x7f0a0257;
-        public static final int putao_qq_num_edit=0x7f0a0314;
-        public static final int putao_qq_num_layout=0x7f0a0313;
-        public static final int putao_question=0x7f0a01f7;
-        public static final int putao_recharge_area=0x7f0a01e5;
-        public static final int putao_recharge_area_layout=0x7f0a01e4;
-        public static final int putao_recharge_game=0x7f0a01e3;
-        public static final int putao_recharge_game_layout=0x7f0a01e2;
-        public static final int putao_recharge_pervalue=0x7f0a01ea;
-        public static final int putao_recharge_pervalue_layout=0x7f0a01e9;
-        public static final int putao_recharge_type=0x7f0a0316;
-        public static final int putao_recharge_type_layout=0x7f0a0315;
-        public static final int putao_region=0x7f0a0210;
-        public static final int putao_remind_divider=0x7f0a02a3;
-        public static final int putao_remind_layout=0x7f0a032f;
-        public static final int putao_room_info_adsl=0x7f0a042c;
-        public static final int putao_room_info_adsl_ll=0x7f0a042b;
-        public static final int putao_room_info_area=0x7f0a0428;
-        public static final int putao_room_info_area_ll=0x7f0a0427;
-        public static final int putao_room_info_bed=0x7f0a042e;
-        public static final int putao_room_info_bed_ll=0x7f0a042d;
-        public static final int putao_room_info_breakfast=0x7f0a042a;
-        public static final int putao_room_info_breakfast_ll=0x7f0a0429;
-        public static final int putao_room_info_img=0x7f0a0423;
-        public static final int putao_room_info_name=0x7f0a0424;
-        public static final int putao_room_info_other=0x7f0a0432;
-        public static final int putao_room_info_other_ll=0x7f0a0431;
-        public static final int putao_room_info_present_description=0x7f0a0436;
-        public static final int putao_room_info_present_ll=0x7f0a0434;
-        public static final int putao_room_info_present_time=0x7f0a0435;
-        public static final int putao_room_info_price=0x7f0a0433;
-        public static final int putao_room_info_reserve=0x7f0a0437;
-        public static final int putao_room_info_smoking=0x7f0a0430;
-        public static final int putao_room_info_smoking_ll=0x7f0a042f;
-        public static final int putao_room_infor_floor=0x7f0a0426;
-        public static final int putao_room_infor_floor_ll=0x7f0a0425;
-        public static final int putao_scrolldialog_layout=0x7f0a016d;
-        public static final int putao_selector_categories=0x7f0a020d;
-        public static final int putao_selector_region=0x7f0a020f;
-        public static final int putao_selector_sort=0x7f0a0211;
-        public static final int putao_service_desc=0x7f0a00e9;
-        public static final int putao_service_img=0x7f0a00e6;
-        public static final int putao_service_name=0x7f0a00e8;
-        public static final int putao_set_password=0x7f0a030b;
-        public static final int putao_set_password_tv=0x7f0a0263;
-        public static final int putao_sort=0x7f0a0212;
-        public static final int putao_source_price_textView=0x7f0a015a;
-        public static final int putao_status_layout=0x7f0a0259;
-        public static final int putao_svrcomment_list=0x7f0a0340;
+        public static final int pull_to_refresh_progress=0x7f0a0117;
+        public static final int putao_arrow=0x7f0a0147;
+        public static final int putao_arrow1=0x7f0a014a;
+        public static final int putao_arrow2=0x7f0a014d;
+        public static final int putao_arrow3=0x7f0a0150;
+        public static final int putao_arrow4=0x7f0a0153;
+        public static final int putao_arrow5=0x7f0a0156;
+        public static final int putao_arrow6=0x7f0a0159;
+        public static final int putao_arrow7=0x7f0a015e;
+        public static final int putao_btn_use_immediately=0x7f0a00e8;
+        public static final int putao_category_left=0x7f0a00a2;
+        public static final int putao_category_right=0x7f0a00a3;
+        public static final int putao_clear_password_iv=0x7f0a0122;
+        public static final int putao_clear_username_iv=0x7f0a011f;
+        public static final int putao_common_info=0x7f0a0152;
+        public static final int putao_common_info_hint_tv=0x7f0a0154;
+        public static final int putao_confirm_bt=0x7f0a0123;
+        public static final int putao_content_imageView=0x7f0a00bf;
+        public static final int putao_content_listView=0x7f0a0196;
+        public static final int putao_cp_info=0x7f0a0141;
+        public static final int putao_cp_prefix=0x7f0a0140;
+        public static final int putao_ctorderdtl_available_time=0x7f0a00db;
+        public static final int putao_ctorderdtl_ticketname=0x7f0a00da;
+        public static final int putao_description_textView=0x7f0a00c1;
+        public static final int putao_distance_textView=0x7f0a00c4;
+        public static final int putao_driver_distance_info=0x7f0a00e9;
+        public static final int putao_get_captchar_bt=0x7f0a011e;
+        public static final int putao_getvoucherfail_tv=0x7f0a00f9;
+        public static final int putao_header_fl=0x7f0a012d;
+        public static final int putao_hotel_detail_viewpager_item_img=0x7f0a010c;
+        public static final int putao_hotel_service_item=0x7f0a010d;
+        public static final int putao_indicator_container=0x7f0a00a0;
+        public static final int putao_item_icon=0x7f0a0177;
+        public static final int putao_item_name=0x7f0a0178;
+        public static final int putao_list=0x7f0a00dd;
+        public static final int putao_login=0x7f0a012f;
+        public static final int putao_login_password_tv=0x7f0a0126;
+        public static final int putao_main_tab=0x7f0a018b;
+        public static final int putao_main_tab_find=0x7f0a018e;
+        public static final int putao_main_tab_find_remind=0x7f0a0190;
+        public static final int putao_main_tab_find_text=0x7f0a018f;
+        public static final int putao_main_tab_life=0x7f0a018c;
+        public static final int putao_main_tab_life_text=0x7f0a018d;
+        public static final int putao_main_tab_my=0x7f0a0193;
+        public static final int putao_main_tab_my_remind=0x7f0a0195;
+        public static final int putao_main_tab_my_text=0x7f0a0194;
+        public static final int putao_main_tab_navigation=0x7f0a0191;
+        public static final int putao_main_tab_navigation_text=0x7f0a0192;
+        public static final int putao_my_layout_stub=0x7f0a0128;
+        public static final int putao_my_nodata_layout=0x7f0a00de;
+        public static final int putao_myremind=0x7f0a0133;
+        public static final int putao_next=0x7f0a0124;
+        public static final int putao_not_safty=0x7f0a015f;
+        public static final int putao_password_et=0x7f0a0121;
+        public static final int putao_password_tv=0x7f0a0120;
+        public static final int putao_personal_bind_mobile_rl=0x7f0a015b;
+        public static final int putao_personal_data_birthday_ll=0x7f0a014f;
+        public static final int putao_personal_data_birthday_tv=0x7f0a0151;
+        public static final int putao_personal_data_city_ll=0x7f0a0149;
+        public static final int putao_personal_data_city_tv=0x7f0a014b;
+        public static final int putao_personal_data_gender_ll=0x7f0a014c;
+        public static final int putao_personal_data_gender_tv=0x7f0a014e;
+        public static final int putao_personal_data_hint_disappear_iv=0x7f0a0145;
+        public static final int putao_personal_data_hint_ll=0x7f0a0143;
+        public static final int putao_personal_data_hint_tv=0x7f0a0144;
+        public static final int putao_personal_data_home_address_hint_tv=0x7f0a0157;
+        public static final int putao_personal_data_home_address_rl=0x7f0a0155;
+        public static final int putao_personal_data_icon_iv=0x7f0a0148;
+        public static final int putao_personal_data_icon_rl=0x7f0a0146;
+        public static final int putao_personal_data_license_number_hint_tv=0x7f0a015a;
+        public static final int putao_personal_data_license_number_rl=0x7f0a0158;
+        public static final int putao_personal_data_phone_number_tv=0x7f0a015c;
+        public static final int putao_price_textView=0x7f0a00c2;
+        public static final int putao_progress_dialog_bg=0x7f0a0119;
+        public static final int putao_remind_divider=0x7f0a0135;
+        public static final int putao_remind_layout=0x7f0a0169;
+        public static final int putao_scrolldialog_layout=0x7f0a00d2;
+        public static final int putao_service_desc=0x7f0a00b0;
+        public static final int putao_service_img=0x7f0a00ad;
+        public static final int putao_service_name=0x7f0a00af;
+        public static final int putao_set_password=0x7f0a015d;
+        public static final int putao_set_password_tv=0x7f0a0125;
+        public static final int putao_source_price_textView=0x7f0a00c3;
+        public static final int putao_status_layout=0x7f0a011b;
+        public static final int putao_svrcomment_list=0x7f0a0171;
         public static final int putao_tag_first=0x7f0a0000;
         public static final int putao_tag_second=0x7f0a0001;
-        public static final int putao_ticketorder_ticdesc=0x7f0a0181;
-        public static final int putao_ticketorder_ticdesc_layout=0x7f0a017f;
-        public static final int putao_tips=0x7f0a01f6;
-        public static final int putao_title_textView=0x7f0a0157;
-        public static final int putao_title_tv=0x7f0a03a9;
-        public static final int putao_traffic_arrow=0x7f0a0386;
-        public static final int putao_traffic_delete_btn=0x7f0a0389;
-        public static final int putao_traffic_delete_cb=0x7f0a0385;
-        public static final int putao_traffic_empty_view=0x7f0a0388;
-        public static final int putao_traffic_offence_root_layout=0x7f0a0390;
-        public static final int putao_traffic_violation_car_img_iv=0x7f0a037f;
-        public static final int putao_traffic_violation_car_license=0x7f0a0380;
-        public static final int putao_traffic_violation_cars_lv=0x7f0a0387;
-        public static final int putao_traffic_violation_city=0x7f0a0381;
-        public static final int putao_traffic_violation_fines=0x7f0a0383;
-        public static final int putao_traffic_violation_points=0x7f0a0384;
-        public static final int putao_traffic_violation_record_none_ll=0x7f0a0398;
-        public static final int putao_traffic_violation_times=0x7f0a0382;
-        public static final int putao_tv_charge_account=0x7f0a01fd;
-        public static final int putao_tv_charge_create_time=0x7f0a01fb;
-        public static final int putao_tv_charge_orderno=0x7f0a01fa;
-        public static final int putao_tv_charge_price=0x7f0a01f9;
-        public static final int putao_tv_charge_status=0x7f0a01f8;
-        public static final int putao_tv_charge_type=0x7f0a01fc;
-        public static final int putao_tv_name=0x7f0a03b9;
-        public static final int putao_tv_remark=0x7f0a03bc;
-        public static final int putao_tv_service_name=0x7f0a01fe;
-        public static final int putao_tv_service_phone=0x7f0a01ff;
-        public static final int putao_tv_show_all=0x7f0a0184;
-        public static final int putao_tv_title=0x7f0a03b8;
-        public static final int putao_update_progress=0x7f0a03aa;
-        public static final int putao_update_progress_txt=0x7f0a03ab;
-        public static final int putao_username_et=0x7f0a025b;
-        public static final int putao_username_tv=0x7f0a025a;
-        public static final int putao_vcode_divider=0x7f0a0378;
-        public static final int putao_vcode_imageview=0x7f0a037b;
-        public static final int putao_vcode_layout=0x7f0a0379;
-        public static final int putao_vcode_num_edittext=0x7f0a037a;
-        public static final int putao_view_order_aboutmovie=0x7f0a012e;
-        public static final int putao_view_order_layout=0x7f0a012f;
-        public static final int putao_view_pager=0x7f0a00a6;
-        public static final int putao_violation_info_city=0x7f0a0393;
-        public static final int putao_violation_info_item_address_tv=0x7f0a038c;
-        public static final int putao_violation_info_item_fine_tv=0x7f0a038d;
-        public static final int putao_violation_info_item_lv=0x7f0a0399;
-        public static final int putao_violation_info_item_point_tv=0x7f0a038f;
-        public static final int putao_violation_info_item_time_tv=0x7f0a038e;
-        public static final int putao_violation_info_item_title_tv=0x7f0a038b;
-        public static final int putao_violation_info_item_tv=0x7f0a038a;
-        public static final int putao_violation_info_iv=0x7f0a0391;
-        public static final int putao_violation_info_license_num_tv=0x7f0a0392;
-        public static final int putao_violation_info_recently_violation_tv=0x7f0a0394;
-        public static final int putao_violation_info_total_deductions_tv=0x7f0a0397;
-        public static final int putao_violation_info_total_fine_tv=0x7f0a0396;
-        public static final int putao_violation_info_total_violation_tv=0x7f0a0395;
-        public static final int putao_voucher_center_bubble=0x7f0a03b1;
-        public static final int putao_voucher_center_closedialog_img=0x7f0a016b;
-        public static final int putao_voucher_center_desc=0x7f0a03b4;
-        public static final int putao_voucher_center_getvoucher=0x7f0a03b7;
-        public static final int putao_voucher_center_img=0x7f0a03b2;
-        public static final int putao_voucher_center_layout=0x7f0a03b5;
-        public static final int putao_voucher_center_lookdetail=0x7f0a016f;
-        public static final int putao_voucher_center_origprice=0x7f0a03b6;
-        public static final int putao_voucher_center_title=0x7f0a03b3;
-        public static final int putao_voucher_center_userimmediately=0x7f0a016e;
-        public static final int putao_voucher_container=0x7f0a01a2;
-        public static final int putao_voucher_content_container=0x7f0a01a3;
-        public static final int putao_voucher_copy_tv=0x7f0a03ba;
-        public static final int putao_voucher_dialog_desc_tv=0x7f0a03bb;
-        public static final int putao_voucher_tip=0x7f0a014c;
-        public static final int putao_vouchercenter_list=0x7f0a03b0;
-        public static final int putao_wheel_dialog_text_item=0x7f0a0174;
-        public static final int qq_group_info=0x7f0a03a8;
+        public static final int putao_title_textView=0x7f0a00c0;
+        public static final int putao_tv_show_all=0x7f0a00dc;
+        public static final int putao_username_et=0x7f0a011d;
+        public static final int putao_username_tv=0x7f0a011c;
+        public static final int putao_view_pager=0x7f0a009f;
+        public static final int putao_voucher_center_closedialog_img=0x7f0a00d0;
+        public static final int putao_voucher_center_lookdetail=0x7f0a00d4;
+        public static final int putao_voucher_center_userimmediately=0x7f0a00d3;
+        public static final int putao_voucher_container=0x7f0a00e6;
+        public static final int putao_voucher_content_container=0x7f0a00e7;
+        public static final int putao_voucher_dialog_desc_tv=0x7f0a0187;
+        public static final int putao_wheel_dialog_text_item=0x7f0a00d9;
         public static final int quanzi_name=0x7f0a0020;
-        public static final int query_confirm=0x7f0a0323;
-        public static final int query_confirm_content=0x7f0a0324;
-        public static final int query_confirm_wait=0x7f0a0325;
-        public static final int question=0x7f0a02ef;
-        public static final int question_a=0x7f0a00ea;
-        public static final int question_b=0x7f0a00eb;
-        public static final int question_c=0x7f0a00ec;
         public static final int quit=0x7f0a0070;
-        public static final int rating_text=0x7f0a04cc;
-        public static final int reason=0x7f0a03ee;
-        public static final int reault_scrollview=0x7f0a01d8;
-        public static final int recommond_word_list=0x7f0a04bf;
-        public static final int recommond_word_list_parent=0x7f0a04be;
         public static final int refresh=0x7f0a0035;
-        public static final int region=0x7f0a0406;
-        public static final int region_layout=0x7f0a0219;
         public static final int remark=0x7f0a0060;
         public static final int remark_layout=0x7f0a0061;
-        public static final int remind_icon_point=0x7f0a0238;
-        public static final int remind_point_digit_view=0x7f0a0332;
-        public static final int remind_point_view=0x7f0a0331;
-        public static final int remind_view=0x7f0a0330;
-        public static final int remind_view_layout=0x7f0a00e7;
+        public static final int remind_icon_point=0x7f0a0108;
+        public static final int remind_point_digit_view=0x7f0a016c;
+        public static final int remind_point_view=0x7f0a016b;
+        public static final int remind_view=0x7f0a016a;
+        public static final int remind_view_layout=0x7f0a00ae;
         public static final int restart_preview=0x7f0a0071;
-        public static final int result_divider=0x7f0a046e;
-        public static final int result_order_reason=0x7f0a0479;
-        public static final int result_source_layout=0x7f0a04bc;
-        public static final int result_title_layout=0x7f0a01cf;
         public static final int return_scan_result=0x7f0a0072;
         public static final int review=0x7f0a0055;
-        public static final int reviews_info=0x7f0a01a0;
         public static final int right=0x7f0a0090;
         public static final int rightToLeft=0x7f0a0082;
         public static final int room_tab_chat=0x7f0a001e;
         public static final int room_tab_file=0x7f0a001d;
         public static final int room_tab_photo=0x7f0a001f;
         public static final int school=0x7f0a0043;
-        public static final int screen=0x7f0a0151;
-        public static final int scrollview=0x7f0a016c;
+        public static final int scrollview=0x7f0a00d1;
         public static final int search_book_contents_failed=0x7f0a0073;
         public static final int search_book_contents_succeeded=0x7f0a0074;
-        public static final int search_clear=0x7f0a0189;
-        public static final int search_content=0x7f0a023e;
-        public static final int search_edit_text=0x7f0a033d;
-        public static final int search_edittext=0x7f0a0188;
-        public static final int search_end_edit_text=0x7f0a0484;
-        public static final int search_head_layout=0x7f0a023c;
-        public static final int search_history_list=0x7f0a04c1;
-        public static final int search_history_parent=0x7f0a04c0;
-        public static final int search_icon=0x7f0a0336;
-        public static final int search_layout=0x7f0a0187;
-        public static final int search_list=0x7f0a04a7;
-        public static final int search_more_icon=0x7f0a0363;
-        public static final int search_more_text=0x7f0a0364;
-        public static final int search_page=0x7f0a04a5;
-        public static final int search_parent=0x7f0a04a6;
-        public static final int search_text=0x7f0a0337;
-        public static final int search_title=0x7f0a0338;
-        public static final int search_words_tv=0x7f0a04bb;
-        public static final int select_error_result_layout=0x7f0a01dc;
-        public static final int select_photo=0x7f0a03a5;
-        public static final int select_result_layout=0x7f0a01d9;
-        public static final int select_seat=0x7f0a0152;
-        public static final int select_seat_small=0x7f0a0154;
-        public static final int send_card=0x7f0a00b5;
-        public static final int send_taxi_layout=0x7f0a0485;
-        public static final int send_taxi_order=0x7f0a0486;
-        public static final int serive_name=0x7f0a033b;
-        public static final int server_provider_layout=0x7f0a00f7;
-        public static final int service_container_layout=0x7f0a04ac;
-        public static final int service_name=0x7f0a010a;
-        public static final int set_switch=0x7f0a0282;
+        public static final int search_clear=0x7f0a00e1;
+        public static final int search_content=0x7f0a010b;
+        public static final int search_edittext=0x7f0a00e0;
+        public static final int search_head_layout=0x7f0a0109;
+        public static final int search_layout=0x7f0a00df;
+        public static final int service_name=0x7f0a00bd;
         public static final int seven=0x7f0a000b;
         public static final int show_contact=0x7f0a0094;
-        public static final int show_content=0x7f0a022d;
-        public static final int show_content_img=0x7f0a022c;
-        public static final int show_detail=0x7f0a0276;
-        public static final int show_layout=0x7f0a047e;
-        public static final int sideBar=0x7f0a0209;
-        public static final int simcard_info1=0x7f0a0318;
-        public static final int simcard_info2=0x7f0a031e;
-        public static final int simcard_layout1=0x7f0a0317;
-        public static final int simcard_layout2=0x7f0a031d;
-        public static final int simcard_money1=0x7f0a031a;
-        public static final int simcard_money2=0x7f0a0320;
-        public static final int simcard_operator1=0x7f0a0319;
-        public static final int simcard_operator2=0x7f0a031f;
-        public static final int simcard_querydate1=0x7f0a031c;
-        public static final int simcard_querydate2=0x7f0a0322;
+        public static final int show_content=0x7f0a00fd;
+        public static final int show_content_img=0x7f0a00fc;
         public static final int sina=0x7f0a0059;
         public static final int single=0x7f0a0093;
         public static final int six=0x7f0a000a;
@@ -4218,142 +3213,58 @@ containing a value of this type.
         public static final int sns_layout=0x7f0a005d;
         public static final int sns_logo=0x7f0a002a;
         public static final int sns_name=0x7f0a005f;
-        public static final int sort=0x7f0a018f;
-        public static final int source_img=0x7f0a019c;
-        public static final int source_text=0x7f0a04ca;
         public static final int star=0x7f0a000f;
-        public static final int star_layout=0x7f0a0218;
-        public static final int star_price_layout=0x7f0a0217;
-        public static final int start_time=0x7f0a02b1;
-        public static final int sublist=0x7f0a0221;
-        public static final int subtitle=0x7f0a0234;
-        public static final int subtitle1=0x7f0a02ce;
-        public static final int subtitle2=0x7f0a02d2;
-        public static final int subtitle3=0x7f0a02d7;
-        public static final int subtitle4=0x7f0a02db;
-        public static final int subtitle5=0x7f0a02df;
-        public static final int subtitle6=0x7f0a02e3;
-        public static final int swap=0x7f0a00b8;
+        public static final int subtitle=0x7f0a0104;
         public static final int sync=0x7f0a0056;
         public static final int sync_to_native=0x7f0a0047;
         public static final int tab_circle=0x7f0a001c;
         public static final int tab_contacts=0x7f0a001a;
         public static final int tab_dialer=0x7f0a0019;
         public static final int tab_snsinfo=0x7f0a001b;
-        public static final int tab_title=0x7f0a036b;
-        public static final int tab_title_sum=0x7f0a036c;
-        public static final int tab_title_tips=0x7f0a036d;
         public static final int tag_calendar=0x7f0a0003;
-        public static final int tag_layout_one=0x7f0a04d0;
-        public static final int tag_layout_three=0x7f0a04d6;
-        public static final int tag_layout_two=0x7f0a04d3;
-        public static final int tag_line=0x7f0a04da;
-        public static final int tag_line_one=0x7f0a04d2;
-        public static final int tag_line_three=0x7f0a04d8;
-        public static final int tag_line_two=0x7f0a04d5;
         public static final int tag_position=0x7f0a0002;
-        public static final int tag_text=0x7f0a04d9;
-        public static final int tag_text_one=0x7f0a04d1;
-        public static final int tag_text_three=0x7f0a04d7;
-        public static final int tag_text_two=0x7f0a04d4;
-        public static final int tag_view_container=0x7f0a04cf;
-        public static final int tag_viewpager=0x7f0a04db;
         public static final int tags=0x7f0a005e;
-        public static final int taxi_mapview=0x7f0a04dc;
-        public static final int taxi_wait_info_layout=0x7f0a04dd;
-        public static final int taxi_wait_info_num_tview=0x7f0a04de;
-        public static final int taxi_wait_info_progressbar=0x7f0a04e0;
-        public static final int taxi_wait_info_time_tview=0x7f0a04df;
-        public static final int telephone_num=0x7f0a0103;
-        public static final int telephone_subject=0x7f0a0102;
+        public static final int telephone_num=0x7f0a00b4;
+        public static final int telephone_subject=0x7f0a00b3;
         public static final int tencent=0x7f0a0057;
-        public static final int texi=0x7f0a00b3;
         public static final int text=0x7f0a0037;
         public static final int three=0x7f0a0007;
         public static final int time=0x7f0a0053;
         public static final int tips=0x7f0a0038;
-        public static final int title=0x7f0a00c2;
-        public static final int title1=0x7f0a02cd;
-        public static final int title2=0x7f0a02d1;
-        public static final int title3=0x7f0a02d5;
-        public static final int title4=0x7f0a02d9;
-        public static final int title5=0x7f0a02dd;
-        public static final int title6=0x7f0a02e1;
-        public static final int title_layout=0x7f0a0233;
-        public static final int title_tv=0x7f0a0160;
-        public static final int to=0x7f0a00be;
-        public static final int to_mark=0x7f0a00bd;
+        public static final int title=0x7f0a00b2;
+        public static final int title_layout=0x7f0a0103;
+        public static final int title_tv=0x7f0a00cf;
         public static final int top=0x7f0a0091;
-        public static final int top_divider=0x7f0a010c;
-        public static final int top_line=0x7f0a00b7;
-        public static final int top_storke_line=0x7f0a010d;
-        public static final int tr_filmorder_coupon_layout=0x7f0a0135;
-        public static final int tr_filmorder_createtime=0x7f0a0139;
-        public static final int tr_filmorder_price=0x7f0a0133;
-        public static final int tr_filmorder_serialnumber=0x7f0a0137;
-        public static final int tr_filmorder_status=0x7f0a0131;
+        public static final int top_divider=0x7f0a00b8;
+        public static final int top_storke_line=0x7f0a00b9;
         public static final int triangle=0x7f0a007e;
-        public static final int tuan_current_price=0x7f0a0197;
-        public static final int tuan_info=0x7f0a0196;
-        public static final int tuan_info_img=0x7f0a0194;
-        public static final int tuan_last_price=0x7f0a0198;
-        public static final int tuan_title=0x7f0a0195;
-        public static final int tv_filmorder_coupon=0x7f0a0136;
-        public static final int tv_filmorder_createtime=0x7f0a013a;
-        public static final int tv_filmorder_phone_no=0x7f0a013c;
-        public static final int tv_filmorder_price=0x7f0a0134;
-        public static final int tv_filmorder_seatInfo=0x7f0a013b;
-        public static final int tv_filmorder_serialnumber=0x7f0a0138;
-        public static final int tv_filmorder_status=0x7f0a0132;
-        public static final int tv_filmseat=0x7f0a03ae;
-        public static final int tv_filmtime=0x7f0a03ad;
-        public static final int tv_moviename=0x7f0a03ac;
-        public static final int tview=0x7f0a033f;
+        public static final int tv_filmseat=0x7f0a0185;
+        public static final int tv_filmtime=0x7f0a0184;
+        public static final int tv_moviename=0x7f0a0183;
+        public static final int tview=0x7f0a0170;
         public static final int two=0x7f0a0006;
-        public static final int txt_delicacy_name=0x7f0a018d;
-        public static final int txt_sort=0x7f0a0190;
         public static final int type=0x7f0a0049;
-        public static final int type_logo=0x7f0a0299;
-        public static final int type_name=0x7f0a04e3;
+        public static final int type_logo=0x7f0a012a;
         public static final int underline=0x7f0a007f;
-        public static final int unit_name=0x7f0a03c5;
-        public static final int unit_relativelayout=0x7f0a03c3;
-        public static final int unit_tip=0x7f0a03c4;
         public static final int upToDown=0x7f0a0083;
-        public static final int user_code_state_tip=0x7f0a03cb;
-        public static final int user_code_tip=0x7f0a03c7;
-        public static final int user_id=0x7f0a029b;
-        public static final int username=0x7f0a01b6;
+        public static final int user_id=0x7f0a012c;
+        public static final int username=0x7f0a00ee;
         public static final int value=0x7f0a006a;
-        public static final int vehicle_hint1=0x7f0a0373;
-        public static final int vehicle_hint2=0x7f0a0376;
-        public static final int vehicle_info_commit=0x7f0a037c;
-        public static final int vehicle_region=0x7f0a0377;
         public static final int vertical=0x7f0a007c;
-        public static final int vertical_line_view=0x7f0a027a;
-        public static final int vertical_line_view_2=0x7f0a0278;
-        public static final int vertical_secondline_view=0x7f0a027b;
-        public static final int view_divider=0x7f0a02eb;
-        public static final int view_divider2=0x7f0a02ed;
-        public static final int viewfinder_view=0x7f0a0334;
-        public static final int viewflipper_myScrollview=0x7f0a00a5;
-        public static final int vin_layout=0x7f0a0374;
-        public static final int vin_num=0x7f0a0375;
-        public static final int wait_layout=0x7f0a01da;
-        public static final int wait_progress_bar=0x7f0a01db;
-        public static final int webView=0x7f0a03bd;
+        public static final int viewfinder_view=0x7f0a016e;
+        public static final int viewflipper_myScrollview=0x7f0a009e;
+        public static final int voucher_remind_icon_point=0x7f0a013a;
+        public static final int webView=0x7f0a0188;
         public static final int website=0x7f0a0044;
         public static final int weibo=0x7f0a003b;
-        public static final int wheel_center=0x7f0a0172;
-        public static final int wheel_container_ll=0x7f0a0170;
-        public static final int wheel_left=0x7f0a0171;
-        public static final int wheel_right=0x7f0a0173;
+        public static final int wheel_center=0x7f0a00d7;
+        public static final int wheel_container_ll=0x7f0a00d5;
+        public static final int wheel_left=0x7f0a00d6;
+        public static final int wheel_right=0x7f0a00d8;
         public static final int xhdpi=0x7f0a008a;
-        public static final int yellow_page_detail=0x7f0a0480;
-        public static final int yellow_page_img_item=0x7f0a0224;
-        public static final int yellow_page_item=0x7f0a0226;
-        public static final int yellow_page_item_desc=0x7f0a0227;
-        public static final int yellow_page_item_remind_layout=0x7f0a0225;
+        public static final int yellow_page_img_item=0x7f0a0173;
+        public static final int yellow_page_item=0x7f0a0175;
+        public static final int yellow_page_item_remind_layout=0x7f0a0174;
         public static final int zero=0x7f0a000e;
     }
     public static final class integer {
@@ -4363,273 +3274,95 @@ containing a value of this type.
         public static final int activity_main=0x7f030000;
         public static final int putao_about_putaolife=0x7f030001;
         public static final int putao_about_us=0x7f030002;
-        public static final int putao_activities_history_list_item=0x7f030003;
-        public static final int putao_ad_item=0x7f030004;
-        public static final int putao_all_service_layout=0x7f030005;
-        public static final int putao_assistant_guidelines_layout=0x7f030006;
-        public static final int putao_assistant_guidelines_small=0x7f030007;
-        public static final int putao_back_home_activity=0x7f030008;
-        public static final int putao_base_ui_layout=0x7f030009;
-        public static final int putao_base_ui_with_ad_layout=0x7f03000a;
-        public static final int putao_birth_detail_activity=0x7f03000b;
-        public static final int putao_bus_line_fragment=0x7f03000c;
-        public static final int putao_bus_list_item=0x7f03000d;
-        public static final int putao_bus_query_fragment=0x7f03000e;
-        public static final int putao_calendar_item=0x7f03000f;
-        public static final int putao_calendar_select_layout=0x7f030010;
-        public static final int putao_captcha_dialog_layout=0x7f030011;
-        public static final int putao_capture=0x7f030012;
-        public static final int putao_car_color_gridview_dialog=0x7f030013;
-        public static final int putao_card_item_click=0x7f030014;
-        public static final int putao_card_item_express=0x7f030015;
-        public static final int putao_card_item_express_detail_middle=0x7f030016;
-        public static final int putao_card_item_express_detail_top=0x7f030017;
-        public static final int putao_category_item_layout=0x7f030018;
-        public static final int putao_charge_question=0x7f030019;
-        public static final int putao_charge_telephone_traffic_order_detail=0x7f03001a;
-        public static final int putao_charge_telephone_traffic_order_item=0x7f03001b;
-        public static final int putao_chosen_goods_item=0x7f03001c;
-        public static final int putao_chosen_goods_item_home=0x7f03001d;
-        public static final int putao_chosen_hot_category_item=0x7f03001e;
-        public static final int putao_cinema_create_order_activiity=0x7f03001f;
-        public static final int putao_cinema_item=0x7f030020;
-        public static final int putao_cinema_list_fragment=0x7f030021;
-        public static final int putao_cinema_list_layout=0x7f030022;
-        public static final int putao_cinema_order_detail_activiity=0x7f030023;
-        public static final int putao_cinema_payment_activity=0x7f030024;
-        public static final int putao_cinema_select_seat_activity=0x7f030025;
-        public static final int putao_city_heander_section=0x7f030026;
-        public static final int putao_cms_content_listview_item=0x7f030027;
-        public static final int putao_comm_divider_horizontal=0x7f030028;
-        public static final int putao_comm_empty_view=0x7f030029;
-        public static final int putao_comm_group_data=0x7f03002a;
-        public static final int putao_common_dialog_base_lv_item=0x7f03002b;
-        public static final int putao_common_edittext_dialog=0x7f03002c;
-        public static final int putao_common_gridview_dialog=0x7f03002d;
-        public static final int putao_common_list_dialog=0x7f03002e;
-        public static final int putao_common_ok_cancel_dialog=0x7f03002f;
-        public static final int putao_common_ok_dialog=0x7f030030;
-        public static final int putao_common_popwindow=0x7f030031;
-        public static final int putao_common_scrollview_dialog=0x7f030032;
-        public static final int putao_common_wheel_dialog=0x7f030033;
-        public static final int putao_common_wheel_dialog_text_item=0x7f030034;
-        public static final int putao_commticket_order_detail=0x7f030035;
-        public static final int putao_commticket_order_detail_card=0x7f030036;
-        public static final int putao_comtent_list_item_show_all=0x7f030037;
-        public static final int putao_content_list_activity=0x7f030038;
-        public static final int putao_custom_searchview_layout=0x7f030039;
-        public static final int putao_custom_spinner_layout=0x7f03003a;
-        public static final int putao_delicacy_activity_layout=0x7f03003b;
-        public static final int putao_detail_customers_item=0x7f03003c;
-        public static final int putao_detail_deal_item=0x7f03003d;
-        public static final int putao_detail_homepage_item=0x7f03003e;
-        public static final int putao_detail_number_item=0x7f03003f;
-        public static final int putao_detail_other_item=0x7f030040;
-        public static final int putao_detail_reviews_item=0x7f030041;
-        public static final int putao_discount_voucher_activity=0x7f030042;
-        public static final int putao_discount_voucher_detail_activity=0x7f030043;
-        public static final int putao_driver_distance_info_window=0x7f030044;
-        public static final int putao_driver_received_order_activity=0x7f030045;
-        public static final int putao_dynamic_birthday_card=0x7f030046;
-        public static final int putao_dynamic_birthday_card_send=0x7f030047;
-        public static final int putao_edit_user_habit_item=0x7f030048;
-        public static final int putao_edittraveller_layout=0x7f030049;
-        public static final int putao_empty_layout=0x7f03004a;
-        public static final int putao_express_history_list_item=0x7f03004b;
-        public static final int putao_express_notify_tag_view_layout=0x7f03004c;
-        public static final int putao_express_select_detail_page=0x7f03004d;
-        public static final int putao_express_select_result_page=0x7f03004e;
-        public static final int putao_game_recharge_fragment=0x7f03004f;
-        public static final int putao_game_recharge_order_detail_activity=0x7f030050;
-        public static final int putao_game_recharge_question=0x7f030051;
-        public static final int putao_game_recharge_remind_card=0x7f030052;
-        public static final int putao_game_select=0x7f030053;
-        public static final int putao_game_select_goods_list_item=0x7f030054;
-        public static final int putao_game_select_goods_list_item_section=0x7f030055;
-        public static final int putao_getvoucher_fail_dialog=0x7f030056;
-        public static final int putao_group_buy_entry_activity=0x7f030057;
-        public static final int putao_group_buy_list_activity=0x7f030058;
-        public static final int putao_groupbuy_hot_category_item=0x7f030059;
-        public static final int putao_groupbuy_item=0x7f03005a;
-        public static final int putao_groupbuy_near_item=0x7f03005b;
-        public static final int putao_groupbuy_order_detail_activiity=0x7f03005c;
-        public static final int putao_groupbuy_selector_sort=0x7f03005d;
-        public static final int putao_groupbuy_simple_goods_item=0x7f03005e;
-        public static final int putao_guess_like_element=0x7f03005f;
-        public static final int putao_guess_like_item=0x7f030060;
-        public static final int putao_guide_layout=0x7f030061;
-        public static final int putao_habit_charge_listview_item=0x7f030062;
-        public static final int putao_habit_data_listview_item=0x7f030063;
-        public static final int putao_habit_game_listview_item=0x7f030064;
-        public static final int putao_head=0x7f030065;
-        public static final int putao_header_view=0x7f030066;
-        public static final int putao_home_coupon_layout=0x7f030067;
-        public static final int putao_home_search_head_layout=0x7f030068;
-        public static final int putao_hotel_detail_viewpager_item=0x7f030069;
-        public static final int putao_hotel_intro_service_item=0x7f03006a;
-        public static final int putao_hotel_order_tagview_layout=0x7f03006b;
-        public static final int putao_hotel_room_layout=0x7f03006c;
-        public static final int putao_hotel_roominfo_item=0x7f03006d;
-        public static final int putao_hotelorder_come_name_tip=0x7f03006e;
-        public static final int putao_item_adoperat=0x7f03006f;
-        public static final int putao_item_birthday_card=0x7f030070;
-        public static final int putao_kfcdiscount_fragment=0x7f030071;
-        public static final int putao_line_view_divide=0x7f030072;
-        public static final int putao_list_item_single_choice=0x7f030073;
-        public static final int putao_listfooter_more=0x7f030074;
-        public static final int putao_loading_view_layout=0x7f030075;
-        public static final int putao_login_by_capture_activity=0x7f030076;
-        public static final int putao_login_by_password_activity=0x7f030077;
-        public static final int putao_lottery_remind_setting_layout=0x7f030078;
-        public static final int putao_map_addr_confirm_dialog_layout=0x7f030079;
-        public static final int putao_map_custom_info_window=0x7f03007a;
-        public static final int putao_map_edit_num_layout=0x7f03007b;
-        public static final int putao_map_search_history_item=0x7f03007c;
-        public static final int putao_map_search_history_item_search=0x7f03007d;
-        public static final int putao_map_view_layout=0x7f03007e;
-        public static final int putao_menu=0x7f03007f;
-        public static final int putao_message_center_activity=0x7f030080;
-        public static final int putao_message_center_settings_list_item=0x7f030081;
-        public static final int putao_movie_detail_txt=0x7f030082;
-        public static final int putao_movie_dtl_stills_item=0x7f030083;
-        public static final int putao_movie_list_item=0x7f030084;
-        public static final int putao_movie_orderpay_head_layout=0x7f030085;
-        public static final int putao_movie_stills_show=0x7f030086;
-        public static final int putao_movie_stills_show_pageitem=0x7f030087;
-        public static final int putao_msg_setting_activity=0x7f030088;
-        public static final int putao_msg_weg_card=0x7f030089;
-        public static final int putao_my_layout_stub=0x7f03008a;
-        public static final int putao_my_order_item_foot=0x7f03008b;
-        public static final int putao_my_order_item_head=0x7f03008c;
-        public static final int putao_my_yellow_page_home_item=0x7f03008d;
-        public static final int putao_network_exception_layout=0x7f03008e;
-        public static final int putao_network_not_login_exception_layout=0x7f03008f;
-        public static final int putao_open_play_list_commticket=0x7f030090;
-        public static final int putao_open_play_list_commticket_item=0x7f030091;
-        public static final int putao_open_play_list_item=0x7f030092;
-        public static final int putao_open_play_list_item_cpitem=0x7f030093;
-        public static final int putao_open_play_list_item_head=0x7f030094;
-        public static final int putao_open_play_list_layout=0x7f030095;
-        public static final int putao_operate_item=0x7f030096;
-        public static final int putao_operate_item_2=0x7f030097;
-        public static final int putao_operate_item_3=0x7f030098;
-        public static final int putao_operate_item_4=0x7f030099;
-        public static final int putao_operate_item_5_6=0x7f03009a;
-        public static final int putao_order_center_refresh_activity=0x7f03009b;
-        public static final int putao_order_cp_info=0x7f03009c;
-        public static final int putao_order_history_activity=0x7f03009d;
-        public static final int putao_payment_result_activity=0x7f03009e;
-        public static final int putao_personal_data_interest_label_item=0x7f03009f;
-        public static final int putao_personal_data_item=0x7f0300a0;
-        public static final int putao_personal_data_layout=0x7f0300a1;
-        public static final int putao_popupwindow_layout=0x7f0300a2;
-        public static final int putao_popwin_listview_item=0x7f0300a3;
-        public static final int putao_progress_dialog=0x7f0300a4;
-        public static final int putao_qq_recharge_fragment=0x7f0300a5;
-        public static final int putao_querycharge_layout=0x7f0300a6;
-        public static final int putao_qunar_flight_activity=0x7f0300a7;
-        public static final int putao_recommend_word_item=0x7f0300a8;
-        public static final int putao_remind_layout=0x7f0300a9;
-        public static final int putao_remind_point_layout=0x7f0300aa;
-        public static final int putao_scan_camera=0x7f0300ab;
-        public static final int putao_screen_ad_dialog=0x7f0300ac;
-        public static final int putao_search_58_item=0x7f0300ad;
-        public static final int putao_search_common_header=0x7f0300ae;
-        public static final int putao_search_goods_item=0x7f0300af;
-        public static final int putao_search_head_layout=0x7f0300b0;
-        public static final int putao_select_year_and_month_item=0x7f0300b1;
-        public static final int putao_service_comment=0x7f0300b2;
-        public static final int putao_service_comment_add=0x7f0300b3;
-        public static final int putao_service_comment_listitem=0x7f0300b4;
-        public static final int putao_service_foot_item=0x7f0300b5;
-        public static final int putao_service_introduce=0x7f0300b6;
-        public static final int putao_service_item_layout=0x7f0300b7;
-        public static final int putao_set_password_activity=0x7f0300b8;
-        public static final int putao_show_vehicle_popwindow=0x7f0300b9;
-        public static final int putao_simple_list_item=0x7f0300ba;
-        public static final int putao_tail_item=0x7f0300bb;
-        public static final int putao_taxi_payment_activity=0x7f0300bc;
-        public static final int putao_title_flow_indicator=0x7f0300bd;
-        public static final int putao_title_flow_indicator_v2=0x7f0300be;
-        public static final int putao_titled_fragment_tab_activity=0x7f0300bf;
-        public static final int putao_traffic_offence_add_vehicle_layout=0x7f0300c0;
-        public static final int putao_traffic_offence_vehicle_item=0x7f0300c1;
-        public static final int putao_traffic_question_layout=0x7f0300c2;
-        public static final int putao_traffic_violation_add_car_item=0x7f0300c3;
-        public static final int putao_traffic_violation_cars_info_item=0x7f0300c4;
-        public static final int putao_traffic_violation_cars_info_layout=0x7f0300c5;
-        public static final int putao_traffic_violation_record_item=0x7f0300c6;
-        public static final int putao_traffic_violation_record_layout=0x7f0300c7;
-        public static final int putao_train_common_dialog_gridview_item=0x7f0300c8;
-        public static final int putao_train_common_gridview_dialog=0x7f0300c9;
-        public static final int putao_train_edittraveller_address_layout=0x7f0300ca;
-        public static final int putao_twogridview_dialog=0x7f0300cb;
-        public static final int putao_user_feedback_layout=0x7f0300cc;
-        public static final int putao_version_update_download=0x7f0300cd;
-        public static final int putao_view_order_filmticket=0x7f0300ce;
-        public static final int putao_voucher_center_activity=0x7f0300cf;
-        public static final int putao_voucher_center_list_item=0x7f0300d0;
-        public static final int putao_voucher_content_item=0x7f0300d1;
-        public static final int putao_voucher_dialog_listitem=0x7f0300d2;
-        public static final int putao_vouchercenter_dialog_item=0x7f0300d3;
-        public static final int putao_webview_dialog=0x7f0300d4;
-        public static final int putao_weg_detail_activity=0x7f0300d5;
-        public static final int putao_weg_yellow_page_w_e_g=0x7f0300d6;
-        public static final int putao_weg_yellow_page_water_eg=0x7f0300d7;
-        public static final int putao_weg_yellow_page_weg_account_history_item=0x7f0300d8;
-        public static final int putao_weg_yellow_page_weg_history_item=0x7f0300d9;
-        public static final int putao_yearandmonth_dialog=0x7f0300da;
-        public static final int putao_yellow_page_active_history_layout=0x7f0300db;
-        public static final int putao_yellow_page_all_peccancy_details=0x7f0300dc;
-        public static final int putao_yellow_page_all_peccancy_details_item=0x7f0300dd;
-        public static final int putao_yellow_page_bus=0x7f0300de;
-        public static final int putao_yellow_page_category_item=0x7f0300df;
-        public static final int putao_yellow_page_category_layout=0x7f0300e0;
-        public static final int putao_yellow_page_category_main=0x7f0300e1;
-        public static final int putao_yellow_page_categroy_list_item=0x7f0300e2;
-        public static final int putao_yellow_page_charge_item=0x7f0300e3;
-        public static final int putao_yellow_page_chargehistory_item=0x7f0300e4;
-        public static final int putao_yellow_page_chargetel_history_item=0x7f0300e5;
-        public static final int putao_yellow_page_city_list=0x7f0300e6;
-        public static final int putao_yellow_page_city_list_item=0x7f0300e7;
-        public static final int putao_yellow_page_error_collect=0x7f0300e8;
-        public static final int putao_yellow_page_express_list=0x7f0300e9;
-        public static final int putao_yellow_page_express_list_item=0x7f0300ea;
-        public static final int putao_yellow_page_favorite_list_item=0x7f0300eb;
-        public static final int putao_yellow_page_footprint_layout=0x7f0300ec;
-        public static final int putao_yellow_page_home_item_remind=0x7f0300ed;
-        public static final int putao_yellow_page_hotel_intro_activity=0x7f0300ee;
-        public static final int putao_yellow_page_hotel_pay_layout=0x7f0300ef;
-        public static final int putao_yellow_page_hotel_room_info=0x7f0300f0;
-        public static final int putao_yellow_page_hotelorder=0x7f0300f1;
-        public static final int putao_yellow_page_hotelorderdetail=0x7f0300f2;
-        public static final int putao_yellow_page_hotelorderresult=0x7f0300f3;
-        public static final int putao_yellow_page_item_detail=0x7f0300f4;
-        public static final int putao_yellow_page_kuaidi_map_activity=0x7f0300f5;
-        public static final int putao_yellow_page_main_layout=0x7f0300f6;
-        public static final int putao_yellow_page_main_map_activity=0x7f0300f7;
-        public static final int putao_yellow_page_map_cp_select_layout=0x7f0300f8;
-        public static final int putao_yellow_page_map_search_end_layout=0x7f0300f9;
-        public static final int putao_yellow_page_map_search_start_layout=0x7f0300fa;
-        public static final int putao_yellow_page_movielist=0x7f0300fb;
-        public static final int putao_yellow_page_navi_layout=0x7f0300fc;
-        public static final int putao_yellow_page_nearby_list_item=0x7f0300fd;
-        public static final int putao_yellow_page_plug_home=0x7f0300fe;
-        public static final int putao_yellow_page_recharge=0x7f0300ff;
-        public static final int putao_yellow_page_search_history_item=0x7f030100;
-        public static final int putao_yellow_page_search_list=0x7f030101;
-        public static final int putao_yellow_page_search_list_item=0x7f030102;
-        public static final int putao_yellow_page_search_list_item_2=0x7f030103;
-        public static final int putao_yellow_page_search_list_long_item=0x7f030104;
-        public static final int putao_yellow_page_search_number=0x7f030105;
-        public static final int putao_yellow_page_server_manager=0x7f030106;
-        public static final int putao_yellow_page_shop_detail=0x7f030107;
-        public static final int putao_yellow_page_tag_head=0x7f030108;
-        public static final int putao_yellow_page_tag_item=0x7f030109;
-        public static final int putao_yellow_page_tag_layout=0x7f03010a;
-        public static final int putao_yellow_page_taxiwaitreply_activity=0x7f03010b;
-        public static final int putao_yellow_page_traffic_offence_history_item=0x7f03010c;
-        public static final int putao_yellow_page_triffic_type_item=0x7f03010d;
+        public static final int putao_ad_item=0x7f030003;
+        public static final int putao_all_service_layout=0x7f030004;
+        public static final int putao_base_ui_layout=0x7f030005;
+        public static final int putao_base_ui_with_ad_layout=0x7f030006;
+        public static final int putao_calendar_item=0x7f030007;
+        public static final int putao_car_color_gridview_dialog=0x7f030008;
+        public static final int putao_card_item_express_detail_middle=0x7f030009;
+        public static final int putao_card_item_express_detail_top=0x7f03000a;
+        public static final int putao_category_item_layout=0x7f03000b;
+        public static final int putao_charge_telephone_traffic_order_item=0x7f03000c;
+        public static final int putao_chosen_goods_item_home=0x7f03000d;
+        public static final int putao_cms_content_listview_item=0x7f03000e;
+        public static final int putao_comm_empty_view=0x7f03000f;
+        public static final int putao_common_dialog_base_lv_item=0x7f030010;
+        public static final int putao_common_gridview_dialog=0x7f030011;
+        public static final int putao_common_list_dialog=0x7f030012;
+        public static final int putao_common_ok_cancel_dialog=0x7f030013;
+        public static final int putao_common_ok_dialog=0x7f030014;
+        public static final int putao_common_scrollview_dialog=0x7f030015;
+        public static final int putao_common_wheel_dialog=0x7f030016;
+        public static final int putao_common_wheel_dialog_text_item=0x7f030017;
+        public static final int putao_commticket_order_detail_card=0x7f030018;
+        public static final int putao_comtent_list_item_show_all=0x7f030019;
+        public static final int putao_content_list_activity=0x7f03001a;
+        public static final int putao_custom_searchview_layout=0x7f03001b;
+        public static final int putao_custom_spinner_layout=0x7f03001c;
+        public static final int putao_discount_voucher_activity=0x7f03001d;
+        public static final int putao_discount_voucher_detail_activity=0x7f03001e;
+        public static final int putao_driver_distance_info_window=0x7f03001f;
+        public static final int putao_dynamic_birthday_card=0x7f030020;
+        public static final int putao_dynamic_birthday_card_send=0x7f030021;
+        public static final int putao_edittraveller_layout=0x7f030022;
+        public static final int putao_empty_layout=0x7f030023;
+        public static final int putao_getvoucher_fail_dialog=0x7f030024;
+        public static final int putao_guide_layout=0x7f030025;
+        public static final int putao_head=0x7f030026;
+        public static final int putao_header_view=0x7f030027;
+        public static final int putao_home_search_head_layout=0x7f030028;
+        public static final int putao_hotel_detail_viewpager_item=0x7f030029;
+        public static final int putao_hotel_intro_service_item=0x7f03002a;
+        public static final int putao_hotel_order_tagview_layout=0x7f03002b;
+        public static final int putao_item_adoperat=0x7f03002c;
+        public static final int putao_item_birthday_card=0x7f03002d;
+        public static final int putao_kfcdiscount_fragment=0x7f03002e;
+        public static final int putao_line_view_divide=0x7f03002f;
+        public static final int putao_list_item_single_choice=0x7f030030;
+        public static final int putao_listfooter_more=0x7f030031;
+        public static final int putao_loading_view_layout=0x7f030032;
+        public static final int putao_login_by_capture_activity=0x7f030033;
+        public static final int putao_lottery_remind_setting_layout=0x7f030034;
+        public static final int putao_menu=0x7f030035;
+        public static final int putao_msg_setting_activity=0x7f030036;
+        public static final int putao_msg_weg_card=0x7f030037;
+        public static final int putao_my_layout_stub=0x7f030038;
+        public static final int putao_my_order_item_foot=0x7f030039;
+        public static final int putao_my_order_item_head=0x7f03003a;
+        public static final int putao_network_exception_layout=0x7f03003b;
+        public static final int putao_network_not_login_exception_layout=0x7f03003c;
+        public static final int putao_order_center_refresh_activity=0x7f03003d;
+        public static final int putao_order_cp_info=0x7f03003e;
+        public static final int putao_order_history_activity=0x7f03003f;
+        public static final int putao_personal_data_interest_label_item=0x7f030040;
+        public static final int putao_personal_data_layout=0x7f030041;
+        public static final int putao_popupwindow_layout=0x7f030042;
+        public static final int putao_popwin_listview_item=0x7f030043;
+        public static final int putao_progress_dialog=0x7f030044;
+        public static final int putao_recommend_word_item=0x7f030045;
+        public static final int putao_remind_layout=0x7f030046;
+        public static final int putao_remind_point_layout=0x7f030047;
+        public static final int putao_scan_camera=0x7f030048;
+        public static final int putao_screen_ad_dialog=0x7f030049;
+        public static final int putao_select_year_and_month_item=0x7f03004a;
+        public static final int putao_service_comment=0x7f03004b;
+        public static final int putao_service_foot_item=0x7f03004c;
+        public static final int putao_service_item_layout=0x7f03004d;
+        public static final int putao_show_vehicle_popwindow=0x7f03004e;
+        public static final int putao_simple_list_item=0x7f03004f;
+        public static final int putao_train_common_dialog_gridview_item=0x7f030050;
+        public static final int putao_train_common_gridview_dialog=0x7f030051;
+        public static final int putao_train_edittraveller_address_layout=0x7f030052;
+        public static final int putao_twogridview_dialog=0x7f030053;
+        public static final int putao_version_update_download=0x7f030054;
+        public static final int putao_view_order_filmticket=0x7f030055;
+        public static final int putao_voucher_dialog_listitem=0x7f030056;
+        public static final int putao_webview_dialog=0x7f030057;
+        public static final int putao_yearandmonth_dialog=0x7f030058;
+        public static final int putao_yellow_page_category_item=0x7f030059;
+        public static final int putao_yellow_page_main_layout=0x7f03005a;
+        public static final int putao_yellow_page_plug_home=0x7f03005b;
     }
     public static final class raw {
         public static final int putao_beep=0x7f050000;
@@ -4639,137 +3372,137 @@ containing a value of this type.
         public static final int putao_pic_remind_card04=0x7f050004;
     }
     public static final class string {
-        public static final int cancel=0x7f090492;
-        public static final int finish=0x7f090493;
-        public static final int list_friends=0x7f09049b;
-        public static final int mingdao_share_content=0x7f090796;
-        public static final int multi_share=0x7f090497;
-        public static final int pull_to_refresh=0x7f09049d;
+        public static final int cancel=0x7f090493;
+        public static final int finish=0x7f090494;
+        public static final int list_friends=0x7f09049c;
+        public static final int mingdao_share_content=0x7f090797;
+        public static final int multi_share=0x7f090498;
+        public static final int pull_to_refresh=0x7f09049e;
         /**  电影优惠券 
          */
-        public static final int putao_about_us=0x7f09024f;
-        public static final int putao_aboutus_copyright=0x7f09031a;
-        public static final int putao_aboutus_feedback=0x7f090315;
-        public static final int putao_aboutus_lifeapp=0x7f090317;
-        public static final int putao_aboutus_qqgroup=0x7f090319;
+        public static final int putao_about_us=0x7f090250;
+        public static final int putao_aboutus_copyright=0x7f09031b;
+        public static final int putao_aboutus_feedback=0x7f090316;
+        public static final int putao_aboutus_lifeapp=0x7f090318;
+        public static final int putao_aboutus_qqgroup=0x7f09031a;
         /**  关于我们 
  关于我们 
          */
-        public static final int putao_aboutus_title=0x7f090313;
-        public static final int putao_aboutus_update=0x7f090316;
-        public static final int putao_aboutus_version=0x7f090314;
-        public static final int putao_aboutus_weixin=0x7f090318;
+        public static final int putao_aboutus_title=0x7f090314;
+        public static final int putao_aboutus_update=0x7f090317;
+        public static final int putao_aboutus_version=0x7f090315;
+        public static final int putao_aboutus_weixin=0x7f090319;
         /**  微博来电秀 
          */
-        public static final int putao_account_alert=0x7f090589;
-        public static final int putao_account_error=0x7f090435;
-        public static final int putao_account_exist_cannot_bind=0x7f090263;
+        public static final int putao_account_alert=0x7f09058a;
+        public static final int putao_account_error=0x7f090436;
+        public static final int putao_account_exist_cannot_bind=0x7f090264;
         public static final int putao_account_input_limit=0x7f09003b;
-        public static final int putao_account_login=0x7f090658;
-        public static final int putao_active_history_no_data_tip=0x7f09065f;
+        public static final int putao_account_login=0x7f090659;
+        public static final int putao_active_history_no_data_tip=0x7f090660;
         /**  活动历史 
          */
-        public static final int putao_active_history_title=0x7f09065e;
-        public static final int putao_addr_add=0x7f09044b;
-        public static final int putao_addr_add_fail=0x7f090453;
-        public static final int putao_addr_add_success=0x7f090455;
-        public static final int putao_addr_defult=0x7f09044a;
-        public static final int putao_addr_delete_empty=0x7f09045a;
-        public static final int putao_addr_delete_fail=0x7f090459;
-        public static final int putao_addr_delete_success=0x7f090458;
-        public static final int putao_addr_detail=0x7f090449;
-        public static final int putao_addr_detail_tip=0x7f090451;
-        public static final int putao_addr_done=0x7f09044d;
-        public static final int putao_addr_get_fail=0x7f090454;
-        public static final int putao_addr_locate=0x7f090448;
-        public static final int putao_addr_locate_tip=0x7f090452;
+        public static final int putao_active_history_title=0x7f09065f;
+        public static final int putao_addr_add=0x7f09044c;
+        public static final int putao_addr_add_fail=0x7f090454;
+        public static final int putao_addr_add_success=0x7f090456;
+        public static final int putao_addr_defult=0x7f09044b;
+        public static final int putao_addr_delete_empty=0x7f09045b;
+        public static final int putao_addr_delete_fail=0x7f09045a;
+        public static final int putao_addr_delete_success=0x7f090459;
+        public static final int putao_addr_detail=0x7f09044a;
+        public static final int putao_addr_detail_tip=0x7f090452;
+        public static final int putao_addr_done=0x7f09044e;
+        public static final int putao_addr_get_fail=0x7f090455;
+        public static final int putao_addr_locate=0x7f090449;
+        public static final int putao_addr_locate_tip=0x7f090453;
         /**  服务地址 
          */
-        public static final int putao_addr_name=0x7f090446;
-        public static final int putao_addr_name_tip=0x7f090450;
-        public static final int putao_addr_order_result=0x7f09045b;
-        public static final int putao_addr_phone=0x7f090447;
-        public static final int putao_addr_phone_tip=0x7f09044e;
-        public static final int putao_addr_right_phone_tip=0x7f09044f;
-        public static final int putao_addr_update=0x7f09044c;
-        public static final int putao_addr_update_fail=0x7f090457;
-        public static final int putao_addr_update_success=0x7f090456;
-        public static final int putao_afternoon=0x7f090675;
-        public static final int putao_afternoon_date=0x7f09028a;
-        public static final int putao_air_statistics_content2_item1=0x7f0902e2;
-        public static final int putao_air_statistics_content2_item2=0x7f0902e3;
-        public static final int putao_air_statistics_content2_item3=0x7f0902e4;
-        public static final int putao_air_statistics_content2_item4=0x7f0902e5;
-        public static final int putao_air_statistics_content2_item5=0x7f0902e6;
-        public static final int putao_air_statistics_content2_item6=0x7f0902e7;
+        public static final int putao_addr_name=0x7f090447;
+        public static final int putao_addr_name_tip=0x7f090451;
+        public static final int putao_addr_order_result=0x7f09045c;
+        public static final int putao_addr_phone=0x7f090448;
+        public static final int putao_addr_phone_tip=0x7f09044f;
+        public static final int putao_addr_right_phone_tip=0x7f090450;
+        public static final int putao_addr_update=0x7f09044d;
+        public static final int putao_addr_update_fail=0x7f090458;
+        public static final int putao_addr_update_success=0x7f090457;
+        public static final int putao_afternoon=0x7f090676;
+        public static final int putao_afternoon_date=0x7f09028b;
+        public static final int putao_air_statistics_content2_item1=0x7f0902e3;
+        public static final int putao_air_statistics_content2_item2=0x7f0902e4;
+        public static final int putao_air_statistics_content2_item3=0x7f0902e5;
+        public static final int putao_air_statistics_content2_item4=0x7f0902e6;
+        public static final int putao_air_statistics_content2_item5=0x7f0902e7;
+        public static final int putao_air_statistics_content2_item6=0x7f0902e8;
         public static final int putao_all_choose=0x7f090056;
         public static final int putao_analytics_home_life_adv_pos=0x7f090049;
         public static final int putao_analytics_home_pick_pos=0x7f09004b;
         public static final int putao_analytics_home_recsubject_pos=0x7f09004c;
         public static final int putao_analytics_home_service_pos=0x7f09004a;
         public static final int putao_app_name=0x7f090000;
-        public static final int putao_apply_refun_explain=0x7f09041d;
-        public static final int putao_apply_refund_tip=0x7f09041e;
-        public static final int putao_around_all=0x7f090382;
+        public static final int putao_apply_refun_explain=0x7f09041e;
+        public static final int putao_apply_refund_tip=0x7f09041f;
+        public static final int putao_around_all=0x7f090383;
         /**  附近精选 
  附近精选 
          */
-        public static final int putao_around_choice=0x7f090380;
-        public static final int putao_around_get_all=0x7f090381;
-        public static final int putao_arrive_city=0x7f090574;
-        public static final int putao_assistant_guide_open=0x7f09069b;
-        public static final int putao_assistant_guide_service_dy=0x7f090310;
-        public static final int putao_assistant_guide_service_hc=0x7f09030e;
-        public static final int putao_assistant_guide_service_jd=0x7f09030f;
-        public static final int putao_assistant_guide_service_kd=0x7f090312;
-        public static final int putao_assistant_guide_service_sr=0x7f090311;
-        public static final int putao_assistant_guide_tip1=0x7f090698;
-        public static final int putao_assistant_guide_tip2=0x7f09030b;
-        public static final int putao_assistant_guide_tip3=0x7f090699;
-        public static final int putao_assistant_guide_tip4=0x7f09069a;
-        public static final int putao_assistant_guide_tip5=0x7f09030c;
-        public static final int putao_assistant_guide_tip6=0x7f09030d;
-        public static final int putao_back=0x7f0902d0;
-        public static final int putao_back_detail=0x7f0902d2;
-        public static final int putao_back_home=0x7f0902d3;
-        public static final int putao_back_my_home=0x7f0902da;
-        public static final int putao_back_my_location=0x7f0902d9;
-        public static final int putao_back_navigation=0x7f0902db;
-        public static final int putao_back_notify=0x7f0902d1;
-        public static final int putao_back_notify_back=0x7f0902dd;
-        public static final int putao_back_notify_distance=0x7f0902d8;
-        public static final int putao_back_notify_distance_kilometer=0x7f0902d6;
-        public static final int putao_back_notify_duration=0x7f0902d4;
-        public static final int putao_back_notify_duration_drive=0x7f0902d7;
-        public static final int putao_back_notify_duration_minutes=0x7f0902d5;
-        public static final int putao_back_setting=0x7f0902f2;
-        public static final int putao_back_texi=0x7f0902dc;
-        public static final int putao_bind_confirm=0x7f090652;
-        public static final int putao_bind_mobile=0x7f090646;
-        public static final int putao_bind_mobile_describe=0x7f090647;
-        public static final int putao_bind_process_msg=0x7f09066b;
-        public static final int putao_birth=0x7f0902ce;
-        public static final int putao_birth_card_birthday=0x7f0902c2;
-        public static final int putao_birth_card_call=0x7f0902c0;
-        public static final int putao_birth_card_hint=0x7f0902c3;
-        public static final int putao_birth_card_his_constellation=0x7f0902b7;
-        public static final int putao_birth_card_our_relationship=0x7f0902b6;
-        public static final int putao_birth_card_send_card=0x7f0902c1;
-        public static final int putao_birth_card_update_time=0x7f0902c4;
-        public static final int putao_birth_saving=0x7f0902bc;
-        public static final int putao_birth_setting=0x7f0902f3;
-        public static final int putao_birthday_card_choose=0x7f0902b9;
-        public static final int putao_birthday_detail=0x7f0902b3;
-        public static final int putao_birthday_notify=0x7f0902b2;
-        public static final int putao_birthday_notify_content=0x7f0902c5;
-        public static final int putao_birthday_notify_detail_birth_last_contact=0x7f090687;
-        public static final int putao_birthday_notify_detail_birth_last_contact_no=0x7f090688;
-        public static final int putao_birthday_notify_detail_group_no=0x7f0902b8;
-        public static final int putao_birthday_title=0x7f0902b4;
-        public static final int putao_bottom_hint=0x7f0906a9;
+        public static final int putao_around_choice=0x7f090381;
+        public static final int putao_around_get_all=0x7f090382;
+        public static final int putao_arrive_city=0x7f090575;
+        public static final int putao_assistant_guide_open=0x7f09069c;
+        public static final int putao_assistant_guide_service_dy=0x7f090311;
+        public static final int putao_assistant_guide_service_hc=0x7f09030f;
+        public static final int putao_assistant_guide_service_jd=0x7f090310;
+        public static final int putao_assistant_guide_service_kd=0x7f090313;
+        public static final int putao_assistant_guide_service_sr=0x7f090312;
+        public static final int putao_assistant_guide_tip1=0x7f090699;
+        public static final int putao_assistant_guide_tip2=0x7f09030c;
+        public static final int putao_assistant_guide_tip3=0x7f09069a;
+        public static final int putao_assistant_guide_tip4=0x7f09069b;
+        public static final int putao_assistant_guide_tip5=0x7f09030d;
+        public static final int putao_assistant_guide_tip6=0x7f09030e;
+        public static final int putao_back=0x7f0902d1;
+        public static final int putao_back_detail=0x7f0902d3;
+        public static final int putao_back_home=0x7f0902d4;
+        public static final int putao_back_my_home=0x7f0902db;
+        public static final int putao_back_my_location=0x7f0902da;
+        public static final int putao_back_navigation=0x7f0902dc;
+        public static final int putao_back_notify=0x7f0902d2;
+        public static final int putao_back_notify_back=0x7f0902de;
+        public static final int putao_back_notify_distance=0x7f0902d9;
+        public static final int putao_back_notify_distance_kilometer=0x7f0902d7;
+        public static final int putao_back_notify_duration=0x7f0902d5;
+        public static final int putao_back_notify_duration_drive=0x7f0902d8;
+        public static final int putao_back_notify_duration_minutes=0x7f0902d6;
+        public static final int putao_back_setting=0x7f0902f3;
+        public static final int putao_back_texi=0x7f0902dd;
+        public static final int putao_bind_confirm=0x7f090653;
+        public static final int putao_bind_mobile=0x7f090647;
+        public static final int putao_bind_mobile_describe=0x7f090648;
+        public static final int putao_bind_process_msg=0x7f09066c;
+        public static final int putao_birth=0x7f0902cf;
+        public static final int putao_birth_card_birthday=0x7f0902c3;
+        public static final int putao_birth_card_call=0x7f0902c1;
+        public static final int putao_birth_card_hint=0x7f0902c4;
+        public static final int putao_birth_card_his_constellation=0x7f0902b8;
+        public static final int putao_birth_card_our_relationship=0x7f0902b7;
+        public static final int putao_birth_card_send_card=0x7f0902c2;
+        public static final int putao_birth_card_update_time=0x7f0902c5;
+        public static final int putao_birth_saving=0x7f0902bd;
+        public static final int putao_birth_setting=0x7f0902f4;
+        public static final int putao_birthday_card_choose=0x7f0902ba;
+        public static final int putao_birthday_detail=0x7f0902b4;
+        public static final int putao_birthday_notify=0x7f0902b3;
+        public static final int putao_birthday_notify_content=0x7f0902c6;
+        public static final int putao_birthday_notify_detail_birth_last_contact=0x7f090688;
+        public static final int putao_birthday_notify_detail_birth_last_contact_no=0x7f090689;
+        public static final int putao_birthday_notify_detail_group_no=0x7f0902b9;
+        public static final int putao_birthday_title=0x7f0902b5;
+        public static final int putao_bottom_hint=0x7f0906aa;
         public static final int putao_bus_change_text=0x7f09012e;
         public static final int putao_bus_current_loction=0x7f090138;
-        public static final int putao_bus_form_location_failed_text=0x7f090252;
+        public static final int putao_bus_form_location_failed_text=0x7f090253;
         public static final int putao_bus_form_location_ok_text=0x7f090130;
         public static final int putao_bus_from_hit=0x7f09012c;
         public static final int putao_bus_line_text=0x7f09012f;
@@ -4780,7 +3513,7 @@ containing a value of this type.
         public static final int putao_bus_query_input_hit=0x7f090133;
         public static final int putao_bus_query_line_empty=0x7f090136;
         public static final int putao_bus_to_hit=0x7f09012d;
-        public static final int putao_button_ok=0x7f090356;
+        public static final int putao_button_ok=0x7f090357;
         public static final int putao_calendar_date_after_tomorrow=0x7f090200;
         public static final int putao_calendar_date_today=0x7f0901fe;
         public static final int putao_calendar_date_tomorrow=0x7f0901ff;
@@ -4795,54 +3528,54 @@ containing a value of this type.
  日历 
          */
         public static final int putao_calendar_title=0x7f0901f8;
-        public static final int putao_can_select=0x7f0904fd;
+        public static final int putao_can_select=0x7f0904fe;
         public static final int putao_cancel=0x7f090050;
-        public static final int putao_cancel_order_cancel=0x7f0906f2;
-        public static final int putao_cancel_order_failed=0x7f0906f4;
-        public static final int putao_cancel_order_message=0x7f0906f0;
-        public static final int putao_cancel_order_ok=0x7f0906f1;
-        public static final int putao_cancel_order_succ=0x7f09041b;
-        public static final int putao_cancel_order_title=0x7f0906ef;
-        public static final int putao_cancel_received_order=0x7f0906e8;
+        public static final int putao_cancel_order_cancel=0x7f0906f3;
+        public static final int putao_cancel_order_failed=0x7f0906f5;
+        public static final int putao_cancel_order_message=0x7f0906f1;
+        public static final int putao_cancel_order_ok=0x7f0906f2;
+        public static final int putao_cancel_order_succ=0x7f09041c;
+        public static final int putao_cancel_order_title=0x7f0906f0;
+        public static final int putao_cancel_received_order=0x7f0906e9;
         /**  other 
  other 
          */
         public static final int putao_cancle_all_choose=0x7f090055;
-        public static final int putao_car_add=0x7f0903eb;
-        public static final int putao_car_info=0x7f090460;
-        public static final int putao_car_info_tip=0x7f09045e;
-        public static final int putao_car_manager=0x7f0903dd;
-        public static final int putao_car_manager_hint=0x7f0903e2;
-        public static final int putao_car_type_no_hint=0x7f09045f;
-        public static final int putao_car_write_no=0x7f090461;
+        public static final int putao_car_add=0x7f0903ec;
+        public static final int putao_car_info=0x7f090461;
+        public static final int putao_car_info_tip=0x7f09045f;
+        public static final int putao_car_manager=0x7f0903de;
+        public static final int putao_car_manager_hint=0x7f0903e3;
+        public static final int putao_car_type_no_hint=0x7f090460;
+        public static final int putao_car_write_no=0x7f090462;
         /**  话费，流量卡片 
  话费，流量卡片 
          */
-        public static final int putao_card_charge_content=0x7f090332;
+        public static final int putao_card_charge_content=0x7f090333;
         /**  电影卡片 
          */
-        public static final int putao_card_movie_content=0x7f090334;
+        public static final int putao_card_movie_content=0x7f090335;
         /**  电影卡片 
          */
-        public static final int putao_card_movie_status_remind=0x7f09069d;
-        public static final int putao_card_movie_status_remind_1=0x7f09069e;
-        public static final int putao_card_movie_today=0x7f09069f;
-        public static final int putao_card_traffic_charge_content=0x7f090333;
-        public static final int putao_charge_account=0x7f0904bc;
+        public static final int putao_card_movie_status_remind=0x7f09069e;
+        public static final int putao_card_movie_status_remind_1=0x7f09069f;
+        public static final int putao_card_movie_today=0x7f0906a0;
+        public static final int putao_card_traffic_charge_content=0x7f090334;
+        public static final int putao_charge_account=0x7f0904bd;
         public static final int putao_charge_charge_hint=0x7f0900ff;
         public static final int putao_charge_charging=0x7f0900f1;
         public static final int putao_charge_chy_data=0x7f090100;
         public static final int putao_charge_deal_ask_for_refund=0x7f09010c;
         public static final int putao_charge_deal_failed=0x7f090108;
         public static final int putao_charge_deal_failed_cancel=0x7f09010b;
-        public static final int putao_charge_deal_failed_coupon_timeout=0x7f09061a;
+        public static final int putao_charge_deal_failed_coupon_timeout=0x7f09061b;
         public static final int putao_charge_deal_failed_hint=0x7f090109;
         public static final int putao_charge_deal_failed_hint_weixin=0x7f09010a;
         public static final int putao_charge_deal_out_of_date=0x7f09010e;
         public static final int putao_charge_deal_refunded=0x7f09010d;
         public static final int putao_charge_deal_success=0x7f090107;
-        public static final int putao_charge_deal_success_hint=0x7f090619;
-        public static final int putao_charge_favorable=0x7f090621;
+        public static final int putao_charge_deal_success_hint=0x7f09061a;
+        public static final int putao_charge_favorable=0x7f090622;
         public static final int putao_charge_getchargeinfo_failed=0x7f0900f7;
         public static final int putao_charge_getcontact_hint_empty=0x7f0900f9;
         public static final int putao_charge_getcontact_hint_error=0x7f0900f8;
@@ -4865,15 +3598,15 @@ containing a value of this type.
          */
         public static final int putao_charge_immediately=0x7f0900f0;
         public static final int putao_charge_money_hint=0x7f0900fd;
-        public static final int putao_charge_no_trade_num=0x7f09061b;
+        public static final int putao_charge_no_trade_num=0x7f09061c;
         public static final int putao_charge_phonenum_error=0x7f0900fb;
         public static final int putao_charge_phonenum_hint=0x7f0900fa;
-        public static final int putao_charge_price=0x7f090615;
+        public static final int putao_charge_price=0x7f090616;
         public static final int putao_charge_qry_status_ing=0x7f090104;
-        public static final int putao_charge_query_my=0x7f0902ff;
+        public static final int putao_charge_query_my=0x7f090300;
         public static final int putao_charge_query_price_fail=0x7f090106;
-        public static final int putao_charge_query_traffic_default=0x7f090618;
-        public static final int putao_charge_query_traffic_fail=0x7f090617;
+        public static final int putao_charge_query_traffic_default=0x7f090619;
+        public static final int putao_charge_query_traffic_fail=0x7f090618;
         public static final int putao_charge_querying=0x7f0900f2;
         public static final int putao_charge_question=0x7f090101;
         /** 
@@ -4897,34 +3630,34 @@ containing a value of this type.
         public static final int putao_charge_question_a=0x7f090118;
         public static final int putao_charge_question_b=0x7f090119;
         public static final int putao_charge_question_c=0x7f09011a;
-        public static final int putao_charge_question_d=0x7f09061d;
+        public static final int putao_charge_question_d=0x7f09061e;
         public static final int putao_charge_question_e=0x7f09011b;
-        public static final int putao_charge_question_f=0x7f09061e;
+        public static final int putao_charge_question_f=0x7f09061f;
         public static final int putao_charge_question_url=0x7f090103;
         public static final int putao_charge_serialnum_hint=0x7f0900fc;
         public static final int putao_charge_server_checking=0x7f090105;
         public static final int putao_charge_subject=0x7f0900d9;
-        public static final int putao_charge_subject_for_alipay=0x7f090616;
+        public static final int putao_charge_subject_for_alipay=0x7f090617;
         /**  充话费 
  充话费 
          */
         public static final int putao_charge_tag_title=0x7f0900d4;
         public static final int putao_charge_tag_title_charge=0x7f0900d5;
         public static final int putao_charge_tag_title_tiffic=0x7f0900d6;
-        public static final int putao_charge_tel_setting_hint=0x7f090684;
+        public static final int putao_charge_tel_setting_hint=0x7f090685;
         public static final int putao_charge_telephone_order_content=0x7f0900d8;
-        public static final int putao_charge_telephone_order_content_detail=0x7f090611;
+        public static final int putao_charge_telephone_order_content_detail=0x7f090612;
         public static final int putao_charge_tips=0x7f090102;
         public static final int putao_charge_tips_first_mobile_bj=0x7f0900e8;
         public static final int putao_charge_tips_first_mobile_gd=0x7f0900e7;
         public static final int putao_charge_tips_first_telecom=0x7f0900e5;
         public static final int putao_charge_tips_first_unicom=0x7f0900e6;
-        public static final int putao_charge_tips_for_failed=0x7f09061c;
+        public static final int putao_charge_tips_for_failed=0x7f09061d;
         public static final int putao_charge_tips_for_pending=0x7f090111;
         public static final int putao_charge_tips_for_success=0x7f09010f;
         public static final int putao_charge_traffic_hint=0x7f0900fe;
         public static final int putao_charge_traffic_order_content=0x7f0900d7;
-        public static final int putao_charge_traffic_order_title=0x7f090610;
+        public static final int putao_charge_traffic_order_title=0x7f090611;
         public static final int putao_charge_traffic_subject=0x7f0900da;
         public static final int putao_charge_traffic_tips_for_ask_for_refund=0x7f090113;
         public static final int putao_charge_traffic_tips_for_ask_for_refund_alipay=0x7f090114;
@@ -4933,15 +3666,15 @@ containing a value of this type.
         public static final int putao_charge_traffic_tips_for_pending=0x7f090112;
         public static final int putao_charge_traffic_tips_for_refund=0x7f090116;
         public static final int putao_charge_traffic_tips_for_success=0x7f090110;
-        public static final int putao_check_captcha_fail=0x7f0906d8;
-        public static final int putao_check_code_alert=0x7f090649;
-        public static final int putao_check_code_sended=0x7f090651;
-        public static final int putao_check_mobile_alert=0x7f090648;
-        public static final int putao_check_phone_number=0x7f09064b;
-        public static final int putao_checking_authcode_error=0x7f090653;
+        public static final int putao_check_captcha_fail=0x7f0906d9;
+        public static final int putao_check_code_alert=0x7f09064a;
+        public static final int putao_check_code_sended=0x7f090652;
+        public static final int putao_check_mobile_alert=0x7f090649;
+        public static final int putao_check_phone_number=0x7f09064c;
+        public static final int putao_checking_authcode_error=0x7f090654;
         public static final int putao_checking_login_fail=0x7f09021a;
-        public static final int putao_checking_mobile=0x7f09064e;
-        public static final int putao_checking_mobile_login=0x7f09064f;
+        public static final int putao_checking_mobile=0x7f09064f;
+        public static final int putao_checking_mobile_login=0x7f090650;
         /**  短信注册验证码输入框提示内容修改，应该是3位验证码 
  短信注册验证码输入框提示内容修改，应该是3位验证码 
          */
@@ -4952,209 +3685,209 @@ containing a value of this type.
          */
         public static final int putao_choice_charge_way=0x7f0900ef;
         public static final int putao_choice_flow_par=0x7f0900dd;
-        public static final int putao_choose_refund_reason=0x7f09040b;
-        public static final int putao_chupiao_failed=0x7f090765;
-        public static final int putao_ciname_phone=0x7f09066d;
-        public static final int putao_cinema_coupon_display_txt=0x7f090668;
-        public static final int putao_cinema_coupon_error=0x7f090669;
+        public static final int putao_choose_refund_reason=0x7f09040c;
+        public static final int putao_chupiao_failed=0x7f090766;
+        public static final int putao_ciname_phone=0x7f09066e;
+        public static final int putao_cinema_coupon_display_txt=0x7f090669;
+        public static final int putao_cinema_coupon_error=0x7f09066a;
         /**  电影优惠券 
          */
-        public static final int putao_cinema_coupon_group=0x7f090663;
-        public static final int putao_cinema_coupon_item=0x7f090667;
-        public static final int putao_cinema_coupon_item_no=0x7f090665;
-        public static final int putao_cinema_coupon_item_none=0x7f090666;
-        public static final int putao_cinema_coupon_title=0x7f090664;
-        public static final int putao_cinema_nomovie=0x7f090531;
-        public static final int putao_cinema_payment_limit_time=0x7f090509;
-        public static final int putao_cinema_payment_limit_time_format_pattern=0x7f09050a;
-        public static final int putao_cinema_pull_to_refresh_failure=0x7f09050c;
-        public static final int putao_cinemalist_all=0x7f090517;
-        public static final int putao_cinemalist_area_item_default=0x7f09052e;
-        public static final int putao_cinemalist_area_no_county=0x7f09052c;
-        public static final int putao_cinemalist_area_title=0x7f09052d;
-        public static final int putao_cinemalist_exchange=0x7f090512;
-        public static final int putao_cinemalist_item_compare_price=0x7f090514;
-        public static final int putao_cinemalist_item_lowprice=0x7f090515;
-        public static final int putao_cinemalist_nocinema=0x7f090530;
-        public static final int putao_cinemalist_recommend=0x7f090516;
+        public static final int putao_cinema_coupon_group=0x7f090664;
+        public static final int putao_cinema_coupon_item=0x7f090668;
+        public static final int putao_cinema_coupon_item_no=0x7f090666;
+        public static final int putao_cinema_coupon_item_none=0x7f090667;
+        public static final int putao_cinema_coupon_title=0x7f090665;
+        public static final int putao_cinema_nomovie=0x7f090532;
+        public static final int putao_cinema_payment_limit_time=0x7f09050a;
+        public static final int putao_cinema_payment_limit_time_format_pattern=0x7f09050b;
+        public static final int putao_cinema_pull_to_refresh_failure=0x7f09050d;
+        public static final int putao_cinemalist_all=0x7f090518;
+        public static final int putao_cinemalist_area_item_default=0x7f09052f;
+        public static final int putao_cinemalist_area_no_county=0x7f09052d;
+        public static final int putao_cinemalist_area_title=0x7f09052e;
+        public static final int putao_cinemalist_exchange=0x7f090513;
+        public static final int putao_cinemalist_item_compare_price=0x7f090515;
+        public static final int putao_cinemalist_item_lowprice=0x7f090516;
+        public static final int putao_cinemalist_nocinema=0x7f090531;
+        public static final int putao_cinemalist_recommend=0x7f090517;
         /**  影院列表 
          */
-        public static final int putao_cinemalist_seat=0x7f090511;
-        public static final int putao_cinemalist_sort_title=0x7f09052f;
-        public static final int putao_cinemalist_title=0x7f090513;
-        public static final int putao_city_all=0x7f09058c;
-        public static final int putao_city_beijing=0x7f090577;
+        public static final int putao_cinemalist_seat=0x7f090512;
+        public static final int putao_cinemalist_sort_title=0x7f090530;
+        public static final int putao_cinemalist_title=0x7f090514;
+        public static final int putao_city_all=0x7f09058d;
+        public static final int putao_city_beijing=0x7f090578;
         public static final int putao_city_hot=0x7f090057;
         public static final int putao_city_offen_used=0x7f090058;
         public static final int putao_city_search=0x7f090139;
-        public static final int putao_city_shanghai=0x7f090579;
-        public static final int putao_city_shenzhen=0x7f090578;
-        public static final int putao_common_address=0x7f0903de;
-        public static final int putao_common_address_add=0x7f0903ea;
-        public static final int putao_common_autonomous_regions=0x7f090258;
-        public static final int putao_common_cancel=0x7f0903a5;
-        public static final int putao_common_chinese_left_kh=0x7f09025f;
-        public static final int putao_common_chinese_right_kh=0x7f090260;
-        public static final int putao_common_city=0x7f090259;
-        public static final int putao_common_click_to_set=0x7f0903e6;
-        public static final int putao_common_county=0x7f09025a;
-        public static final int putao_common_danhan=0x7f09066e;
-        public static final int putao_common_delete=0x7f090264;
-        public static final int putao_common_dialog=0x7f09025e;
-        public static final int putao_common_huafei=0x7f09066f;
-        public static final int putao_common_info=0x7f0903df;
-        public static final int putao_common_info_hint=0x7f0903e1;
-        public static final int putao_common_info_name=0x7f0903e3;
-        public static final int putao_common_info_phone=0x7f0903e4;
-        public static final int putao_common_info_pic_error=0x7f0903ee;
-        public static final int putao_common_info_qq=0x7f0903e5;
-        public static final int putao_common_kuaidi=0x7f090670;
-        public static final int putao_common_liuliang=0x7f090671;
-        public static final int putao_common_mi=0x7f09025c;
-        public static final int putao_common_parser_connect_timeout=0x7f0903a2;
-        public static final int putao_common_parser_other_ioexception=0x7f0903a1;
+        public static final int putao_city_shanghai=0x7f09057a;
+        public static final int putao_city_shenzhen=0x7f090579;
+        public static final int putao_common_address=0x7f0903df;
+        public static final int putao_common_address_add=0x7f0903eb;
+        public static final int putao_common_autonomous_regions=0x7f090259;
+        public static final int putao_common_cancel=0x7f0903a6;
+        public static final int putao_common_chinese_left_kh=0x7f090260;
+        public static final int putao_common_chinese_right_kh=0x7f090261;
+        public static final int putao_common_city=0x7f09025a;
+        public static final int putao_common_click_to_set=0x7f0903e7;
+        public static final int putao_common_county=0x7f09025b;
+        public static final int putao_common_danhan=0x7f09066f;
+        public static final int putao_common_delete=0x7f090265;
+        public static final int putao_common_dialog=0x7f09025f;
+        public static final int putao_common_huafei=0x7f090670;
+        public static final int putao_common_info=0x7f0903e0;
+        public static final int putao_common_info_hint=0x7f0903e2;
+        public static final int putao_common_info_name=0x7f0903e4;
+        public static final int putao_common_info_phone=0x7f0903e5;
+        public static final int putao_common_info_pic_error=0x7f0903ef;
+        public static final int putao_common_info_qq=0x7f0903e6;
+        public static final int putao_common_kuaidi=0x7f090671;
+        public static final int putao_common_liuliang=0x7f090672;
+        public static final int putao_common_mi=0x7f09025d;
+        public static final int putao_common_parser_connect_timeout=0x7f0903a3;
+        public static final int putao_common_parser_other_ioexception=0x7f0903a2;
         /**  公共 
  公共 
          */
-        public static final int putao_common_parser_unknown_error=0x7f0903a0;
-        public static final int putao_common_prompt=0x7f0903a3;
+        public static final int putao_common_parser_unknown_error=0x7f0903a1;
+        public static final int putao_common_prompt=0x7f0903a4;
         /**  代码中设置的部分常量 start 
  代码中设置的部分常量 start 
          */
-        public static final int putao_common_province=0x7f090257;
-        public static final int putao_common_query_bus=0x7f09025d;
-        public static final int putao_common_quit=0x7f0903e8;
-        public static final int putao_common_save_and_qiut=0x7f0903e9;
-        public static final int putao_common_save_or_not=0x7f0903e7;
-        public static final int putao_common_shenzhen=0x7f09025b;
-        public static final int putao_common_sign_yuan=0x7f0903a6;
-        public static final int putao_common_sure=0x7f0903a4;
-        public static final int putao_complaint=0x7f09040c;
-        public static final int putao_complete=0x7f0903e0;
-        public static final int putao_config_movie_hint=0x7f0904f8;
+        public static final int putao_common_province=0x7f090258;
+        public static final int putao_common_query_bus=0x7f09025e;
+        public static final int putao_common_quit=0x7f0903e9;
+        public static final int putao_common_save_and_qiut=0x7f0903ea;
+        public static final int putao_common_save_or_not=0x7f0903e8;
+        public static final int putao_common_shenzhen=0x7f09025c;
+        public static final int putao_common_sign_yuan=0x7f0903a7;
+        public static final int putao_common_sure=0x7f0903a5;
+        public static final int putao_complaint=0x7f09040d;
+        public static final int putao_complete=0x7f0903e1;
+        public static final int putao_config_movie_hint=0x7f0904f9;
         public static final int putao_confirm=0x7f09004f;
         public static final int putao_confirm_new_password=0x7f09003e;
-        public static final int putao_confirm_payment=0x7f0902ab;
-        public static final int putao_confirm_send=0x7f0906cb;
-        public static final int putao_contacts_edit_finish=0x7f090581;
-        public static final int putao_convert_voucher_fail=0x7f09023e;
+        public static final int putao_confirm_payment=0x7f0902ac;
+        public static final int putao_confirm_send=0x7f0906cc;
+        public static final int putao_contacts_edit_finish=0x7f090582;
+        public static final int putao_convert_voucher_fail=0x7f09023f;
         /**  默认搜索配置end 
  默认搜索配置end 
          */
-        public static final int putao_copy_to_clipboard=0x7f090284;
-        public static final int putao_count_down_end=0x7f09046e;
+        public static final int putao_copy_to_clipboard=0x7f090285;
+        public static final int putao_count_down_end=0x7f09046f;
         /**  首页活动倒计时 
          */
-        public static final int putao_count_down_start=0x7f09046d;
+        public static final int putao_count_down_start=0x7f09046e;
         public static final int putao_coupon_money=0x7f0900ee;
-        public static final int putao_coupon_tips=0x7f090662;
+        public static final int putao_coupon_tips=0x7f090663;
         public static final int putao_coupon_traffic=0x7f0900ed;
-        public static final int putao_cp_info_text_1=0x7f0906b2;
-        public static final int putao_cp_info_text_2=0x7f0906b3;
+        public static final int putao_cp_info_text_1=0x7f0906b3;
+        public static final int putao_cp_info_text_2=0x7f0906b4;
         /**  订单cp 
  订单cp 
          */
-        public static final int putao_cp_name_prefix=0x7f0903a8;
-        public static final int putao_cp_note_prefix=0x7f0903aa;
-        public static final int putao_cp_number_prefix=0x7f0903a9;
-        public static final int putao_cp_provider=0x7f090383;
-        public static final int putao_cp_provider2=0x7f090384;
-        public static final int putao_create=0x7f0906a7;
+        public static final int putao_cp_name_prefix=0x7f0903a9;
+        public static final int putao_cp_note_prefix=0x7f0903ab;
+        public static final int putao_cp_number_prefix=0x7f0903aa;
+        public static final int putao_cp_provider=0x7f090384;
+        public static final int putao_cp_provider2=0x7f090385;
+        public static final int putao_create=0x7f0906a8;
         public static final int putao_date_just_now=0x7f090201;
         public static final int putao_date_minute=0x7f090202;
         public static final int putao_date_month_day=0x7f090205;
         public static final int putao_date_month_day_simple=0x7f090206;
-        public static final int putao_date_one_weeks_day=0x7f090634;
+        public static final int putao_date_one_weeks_day=0x7f090635;
         public static final int putao_date_today=0x7f090203;
         public static final int putao_date_year_month_day=0x7f090207;
         public static final int putao_date_year_month_day_simple=0x7f090208;
-        public static final int putao_date_year_month_day_time=0x7f090635;
+        public static final int putao_date_year_month_day_time=0x7f090636;
         public static final int putao_date_yesterday=0x7f090204;
-        public static final int putao_day=0x7f0902bf;
-        public static final int putao_day_later=0x7f0903ec;
+        public static final int putao_day=0x7f0902c0;
+        public static final int putao_day_later=0x7f0903ed;
         /**  违章车辆 
  违章车辆 
          */
-        public static final int putao_delete=0x7f09035e;
-        public static final int putao_delete_vehicle=0x7f0906aa;
-        public static final int putao_departed=0x7f090766;
-        public static final int putao_deposit_apply_refund=0x7f0903ff;
-        public static final int putao_deposit_cancel_order=0x7f0903fc;
-        public static final int putao_deposit_cancelorder_tip=0x7f090417;
-        public static final int putao_deposit_car_info=0x7f0903f2;
-        public static final int putao_deposit_create_time=0x7f0903fb;
-        public static final int putao_deposit_customer_service=0x7f0903f6;
-        public static final int putao_deposit_go_pay=0x7f090411;
-        public static final int putao_deposit_goods_xiajia=0x7f090419;
-        public static final int putao_deposit_order_amount=0x7f0903f8;
-        public static final int putao_deposit_order_comment=0x7f09041a;
-        public static final int putao_deposit_order_detail=0x7f0903ef;
-        public static final int putao_deposit_order_info=0x7f0903f9;
-        public static final int putao_deposit_order_no=0x7f0903fa;
-        public static final int putao_deposit_order_status_confirm=0x7f090412;
-        public static final int putao_deposit_order_status_servgo=0x7f090413;
-        public static final int putao_deposit_order_status_subsucc=0x7f090414;
-        public static final int putao_deposit_pay=0x7f090410;
-        public static final int putao_deposit_pay_money=0x7f0903f7;
-        public static final int putao_deposit_rebuy=0x7f0903fe;
-        public static final int putao_deposit_refundfail=0x7f090416;
-        public static final int putao_deposit_refundsucc=0x7f090415;
-        public static final int putao_deposit_reorder=0x7f0903fd;
-        public static final int putao_deposit_service_address=0x7f0903f3;
-        public static final int putao_deposit_service_phone=0x7f0903f4;
-        public static final int putao_deposit_service_provider=0x7f0903f5;
-        public static final int putao_deposit_service_time=0x7f0903f0;
-        public static final int putao_deposit_staff_tip=0x7f0903f1;
-        public static final int putao_deposit_usecouponinfo=0x7f090418;
-        public static final int putao_didi_name=0x7f0906d4;
-        public static final int putao_disable_kuyun=0x7f090659;
-        public static final int putao_disable_phone_number=0x7f090585;
-        public static final int putao_discount_coupon_desc=0x7f0903b2;
-        public static final int putao_discover_like_count_fail=0x7f09046c;
-        public static final int putao_distance_kilo_meter=0x7f0906eb;
-        public static final int putao_distance_meter=0x7f0906ea;
-        public static final int putao_distance_remind_tips_far=0x7f0906ee;
-        public static final int putao_distance_remind_tips_middle=0x7f0906ed;
-        public static final int putao_distance_remind_tips_near=0x7f0906ec;
+        public static final int putao_delete=0x7f09035f;
+        public static final int putao_delete_vehicle=0x7f0906ab;
+        public static final int putao_departed=0x7f090767;
+        public static final int putao_deposit_apply_refund=0x7f090400;
+        public static final int putao_deposit_cancel_order=0x7f0903fd;
+        public static final int putao_deposit_cancelorder_tip=0x7f090418;
+        public static final int putao_deposit_car_info=0x7f0903f3;
+        public static final int putao_deposit_create_time=0x7f0903fc;
+        public static final int putao_deposit_customer_service=0x7f0903f7;
+        public static final int putao_deposit_go_pay=0x7f090412;
+        public static final int putao_deposit_goods_xiajia=0x7f09041a;
+        public static final int putao_deposit_order_amount=0x7f0903f9;
+        public static final int putao_deposit_order_comment=0x7f09041b;
+        public static final int putao_deposit_order_detail=0x7f0903f0;
+        public static final int putao_deposit_order_info=0x7f0903fa;
+        public static final int putao_deposit_order_no=0x7f0903fb;
+        public static final int putao_deposit_order_status_confirm=0x7f090413;
+        public static final int putao_deposit_order_status_servgo=0x7f090414;
+        public static final int putao_deposit_order_status_subsucc=0x7f090415;
+        public static final int putao_deposit_pay=0x7f090411;
+        public static final int putao_deposit_pay_money=0x7f0903f8;
+        public static final int putao_deposit_rebuy=0x7f0903ff;
+        public static final int putao_deposit_refundfail=0x7f090417;
+        public static final int putao_deposit_refundsucc=0x7f090416;
+        public static final int putao_deposit_reorder=0x7f0903fe;
+        public static final int putao_deposit_service_address=0x7f0903f4;
+        public static final int putao_deposit_service_phone=0x7f0903f5;
+        public static final int putao_deposit_service_provider=0x7f0903f6;
+        public static final int putao_deposit_service_time=0x7f0903f1;
+        public static final int putao_deposit_staff_tip=0x7f0903f2;
+        public static final int putao_deposit_usecouponinfo=0x7f090419;
+        public static final int putao_didi_name=0x7f0906d5;
+        public static final int putao_disable_kuyun=0x7f09065a;
+        public static final int putao_disable_phone_number=0x7f090586;
+        public static final int putao_discount_coupon_desc=0x7f0903b3;
+        public static final int putao_discover_like_count_fail=0x7f09046d;
+        public static final int putao_distance_kilo_meter=0x7f0906ec;
+        public static final int putao_distance_meter=0x7f0906eb;
+        public static final int putao_distance_remind_tips_far=0x7f0906ef;
+        public static final int putao_distance_remind_tips_middle=0x7f0906ee;
+        public static final int putao_distance_remind_tips_near=0x7f0906ed;
         public static final int putao_do_refresh=0x7f090214;
-        public static final int putao_download_count_suffix=0x7f09058f;
+        public static final int putao_download_count_suffix=0x7f090590;
         /**  选择地点页面 
  司机接单页面 
          */
-        public static final int putao_driver_received_order=0x7f0906e7;
-        public static final int putao_edit_addr_tip=0x7f0906e1;
-        public static final int putao_empty=0x7f09029b;
-        public static final int putao_empty_view_delicacy_nodata=0x7f090353;
-        public static final int putao_empty_view_locate_failed=0x7f090352;
-        public static final int putao_empty_view_nodata=0x7f090350;
-        public static final int putao_empty_view_nonetwork=0x7f090351;
-        public static final int putao_end_place_title=0x7f0906e6;
-        public static final int putao_end_search_hint=0x7f0906cf;
-        public static final int putao_errcode_cancel=0x7f09035b;
-        public static final int putao_errcode_deny=0x7f09035c;
-        public static final int putao_errcode_success=0x7f09035a;
-        public static final int putao_errcode_unknown=0x7f09035d;
-        public static final int putao_error_can_not_get_drivers=0x7f0906e2;
+        public static final int putao_driver_received_order=0x7f0906e8;
+        public static final int putao_edit_addr_tip=0x7f0906e2;
+        public static final int putao_empty=0x7f09029c;
+        public static final int putao_empty_view_delicacy_nodata=0x7f090354;
+        public static final int putao_empty_view_locate_failed=0x7f090353;
+        public static final int putao_empty_view_nodata=0x7f090351;
+        public static final int putao_empty_view_nonetwork=0x7f090352;
+        public static final int putao_end_place_title=0x7f0906e7;
+        public static final int putao_end_search_hint=0x7f0906d0;
+        public static final int putao_errcode_cancel=0x7f09035c;
+        public static final int putao_errcode_deny=0x7f09035d;
+        public static final int putao_errcode_success=0x7f09035b;
+        public static final int putao_errcode_unknown=0x7f09035e;
+        public static final int putao_error_can_not_get_drivers=0x7f0906e3;
         public static final int putao_exit_application=0x7f090016;
         /**  我的账户 
          */
         public static final int putao_exit_clean_tip=0x7f090216;
-        public static final int putao_express=0x7f090297;
+        public static final int putao_express=0x7f090298;
         /**  快递字符 
  快递字符 
  <string name="putao_app_name">条码扫描器</string> 
          */
         public static final int putao_express_check_title=0x7f0900b4;
-        public static final int putao_express_contact=0x7f090299;
-        public static final int putao_express_delivery_com=0x7f0905e1;
-        public static final int putao_express_detail=0x7f09029a;
-        public static final int putao_express_display_all=0x7f09029d;
-        public static final int putao_express_display_simple=0x7f09029e;
-        public static final int putao_express_has_sign_in=0x7f090602;
+        public static final int putao_express_contact=0x7f09029a;
+        public static final int putao_express_delivery_com=0x7f0905e2;
+        public static final int putao_express_detail=0x7f09029b;
+        public static final int putao_express_display_all=0x7f09029e;
+        public static final int putao_express_display_simple=0x7f09029f;
+        public static final int putao_express_has_sign_in=0x7f090603;
         public static final int putao_express_history_delete=0x7f0900c1;
         public static final int putao_express_history_delete_confirm=0x7f0900cb;
         public static final int putao_express_history_delete_dialog_title=0x7f0900ca;
-        public static final int putao_express_history_item_info=0x7f090600;
+        public static final int putao_express_history_item_info=0x7f090601;
         public static final int putao_express_history_item_number=0x7f0900c8;
         public static final int putao_express_history_no_select_history=0x7f0900c9;
         public static final int putao_express_history_select_all=0x7f0900c2;
@@ -5164,17 +3897,17 @@ containing a value of this type.
         public static final int putao_express_home_unknown_nexpname=0x7f0900bb;
         public static final int putao_express_light=0x7f0900ce;
         public static final int putao_express_no_history=0x7f0900c7;
-        public static final int putao_express_num=0x7f0905fe;
+        public static final int putao_express_num=0x7f0905ff;
         public static final int putao_express_query_result_num=0x7f0900bf;
         public static final int putao_express_query_result_selectcompany=0x7f0900c0;
         public static final int putao_express_query_result_title=0x7f0900be;
-        public static final int putao_express_reslut_info_no_data=0x7f0905ff;
+        public static final int putao_express_reslut_info_no_data=0x7f090600;
         public static final int putao_express_reslut_info_no_data_desc=0x7f0900c6;
         public static final int putao_express_reslut_info_no_data_title=0x7f0900c5;
-        public static final int putao_express_result_status_complete=0x7f0905e3;
-        public static final int putao_express_result_status_in_transit=0x7f0905e4;
-        public static final int putao_express_result_status_unknow=0x7f0905e5;
-        public static final int putao_express_result_try_again=0x7f0905e2;
+        public static final int putao_express_result_status_complete=0x7f0905e4;
+        public static final int putao_express_result_status_in_transit=0x7f0905e5;
+        public static final int putao_express_result_status_unknow=0x7f0905e6;
+        public static final int putao_express_result_try_again=0x7f0905e3;
         public static final int putao_express_search=0x7f0900cd;
         public static final int putao_express_select=0x7f0900b6;
         public static final int putao_express_select_error_num=0x7f0900ba;
@@ -5183,141 +3916,141 @@ containing a value of this type.
         public static final int putao_express_select_history_title=0x7f0900b7;
         public static final int putao_express_send_express=0x7f0900b5;
         public static final int putao_express_setting_hint=0x7f0900cc;
-        public static final int putao_express_source_company_text=0x7f090601;
-        public static final int putao_express_status_singed=0x7f0902f5;
-        public static final int putao_express_tracking=0x7f090298;
-        public static final int putao_external_storage_unusable=0x7f0906a3;
-        public static final int putao_film_ticket=0x7f0904f9;
-        public static final int putao_film_time=0x7f0904fa;
-        public static final int putao_fine=0x7f090679;
-        public static final int putao_flight=0x7f090676;
-        public static final int putao_flight_chinese_city=0x7f09057f;
-        public static final int putao_flight_foreign_city=0x7f090580;
-        public static final int putao_flight_hangban=0x7f09057c;
-        public static final int putao_flight_jiage=0x7f09057a;
-        public static final int putao_flight_order=0x7f090572;
-        public static final int putao_flight_return=0x7f09057e;
-        public static final int putao_flight_start=0x7f09057d;
-        public static final int putao_flight_tejia=0x7f09057b;
-        public static final int putao_food_all_categories=0x7f090331;
-        public static final int putao_food_intelligent_sort=0x7f090330;
-        public static final int putao_food_map=0x7f09032f;
-        public static final int putao_footer_view_more=0x7f090582;
-        public static final int putao_force_account_logout_alert=0x7f09058a;
-        public static final int putao_game_account=0x7f0904b1;
-        public static final int putao_game_account_hint=0x7f0904b2;
-        public static final int putao_game_area=0x7f0904b0;
-        public static final int putao_game_charge=0x7f0904d5;
-        public static final int putao_game_charge_pending=0x7f0904b5;
-        public static final int putao_game_charge_status_fail=0x7f0904d7;
-        public static final int putao_game_charge_status_success=0x7f0904d6;
-        public static final int putao_game_charge_status_untreated=0x7f0904d9;
-        public static final int putao_game_charge_status_wait=0x7f0904d8;
-        public static final int putao_game_charge_success=0x7f0904b4;
-        public static final int putao_game_hand=0x7f0904b7;
-        public static final int putao_game_net=0x7f0904b6;
-        public static final int putao_game_not_surpport_tips=0x7f0904bb;
-        public static final int putao_game_pay_price=0x7f0904c1;
-        public static final int putao_game_pervalue_tips=0x7f0904ba;
-        public static final int putao_game_question_a1=0x7f0904cf;
-        public static final int putao_game_question_a2=0x7f0904d1;
-        public static final int putao_game_question_a3=0x7f0904d3;
-        public static final int putao_game_question_q1=0x7f0904ce;
-        public static final int putao_game_question_q2=0x7f0904d0;
-        public static final int putao_game_question_q3=0x7f0904d2;
-        public static final int putao_game_question_tips_provider=0x7f0904d4;
-        public static final int putao_game_question_title=0x7f0904cd;
-        public static final int putao_game_recharge_account=0x7f0904ca;
-        public static final int putao_game_recharge_charge_price=0x7f0904c6;
-        public static final int putao_game_recharge_create_time=0x7f0904c8;
-        public static final int putao_game_recharge_gselect_hotgame=0x7f0904bf;
-        public static final int putao_game_recharge_gselect_search_hint=0x7f0904be;
-        public static final int putao_game_recharge_gselect_title=0x7f0904bd;
-        public static final int putao_game_recharge_orderno=0x7f0904c7;
-        public static final int putao_game_recharge_pervalue=0x7f0904b3;
-        public static final int putao_game_recharge_product_type=0x7f0904c9;
-        public static final int putao_game_recharge_qbi_title=0x7f0904c2;
-        public static final int putao_game_recharge_service_name=0x7f0904cb;
-        public static final int putao_game_recharge_service_phone=0x7f0904cc;
-        public static final int putao_game_recharge_shouyou_title=0x7f0904c3;
-        public static final int putao_game_recharge_status=0x7f0904c5;
+        public static final int putao_express_source_company_text=0x7f090602;
+        public static final int putao_express_status_singed=0x7f0902f6;
+        public static final int putao_express_tracking=0x7f090299;
+        public static final int putao_external_storage_unusable=0x7f0906a4;
+        public static final int putao_film_ticket=0x7f0904fa;
+        public static final int putao_film_time=0x7f0904fb;
+        public static final int putao_fine=0x7f09067a;
+        public static final int putao_flight=0x7f090677;
+        public static final int putao_flight_chinese_city=0x7f090580;
+        public static final int putao_flight_foreign_city=0x7f090581;
+        public static final int putao_flight_hangban=0x7f09057d;
+        public static final int putao_flight_jiage=0x7f09057b;
+        public static final int putao_flight_order=0x7f090573;
+        public static final int putao_flight_return=0x7f09057f;
+        public static final int putao_flight_start=0x7f09057e;
+        public static final int putao_flight_tejia=0x7f09057c;
+        public static final int putao_food_all_categories=0x7f090332;
+        public static final int putao_food_intelligent_sort=0x7f090331;
+        public static final int putao_food_map=0x7f090330;
+        public static final int putao_footer_view_more=0x7f090583;
+        public static final int putao_force_account_logout_alert=0x7f09058b;
+        public static final int putao_game_account=0x7f0904b2;
+        public static final int putao_game_account_hint=0x7f0904b3;
+        public static final int putao_game_area=0x7f0904b1;
+        public static final int putao_game_charge=0x7f0904d6;
+        public static final int putao_game_charge_pending=0x7f0904b6;
+        public static final int putao_game_charge_status_fail=0x7f0904d8;
+        public static final int putao_game_charge_status_success=0x7f0904d7;
+        public static final int putao_game_charge_status_untreated=0x7f0904da;
+        public static final int putao_game_charge_status_wait=0x7f0904d9;
+        public static final int putao_game_charge_success=0x7f0904b5;
+        public static final int putao_game_hand=0x7f0904b8;
+        public static final int putao_game_net=0x7f0904b7;
+        public static final int putao_game_not_surpport_tips=0x7f0904bc;
+        public static final int putao_game_pay_price=0x7f0904c2;
+        public static final int putao_game_pervalue_tips=0x7f0904bb;
+        public static final int putao_game_question_a1=0x7f0904d0;
+        public static final int putao_game_question_a2=0x7f0904d2;
+        public static final int putao_game_question_a3=0x7f0904d4;
+        public static final int putao_game_question_q1=0x7f0904cf;
+        public static final int putao_game_question_q2=0x7f0904d1;
+        public static final int putao_game_question_q3=0x7f0904d3;
+        public static final int putao_game_question_tips_provider=0x7f0904d5;
+        public static final int putao_game_question_title=0x7f0904ce;
+        public static final int putao_game_recharge_account=0x7f0904cb;
+        public static final int putao_game_recharge_charge_price=0x7f0904c7;
+        public static final int putao_game_recharge_create_time=0x7f0904c9;
+        public static final int putao_game_recharge_gselect_hotgame=0x7f0904c0;
+        public static final int putao_game_recharge_gselect_search_hint=0x7f0904bf;
+        public static final int putao_game_recharge_gselect_title=0x7f0904be;
+        public static final int putao_game_recharge_orderno=0x7f0904c8;
+        public static final int putao_game_recharge_pervalue=0x7f0904b4;
+        public static final int putao_game_recharge_product_type=0x7f0904ca;
+        public static final int putao_game_recharge_qbi_title=0x7f0904c3;
+        public static final int putao_game_recharge_service_name=0x7f0904cc;
+        public static final int putao_game_recharge_service_phone=0x7f0904cd;
+        public static final int putao_game_recharge_shouyou_title=0x7f0904c4;
+        public static final int putao_game_recharge_status=0x7f0904c6;
         /**  title 
          */
-        public static final int putao_game_recharge_title=0x7f0904a2;
-        public static final int putao_game_recharge_wangyou_title=0x7f0904c4;
-        public static final int putao_game_select=0x7f0904af;
-        public static final int putao_game_select_tips=0x7f0904b9;
-        public static final int putao_game_title=0x7f0904c0;
+        public static final int putao_game_recharge_title=0x7f0904a3;
+        public static final int putao_game_recharge_wangyou_title=0x7f0904c5;
+        public static final int putao_game_select=0x7f0904b0;
+        public static final int putao_game_select_tips=0x7f0904ba;
+        public static final int putao_game_title=0x7f0904c1;
         /**  游戏充值 
          */
-        public static final int putao_game_type=0x7f0904ae;
-        public static final int putao_game_type_tips=0x7f0904b8;
-        public static final int putao_generate_orders=0x7f09067e;
-        public static final int putao_get_captcha_fail=0x7f0906d7;
+        public static final int putao_game_type=0x7f0904af;
+        public static final int putao_game_type_tips=0x7f0904b9;
+        public static final int putao_generate_orders=0x7f09067f;
+        public static final int putao_get_captcha_fail=0x7f0906d8;
         public static final int putao_get_check_code=0x7f090218;
-        public static final int putao_get_city_list_failed=0x7f090595;
-        public static final int putao_get_on_taxi=0x7f0906e9;
-        public static final int putao_get_on_taxi_message=0x7f0906f3;
-        public static final int putao_get_verification_code=0x7f0906de;
-        public static final int putao_group_buy_all=0x7f090369;
+        public static final int putao_get_city_list_failed=0x7f090596;
+        public static final int putao_get_on_taxi=0x7f0906ea;
+        public static final int putao_get_on_taxi_message=0x7f0906f4;
+        public static final int putao_get_verification_code=0x7f0906df;
+        public static final int putao_group_buy_all=0x7f09036a;
         /**  团购 
  团购 
          */
-        public static final int putao_group_buy_all_categories=0x7f09035f;
-        public static final int putao_group_buy_all_region=0x7f090360;
-        public static final int putao_group_buy_apply_refund=0x7f090374;
-        public static final int putao_group_buy_buy=0x7f090372;
-        public static final int putao_group_buy_code=0x7f090373;
-        public static final int putao_group_buy_codes=0x7f0906ad;
-        public static final int putao_group_buy_constant_cinema=0x7f09036e;
-        public static final int putao_group_buy_constant_trip=0x7f09036d;
-        public static final int putao_group_buy_country=0x7f090370;
-        public static final int putao_group_buy_distance_unit=0x7f0906af;
-        public static final int putao_group_buy_food=0x7f090375;
-        public static final int putao_group_buy_from_dianping=0x7f0906ae;
-        public static final int putao_group_buy_huoguo=0x7f090379;
-        public static final int putao_group_buy_money_unit=0x7f090371;
-        public static final int putao_group_buy_near=0x7f09036f;
-        public static final int putao_group_buy_not_reservation=0x7f09036a;
-        public static final int putao_group_buy_num=0x7f0906b1;
-        public static final int putao_group_buy_order_detail_title=0x7f09037f;
-        public static final int putao_group_buy_order_title=0x7f09037e;
-        public static final int putao_group_buy_refund=0x7f09037d;
-        public static final int putao_group_buy_search_none=0x7f09036c;
-        public static final int putao_group_buy_select=0x7f0906ab;
-        public static final int putao_group_buy_smart_sort=0x7f090361;
-        public static final int putao_group_buy_sold=0x7f09036b;
-        public static final int putao_group_buy_sort_best=0x7f090365;
-        public static final int putao_group_buy_sort_default=0x7f090362;
-        public static final int putao_group_buy_sort_expansive=0x7f090368;
-        public static final int putao_group_buy_sort_most=0x7f090364;
-        public static final int putao_group_buy_sort_near=0x7f090363;
-        public static final int putao_group_buy_sort_newest=0x7f090366;
-        public static final int putao_group_buy_sort_sheapest=0x7f090367;
-        public static final int putao_group_buy_sum=0x7f0906b0;
-        public static final int putao_group_buy_trip=0x7f0906ac;
-        public static final int putao_group_buy_unuse=0x7f09037b;
-        public static final int putao_group_buy_used=0x7f09037c;
-        public static final int putao_group_buy_wait_pay=0x7f09037a;
-        public static final int putao_group_buy_xiaochi=0x7f090376;
-        public static final int putao_group_buy_xican=0x7f090378;
-        public static final int putao_group_buy_zizhu=0x7f090377;
-        public static final int putao_group_buying=0x7f090295;
-        public static final int putao_h5_next_btn=0x7f0903cd;
-        public static final int putao_happy_birthday=0x7f0902ba;
-        public static final int putao_head_cinema=0x7f09027e;
-        public static final int putao_head_city58=0x7f090280;
-        public static final int putao_head_goods=0x7f090282;
+        public static final int putao_group_buy_all_categories=0x7f090360;
+        public static final int putao_group_buy_all_region=0x7f090361;
+        public static final int putao_group_buy_apply_refund=0x7f090375;
+        public static final int putao_group_buy_buy=0x7f090373;
+        public static final int putao_group_buy_code=0x7f090374;
+        public static final int putao_group_buy_codes=0x7f0906ae;
+        public static final int putao_group_buy_constant_cinema=0x7f09036f;
+        public static final int putao_group_buy_constant_trip=0x7f09036e;
+        public static final int putao_group_buy_country=0x7f090371;
+        public static final int putao_group_buy_distance_unit=0x7f0906b0;
+        public static final int putao_group_buy_food=0x7f090376;
+        public static final int putao_group_buy_from_dianping=0x7f0906af;
+        public static final int putao_group_buy_huoguo=0x7f09037a;
+        public static final int putao_group_buy_money_unit=0x7f090372;
+        public static final int putao_group_buy_near=0x7f090370;
+        public static final int putao_group_buy_not_reservation=0x7f09036b;
+        public static final int putao_group_buy_num=0x7f0906b2;
+        public static final int putao_group_buy_order_detail_title=0x7f090380;
+        public static final int putao_group_buy_order_title=0x7f09037f;
+        public static final int putao_group_buy_refund=0x7f09037e;
+        public static final int putao_group_buy_search_none=0x7f09036d;
+        public static final int putao_group_buy_select=0x7f0906ac;
+        public static final int putao_group_buy_smart_sort=0x7f090362;
+        public static final int putao_group_buy_sold=0x7f09036c;
+        public static final int putao_group_buy_sort_best=0x7f090366;
+        public static final int putao_group_buy_sort_default=0x7f090363;
+        public static final int putao_group_buy_sort_expansive=0x7f090369;
+        public static final int putao_group_buy_sort_most=0x7f090365;
+        public static final int putao_group_buy_sort_near=0x7f090364;
+        public static final int putao_group_buy_sort_newest=0x7f090367;
+        public static final int putao_group_buy_sort_sheapest=0x7f090368;
+        public static final int putao_group_buy_sum=0x7f0906b1;
+        public static final int putao_group_buy_trip=0x7f0906ad;
+        public static final int putao_group_buy_unuse=0x7f09037c;
+        public static final int putao_group_buy_used=0x7f09037d;
+        public static final int putao_group_buy_wait_pay=0x7f09037b;
+        public static final int putao_group_buy_xiaochi=0x7f090377;
+        public static final int putao_group_buy_xican=0x7f090379;
+        public static final int putao_group_buy_zizhu=0x7f090378;
+        public static final int putao_group_buying=0x7f090296;
+        public static final int putao_h5_next_btn=0x7f0903ce;
+        public static final int putao_happy_birthday=0x7f0902bb;
+        public static final int putao_head_cinema=0x7f09027f;
+        public static final int putao_head_city58=0x7f090281;
+        public static final int putao_head_goods=0x7f090283;
         /**  搜索head配置 
  搜索head配置 
          */
-        public static final int putao_head_groupby=0x7f09027a;
-        public static final int putao_head_hotel=0x7f09027f;
-        public static final int putao_head_local_data=0x7f09027c;
-        public static final int putao_head_movie=0x7f09027d;
-        public static final int putao_head_server=0x7f09027b;
-        public static final int putao_head_sp=0x7f090281;
-        public static final int putao_home_hot_service=0x7f09069c;
+        public static final int putao_head_groupby=0x7f09027b;
+        public static final int putao_head_hotel=0x7f090280;
+        public static final int putao_head_local_data=0x7f09027d;
+        public static final int putao_head_movie=0x7f09027e;
+        public static final int putao_head_server=0x7f09027c;
+        public static final int putao_head_sp=0x7f090282;
+        public static final int putao_home_hot_service=0x7f09069d;
         public static final int putao_home_integral_shop_title=0x7f090048;
         /**  统计 
          */
@@ -5325,7 +4058,7 @@ containing a value of this type.
         public static final int putao_home_signin=0x7f090047;
         public static final int putao_homepage_search_contact_hint=0x7f09004d;
         public static final int putao_homepage_search_hint=0x7f09004e;
-        public static final int putao_hotel=0x7f090293;
+        public static final int putao_hotel=0x7f090294;
         public static final int putao_hotel_configview_hint=0x7f0901d2;
         public static final int putao_hotel_hotel_in=0x7f09014e;
         public static final int putao_hotel_hotel_out=0x7f09014f;
@@ -5333,18 +4066,18 @@ containing a value of this type.
         public static final int putao_hotel_in_date=0x7f09016d;
         public static final int putao_hotel_item_distance=0x7f090157;
         public static final int putao_hotel_item_marknum=0x7f090156;
-        public static final int putao_hotel_item_showmoney=0x7f09062c;
+        public static final int putao_hotel_item_showmoney=0x7f09062d;
         public static final int putao_hotel_locating_tip=0x7f090153;
         public static final int putao_hotel_location=0x7f09014d;
-        public static final int putao_hotel_near_search_title=0x7f09062a;
+        public static final int putao_hotel_near_search_title=0x7f09062b;
         public static final int putao_hotel_no_morearea=0x7f090159;
         public static final int putao_hotel_nomoredata=0x7f090158;
         public static final int putao_hotel_orderdetail_failed_hint=0x7f0901d4;
         public static final int putao_hotel_orderlist_location_failed_search_hint=0x7f090155;
         public static final int putao_hotel_out_date=0x7f09016e;
         public static final int putao_hotel_price_start=0x7f0901f7;
-        public static final int putao_hotel_search_list_title=0x7f09062b;
-        public static final int putao_hotel_search_title=0x7f090629;
+        public static final int putao_hotel_search_list_title=0x7f09062c;
+        public static final int putao_hotel_search_title=0x7f09062a;
         public static final int putao_hotel_select_error_hint=0x7f090148;
         public static final int putao_hotel_state_manfang=0x7f09016b;
         public static final int putao_hotel_state_yuding=0x7f09016a;
@@ -5356,7 +4089,7 @@ containing a value of this type.
         public static final int putao_hotel_unlimited_price=0x7f090152;
         public static final int putao_hotel_unlimited_star=0x7f090151;
         public static final int putao_hotelbook_area=0x7f090143;
-        public static final int putao_hotelbook_near=0x7f090681;
+        public static final int putao_hotelbook_near=0x7f090682;
         public static final int putao_hotelbook_price=0x7f090145;
         public static final int putao_hotelbook_search=0x7f090147;
         public static final int putao_hotelbook_sort=0x7f090144;
@@ -5365,18 +4098,18 @@ containing a value of this type.
         public static final int putao_hoteldetail_breakfast=0x7f090166;
         public static final int putao_hoteldetail_cannot_book=0x7f090167;
         public static final int putao_hoteldetail_facility=0x7f09015e;
-        public static final int putao_hoteldetail_fanxian_info=0x7f09062f;
+        public static final int putao_hoteldetail_fanxian_info=0x7f090630;
         public static final int putao_hoteldetail_gethotelpolicy_hint=0x7f0901d3;
         public static final int putao_hoteldetail_img_number=0x7f09015f;
         public static final int putao_hoteldetail_intro=0x7f09015d;
         public static final int putao_hoteldetail_intro_nodata=0x7f090160;
         public static final int putao_hoteldetail_marknum=0x7f090164;
         public static final int putao_hoteldetail_money=0x7f090165;
-        public static final int putao_hoteldetail_money_kefan=0x7f09062e;
+        public static final int putao_hoteldetail_money_kefan=0x7f09062f;
         public static final int putao_hoteldetail_no_data_hint=0x7f090168;
         public static final int putao_hoteldetail_no_roomlist_hint=0x7f090169;
         public static final int putao_hoteldetail_present=0x7f09015c;
-        public static final int putao_hoteldetail_starratedname=0x7f09062d;
+        public static final int putao_hoteldetail_starratedname=0x7f09062e;
         public static final int putao_hoteldetail_traffic=0x7f090163;
         public static final int putao_hoteldetail_traffic_item=0x7f090162;
         public static final int putao_hoteldetail_traffic_item_with_arrival_way=0x7f090161;
@@ -5413,7 +4146,7 @@ containing a value of this type.
         public static final int putao_hotelorder_submit_no_mobile_hint=0x7f090180;
         public static final int putao_hotelorder_submit_no_validmobile_hint=0x7f090181;
         public static final int putao_hotelorder_write=0x7f09016c;
-        public static final int putao_hotelorderdetail_cancelorder=0x7f090630;
+        public static final int putao_hotelorderdetail_cancelorder=0x7f090631;
         public static final int putao_hotelorderdetail_cancelorder_hint=0x7f0901cf;
         public static final int putao_hotelorderdetail_cancelorder_result_failed=0x7f0901d1;
         public static final int putao_hotelorderdetail_cancelorder_result_success=0x7f0901d0;
@@ -5435,7 +4168,7 @@ containing a value of this type.
         public static final int putao_hotelorderdetail_kefu_telnumber=0x7f0901cc;
         public static final int putao_hotelorderdetail_kefudianhua=0x7f0901cb;
         public static final int putao_hotelorderdetail_kefudianhua_hint=0x7f0901ca;
-        public static final int putao_hotelorderdetail_modify_order=0x7f090631;
+        public static final int putao_hotelorderdetail_modify_order=0x7f090632;
         public static final int putao_hotelorderdetail_name_pfrfix=0x7f0901d5;
         public static final int putao_hotelorderdetail_order_type=0x7f090173;
         public static final int putao_hotelorderdetail_orderid=0x7f0901be;
@@ -5502,17 +4235,17 @@ containing a value of this type.
         public static final int putao_hotelpay_title_2=0x7f090193;
         public static final int putao_hotelpay_validity=0x7f09019b;
         public static final int putao_hotelpay_validity_hint=0x7f09019c;
-        public static final int putao_hour=0x7f0902be;
-        public static final int putao_illegal=0x7f09029f;
+        public static final int putao_hour=0x7f0902bf;
+        public static final int putao_illegal=0x7f0902a0;
         public static final int putao_input_charge_no=0x7f0900db;
-        public static final int putao_input_check_code=0x7f090650;
+        public static final int putao_input_check_code=0x7f090651;
         public static final int putao_input_new_password=0x7f09003d;
         public static final int putao_input_not_equal=0x7f090042;
         public static final int putao_input_password_tip=0x7f090041;
-        public static final int putao_input_phone_number=0x7f09064c;
-        public static final int putao_input_phone_number_error=0x7f09064a;
-        public static final int putao_input_right_phone_number=0x7f09064d;
-        public static final int putao_invalid_code=0x7f0906da;
+        public static final int putao_input_phone_number=0x7f09064d;
+        public static final int putao_input_phone_number_error=0x7f09064b;
+        public static final int putao_input_right_phone_number=0x7f09064e;
+        public static final int putao_invalid_code=0x7f0906db;
         /**  定义自助验证码短信尾巴 
  联系人列表 
  定义自助验证码短信尾巴 
@@ -5522,11 +4255,11 @@ containing a value of this type.
         /**  KFC优惠券 
  KFC优惠券 
          */
-        public static final int putao_kfcdiscount_title=0x7f0903ab;
-        public static final int putao_kuaidi_name=0x7f0906d3;
-        public static final int putao_last_contact=0x7f090686;
-        public static final int putao_lastest_process=0x7f09029c;
-        public static final int putao_local_phone_num=0x7f090436;
+        public static final int putao_kfcdiscount_title=0x7f0903ac;
+        public static final int putao_kuaidi_name=0x7f0906d4;
+        public static final int putao_last_contact=0x7f090687;
+        public static final int putao_lastest_process=0x7f09029d;
+        public static final int putao_local_phone_num=0x7f090437;
         public static final int putao_location_text=0x7f090065;
         public static final int putao_login=0x7f09001e;
         public static final int putao_login_by_captchar=0x7f090035;
@@ -5559,23 +4292,23 @@ containing a value of this type.
  授权 
          */
         public static final int putao_logout=0x7f090019;
-        public static final int putao_lottery=0x7f090296;
-        public static final int putao_lottery_card_lottery_jiangyukaijiang=0x7f09068d;
-        public static final int putao_lottery_card_lottery_not_win_hint=0x7f09068f;
-        public static final int putao_lottery_card_lottery_result=0x7f09068a;
-        public static final int putao_lottery_card_lottery_ticket_hint=0x7f09068e;
-        public static final int putao_lottery_card_lottery_time=0x7f09068b;
-        public static final int putao_lottery_card_lottery_title_index_sign=0x7f09068c;
-        public static final int putao_lottery_card_lottery_win_hint=0x7f090690;
-        public static final int putao_lottery_setting=0x7f090692;
-        public static final int putao_lottery_title_hint=0x7f090689;
+        public static final int putao_lottery=0x7f090297;
+        public static final int putao_lottery_card_lottery_jiangyukaijiang=0x7f09068e;
+        public static final int putao_lottery_card_lottery_not_win_hint=0x7f090690;
+        public static final int putao_lottery_card_lottery_result=0x7f09068b;
+        public static final int putao_lottery_card_lottery_ticket_hint=0x7f09068f;
+        public static final int putao_lottery_card_lottery_time=0x7f09068c;
+        public static final int putao_lottery_card_lottery_title_index_sign=0x7f09068d;
+        public static final int putao_lottery_card_lottery_win_hint=0x7f090691;
+        public static final int putao_lottery_setting=0x7f090693;
+        public static final int putao_lottery_title_hint=0x7f09068a;
         public static final int putao_main_find_title=0x7f090014;
         public static final int putao_main_location_failed_msg=0x7f090017;
         public static final int putao_main_location_failed_select_city=0x7f090018;
         public static final int putao_main_navi_add=0x7f090010;
         public static final int putao_main_navi_coupon=0x7f090011;
-        public static final int putao_main_navi_foot=0x7f090583;
-        public static final int putao_main_navi_operate=0x7f090584;
+        public static final int putao_main_navi_foot=0x7f090584;
+        public static final int putao_main_navi_operate=0x7f090585;
         public static final int putao_main_navi_recommend_subject=0x7f090012;
         public static final int putao_main_navi_recommend_subject_no_data=0x7f090013;
         public static final int putao_main_no_more_to_find=0x7f090015;
@@ -5587,46 +4320,46 @@ containing a value of this type.
         public static final int putao_main_tab_life=0x7f09000b;
         public static final int putao_main_tab_my=0x7f09000e;
         public static final int putao_main_tab_navigation=0x7f09000d;
-        public static final int putao_map_company=0x7f0906d1;
-        public static final int putao_map_end_tip=0x7f0906c9;
-        public static final int putao_map_end_tip_replace=0x7f0906ca;
-        public static final int putao_map_gaode_error_key=0x7f0904db;
-        public static final int putao_map_gaode_error_network=0x7f0904da;
-        public static final int putao_map_gaode_error_other=0x7f0904dc;
-        public static final int putao_map_gaode_no_result=0x7f0904dd;
-        public static final int putao_map_home=0x7f0906d0;
+        public static final int putao_map_company=0x7f0906d2;
+        public static final int putao_map_end_tip=0x7f0906ca;
+        public static final int putao_map_end_tip_replace=0x7f0906cb;
+        public static final int putao_map_gaode_error_key=0x7f0904dc;
+        public static final int putao_map_gaode_error_network=0x7f0904db;
+        public static final int putao_map_gaode_error_other=0x7f0904dd;
+        public static final int putao_map_gaode_no_result=0x7f0904de;
+        public static final int putao_map_home=0x7f0906d1;
         public static final int putao_map_item_detail=0x7f090128;
         public static final int putao_map_item_home_page=0x7f090129;
         public static final int putao_map_item_route=0x7f09012a;
-        public static final int putao_map_no_info=0x7f0906e3;
-        public static final int putao_map_search=0x7f0906cd;
-        public static final int putao_map_start_tip=0x7f0906c7;
-        public static final int putao_map_start_tip_2=0x7f0906c8;
-        public static final int putao_map_verification_code=0x7f0906df;
-        public static final int putao_menu_acc_logintip1=0x7f090696;
-        public static final int putao_menu_acc_logintip2=0x7f090305;
-        public static final int putao_menu_call_settings_dialpad=0x7f09058b;
-        public static final int putao_menu_item_txt_aboutus=0x7f09030a;
-        public static final int putao_menu_item_txt_myactivity=0x7f090697;
-        public static final int putao_menu_item_txt_mygroupon=0x7f090308;
-        public static final int putao_menu_item_txt_myorder=0x7f090306;
-        public static final int putao_menu_item_txt_myvoucher=0x7f090307;
-        public static final int putao_menu_item_txt_remindset=0x7f090309;
-        public static final int putao_menu_login=0x7f090304;
+        public static final int putao_map_no_info=0x7f0906e4;
+        public static final int putao_map_search=0x7f0906ce;
+        public static final int putao_map_start_tip=0x7f0906c8;
+        public static final int putao_map_start_tip_2=0x7f0906c9;
+        public static final int putao_map_verification_code=0x7f0906e0;
+        public static final int putao_menu_acc_logintip1=0x7f090697;
+        public static final int putao_menu_acc_logintip2=0x7f090306;
+        public static final int putao_menu_call_settings_dialpad=0x7f09058c;
+        public static final int putao_menu_item_txt_aboutus=0x7f09030b;
+        public static final int putao_menu_item_txt_myactivity=0x7f090698;
+        public static final int putao_menu_item_txt_mygroupon=0x7f090309;
+        public static final int putao_menu_item_txt_myorder=0x7f090307;
+        public static final int putao_menu_item_txt_myvoucher=0x7f090308;
+        public static final int putao_menu_item_txt_remindset=0x7f09030a;
+        public static final int putao_menu_login=0x7f090305;
         /**  个人中心Menu 
  个人中心Menu 
          */
-        public static final int putao_menu_title=0x7f090303;
+        public static final int putao_menu_title=0x7f090304;
         /**  提醒中心 
  提醒中心 
          */
-        public static final int putao_message_center=0x7f090285;
-        public static final int putao_message_center_no=0x7f090673;
-        public static final int putao_message_close=0x7f090287;
-        public static final int putao_message_order=0x7f0902ad;
-        public static final int putao_message_remind=0x7f0902ae;
-        public static final int putao_middle_date=0x7f09028b;
-        public static final int putao_minutes=0x7f0902bd;
+        public static final int putao_message_center=0x7f090286;
+        public static final int putao_message_center_no=0x7f090674;
+        public static final int putao_message_close=0x7f090288;
+        public static final int putao_message_order=0x7f0902ae;
+        public static final int putao_message_remind=0x7f0902af;
+        public static final int putao_middle_date=0x7f09028c;
+        public static final int putao_minutes=0x7f0902be;
         public static final int putao_mobile_service=0x7f09005d;
         public static final int putao_modify_mobile_hint=0x7f090029;
         public static final int putao_modify_mobile_text=0x7f090028;
@@ -5634,300 +4367,300 @@ containing a value of this type.
         public static final int putao_modify_phone_title=0x7f090025;
         public static final int putao_modify_verify_code_hint=0x7f09002a;
         public static final int putao_modify_verify_old_mobile=0x7f090026;
-        public static final int putao_moive_list_nodata=0x7f09050e;
-        public static final int putao_moive_order_filmticket_count_tip=0x7f09050f;
-        public static final int putao_moive_order_filmticket_order_expired=0x7f090510;
-        public static final int putao_money_less=0x7f090386;
-        public static final int putao_money_mark=0x7f090385;
-        public static final int putao_morning=0x7f090674;
-        public static final int putao_morning_date=0x7f090289;
+        public static final int putao_moive_list_nodata=0x7f09050f;
+        public static final int putao_moive_order_filmticket_count_tip=0x7f090510;
+        public static final int putao_moive_order_filmticket_order_expired=0x7f090511;
+        public static final int putao_money_less=0x7f090387;
+        public static final int putao_money_mark=0x7f090386;
+        public static final int putao_morning=0x7f090675;
+        public static final int putao_morning_date=0x7f09028a;
         /**  TelAreaUtil 
  TelAreaUtil 
          */
         public static final int putao_move=0x7f09005a;
-        public static final int putao_movie_actor=0x7f0904e2;
-        public static final int putao_movie_bottom_tip=0x7f0904de;
-        public static final int putao_movie_cinema_list=0x7f090300;
+        public static final int putao_movie_actor=0x7f0904e3;
+        public static final int putao_movie_bottom_tip=0x7f0904df;
+        public static final int putao_movie_cinema_list=0x7f090301;
         /**  取票码 
          */
-        public static final int putao_movie_code=0x7f090469;
-        public static final int putao_movie_commticket_title=0x7f090554;
+        public static final int putao_movie_code=0x7f09046a;
+        public static final int putao_movie_commticket_title=0x7f090555;
         /**  通兑券订单详情 
          */
-        public static final int putao_movie_ctorderdtl_cinemaname=0x7f090550;
-        public static final int putao_movie_ctorderdtl_expiretip=0x7f090551;
-        public static final int putao_movie_ctorderdtl_pay_timeout=0x7f090552;
-        public static final int putao_movie_ctorderlist_ticketname=0x7f090553;
-        public static final int putao_movie_deal_ask_for_refund=0x7f09053a;
-        public static final int putao_movie_deal_failed=0x7f090535;
-        public static final int putao_movie_deal_failed_cancel=0x7f090539;
-        public static final int putao_movie_deal_failed_hint=0x7f090537;
-        public static final int putao_movie_deal_failed_hint_weixin=0x7f090538;
-        public static final int putao_movie_deal_failed_tips_for_pending=0x7f09053d;
-        public static final int putao_movie_deal_out_of_date=0x7f09053c;
-        public static final int putao_movie_deal_refunded=0x7f09053b;
-        public static final int putao_movie_deal_success=0x7f090534;
-        public static final int putao_movie_deal_success_hint=0x7f090536;
-        public static final int putao_movie_director=0x7f0904e1;
-        public static final int putao_movie_dtl_actors=0x7f0904eb;
-        public static final int putao_movie_dtl_content=0x7f0904ed;
-        public static final int putao_movie_dtl_director=0x7f0904ea;
+        public static final int putao_movie_ctorderdtl_cinemaname=0x7f090551;
+        public static final int putao_movie_ctorderdtl_expiretip=0x7f090552;
+        public static final int putao_movie_ctorderdtl_pay_timeout=0x7f090553;
+        public static final int putao_movie_ctorderlist_ticketname=0x7f090554;
+        public static final int putao_movie_deal_ask_for_refund=0x7f09053b;
+        public static final int putao_movie_deal_failed=0x7f090536;
+        public static final int putao_movie_deal_failed_cancel=0x7f09053a;
+        public static final int putao_movie_deal_failed_hint=0x7f090538;
+        public static final int putao_movie_deal_failed_hint_weixin=0x7f090539;
+        public static final int putao_movie_deal_failed_tips_for_pending=0x7f09053e;
+        public static final int putao_movie_deal_out_of_date=0x7f09053d;
+        public static final int putao_movie_deal_refunded=0x7f09053c;
+        public static final int putao_movie_deal_success=0x7f090535;
+        public static final int putao_movie_deal_success_hint=0x7f090537;
+        public static final int putao_movie_director=0x7f0904e2;
+        public static final int putao_movie_dtl_actors=0x7f0904ec;
+        public static final int putao_movie_dtl_content=0x7f0904ee;
+        public static final int putao_movie_dtl_director=0x7f0904eb;
         /**  电影详情页 
          */
-        public static final int putao_movie_dtl_rating=0x7f0904e3;
-        public static final int putao_movie_dtl_release=0x7f0904e4;
-        public static final int putao_movie_dtl_selectseat=0x7f0904e8;
-        public static final int putao_movie_dtl_still=0x7f0904ec;
-        public static final int putao_movie_dtl_tip=0x7f0904e9;
-        public static final int putao_movie_error_tips=0x7f09052b;
-        public static final int putao_movie_movie_length=0x7f0904e5;
-        public static final int putao_movie_movie_location=0x7f0904e7;
-        public static final int putao_movie_movie_type=0x7f0904e6;
-        public static final int putao_movie_orddtl_cancelorder_failed=0x7f090527;
-        public static final int putao_movie_orddtl_cancelorder_success=0x7f090526;
-        public static final int putao_movie_order_code=0x7f09046b;
-        public static final int putao_movie_order_coupon=0x7f090520;
-        public static final int putao_movie_order_coupon_hint=0x7f09051f;
-        public static final int putao_movie_order_createtime=0x7f090522;
+        public static final int putao_movie_dtl_rating=0x7f0904e4;
+        public static final int putao_movie_dtl_release=0x7f0904e5;
+        public static final int putao_movie_dtl_selectseat=0x7f0904e9;
+        public static final int putao_movie_dtl_still=0x7f0904ed;
+        public static final int putao_movie_dtl_tip=0x7f0904ea;
+        public static final int putao_movie_error_tips=0x7f09052c;
+        public static final int putao_movie_movie_length=0x7f0904e6;
+        public static final int putao_movie_movie_location=0x7f0904e8;
+        public static final int putao_movie_movie_type=0x7f0904e7;
+        public static final int putao_movie_orddtl_cancelorder_failed=0x7f090528;
+        public static final int putao_movie_orddtl_cancelorder_success=0x7f090527;
+        public static final int putao_movie_order_code=0x7f09046c;
+        public static final int putao_movie_order_coupon=0x7f090521;
+        public static final int putao_movie_order_coupon_hint=0x7f090520;
+        public static final int putao_movie_order_createtime=0x7f090523;
         /**  电影卡片详情 
  电影卡片详情 
          */
-        public static final int putao_movie_order_detail_provider=0x7f090335;
-        public static final int putao_movie_order_detail_service_num=0x7f090336;
-        public static final int putao_movie_order_detail_tips=0x7f090337;
-        public static final int putao_movie_order_failure=0x7f090523;
-        public static final int putao_movie_order_has_been_successful=0x7f090533;
-        public static final int putao_movie_order_id=0x7f09046a;
-        public static final int putao_movie_order_message=0x7f090525;
-        public static final int putao_movie_order_paystate=0x7f09051d;
-        public static final int putao_movie_order_price=0x7f09051e;
-        public static final int putao_movie_order_remind=0x7f090524;
-        public static final int putao_movie_order_serialnumber=0x7f090521;
-        public static final int putao_movie_order_ticket_info=0x7f090338;
+        public static final int putao_movie_order_detail_provider=0x7f090336;
+        public static final int putao_movie_order_detail_service_num=0x7f090337;
+        public static final int putao_movie_order_detail_tips=0x7f090338;
+        public static final int putao_movie_order_failure=0x7f090524;
+        public static final int putao_movie_order_has_been_successful=0x7f090534;
+        public static final int putao_movie_order_id=0x7f09046b;
+        public static final int putao_movie_order_message=0x7f090526;
+        public static final int putao_movie_order_paystate=0x7f09051e;
+        public static final int putao_movie_order_price=0x7f09051f;
+        public static final int putao_movie_order_remind=0x7f090525;
+        public static final int putao_movie_order_serialnumber=0x7f090522;
+        public static final int putao_movie_order_ticket_info=0x7f090339;
         /**  电影订单Head 
          */
-        public static final int putao_movie_orderhead_cinema=0x7f090541;
-        public static final int putao_movie_orderhead_info_hint=0x7f090547;
-        public static final int putao_movie_orderhead_mobile_hint=0x7f090545;
-        public static final int putao_movie_orderhead_mobile_write_hint=0x7f090546;
-        public static final int putao_movie_orderhead_money=0x7f090544;
-        public static final int putao_movie_orderhead_playtime=0x7f090542;
-        public static final int putao_movie_orderhead_seat=0x7f090543;
-        public static final int putao_movie_pay_info=0x7f090529;
-        public static final int putao_movie_pay_title=0x7f09052a;
-        public static final int putao_movie_playlist_cinema_noposition=0x7f0904f7;
-        public static final int putao_movie_playlist_commticket_grouptxt=0x7f0904f5;
-        public static final int putao_movie_playlist_commticket_item_tip=0x7f0904f6;
-        public static final int putao_movie_playlist_item_end=0x7f0904f0;
-        public static final int putao_movie_playlist_pd_atmr=0x7f0904f3;
-        public static final int putao_movie_playlist_pd_tmr=0x7f0904f2;
-        public static final int putao_movie_playlist_pd_today=0x7f0904f1;
-        public static final int putao_movie_playlist_tip=0x7f0904ef;
-        public static final int putao_movie_playlist_title=0x7f0904ee;
-        public static final int putao_movie_playlist_voucher_tip=0x7f0904f4;
-        public static final int putao_movie_released_list=0x7f0904e0;
-        public static final int putao_movie_select_seat_unknown_exception=0x7f0904fb;
-        public static final int putao_movie_sub_total=0x7f090339;
+        public static final int putao_movie_orderhead_cinema=0x7f090542;
+        public static final int putao_movie_orderhead_info_hint=0x7f090548;
+        public static final int putao_movie_orderhead_mobile_hint=0x7f090546;
+        public static final int putao_movie_orderhead_mobile_write_hint=0x7f090547;
+        public static final int putao_movie_orderhead_money=0x7f090545;
+        public static final int putao_movie_orderhead_playtime=0x7f090543;
+        public static final int putao_movie_orderhead_seat=0x7f090544;
+        public static final int putao_movie_pay_info=0x7f09052a;
+        public static final int putao_movie_pay_title=0x7f09052b;
+        public static final int putao_movie_playlist_cinema_noposition=0x7f0904f8;
+        public static final int putao_movie_playlist_commticket_grouptxt=0x7f0904f6;
+        public static final int putao_movie_playlist_commticket_item_tip=0x7f0904f7;
+        public static final int putao_movie_playlist_item_end=0x7f0904f1;
+        public static final int putao_movie_playlist_pd_atmr=0x7f0904f4;
+        public static final int putao_movie_playlist_pd_tmr=0x7f0904f3;
+        public static final int putao_movie_playlist_pd_today=0x7f0904f2;
+        public static final int putao_movie_playlist_tip=0x7f0904f0;
+        public static final int putao_movie_playlist_title=0x7f0904ef;
+        public static final int putao_movie_playlist_voucher_tip=0x7f0904f5;
+        public static final int putao_movie_released_list=0x7f0904e1;
+        public static final int putao_movie_select_seat_unknown_exception=0x7f0904fc;
+        public static final int putao_movie_sub_total=0x7f09033a;
         /**  通兑券创建订单 
          */
-        public static final int putao_movie_ticketorder_cinname=0x7f090548;
-        public static final int putao_movie_ticketorder_pay_title=0x7f09054e;
-        public static final int putao_movie_ticketorder_phone=0x7f09054b;
-        public static final int putao_movie_ticketorder_phone_hint=0x7f09054f;
-        public static final int putao_movie_ticketorder_quantity_invalid=0x7f09054d;
-        public static final int putao_movie_ticketorder_ticcount=0x7f09054a;
-        public static final int putao_movie_ticketorder_ticendtime=0x7f090549;
-        public static final int putao_movie_ticketorder_usetip=0x7f09054c;
-        public static final int putao_movie_ticketorder_validtime=0x7f090480;
-        public static final int putao_movie_tips_for_ask_for_refund=0x7f09053e;
-        public static final int putao_movie_tips_for_out_of_date=0x7f090540;
-        public static final int putao_movie_tips_for_refund=0x7f09053f;
-        public static final int putao_movie_title_name=0x7f0904df;
-        public static final int putao_msg_camera_framework_bug=0x7f090355;
-        public static final int putao_msg_default_status=0x7f0905e6;
+        public static final int putao_movie_ticketorder_cinname=0x7f090549;
+        public static final int putao_movie_ticketorder_pay_title=0x7f09054f;
+        public static final int putao_movie_ticketorder_phone=0x7f09054c;
+        public static final int putao_movie_ticketorder_phone_hint=0x7f090550;
+        public static final int putao_movie_ticketorder_quantity_invalid=0x7f09054e;
+        public static final int putao_movie_ticketorder_ticcount=0x7f09054b;
+        public static final int putao_movie_ticketorder_ticendtime=0x7f09054a;
+        public static final int putao_movie_ticketorder_usetip=0x7f09054d;
+        public static final int putao_movie_ticketorder_validtime=0x7f090481;
+        public static final int putao_movie_tips_for_ask_for_refund=0x7f09053f;
+        public static final int putao_movie_tips_for_out_of_date=0x7f090541;
+        public static final int putao_movie_tips_for_refund=0x7f090540;
+        public static final int putao_movie_title_name=0x7f0904e0;
+        public static final int putao_msg_camera_framework_bug=0x7f090356;
+        public static final int putao_msg_default_status=0x7f0905e7;
         public static final int putao_msg_logout_dialog=0x7f090224;
-        public static final int putao_msg_none=0x7f0902af;
-        public static final int putao_msg_show_login_kuyun_dialog=0x7f09065d;
+        public static final int putao_msg_none=0x7f0902b0;
+        public static final int putao_msg_show_login_kuyun_dialog=0x7f09065e;
         /**  我的订单 
  我的订单 
          */
         public static final int putao_my_orderlist_name=0x7f090210;
         public static final int putao_my_voucher=0x7f090238;
         public static final int putao_near_station_text=0x7f090134;
-        public static final int putao_nearby=0x7f090294;
+        public static final int putao_nearby=0x7f090295;
         /**  附近的 - 周边美食 
  附近的 - 周边美食 
          */
-        public static final int putao_nearby_category_food=0x7f090323;
-        public static final int putao_nearby_cinema_notify=0x7f09032a;
-        public static final int putao_nearby_hotel_notify=0x7f090329;
-        public static final int putao_nearby_restaurant_config_hint=0x7f09032d;
-        public static final int putao_nearby_restaurant_hint=0x7f090326;
-        public static final int putao_nearby_restaurant_hint_hotel=0x7f090327;
-        public static final int putao_nearby_restaurant_hint_movie=0x7f090328;
-        public static final int putao_nearby_restaurant_more_food_hint=0x7f09032e;
-        public static final int putao_nearby_restaurant_notify_content_hotel=0x7f09032b;
-        public static final int putao_nearby_restaurant_notify_content_movie=0x7f09032c;
-        public static final int putao_nearby_restaurant_title_hint=0x7f090325;
-        public static final int putao_nearby_title=0x7f090324;
-        public static final int putao_net_invalid=0x7f09050d;
+        public static final int putao_nearby_category_food=0x7f090324;
+        public static final int putao_nearby_cinema_notify=0x7f09032b;
+        public static final int putao_nearby_hotel_notify=0x7f09032a;
+        public static final int putao_nearby_restaurant_config_hint=0x7f09032e;
+        public static final int putao_nearby_restaurant_hint=0x7f090327;
+        public static final int putao_nearby_restaurant_hint_hotel=0x7f090328;
+        public static final int putao_nearby_restaurant_hint_movie=0x7f090329;
+        public static final int putao_nearby_restaurant_more_food_hint=0x7f09032f;
+        public static final int putao_nearby_restaurant_notify_content_hotel=0x7f09032c;
+        public static final int putao_nearby_restaurant_notify_content_movie=0x7f09032d;
+        public static final int putao_nearby_restaurant_title_hint=0x7f090326;
+        public static final int putao_nearby_title=0x7f090325;
+        public static final int putao_net_invalid=0x7f09050e;
         public static final int putao_net_slow=0x7f090009;
         public static final int putao_net_unuseable=0x7f090054;
         public static final int putao_netexception=0x7f090003;
         public static final int putao_netexception_connect_timedout=0x7f090006;
         public static final int putao_netexception_hint=0x7f090004;
-        public static final int putao_network_exception=0x7f090261;
-        public static final int putao_next_step=0x7f090680;
-        public static final int putao_no_name=0x7f0902b5;
+        public static final int putao_network_exception=0x7f090262;
+        public static final int putao_next_step=0x7f090681;
+        public static final int putao_no_name=0x7f0902b6;
         public static final int putao_no_net=0x7f090001;
-        public static final int putao_no_such_message=0x7f090286;
+        public static final int putao_no_such_message=0x7f090287;
         public static final int putao_nometroexception_hint=0x7f090005;
         public static final int putao_not_safty=0x7f090227;
-        public static final int putao_nothis_discount=0x7f0903af;
-        public static final int putao_notify_event=0x7f090291;
-        public static final int putao_notify_type=0x7f09028e;
+        public static final int putao_nothis_discount=0x7f0903b0;
+        public static final int putao_notify_event=0x7f090292;
+        public static final int putao_notify_type=0x7f09028f;
         /**  ContactsHubUtils 
  ContactsHubUtils 
          */
         public static final int putao_number_not_correct=0x7f090059;
-        public static final int putao_occupy_seat_failed=0x7f090763;
-        public static final int putao_occupying_seat=0x7f090764;
-        public static final int putao_offline_confirm=0x7f09040e;
-        public static final int putao_offline_remind=0x7f09040f;
-        public static final int putao_one_voucher=0x7f09023d;
+        public static final int putao_occupy_seat_failed=0x7f090764;
+        public static final int putao_occupying_seat=0x7f090765;
+        public static final int putao_offline_confirm=0x7f09040f;
+        public static final int putao_offline_remind=0x7f090410;
+        public static final int putao_one_voucher=0x7f09023e;
         /**  oneway  
          */
-        public static final int putao_oneway_select=0x7f090571;
-        public static final int putao_open_srvcomt_add=0x7f090561;
-        public static final int putao_open_srvcomt_head_percent_txt=0x7f090562;
-        public static final int putao_open_srvcomt_listitem_user=0x7f090563;
-        public static final int putao_open_srvcomt_nodata=0x7f09055f;
-        public static final int putao_open_srvcomt_title=0x7f090560;
-        public static final int putao_open_srvcomtadd_commit=0x7f090566;
-        public static final int putao_open_srvcomtadd_commit_fail=0x7f090568;
-        public static final int putao_open_srvcomtadd_commit_fail_nonet=0x7f090569;
-        public static final int putao_open_srvcomtadd_commit_invalid_acc=0x7f09056c;
-        public static final int putao_open_srvcomtadd_commit_invalid_len=0x7f09056b;
-        public static final int putao_open_srvcomtadd_commit_invalid_star=0x7f09056a;
-        public static final int putao_open_srvcomtadd_commit_success=0x7f090567;
-        public static final int putao_open_srvcomtadd_content_hint=0x7f09056d;
-        public static final int putao_open_srvcomtadd_star_tip=0x7f090565;
-        public static final int putao_open_srvcomtadd_title=0x7f090564;
-        public static final int putao_open_srvintro_citylist=0x7f09055a;
-        public static final int putao_open_srvintro_entrysvr=0x7f09055d;
-        public static final int putao_open_srvintro_hadcommented_tip=0x7f09055e;
-        public static final int putao_open_srvintro_svrdesc=0x7f09055b;
-        public static final int putao_open_srvintro_svrname=0x7f090556;
-        public static final int putao_open_srvintro_svrnotexists=0x7f090555;
-        public static final int putao_open_srvintro_svrtel=0x7f09055c;
-        public static final int putao_open_srvintro_ucomment=0x7f090557;
-        public static final int putao_open_srvintro_ucomment_count=0x7f090558;
-        public static final int putao_open_srvintro_ucomment_none=0x7f090559;
+        public static final int putao_oneway_select=0x7f090572;
+        public static final int putao_open_srvcomt_add=0x7f090562;
+        public static final int putao_open_srvcomt_head_percent_txt=0x7f090563;
+        public static final int putao_open_srvcomt_listitem_user=0x7f090564;
+        public static final int putao_open_srvcomt_nodata=0x7f090560;
+        public static final int putao_open_srvcomt_title=0x7f090561;
+        public static final int putao_open_srvcomtadd_commit=0x7f090567;
+        public static final int putao_open_srvcomtadd_commit_fail=0x7f090569;
+        public static final int putao_open_srvcomtadd_commit_fail_nonet=0x7f09056a;
+        public static final int putao_open_srvcomtadd_commit_invalid_acc=0x7f09056d;
+        public static final int putao_open_srvcomtadd_commit_invalid_len=0x7f09056c;
+        public static final int putao_open_srvcomtadd_commit_invalid_star=0x7f09056b;
+        public static final int putao_open_srvcomtadd_commit_success=0x7f090568;
+        public static final int putao_open_srvcomtadd_content_hint=0x7f09056e;
+        public static final int putao_open_srvcomtadd_star_tip=0x7f090566;
+        public static final int putao_open_srvcomtadd_title=0x7f090565;
+        public static final int putao_open_srvintro_citylist=0x7f09055b;
+        public static final int putao_open_srvintro_entrysvr=0x7f09055e;
+        public static final int putao_open_srvintro_hadcommented_tip=0x7f09055f;
+        public static final int putao_open_srvintro_svrdesc=0x7f09055c;
+        public static final int putao_open_srvintro_svrname=0x7f090557;
+        public static final int putao_open_srvintro_svrnotexists=0x7f090556;
+        public static final int putao_open_srvintro_svrtel=0x7f09055d;
+        public static final int putao_open_srvintro_ucomment=0x7f090558;
+        public static final int putao_open_srvintro_ucomment_count=0x7f090559;
+        public static final int putao_open_srvintro_ucomment_none=0x7f09055a;
         public static final int putao_operator_is_maintaining=0x7f0900ea;
-        public static final int putao_opilist_no_opi_data=0x7f090532;
-        public static final int putao_order_accepting_tips=0x7f090428;
-        public static final int putao_order_cancel=0x7f0902fd;
-        public static final int putao_order_cancel_failure=0x7f09063c;
-        public static final int putao_order_cancel_message=0x7f09063b;
+        public static final int putao_opilist_no_opi_data=0x7f090533;
+        public static final int putao_order_accepting_tips=0x7f090429;
+        public static final int putao_order_cancel=0x7f0902fe;
+        public static final int putao_order_cancel_failure=0x7f09063d;
+        public static final int putao_order_cancel_message=0x7f09063c;
         public static final int putao_order_cancel_refresh_failure=0x7f090212;
         public static final int putao_order_cancel_title=0x7f090211;
-        public static final int putao_order_charge_history=0x7f090639;
-        public static final int putao_order_close_tips=0x7f090420;
-        public static final int putao_order_confirm_tips=0x7f090421;
-        public static final int putao_order_group=0x7f090637;
-        public static final int putao_order_history=0x7f09028d;
-        public static final int putao_order_history_nodata=0x7f090643;
-        public static final int putao_order_history_none=0x7f0902b1;
-        public static final int putao_order_hotel=0x7f090638;
-        public static final int putao_order_item_indate=0x7f09063d;
-        public static final int putao_order_item_outdate=0x7f09063e;
+        public static final int putao_order_charge_history=0x7f09063a;
+        public static final int putao_order_close_tips=0x7f090421;
+        public static final int putao_order_confirm_tips=0x7f090422;
+        public static final int putao_order_group=0x7f090638;
+        public static final int putao_order_history=0x7f09028e;
+        public static final int putao_order_history_nodata=0x7f090644;
+        public static final int putao_order_history_none=0x7f0902b2;
+        public static final int putao_order_hotel=0x7f090639;
+        public static final int putao_order_item_indate=0x7f09063e;
+        public static final int putao_order_item_outdate=0x7f09063f;
         /**  订单历史 
  订单历史 
          */
         public static final int putao_order_item_showmoney=0x7f090215;
-        public static final int putao_order_item_status_A=0x7f090640;
-        public static final int putao_order_item_status_C=0x7f090642;
-        public static final int putao_order_item_status_D=0x7f090641;
-        public static final int putao_order_item_status_N=0x7f09063f;
-        public static final int putao_order_list_cancal_success=0x7f090490;
-        public static final int putao_order_list_cancel=0x7f090478;
+        public static final int putao_order_item_status_A=0x7f090641;
+        public static final int putao_order_item_status_C=0x7f090643;
+        public static final int putao_order_item_status_D=0x7f090642;
+        public static final int putao_order_item_status_N=0x7f090640;
+        public static final int putao_order_list_cancal_success=0x7f090491;
+        public static final int putao_order_list_cancel=0x7f090479;
         /**  订单列表 
          */
-        public static final int putao_order_list_cinema_name=0x7f09046f;
-        public static final int putao_order_list_company=0x7f090481;
-        public static final int putao_order_list_game_account=0x7f090484;
-        public static final int putao_order_list_game_region=0x7f090485;
-        public static final int putao_order_list_hotel_customer_name=0x7f090488;
-        public static final int putao_order_list_hotel_inout=0x7f090487;
-        public static final int putao_order_list_movie_code=0x7f090491;
-        public static final int putao_order_list_num=0x7f090471;
-        public static final int putao_order_list_o2o_comment=0x7f09048e;
-        public static final int putao_order_list_o2o_create_time=0x7f09048f;
-        public static final int putao_order_list_o2o_provider=0x7f09048c;
-        public static final int putao_order_list_o2o_time=0x7f09048d;
-        public static final int putao_order_list_offline_price=0x7f090474;
-        public static final int putao_order_list_opi=0x7f090470;
-        public static final int putao_order_list_pay=0x7f090479;
-        public static final int putao_order_list_phone=0x7f090477;
-        public static final int putao_order_list_price=0x7f090472;
-        public static final int putao_order_list_product=0x7f090475;
-        public static final int putao_order_list_qq_num=0x7f090483;
-        public static final int putao_order_list_qq_quanity=0x7f090486;
-        public static final int putao_order_list_title_charge=0x7f09047a;
-        public static final int putao_order_list_title_charge_electric=0x7f09047d;
-        public static final int putao_order_list_title_charge_gas=0x7f09047e;
-        public static final int putao_order_list_title_charge_traffic=0x7f09047b;
-        public static final int putao_order_list_title_charge_water=0x7f09047c;
-        public static final int putao_order_list_title_commont_ticket=0x7f09047f;
-        public static final int putao_order_list_title_qq=0x7f090482;
-        public static final int putao_order_list_title_train=0x7f090489;
-        public static final int putao_order_list_traffic_product=0x7f090476;
-        public static final int putao_order_list_train_destination=0x7f09048a;
-        public static final int putao_order_list_train_no=0x7f09048b;
-        public static final int putao_order_list_wait_price=0x7f090473;
-        public static final int putao_order_money=0x7f090682;
-        public static final int putao_order_movie_entertainment=0x7f09051c;
+        public static final int putao_order_list_cinema_name=0x7f090470;
+        public static final int putao_order_list_company=0x7f090482;
+        public static final int putao_order_list_game_account=0x7f090485;
+        public static final int putao_order_list_game_region=0x7f090486;
+        public static final int putao_order_list_hotel_customer_name=0x7f090489;
+        public static final int putao_order_list_hotel_inout=0x7f090488;
+        public static final int putao_order_list_movie_code=0x7f090492;
+        public static final int putao_order_list_num=0x7f090472;
+        public static final int putao_order_list_o2o_comment=0x7f09048f;
+        public static final int putao_order_list_o2o_create_time=0x7f090490;
+        public static final int putao_order_list_o2o_provider=0x7f09048d;
+        public static final int putao_order_list_o2o_time=0x7f09048e;
+        public static final int putao_order_list_offline_price=0x7f090475;
+        public static final int putao_order_list_opi=0x7f090471;
+        public static final int putao_order_list_pay=0x7f09047a;
+        public static final int putao_order_list_phone=0x7f090478;
+        public static final int putao_order_list_price=0x7f090473;
+        public static final int putao_order_list_product=0x7f090476;
+        public static final int putao_order_list_qq_num=0x7f090484;
+        public static final int putao_order_list_qq_quanity=0x7f090487;
+        public static final int putao_order_list_title_charge=0x7f09047b;
+        public static final int putao_order_list_title_charge_electric=0x7f09047e;
+        public static final int putao_order_list_title_charge_gas=0x7f09047f;
+        public static final int putao_order_list_title_charge_traffic=0x7f09047c;
+        public static final int putao_order_list_title_charge_water=0x7f09047d;
+        public static final int putao_order_list_title_commont_ticket=0x7f090480;
+        public static final int putao_order_list_title_qq=0x7f090483;
+        public static final int putao_order_list_title_train=0x7f09048a;
+        public static final int putao_order_list_traffic_product=0x7f090477;
+        public static final int putao_order_list_train_destination=0x7f09048b;
+        public static final int putao_order_list_train_no=0x7f09048c;
+        public static final int putao_order_list_wait_price=0x7f090474;
+        public static final int putao_order_money=0x7f090683;
+        public static final int putao_order_movie_entertainment=0x7f09051d;
         /**  订单详情 
          */
-        public static final int putao_order_movie_seat=0x7f090518;
-        public static final int putao_order_movie_telephone=0x7f090519;
-        public static final int putao_order_movie_ticket_exchangecode=0x7f09051a;
-        public static final int putao_order_movie_ticket_offerexchangecode=0x7f09051b;
-        public static final int putao_order_none=0x7f0902b0;
-        public static final int putao_order_not_exist=0x7f090528;
-        public static final int putao_order_pay=0x7f0902fc;
-        public static final int putao_order_status_hint_askforrefund=0x7f09034b;
-        public static final int putao_order_status_hint_askforrefund_alipay=0x7f09034e;
-        public static final int putao_order_status_hint_askforrefund_weixin=0x7f09034f;
+        public static final int putao_order_movie_seat=0x7f090519;
+        public static final int putao_order_movie_telephone=0x7f09051a;
+        public static final int putao_order_movie_ticket_exchangecode=0x7f09051b;
+        public static final int putao_order_movie_ticket_offerexchangecode=0x7f09051c;
+        public static final int putao_order_none=0x7f0902b1;
+        public static final int putao_order_not_exist=0x7f090529;
+        public static final int putao_order_pay=0x7f0902fd;
+        public static final int putao_order_status_hint_askforrefund=0x7f09034c;
+        public static final int putao_order_status_hint_askforrefund_alipay=0x7f09034f;
+        public static final int putao_order_status_hint_askforrefund_weixin=0x7f090350;
         /**  订单状态 
  订单状态 
          */
-        public static final int putao_order_status_hint_cancel=0x7f090346;
-        public static final int putao_order_status_hint_failed=0x7f090348;
-        public static final int putao_order_status_hint_outofdate=0x7f09034d;
-        public static final int putao_order_status_hint_pending=0x7f090349;
-        public static final int putao_order_status_hint_refunded=0x7f09034c;
-        public static final int putao_order_status_hint_success=0x7f09034a;
-        public static final int putao_order_status_hint_waitforpayment=0x7f090347;
-        public static final int putao_order_subfail_tips=0x7f09042a;
-        public static final int putao_order_subsucc_tips=0x7f090429;
-        public static final int putao_order_succeed=0x7f090441;
-        public static final int putao_order_succeed_tip=0x7f090442;
-        public static final int putao_order_tips_cancel_succ=0x7f09042d;
-        public static final int putao_order_tips_cancellling=0x7f09042c;
-        public static final int putao_order_tips_null=0x7f09042b;
-        public static final int putao_order_title=0x7f090502;
-        public static final int putao_order_tongcheng_train=0x7f09063a;
-        public static final int putao_other_service=0x7f090444;
-        public static final int putao_other_service_url=0x7f090445;
-        public static final int putao_out_of_service_activity_addr=0x7f090440;
-        public static final int putao_out_of_service_addr=0x7f09043e;
-        public static final int putao_out_of_service_addr_1=0x7f09043f;
+        public static final int putao_order_status_hint_cancel=0x7f090347;
+        public static final int putao_order_status_hint_failed=0x7f090349;
+        public static final int putao_order_status_hint_outofdate=0x7f09034e;
+        public static final int putao_order_status_hint_pending=0x7f09034a;
+        public static final int putao_order_status_hint_refunded=0x7f09034d;
+        public static final int putao_order_status_hint_success=0x7f09034b;
+        public static final int putao_order_status_hint_waitforpayment=0x7f090348;
+        public static final int putao_order_subfail_tips=0x7f09042b;
+        public static final int putao_order_subsucc_tips=0x7f09042a;
+        public static final int putao_order_succeed=0x7f090442;
+        public static final int putao_order_succeed_tip=0x7f090443;
+        public static final int putao_order_tips_cancel_succ=0x7f09042e;
+        public static final int putao_order_tips_cancellling=0x7f09042d;
+        public static final int putao_order_tips_null=0x7f09042c;
+        public static final int putao_order_title=0x7f090503;
+        public static final int putao_order_tongcheng_train=0x7f09063b;
+        public static final int putao_other_service=0x7f090445;
+        public static final int putao_other_service_url=0x7f090446;
+        public static final int putao_out_of_service_activity_addr=0x7f090441;
+        public static final int putao_out_of_service_addr=0x7f09043f;
+        public static final int putao_out_of_service_addr_1=0x7f090440;
         public static final int putao_p2refresh_doing_end_refresh=0x7f09009c;
         public static final int putao_p2refresh_doing_head_refresh=0x7f09009b;
         public static final int putao_p2refresh_end_click_load_more=0x7f090098;
         public static final int putao_p2refresh_end_load_more=0x7f090097;
-        public static final int putao_p2refresh_end_load_more_more=0x7f0905dd;
+        public static final int putao_p2refresh_end_load_more_more=0x7f0905de;
         public static final int putao_p2refresh_head_load_more=0x7f090096;
         public static final int putao_p2refresh_pull_to_refresh=0x7f09009a;
         public static final int putao_p2refresh_refresh_lasttime=0x7f09009d;
@@ -5945,145 +4678,145 @@ containing a value of this type.
         public static final int putao_pay_charge_price=0x7f0900f6;
         public static final int putao_pay_discount_price=0x7f0900f4;
         public static final int putao_pay_no_name=0x7f09022b;
-        public static final int putao_pay_order=0x7f09067f;
+        public static final int putao_pay_order=0x7f090680;
         public static final int putao_pay_pay_price=0x7f0900f5;
         public static final int putao_pay_sell_price=0x7f0900f3;
         public static final int putao_pay_way_wxzf=0x7f09022a;
-        public static final int putao_payed=0x7f09067d;
-        public static final int putao_payment_money=0x7f09050b;
-        public static final int putao_personal_add_addr=0x7f0906bc;
-        public static final int putao_personal_add_car=0x7f0906bd;
-        public static final int putao_personal_company_str=0x7f0906bf;
-        public static final int putao_personal_company_unset=0x7f0906c1;
-        public static final int putao_personal_data_area=0x7f0903bb;
-        public static final int putao_personal_data_base_data=0x7f0906b4;
-        public static final int putao_personal_data_birthday=0x7f0903bf;
-        public static final int putao_personal_data_car_info=0x7f0903c7;
-        public static final int putao_personal_data_common_address=0x7f0903c6;
-        public static final int putao_personal_data_common_data=0x7f0903c4;
-        public static final int putao_personal_data_common_data_hint=0x7f0906b5;
-        public static final int putao_personal_data_day=0x7f0903c2;
-        public static final int putao_personal_data_edit=0x7f0903c3;
-        public static final int putao_personal_data_femel=0x7f0903be;
-        public static final int putao_personal_data_gender=0x7f0903bc;
-        public static final int putao_personal_data_get_icon_from_camera=0x7f0903b9;
-        public static final int putao_personal_data_get_icon_from_gallery=0x7f0903b8;
-        public static final int putao_personal_data_icon=0x7f0903b5;
-        public static final int putao_personal_data_male=0x7f0903bd;
-        public static final int putao_personal_data_month=0x7f0903c1;
-        public static final int putao_personal_data_name=0x7f0906b7;
-        public static final int putao_personal_data_name_too_short=0x7f0903c5;
-        public static final int putao_personal_data_personal_data=0x7f0906b6;
-        public static final int putao_personal_data_phone_number=0x7f0906b8;
-        public static final int putao_personal_data_please_insert_sdcard=0x7f0903ba;
-        public static final int putao_personal_data_qq_number=0x7f0906b9;
-        public static final int putao_personal_data_setup_password=0x7f0903b4;
+        public static final int putao_payed=0x7f09067e;
+        public static final int putao_payment_money=0x7f09050c;
+        public static final int putao_personal_add_addr=0x7f0906bd;
+        public static final int putao_personal_add_car=0x7f0906be;
+        public static final int putao_personal_company_str=0x7f0906c0;
+        public static final int putao_personal_company_unset=0x7f0906c2;
+        public static final int putao_personal_data_area=0x7f0903bc;
+        public static final int putao_personal_data_base_data=0x7f0906b5;
+        public static final int putao_personal_data_birthday=0x7f0903c0;
+        public static final int putao_personal_data_car_info=0x7f0903c8;
+        public static final int putao_personal_data_common_address=0x7f0903c7;
+        public static final int putao_personal_data_common_data=0x7f0903c5;
+        public static final int putao_personal_data_common_data_hint=0x7f0906b6;
+        public static final int putao_personal_data_day=0x7f0903c3;
+        public static final int putao_personal_data_edit=0x7f0903c4;
+        public static final int putao_personal_data_femel=0x7f0903bf;
+        public static final int putao_personal_data_gender=0x7f0903bd;
+        public static final int putao_personal_data_get_icon_from_camera=0x7f0903ba;
+        public static final int putao_personal_data_get_icon_from_gallery=0x7f0903b9;
+        public static final int putao_personal_data_icon=0x7f0903b6;
+        public static final int putao_personal_data_male=0x7f0903be;
+        public static final int putao_personal_data_month=0x7f0903c2;
+        public static final int putao_personal_data_name=0x7f0906b8;
+        public static final int putao_personal_data_name_too_short=0x7f0903c6;
+        public static final int putao_personal_data_personal_data=0x7f0906b7;
+        public static final int putao_personal_data_phone_number=0x7f0906b9;
+        public static final int putao_personal_data_please_insert_sdcard=0x7f0903bb;
+        public static final int putao_personal_data_qq_number=0x7f0906ba;
+        public static final int putao_personal_data_setup_password=0x7f0903b5;
         /**  个人中心 
  个人中心  
          */
-        public static final int putao_personal_data_title=0x7f0903b3;
-        public static final int putao_personal_data_upload_icon_fail=0x7f0903b6;
-        public static final int putao_personal_data_uploading_icon=0x7f0903b7;
-        public static final int putao_personal_data_year=0x7f0903c0;
-        public static final int putao_personal_delete_confirm=0x7f0903cb;
-        public static final int putao_personal_edit_done=0x7f0906bb;
-        public static final int putao_personal_edit_hint=0x7f0903c8;
-        public static final int putao_personal_edit_upload_fail=0x7f0903ca;
-        public static final int putao_personal_get_user_info_fail=0x7f0906c3;
-        public static final int putao_personal_hint_text=0x7f0906ba;
-        public static final int putao_personal_home_str=0x7f0906be;
-        public static final int putao_personal_home_unset=0x7f0906c0;
-        public static final int putao_personal_max_limit=0x7f0903cc;
-        public static final int putao_personal_unset=0x7f0903c9;
-        public static final int putao_personal_vehicel_hint=0x7f0906c2;
-        public static final int putao_phone=0x7f0906dd;
+        public static final int putao_personal_data_title=0x7f0903b4;
+        public static final int putao_personal_data_upload_icon_fail=0x7f0903b7;
+        public static final int putao_personal_data_uploading_icon=0x7f0903b8;
+        public static final int putao_personal_data_year=0x7f0903c1;
+        public static final int putao_personal_delete_confirm=0x7f0903cc;
+        public static final int putao_personal_edit_done=0x7f0906bc;
+        public static final int putao_personal_edit_hint=0x7f0903c9;
+        public static final int putao_personal_edit_upload_fail=0x7f0903cb;
+        public static final int putao_personal_get_user_info_fail=0x7f0906c4;
+        public static final int putao_personal_hint_text=0x7f0906bb;
+        public static final int putao_personal_home_str=0x7f0906bf;
+        public static final int putao_personal_home_unset=0x7f0906c1;
+        public static final int putao_personal_max_limit=0x7f0903cd;
+        public static final int putao_personal_unset=0x7f0903ca;
+        public static final int putao_personal_vehicel_hint=0x7f0906c3;
+        public static final int putao_phone=0x7f0906de;
         /**  定义自助验证码短信尾巴 
          */
         public static final int putao_phone_check_code=0x7f090217;
         public static final int putao_phone_number_bounded=0x7f090225;
-        public static final int putao_phone_provider_desc=0x7f09042f;
-        public static final int putao_phone_provider_title=0x7f09042e;
-        public static final int putao_phone_putao_desc=0x7f090431;
-        public static final int putao_phone_putao_title=0x7f090430;
-        public static final int putao_phone_select=0x7f090432;
+        public static final int putao_phone_provider_desc=0x7f090430;
+        public static final int putao_phone_provider_title=0x7f09042f;
+        public static final int putao_phone_putao_desc=0x7f090432;
+        public static final int putao_phone_putao_title=0x7f090431;
+        public static final int putao_phone_select=0x7f090433;
         /**  充流量 
          */
         public static final int putao_phone_server_time=0x7f09011c;
         public static final int putao_phone_unknow=0x7f0900ec;
         /**  快递扫描 
          */
-        public static final int putao_placeHolder=0x7f0906a4;
+        public static final int putao_placeHolder=0x7f0906a5;
         /**  call 
  call 
          */
         public static final int putao_place_a_call1=0x7f090052;
         public static final int putao_place_a_call2=0x7f090053;
-        public static final int putao_please_input_message_verification_num=0x7f0906e0;
-        public static final int putao_please_input_phone_num=0x7f0906d2;
-        public static final int putao_please_verification_phone_num=0x7f0906db;
-        public static final int putao_please_verification_place=0x7f0906e4;
-        public static final int putao_please_verification_place_end=0x7f0906e5;
+        public static final int putao_please_input_message_verification_num=0x7f0906e1;
+        public static final int putao_please_input_phone_num=0x7f0906d3;
+        public static final int putao_please_verification_phone_num=0x7f0906dc;
+        public static final int putao_please_verification_place=0x7f0906e5;
+        public static final int putao_please_verification_place_end=0x7f0906e6;
         /**  圈子列表 
  圈子列表 
          */
         public static final int putao_point_out=0x7f090051;
-        public static final int putao_preferences_actions_title=0x7f0905e7;
-        public static final int putao_preferences_bulk_mode_summary=0x7f0905e8;
-        public static final int putao_preferences_bulk_mode_title=0x7f0905e9;
-        public static final int putao_preferences_copy_to_clipboard_title=0x7f0905ea;
-        public static final int putao_preferences_custom_product_search_summary=0x7f0905eb;
-        public static final int putao_preferences_custom_product_search_title=0x7f0905ec;
-        public static final int putao_preferences_decode_1D_title=0x7f0905ed;
-        public static final int putao_preferences_decode_Data_Matrix_title=0x7f0905ee;
-        public static final int putao_preferences_decode_QR_title=0x7f0905ef;
-        public static final int putao_preferences_front_light_summary=0x7f0905f0;
-        public static final int putao_preferences_front_light_title=0x7f0905f1;
-        public static final int putao_preferences_general_title=0x7f0905f2;
-        public static final int putao_preferences_play_beep_title=0x7f0905f3;
-        public static final int putao_preferences_remember_duplicates_summary=0x7f0905f4;
-        public static final int putao_preferences_remember_duplicates_title=0x7f0905f5;
-        public static final int putao_preferences_result_title=0x7f0905f6;
-        public static final int putao_preferences_reverse_image_summary=0x7f0905f7;
-        public static final int putao_preferences_reverse_image_title=0x7f0905f8;
-        public static final int putao_preferences_scanning_title=0x7f0905f9;
-        public static final int putao_preferences_search_country=0x7f0905fa;
-        public static final int putao_preferences_supplemental_summary=0x7f0905fb;
-        public static final int putao_preferences_supplemental_title=0x7f0905fc;
-        public static final int putao_preferences_vibrate_title=0x7f0905fd;
+        public static final int putao_preferences_actions_title=0x7f0905e8;
+        public static final int putao_preferences_bulk_mode_summary=0x7f0905e9;
+        public static final int putao_preferences_bulk_mode_title=0x7f0905ea;
+        public static final int putao_preferences_copy_to_clipboard_title=0x7f0905eb;
+        public static final int putao_preferences_custom_product_search_summary=0x7f0905ec;
+        public static final int putao_preferences_custom_product_search_title=0x7f0905ed;
+        public static final int putao_preferences_decode_1D_title=0x7f0905ee;
+        public static final int putao_preferences_decode_Data_Matrix_title=0x7f0905ef;
+        public static final int putao_preferences_decode_QR_title=0x7f0905f0;
+        public static final int putao_preferences_front_light_summary=0x7f0905f1;
+        public static final int putao_preferences_front_light_title=0x7f0905f2;
+        public static final int putao_preferences_general_title=0x7f0905f3;
+        public static final int putao_preferences_play_beep_title=0x7f0905f4;
+        public static final int putao_preferences_remember_duplicates_summary=0x7f0905f5;
+        public static final int putao_preferences_remember_duplicates_title=0x7f0905f6;
+        public static final int putao_preferences_result_title=0x7f0905f7;
+        public static final int putao_preferences_reverse_image_summary=0x7f0905f8;
+        public static final int putao_preferences_reverse_image_title=0x7f0905f9;
+        public static final int putao_preferences_scanning_title=0x7f0905fa;
+        public static final int putao_preferences_search_country=0x7f0905fb;
+        public static final int putao_preferences_supplemental_summary=0x7f0905fc;
+        public static final int putao_preferences_supplemental_title=0x7f0905fd;
+        public static final int putao_preferences_vibrate_title=0x7f0905fe;
         public static final int putao_pull_to_refresh=0x7f090213;
-        public static final int putao_purchase_count_prefix=0x7f09058e;
-        public static final int putao_putaolife_content1=0x7f09031c;
-        public static final int putao_putaolife_content2=0x7f09031d;
-        public static final int putao_putaolife_content3=0x7f09031e;
-        public static final int putao_putaolife_content4=0x7f09031f;
-        public static final int putao_putaolife_content5=0x7f090320;
-        public static final int putao_putaolife_sendemail_head=0x7f090322;
-        public static final int putao_putaolife_sendemailhint=0x7f090321;
-        /**  关于天语生活 
+        public static final int putao_purchase_count_prefix=0x7f09058f;
+        public static final int putao_putaolife_content1=0x7f09031d;
+        public static final int putao_putaolife_content2=0x7f09031e;
+        public static final int putao_putaolife_content3=0x7f09031f;
+        public static final int putao_putaolife_content4=0x7f090320;
+        public static final int putao_putaolife_content5=0x7f090321;
+        public static final int putao_putaolife_sendemail_head=0x7f090323;
+        public static final int putao_putaolife_sendemailhint=0x7f090322;
+        /**  关于葡萄生活 
  关于葡萄生活 
          */
-        public static final int putao_putaolife_title=0x7f09031b;
-        public static final int putao_qq_not_surpport_tips=0x7f0904ad;
+        public static final int putao_putaolife_title=0x7f09031c;
+        public static final int putao_qq_not_surpport_tips=0x7f0904ae;
         /**  qq充值 
          */
-        public static final int putao_qq_num=0x7f0904a5;
-        public static final int putao_qq_num_hint=0x7f0904a6;
-        public static final int putao_qq_recharge_pervalue=0x7f0904a9;
-        public static final int putao_qq_recharge_pervalue_hint=0x7f0904aa;
-        public static final int putao_qq_recharge_pervalue_tips=0x7f0904ab;
-        public static final int putao_qq_recharge_type=0x7f0904a7;
-        public static final int putao_qq_recharge_type_hint=0x7f0904a8;
-        public static final int putao_qq_recharge_type_tips=0x7f0904ac;
+        public static final int putao_qq_num=0x7f0904a6;
+        public static final int putao_qq_num_hint=0x7f0904a7;
+        public static final int putao_qq_recharge_pervalue=0x7f0904aa;
+        public static final int putao_qq_recharge_pervalue_hint=0x7f0904ab;
+        public static final int putao_qq_recharge_pervalue_tips=0x7f0904ac;
+        public static final int putao_qq_recharge_type=0x7f0904a8;
+        public static final int putao_qq_recharge_type_hint=0x7f0904a9;
+        public static final int putao_qq_recharge_type_tips=0x7f0904ad;
         public static final int putao_query_telcharge_hint=0x7f0900a2;
         /**  话费查询 
  话费查询 
          */
         public static final int putao_query_telcharge_hint_head=0x7f0900a1;
         public static final int putao_query_telecharge_failed_hint=0x7f0900a4;
-        public static final int putao_query_telecharge_hint_cancel=0x7f0905df;
-        public static final int putao_query_telecharge_hint_ok=0x7f0905de;
+        public static final int putao_query_telecharge_hint_cancel=0x7f0905e0;
+        public static final int putao_query_telecharge_hint_ok=0x7f0905df;
         public static final int putao_query_telecharge_sendinghint=0x7f0900a3;
-        public static final int putao_query_telecharge_success_hint=0x7f0905e0;
+        public static final int putao_query_telecharge_success_hint=0x7f0905e1;
         public static final int putao_querytel_balance_name1=0x7f0900b1;
         public static final int putao_querytel_balance_name2=0x7f0900b2;
         public static final int putao_querytel_balance_rmb=0x7f0900b3;
@@ -6100,30 +4833,30 @@ containing a value of this type.
         public static final int putao_querytel_state_welcome=0x7f0900a9;
         /**   title 
          */
-        public static final int putao_qunarflight_title=0x7f09056e;
-        public static final int putao_refresh_order_status_fail=0x7f09041c;
-        public static final int putao_refund_fail_tips=0x7f090427;
-        public static final int putao_refund_money=0x7f090402;
-        public static final int putao_refund_reason=0x7f090401;
-        public static final int putao_refund_reason_1=0x7f090405;
-        public static final int putao_refund_reason_2=0x7f090406;
-        public static final int putao_refund_reason_3=0x7f090407;
-        public static final int putao_refund_reason_4=0x7f090408;
-        public static final int putao_refund_reason_5=0x7f090409;
-        public static final int putao_refund_reason_6=0x7f09040a;
-        public static final int putao_refund_service_name=0x7f090400;
-        public static final int putao_refund_succ_tips=0x7f090426;
-        public static final int putao_refund_to_account=0x7f090403;
-        public static final int putao_refund_to_account_tip=0x7f090404;
-        public static final int putao_refunding_tips=0x7f090425;
+        public static final int putao_qunarflight_title=0x7f09056f;
+        public static final int putao_refresh_order_status_fail=0x7f09041d;
+        public static final int putao_refund_fail_tips=0x7f090428;
+        public static final int putao_refund_money=0x7f090403;
+        public static final int putao_refund_reason=0x7f090402;
+        public static final int putao_refund_reason_1=0x7f090406;
+        public static final int putao_refund_reason_2=0x7f090407;
+        public static final int putao_refund_reason_3=0x7f090408;
+        public static final int putao_refund_reason_4=0x7f090409;
+        public static final int putao_refund_reason_5=0x7f09040a;
+        public static final int putao_refund_reason_6=0x7f09040b;
+        public static final int putao_refund_service_name=0x7f090401;
+        public static final int putao_refund_succ_tips=0x7f090427;
+        public static final int putao_refund_to_account=0x7f090404;
+        public static final int putao_refund_to_account_tip=0x7f090405;
+        public static final int putao_refunding_tips=0x7f090426;
         public static final int putao_retry=0x7f09000a;
-        public static final int putao_return_date=0x7f090576;
+        public static final int putao_return_date=0x7f090577;
         /**  订单中心 
  订单中心 
          */
-        public static final int putao_rmb=0x7f090301;
-        public static final int putao_rmb_pay_finished=0x7f0903a7;
-        public static final int putao_rmb_space=0x7f090302;
+        public static final int putao_rmb=0x7f090302;
+        public static final int putao_rmb_pay_finished=0x7f0903a8;
+        public static final int putao_rmb_space=0x7f090303;
         public static final int putao_room_info_adsl=0x7f0901e4;
         public static final int putao_room_info_adsl_0=0x7f0901e5;
         public static final int putao_room_info_adsl_1=0x7f0901e6;
@@ -6136,7 +4869,7 @@ containing a value of this type.
         public static final int putao_room_info_bed=0x7f0901ea;
         public static final int putao_room_info_breakfast=0x7f0901e3;
         public static final int putao_room_info_floor=0x7f0901e0;
-        public static final int putao_room_info_guest_num=0x7f090633;
+        public static final int putao_room_info_guest_num=0x7f090634;
         public static final int putao_room_info_nosmoking=0x7f0901ed;
         public static final int putao_room_info_nosmoking_0=0x7f0901ee;
         public static final int putao_room_info_nosmoking_1=0x7f0901ef;
@@ -6147,28 +4880,28 @@ containing a value of this type.
         public static final int putao_room_info_present=0x7f0901f4;
         public static final int putao_room_info_present_time=0x7f0901f5;
         public static final int putao_room_info_reserve=0x7f0901f6;
-        public static final int putao_room_info_surplus_room=0x7f090632;
+        public static final int putao_room_info_surplus_room=0x7f090633;
         public static final int putao_room_info_total_price=0x7f0901f3;
         public static final int putao_roomdetail=0x7f09015b;
-        public static final int putao_scan_failed=0x7f0906a8;
-        public static final int putao_sdcard_disabled=0x7f0902bb;
+        public static final int putao_scan_failed=0x7f0906a9;
+        public static final int putao_sdcard_disabled=0x7f0902bc;
         public static final int putao_sear_empty_result_tip=0x7f090078;
         public static final int putao_search_address_unknown=0x7f09007a;
         /**  个人详情 名片 
          */
-        public static final int putao_search_contact_hint=0x7f090587;
+        public static final int putao_search_contact_hint=0x7f090588;
         public static final int putao_search_empty_result1=0x7f090075;
         public static final int putao_search_empty_result2=0x7f090076;
         public static final int putao_search_empty_result3=0x7f090077;
-        public static final int putao_search_movie_tip=0x7f090251;
+        public static final int putao_search_movie_tip=0x7f090252;
         /**  号码反查 
  号码反查 
          */
         public static final int putao_search_name_unknown=0x7f090079;
         public static final int putao_search_operator_full_name=0x7f09007c;
         public static final int putao_search_operator_unknown=0x7f09007b;
-        public static final int putao_search_provider_58city=0x7f09026b;
-        public static final int putao_search_provider_dianping=0x7f090268;
+        public static final int putao_search_provider_58city=0x7f09026c;
+        public static final int putao_search_provider_dianping=0x7f090269;
         /** 
     拼音helper
 
@@ -6206,594 +4939,595 @@ containing a value of this type.
  代码中设置的部分常量 end 
  默认搜索配置start 
          */
-        public static final int putao_search_provider_dianping_group=0x7f090265;
-        public static final int putao_search_provider_elong=0x7f09026c;
-        public static final int putao_search_provider_gaode=0x7f090269;
-        public static final int putao_search_provider_putao=0x7f09026e;
-        public static final int putao_search_provider_putao_cinema=0x7f090267;
-        public static final int putao_search_provider_putao_goods=0x7f090270;
-        public static final int putao_search_provider_putao_item=0x7f09026f;
-        public static final int putao_search_provider_putao_movie=0x7f090266;
-        public static final int putao_search_provider_sogou=0x7f09026a;
-        public static final int putao_search_provider_tongcheng=0x7f09026d;
-        public static final int putao_search_select_set=0x7f090672;
-        public static final int putao_search_service_banjia=0x7f090276;
-        public static final int putao_search_service_banjia2=0x7f090277;
-        public static final int putao_search_service_baomu=0x7f090278;
-        public static final int putao_search_service_baomu2=0x7f090279;
-        public static final int putao_search_service_hotel=0x7f090275;
-        public static final int putao_search_time_out=0x7f0905d6;
-        public static final int putao_search_word_banjia=0x7f090273;
-        public static final int putao_search_word_baomu=0x7f090274;
-        public static final int putao_search_word_hotel=0x7f090272;
-        public static final int putao_search_word_recently_hotel=0x7f090271;
-        public static final int putao_seat=0x7f0904fc;
-        public static final int putao_seat_lover=0x7f090500;
-        public static final int putao_seat_select_none=0x7f090503;
-        public static final int putao_seat_zl=0x7f090501;
-        public static final int putao_seekbar_add=0x7f0906a5;
-        public static final int putao_seekbar_minus=0x7f0906a6;
-        public static final int putao_select_car_color=0x7f09045d;
+        public static final int putao_search_provider_dianping_group=0x7f090266;
+        public static final int putao_search_provider_elong=0x7f09026d;
+        public static final int putao_search_provider_gaode=0x7f09026a;
+        public static final int putao_search_provider_putao=0x7f09026f;
+        public static final int putao_search_provider_putao_cinema=0x7f090268;
+        public static final int putao_search_provider_putao_goods=0x7f090271;
+        public static final int putao_search_provider_putao_item=0x7f090270;
+        public static final int putao_search_provider_putao_movie=0x7f090267;
+        public static final int putao_search_provider_sogou=0x7f09026b;
+        public static final int putao_search_provider_tongcheng=0x7f09026e;
+        public static final int putao_search_select_set=0x7f090673;
+        public static final int putao_search_service_banjia=0x7f090277;
+        public static final int putao_search_service_banjia2=0x7f090278;
+        public static final int putao_search_service_baomu=0x7f090279;
+        public static final int putao_search_service_baomu2=0x7f09027a;
+        public static final int putao_search_service_hotel=0x7f090276;
+        public static final int putao_search_time_out=0x7f0905d7;
+        public static final int putao_search_word_banjia=0x7f090274;
+        public static final int putao_search_word_baomu=0x7f090275;
+        public static final int putao_search_word_hotel=0x7f090273;
+        public static final int putao_search_word_recently_hotel=0x7f090272;
+        public static final int putao_seat=0x7f0904fd;
+        public static final int putao_seat_lover=0x7f090501;
+        public static final int putao_seat_select_none=0x7f090504;
+        public static final int putao_seat_zl=0x7f090502;
+        public static final int putao_seekbar_add=0x7f0906a6;
+        public static final int putao_seekbar_minus=0x7f0906a7;
+        public static final int putao_select_car_color=0x7f09045e;
         /**  车辆信息 
          */
-        public static final int putao_select_car_type=0x7f09045c;
-        public static final int putao_select_seat_confirm=0x7f090508;
-        public static final int putao_select_seat_date_format_pattern=0x7f090504;
-        public static final int putao_select_seat_max_seats=0x7f090506;
-        public static final int putao_select_seat_no_seat=0x7f090507;
-        public static final int putao_select_seat_room_screen=0x7f090505;
-        public static final int putao_selected=0x7f0904fe;
+        public static final int putao_select_car_type=0x7f09045d;
+        public static final int putao_select_seat_confirm=0x7f090509;
+        public static final int putao_select_seat_date_format_pattern=0x7f090505;
+        public static final int putao_select_seat_max_seats=0x7f090507;
+        public static final int putao_select_seat_no_seat=0x7f090508;
+        public static final int putao_select_seat_room_screen=0x7f090506;
+        public static final int putao_selected=0x7f0904ff;
         public static final int putao_send_again_time=0x7f090219;
         public static final int putao_send_captcha_error=0x7f09003c;
-        public static final int putao_served_tips=0x7f090424;
+        public static final int putao_served_tips=0x7f090425;
         public static final int putao_server_busy=0x7f090002;
-        public static final int putao_server_error=0x7f0906d9;
-        public static final int putao_server_exception=0x7f090262;
-        public static final int putao_server_go_tips=0x7f090422;
+        public static final int putao_server_error=0x7f0906da;
+        public static final int putao_server_exception=0x7f090263;
+        public static final int putao_server_go_tips=0x7f090423;
         /**  公交 
  公交 
          */
         public static final int putao_server_head_title_bus=0x7f09012b;
-        public static final int putao_servermanager_add_quick_search=0x7f090624;
-        public static final int putao_servermanager_add_quick_search_btn=0x7f090628;
+        public static final int putao_servermanager_add_quick_search=0x7f090625;
+        public static final int putao_servermanager_add_quick_search_btn=0x7f090629;
         public static final int putao_servermanager_added=0x7f09013b;
         public static final int putao_servermanager_all=0x7f09013c;
-        public static final int putao_servermanager_del_quick_search=0x7f090623;
-        public static final int putao_servermanager_dialog_edittext_hint=0x7f090626;
-        public static final int putao_servermanager_dialog_null_edittext_content=0x7f090627;
-        public static final int putao_servermanager_dialog_title=0x7f090625;
-        public static final int putao_servermanager_not_del_hint=0x7f090622;
+        public static final int putao_servermanager_del_quick_search=0x7f090624;
+        public static final int putao_servermanager_dialog_edittext_hint=0x7f090627;
+        public static final int putao_servermanager_dialog_null_edittext_content=0x7f090628;
+        public static final int putao_servermanager_dialog_title=0x7f090626;
+        public static final int putao_servermanager_not_del_hint=0x7f090623;
         /**  编辑快捷服务 
  编辑快捷服务 
          */
         public static final int putao_servermanager_title=0x7f09013a;
         /**  开放平台商品托管 
          */
-        public static final int putao_service_error=0x7f090437;
-        public static final int putao_service_staff=0x7f090433;
-        public static final int putao_service_staff_fail=0x7f09043c;
-        public static final int putao_service_staff_full=0x7f09043d;
-        public static final int putao_service_staff_select=0x7f090467;
-        public static final int putao_service_staff_selected=0x7f090466;
+        public static final int putao_service_error=0x7f090438;
+        public static final int putao_service_staff=0x7f090434;
+        public static final int putao_service_staff_fail=0x7f09043d;
+        public static final int putao_service_staff_full=0x7f09043e;
+        public static final int putao_service_staff_select=0x7f090468;
+        public static final int putao_service_staff_selected=0x7f090467;
         /**  服务人员 
          */
-        public static final int putao_service_staff_times=0x7f090465;
-        public static final int putao_service_staff_title=0x7f090468;
-        public static final int putao_service_time_fail=0x7f09043b;
-        public static final int putao_service_time_transport_fee=0x7f090443;
-        public static final int putao_servicer_mobile=0x7f09040d;
-        public static final int putao_services_110_name=0x7f090599;
-        public static final int putao_services_110_value=0x7f09059a;
-        public static final int putao_services_114_name=0x7f0905a3;
-        public static final int putao_services_114_value=0x7f0905a4;
-        public static final int putao_services_117_name=0x7f0905a7;
-        public static final int putao_services_117_value=0x7f0905a8;
-        public static final int putao_services_119_name=0x7f09059b;
-        public static final int putao_services_119_value=0x7f09059c;
-        public static final int putao_services_120_name=0x7f09059d;
-        public static final int putao_services_120_value=0x7f09059e;
-        public static final int putao_services_122_name=0x7f0905a1;
-        public static final int putao_services_122_value=0x7f0905a2;
-        public static final int putao_services_12530_name=0x7f0905ba;
-        public static final int putao_services_12530_value=0x7f0905bb;
-        public static final int putao_services_12580_name=0x7f0905b8;
-        public static final int putao_services_12580_value=0x7f0905b9;
-        public static final int putao_services_184_name=0x7f0905a9;
-        public static final int putao_services_184_value=0x7f0905aa;
-        public static final int putao_services_999_name=0x7f0905ab;
-        public static final int putao_services_999_value=0x7f0905ac;
-        public static final int putao_services_IP_name=0x7f0905be;
-        public static final int putao_services_IP_value=0x7f0905bf;
-        public static final int putao_services_broadband_name=0x7f0905bc;
-        public static final int putao_services_broadband_value=0x7f0905bd;
+        public static final int putao_service_staff_times=0x7f090466;
+        public static final int putao_service_staff_title=0x7f090469;
+        public static final int putao_service_time_fail=0x7f09043c;
+        public static final int putao_service_time_transport_fee=0x7f090444;
+        public static final int putao_servicer_mobile=0x7f09040e;
+        public static final int putao_services_110_name=0x7f09059a;
+        public static final int putao_services_110_value=0x7f09059b;
+        public static final int putao_services_114_name=0x7f0905a4;
+        public static final int putao_services_114_value=0x7f0905a5;
+        public static final int putao_services_117_name=0x7f0905a8;
+        public static final int putao_services_117_value=0x7f0905a9;
+        public static final int putao_services_119_name=0x7f09059c;
+        public static final int putao_services_119_value=0x7f09059d;
+        public static final int putao_services_120_name=0x7f09059e;
+        public static final int putao_services_120_value=0x7f09059f;
+        public static final int putao_services_122_name=0x7f0905a2;
+        public static final int putao_services_122_value=0x7f0905a3;
+        public static final int putao_services_12530_name=0x7f0905bb;
+        public static final int putao_services_12530_value=0x7f0905bc;
+        public static final int putao_services_12580_name=0x7f0905b9;
+        public static final int putao_services_12580_value=0x7f0905ba;
+        public static final int putao_services_184_name=0x7f0905aa;
+        public static final int putao_services_184_value=0x7f0905ab;
+        public static final int putao_services_999_name=0x7f0905ac;
+        public static final int putao_services_999_value=0x7f0905ad;
+        public static final int putao_services_IP_name=0x7f0905bf;
+        public static final int putao_services_IP_value=0x7f0905c0;
+        public static final int putao_services_broadband_name=0x7f0905bd;
+        public static final int putao_services_broadband_value=0x7f0905be;
         /**  黄页公众服务 
          */
         public static final int putao_services_china_mobile_name=0x7f090072;
-        public static final int putao_services_china_mobile_value=0x7f0905b1;
-        public static final int putao_services_china_netcom_name=0x7f0905b6;
-        public static final int putao_services_china_netcom_value=0x7f0905b7;
-        public static final int putao_services_china_railway_name=0x7f0905b4;
-        public static final int putao_services_china_railway_value=0x7f0905b5;
+        public static final int putao_services_china_mobile_value=0x7f0905b2;
+        public static final int putao_services_china_netcom_name=0x7f0905b7;
+        public static final int putao_services_china_netcom_value=0x7f0905b8;
+        public static final int putao_services_china_railway_name=0x7f0905b5;
+        public static final int putao_services_china_railway_value=0x7f0905b6;
         public static final int putao_services_china_telecom_name=0x7f090074;
-        public static final int putao_services_china_telecom_value=0x7f0905b3;
+        public static final int putao_services_china_telecom_value=0x7f0905b4;
         public static final int putao_services_china_unicom_name=0x7f090073;
-        public static final int putao_services_china_unicom_value=0x7f0905b2;
-        public static final int putao_services_commumication=0x7f090597;
-        public static final int putao_services_complaint=0x7f090598;
-        public static final int putao_services_comsumer_name=0x7f0905c2;
-        public static final int putao_services_comsumer_value=0x7f0905c3;
-        public static final int putao_services_environment_name=0x7f0905d4;
-        public static final int putao_services_environment_value=0x7f0905d5;
-        public static final int putao_services_high_name=0x7f0905af;
-        public static final int putao_services_high_value=0x7f0905b0;
-        public static final int putao_services_institution_name=0x7f0905cc;
-        public static final int putao_services_institution_value=0x7f0905cd;
-        public static final int putao_services_mayor_name=0x7f0905c4;
-        public static final int putao_services_mayor_value=0x7f0905c5;
-        public static final int putao_services_organization_name=0x7f0905d2;
-        public static final int putao_services_organization_value=0x7f0905d3;
-        public static final int putao_services_price_name=0x7f0905c8;
-        public static final int putao_services_price_value=0x7f0905c9;
-        public static final int putao_services_quality_name=0x7f0905ce;
-        public static final int putao_services_quality_value=0x7f0905cf;
-        public static final int putao_services_rights_name=0x7f0905c6;
-        public static final int putao_services_rights_value=0x7f0905c7;
-        public static final int putao_services_safeguarding_name=0x7f0905d0;
-        public static final int putao_services_safeguarding_value=0x7f0905d1;
+        public static final int putao_services_china_unicom_value=0x7f0905b3;
+        public static final int putao_services_commumication=0x7f090598;
+        public static final int putao_services_complaint=0x7f090599;
+        public static final int putao_services_comsumer_name=0x7f0905c3;
+        public static final int putao_services_comsumer_value=0x7f0905c4;
+        public static final int putao_services_environment_name=0x7f0905d5;
+        public static final int putao_services_environment_value=0x7f0905d6;
+        public static final int putao_services_high_name=0x7f0905b0;
+        public static final int putao_services_high_value=0x7f0905b1;
+        public static final int putao_services_institution_name=0x7f0905cd;
+        public static final int putao_services_institution_value=0x7f0905ce;
+        public static final int putao_services_mayor_name=0x7f0905c5;
+        public static final int putao_services_mayor_value=0x7f0905c6;
+        public static final int putao_services_organization_name=0x7f0905d3;
+        public static final int putao_services_organization_value=0x7f0905d4;
+        public static final int putao_services_price_name=0x7f0905c9;
+        public static final int putao_services_price_value=0x7f0905ca;
+        public static final int putao_services_quality_name=0x7f0905cf;
+        public static final int putao_services_quality_value=0x7f0905d0;
+        public static final int putao_services_rights_name=0x7f0905c7;
+        public static final int putao_services_rights_value=0x7f0905c8;
+        public static final int putao_services_safeguarding_name=0x7f0905d1;
+        public static final int putao_services_safeguarding_value=0x7f0905d2;
         /**  黄页公众服务 
          */
-        public static final int putao_services_special=0x7f090596;
-        public static final int putao_services_taxation_name=0x7f0905ca;
-        public static final int putao_services_taxation_value=0x7f0905cb;
-        public static final int putao_services_television_name=0x7f0905c0;
-        public static final int putao_services_television_value=0x7f0905c1;
-        public static final int putao_services_train_name=0x7f09059f;
-        public static final int putao_services_train_value=0x7f0905a0;
-        public static final int putao_services_water_name=0x7f0905ad;
-        public static final int putao_services_water_value=0x7f0905ae;
-        public static final int putao_services_weather_name=0x7f0905a5;
-        public static final int putao_services_weather_value=0x7f0905a6;
-        public static final int putao_serving_tips=0x7f090423;
+        public static final int putao_services_special=0x7f090597;
+        public static final int putao_services_taxation_name=0x7f0905cb;
+        public static final int putao_services_taxation_value=0x7f0905cc;
+        public static final int putao_services_television_name=0x7f0905c1;
+        public static final int putao_services_television_value=0x7f0905c2;
+        public static final int putao_services_train_name=0x7f0905a0;
+        public static final int putao_services_train_value=0x7f0905a1;
+        public static final int putao_services_water_name=0x7f0905ae;
+        public static final int putao_services_water_value=0x7f0905af;
+        public static final int putao_services_weather_name=0x7f0905a6;
+        public static final int putao_services_weather_value=0x7f0905a7;
+        public static final int putao_serving_tips=0x7f090424;
         public static final int putao_set_password=0x7f090226;
-        public static final int putao_settings=0x7f090288;
-        public static final int putao_share_dialog_friends=0x7f090358;
-        public static final int putao_share_dialog_moments=0x7f090359;
+        public static final int putao_settings=0x7f090289;
+        public static final int putao_share_dialog_friends=0x7f090359;
+        public static final int putao_share_dialog_moments=0x7f09035a;
         /**  流量红包活动 
  流量红包活动 
          */
-        public static final int putao_share_dialog_title=0x7f090357;
-        public static final int putao_share_voucher_dialog_button=0x7f090464;
-        public static final int putao_share_voucher_dialog_tip=0x7f090463;
-        public static final int putao_share_voucher_dialog_title=0x7f090462;
-        public static final int putao_share_weather_content=0x7f0902ee;
-        public static final int putao_share_weather_string=0x7f0902ef;
-        public static final int putao_shenzhen=0x7f0902ac;
-        public static final int putao_shui_dian_mei_setting_hint=0x7f090685;
-        public static final int putao_shui_dian_mei_title=0x7f0902fe;
+        public static final int putao_share_dialog_title=0x7f090358;
+        public static final int putao_share_voucher_dialog_button=0x7f090465;
+        public static final int putao_share_voucher_dialog_tip=0x7f090464;
+        public static final int putao_share_voucher_dialog_title=0x7f090463;
+        public static final int putao_share_weather_content=0x7f0902ef;
+        public static final int putao_share_weather_string=0x7f0902f0;
+        public static final int putao_shenzhen=0x7f0902ad;
+        public static final int putao_shui_dian_mei_setting_hint=0x7f090686;
+        public static final int putao_shui_dian_mei_title=0x7f0902ff;
         public static final int putao_sim_state_info=0x7f0900a5;
         /**  默认圈子 
  ip拨号 
          */
-        public static final int putao_smart_ip_call=0x7f090588;
-        public static final int putao_sold=0x7f0904ff;
-        public static final int putao_sound_notify=0x7f090290;
-        public static final int putao_start_city=0x7f090573;
-        public static final int putao_start_date=0x7f090575;
-        public static final int putao_stationdefault=0x7f09073c;
-        public static final int putao_tab_game_title=0x7f0904a4;
-        public static final int putao_tab_kfcdiscount_title=0x7f0903ac;
-        public static final int putao_tab_mcddiscount_title=0x7f0903ad;
-        public static final int putao_tab_oneway_title=0x7f09056f;
-        public static final int putao_tab_qq_title=0x7f0904a3;
-        public static final int putao_tab_round_title=0x7f090570;
-        public static final int putao_tab_title_kfc=0x7f0903b0;
-        public static final int putao_tab_title_mcd=0x7f0903b1;
+        public static final int putao_smart_ip_call=0x7f090589;
+        public static final int putao_sold=0x7f090500;
+        public static final int putao_sound_notify=0x7f090291;
+        public static final int putao_start_city=0x7f090574;
+        public static final int putao_start_date=0x7f090576;
+        public static final int putao_stationdefault=0x7f09073d;
+        public static final int putao_tab_game_title=0x7f0904a5;
+        public static final int putao_tab_kfcdiscount_title=0x7f0903ad;
+        public static final int putao_tab_mcddiscount_title=0x7f0903ae;
+        public static final int putao_tab_oneway_title=0x7f090570;
+        public static final int putao_tab_qq_title=0x7f0904a4;
+        public static final int putao_tab_round_title=0x7f090571;
+        public static final int putao_tab_title_kfc=0x7f0903b1;
+        public static final int putao_tab_title_mcd=0x7f0903b2;
         /**  搜索Tail配置 
  搜索Tail配置 
          */
-        public static final int putao_tail_tip=0x7f090283;
-        public static final int putao_taxi_captcha_or_mobile_cannot_be_null=0x7f09039f;
+        public static final int putao_tail_tip=0x7f090284;
+        public static final int putao_taxi_captcha_or_mobile_cannot_be_null=0x7f0903a0;
         /**  选择地点页面 
          */
-        public static final int putao_taxi_input_starting_place=0x7f0906c6;
-        public static final int putao_taxi_start=0x7f0906cc;
-        public static final int putao_taxi_waitreply_cancel_take_taxi=0x7f0906ff;
-        public static final int putao_taxi_waitreply_changeto_didi=0x7f0906fc;
-        public static final int putao_taxi_waitreply_changeto_uber=0x7f0906fb;
-        public static final int putao_taxi_waitreply_continue_wait=0x7f0906fd;
+        public static final int putao_taxi_input_starting_place=0x7f0906c7;
+        public static final int putao_taxi_start=0x7f0906cd;
+        public static final int putao_taxi_waitreply_cancel_take_taxi=0x7f090700;
+        public static final int putao_taxi_waitreply_changeto_didi=0x7f0906fd;
+        public static final int putao_taxi_waitreply_changeto_uber=0x7f0906fc;
+        public static final int putao_taxi_waitreply_continue_wait=0x7f0906fe;
         /**  司机接单页面 
  等待应答 页面 start 
          */
-        public static final int putao_taxi_waitreply_head_hint=0x7f0906f5;
-        public static final int putao_taxi_waitreply_no_driver_reply=0x7f0906fa;
-        public static final int putao_taxi_waitreply_sure_cancel_take_taxi=0x7f0906fe;
-        public static final int putao_taxi_waitreply_sure_cancel_take_taxi_and_use_didi=0x7f090700;
-        public static final int putao_taxi_waitreply_taxinum_hint1=0x7f0906f6;
-        public static final int putao_taxi_waitreply_taxinum_hint2=0x7f0906f7;
-        public static final int putao_taxi_waitreply_waittime_hint1=0x7f0906f8;
-        public static final int putao_taxi_waitreply_waittime_hint2=0x7f0906f9;
-        public static final int putao_taxi_where_end=0x7f09039e;
+        public static final int putao_taxi_waitreply_head_hint=0x7f0906f6;
+        public static final int putao_taxi_waitreply_no_driver_reply=0x7f0906fb;
+        public static final int putao_taxi_waitreply_sure_cancel_take_taxi=0x7f0906ff;
+        public static final int putao_taxi_waitreply_sure_cancel_take_taxi_and_use_didi=0x7f090701;
+        public static final int putao_taxi_waitreply_taxinum_hint1=0x7f0906f7;
+        public static final int putao_taxi_waitreply_taxinum_hint2=0x7f0906f8;
+        public static final int putao_taxi_waitreply_waittime_hint1=0x7f0906f9;
+        public static final int putao_taxi_waitreply_waittime_hint2=0x7f0906fa;
+        public static final int putao_taxi_where_end=0x7f09039f;
         /**  优惠券 
  优惠券 
          */
         public static final int putao_tel_charge_coupon=0x7f09022c;
         public static final int putao_tel_charge_coupon_not_use=0x7f09022e;
         public static final int putao_tel_charge_coupon_use=0x7f09022d;
-        public static final int putao_tel_charge_coupon_use_money=0x7f090660;
+        public static final int putao_tel_charge_coupon_use_money=0x7f090661;
         public static final int putao_telecom=0x7f09005c;
         public static final int putao_telecom_service=0x7f09005f;
-        public static final int putao_texi=0x7f0902a0;
-        public static final int putao_texi_driver_receive=0x7f090398;
-        public static final int putao_texi_driver_receive_content=0x7f090399;
-        public static final int putao_texi_no_driver_receive=0x7f09039a;
-        public static final int putao_texi_no_driver_receive_content=0x7f09039b;
+        public static final int putao_texi=0x7f0902a1;
+        public static final int putao_texi_driver_receive=0x7f090399;
+        public static final int putao_texi_driver_receive_content=0x7f09039a;
+        public static final int putao_texi_no_driver_receive=0x7f09039b;
+        public static final int putao_texi_no_driver_receive_content=0x7f09039c;
         /**  打车 
  打车 
          */
-        public static final int putao_texi_pay=0x7f090387;
-        public static final int putao_texi_pay_car_number=0x7f09038e;
-        public static final int putao_texi_pay_cash=0x7f09038a;
-        public static final int putao_texi_pay_confirm_paycash=0x7f090397;
-        public static final int putao_texi_pay_driver_name=0x7f09038f;
-        public static final int putao_texi_pay_failure=0x7f09038c;
-        public static final int putao_texi_pay_hint=0x7f090389;
-        public static final int putao_texi_pay_input_money=0x7f090394;
-        public static final int putao_texi_pay_money=0x7f090388;
-        public static final int putao_texi_pay_money_yuan=0x7f090392;
-        public static final int putao_texi_pay_net_error=0x7f090395;
-        public static final int putao_texi_pay_no_price=0x7f09039c;
-        public static final int putao_texi_pay_offer=0x7f090390;
-        public static final int putao_texi_pay_offer_kuaidi=0x7f090391;
-        public static final int putao_texi_pay_price=0x7f090396;
-        public static final int putao_texi_pay_success=0x7f09038b;
-        public static final int putao_texi_pay_type=0x7f09038d;
-        public static final int putao_texi_pay_type_alipay=0x7f090393;
-        public static final int putao_texi_where_start=0x7f09039d;
+        public static final int putao_texi_pay=0x7f090388;
+        public static final int putao_texi_pay_car_number=0x7f09038f;
+        public static final int putao_texi_pay_cash=0x7f09038b;
+        public static final int putao_texi_pay_confirm_paycash=0x7f090398;
+        public static final int putao_texi_pay_driver_name=0x7f090390;
+        public static final int putao_texi_pay_failure=0x7f09038d;
+        public static final int putao_texi_pay_hint=0x7f09038a;
+        public static final int putao_texi_pay_input_money=0x7f090395;
+        public static final int putao_texi_pay_money=0x7f090389;
+        public static final int putao_texi_pay_money_yuan=0x7f090393;
+        public static final int putao_texi_pay_net_error=0x7f090396;
+        public static final int putao_texi_pay_no_price=0x7f09039d;
+        public static final int putao_texi_pay_offer=0x7f090391;
+        public static final int putao_texi_pay_offer_kuaidi=0x7f090392;
+        public static final int putao_texi_pay_price=0x7f090397;
+        public static final int putao_texi_pay_success=0x7f09038c;
+        public static final int putao_texi_pay_type=0x7f09038e;
+        public static final int putao_texi_pay_type_alipay=0x7f090394;
+        public static final int putao_texi_where_start=0x7f09039e;
         public static final int putao_text_failed_express=0x7f090221;
         public static final int putao_text_from_58=0x7f09021f;
-        public static final int putao_text_from_elong=0x7f090654;
+        public static final int putao_text_from_elong=0x7f090655;
         public static final int putao_text_from_tongcheng=0x7f090220;
-        public static final int putao_text_login_cool_cloud_name=0x7f090657;
-        public static final int putao_text_login_phone_name=0x7f090656;
-        public static final int putao_text_need_one_toast=0x7f09065b;
+        public static final int putao_text_login_cool_cloud_name=0x7f090658;
+        public static final int putao_text_login_phone_name=0x7f090657;
+        public static final int putao_text_need_one_toast=0x7f09065c;
         public static final int putao_text_shared_str_addr=0x7f09021e;
-        public static final int putao_text_shared_str_share_to=0x7f0902f0;
+        public static final int putao_text_shared_str_share_to=0x7f0902f1;
         public static final int putao_text_shared_str_tel=0x7f09021c;
         public static final int putao_text_shared_str_url=0x7f09021d;
         public static final int putao_text_status_unlogin=0x7f090223;
-        public static final int putao_text_tip_account=0x7f090655;
-        public static final int putao_text_tip_account_change=0x7f09065a;
-        public static final int putao_time=0x7f090678;
-        public static final int putao_time_bu=0x7f090439;
-        public static final int putao_time_full=0x7f090438;
-        public static final int putao_time_suffix=0x7f09058d;
-        public static final int putao_time_title=0x7f09043a;
-        public static final int putao_title_show_login_kuyun_dialog=0x7f09065c;
-        public static final int putao_to=0x7f090586;
+        public static final int putao_text_tip_account=0x7f090656;
+        public static final int putao_text_tip_account_change=0x7f09065b;
+        public static final int putao_time=0x7f090679;
+        public static final int putao_time_bu=0x7f09043a;
+        public static final int putao_time_full=0x7f090439;
+        public static final int putao_time_suffix=0x7f09058e;
+        public static final int putao_time_title=0x7f09043b;
+        public static final int putao_title_show_login_kuyun_dialog=0x7f09065d;
+        public static final int putao_to=0x7f090587;
         /**  快递扫描 
          */
-        public static final int putao_top_hint=0x7f090354;
+        public static final int putao_top_hint=0x7f090355;
         /**  充流量  
          */
-        public static final int putao_traffic_authcode_hint=0x7f09061f;
-        public static final int putao_traffic_authcode_title=0x7f090620;
-        public static final int putao_traffic_car_city=0x7f090739;
-        public static final int putao_traffic_car_number=0x7f090704;
-        public static final int putao_traffic_choose_none=0x7f09070e;
-        public static final int putao_traffic_commit=0x7f090702;
+        public static final int putao_traffic_authcode_hint=0x7f090620;
+        public static final int putao_traffic_authcode_title=0x7f090621;
+        public static final int putao_traffic_car_city=0x7f09073a;
+        public static final int putao_traffic_car_number=0x7f090705;
+        public static final int putao_traffic_choose_none=0x7f09070f;
+        public static final int putao_traffic_commit=0x7f090703;
         public static final int putao_traffic_coupon_data=0x7f0900eb;
-        public static final int putao_traffic_detail_title=0x7f09070b;
-        public static final int putao_traffic_edit_hint_input_car_number=0x7f090705;
-        public static final int putao_traffic_empty_no_car_info=0x7f09070a;
-        public static final int putao_traffic_empty_text=0x7f09070d;
-        public static final int putao_traffic_engine_number=0x7f090706;
-        public static final int putao_traffic_frame_number=0x7f090707;
-        public static final int putao_traffic_input_engine_number=0x7f090708;
-        public static final int putao_traffic_input_frame_number=0x7f090709;
-        public static final int putao_traffic_location=0x7f090677;
-        public static final int putao_traffic_offence=0x7f0902aa;
-        public static final int putao_traffic_offence_add=0x7f09071c;
-        public static final int putao_traffic_offence_add_car=0x7f09072e;
-        public static final int putao_traffic_offence_add_car_hint=0x7f09072f;
-        public static final int putao_traffic_offence_add_fail=0x7f090724;
-        public static final int putao_traffic_offence_address=0x7f090737;
-        public static final int putao_traffic_offence_body_num=0x7f090715;
-        public static final int putao_traffic_offence_body_num_hint=0x7f090716;
-        public static final int putao_traffic_offence_car_already_exsit=0x7f090722;
-        public static final int putao_traffic_offence_car_info=0x7f090695;
-        public static final int putao_traffic_offence_car_no=0x7f090711;
-        public static final int putao_traffic_offence_car_no_hint=0x7f090712;
-        public static final int putao_traffic_offence_check_title=0x7f0902a2;
-        public static final int putao_traffic_offence_deduct=0x7f090732;
-        public static final int putao_traffic_offence_engine_num=0x7f090713;
-        public static final int putao_traffic_offence_engine_num_hint=0x7f090714;
-        public static final int putao_traffic_offence_input_bodyno=0x7f09072c;
-        public static final int putao_traffic_offence_input_carno=0x7f09072b;
-        public static final int putao_traffic_offence_input_vcode=0x7f09072d;
-        public static final int putao_traffic_offence_kalading=0x7f0902a4;
-        public static final int putao_traffic_offence_kalading_title=0x7f0902a5;
-        public static final int putao_traffic_offence_location=0x7f090729;
-        public static final int putao_traffic_offence_net_error=0x7f090720;
-        public static final int putao_traffic_offence_new=0x7f0902a8;
-        public static final int putao_traffic_offence_none=0x7f090733;
-        public static final int putao_traffic_offence_one=0x7f0902a9;
-        public static final int putao_traffic_offence_phone_hint=0x7f09071e;
-        public static final int putao_traffic_offence_point=0x7f09067b;
-        public static final int putao_traffic_offence_punish=0x7f090730;
-        public static final int putao_traffic_offence_query_all=0x7f09067a;
-        public static final int putao_traffic_offence_query_fail=0x7f090723;
-        public static final int putao_traffic_offence_query_limit=0x7f090721;
-        public static final int putao_traffic_offence_query_success=0x7f090725;
-        public static final int putao_traffic_offence_recent_have=0x7f090734;
-        public static final int putao_traffic_offence_recent_none=0x7f090735;
-        public static final int putao_traffic_offence_refresh_fail=0x7f090736;
+        public static final int putao_traffic_detail_title=0x7f09070c;
+        public static final int putao_traffic_edit_hint_input_car_number=0x7f090706;
+        public static final int putao_traffic_empty_no_car_info=0x7f09070b;
+        public static final int putao_traffic_empty_text=0x7f09070e;
+        public static final int putao_traffic_engine_number=0x7f090707;
+        public static final int putao_traffic_frame_number=0x7f090708;
+        public static final int putao_traffic_input_engine_number=0x7f090709;
+        public static final int putao_traffic_input_frame_number=0x7f09070a;
+        public static final int putao_traffic_location=0x7f090678;
+        public static final int putao_traffic_offence=0x7f0902ab;
+        public static final int putao_traffic_offence_add=0x7f09071d;
+        public static final int putao_traffic_offence_add_car=0x7f09072f;
+        public static final int putao_traffic_offence_add_car_hint=0x7f090730;
+        public static final int putao_traffic_offence_add_fail=0x7f090725;
+        public static final int putao_traffic_offence_address=0x7f090738;
+        public static final int putao_traffic_offence_body_num=0x7f090716;
+        public static final int putao_traffic_offence_body_num_hint=0x7f090717;
+        public static final int putao_traffic_offence_car_already_exsit=0x7f090723;
+        public static final int putao_traffic_offence_car_info=0x7f090696;
+        public static final int putao_traffic_offence_car_no=0x7f090712;
+        public static final int putao_traffic_offence_car_no_hint=0x7f090713;
+        public static final int putao_traffic_offence_check_title=0x7f0902a3;
+        public static final int putao_traffic_offence_deduct=0x7f090733;
+        public static final int putao_traffic_offence_engine_num=0x7f090714;
+        public static final int putao_traffic_offence_engine_num_hint=0x7f090715;
+        public static final int putao_traffic_offence_input_bodyno=0x7f09072d;
+        public static final int putao_traffic_offence_input_carno=0x7f09072c;
+        public static final int putao_traffic_offence_input_vcode=0x7f09072e;
+        public static final int putao_traffic_offence_kalading=0x7f0902a5;
+        public static final int putao_traffic_offence_kalading_title=0x7f0902a6;
+        public static final int putao_traffic_offence_location=0x7f09072a;
+        public static final int putao_traffic_offence_net_error=0x7f090721;
+        public static final int putao_traffic_offence_new=0x7f0902a9;
+        public static final int putao_traffic_offence_none=0x7f090734;
+        public static final int putao_traffic_offence_one=0x7f0902aa;
+        public static final int putao_traffic_offence_phone_hint=0x7f09071f;
+        public static final int putao_traffic_offence_point=0x7f09067c;
+        public static final int putao_traffic_offence_punish=0x7f090731;
+        public static final int putao_traffic_offence_query_all=0x7f09067b;
+        public static final int putao_traffic_offence_query_fail=0x7f090724;
+        public static final int putao_traffic_offence_query_limit=0x7f090722;
+        public static final int putao_traffic_offence_query_success=0x7f090726;
+        public static final int putao_traffic_offence_recent_have=0x7f090735;
+        public static final int putao_traffic_offence_recent_none=0x7f090736;
+        public static final int putao_traffic_offence_refresh_fail=0x7f090737;
         /**  查违章 V2.2新增
  查违章 
          */
-        public static final int putao_traffic_offence_region=0x7f09070f;
-        public static final int putao_traffic_offence_region_hint=0x7f090710;
-        public static final int putao_traffic_offence_report_fail=0x7f09070c;
-        public static final int putao_traffic_offence_save=0x7f0902a3;
-        public static final int putao_traffic_offence_select_location=0x7f09072a;
-        public static final int putao_traffic_offence_select_province=0x7f09071d;
-        public static final int putao_traffic_offence_setting=0x7f090694;
-        public static final int putao_traffic_offence_setting_hint=0x7f0902a7;
-        public static final int putao_traffic_offence_setting_hint_nocar=0x7f0902a6;
-        public static final int putao_traffic_offence_time=0x7f090738;
-        public static final int putao_traffic_offence_title=0x7f090693;
-        public static final int putao_traffic_offence_vcode=0x7f090717;
-        public static final int putao_traffic_offence_vcode_dialog_query_btn=0x7f09071a;
-        public static final int putao_traffic_offence_vcode_dialog_title=0x7f090719;
-        public static final int putao_traffic_offence_vcode_hint=0x7f090718;
-        public static final int putao_traffic_offence_vcode_wrong=0x7f09071b;
-        public static final int putao_traffic_offence_violation=0x7f090731;
-        public static final int putao_traffic_offence_wrong_car_info=0x7f09071f;
-        public static final int putao_traffic_per_value=0x7f090613;
-        public static final int putao_traffic_query_area=0x7f090701;
-        public static final int putao_traffic_select=0x7f090703;
-        public static final int putao_traffic_setting_hint=0x7f090683;
+        public static final int putao_traffic_offence_region=0x7f090710;
+        public static final int putao_traffic_offence_region_hint=0x7f090711;
+        public static final int putao_traffic_offence_report_fail=0x7f09070d;
+        public static final int putao_traffic_offence_save=0x7f0902a4;
+        public static final int putao_traffic_offence_select_location=0x7f09072b;
+        public static final int putao_traffic_offence_select_province=0x7f09071e;
+        public static final int putao_traffic_offence_setting=0x7f090695;
+        public static final int putao_traffic_offence_setting_hint=0x7f0902a8;
+        public static final int putao_traffic_offence_setting_hint_nocar=0x7f0902a7;
+        public static final int putao_traffic_offence_time=0x7f090739;
+        public static final int putao_traffic_offence_title=0x7f090694;
+        public static final int putao_traffic_offence_vcode=0x7f090718;
+        public static final int putao_traffic_offence_vcode_dialog_query_btn=0x7f09071b;
+        public static final int putao_traffic_offence_vcode_dialog_title=0x7f09071a;
+        public static final int putao_traffic_offence_vcode_hint=0x7f090719;
+        public static final int putao_traffic_offence_vcode_wrong=0x7f09071c;
+        public static final int putao_traffic_offence_violation=0x7f090732;
+        public static final int putao_traffic_offence_wrong_car_info=0x7f090720;
+        public static final int putao_traffic_per_value=0x7f090614;
+        public static final int putao_traffic_query_area=0x7f090702;
+        public static final int putao_traffic_select=0x7f090704;
+        public static final int putao_traffic_setting_hint=0x7f090684;
         public static final int putao_traffic_tips_first_mobile=0x7f0900e2;
         public static final int putao_traffic_tips_first_mobile_server=0x7f0900e4;
         public static final int putao_traffic_tips_first_telecom=0x7f0900de;
         public static final int putao_traffic_tips_first_unicom=0x7f0900e0;
-        public static final int putao_traffic_tips_mobile=0x7f090614;
+        public static final int putao_traffic_tips_mobile=0x7f090615;
         public static final int putao_traffic_tips_provider=0x7f0900e9;
         public static final int putao_traffic_tips_second_mobile=0x7f0900e3;
         public static final int putao_traffic_tips_second_telecom=0x7f0900df;
         public static final int putao_traffic_tips_second_unicom=0x7f0900e1;
-        public static final int putao_traffic_type_unkown=0x7f090612;
-        public static final int putao_traffic_violation_cars_info_title=0x7f0902a1;
-        public static final int putao_traffic_violation_fine=0x7f090727;
-        public static final int putao_traffic_violation_no=0x7f090726;
-        public static final int putao_traffic_violation_points=0x7f090728;
-        public static final int putao_train=0x7f090292;
-        public static final int putao_train_aftertommorow_date=0x7f090758;
-        public static final int putao_train_cancel=0x7f090767;
-        public static final int putao_train_cancel_str=0x7f09076a;
-        public static final int putao_train_chupiaoed=0x7f090760;
-        public static final int putao_train_chupiaoing=0x7f09075f;
-        public static final int putao_train_ctype_0=0x7f09075a;
-        public static final int putao_train_ctype_1=0x7f09075b;
-        public static final int putao_train_ctype_2=0x7f09075c;
-        public static final int putao_train_ctype_3=0x7f09075d;
-        public static final int putao_train_deal_closed=0x7f090762;
-        public static final int putao_train_expire=0x7f090768;
+        public static final int putao_traffic_type_unkown=0x7f090613;
+        public static final int putao_traffic_violation_cars_info_title=0x7f0902a2;
+        public static final int putao_traffic_violation_fine=0x7f090728;
+        public static final int putao_traffic_violation_no=0x7f090727;
+        public static final int putao_traffic_violation_points=0x7f090729;
+        public static final int putao_train=0x7f090293;
+        public static final int putao_train_aftertommorow_date=0x7f090759;
+        public static final int putao_train_cancel=0x7f090768;
+        public static final int putao_train_cancel_str=0x7f09076b;
+        public static final int putao_train_chupiaoed=0x7f090761;
+        public static final int putao_train_chupiaoing=0x7f090760;
+        public static final int putao_train_ctype_0=0x7f09075b;
+        public static final int putao_train_ctype_1=0x7f09075c;
+        public static final int putao_train_ctype_2=0x7f09075d;
+        public static final int putao_train_ctype_3=0x7f09075e;
+        public static final int putao_train_deal_closed=0x7f090763;
+        public static final int putao_train_expire=0x7f090769;
         public static final int putao_train_history_trip=0x7f09020f;
         public static final int putao_train_journey_depart_alert=0x7f09020a;
         public static final int putao_train_quhua=0x7f09020b;
-        public static final int putao_train_reject=0x7f090769;
-        public static final int putao_train_select_hint=0x7f09073d;
+        public static final int putao_train_reject=0x7f09076a;
+        public static final int putao_train_select_hint=0x7f09073e;
         public static final int putao_train_shixiaqu=0x7f09020c;
-        public static final int putao_train_start_date=0x7f090756;
-        public static final int putao_train_start_date_hint=0x7f090636;
+        public static final int putao_train_start_date=0x7f090757;
+        public static final int putao_train_start_date_hint=0x7f090637;
         public static final int putao_train_subscribe=0x7f09020e;
-        public static final int putao_train_title=0x7f09073e;
-        public static final int putao_train_today_date=0x7f090759;
-        public static final int putao_train_tommorrow_date=0x7f090757;
+        public static final int putao_train_title=0x7f09073f;
+        public static final int putao_train_today_date=0x7f09075a;
+        public static final int putao_train_tommorrow_date=0x7f090758;
         public static final int putao_train_train_number_hint=0x7f090209;
-        public static final int putao_train_tuipiaoed=0x7f090761;
+        public static final int putao_train_tuipiaoed=0x7f090762;
         public static final int putao_train_xian=0x7f09020d;
-        public static final int putao_traintriket=0x7f09073a;
-        public static final int putao_traintriket_add=0x7f090753;
-        public static final int putao_traintriket_add_address=0x7f090740;
-        public static final int putao_traintriket_address=0x7f09073f;
-        public static final int putao_traintriket_birthday=0x7f09074b;
-        public static final int putao_traintriket_click=0x7f090743;
-        public static final int putao_traintriket_confirm_delete_address=0x7f090742;
-        public static final int putao_traintriket_delete_address=0x7f090741;
-        public static final int putao_traintriket_detailaddress=0x7f09074f;
-        public static final int putao_traintriket_district=0x7f090750;
-        public static final int putao_traintriket_district_select_hint=0x7f090755;
-        public static final int putao_traintriket_hint=0x7f090748;
-        public static final int putao_traintriket_hint_select=0x7f090749;
-        public static final int putao_traintriket_id=0x7f09074c;
-        public static final int putao_traintriket_idtype=0x7f09074a;
-        public static final int putao_traintriket_noarrivecity=0x7f090744;
-        public static final int putao_traintriket_nostation=0x7f090745;
-        public static final int putao_traintriket_notnull=0x7f09074e;
-        public static final int putao_traintriket_order_title=0x7f09073b;
-        public static final int putao_traintriket_phone=0x7f09074d;
-        public static final int putao_traintriket_same_err=0x7f090746;
-        public static final int putao_traintriket_selecterr=0x7f090754;
-        public static final int putao_traintriket_serverbusy=0x7f090752;
-        public static final int putao_traintriket_title=0x7f090751;
-        public static final int putao_traintriket_username=0x7f090747;
-        public static final int putao_uber_name=0x7f0906d5;
-        public static final int putao_uber_unfinish=0x7f0906d6;
+        public static final int putao_traintriket=0x7f09073b;
+        public static final int putao_traintriket_add=0x7f090754;
+        public static final int putao_traintriket_add_address=0x7f090741;
+        public static final int putao_traintriket_address=0x7f090740;
+        public static final int putao_traintriket_birthday=0x7f09074c;
+        public static final int putao_traintriket_click=0x7f090744;
+        public static final int putao_traintriket_confirm_delete_address=0x7f090743;
+        public static final int putao_traintriket_delete_address=0x7f090742;
+        public static final int putao_traintriket_detailaddress=0x7f090750;
+        public static final int putao_traintriket_district=0x7f090751;
+        public static final int putao_traintriket_district_select_hint=0x7f090756;
+        public static final int putao_traintriket_hint=0x7f090749;
+        public static final int putao_traintriket_hint_select=0x7f09074a;
+        public static final int putao_traintriket_id=0x7f09074d;
+        public static final int putao_traintriket_idtype=0x7f09074b;
+        public static final int putao_traintriket_noarrivecity=0x7f090745;
+        public static final int putao_traintriket_nostation=0x7f090746;
+        public static final int putao_traintriket_notnull=0x7f09074f;
+        public static final int putao_traintriket_order_title=0x7f09073c;
+        public static final int putao_traintriket_phone=0x7f09074e;
+        public static final int putao_traintriket_same_err=0x7f090747;
+        public static final int putao_traintriket_selecterr=0x7f090755;
+        public static final int putao_traintriket_serverbusy=0x7f090753;
+        public static final int putao_traintriket_title=0x7f090752;
+        public static final int putao_traintriket_username=0x7f090748;
+        public static final int putao_uber_name=0x7f0906d6;
+        public static final int putao_uber_unfinish=0x7f0906d7;
         public static final int putao_unicom=0x7f09005b;
         public static final int putao_unicom_service=0x7f09005e;
-        public static final int putao_unknow_name=0x7f090256;
-        public static final int putao_use_local_place=0x7f0906ce;
-        public static final int putao_user_tel_charge_coupon=0x7f090661;
+        public static final int putao_unknow_name=0x7f090257;
+        public static final int putao_use_local_place=0x7f0906cf;
+        public static final int putao_user_tel_charge_coupon=0x7f090662;
         public static final int putao_user_tel_charge_coupon_error=0x7f09022f;
-        public static final int putao_valid_date_to=0x7f0903ae;
-        public static final int putao_vehicle_info_setting=0x7f09067c;
+        public static final int putao_valid_date_to=0x7f0903af;
+        public static final int putao_vehicle_info_setting=0x7f09067d;
         /**  我的账户 
          */
-        public static final int putao_verification_code=0x7f090644;
+        public static final int putao_verification_code=0x7f090645;
         /**  定义自助验证码短信尾巴 
          */
-        public static final int putao_verification_code_from=0x7f090645;
-        public static final int putao_verification_phone=0x7f0906dc;
+        public static final int putao_verification_code_from=0x7f090646;
+        public static final int putao_verification_phone=0x7f0906dd;
         public static final int putao_verify_code_error=0x7f09003a;
         public static final int putao_verify_new_phone=0x7f090039;
         public static final int putao_verify_old_phone=0x7f090038;
-        public static final int putao_vibrate_notify=0x7f09028f;
-        public static final int putao_voucher_attention=0x7f090240;
-        public static final int putao_voucher_cannot_use=0x7f09024e;
-        public static final int putao_voucher_center=0x7f0903ce;
-        public static final int putao_voucher_center_back=0x7f0906c4;
-        public static final int putao_voucher_center_free_getvoucher=0x7f0903d1;
-        public static final int putao_voucher_center_getavoucher=0x7f0903d9;
-        public static final int putao_voucher_center_getting=0x7f0903d4;
-        public static final int putao_voucher_center_has_getted=0x7f0903d3;
-        public static final int putao_voucher_center_has_norest=0x7f0903d2;
-        public static final int putao_voucher_center_hasgetted_tip=0x7f0903dc;
-        public static final int putao_voucher_center_lookdetail=0x7f0903d5;
-        public static final int putao_voucher_center_noreset_tip=0x7f0903db;
-        public static final int putao_voucher_center_noservice=0x7f0903da;
-        public static final int putao_voucher_center_novouchertoget=0x7f0903d6;
-        public static final int putao_voucher_center_originalprice=0x7f0903d0;
-        public static final int putao_voucher_center_recommend=0x7f0903d7;
-        public static final int putao_voucher_center_remen=0x7f0903d8;
-        public static final int putao_voucher_center_sharetofriend=0x7f0906c5;
-        public static final int putao_voucher_center_validdate=0x7f0903cf;
+        public static final int putao_vibrate_notify=0x7f090290;
+        public static final int putao_voucher_attention=0x7f090241;
+        public static final int putao_voucher_cannot_use=0x7f09024f;
+        public static final int putao_voucher_center=0x7f0903cf;
+        public static final int putao_voucher_center_back=0x7f0906c5;
+        public static final int putao_voucher_center_free_getvoucher=0x7f0903d2;
+        public static final int putao_voucher_center_getavoucher=0x7f0903da;
+        public static final int putao_voucher_center_getting=0x7f0903d5;
+        public static final int putao_voucher_center_has_getted=0x7f0903d4;
+        public static final int putao_voucher_center_has_norest=0x7f0903d3;
+        public static final int putao_voucher_center_hasgetted_tip=0x7f0903dd;
+        public static final int putao_voucher_center_lookdetail=0x7f0903d6;
+        public static final int putao_voucher_center_noreset_tip=0x7f0903dc;
+        public static final int putao_voucher_center_noservice=0x7f0903db;
+        public static final int putao_voucher_center_novouchertoget=0x7f0903d7;
+        public static final int putao_voucher_center_originalprice=0x7f0903d1;
+        public static final int putao_voucher_center_recommend=0x7f0903d8;
+        public static final int putao_voucher_center_remen=0x7f0903d9;
+        public static final int putao_voucher_center_sharetofriend=0x7f0906c6;
+        public static final int putao_voucher_center_validdate=0x7f0903d0;
         public static final int putao_voucher_congratulation=0x7f09023a;
         public static final int putao_voucher_consume_limit=0x7f090236;
-        public static final int putao_voucher_convert=0x7f090241;
+        public static final int putao_voucher_convert=0x7f090242;
         public static final int putao_voucher_convert_title=0x7f090239;
-        public static final int putao_voucher_copy=0x7f09024c;
-        public static final int putao_voucher_detail=0x7f090242;
-        public static final int putao_voucher_detail_btn_text=0x7f090245;
-        public static final int putao_voucher_expire=0x7f0903ed;
+        public static final int putao_voucher_copy=0x7f09024d;
+        public static final int putao_voucher_detail=0x7f090243;
+        public static final int putao_voucher_detail_btn_text=0x7f090246;
+        public static final int putao_voucher_expire=0x7f0903ee;
         public static final int putao_voucher_expire_date=0x7f090232;
-        public static final int putao_voucher_expired=0x7f090244;
+        public static final int putao_voucher_expired=0x7f090245;
         public static final int putao_voucher_get_activity=0x7f090233;
         public static final int putao_voucher_get_date=0x7f090234;
-        public static final int putao_voucher_get_list_succ=0x7f09023c;
+        public static final int putao_voucher_get_list_succ=0x7f09023d;
         public static final int putao_voucher_getsucc=0x7f09023b;
-        public static final int putao_voucher_good_luck=0x7f090248;
-        public static final int putao_voucher_has_copyed=0x7f09024d;
+        public static final int putao_voucher_good_luck=0x7f090249;
+        public static final int putao_voucher_has_copyed=0x7f09024e;
         public static final int putao_voucher_history_list_empty=0x7f090231;
-        public static final int putao_voucher_input_code=0x7f09023f;
+        public static final int putao_voucher_input_code=0x7f090240;
         public static final int putao_voucher_list_empty=0x7f090230;
-        public static final int putao_voucher_lose_efficacy=0x7f090434;
-        public static final int putao_voucher_luck_code=0x7f09024a;
-        public static final int putao_voucher_luck_open=0x7f090249;
-        public static final int putao_voucher_lucky=0x7f090246;
-        public static final int putao_voucher_pity=0x7f090247;
+        public static final int putao_voucher_list_succ=0x7f09023c;
+        public static final int putao_voucher_lose_efficacy=0x7f090435;
+        public static final int putao_voucher_luck_code=0x7f09024b;
+        public static final int putao_voucher_luck_open=0x7f09024a;
+        public static final int putao_voucher_lucky=0x7f090247;
+        public static final int putao_voucher_pity=0x7f090248;
         public static final int putao_voucher_use_history=0x7f090237;
         public static final int putao_voucher_use_role=0x7f090235;
-        public static final int putao_voucher_used=0x7f090243;
-        public static final int putao_voucher_voucher_code=0x7f09024b;
-        public static final int putao_vupdate_cancel=0x7f090340;
-        public static final int putao_vupdate_check_cancel_update=0x7f09033d;
-        public static final int putao_vupdate_check_confirm_update=0x7f09033e;
-        public static final int putao_vupdate_check_error=0x7f09033b;
+        public static final int putao_voucher_used=0x7f090244;
+        public static final int putao_voucher_voucher_code=0x7f09024c;
+        public static final int putao_vupdate_cancel=0x7f090341;
+        public static final int putao_vupdate_check_cancel_update=0x7f09033e;
+        public static final int putao_vupdate_check_confirm_update=0x7f09033f;
+        public static final int putao_vupdate_check_error=0x7f09033c;
         /**  版本更新 
          */
-        public static final int putao_vupdate_check_no_new_version=0x7f09033a;
+        public static final int putao_vupdate_check_no_new_version=0x7f09033b;
         /**  版本更新 
          */
-        public static final int putao_vupdate_check_no_version=0x7f0906a0;
-        public static final int putao_vupdate_check_sd_card_status=0x7f090341;
-        public static final int putao_vupdate_check_server_error=0x7f090343;
-        public static final int putao_vupdate_check_title=0x7f09033c;
-        public static final int putao_vupdate_checking=0x7f090344;
-        public static final int putao_vupdate_download_error=0x7f090342;
-        public static final int putao_vupdate_download_progress_txt=0x7f090345;
-        public static final int putao_vupdate_download_sdcard_unavailable=0x7f0906a2;
-        public static final int putao_vupdate_download_title=0x7f0906a1;
-        public static final int putao_vupdate_downloading=0x7f09033f;
-        public static final int putao_wait_for_pay=0x7f09075e;
-        public static final int putao_wait_pay_tips=0x7f09041f;
+        public static final int putao_vupdate_check_no_version=0x7f0906a1;
+        public static final int putao_vupdate_check_sd_card_status=0x7f090342;
+        public static final int putao_vupdate_check_server_error=0x7f090344;
+        public static final int putao_vupdate_check_title=0x7f09033d;
+        public static final int putao_vupdate_checking=0x7f090345;
+        public static final int putao_vupdate_download_error=0x7f090343;
+        public static final int putao_vupdate_download_progress_txt=0x7f090346;
+        public static final int putao_vupdate_download_sdcard_unavailable=0x7f0906a3;
+        public static final int putao_vupdate_download_title=0x7f0906a2;
+        public static final int putao_vupdate_downloading=0x7f090340;
+        public static final int putao_wait_for_pay=0x7f09075f;
+        public static final int putao_wait_pay_tips=0x7f090420;
         public static final int putao_waiting=0x7f09001b;
-        public static final int putao_water_eg_tag_RMB=0x7f090787;
-        public static final int putao_water_eg_tag_bill_tip=0x7f090773;
-        public static final int putao_water_eg_tag_city_no_data=0x7f090776;
-        public static final int putao_water_eg_tag_city_tip=0x7f09076f;
-        public static final int putao_water_eg_tag_company_list=0x7f090777;
-        public static final int putao_water_eg_tag_deal_failed=0x7f09077a;
-        public static final int putao_water_eg_tag_deal_failed_cancel=0x7f09077e;
-        public static final int putao_water_eg_tag_deal_failed_hint=0x7f09077c;
-        public static final int putao_water_eg_tag_deal_failed_hint_weixin=0x7f09077d;
-        public static final int putao_water_eg_tag_deal_failed_tips_for_pending=0x7f09077f;
-        public static final int putao_water_eg_tag_deal_result_money_hint=0x7f090783;
-        public static final int putao_water_eg_tag_deal_result_serialnum_hint=0x7f090780;
-        public static final int putao_water_eg_tag_deal_result_unit_hint=0x7f090781;
-        public static final int putao_water_eg_tag_deal_result_usercode_hint=0x7f090782;
-        public static final int putao_water_eg_tag_deal_success=0x7f090779;
-        public static final int putao_water_eg_tag_deal_success_hint=0x7f09077b;
-        public static final int putao_water_eg_tag_history=0x7f090778;
-        public static final int putao_water_eg_tag_no_bill_text=0x7f090788;
-        public static final int putao_water_eg_tag_no_city=0x7f090775;
-        public static final int putao_water_eg_tag_no_data=0x7f090789;
-        public static final int putao_water_eg_tag_please_check_network=0x7f090786;
-        public static final int putao_water_eg_tag_please_input_info=0x7f090785;
-        public static final int putao_water_eg_tag_subject_for_alipay=0x7f090784;
+        public static final int putao_water_eg_tag_RMB=0x7f090788;
+        public static final int putao_water_eg_tag_bill_tip=0x7f090774;
+        public static final int putao_water_eg_tag_city_no_data=0x7f090777;
+        public static final int putao_water_eg_tag_city_tip=0x7f090770;
+        public static final int putao_water_eg_tag_company_list=0x7f090778;
+        public static final int putao_water_eg_tag_deal_failed=0x7f09077b;
+        public static final int putao_water_eg_tag_deal_failed_cancel=0x7f09077f;
+        public static final int putao_water_eg_tag_deal_failed_hint=0x7f09077d;
+        public static final int putao_water_eg_tag_deal_failed_hint_weixin=0x7f09077e;
+        public static final int putao_water_eg_tag_deal_failed_tips_for_pending=0x7f090780;
+        public static final int putao_water_eg_tag_deal_result_money_hint=0x7f090784;
+        public static final int putao_water_eg_tag_deal_result_serialnum_hint=0x7f090781;
+        public static final int putao_water_eg_tag_deal_result_unit_hint=0x7f090782;
+        public static final int putao_water_eg_tag_deal_result_usercode_hint=0x7f090783;
+        public static final int putao_water_eg_tag_deal_success=0x7f09077a;
+        public static final int putao_water_eg_tag_deal_success_hint=0x7f09077c;
+        public static final int putao_water_eg_tag_history=0x7f090779;
+        public static final int putao_water_eg_tag_no_bill_text=0x7f090789;
+        public static final int putao_water_eg_tag_no_city=0x7f090776;
+        public static final int putao_water_eg_tag_no_data=0x7f09078a;
+        public static final int putao_water_eg_tag_please_check_network=0x7f090787;
+        public static final int putao_water_eg_tag_please_input_info=0x7f090786;
+        public static final int putao_water_eg_tag_subject_for_alipay=0x7f090785;
         /**  水电煤 
          */
-        public static final int putao_water_eg_tag_title=0x7f09076b;
-        public static final int putao_water_eg_tag_title_electricity=0x7f09076d;
-        public static final int putao_water_eg_tag_title_gas=0x7f09076e;
-        public static final int putao_water_eg_tag_title_water=0x7f09076c;
-        public static final int putao_water_eg_tag_unit_tip=0x7f090770;
-        public static final int putao_water_eg_tag_user_code_tip=0x7f090771;
-        public static final int putao_water_eg_tag_user_edit_tip=0x7f090774;
-        public static final int putao_water_eg_tag_user_fee_tip=0x7f090772;
-        public static final int putao_weather=0x7f0902cf;
-        public static final int putao_weather_air=0x7f0902df;
-        public static final int putao_weather_city=0x7f0902cd;
-        public static final int putao_weather_cold=0x7f0902eb;
-        public static final int putao_weather_detail=0x7f0902c7;
-        public static final int putao_weather_notify=0x7f0902c6;
-        public static final int putao_weather_notify_air=0x7f0902ca;
-        public static final int putao_weather_notify_rain=0x7f0902c8;
-        public static final int putao_weather_notify_snow=0x7f0902c9;
-        public static final int putao_weather_other_day=0x7f0902e0;
-        public static final int putao_weather_rain=0x7f0902cb;
-        public static final int putao_weather_setting=0x7f0902f4;
-        public static final int putao_weather_share_to_frends=0x7f0902f1;
-        public static final int putao_weather_snow=0x7f0902cc;
-        public static final int putao_weather_sport=0x7f0902ec;
-        public static final int putao_weather_status_detail=0x7f090691;
-        public static final int putao_weather_sun=0x7f0902ed;
-        public static final int putao_weather_temperature=0x7f0902de;
-        public static final int putao_weather_today_weather=0x7f0902e1;
-        public static final int putao_weather_trip=0x7f0902ea;
-        public static final int putao_weather_wash_car=0x7f0902e9;
-        public static final int putao_weather_wear=0x7f0902e8;
-        public static final int putao_weg_fee_detail=0x7f0902fb;
-        public static final int putao_weg_fee_electric=0x7f0902f8;
-        public static final int putao_weg_fee_gas=0x7f0902f9;
-        public static final int putao_weg_fee_water=0x7f0902f7;
-        public static final int putao_weg_title=0x7f0902f6;
-        public static final int putao_weg_user_id=0x7f0902fa;
-        public static final int putao_yellow_page_about=0x7f0905dc;
+        public static final int putao_water_eg_tag_title=0x7f09076c;
+        public static final int putao_water_eg_tag_title_electricity=0x7f09076e;
+        public static final int putao_water_eg_tag_title_gas=0x7f09076f;
+        public static final int putao_water_eg_tag_title_water=0x7f09076d;
+        public static final int putao_water_eg_tag_unit_tip=0x7f090771;
+        public static final int putao_water_eg_tag_user_code_tip=0x7f090772;
+        public static final int putao_water_eg_tag_user_edit_tip=0x7f090775;
+        public static final int putao_water_eg_tag_user_fee_tip=0x7f090773;
+        public static final int putao_weather=0x7f0902d0;
+        public static final int putao_weather_air=0x7f0902e0;
+        public static final int putao_weather_city=0x7f0902ce;
+        public static final int putao_weather_cold=0x7f0902ec;
+        public static final int putao_weather_detail=0x7f0902c8;
+        public static final int putao_weather_notify=0x7f0902c7;
+        public static final int putao_weather_notify_air=0x7f0902cb;
+        public static final int putao_weather_notify_rain=0x7f0902c9;
+        public static final int putao_weather_notify_snow=0x7f0902ca;
+        public static final int putao_weather_other_day=0x7f0902e1;
+        public static final int putao_weather_rain=0x7f0902cc;
+        public static final int putao_weather_setting=0x7f0902f5;
+        public static final int putao_weather_share_to_frends=0x7f0902f2;
+        public static final int putao_weather_snow=0x7f0902cd;
+        public static final int putao_weather_sport=0x7f0902ed;
+        public static final int putao_weather_status_detail=0x7f090692;
+        public static final int putao_weather_sun=0x7f0902ee;
+        public static final int putao_weather_temperature=0x7f0902df;
+        public static final int putao_weather_today_weather=0x7f0902e2;
+        public static final int putao_weather_trip=0x7f0902eb;
+        public static final int putao_weather_wash_car=0x7f0902ea;
+        public static final int putao_weather_wear=0x7f0902e9;
+        public static final int putao_weg_fee_detail=0x7f0902fc;
+        public static final int putao_weg_fee_electric=0x7f0902f9;
+        public static final int putao_weg_fee_gas=0x7f0902fa;
+        public static final int putao_weg_fee_water=0x7f0902f8;
+        public static final int putao_weg_title=0x7f0902f7;
+        public static final int putao_weg_user_id=0x7f0902fb;
+        public static final int putao_yellow_page_about=0x7f0905dd;
         public static final int putao_yellow_page_avr_price=0x7f09006f;
         public static final int putao_yellow_page_cannot_watch_homepage=0x7f0900a0;
         public static final int putao_yellow_page_change_position=0x7f09006a;
         public static final int putao_yellow_page_city_list=0x7f09006b;
-        public static final int putao_yellow_page_collect=0x7f0905d8;
-        public static final int putao_yellow_page_collect_cancel=0x7f0905da;
-        public static final int putao_yellow_page_collect_ok=0x7f0905db;
-        public static final int putao_yellow_page_collectable=0x7f0905d9;
-        public static final int putao_yellow_page_coupon_title=0x7f090593;
-        public static final int putao_yellow_page_deal_title=0x7f090592;
+        public static final int putao_yellow_page_collect=0x7f0905d9;
+        public static final int putao_yellow_page_collect_cancel=0x7f0905db;
+        public static final int putao_yellow_page_collect_ok=0x7f0905dc;
+        public static final int putao_yellow_page_collectable=0x7f0905da;
+        public static final int putao_yellow_page_coupon_title=0x7f090594;
+        public static final int putao_yellow_page_deal_title=0x7f090593;
         public static final int putao_yellow_page_detail_customslastprice=0x7f090061;
         public static final int putao_yellow_page_detail_customsprice=0x7f090060;
-        public static final int putao_yellow_page_detail_reviews_hint=0x7f090590;
+        public static final int putao_yellow_page_detail_reviews_hint=0x7f090591;
         public static final int putao_yellow_page_distance_kilometer=0x7f09006e;
         public static final int putao_yellow_page_distance_meter=0x7f09006d;
-        public static final int putao_yellow_page_downloading=0x7f09066a;
+        public static final int putao_yellow_page_downloading=0x7f09066b;
         public static final int putao_yellow_page_error_collect=0x7f090083;
         public static final int putao_yellow_page_error_collect_check_legal=0x7f090091;
         public static final int putao_yellow_page_error_collect_commit=0x7f09008b;
-        public static final int putao_yellow_page_error_collect_commit_failed=0x7f090255;
+        public static final int putao_yellow_page_error_collect_commit_failed=0x7f090256;
         public static final int putao_yellow_page_error_collect_commit_hint=0x7f090093;
         public static final int putao_yellow_page_error_collect_commit_repeat=0x7f090094;
         public static final int putao_yellow_page_error_collect_commit_success=0x7f09008f;
-        public static final int putao_yellow_page_error_collect_committing=0x7f090253;
+        public static final int putao_yellow_page_error_collect_committing=0x7f090254;
         public static final int putao_yellow_page_error_collect_contact_method=0x7f09008d;
         public static final int putao_yellow_page_error_collect_contacts=0x7f090089;
         public static final int putao_yellow_page_error_collect_contacts_info=0x7f09008a;
@@ -6806,26 +5540,26 @@ containing a value of this type.
         public static final int putao_yellow_page_error_collect_phone_notnull=0x7f090090;
         public static final int putao_yellow_page_error_collect_qq_group=0x7f09008e;
         public static final int putao_yellow_page_error_reason=0x7f090084;
-        public static final int putao_yellow_page_favorite_delete_confirm=0x7f09060a;
-        public static final int putao_yellow_page_favorite_delete_dialog_title=0x7f090609;
-        public static final int putao_yellow_page_favorite_no_data=0x7f090607;
-        public static final int putao_yellow_page_favorite_no_selected=0x7f090608;
-        public static final int putao_yellow_page_favorite_title=0x7f090606;
+        public static final int putao_yellow_page_favorite_delete_confirm=0x7f09060b;
+        public static final int putao_yellow_page_favorite_delete_dialog_title=0x7f09060a;
+        public static final int putao_yellow_page_favorite_no_data=0x7f090608;
+        public static final int putao_yellow_page_favorite_no_selected=0x7f090609;
+        public static final int putao_yellow_page_favorite_title=0x7f090607;
         public static final int putao_yellow_page_food=0x7f090062;
-        public static final int putao_yellow_page_get_city=0x7f09066c;
-        public static final int putao_yellow_page_history_delete_confirm=0x7f09060e;
-        public static final int putao_yellow_page_history_no_data=0x7f09060c;
-        public static final int putao_yellow_page_history_no_selected=0x7f09060d;
-        public static final int putao_yellow_page_history_title=0x7f09060b;
-        public static final int putao_yellow_page_loading=0x7f090250;
-        public static final int putao_yellow_page_locating=0x7f090254;
+        public static final int putao_yellow_page_get_city=0x7f09066d;
+        public static final int putao_yellow_page_history_delete_confirm=0x7f09060f;
+        public static final int putao_yellow_page_history_no_data=0x7f09060d;
+        public static final int putao_yellow_page_history_no_selected=0x7f09060e;
+        public static final int putao_yellow_page_history_title=0x7f09060c;
+        public static final int putao_yellow_page_loading=0x7f090251;
+        public static final int putao_yellow_page_locating=0x7f090255;
         public static final int putao_yellow_page_locating_try=0x7f090066;
         public static final int putao_yellow_page_location_failed=0x7f090067;
         /**  快递字符 END 
          */
-        public static final int putao_yellow_page_my_activities=0x7f090603;
-        public static final int putao_yellow_page_my_favorite=0x7f090604;
-        public static final int putao_yellow_page_my_history=0x7f090605;
+        public static final int putao_yellow_page_my_activities=0x7f090604;
+        public static final int putao_yellow_page_my_favorite=0x7f090605;
+        public static final int putao_yellow_page_my_history=0x7f090606;
         /**  快递字符 END 
          */
         public static final int putao_yellow_page_my_user_feedback=0x7f0900cf;
@@ -6836,10 +5570,10 @@ containing a value of this type.
         public static final int putao_yellow_page_position_change=0x7f090068;
         public static final int putao_yellow_page_position_change_msg=0x7f090069;
         public static final int putao_yellow_page_result_source=0x7f090070;
-        public static final int putao_yellow_page_search_btn=0x7f090594;
+        public static final int putao_yellow_page_search_btn=0x7f090595;
         public static final int putao_yellow_page_search_more_btn=0x7f090064;
         public static final int putao_yellow_page_select_express=0x7f090071;
-        public static final int putao_yellow_page_services=0x7f090591;
+        public static final int putao_yellow_page_services=0x7f090592;
         /**  add by putao_lhq start 
  分享 
  add by putao_lhq start 
@@ -6852,11 +5586,11 @@ containing a value of this type.
         public static final int putao_yellow_page_source_bd=0x7f09007d;
         /**  黄页plug 
          */
-        public static final int putao_yellow_page_source_dp=0x7f0905d7;
+        public static final int putao_yellow_page_source_dp=0x7f0905d8;
         public static final int putao_yellow_page_source_gdmap=0x7f090080;
         public static final int putao_yellow_page_source_pt=0x7f09007e;
         public static final int putao_yellow_page_source_sg=0x7f09007f;
-        public static final int putao_yellow_page_try_login=0x7f09060f;
+        public static final int putao_yellow_page_try_login=0x7f090610;
         public static final int putao_yellow_page_try_login_fail=0x7f0900d3;
         public static final int putao_yellow_page_try_login_success=0x7f0900d2;
         /**  <string name="putao_yellow_page_source_dhb">数据来自电话帮</string> 
@@ -6865,99 +5599,138 @@ containing a value of this type.
         public static final int putao_yellow_page_watch_homepage=0x7f090081;
         public static final int putao_yellow_page_watch_homepage_tongcheng=0x7f090082;
         public static final int putao_yellow_page_your_position=0x7f09006c;
-        public static final int putao_yesterday=0x7f09028c;
+        public static final int putao_yesterday=0x7f09028d;
         public static final int putao_zxing_url=0x7f0900c4;
-        public static final int qq=0x7f090793;
-        public static final int qq_client_inavailable=0x7f09078e;
-        public static final int qzone=0x7f090790;
-        public static final int refreshing=0x7f09049f;
-        public static final int release_to_refresh=0x7f09049e;
-        public static final int select_a_friend=0x7f0904a1;
-        public static final int select_one_plat_at_least=0x7f09049a;
-        public static final int shake2share=0x7f0904a0;
-        public static final int share=0x7f090496;
-        public static final int share_canceled=0x7f090499;
-        public static final int share_completed=0x7f090498;
-        public static final int share_failed=0x7f09049c;
-        public static final int share_to=0x7f090495;
-        public static final int share_to_qq=0x7f090795;
-        public static final int share_to_qzone=0x7f090794;
-        public static final int share_to_qzone_default=0x7f090797;
-        public static final int sharing=0x7f090494;
-        public static final int sinaweibo=0x7f09078f;
-        public static final int use_login_button=0x7f090798;
-        public static final int website=0x7f09078b;
-        public static final int wechat=0x7f090791;
-        public static final int wechat_client_inavailable=0x7f09078d;
-        public static final int wechatmoments=0x7f090792;
-        public static final int weibo_oauth_regiseter=0x7f09078a;
-        public static final int weibo_upload_content=0x7f09078c;
+        public static final int qq=0x7f090794;
+        public static final int qq_client_inavailable=0x7f09078f;
+        public static final int qzone=0x7f090791;
+        public static final int refreshing=0x7f0904a0;
+        public static final int release_to_refresh=0x7f09049f;
+        public static final int select_a_friend=0x7f0904a2;
+        public static final int select_one_plat_at_least=0x7f09049b;
+        public static final int shake2share=0x7f0904a1;
+        public static final int share=0x7f090497;
+        public static final int share_canceled=0x7f09049a;
+        public static final int share_completed=0x7f090499;
+        public static final int share_failed=0x7f09049d;
+        public static final int share_to=0x7f090496;
+        public static final int share_to_qq=0x7f090796;
+        public static final int share_to_qzone=0x7f090795;
+        public static final int share_to_qzone_default=0x7f090798;
+        public static final int sharing=0x7f090495;
+        public static final int sinaweibo=0x7f090790;
+        public static final int use_login_button=0x7f090799;
+        public static final int website=0x7f09078c;
+        public static final int wechat=0x7f090792;
+        public static final int wechat_client_inavailable=0x7f09078e;
+        public static final int wechatmoments=0x7f090793;
+        public static final int weibo_oauth_regiseter=0x7f09078b;
+        public static final int weibo_upload_content=0x7f09078d;
     }
     public static final class style {
-        public static final int Putao_Guide=0x7f0b008f;
-        public static final int Putao_Welcome=0x7f0b008e;
         /** 
         Base application theme for API 14+. This theme completely replaces
         AppBaseTheme from BOTH res/values/styles.xml and
         res/values-v11/styles.xml on API 14+ devices.
     
-         <item name="android:fitsSystemWindows">true</item> 
          */
-        public static final int Theme=0x7f0b000d;
+        public static final int Theme=0x7f0b000e;
         /**  应用主题样式，控制应用基本控件样式，如 
          */
-        public static final int Theme_Ptui=0x7f0b000e;
+        public static final int Theme_Ptui=0x7f0b000f;
+        /**  进度条 end 
+         */
+        public static final int Theme_Ptui_AboutusItemLayoutStyle=0x7f0b000d;
         public static final int Theme_Ptui_Animation=0x7f0b0005;
         public static final int Theme_Ptui_Animation_Dialog=0x7f0b0006;
         public static final int Theme_Ptui_Animation_PopUpMenu=0x7f0b0007;
         public static final int Theme_Ptui_Animation_PopUpMenu_Center=0x7f0b0008;
+        public static final int Theme_Ptui_AssistantGuideSeritemStyle=0x7f0b0064;
         /**  Button style start 
  默认样式：绿底白字 
          */
-        public static final int Theme_Ptui_Button=0x7f0b0013;
+        public static final int Theme_Ptui_Button=0x7f0b0014;
         /**  动作样式：橙底白字 
          */
-        public static final int Theme_Ptui_Button_Orange_White=0x7f0b0014;
+        public static final int Theme_Ptui_Button_Orange_White=0x7f0b0015;
         /**  Dialog中Button样式：白底黑字 
          */
-        public static final int Theme_Ptui_Button_White_Black=0x7f0b0017;
+        public static final int Theme_Ptui_Button_White_Black=0x7f0b0018;
         /**  提示样式：白底绿字 
          */
-        public static final int Theme_Ptui_Button_White_Green=0x7f0b0015;
+        public static final int Theme_Ptui_Button_White_Green=0x7f0b0016;
         /**  Dialog中Button样式：白底灰黑字 
          */
-        public static final int Theme_Ptui_Button_White_Grey=0x7f0b0018;
+        public static final int Theme_Ptui_Button_White_Grey=0x7f0b0019;
         /**  重要样式：白底红字 
          */
-        public static final int Theme_Ptui_Button_White_Red=0x7f0b0016;
+        public static final int Theme_Ptui_Button_White_Red=0x7f0b0017;
         /**  TextView style end 
  CheckBox style start 
          */
-        public static final int Theme_Ptui_CheckBox=0x7f0b0022;
+        public static final int Theme_Ptui_CheckBox=0x7f0b0023;
+        public static final int Theme_Ptui_CustomList=0x7f0b0052;
+        /**  搜索列表item 
+         */
+        public static final int Theme_Ptui_CustomList_SearchItem=0x7f0b005d;
+        /**  单行列表样式 
+         */
+        public static final int Theme_Ptui_CustomList_SingleItem=0x7f0b0053;
+        /**  单行列表样式 非定高 
+         */
+        public static final int Theme_Ptui_CustomList_SingleItem_RandomHeight=0x7f0b0054;
+        /**  popupWindow单行列表样式 
+         */
+        public static final int Theme_Ptui_CustomList_SingleItemPopupWindow=0x7f0b0055;
+        /**  单行列表主文字样式 
+         */
+        public static final int Theme_Ptui_CustomList_SingleItemPrimaryText=0x7f0b0056;
+        /**  单行列表辅助文字样式 
+         */
+        public static final int Theme_Ptui_CustomList_SingleItemSecondText=0x7f0b0057;
+        /**  三行列表样式 
+         */
+        public static final int Theme_Ptui_CustomList_ThreeItem=0x7f0b005c;
+        /**  三行列表主文字样式 
+         */
+        public static final int Theme_Ptui_CustomList_ThreeItemPrimaryText=0x7f0b005e;
+        /**  三行列表辅助文字样式 
+         */
+        public static final int Theme_Ptui_CustomList_ThreeItemSecondText=0x7f0b005f;
+        /**  两行列表样式 
+         */
+        public static final int Theme_Ptui_CustomList_TwoItem=0x7f0b0058;
+        /**  两行列表主文字样式 
+         */
+        public static final int Theme_Ptui_CustomList_TwoItemPrimaryText=0x7f0b0059;
+        /**  两行列表辅助文字样式 
+         */
+        public static final int Theme_Ptui_CustomList_TwoItemSecondText=0x7f0b005a;
+        public static final int Theme_Ptui_CustomList_TwoItemTipText=0x7f0b005b;
         /**  ListView style end 
  Dialog style start 
          */
-        public static final int Theme_Ptui_Dialog=0x7f0b0030;
-        public static final int Theme_Ptui_Dialog_ActivityDialog=0x7f0b003d;
-        public static final int Theme_Ptui_Dialog_GridView=0x7f0b0036;
-        public static final int Theme_Ptui_Dialog_GridView_NoTitle=0x7f0b0037;
-        public static final int Theme_Ptui_Dialog_GridView_NoTitle_NoBottom=0x7f0b0038;
-        public static final int Theme_Ptui_Dialog_ListView=0x7f0b0031;
-        public static final int Theme_Ptui_Dialog_Ok=0x7f0b0033;
-        public static final int Theme_Ptui_Dialog_OkCancel=0x7f0b0032;
+        public static final int Theme_Ptui_Dialog=0x7f0b0031;
+        public static final int Theme_Ptui_Dialog_ActivityDialog=0x7f0b003e;
+        public static final int Theme_Ptui_Dialog_GridView=0x7f0b0037;
+        public static final int Theme_Ptui_Dialog_GridView_NoTitle=0x7f0b0038;
+        public static final int Theme_Ptui_Dialog_GridView_NoTitle_NoBottom=0x7f0b0039;
+        public static final int Theme_Ptui_Dialog_ListView=0x7f0b0032;
+        public static final int Theme_Ptui_Dialog_Ok=0x7f0b0034;
+        public static final int Theme_Ptui_Dialog_OkCancel=0x7f0b0033;
         /**  Dialog style end 
  ProgressDialog style start 
          */
-        public static final int Theme_Ptui_Dialog_Progress=0x7f0b003e;
-        public static final int Theme_Ptui_Dialog_Progress_Charge=0x7f0b0040;
-        public static final int Theme_Ptui_Dialog_Progress_Download=0x7f0b0041;
-        public static final int Theme_Ptui_Dialog_Progress_Transparent=0x7f0b003f;
-        public static final int Theme_Ptui_Dialog_ScreenAd=0x7f0b003c;
-        public static final int Theme_Ptui_Dialog_ScrollLayout=0x7f0b0035;
-        public static final int Theme_Ptui_Dialog_TwoGridView=0x7f0b003b;
-        public static final int Theme_Ptui_Dialog_VoucherFailed=0x7f0b0039;
-        public static final int Theme_Ptui_Dialog_Wheel=0x7f0b0034;
-        public static final int Theme_Ptui_Dialog_YearAndMonth=0x7f0b003a;
+        public static final int Theme_Ptui_Dialog_Progress=0x7f0b003f;
+        public static final int Theme_Ptui_Dialog_Progress_Charge=0x7f0b0041;
+        public static final int Theme_Ptui_Dialog_Progress_Download=0x7f0b0042;
+        public static final int Theme_Ptui_Dialog_Progress_Transparent=0x7f0b0040;
+        public static final int Theme_Ptui_Dialog_ScreenAd=0x7f0b003d;
+        public static final int Theme_Ptui_Dialog_ScrollLayout=0x7f0b0036;
+        public static final int Theme_Ptui_Dialog_TwoGridView=0x7f0b003c;
+        public static final int Theme_Ptui_Dialog_VoucherFailed=0x7f0b003a;
+        public static final int Theme_Ptui_Dialog_Wheel=0x7f0b0035;
+        public static final int Theme_Ptui_Dialog_YearAndMonth=0x7f0b003b;
         /**  分割线 start 
          */
         public static final int Theme_Ptui_Divider=0x7f0b0000;
@@ -6968,21 +5741,44 @@ containing a value of this type.
  EditText style start 
  默认样式 
          */
-        public static final int Theme_Ptui_EditText=0x7f0b0019;
-        public static final int Theme_Ptui_H5=0x7f0b000f;
+        public static final int Theme_Ptui_EditText=0x7f0b001a;
+        public static final int Theme_Ptui_H5=0x7f0b0011;
+        public static final int Theme_Ptui_IndexTips=0x7f0b0075;
+        public static final int Theme_Ptui_Layout=0x7f0b0044;
+        public static final int Theme_Ptui_Layout_F_F=0x7f0b0048;
+        public static final int Theme_Ptui_Layout_F_W=0x7f0b0046;
+        public static final int Theme_Ptui_Layout_W_F=0x7f0b0047;
+        /**  <item name="android:layout_marginLeft">@dimen/putao_yp_home_listview_hot_icon_margin_left</item> 
+         */
+        public static final int Theme_Ptui_Layout_W_W=0x7f0b0045;
         /**  Spinner style end 
  ListView style start 
          */
-        public static final int Theme_Ptui_ListView=0x7f0b002b;
+        public static final int Theme_Ptui_ListView=0x7f0b002c;
         /**  在item上设置背景，有分割线的样式 
          */
-        public static final int Theme_Ptui_ListView_Itembg=0x7f0b002e;
+        public static final int Theme_Ptui_ListView_Itembg=0x7f0b002f;
         /**  在item上设置背景，没有分割线的样式 
          */
-        public static final int Theme_Ptui_ListView_Itembg_NoDivider=0x7f0b002f;
-        public static final int Theme_Ptui_ListView_NoDivider=0x7f0b002d;
-        public static final int Theme_Ptui_ListView_PopupWindow=0x7f0b002c;
+        public static final int Theme_Ptui_ListView_Itembg_NoDivider=0x7f0b0030;
+        public static final int Theme_Ptui_ListView_NoDivider=0x7f0b002e;
+        public static final int Theme_Ptui_ListView_PopupWindow=0x7f0b002d;
+        public static final int Theme_Ptui_MenuItem=0x7f0b0060;
+        public static final int Theme_Ptui_MenuItem_Layout=0x7f0b0061;
+        public static final int Theme_Ptui_MenuItem_PointStyle=0x7f0b0063;
+        public static final int Theme_Ptui_MenuItem_Text=0x7f0b0062;
         public static final int Theme_Ptui_NoTitle=0x7f0b0010;
+        /**  首页活动样式  start 
+         */
+        public static final int Theme_Ptui_Operate=0x7f0b006d;
+        public static final int Theme_Ptui_Operate_BigLayoutPic=0x7f0b006e;
+        public static final int Theme_Ptui_Operate_BigLayoutSubtitle=0x7f0b0070;
+        public static final int Theme_Ptui_Operate_BigLayoutTitle=0x7f0b006f;
+        public static final int Theme_Ptui_Operate_SmallLayoutPic=0x7f0b0073;
+        public static final int Theme_Ptui_Operate_SmallLayoutSubtitle=0x7f0b0072;
+        public static final int Theme_Ptui_Operate_SmallLayoutTitle=0x7f0b0071;
+        public static final int Theme_Ptui_OrderItemKey=0x7f0b0049;
+        public static final int Theme_Ptui_OrderItemValue=0x7f0b004a;
         /**  动画 end 
  进度条 start 
          */
@@ -6993,278 +5789,82 @@ containing a value of this type.
         /**  CheckBox style end 
  RadioButton style start 
          */
-        public static final int Theme_Ptui_RadioButton=0x7f0b0023;
-        public static final int Theme_Ptui_RadioButton_Second=0x7f0b0024;
+        public static final int Theme_Ptui_RadioButton=0x7f0b0024;
+        public static final int Theme_Ptui_RadioButton_Second=0x7f0b0025;
         /**  RadioButton style end 
  RatingBar style start 
          */
-        public static final int Theme_Ptui_RatingBar=0x7f0b0025;
-        public static final int Theme_Ptui_RatingBar_Large=0x7f0b0028;
-        public static final int Theme_Ptui_RatingBar_Large_Second=0x7f0b0029;
-        public static final int Theme_Ptui_RatingBar_Small=0x7f0b0026;
-        public static final int Theme_Ptui_RatingBar_Small_Small=0x7f0b0027;
+        public static final int Theme_Ptui_RatingBar=0x7f0b0026;
+        public static final int Theme_Ptui_RatingBar_Large=0x7f0b0029;
+        public static final int Theme_Ptui_RatingBar_Large_Second=0x7f0b002a;
+        public static final int Theme_Ptui_RatingBar_Small=0x7f0b0027;
+        public static final int Theme_Ptui_RatingBar_Small_Small=0x7f0b0028;
         /**  EditText style end 
  SearchView style start (by custom) 
          */
-        public static final int Theme_Ptui_SearchView=0x7f0b001a;
+        public static final int Theme_Ptui_SearchView=0x7f0b001b;
         /**  搜索提示框 
          */
-        public static final int Theme_Ptui_SearchView_Hint=0x7f0b001b;
+        public static final int Theme_Ptui_SearchView_Hint=0x7f0b001c;
         /**  搜索提示框：本地搜索- 
          */
-        public static final int Theme_Ptui_SearchView_Native=0x7f0b001c;
+        public static final int Theme_Ptui_SearchView_Native=0x7f0b001d;
         /**  RatingBar style end 
  Spinner style start (by custom) 
          */
-        public static final int Theme_Ptui_Spinner=0x7f0b002a;
-        public static final int Theme_Ptui_TextAppearance=0x7f0b001e;
-        public static final int Theme_Ptui_TextAppearance_Large=0x7f0b0020;
-        public static final int Theme_Ptui_TextAppearance_Medium=0x7f0b001f;
+        public static final int Theme_Ptui_Spinner=0x7f0b002b;
+        public static final int Theme_Ptui_TagWidget=0x7f0b004c;
+        public static final int Theme_Ptui_TagWidget_TabText=0x7f0b004d;
+        public static final int Theme_Ptui_Text=0x7f0b0065;
+        public static final int Theme_Ptui_Text_Opencoupontip=0x7f0b006c;
+        public static final int Theme_Ptui_Text_Rect=0x7f0b0066;
+        public static final int Theme_Ptui_Text_Rect2=0x7f0b0067;
+        public static final int Theme_Ptui_Text_Rect3=0x7f0b0068;
+        public static final int Theme_Ptui_Text_Rect4=0x7f0b0069;
+        /**  绿色 
+         */
+        public static final int Theme_Ptui_Text_Rect7=0x7f0b006a;
+        public static final int Theme_Ptui_Text_Rect8=0x7f0b006b;
+        public static final int Theme_Ptui_TextAppearance=0x7f0b001f;
+        public static final int Theme_Ptui_TextAppearance_Large=0x7f0b0021;
+        /**  首页活动样式 end 
+         */
+        public static final int Theme_Ptui_TextAppearance_LoginEdittext=0x7f0b0074;
+        public static final int Theme_Ptui_TextAppearance_Medium=0x7f0b0020;
         /**  SearchView style end 
  TextView style start 
          */
-        public static final int Theme_Ptui_TextView=0x7f0b001d;
-        public static final int Theme_Ptui_TextView_PrimaryColor_SecondSize=0x7f0b0021;
-        public static final int Theme_Ptui_Transparent=0x7f0b0012;
+        public static final int Theme_Ptui_TextView=0x7f0b001e;
+        public static final int Theme_Ptui_TextView_PrimaryColor_SecondSize=0x7f0b0022;
+        /**  标题栏文字规范 
+         */
+        public static final int Theme_Ptui_TitleBar=0x7f0b004e;
+        /**  标题栏icon规范 
+         */
+        public static final int Theme_Ptui_TitleBar_Icon=0x7f0b0051;
+        public static final int Theme_Ptui_TitleBar_PrimaryText=0x7f0b004f;
+        public static final int Theme_Ptui_TitleBar_SecondText=0x7f0b0050;
+        public static final int Theme_Ptui_Transparent=0x7f0b0013;
         /**  ProgressDialog style end 
          */
-        public static final int Theme_Ptui_TransparentFullscreenDialog=0x7f0b0042;
-        public static final int Theme_Ptui_Welcome=0x7f0b0011;
-        public static final int putaoAboutusItemLayoutStyle=0x7f0b0094;
-        public static final int putaoAssistantGuideSeritemStyle=0x7f0b0093;
-        /**  首页活动样式 add ljq 2015_05_11 end 
+        public static final int Theme_Ptui_TransparentFullscreenDialog=0x7f0b0043;
+        public static final int Theme_Ptui_Welcome=0x7f0b0012;
+        public static final int Theme_Ptui_Widget=0x7f0b0076;
+        public static final int Theme_Ptui_Widget_CirclePageIndicator=0x7f0b0077;
+        /**  <item name="android:padding">@dimen/putao_yp_item_padding</item> 
          */
-        public static final int putaoLoginEdittextStyle=0x7f0b009f;
-        public static final int putaoMenuItemLayout=0x7f0b0090;
-        public static final int putaoMenuItemPointStyle=0x7f0b0092;
-        public static final int putaoMenuItemTxtStyle=0x7f0b0091;
-        public static final int putao_ActivityDialogTheme=0x7f0b0074;
-        public static final int putao_AnimationDialog=0x7f0b006a;
+        public static final int Theme_Ptui_YellowPageItem=0x7f0b004b;
         /**  分割线 end 
  动画 start 
- pop 
          */
         public static final int putao_Animations=0x7f0b0004;
-        /**  PopDownMenu 
-         */
-        public static final int putao_Animations_PopDownMenu=0x7f0b0055;
-        public static final int putao_Animations_PopDownMenu_Center=0x7f0b0056;
-        public static final int putao_Animations_PopDownMenu_Left=0x7f0b0057;
-        public static final int putao_Animations_PopDownMenu_Reflect=0x7f0b0059;
-        public static final int putao_Animations_PopDownMenu_Right=0x7f0b0058;
-        /**  PopUpMenu 
-         */
-        public static final int putao_Animations_PopUpMenu=0x7f0b005a;
-        public static final int putao_Animations_PopUpMenu_Center=0x7f0b005b;
-        public static final int putao_Animations_PopUpMenu_Left=0x7f0b005c;
-        public static final int putao_Animations_PopUpMenu_Reflect=0x7f0b005e;
-        public static final int putao_Animations_PopUpMenu_Right=0x7f0b005d;
         /** 
         Base application theme for API 11+. This theme completely replaces
         AppBaseTheme from res/values/styles.xml on API 11+ devices.
     
  API 11 theme customizations can go here. 
-
-        Base application theme for API 14+. This theme completely replaces
-        AppBaseTheme from BOTH res/values/styles.xml and
-        res/values-v11/styles.xml on API 14+ devices.
-    
-
-        Base application theme for API 19+. This theme completely replaces
-        AppBaseTheme from BOTH res/values/styles.xml and
-        res/values-v11/styles.xml on API 19+ devices.
-    
- Navigation Bar 
-         <item name="android:windowTranslucentNavigation">true</item> 
          */
-        public static final int putao_AppBaseTheme=0x7f0b0044;
-        /**  应用主题样式，控制应用基本控件样式，如 
-         */
-        public static final int putao_AppTheme=0x7f0b0045;
-        public static final int putao_BaseDialog=0x7f0b00a0;
-        /**  button style 
-         */
-        public static final int putao_ButtonStyle=0x7f0b004a;
-        public static final int putao_ChargeProgressDialog=0x7f0b00a5;
-        public static final int putao_CheckBox=0x7f0b0060;
-        public static final int putao_CheckBox_express_history_item=0x7f0b0061;
-        /**  将样式的公共的属性抽取 add by lxh 2015-5-23 
-         */
-        public static final int putao_Dialog=0x7f0b00a3;
-        public static final int putao_DialogText=0x7f0b00a7;
-        public static final int putao_DialogText_Title=0x7f0b00a8;
-        /**  无间距分割线 
-@drawable/putao_line_horizontal  
-         */
-        public static final int putao_DividerStyle_Horizontal=0x7f0b007a;
-        /** @drawable/putao_line_horizontal  
-         */
-        public static final int putao_DividerStyle_Horizontal_Bottom=0x7f0b007b;
-        public static final int putao_DividerStyle_Vertical=0x7f0b007c;
-        /**  EditText style 
-         */
-        public static final int putao_EditStyle=0x7f0b004b;
-        public static final int putao_FullscreenDialog=0x7f0b00a1;
-        /**  Circle 
-         */
-        public static final int putao_Input=0x7f0b005f;
-        /**  modify for COOLUI6.0 
-         */
-        public static final int putao_ListStyle=0x7f0b006b;
-        /**  在item上设置背景，有分割线的样式 
-         */
-        public static final int putao_ListStyle_Itembg=0x7f0b006e;
-        /**  在item上设置背景，没有分割线的样式 
-         */
-        public static final int putao_ListStyle_Itembg_NoDivider=0x7f0b006f;
-        public static final int putao_ListStyle_NoDivider=0x7f0b006d;
-        public static final int putao_ListViewDialog=0x7f0b00a6;
-        /**  List Item 图标规范 
-         */
-        public static final int putao_List_Icon_Style=0x7f0b0080;
-        /**  搜索列表item 
-         */
-        public static final int putao_List_SEARCH_ITEM_Style=0x7f0b008a;
-        /**  单行列表主文字样式 
-         */
-        public static final int putao_List_SIGNLE_ITEM_PRIMARY_TEXT_STYLE=0x7f0b0083;
-        /**  单行列表辅助文字样式 
-         */
-        public static final int putao_List_SIGNLE_ITEM_SECOND_TEXT_STYLE=0x7f0b0084;
-        /**  单行列表样式 
-         */
-        public static final int putao_List_SINGLE_ITEM_Style=0x7f0b0081;
-        /**  三行列表主文字样式 
-         */
-        public static final int putao_List_THREE_ITEM_PRIMARY_TEXT_STYLE=0x7f0b008b;
-        /**  三行列表辅助文字样式 
-         */
-        public static final int putao_List_THREE_ITEM_SECOND_TEXT_STYLE=0x7f0b008c;
-        /**  三行列表样式 
-         */
-        public static final int putao_List_THREE_ITEM_Style=0x7f0b0089;
-        /**  两行列表主文字样式 
-         */
-        public static final int putao_List_Two_ITEM_PRIMARY_TEXT_STYLE=0x7f0b0086;
-        /**  两行列表辅助文字样式 
-         */
-        public static final int putao_List_Two_ITEM_SECOND_TEXT_STYLE=0x7f0b0087;
-        /**  两行列表样式 
-         */
-        public static final int putao_List_Two_ITEM_Style=0x7f0b0085;
-        public static final int putao_List_Two_ITEM_Tip_TEXT_STYLE=0x7f0b0088;
-        /** 
-        <item name="android:layout_width">fill_parent</item>
-        <item name="android:layout_height">@dimen/putao_listview_item_height</item>
-        <item name="android:background">@drawable/putao_my_item_seclector</item>
-        <item name="android:paddingLeft">12dp</item>
-        <item name="android:paddingRight">20dp</item>
-        <item name="android:layout_marginLeft">10dp</item>
-        <item name="android:layout_marginRight">10dp</item>
-
-        
-         */
-        public static final int putao_MyItemStyle=0x7f0b0076;
-        public static final int putao_MyItemStyle_Card=0x7f0b0077;
-        /**  CheckBox style 
-
-    <style name="putao_CheckBoxStyle" parent="@android:style/Widget.CompoundButton.CheckBox">
-        <item name="android:button">@drawable/putao_btn_checkbox</item>
-    </style>
-
-    
- Navigation Bar 
-         <item name="android:windowTranslucentNavigation">true</item> 
-         */
-        public static final int putao_MyTransparent=0x7f0b004c;
-        /**  用于通知栏的样式 
-         */
-        public static final int putao_NotificationText=0x7f0b004d;
-        public static final int putao_NotificationTitle=0x7f0b004e;
-        public static final int putao_PopupWindowListStyle=0x7f0b006c;
-        /**  popupWindow单行列表样式 
-         */
-        public static final int putao_PopupWindow_List_SINGLE_ITEM_Style=0x7f0b0082;
-        public static final int putao_ProgressDialog=0x7f0b00a4;
-        public static final int putao_ProgressHStyle=0x7f0b0075;
-        public static final int putao_SmallCheckBox=0x7f0b0062;
-        /**  索引字母提示文本框样式 
-         */
-        public static final int putao_StyleForIndexTips=0x7f0b004f;
-        public static final int putao_TagWidget=0x7f0b0078;
-        /**  add by putao_lhq for COOLUI6.0 end 
- Common list view styles 
-         */
-        public static final int putao_TagWidget_ListView=0x7f0b008d;
-        public static final int putao_TagWidget_TabText=0x7f0b0079;
-        public static final int putao_TextAppearance=0x7f0b0046;
-        public static final int putao_TextAppearanceLarge=0x7f0b0048;
-        public static final int putao_TextAppearanceMedium=0x7f0b0047;
-        public static final int putao_Text_PrimaryColor_SecondSize=0x7f0b0049;
-        /**  标题栏icon规范 
-         */
-        public static final int putao_Titlebar_Icon_Style=0x7f0b007f;
-        /**      <style name="putao_MyItemLineStyle_fill">
-        <item name="android:layout_width">fill_parent</item>
-        <item name="android:layout_height">@dimen/putao_divider_line_size</item>
-        <item name="android:background">@color/putao_yellow_page_line_color</item>
-        <item name="android:layout_gravity">center_vertical</item>
-    </style> 
- add by putao_lhq for COOLUI6.0 start 
- 标题栏文字规范 
-         */
-        public static final int putao_Titlebar_Primary_Text_Style=0x7f0b007d;
-        public static final int putao_Titlebar_Second_Text_Style=0x7f0b007e;
-        public static final int putao_Transparent=0x7f0b0068;
-        public static final int putao_Transparent_FullscreenDialog=0x7f0b00a2;
-        /**  给ViewPager的Indicator设置的风格 
- <style name="putao_Theme.PageIndicatorDefaults" parent="@android:style/Theme"> 
- <item name="circlePageIndicatorStyle">@style/putao_Widget.CirclePageIndicator</item> 
- <item name="titlePageIndicatorStyle">@style/putao_Widget.TitlePageIndicator</item> 
- </style> 
-         */
-        public static final int putao_Widget_CirclePageIndicator=0x7f0b0043;
-        public static final int putao_captcha_dialog=0x7f0b0069;
-        public static final int putao_f_f=0x7f0b0053;
-        /**  <style name="putao_icon_send_fail"> 
- <item name="android:layout_width">15dp</item> 
- <item name="android:layout_height">15dp</item> 
- <item name="android:textColor">@color/putao_pt_deep_gray</item> 
- </style> 
-         */
-        public static final int putao_f_w=0x7f0b0051;
-        public static final int putao_operate_big_layout_pic=0x7f0b009d;
-        public static final int putao_operate_big_layout_subtitle=0x7f0b009b;
-        /**  首页活动样式 add ljq 2015_05_11 start 
-         */
-        public static final int putao_operate_big_layout_title=0x7f0b0099;
-        public static final int putao_operate_small_layout_pic=0x7f0b009e;
-        public static final int putao_operate_small_layout_subtitle=0x7f0b009c;
-        public static final int putao_operate_small_layout_title=0x7f0b009a;
-        public static final int putao_progressBarHorizontal_black=0x7f0b0065;
-        public static final int putao_progressBarHorizontal_drakgray=0x7f0b0067;
-        public static final int putao_progressBarHorizontal_gray=0x7f0b0066;
-        /**  <item name="android:indeterminateDrawable">@drawable/icon_star_1</item> 
-         */
-        public static final int putao_ratingbar_style=0x7f0b0071;
-        public static final int putao_ratingbar_style_large=0x7f0b0073;
-        public static final int putao_ratingbar_style_small=0x7f0b0072;
-        public static final int putao_show_orginal_header_btn=0x7f0b0054;
-        public static final int putao_text_in_rect=0x7f0b0096;
-        public static final int putao_text_in_rect2=0x7f0b0097;
-        public static final int putao_text_in_rect3=0x7f0b0098;
-        public static final int putao_text_style_phone=0x7f0b0095;
-        public static final int putao_w_f=0x7f0b0052;
-        /**  <item name="android:layout_marginLeft">@dimen/putao_yp_home_listview_hot_icon_margin_left</item> 
-         */
-        public static final int putao_w_w=0x7f0b0050;
-        public static final int putao_w_w_TitleRadio=0x7f0b0064;
-        /**  From Putao 
-         */
-        public static final int putao_w_w_tab_radio=0x7f0b0063;
-        /**  <item name="android:padding">@dimen/putao_yp_item_padding</item> 
-         */
-        public static final int putao_yellow_page_item=0x7f0b0070;
+        public static final int putao_AppBaseTheme=0x7f0b0078;
     }
     public static final class styleable {
         /**  ActionBar related attributes 
@@ -8381,194 +6981,6 @@ containing a value of this type.
           @attr name com.putao.live:putao_thumbnailURL
         */
         public static final int ThumbnailItem_putao_thumbnailURL = 1;
-        /** Attributes that can be used with a TitleIndicator.
-           <p>Includes the following attributes:</p>
-           <table>
-           <colgroup align="left" />
-           <colgroup align="left" />
-           <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #TitleIndicator_tag_clipPadding com.putao.live:tag_clipPadding}</code></td><td> Left/right padding of not active view titles.</td></tr>
-           <tr><td><code>{@link #TitleIndicator_tag_footerColor com.putao.live:tag_footerColor}</code></td><td></td></tr>
-           <tr><td><code>{@link #TitleIndicator_tag_footerLineHeight com.putao.live:tag_footerLineHeight}</code></td><td></td></tr>
-           <tr><td><code>{@link #TitleIndicator_tag_footerLineWidth com.putao.live:tag_footerLineWidth}</code></td><td></td></tr>
-           <tr><td><code>{@link #TitleIndicator_tag_footerTriangleHeight com.putao.live:tag_footerTriangleHeight}</code></td><td></td></tr>
-           <tr><td><code>{@link #TitleIndicator_tag_onTouchStyle com.putao.live:tag_onTouchStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #TitleIndicator_tag_textColor com.putao.live:tag_textColor}</code></td><td></td></tr>
-           <tr><td><code>{@link #TitleIndicator_tag_textSizeNormal com.putao.live:tag_textSizeNormal}</code></td><td></td></tr>
-           <tr><td><code>{@link #TitleIndicator_tag_textSizeSelected com.putao.live:tag_textSizeSelected}</code></td><td></td></tr>
-           <tr><td><code>{@link #TitleIndicator_tag_titlePadding com.putao.live:tag_titlePadding}</code></td><td></td></tr>
-           </table>
-           @see #TitleIndicator_tag_clipPadding
-           @see #TitleIndicator_tag_footerColor
-           @see #TitleIndicator_tag_footerLineHeight
-           @see #TitleIndicator_tag_footerLineWidth
-           @see #TitleIndicator_tag_footerTriangleHeight
-           @see #TitleIndicator_tag_onTouchStyle
-           @see #TitleIndicator_tag_textColor
-           @see #TitleIndicator_tag_textSizeNormal
-           @see #TitleIndicator_tag_textSizeSelected
-           @see #TitleIndicator_tag_titlePadding
-         */
-        public static final int[] TitleIndicator = {
-            0x7f0100a5, 0x7f0100a6, 0x7f0100a7, 0x7f0100a8,
-            0x7f0100a9, 0x7f0100aa, 0x7f0100ab, 0x7f0100ac,
-            0x7f0100ad, 0x7f0100ae
-        };
-        /**
-          <p>
-          @attr description
-           Left/right padding of not active view titles. 
-
-
-          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
-Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
-in (inches), mm (millimeters).
-<p>This may also be a reference to a resource (in the form
-"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
-theme attribute (in the form
-"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
-containing a value of this type.
-          <p>This is a private symbol.
-          @attr name com.putao.live:tag_clipPadding
-        */
-        public static final int TitleIndicator_tag_clipPadding = 1;
-        /**
-          <p>This symbol is the offset where the {@link com.putao.live.R.attr#tag_footerColor}
-          attribute's value can be found in the {@link #TitleIndicator} array.
-
-
-          <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
-"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
-<p>This may also be a reference to a resource (in the form
-"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
-theme attribute (in the form
-"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
-containing a value of this type.
-          @attr name com.putao.live:tag_footerColor
-        */
-        public static final int TitleIndicator_tag_footerColor = 7;
-        /**
-          <p>This symbol is the offset where the {@link com.putao.live.R.attr#tag_footerLineHeight}
-          attribute's value can be found in the {@link #TitleIndicator} array.
-
-
-          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
-Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
-in (inches), mm (millimeters).
-<p>This may also be a reference to a resource (in the form
-"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
-theme attribute (in the form
-"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
-containing a value of this type.
-          @attr name com.putao.live:tag_footerLineHeight
-        */
-        public static final int TitleIndicator_tag_footerLineHeight = 5;
-        /**
-          <p>This symbol is the offset where the {@link com.putao.live.R.attr#tag_footerLineWidth}
-          attribute's value can be found in the {@link #TitleIndicator} array.
-
-
-          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
-Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
-in (inches), mm (millimeters).
-<p>This may also be a reference to a resource (in the form
-"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
-theme attribute (in the form
-"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
-containing a value of this type.
-          @attr name com.putao.live:tag_footerLineWidth
-        */
-        public static final int TitleIndicator_tag_footerLineWidth = 6;
-        /**
-          <p>This symbol is the offset where the {@link com.putao.live.R.attr#tag_footerTriangleHeight}
-          attribute's value can be found in the {@link #TitleIndicator} array.
-
-
-          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
-Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
-in (inches), mm (millimeters).
-<p>This may also be a reference to a resource (in the form
-"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
-theme attribute (in the form
-"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
-containing a value of this type.
-          @attr name com.putao.live:tag_footerTriangleHeight
-        */
-        public static final int TitleIndicator_tag_footerTriangleHeight = 8;
-        /**
-          <p>This symbol is the offset where the {@link com.putao.live.R.attr#tag_onTouchStyle}
-          attribute's value can be found in the {@link #TitleIndicator} array.
-
-
-          <p>Must be an integer value, such as "<code>100</code>".
-<p>This may also be a reference to a resource (in the form
-"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
-theme attribute (in the form
-"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
-containing a value of this type.
-          @attr name com.putao.live:tag_onTouchStyle
-        */
-        public static final int TitleIndicator_tag_onTouchStyle = 9;
-        /**
-          <p>This symbol is the offset where the {@link com.putao.live.R.attr#tag_textColor}
-          attribute's value can be found in the {@link #TitleIndicator} array.
-
-
-          <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
-or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-<p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
-"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
-          @attr name com.putao.live:tag_textColor
-        */
-        public static final int TitleIndicator_tag_textColor = 2;
-        /**
-          <p>This symbol is the offset where the {@link com.putao.live.R.attr#tag_textSizeNormal}
-          attribute's value can be found in the {@link #TitleIndicator} array.
-
-
-          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
-Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
-in (inches), mm (millimeters).
-<p>This may also be a reference to a resource (in the form
-"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
-theme attribute (in the form
-"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
-containing a value of this type.
-          @attr name com.putao.live:tag_textSizeNormal
-        */
-        public static final int TitleIndicator_tag_textSizeNormal = 3;
-        /**
-          <p>This symbol is the offset where the {@link com.putao.live.R.attr#tag_textSizeSelected}
-          attribute's value can be found in the {@link #TitleIndicator} array.
-
-
-          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
-Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
-in (inches), mm (millimeters).
-<p>This may also be a reference to a resource (in the form
-"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
-theme attribute (in the form
-"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
-containing a value of this type.
-          @attr name com.putao.live:tag_textSizeSelected
-        */
-        public static final int TitleIndicator_tag_textSizeSelected = 4;
-        /**
-          <p>This symbol is the offset where the {@link com.putao.live.R.attr#tag_titlePadding}
-          attribute's value can be found in the {@link #TitleIndicator} array.
-
-
-          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
-Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
-in (inches), mm (millimeters).
-<p>This may also be a reference to a resource (in the form
-"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
-theme attribute (in the form
-"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
-containing a value of this type.
-          @attr name com.putao.live:tag_titlePadding
-        */
-        public static final int TitleIndicator_tag_titlePadding = 0;
         /** Attributes that can be used with a empty_view_styleable.
            <p>Includes the following attributes:</p>
            <table>

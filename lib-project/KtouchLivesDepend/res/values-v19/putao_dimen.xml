@@ -15,7 +15,7 @@
     <dimen name="putao_edit_layout_item_height">53.66dp</dimen><!-- 自定義編輯框高度 -->
     
     <!-- 标题栏高度 -->
-    <dimen name="putao_title_bar_and_status_hight">73dip</dimen>
+    <dimen name="putao_title_bar_and_status_hight">48dip</dimen>
     <!-- 状态栏高度 -->
-    <dimen name="putao_status_bar_height">25dp</dimen>
+    <dimen name="putao_status_bar_height">0dp</dimen>
 </resources>

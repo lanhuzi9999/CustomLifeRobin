@@ -9,6 +9,8 @@ import java.util.Map;
 
 import org.json.JSONObject;
 
+import com.lives.depend.theme.dialog.CommonDialog;
+import com.lives.depend.theme.dialog.CommonDialogFactory;
 import com.putao.live.R;
 import com.qiniu.android.http.ResponseInfo;
 import com.qiniu.android.storage.UpCompletionHandler;
@@ -43,8 +45,6 @@ import so.contacts.hub.basefunction.imageloader.image.ImageLoaderFactory;
 import so.contacts.hub.basefunction.storage.db.PersonInfoDB;
 import so.contacts.hub.basefunction.utils.QiNiuCloudManager;
 import so.contacts.hub.basefunction.utils.SystemUtil;
-import so.contacts.hub.basefunction.widget.dialog.CommonDialog;
-import so.contacts.hub.basefunction.widget.dialog.CommonDialogFactory;
 
 public class YellowpagePersonalInfoActivity extends BaseActivity implements OnClickListener
 {
@@ -335,7 +335,7 @@ public class YellowpagePersonalInfoActivity extends BaseActivity implements OnCl
         mHeadDataLayout.setOnClickListener(this);
         mHeadImageView = (ImageView) findViewById(R.id.putao_personal_data_icon_iv);
 
-        mHeadImageDialog = CommonDialogFactory.getListCommonDialog(this);
+        mHeadImageDialog = CommonDialogFactory.getDialog(this, R.style.Theme_Ptui_Dialog_ListView);
         mHeadImageDialog.setTitle(R.string.putao_personal_data_icon);
         String[] imageList = new String[]
         { getString(R.string.putao_personal_data_get_icon_from_gallery),

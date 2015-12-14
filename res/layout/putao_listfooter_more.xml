@@ -3,17 +3,11 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     >
-
-    <!-- android:background="@color/putao_pt_chat_bg" -->
-
-	<View style="@style/putao_DividerStyle_Horizontal"/>
-
-<!--     <View
-        android:layout_width="match_parent"
-        android:layout_height="@dimen/putao_divider_line_size"
-        android:background="@color/putao_yellow_page_line_color" /> -->
-
-    <LinearLayout
+	<View
+	    android:id="@+id/custom_list_view_foot_divider"
+	    style="@style/Theme.Ptui.Divider.Horizontal"/>
+    <LinearLayout 
+        android:id="@+id/custom_list_view_foot_contentview"
         android:layout_width="match_parent"
         android:layout_height="56dp"
         android:gravity="center"

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:android="http://schemas.android.com/apk/res/android" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
-    <string name="putao_app_name">天语生活</string>
+    <string name="putao_app_name">葡萄生活</string>
     <string name="putao_no_net">网络异常，请检查网络后重试</string>
     <string name="putao_server_busy">服务器繁忙，请稍后再试</string>
     <string name="putao_netexception">网络异常</string>
@@ -655,11 +655,12 @@
     <string name="putao_voucher_convert_title">兑换优惠券</string>
     <string name="putao_voucher_congratulation">恭喜</string>
     <string name="putao_voucher_getsucc">你获得&lt;%s&gt;一张，已放至优惠券列表</string>
+    <string name="putao_voucher_list_succ">你获得一个券礼包，已放至优惠券列表</string>
     <string name="putao_voucher_get_list_succ">你获得一个券礼包，包括%s以上优惠券已放至优惠券列表</string>
     <string name="putao_one_voucher">一张，</string>
     <string name="putao_convert_voucher_fail">兑换优惠券失败，请稍后重试</string>
     <string name="putao_voucher_input_code">输入兑换码</string>
-    <string name="putao_voucher_attention">关注天语生活公众号，可定期获得兑换码</string>
+    <string name="putao_voucher_attention">关注葡萄生活公众号，可定期获得兑换码</string>
     <string name="putao_voucher_convert">兑换</string>
     <string name="putao_voucher_detail">卡券详情</string>
     <string name="putao_voucher_used">已使用</string>
@@ -676,7 +677,7 @@
     <string name="putao_voucher_cannot_use">该券不可用，请重新选券</string>
     <!-- 电影优惠券 -->
     <string name="putao_about_us">关于我们</string>
-    <string name="putao_yellow_page_loading">加载中...</string>
+    <string name="putao_yellow_page_loading">正在载入...</string>
     <string name="putao_search_movie_tip">搜索电影名，影院名</string>
     <string name="putao_bus_form_location_failed_text">定位失败，请输入出发地...</string>
     <string name="putao_yellow_page_error_collect_committing">正在提交中...</string>
@@ -914,21 +915,21 @@
 
     <!-- 关于我们 -->
     <string name="putao_aboutus_title">关于我们</string>
-    <string name="putao_aboutus_version">天语生活v%s</string>
+    <string name="putao_aboutus_version">葡萄生活v%s</string>
     <string name="putao_aboutus_feedback">反馈建议</string>
     <string name="putao_aboutus_update">检查版本更新</string>
-    <string name="putao_aboutus_lifeapp">关于天语生活</string>
-    <string name="putao_aboutus_weixin">本产品由天语公司出品</string>
-    <string name="putao_aboutus_qqgroup">葡萄公司提供产品技术支持, 葡萄生活天语定制版</string>
-    <string name="putao_aboutus_copyright">Copyright © 2014-2015 PUTAO. All Rights Reserved</string>
+    <string name="putao_aboutus_lifeapp">关于葡萄生活</string>
+    <string name="putao_aboutus_weixin">微信公众号:葡萄生活</string>
+    <string name="putao_aboutus_qqgroup">QQ群:145395697</string>
+    <string name="putao_aboutus_copyright">深圳市葡萄信息技术有限公司 版权所有</string>
 
-    <!-- 关于天语生活 -->
-    <string name="putao_putaolife_title">关于天语生活</string>
-    <string name="putao_putaolife_content1">感谢您使用天语生活助手。</string>
+    <!-- 关于葡萄生活 -->
+    <string name="putao_putaolife_title">关于葡萄生活</string>
+    <string name="putao_putaolife_content1">感谢您使用葡萄生活助手。</string>
     <string name="putao_putaolife_content2">我们致力于整合用户生活中常用的O2O服务，让用户不再需要下载一堆的服务应用。并且通过优化，让服务使用体验更好。\n如果您在使用过程中有任何意见或建议，您可以通过电子邮件</string>
     <string name="putao_putaolife_content3">lzj@putao.cn</string>
     <string name="putao_putaolife_content4">联系我们</string>
-    <string name="putao_putaolife_content5">欢迎加入天语生活助手讨论群，和我们交流互动，还能体验最新版本，群号：145395697。</string>
+    <string name="putao_putaolife_content5">欢迎加入葡萄生活助手讨论群，和我们交流互动，还能体验最新版本，群号：145395697。</string>
     <string name="putao_putaolife_sendemailhint">抱歉，暂无法发送邮件</string>
     <string name="putao_putaolife_sendemail_head">黄页数据添加或变更申请</string>
 

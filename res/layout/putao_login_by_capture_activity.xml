@@ -37,7 +37,7 @@
     </LinearLayout>
 
     <View
-        style="@style/putao_DividerStyle_Horizontal_Bottom"
+        style="@style/Theme.Ptui.Divider.Horizontal"
         android:layout_marginTop="16dp" />
 
     <RelativeLayout
@@ -56,7 +56,7 @@
 
         <EditText
             android:id="@+id/putao_username_et"
-            style="@style/putaoLoginEdittextStyle"
+            style="@style/Theme.Ptui.TextAppearance.LoginEdittext"
             android:layout_toRightOf="@id/putao_username_tv"
             android:digits="1234567890"
             android:inputType="number"
@@ -85,7 +85,7 @@
             android:visibility="gone" />
     </RelativeLayout>
 
-    <View style="@style/putao_DividerStyle_Horizontal_Bottom" />
+    <View style="@style/Theme.Ptui.Divider.Horizontal" />
 
     <RelativeLayout
         android:layout_width="fill_parent"
@@ -103,7 +103,7 @@
 
         <EditText
             android:id="@+id/putao_password_et"
-            style="@style/putaoLoginEdittextStyle"
+            style="@style/Theme.Ptui.TextAppearance.LoginEdittext"
             android:layout_toRightOf="@id/putao_password_tv"
             android:inputType="number"
             android:paddingLeft="10dp" />
@@ -120,7 +120,7 @@
             android:visibility="gone" />
     </RelativeLayout>
 
-    <View style="@style/putao_DividerStyle_Horizontal_Bottom" />
+    <View style="@style/Theme.Ptui.Divider.Horizontal" />
 
     <Button
         android:id="@+id/putao_confirm_bt"
