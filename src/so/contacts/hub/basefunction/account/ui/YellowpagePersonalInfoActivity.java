@@ -559,9 +559,4 @@ public class YellowpagePersonalInfoActivity extends BaseActivity implements OnCl
         }
     }
 
-    @Override
-    protected boolean needReset()
-    {
-        return true;
-    }
 }

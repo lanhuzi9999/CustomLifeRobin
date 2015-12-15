@@ -107,14 +107,14 @@
                         android:drawableLeft="@drawable/putao_menu_item_icon_tixing"
                         android:text="@string/putao_message_center" />
 
-                    <so.contacts.hub.basefunction.operate.remind.widget.SimpleRemindView
-                        android:id="@+id/menu_srv_myremind"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_alignParentRight="true"
-                        android:layout_centerVertical="true"
-                        android:layout_marginRight="48dp"
-                        android:gravity="center" />
+<!--                     <so.contacts.hub.basefunction.operate.remind.widget.SimpleRemindView -->
+<!--                         android:id="@+id/menu_srv_myremind" -->
+<!--                         android:layout_width="wrap_content" -->
+<!--                         android:layout_height="wrap_content" -->
+<!--                         android:layout_alignParentRight="true" -->
+<!--                         android:layout_centerVertical="true" -->
+<!--                         android:layout_marginRight="48dp" -->
+<!--                         android:gravity="center" /> -->
                 </RelativeLayout>
 
                 <View
@@ -161,9 +161,9 @@
                     android:drawableLeft="@drawable/putao_menu_item_icon_order"
                     android:text="@string/putao_menu_item_txt_myorder" />
 
-                <so.contacts.hub.basefunction.operate.remind.widget.SimpleRemindView
-                    android:id="@+id/menu_srv_myorder"
-                    style="@style/Theme.Ptui.MenuItem.PointStyle" />
+<!--                 <so.contacts.hub.basefunction.operate.remind.widget.SimpleRemindView -->
+<!--                     android:id="@+id/menu_srv_myorder" -->
+<!--                     style="@style/Theme.Ptui.MenuItem.PointStyle" /> -->
 
                 <ImageView
                     android:layout_width="wrap_content"
@@ -188,9 +188,9 @@
                     android:drawableLeft="@drawable/putao_menu_item_icon_act"
                     android:text="@string/putao_menu_item_txt_myvoucher" />
 
-                <so.contacts.hub.basefunction.operate.remind.widget.SimpleRemindView
-                    android:id="@+id/voucher_remind_icon_point"
-                    style="@style/Theme.Ptui.MenuItem.PointStyle" />
+<!--                 <so.contacts.hub.basefunction.operate.remind.widget.SimpleRemindView -->
+<!--                     android:id="@+id/voucher_remind_icon_point" -->
+<!--                     style="@style/Theme.Ptui.MenuItem.PointStyle" /> -->
 
                 <ImageView
                     android:layout_width="wrap_content"
@@ -215,9 +215,9 @@
                     android:drawableLeft="@drawable/putao_menu_item_icon_meituanorder"
                     android:text="@string/putao_menu_item_txt_mygroupon" />
 
-                <so.contacts.hub.basefunction.operate.remind.widget.SimpleRemindView
-                    android:id="@+id/menu_srv_mygroupon"
-                    style="@style/Theme.Ptui.MenuItem.PointStyle" />
+<!--                 <so.contacts.hub.basefunction.operate.remind.widget.SimpleRemindView -->
+<!--                     android:id="@+id/menu_srv_mygroupon" -->
+<!--                     style="@style/Theme.Ptui.MenuItem.PointStyle" /> -->
 
                 <ImageView
                     android:layout_width="wrap_content"

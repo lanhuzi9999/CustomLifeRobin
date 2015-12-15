@@ -52,13 +52,13 @@ public class YellowpageMainActivity extends BaseActivity implements OnClickListe
 
     private SharedPreferences mSharedPreferences;
 
-    private EditText mEditText = null;
+//    private EditText mEditText = null;
 
-    private TextView mPosition;
+//    private TextView mPosition;
 
     private RelativeLayout mTabMyLayout;
 
-    private TextView mTabLifeTxtView, mTabNaviTxtView, mTabMyTxtView;
+    private TextView mTabLifeTxtView, mTabNaviTxtView, mTabMyTxtView, mTabFindTxtView;
 
     // 卡片页卡
     private ImageView mTabMyRemindImgView;
@@ -71,6 +71,8 @@ public class YellowpageMainActivity extends BaseActivity implements OnClickListe
 
     private YellowPageServicesFragment servicesFragment;
 
+    private YellowpageDiscoverFragment mDiscoverFragment;
+    
     private YellowPageNaviFragment naviFragment;
 
     private MenuFragment menuFragment;
@@ -117,6 +119,7 @@ public class YellowpageMainActivity extends BaseActivity implements OnClickListe
         mTabLifeTxtView.setOnClickListener(this);
         mTabNaviTxtView.setOnClickListener(this);
         mTabMyTxtView.setOnClickListener(this);
+        mTabFindTxtView.setOnClickListener(this);
     }
 
     private void initViews()
@@ -126,16 +129,19 @@ public class YellowpageMainActivity extends BaseActivity implements OnClickListe
         mTabMyTxtView = (TextView) findViewById(R.id.putao_main_tab_my_text);
         mTabLifeTxtView = (TextView) findViewById(R.id.putao_main_tab_life_text);
         mTabNaviTxtView = (TextView) findViewById(R.id.putao_main_tab_navigation_text);
-
+        mTabFindTxtView = (TextView) findViewById(R.id.putao_main_tab_find_text);
+        
         mTabMyRemindImgView = (ImageView) findViewById(R.id.putao_main_tab_my_remind);
 
         mMainViewPager = (ViewPager) findViewById(R.id.main_viewpager);
 
         menuFragment = new MenuFragment();
+        mDiscoverFragment = new YellowpageDiscoverFragment();
         naviFragment = new YellowPageNaviFragment();
         servicesFragment = new YellowPageServicesFragment();
 
         mFragmentList.add(servicesFragment);
+        mFragmentList.add(mDiscoverFragment);
         mFragmentList.add(naviFragment);
         mFragmentList.add(menuFragment);
 
@@ -143,21 +149,19 @@ public class YellowpageMainActivity extends BaseActivity implements OnClickListe
         mViewPagerAdapter = new ViewPagerAdapter(fragmentManager, mFragmentList);
         mMainViewPager.setCurrentItem(0);
         mMainViewPager.setAdapter(mViewPagerAdapter);
-        mMainViewPager.setOffscreenPageLimit(2);
-        /*
-         * add by zj 2015-4-10 start 把搜索框从fragment移到activity里
-         */
-        if (mEditText == null)
-        {
-            mEditText = (EditText) findViewById(R.id.search_content);
-            mEditText.setOnClickListener(this);
-        }
-        if (mPosition == null)
-        {
-            mPosition = (TextView) findViewById(R.id.city_btn);
-            mPosition.setOnClickListener(this);
-        }
-        // end 2015-4-10 by zj
+        mMainViewPager.setOffscreenPageLimit(mFragmentList.size()-1);
+        
+//        if (mEditText == null)
+//        {
+//            mEditText = (EditText) findViewById(R.id.search_content);
+//            mEditText.setOnClickListener(this);
+//        }
+//        if (mPosition == null)
+//        {
+//            mPosition = (TextView) findViewById(R.id.city_btn);
+//            mPosition.setOnClickListener(this);
+//        }
+        
         mSharedPreferences = getSharedPreferences(SHARED_PREFS_YELLOW_PAGE, Context.MODE_PRIVATE);
     }
 
@@ -182,11 +186,14 @@ public class YellowpageMainActivity extends BaseActivity implements OnClickListe
             case R.id.putao_main_tab_life_text:
                 mMainViewPager.setCurrentItem(0, true);
                 break;
-            case R.id.putao_main_tab_navigation_text:
+            case R.id.putao_main_tab_find:
                 mMainViewPager.setCurrentItem(1, true);
                 break;
-            case R.id.putao_main_tab_my_text:
+            case R.id.putao_main_tab_navigation_text:
                 mMainViewPager.setCurrentItem(2, true);
+                break;
+            case R.id.putao_main_tab_my_text:
+                mMainViewPager.setCurrentItem(3, true);
                 break;
             default:
                 break;
@@ -227,6 +234,8 @@ public class YellowpageMainActivity extends BaseActivity implements OnClickListe
             case 0:
                 mTabLifeTxtView.setTextColor(selectColor);
                 mTabLifeTxtView.setCompoundDrawablesWithIntrinsicBounds(0, R.drawable.putao_tab_icon_logo_p, 0, 0);
+                mTabFindTxtView.setTextColor(defaultColor);
+                mTabFindTxtView.setCompoundDrawablesWithIntrinsicBounds(0, R.drawable.putao_tab_icon_discover, 0, 0);
                 mTabNaviTxtView.setTextColor(defaultColor);
                 mTabNaviTxtView.setCompoundDrawablesWithIntrinsicBounds(0, R.drawable.putao_tab_icon_navigation, 0, 0);
                 mTabMyTxtView.setTextColor(defaultColor);
@@ -235,15 +244,28 @@ public class YellowpageMainActivity extends BaseActivity implements OnClickListe
             case 1:
                 mTabLifeTxtView.setTextColor(defaultColor);
                 mTabLifeTxtView.setCompoundDrawablesWithIntrinsicBounds(0, R.drawable.putao_tab_icon_logo, 0, 0);
-                mTabNaviTxtView.setTextColor(selectColor);
-                mTabNaviTxtView
-                        .setCompoundDrawablesWithIntrinsicBounds(0, R.drawable.putao_tab_icon_navigation_p, 0, 0);
+                mTabFindTxtView.setTextColor(selectColor);
+                mTabFindTxtView.setCompoundDrawablesWithIntrinsicBounds(0, R.drawable.putao_tab_icon_discover_p, 0, 0);
+                mTabNaviTxtView.setTextColor(defaultColor);
+                mTabNaviTxtView.setCompoundDrawablesWithIntrinsicBounds(0, R.drawable.putao_tab_icon_navigation, 0, 0);
                 mTabMyTxtView.setTextColor(defaultColor);
                 mTabMyTxtView.setCompoundDrawablesWithIntrinsicBounds(0, R.drawable.putao_tab_icon_me, 0, 0);
                 break;
             case 2:
                 mTabLifeTxtView.setTextColor(defaultColor);
                 mTabLifeTxtView.setCompoundDrawablesWithIntrinsicBounds(0, R.drawable.putao_tab_icon_logo, 0, 0);
+                mTabFindTxtView.setTextColor(defaultColor);
+                mTabFindTxtView.setCompoundDrawablesWithIntrinsicBounds(0, R.drawable.putao_tab_icon_discover, 0, 0);
+                mTabNaviTxtView.setTextColor(selectColor);
+                mTabNaviTxtView.setCompoundDrawablesWithIntrinsicBounds(0, R.drawable.putao_tab_icon_navigation_p, 0, 0);
+                mTabMyTxtView.setTextColor(defaultColor);
+                mTabMyTxtView.setCompoundDrawablesWithIntrinsicBounds(0, R.drawable.putao_tab_icon_me, 0, 0);
+                break;
+            case 3:
+                mTabLifeTxtView.setTextColor(defaultColor);
+                mTabLifeTxtView.setCompoundDrawablesWithIntrinsicBounds(0, R.drawable.putao_tab_icon_logo, 0, 0);
+                mTabFindTxtView.setTextColor(defaultColor);
+                mTabFindTxtView.setCompoundDrawablesWithIntrinsicBounds(0, R.drawable.putao_tab_icon_discover, 0, 0);
                 mTabNaviTxtView.setTextColor(defaultColor);
                 mTabNaviTxtView.setCompoundDrawablesWithIntrinsicBounds(0, R.drawable.putao_tab_icon_navigation, 0, 0);
                 mTabMyTxtView.setTextColor(selectColor);
@@ -285,7 +307,7 @@ public class YellowpageMainActivity extends BaseActivity implements OnClickListe
         switch (locationState)
         {
             case LOCATION_STATE_SUCCESS:
-                mPosition.setText(city);
+//                mPosition.setText(city);
                 break;
 
             default:
