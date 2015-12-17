@@ -8,7 +8,7 @@ import android.content.Context;
 import so.contacts.hub.basefunction.account.IAccCallback;
 import so.contacts.hub.basefunction.account.IAccCallbackAdv;
 import so.contacts.hub.basefunction.account.IPutaoAccount;
-import so.contacts.hub.basefunction.account.PutaoAccountImpl;
+import so.contacts.hub.basefunction.account.AccountImpl;
 import so.contacts.hub.basefunction.account.bean.AccountInfo;
 import so.contacts.hub.basefunction.account.bean.PTUser;
 import so.contacts.hub.basefunction.config.Config;
@@ -20,9 +20,9 @@ import so.contacts.hub.basefunction.net.bean.RelateUser;
  * 葡萄账户对外接口，也就是葡萄账户接口管理类 版权声明 : 深圳市葡萄信息技术有限公司 版权所有 修改历史 : 2015-11-16 1.00 初始版本
  ***************************************************************** 
  */
-public class PutaoAccountManager
+public class AccountManager
 {
-    private volatile static PutaoAccountManager mInstance;
+    private volatile static AccountManager mInstance;
 
     private IPutaoAccount mPutaoAccount;
 
@@ -31,24 +31,24 @@ public class PutaoAccountManager
      * 
      * @return PutaoAccountManager
      */
-    public static PutaoAccountManager getInstance()
+    public static AccountManager getInstance()
     {
         if (mInstance == null)
         {
-            synchronized (PutaoAccountManager.class)
+            synchronized (AccountManager.class)
             {
                 if (mInstance == null)
                 {
-                    mInstance = new PutaoAccountManager();
+                    mInstance = new AccountManager();
                 }
             }
         }
         return mInstance;
     }
 
-    private PutaoAccountManager()
+    private AccountManager()
     {
-        mPutaoAccount = new PutaoAccountImpl();
+        mPutaoAccount = new AccountImpl();
     }
 
     /**
@@ -60,7 +60,17 @@ public class PutaoAccountManager
     {
         return mPutaoAccount.getPtUser();
     }
-
+    
+    /**
+     * 获取葡萄token
+     * @return
+     * String
+     */
+    public String getPtToken()
+    {
+        return mPutaoAccount.getPtToken();       
+    }
+    
     /**
      * 请求服务器发送验证码到相应手机号
      * 
@@ -73,12 +83,42 @@ public class PutaoAccountManager
     {
         mPutaoAccount.sendCaptchar(context, mobile, actionCode, cb);
     }
-
+    
+    /**
+     * 通过验证码登陆
+     * @param context
+     * @param accName
+     * @param checkCode
+     * @param cb
+     * void
+     */
     public void loginByCaptcha(Context context, String accName, int checkCode, IAccCallback cb)
     {
         mPutaoAccount.loginByCaptcha(context, accName, checkCode, cb);
     }
 
+    /**
+     * 方法表述
+     * @param context
+     * @param accName
+     * @param password
+     * @param cb
+     * void
+     */
+    public void loginByPassword(Context context, String accName, String password, IAccCallback cb)
+    {
+        mPutaoAccount.loginByPassword(context, accName, password, cb);
+    }
+    
+    /**
+     * 注销登陆
+     * @param context
+     * void
+     */
+    public void logout(Context context)
+    {
+        mPutaoAccount.logout(context);
+    }
     /**
      * 获取鉴权账户的手机号信息
      * 

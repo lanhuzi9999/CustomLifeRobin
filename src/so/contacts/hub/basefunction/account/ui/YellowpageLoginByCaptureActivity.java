@@ -18,7 +18,7 @@ import android.widget.Toast;
 import so.contacts.hub.BaseActivity;
 import so.contacts.hub.basefunction.account.IAccCallback;
 import so.contacts.hub.basefunction.account.IAccCallbackAdv;
-import so.contacts.hub.basefunction.account.manager.PutaoAccountManager;
+import so.contacts.hub.basefunction.account.manager.AccountManager;
 import so.contacts.hub.basefunction.utils.NetUtil;
 import so.contacts.hub.basefunction.utils.TelAreaUtil;
 import com.putao.live.R;
@@ -71,6 +71,8 @@ public class YellowpageLoginByCaptureActivity extends BaseActivity implements On
 
         mGetCaptcharButton.setOnClickListener(this);
         mLoginButton.setOnClickListener(this);
+        
+        findViewById(R.id.putao_login_password_tv).setOnClickListener(this);
     }
 
     @Override
@@ -148,6 +150,11 @@ public class YellowpageLoginByCaptureActivity extends BaseActivity implements On
             case R.id.putao_confirm_bt:
                 VerifyCaptchar();
                 break;
+            case R.id.putao_login_password_tv:
+                Intent intent = new Intent(this, YellowpageLoginByPasswordActivity.class);
+                startActivity(intent);
+                finish();
+                break;
             default:
                 break;
         }
@@ -168,7 +175,7 @@ public class YellowpageLoginByCaptureActivity extends BaseActivity implements On
 
             String checkCode = mPassWordEditText.getText().toString().trim();
             checkCode = checkCode.replace(" ", "");
-            PutaoAccountManager.getInstance().loginByCaptcha(this, phoneNum, Integer.parseInt(checkCode),this);
+            AccountManager.getInstance().loginByCaptcha(this, phoneNum, Integer.parseInt(checkCode), this);
         }
         else
         {
@@ -193,32 +200,31 @@ public class YellowpageLoginByCaptureActivity extends BaseActivity implements On
                 phoneNum = phoneNum.replace(" ", "");
                 mTimeCount = new TimeCount(60000, 1000);
 
-                PutaoAccountManager.getInstance().sendCaptchar(this, phoneNum, actionCode,
-                        new IAccCallbackAdv<String>()
-                        {
+                AccountManager.getInstance().sendCaptchar(this, phoneNum, actionCode, new IAccCallbackAdv<String>()
+                {
 
-                            @Override
-                            public void onSuccess(String t)
-                            {
-                                String number = t;
-                            }
+                    @Override
+                    public void onSuccess(String t)
+                    {
+                        String number = t;
+                    }
 
-                            @Override
-                            public void onFail(int failed_code)
-                            {
-                                // 发送验证码失败按钮需要做处理
-                                mGetCaptcharButton.setText(getString(R.string.putao_get_check_code));
-                                mGetCaptcharButton.getBackground().setAlpha(125);
-                                mGetCaptcharButton.setEnabled(false);
-                                mGetCaptcharButton.setClickable(false);
-                            }
+                    @Override
+                    public void onFail(int failed_code)
+                    {
+                        // 发送验证码失败按钮需要做处理
+                        mGetCaptcharButton.setText(getString(R.string.putao_get_check_code));
+                        mGetCaptcharButton.getBackground().setAlpha(125);
+                        mGetCaptcharButton.setEnabled(false);
+                        mGetCaptcharButton.setClickable(false);
+                    }
 
-                            @Override
-                            public void onCancel()
-                            {
+                    @Override
+                    public void onCancel()
+                    {
 
-                            }
-                        });
+                    }
+                });
                 // handler发送消息处理按钮变化
                 mTimeCount.start();
             }
@@ -282,7 +288,7 @@ public class YellowpageLoginByCaptureActivity extends BaseActivity implements On
     @Override
     public void onSuccess()
     {
-        //登录成功后，直接finish返回到menufagment
+        // 登录成功后，直接finish返回到menufagment
         setResult(RESULT_OK);
         finish();
     }
@@ -293,7 +299,7 @@ public class YellowpageLoginByCaptureActivity extends BaseActivity implements On
     @Override
     public void onFail(int failed_code)
     {
-        
+
     }
 
     /**
@@ -302,6 +308,6 @@ public class YellowpageLoginByCaptureActivity extends BaseActivity implements On
     @Override
     public void onCancel()
     {
-        
+
     }
 }

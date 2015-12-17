@@ -2,7 +2,7 @@ package so.contacts.hub.basefunction.net.bean;
 
 import so.contacts.hub.basefunction.config.Config;
 
-public class GetCaptchaRequestData extends BaseOldRequestData<GetCaptchaResponse>
+public class GetCaptchaRequestData extends BaseOldRequestData<GetCaptchaResponseData>
 {
     public String mobile;// 接收验证码的手机号
 
@@ -13,15 +13,15 @@ public class GetCaptchaRequestData extends BaseOldRequestData<GetCaptchaResponse
     }
 
     @Override
-    protected GetCaptchaResponse getNewInstance()
+    protected GetCaptchaResponseData getNewInstance()
     {
-        return new GetCaptchaResponse();
+        return new GetCaptchaResponseData();
     }
 
     @Override
-    protected GetCaptchaResponse fromJson(String content)
+    protected GetCaptchaResponseData fromJson(String content)
     {
-        return Config.mGson.fromJson(content, GetCaptchaResponse.class);
+        return Config.mGson.fromJson(content, GetCaptchaResponseData.class);
     }
 
 }

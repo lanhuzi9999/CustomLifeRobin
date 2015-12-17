@@ -13,6 +13,9 @@ import org.apache.http.protocol.HTTP;
 import com.android.volley.AuthFailureError;
 import com.android.volley.Request;
 import com.android.volley.Request.Method;
+import com.android.volley.Response.ErrorListener;
+import com.android.volley.Response.Listener;
+import com.android.volley.VolleyError;
 import com.android.volley.toolbox.RequestFuture;
 
 import android.R.integer;
@@ -71,18 +74,21 @@ public class PTHTTPImpl implements IPTHTTP
         return null;
     }
 
+    /**
+     * 异步post
+     */
     @Override
     public void asynPost(String url, String queryStr, IResponse cb)
     {
-        // TODO Auto-generated method stub
-
     }
 
+    /**
+     * 异步post
+     */
     @Override
     public void asynPost(String url, BaseRequestData requestData, IResponse cb)
     {
-        // TODO Auto-generated method stub
-
+        asyn(Request.Method.POST, url, requestData, cb);
     }
 
     @Override
@@ -272,6 +278,56 @@ public class PTHTTPImpl implements IPTHTTP
         return content;
     }
 
+    private void asyn(int method, String url, BaseRequestData requestData, IResponse cb)
+    {
+        BasePTStrRequest request = null;
+        switch (mHttpRequestType)
+        {
+            case PTHTTPManager.PT_HTTP_IMPL:
+                request = createPTRequest(method, url, requestData, cb);
+                break;
+
+            default:
+                request = createPTRequest(method, url, requestData, cb);
+                break;
+        }
+        if (request != null)
+        {
+            setDefaultHeader(request);
+            VolleyQueue.getQueue().add(request);
+        }
+    }
+    
+
+    private BasePTStrRequest createPTRequest(int method, String url, BaseRequestData requestData, final IResponse cb)
+    {
+        BasePTStrRequest request = new PTRequest(method, url, requestData, new Listener<String>()
+        {
+
+            @Override
+            public void onResponse(String content)
+            {
+                if (cb != null)
+                {
+                    cb.onSuccess(content);
+                }
+            }
+        }, new ErrorListener()
+        {
+
+            @Override
+            public void onErrorResponse(VolleyError error)
+            {
+                if (cb != null)
+                {
+                    cb.onFail(0);
+                }
+            }
+        });
+        return request;
+    }
+
+    
     private void setDefaultHeader(Request<?> request)
     {
         try

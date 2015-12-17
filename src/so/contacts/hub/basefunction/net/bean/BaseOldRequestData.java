@@ -10,7 +10,7 @@ import com.putao.live.R;
 
 import so.contacts.hub.ContactsApp;
 import so.contacts.hub.basefunction.account.bean.PTUser;
-import so.contacts.hub.basefunction.account.manager.PutaoAccountManager;
+import so.contacts.hub.basefunction.account.manager.AccountManager;
 import so.contacts.hub.basefunction.config.Config;
 import so.contacts.hub.basefunction.imageloader.utils.Md5Util;
 import so.contacts.hub.basefunction.utils.SystemUtil;
@@ -49,7 +49,7 @@ public abstract class BaseOldRequestData<T extends BaseResponseData>
     public BaseOldRequestData(String actionCode)
     {
         Context context = ContactsApp.getInstance();
-        PTUser ptUser = PutaoAccountManager.getInstance().getPtUser();
+        PTUser ptUser = AccountManager.getInstance().getPtUser();
         if (ptUser != null)
         {
             pt_token = ptUser.pt_token;

@@ -1,6 +1,5 @@
 package so.contacts.hub.basefunction.net.bean;
 
-import android.R.integer;
 import so.contacts.hub.basefunction.config.Config;
 
 public class CheckCaptchaRequestData extends BaseOldRequestData<CheckCaptchaResponseData>

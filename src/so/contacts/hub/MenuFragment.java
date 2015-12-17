@@ -2,7 +2,7 @@ package so.contacts.hub;
 
 
 import so.contacts.hub.basefunction.account.bean.PTUser;
-import so.contacts.hub.basefunction.account.manager.PutaoAccountManager;
+import so.contacts.hub.basefunction.account.manager.AccountManager;
 import so.contacts.hub.basefunction.account.ui.YellowpageLoginByCaptureActivity;
 import so.contacts.hub.basefunction.account.ui.YellowpagePersonalInfoActivity;
 import so.contacts.hub.basefunction.net.bean.RelateUser;
@@ -91,7 +91,7 @@ public class MenuFragment extends BaseFragment implements OnClickListener
                 case MSG_INIT_USER_INFO:
                     inflateMyLayout();
                     // 加载账户信息,这里就先不考虑静默登录了
-                    mPtUser = PutaoAccountManager.getInstance().getPtUser();
+                    mPtUser = AccountManager.getInstance().getPtUser();
                     if (mPtUser != null)
                     {
                         initAccoutInfo();
@@ -135,10 +135,10 @@ public class MenuFragment extends BaseFragment implements OnClickListener
      */
     protected void initAccoutInfo()
     {
-        mPtUser = PutaoAccountManager.getInstance().getPtUser();
+        mPtUser = AccountManager.getInstance().getPtUser();
         if (mPtUser != null)
         {
-            RelateUser relateUser = PutaoAccountManager.getInstance().getRelateUser(RelateUser.TYPE_PHONE);
+            RelateUser relateUser = AccountManager.getInstance().getRelateUser(RelateUser.TYPE_PHONE);
             if (relateUser != null)
             {
                 showAccountInfo(true, relateUser);
@@ -160,7 +160,7 @@ public class MenuFragment extends BaseFragment implements OnClickListener
         if (isLogin)
         {
             // 有账户登陆，名称显示顺序：手机号码，帐户名accName
-            String displayName = PutaoAccountManager.getInstance().getDisplayName(relateUser);
+            String displayName = AccountManager.getInstance().getDisplayName(relateUser);
             if (TextUtils.isEmpty(displayName))
             {
                 displayName = relateUser.accName;
@@ -188,15 +188,15 @@ public class MenuFragment extends BaseFragment implements OnClickListener
         switch (id)
         {
             case R.id.putao_header_fl:
-                RelateUser relateUser = PutaoAccountManager.getInstance().getRelateUser(RelateUser.TYPE_PHONE);
-//                if (relateUser != null)
-//                {
+                RelateUser relateUser = AccountManager.getInstance().getRelateUser(RelateUser.TYPE_PHONE);
+                if (relateUser != null)
+                {
                     intent.setClass(getContext(), YellowpagePersonalInfoActivity.class);
-//                }
-//                else
-//                {
-//                    intent.setClass(getContext(), YellowpageLoginByCaptureActivity.class);
-//                }
+                }
+                else
+                {
+                    intent.setClass(getContext(), YellowpageLoginByCaptureActivity.class);
+                }
                 break;
 
             default:

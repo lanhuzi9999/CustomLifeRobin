@@ -7,6 +7,7 @@ import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;
 
+import org.json.JSONException;
 import org.json.JSONObject;
 
 import com.lives.depend.theme.dialog.CommonDialog;
@@ -39,9 +40,13 @@ import android.widget.TextView;
 import android.widget.Toast;
 import so.contacts.hub.BaseActivity;
 import so.contacts.hub.basefunction.account.bean.BasicUserInfoBean;
+import so.contacts.hub.basefunction.account.manager.AccountManager;
 import so.contacts.hub.basefunction.config.Config;
 import so.contacts.hub.basefunction.imageloader.DataLoader;
 import so.contacts.hub.basefunction.imageloader.image.ImageLoaderFactory;
+import so.contacts.hub.basefunction.net.bean.UpLoadUserBasicInfoRequestData;
+import so.contacts.hub.basefunction.net.manager.IResponse;
+import so.contacts.hub.basefunction.net.manager.PTHTTPManager;
 import so.contacts.hub.basefunction.storage.db.PersonInfoDB;
 import so.contacts.hub.basefunction.utils.QiNiuCloudManager;
 import so.contacts.hub.basefunction.utils.SystemUtil;
@@ -117,6 +122,8 @@ public class YellowpagePersonalInfoActivity extends BaseActivity implements OnCl
 
     // 退出登录
     private Button mLogOutButton;
+
+    private CommonDialog mLogOutDialog;
 
     // ===============================view end========================
     // 个人信息是否有修改
@@ -214,6 +221,42 @@ public class YellowpagePersonalInfoActivity extends BaseActivity implements OnCl
         mPersonInfoDB.insertData(bean);
 
         // 2.上传到服务器
+        UpLoadUserBasicInfoRequestData requestData = new UpLoadUserBasicInfoRequestData(this, mHeadIconStr, "辽宁  沈阳",
+                1 + "", "1991-1-1");
+        PTHTTPManager.getHttp().asynPost(Config.UPLOAD_BASIC_INFO_URL, requestData, new IResponse()
+        {
+
+            @Override
+            public void onSuccess(String content)
+            {
+                try
+                {
+                    JSONObject object = new JSONObject(content);
+                    String ret_code = null;
+                    if (!object.isNull("ret_code"))
+                    {
+                        ret_code = object.getString("ret_code");
+                    }
+                    if (!"0000".equals(ret_code))
+                    {
+                        Toast.makeText(YellowpagePersonalInfoActivity.this,
+                                getString(R.string.putao_personal_edit_upload_fail), Toast.LENGTH_SHORT).show();
+                    }
+                }
+                catch (JSONException e)
+                {
+                    e.printStackTrace();
+                }
+
+            }
+
+            @Override
+            public void onFail(int errorCode)
+            {
+                Toast.makeText(YellowpagePersonalInfoActivity.this,
+                        getString(R.string.putao_personal_edit_upload_fail), Toast.LENGTH_SHORT).show();
+            }
+        });
     }
 
     /**
@@ -243,15 +286,14 @@ public class YellowpagePersonalInfoActivity extends BaseActivity implements OnCl
     }
 
     /**
-     * 初始化title
-     * void
+     * 初始化title void
      */
     private void initTitleView()
     {
         setTitle(R.string.putao_personal_data_title);
         findViewById(R.id.back_layout).setOnClickListener(this);
     }
-    
+
     /**
      * 初始化设置密码布局 void
      */
@@ -553,10 +595,51 @@ public class YellowpagePersonalInfoActivity extends BaseActivity implements OnCl
             case R.id.putao_personal_data_icon_rl:
                 mHeadImageDialog.show();
                 break;
-
+            case R.id.login_out_btn:
+                logOut();
+                break;
             default:
                 break;
         }
+    }
+
+    /**
+     * 退出登录:弹框，退出登录清空ptuser的信息即可 void
+     */
+    private void logOut()
+    {
+        mLogOutDialog = CommonDialogFactory.getDialog(YellowpagePersonalInfoActivity.this,
+                R.style.Theme_Ptui_Dialog_OkCancel);
+        mLogOutDialog.setTitle(R.string.putao_common_prompt);
+        mLogOutDialog.setMessage(R.string.putao_msg_logout_dialog);
+        mLogOutDialog.setPositiveButton(R.string.putao_confirm, new OnClickListener()
+        {
+
+            @Override
+            public void onClick(View view)
+            {
+               //如果个人信息有改动，需要保存个人信息
+               if(mChangeFlag)
+               {
+                   saveUserBasicInfo();
+               }
+               AccountManager.getInstance().logout(YellowpagePersonalInfoActivity.this);
+               mLogOutDialog.dismiss();
+               //直接返回menufragment
+               setResult(RESULT_OK);
+               finish();
+            }
+        });
+        mLogOutDialog.setNegativeButton(R.string.putao_cancel, new OnClickListener()
+        {
+
+            @Override
+            public void onClick(View view)
+            {
+               mLogOutDialog.dismiss();
+            }
+        });
+        mLogOutDialog.show();
     }
 
 }
