@@ -48,7 +48,7 @@ public class CMSCommServicesManager
             commonServicesDataVersion = data.getData_version();
         }
         CMSRequestData requestObj = new CMSRequestData();
-        requestObj.setParams("data_version", String.valueOf(commonServicesDataVersion));
+        requestObj.setParam("data_version", String.valueOf(commonServicesDataVersion));
         String urlStr = "http://api.putao.so/scmsface/view/services";
         CMSResponseBaseData resultData = CMSHttpRequestUtil.getCmsResponseData(urlStr, requestObj);
 

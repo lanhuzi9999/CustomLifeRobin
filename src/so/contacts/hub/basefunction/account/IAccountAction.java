@@ -9,7 +9,7 @@ import android.content.Context;
  * 版权声明 : 深圳市葡萄信息技术有限公司 版权所有 修改历史 : 2015-11-16 1.00 初始版本
  ***************************************************************** 
  */
-public interface IPutaoAccount
+public interface IAccountAction
 {
 
     /**
@@ -63,4 +63,18 @@ public interface IPutaoAccount
      * @param context void
      */
     public void logout(Context context);
+    
+    /**
+     * 添加账号状态变化监听器
+     * @param listener
+     * void
+     */
+    public void registerAccChangeListener(IAccChangeListener listener);
+    
+    /**
+     * 移除账号状态变化监听器
+     * @param listener
+     * void
+     */
+    public void unregisterAccChangeListener(IAccChangeListener listener);
 }

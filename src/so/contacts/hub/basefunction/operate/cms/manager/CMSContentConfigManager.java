@@ -88,7 +88,7 @@ public class CMSContentConfigManager
             localVersion = localData.getData_version();
         }
         CMSRequestData cmsRequestData = new CMSRequestData();
-        cmsRequestData.setParams("data_version", String.valueOf(localVersion));
+        cmsRequestData.setParam("data_version", String.valueOf(localVersion));
         CMSResponseBaseData responseData = CMSHttpRequestUtil.getCmsResponseData(CMSCommonConfig.CMS_URL_STREAMS, cmsRequestData);
         if(responseData != null)
         {

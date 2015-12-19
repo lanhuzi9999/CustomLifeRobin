@@ -21,7 +21,7 @@ import com.android.volley.toolbox.RequestFuture;
 import android.R.integer;
 import android.text.TextUtils;
 import so.contacts.hub.basefunction.net.BaseOldHttpRequest;
-import so.contacts.hub.basefunction.net.BasePTStrRequest;
+import so.contacts.hub.basefunction.net.BasePTRequest;
 import so.contacts.hub.basefunction.net.CMSRequest;
 import so.contacts.hub.basefunction.net.PTRequest;
 import so.contacts.hub.basefunction.net.VolleyQueue;
@@ -109,13 +109,16 @@ public class PTHTTPImpl implements IPTHTTP
     @Override
     public void asynGet(String url, String queryStr, IResponse cb)
     {
-
+        url = convertUrl(url, queryStr);
+        asyn(Request.Method.GET, url, queryStr, cb);
     }
 
     @Override
     public void asynGet(String url, BaseRequestData requestData, IResponse cb)
     {
-
+        // get请求需要把请求参数拼接到url尾部
+        url = convertUrl(url, encodeParameters(requestData.getParams()));
+        asyn(Request.Method.GET, url, requestData, cb);
     }
 
     @Override
@@ -203,7 +206,7 @@ public class PTHTTPImpl implements IPTHTTP
     {
         // 根据requestType的不同，实例化请求request
         RequestFuture<String> future = RequestFuture.newFuture();
-        BasePTStrRequest request = null;
+        BasePTRequest request = null;
         switch (mHttpRequestType)
         {
             case PTHTTPManager.PT_HTTP_IMPL:
@@ -242,7 +245,7 @@ public class PTHTTPImpl implements IPTHTTP
     private String sync(int method, String url, String data)
     {
         RequestFuture<String> future = RequestFuture.newFuture();
-        BasePTStrRequest request = null;
+        BasePTRequest request = null;
         switch (mHttpRequestType)
         {
             case PTHTTPManager.PT_HTTP_IMPL:
@@ -278,9 +281,29 @@ public class PTHTTPImpl implements IPTHTTP
         return content;
     }
 
-    private void asyn(int method, String url, BaseRequestData requestData, IResponse cb)
+    private void asyn(int method, String url, String queryStr, IResponse cb)
     {
-        BasePTStrRequest request = null;
+        BasePTRequest request = null;
+        switch (mHttpRequestType)
+        {
+            case PTHTTPManager.PT_HTTP_IMPL:
+                request = createPTRequest(method, url, queryStr, cb);
+                break;
+
+            default:
+                request = createPTRequest(method, url, queryStr, cb);
+                break;
+        }
+        if (request != null)
+        {
+            setDefaultHeader(request);
+            VolleyQueue.getQueue().add(request);
+        }
+    }
+
+    private void asyn(int method, String url, BaseRequestData requestData, final IResponse cb)
+    {
+        BasePTRequest request = null;
         switch (mHttpRequestType)
         {
             case PTHTTPManager.PT_HTTP_IMPL:
@@ -297,11 +320,32 @@ public class PTHTTPImpl implements IPTHTTP
             VolleyQueue.getQueue().add(request);
         }
     }
-    
 
-    private BasePTStrRequest createPTRequest(int method, String url, BaseRequestData requestData, final IResponse cb)
+    private BasePTRequest createPTRequest(int method, String url, String queryStr, final IResponse cb)
     {
-        BasePTStrRequest request = new PTRequest(method, url, requestData, new Listener<String>()
+        BasePTRequest request = new PTRequest(method, url, queryStr, new Listener<String>()
+        {
+
+            @Override
+            public void onResponse(String content)
+            {
+                cb.onSuccess(content);
+            }
+        }, new ErrorListener()
+        {
+
+            @Override
+            public void onErrorResponse(VolleyError error)
+            {
+                cb.onFail(0);
+            }
+        });
+        return request;
+    }
+
+    private BasePTRequest createPTRequest(int method, String url, BaseRequestData requestData, final IResponse cb)
+    {
+        BasePTRequest request = new PTRequest(method, url, requestData, new Listener<String>()
         {
 
             @Override
@@ -327,7 +371,6 @@ public class PTHTTPImpl implements IPTHTTP
         return request;
     }
 
-    
     private void setDefaultHeader(Request<?> request)
     {
         try

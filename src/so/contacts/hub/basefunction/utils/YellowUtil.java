@@ -21,7 +21,10 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import so.contacts.hub.ContactsApp;
+import so.contacts.hub.basefunction.account.bean.PTUser;
+import so.contacts.hub.basefunction.account.manager.AccountManager;
 import so.contacts.hub.basefunction.config.Config;
+import so.contacts.hub.basefunction.location.LBSManager;
 import so.contacts.hub.basefunction.operate.cms.bean.CMSResponseBaseData;
 import so.contacts.hub.basefunction.storage.db.CMSDataDB;
 
@@ -31,6 +34,7 @@ import android.content.SharedPreferences.Editor;
 import android.telephony.PhoneNumberUtils;
 import android.text.TextUtils;
 
+import com.lives.depend.utils.LogUtil;
 import com.putao.live.R;
 
 public class YellowUtil
@@ -1644,42 +1648,37 @@ public class YellowUtil
     // }
     //
     // //code moved by lxh
-    // /**
-    // * 获取与后台通信需要携带的Cookie参数，新老接口都要带上 added by cj 2015/02/10
-    // *
-    // * @return
-    // */
-    // public static String getCookieParamVal() {
-    // PTUser ptUsr = PutaoAccount.getInstance().getPtUser();
-    //
-    // /**
-    // * 增加每次请求上报的数据,版本,appid,渠道,open_token,机型,城市,经纬度 cookie中有城市中文,需要编码
-    // */
-    // // version, appid, channel, pt_token
-    // StringBuffer cookieBuf = new StringBuffer();
-    // cookieBuf.append("app_id=")
-    // .append(SystemUtil.getAppid(ContactsApp.getInstance()))
-    // .append(";channel=")
-    // .append(SystemUtil.getChannelNo(ContactsApp.getInstance()))
-    // .append(";version=")
-    // .append(SystemUtil.getAppVersion(ContactsApp.getInstance()))
-    // .append(";dev_no=")
-    // .append(SystemUtil.getDeviceId(ContactsApp.getInstance()))
-    // .append(";band=").append(SystemUtil.getMachine())
-    // .append(";city=")
-    // .append(URLEncoder.encode(LBSServiceGaode.getLocCity()))
-    // .append(";loc=")
-    // .append(String.valueOf(LBSServiceGaode.getLocLatitude()))
-    // .append(",")
-    // .append(String.valueOf(LBSServiceGaode.getLocLongitude()));
-    // if (ptUsr != null) {
-    // cookieBuf.append(";pt_token=").append(ptUsr.getPt_token());
-    // }
-    // // 去掉换行符,以免Cookie字段value换行
-    // String cookie = cookieBuf.toString().replaceAll("\n", "");
-    // LogUtil.d(TAG, "cookie="+cookie);
-    // return cookie;
-    // }
+     /**
+     * 获取与后台通信需要携带的Cookie参数，新老接口都要带上 added by cj 2015/02/10
+     *
+     * @return
+     */
+    public static String getCookieParamVal()
+    {
+        PTUser ptUsr = AccountManager.getInstance().getPtUser();
+
+        /**
+         * 增加每次请求上报的数据,版本,appid,渠道,open_token,机型,城市,经纬度 cookie中有城市中文,需要编码
+         */
+        // version, appid, channel, pt_token
+        StringBuffer cookieBuf = new StringBuffer();
+        cookieBuf.append("app_id=").append(SystemUtil.getAppid(ContactsApp.getInstance())).append(";channel=")
+                .append(SystemUtil.getChannelNo(ContactsApp.getInstance())).append(";version=")
+                .append(SystemUtil.getAppVersion(ContactsApp.getInstance())).append(";dev_no=")
+                .append(SystemUtil.getDeviceId(ContactsApp.getInstance())).append(";band=")
+                .append(SystemUtil.getMachine()).append(";city=")
+                .append(URLEncoder.encode(LBSManager.getInstance().getCity())).append(";loc=")
+                .append(String.valueOf(LBSManager.getInstance().getLatitude())).append(",")
+                .append(String.valueOf(LBSManager.getInstance().getLongitude()));
+        if (ptUsr != null)
+        {
+            cookieBuf.append(";pt_token=").append(ptUsr.getPt_token());
+        }
+        // 去掉换行符,以免Cookie字段value换行
+        String cookie = cookieBuf.toString().replaceAll("\n", "");
+        LogUtil.d(TAG, "cookie=" + cookie);
+        return cookie;
+    }
     //
     // /**
     // * 获取支付配置 数据版本

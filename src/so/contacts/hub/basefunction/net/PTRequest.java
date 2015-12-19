@@ -1,6 +1,9 @@
 package so.contacts.hub.basefunction.net;
 
 import so.contacts.hub.basefunction.net.bean.BaseRequestData;
+import so.contacts.hub.basefunction.utils.YellowUtil;
+
+import com.android.volley.DefaultRetryPolicy;
 import com.android.volley.Response.ErrorListener;
 import com.android.volley.Response.Listener;
 
@@ -14,13 +17,14 @@ import com.android.volley.Response.Listener;
  * 修改历史 : 2015-12-7 1.00 初始版本
  *****************************************************************
  */
-public class PTRequest extends BasePTStrRequest
+public class PTRequest extends BasePTRequest
 {
 
     public PTRequest(int method, String url, BaseRequestData requestData, Listener<String> listener,
             ErrorListener errorListener)
     {
         super(method, url, requestData, listener, errorListener);
+        setRetryPolicy(new DefaultRetryPolicy(20*1000, 10, 1));
     }
 
     public PTRequest(int method, String url, String queryStr, Listener<String> listener, ErrorListener errorListener)
@@ -33,7 +37,7 @@ public class PTRequest extends BasePTStrRequest
     {
         setHeaders("Accept-Encoding", "gzip");
         setHeaders("Content-Type", URL_PROTOCOL_CONTENT_TYPE);
-        setHeaders("Accept", "version=1.0");
+        setHeaders("Cookie", YellowUtil.getCookieParamVal());
     }
 
 }

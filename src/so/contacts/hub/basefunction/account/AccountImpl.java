@@ -3,6 +3,10 @@ package so.contacts.hub.basefunction.account;
 import java.nio.charset.Charset;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
+import java.util.ArrayList;
+import java.util.List;
+
+import com.lives.depend.utils.LogUtil;
 
 import so.contacts.hub.basefunction.account.bean.PTUser;
 import so.contacts.hub.basefunction.config.Config;
@@ -29,13 +33,16 @@ import android.util.Log;
  * 葡萄账户接口具体实现类 版权声明 : 深圳市葡萄信息技术有限公司 版权所有 修改历史 : 2015-11-16 1.00 初始版本
  ***************************************************************** 
  */
-public class AccountImpl implements IPutaoAccount
+public class AccountImpl implements IAccountAction
 {
     private static final String TAG = "PutaoAccountImpl";
 
     private PTUser mPtUser;
 
     private IAccCallback mIAccCallback;
+
+    // 账号变更接口list，用于账号变更时逐一通知做变更处理
+    private List<IAccChangeListener> mAccChangeListeners = new ArrayList<IAccChangeListener>();
 
     public AccountImpl()
     {
@@ -60,6 +67,7 @@ public class AccountImpl implements IPutaoAccount
                     {
                         mIAccCallback.onSuccess();
                     }
+                    loginSuccess();
                     break;
                 case MSG_LOGIN_FAIL:
 
@@ -91,7 +99,7 @@ public class AccountImpl implements IPutaoAccount
     /**
      * 加载葡萄用户信息 void
      */
-    public void loadPtuser()
+    public PTUser loadPtuser()
     {
         String ptUser = SharedPreManager.getInstance().getString(false, PrefConstants.PrefAccountTable.TABLE_NAME,
                 PrefConstants.PrefAccountTable.KEY_PT_USER, null);
@@ -99,6 +107,7 @@ public class AccountImpl implements IPutaoAccount
         {
             mPtUser = new PTUser(ptUser);
         }
+        return mPtUser;
     }
 
     /**
@@ -112,11 +121,59 @@ public class AccountImpl implements IPutaoAccount
         {
             return;
         }
+        PTUser newPtUser = new PTUser(content);
+        PTUser curUser = loadPtuser();
+        LogUtil.d(TAG, "curUser : " + curUser);
+        if (curUser != null && !TextUtils.isEmpty(curUser.getPt_uid()) && !curUser.getPt_uid().equals(newPtUser.pt_uid))
+        {
+            onAccoutChange();
+        }
+
         // 保存
         SharedPreManager.getInstance().putString(false, PrefConstants.PrefAccountTable.TABLE_NAME,
                 PrefConstants.PrefAccountTable.KEY_PT_USER, content);
+        mPtUser = newPtUser;
     }
 
+    /**
+     * 
+     * 账号变更 void
+     */
+    private void onAccoutChange()
+    {
+        if (mAccChangeListeners == null || mAccChangeListeners.size() <= 0)
+        {
+            return;
+        }
+        for (int i = 0; i < mAccChangeListeners.size(); i++)
+        {
+            IAccChangeListener l = mAccChangeListeners.get(i);
+            l.onChange();
+        }
+    }
+
+    private void loginSuccess()
+    {
+        Config.execute(new Runnable()
+        {
+            @Override
+            public void run()
+            {
+                LogUtil.d(TAG, "handle MSG_HANLE_LOGIN_SUCCESS start");
+                if (mAccChangeListeners == null || mAccChangeListeners.size() <= 0)
+                {
+                    return;
+                }
+                for (int i = 0; i < mAccChangeListeners.size(); i++)
+                {
+                    IAccChangeListener l = mAccChangeListeners.get(i);
+                    l.onLogin();
+                }
+                LogUtil.d(TAG, "handle MSG_HANLE_LOGIN_SUCCESS end");
+            }
+        });
+    }
+    
     /**
      * 清除账户信息
      * 
@@ -260,6 +317,10 @@ public class AccountImpl implements IPutaoAccount
                         // 通知主线程，登录成功
                         mainHandler.sendEmptyMessage(MSG_LOGIN_SUCCESS);
                     }
+                    else
+                    {
+                        mainHandler.sendEmptyMessage(MSG_LOGIN_FAIL);
+                    }
                 }
                 catch (NoSuchAlgorithmException e)
                 {
@@ -299,5 +360,23 @@ public class AccountImpl implements IPutaoAccount
 
         // 将最终的字节数组转成字符串返回
         return HexUtil.byteArrayToString(resultByteArray);
+    }
+
+    @Override
+    public void registerAccChangeListener(IAccChangeListener listener)
+    {
+        if (!mAccChangeListeners.contains(listener))
+        {
+            mAccChangeListeners.add(listener);
+        }
+    }
+
+    @Override
+    public void unregisterAccChangeListener(IAccChangeListener listener)
+    {
+        if (mAccChangeListeners != null && mAccChangeListeners.contains(listener))
+        {
+            mAccChangeListeners.remove(listener);
+        }
     }
 }

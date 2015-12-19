@@ -92,4 +92,9 @@ public class Config
      * 上传用户基础数据
      */
     public static final String UPLOAD_BASIC_INFO_URL = NEW_BIZ_SERVER_HOST + "/user/upload_baisc_info";
+    
+    /**
+     * 获取用户基础数据
+     */
+    public static final String GET_BASIC_INFO_URL = NEW_BIZ_SERVER_HOST + "/user/get_baisc_info";
 }

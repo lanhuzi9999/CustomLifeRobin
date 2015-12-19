@@ -37,9 +37,9 @@ public abstract class BaseRequestData
 
     public BaseRequestData()
     {
-        setDev_no(SystemUtil.getPutaoDeviceId(ContactsApp.getInstance()));
-        setTimestamp(System.currentTimeMillis());
-        setChannel_no(SystemUtil.getChannelNo(ContactsApp.getInstance()));
+        dev_no = SystemUtil.getDeviceId(ContactsApp.getInstance());
+        timestamp = System.currentTimeMillis();
+        channel_no = SystemUtil.getChannelNo(ContactsApp.getInstance());// 正式
         params = new HashMap<String, String>();
     }
 
@@ -53,13 +53,13 @@ public abstract class BaseRequestData
         {
             params.put("timestamp", String.valueOf(getTimestamp()));
         }
+        if (getLocalSign() != null)
+        {
+            params.put("local_sign", getLocalSign());
+        }
         if (getChannel_no() != null)
         {
             params.put("channel_no", getChannel_no());
-        }
-        if (getLocalSign() != null)
-        {
-            params.put("localSign", getLocalSign());
         }
         setParams(params);
         return params;
@@ -72,9 +72,9 @@ public abstract class BaseRequestData
      */
     protected abstract void setParams(Map<String, String> params);
 
-    public void setParams(String paramStr, String valueStr)
+    public void setParam(String param, String value)
     {
-        params.put(paramStr, valueStr);
+        params.put(param, value);
     }
 
     public String getDev_no()

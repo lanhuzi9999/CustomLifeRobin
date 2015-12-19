@@ -7,7 +7,8 @@ import com.google.gson.JsonSyntaxException;
 import android.content.Context;
 import so.contacts.hub.basefunction.account.IAccCallback;
 import so.contacts.hub.basefunction.account.IAccCallbackAdv;
-import so.contacts.hub.basefunction.account.IPutaoAccount;
+import so.contacts.hub.basefunction.account.IAccChangeListener;
+import so.contacts.hub.basefunction.account.IAccountAction;
 import so.contacts.hub.basefunction.account.AccountImpl;
 import so.contacts.hub.basefunction.account.bean.AccountInfo;
 import so.contacts.hub.basefunction.account.bean.PTUser;
@@ -24,7 +25,7 @@ public class AccountManager
 {
     private volatile static AccountManager mInstance;
 
-    private IPutaoAccount mPutaoAccount;
+    private IAccountAction mPutaoAccount;
 
     /**
      * 单例，双重检查锁定
@@ -60,17 +61,17 @@ public class AccountManager
     {
         return mPutaoAccount.getPtUser();
     }
-    
+
     /**
      * 获取葡萄token
-     * @return
-     * String
+     * 
+     * @return String
      */
     public String getPtToken()
     {
-        return mPutaoAccount.getPtToken();       
+        return mPutaoAccount.getPtToken();
     }
-    
+
     /**
      * 请求服务器发送验证码到相应手机号
      * 
@@ -83,14 +84,14 @@ public class AccountManager
     {
         mPutaoAccount.sendCaptchar(context, mobile, actionCode, cb);
     }
-    
+
     /**
      * 通过验证码登陆
+     * 
      * @param context
      * @param accName
      * @param checkCode
-     * @param cb
-     * void
+     * @param cb void
      */
     public void loginByCaptcha(Context context, String accName, int checkCode, IAccCallback cb)
     {
@@ -99,26 +100,27 @@ public class AccountManager
 
     /**
      * 方法表述
+     * 
      * @param context
      * @param accName
      * @param password
-     * @param cb
-     * void
+     * @param cb void
      */
     public void loginByPassword(Context context, String accName, String password, IAccCallback cb)
     {
         mPutaoAccount.loginByPassword(context, accName, password, cb);
     }
-    
+
     /**
      * 注销登陆
-     * @param context
-     * void
+     * 
+     * @param context void
      */
     public void logout(Context context)
     {
         mPutaoAccount.logout(context);
     }
+
     /**
      * 获取鉴权账户的手机号信息
      * 
@@ -175,5 +177,25 @@ public class AccountManager
             }
         }
         return null;
+    }
+
+    /**
+     * 添加账号状态变化监听器
+     * 
+     * @param listener void
+     */
+    public void registerAccChangeListener(IAccChangeListener listener)
+    {
+        mPutaoAccount.registerAccChangeListener(listener);
+    }
+
+    /**
+     * 移除账号状态变化监听器
+     * 
+     * @param listener void
+     */
+    public void unregisterAccChangeListener(IAccChangeListener listener)
+    {
+        mPutaoAccount.unregisterAccChangeListener(listener);
     }
 }

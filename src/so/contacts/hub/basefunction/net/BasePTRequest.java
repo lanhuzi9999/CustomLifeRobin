@@ -3,12 +3,14 @@ package so.contacts.hub.basefunction.net;
 import java.io.UnsupportedEncodingException;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Map.Entry;
+import java.util.TreeMap;
 
 import org.apache.http.protocol.HTTP;
 
 import so.contacts.hub.basefunction.net.bean.BaseRequestData;
 import so.contacts.hub.basefunction.net.manager.NetDisposetUtils;
-import android.R.integer;
+import android.text.TextUtils;
 
 import com.android.volley.AuthFailureError;
 import com.android.volley.NetworkResponse;
@@ -28,7 +30,7 @@ import com.android.volley.toolbox.HttpHeaderParser;
  * 修改历史 : 2015-11-7 1.00 初始版本
  *****************************************************************
  */
-public abstract class BasePTStrRequest extends Request<String>
+public abstract class BasePTRequest extends Request<String>
 {
     /**
      * request 请求成功回调接口
@@ -64,7 +66,7 @@ public abstract class BasePTStrRequest extends Request<String>
     public static final String URL_PROTOCOL_CONTENT_TYPE = String.format(
             "application/x-www-form-urlencoded; charset=%s", PROTOCOL_CHARSET);
     
-    public BasePTStrRequest(int method, String url, String queryStr, Listener<String> listener,
+    public BasePTRequest(int method, String url, String queryStr, Listener<String> listener,
             ErrorListener errorListener)
     {
         super(method, url, errorListener);
@@ -73,7 +75,7 @@ public abstract class BasePTStrRequest extends Request<String>
         processHeaderInfo();
     }
 
-    public BasePTStrRequest(int method, String url, BaseRequestData requestData, Listener<String> listener,
+    public BasePTRequest(int method, String url, BaseRequestData requestData, Listener<String> listener,
             ErrorListener errorListener)
     {
         super(method, url, errorListener);
@@ -148,7 +150,31 @@ public abstract class BasePTStrRequest extends Request<String>
     {
         return mDefaultHeaders;
     }
-    
+
+    @Override
+    protected Map<String, String> getParams() throws AuthFailureError
+    {
+        if (mBaseRequestData == null)
+        {
+            return super.getParams();
+        }
+        Map<String, String> param = mBaseRequestData.getParams();
+        if (param == null)
+        {
+            return null;
+        }
+
+        Map<String, String> newParam = new TreeMap<String, String>();
+        for (Entry<String, String> entry : param.entrySet())
+        {
+            if (!TextUtils.isEmpty(entry.getValue()))
+            {
+                newParam.put(entry.getKey(), entry.getValue());
+            }
+        }
+        return newParam;
+    }
+
     @Override
     public byte[] getBody() throws AuthFailureError
     {

@@ -15,7 +15,7 @@ import com.android.volley.Response.Listener;
  * 修改历史 : 2015-11-7 1.00 初始版本
  *****************************************************************
  */
-public class CMSRequest extends BasePTStrRequest
+public class CMSRequest extends BasePTRequest
 {
     public CMSRequest(int method, String url, BaseRequestData requestData, Listener<String> listener,
             ErrorListener errorListener)

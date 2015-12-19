@@ -4,7 +4,9 @@ import java.io.ByteArrayOutputStream;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 import org.json.JSONException;
@@ -50,8 +52,11 @@ import so.contacts.hub.basefunction.net.manager.PTHTTPManager;
 import so.contacts.hub.basefunction.storage.db.PersonInfoDB;
 import so.contacts.hub.basefunction.utils.QiNiuCloudManager;
 import so.contacts.hub.basefunction.utils.SystemUtil;
+import so.contacts.hub.basefunction.widget.wheel.OnWheelChangedListener;
+import so.contacts.hub.basefunction.widget.wheel.WheelView;
+import so.contacts.hub.basefunction.widget.wheel.adapters.ArrayWheelAdapter;
 
-public class YellowpagePersonalInfoActivity extends BaseActivity implements OnClickListener
+public class YellowpagePersonalInfoActivity extends BaseActivity implements OnClickListener, OnWheelChangedListener
 {
     private static final String TAG = "YellowpagePersonalInfoActivity";
 
@@ -87,6 +92,12 @@ public class YellowpagePersonalInfoActivity extends BaseActivity implements OnCl
     private TextView mCityTextView;
 
     private RelativeLayout mGenderLayout;
+
+    private WheelView mProvinceWheelView;
+
+    private WheelView mCityWheelView;
+
+    private CommonDialog mCityDialog;
 
     // 性别
     private TextView mGenderTextView;
@@ -155,7 +166,14 @@ public class YellowpagePersonalInfoActivity extends BaseActivity implements OnCl
     // 选择的生日
     private String mBirthdaySTR;
 
+    // 个人信息数据库
     private PersonInfoDB mPersonInfoDB;
+
+    // 省份列表
+    private List<String> mProvincesList;
+
+    // 城市列表
+    private List<String> mCitiesList;
 
     // 主线程handler
     private Handler mHandler = new Handler()
@@ -360,6 +378,46 @@ public class YellowpagePersonalInfoActivity extends BaseActivity implements OnCl
         mCityDataLayout = (RelativeLayout) findViewById(R.id.putao_personal_data_city_ll);
         mCityDataLayout.setOnClickListener(this);
         mCityTextView = (TextView) findViewById(R.id.putao_personal_data_city_tv);
+
+        mCityDialog = CommonDialogFactory.getDialog(this, R.style.Theme_Ptui_Dialog_Wheel);
+        mCityDialog.setTitle(getString(R.string.putao_personal_data_area));
+        mCityDialog.setNegativeButton(getString(R.string.putao_cancel), new OnClickListener()
+        {
+            @Override
+            public void onClick(View view)
+            {
+                mCityDialog.dismiss();
+            }
+        });
+        mCityDialog.setPositiveButton(getString(R.string.putao_confirm), new OnClickListener()
+        {
+
+            @Override
+            public void onClick(View view)
+            {
+                mCityDialog.dismiss();
+            }
+        });
+
+        LinearLayout wheelContainer = (LinearLayout) mCityDialog.getContainerLayout();
+        // 只有省市两级联动，把中间的wheelview去掉
+        wheelContainer.findViewById(R.id.wheel_center).setVisibility(View.GONE);
+        mProvinceWheelView = (WheelView) wheelContainer.findViewById(R.id.wheel_left);
+        mProvincesList = new ArrayList<String>();
+        String[] items =
+        { "北京", "上海", "广州", "深圳", "天津", "郑州" };
+        mProvinceWheelView.setViewAdapter(new ArrayWheelAdapter<String>(this, items));
+        mProvinceWheelView.addChangingListener(this);
+
+        mCityWheelView = (WheelView) wheelContainer.findViewById(R.id.wheel_right);
+        mCitiesList = new ArrayList<String>();
+        String[] itemsCity =
+        { "广州", "深圳", "东莞", "惠州", "中山", "肇庆" };
+        mCityWheelView.setViewAdapter(new ArrayWheelAdapter<String>(this, itemsCity));
+        mCityWheelView.addChangingListener(this);
+
+        mProvinceWheelView.setVisibility(3);
+        mCityWheelView.setVisibility(3);
     }
 
     /**
@@ -598,6 +656,10 @@ public class YellowpagePersonalInfoActivity extends BaseActivity implements OnCl
             case R.id.login_out_btn:
                 logOut();
                 break;
+            case R.id.putao_personal_data_city_ll:
+                mProvinceWheelView.setCurrentItem(0);
+                mCityWheelView.setCurrentItem(0);
+                mCityDialog.show();
             default:
                 break;
         }
@@ -618,16 +680,16 @@ public class YellowpagePersonalInfoActivity extends BaseActivity implements OnCl
             @Override
             public void onClick(View view)
             {
-               //如果个人信息有改动，需要保存个人信息
-               if(mChangeFlag)
-               {
-                   saveUserBasicInfo();
-               }
-               AccountManager.getInstance().logout(YellowpagePersonalInfoActivity.this);
-               mLogOutDialog.dismiss();
-               //直接返回menufragment
-               setResult(RESULT_OK);
-               finish();
+                // 如果个人信息有改动，需要保存个人信息
+                if (mChangeFlag)
+                {
+                    saveUserBasicInfo();
+                }
+                AccountManager.getInstance().logout(YellowpagePersonalInfoActivity.this);
+                mLogOutDialog.dismiss();
+                // 直接返回menufragment
+                setResult(RESULT_OK);
+                finish();
             }
         });
         mLogOutDialog.setNegativeButton(R.string.putao_cancel, new OnClickListener()
@@ -636,10 +698,31 @@ public class YellowpagePersonalInfoActivity extends BaseActivity implements OnCl
             @Override
             public void onClick(View view)
             {
-               mLogOutDialog.dismiss();
+                mLogOutDialog.dismiss();
             }
         });
         mLogOutDialog.show();
+    }
+
+    @Override
+    public void onChanged(WheelView wheel, int oldValue, int newValue)
+    {
+        if (wheel == mProvinceWheelView)
+        {
+            updateCities();
+        }
+        else if (wheel == mCityWheelView)
+        {
+
+        }
+    }
+
+    /**
+     * 当省份滑动改变时，相应的改变城市 void
+     */
+    private void updateCities()
+    {
+
     }
 
 }

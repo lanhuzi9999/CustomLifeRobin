@@ -1,11 +1,19 @@
 package so.contacts.hub;
 
+import org.json.JSONObject;
 
+import so.contacts.hub.basefunction.account.IAccChangeListener;
+import so.contacts.hub.basefunction.account.bean.BasicUserInfoBean;
 import so.contacts.hub.basefunction.account.bean.PTUser;
 import so.contacts.hub.basefunction.account.manager.AccountManager;
+import so.contacts.hub.basefunction.account.manager.UserInfoManager;
 import so.contacts.hub.basefunction.account.ui.YellowpageLoginByCaptureActivity;
 import so.contacts.hub.basefunction.account.ui.YellowpagePersonalInfoActivity;
+import so.contacts.hub.basefunction.config.Config;
+import so.contacts.hub.basefunction.imageloader.DataLoader;
+import so.contacts.hub.basefunction.imageloader.image.ImageLoaderFactory;
 import so.contacts.hub.basefunction.net.bean.RelateUser;
+import so.contacts.hub.basefunction.net.manager.IResponse;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
@@ -21,7 +29,7 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 import com.putao.live.R;
 
-public class MenuFragment extends BaseFragment implements OnClickListener
+public class MenuFragment extends BaseFragment implements OnClickListener, IAccChangeListener, IResponse
 {
 
     private static final String TAG = "MenuFragment";
@@ -46,12 +54,24 @@ public class MenuFragment extends BaseFragment implements OnClickListener
     /** 账号名字 */
     private TextView mAccNameTv;
 
+    /** ptuser */
     private PTUser mPtUser;
+
+    /**
+     * 账户头像url
+     */
+    private String mHeadIconUrl;
+
+    /**
+     * 头像加载器
+     */
+    private DataLoader mImageLoader;
 
     @Override
     public void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
+        AccountManager.getInstance().registerAccChangeListener(this);
     }
 
     @Override
@@ -165,9 +185,23 @@ public class MenuFragment extends BaseFragment implements OnClickListener
             {
                 displayName = relateUser.accName;
             }
-            mAccHeadImv.setImageResource(R.drawable.putao_menu_acc_headimg_logined);
             mAccNameTv.setText(displayName);
             mAccNameTv.setVisibility(View.VISIBLE);
+            // 从个人信息数据库读取头像地址，为空的时候才去加载默认头像
+            mHeadIconUrl = Config.getDatabaseHelper().getPersonInfoDB().queryImgUrl();
+            if (!TextUtils.isEmpty(mHeadIconUrl))
+            {
+                if (mImageLoader == null)
+                {
+                    mImageLoader = new ImageLoaderFactory(getContext()).getStatusAvatarLoader();
+                }
+                mImageLoader.loadData(mHeadIconUrl, mAccHeadImv);
+            }
+            else
+            {
+                mAccHeadImv.setImageResource(R.drawable.putao_menu_acc_headimg_logined);
+            }
+
             mLoginTv.setVisibility(View.INVISIBLE);
             mLogintip.setVisibility(View.INVISIBLE);
         }
@@ -203,5 +237,61 @@ public class MenuFragment extends BaseFragment implements OnClickListener
                 break;
         }
         startActivity(intent);
+    }
+
+    @Override
+    public void onLogin()
+    {
+        UserInfoManager.getInstance().getUserBasicData(getContext(), this);
+    }
+
+    @Override
+    public void onLogout()
+    {
+
+    }
+
+    @Override
+    public void onChange()
+    {
+        UserInfoManager.getInstance().getUserBasicData(getContext(), this);
+    }
+
+    @Override
+    public void onSuccess(String content)
+    {
+        try
+        {
+            JSONObject object = new JSONObject(content);
+            String ret_code = object.getString("ret_code");
+            if ("0000".endsWith(ret_code))
+            {
+                JSONObject data = object.getJSONObject("data");
+                int hasSetPassword = data.optInt("is_set_password");
+                String head_pic = data.optString("head_pic");
+                String city = data.optString("city");
+                int gender = data.optInt("gender");
+                String birthDay = data.optString("birthday");
+                BasicUserInfoBean bean = new BasicUserInfoBean(hasSetPassword, head_pic, city, gender, birthDay);
+                Config.getDatabaseHelper().getPersonInfoDB().insertData(bean);
+                initAccoutInfo();
+            }
+            else
+            {// 此次为后台查询,不提示 for BUG #5109 modified by jsy 2015-06-11
+             // Toast.makeText(getContext(),
+             // getContext().getString(R.string.putao_personal_get_user_info_fail),
+             // Toast.LENGTH_SHORT).show();
+            }
+        }
+        catch (Exception e)
+        {
+            e.printStackTrace();
+        }
+    }
+
+    @Override
+    public void onFail(int errorCode)
+    {
+
     }
 }
