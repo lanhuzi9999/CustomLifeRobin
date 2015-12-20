@@ -79,9 +79,19 @@ public class SharedPreManager
     {
         getSharedPreferences(fileName).edit().putString(key, value).commit();
     }
-    
+
     public boolean remove(String fileName, String key)
     {
         return getSharedPreferences(fileName).edit().remove(key).commit();
+    }
+
+    public long getLong(String fileName, String key, long defaultvalue)
+    {
+        return getSharedPreferences(fileName).getLong(key, defaultvalue);
+    }
+
+    public void putLong(String fileName, String key, long value)
+    {
+        getSharedPreferences(fileName).edit().putLong(key, value).commit();
     }
 }
