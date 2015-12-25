@@ -1,10 +1,7 @@
 package so.contacts.hub.basefunction.utils.staticresource;
 
-import java.io.BufferedReader;
-import java.io.FilenameFilter;
 import java.io.IOException;
 import java.io.InputStream;
-import java.io.InputStreamReader;
 
 import org.apache.http.Header;
 import org.apache.http.HttpResponse;
@@ -19,7 +16,6 @@ import org.apache.http.params.HttpConnectionParams;
 import com.lives.depend.utils.LogUtil;
 import com.qiniu.android.utils.Etag;
 
-import android.R.integer;
 import android.text.TextUtils;
 
 import so.contacts.hub.ContactsApp;
@@ -90,17 +86,6 @@ public class LoadStaticResourceUtils
                 inputStream = response.getEntity().getContent();
                 // 在这里需要保存从服务端传过来的etag和Last-Modified信息
                 saveEtag(response, md5Url);
-                // BufferedReader br = new BufferedReader(new
-                // InputStreamReader(inputStream, "utf-8"));
-                // String line = null;
-                // while ((line = br.readLine()) != null)
-                // {
-                // if (line == null || "".equals(line))
-                // {
-                // continue;
-                // }
-                // String elements[] = line.split("\t");
-                // }
             }
         }
         catch (ClientProtocolException e)
