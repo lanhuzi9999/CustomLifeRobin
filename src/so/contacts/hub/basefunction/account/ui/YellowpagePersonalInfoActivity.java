@@ -6,6 +6,7 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
 
@@ -20,6 +21,7 @@ import com.qiniu.android.storage.UpCompletionHandler;
 import com.qiniu.android.storage.UploadManager;
 import com.qiniu.android.storage.UploadOptions;
 
+import android.R.integer;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.Bitmap.CompressFormat;
@@ -41,20 +43,22 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 import so.contacts.hub.BaseActivity;
+import so.contacts.hub.basefunction.account.adapter.WheelTextAdapter;
 import so.contacts.hub.basefunction.account.bean.BasicUserInfoBean;
 import so.contacts.hub.basefunction.account.manager.AccountManager;
 import so.contacts.hub.basefunction.config.Config;
 import so.contacts.hub.basefunction.imageloader.DataLoader;
 import so.contacts.hub.basefunction.imageloader.image.ImageLoaderFactory;
+import so.contacts.hub.basefunction.net.bean.RelateUser;
 import so.contacts.hub.basefunction.net.bean.UpLoadUserBasicInfoRequestData;
 import so.contacts.hub.basefunction.net.manager.IResponse;
 import so.contacts.hub.basefunction.net.manager.PTHTTPManager;
+import so.contacts.hub.basefunction.storage.db.CityListDB;
 import so.contacts.hub.basefunction.storage.db.PersonInfoDB;
 import so.contacts.hub.basefunction.utils.QiNiuCloudManager;
 import so.contacts.hub.basefunction.utils.SystemUtil;
 import so.contacts.hub.basefunction.widget.wheel.OnWheelChangedListener;
 import so.contacts.hub.basefunction.widget.wheel.WheelView;
-import so.contacts.hub.basefunction.widget.wheel.adapters.ArrayWheelAdapter;
 
 public class YellowpagePersonalInfoActivity extends BaseActivity implements OnClickListener, OnWheelChangedListener
 {
@@ -71,6 +75,10 @@ public class YellowpagePersonalInfoActivity extends BaseActivity implements OnCl
     private static final int CODE_UPLOAD_SUCCESS = 0xa3;
 
     private static final int CODE_UPLOAD_FIAL = 0xa4;
+
+    private static final int CODE_SHOW_WHEEL_CITY_DIALOG = 0xa5;
+
+    private static final int CODE_INIT_BASIC_USER_DATA = 0xa6;
 
     // ===============================view start========================
     // 设置密码提示
@@ -170,10 +178,31 @@ public class YellowpagePersonalInfoActivity extends BaseActivity implements OnCl
     private PersonInfoDB mPersonInfoDB;
 
     // 省份列表
-    private List<String> mProvincesList;
+    private LinkedList<String> mProvincesList = new LinkedList<String>();
+
+    // 省份适配器
+    private WheelTextAdapter mProvinceAdapter;
 
     // 城市列表
-    private List<String> mCitiesList;
+    private LinkedList<String> mCitiesList = new LinkedList<String>();
+
+    // 城市适配器
+    private WheelTextAdapter mCityAdapter;
+
+    // 城市列表数据库
+    private CityListDB mCityListDB;
+
+    // 省份城市集合
+    private LinkedList<ProvinceItem> mProvinceItems = new LinkedList<ProvinceItem>();
+
+    // 用户基础数据
+    private BasicUserInfoBean mBasicUserInfoBean;
+
+    // 男
+    private String male;
+
+    // 女
+    private String female;
 
     // 主线程handler
     private Handler mHandler = new Handler()
@@ -193,6 +222,10 @@ public class YellowpagePersonalInfoActivity extends BaseActivity implements OnCl
                     Toast.makeText(YellowpagePersonalInfoActivity.this,
                             getString(R.string.putao_personal_data_upload_icon_fail), Toast.LENGTH_SHORT).show();
                     break;
+                case CODE_SHOW_WHEEL_CITY_DIALOG:
+                    showWheelCityDialog();
+                case CODE_INIT_BASIC_USER_DATA:
+                    initBasicInfoData();
                 default:
                     break;
             }
@@ -207,6 +240,7 @@ public class YellowpagePersonalInfoActivity extends BaseActivity implements OnCl
         mHeadIconUri = Uri.fromFile(new File(getExternalCacheDir(), IMAGE_FILE_NAME));
         mImageLoader = new ImageLoaderFactory(this).getStatusAvatarLoader();
         mPersonInfoDB = Config.getDatabaseHelper().getPersonInfoDB();
+        mCityListDB = Config.getDatabaseHelper().getCityListDB();
         initView();
     }
 
@@ -214,7 +248,87 @@ public class YellowpagePersonalInfoActivity extends BaseActivity implements OnCl
     protected void onResume()
     {
         super.onResume();
-        initData();
+        updateBasicInfoData();
+        initCommonInfoData();
+    }
+
+    /**
+     * 从数据库获取基本数据，并显示 void
+     */
+    private void updateBasicInfoData()
+    {
+        // 1.从数据库获取用户基本数据 2.handler发送message到界面显示
+        Config.execute(new Runnable()
+        {
+            @Override
+            public void run()
+            {
+                mBasicUserInfoBean = mPersonInfoDB.queryData();
+                mHandler.sendEmptyMessage(CODE_INIT_BASIC_USER_DATA);
+            }
+        });
+    }
+
+    /**
+     * 界面显示用户基本数据 void
+     */
+    private void initBasicInfoData()
+    {
+        if (mBasicUserInfoBean == null)
+        {
+            return;
+        }
+        else
+        {
+            // 是否已经设置过密码
+            mHasSetPassword = mBasicUserInfoBean.getHas_set_password();
+            if (mHasSetPassword != 1)
+            {
+                findViewById(R.id.putao_not_safty).setVisibility(View.VISIBLE);
+            }
+        }
+        // 设置头像
+        String imageUrl = mBasicUserInfoBean.getHead_pic();
+        if (!TextUtils.isEmpty(imageUrl) && mImageLoader != null)
+        {
+            mImageLoader.loadData(imageUrl, mHeadImageView);
+        }
+        else
+        {
+            mHeadImageView.setImageResource(R.drawable.putao_menu_acc_headimg_logined);
+        }
+        // 设置地区
+        String city = mBasicUserInfoBean.getCity();
+        if (!TextUtils.isEmpty(city))
+        {
+            mCitySTR = city;
+        }
+        else
+        {
+            // 根据定位的城市，得到省份，拼接出mCitySTR
+        }
+        mCityTextView.setText(mCitySTR);
+        // 设置性别
+        int gender = mBasicUserInfoBean.getGender();
+        if (gender == 0)
+        {
+            mGenderSTR = male;
+        }
+        else if (gender == 1)
+        {
+            mGenderSTR = female;
+        }
+        mGenderTextView.setText(mGenderSTR);
+        // 设置生日
+        mBirthdaySTR = mBasicUserInfoBean.getBirthday();
+        if (!TextUtils.isEmpty(mBirthdaySTR))
+        {
+            mBirthdayTextView.setText(mBirthdaySTR);
+        }
+        else
+        {
+            mBirthdayTextView.setText("1989-10-15");
+        }
     }
 
     @Override
@@ -235,8 +349,16 @@ public class YellowpagePersonalInfoActivity extends BaseActivity implements OnCl
     private void saveUserBasicInfo()
     {
         // 1.保存到数据库里面
-        BasicUserInfoBean bean = new BasicUserInfoBean(0, mHeadIconStr, null, 0, null);
-        mPersonInfoDB.insertData(bean);
+        final BasicUserInfoBean bean = new BasicUserInfoBean(0, mHeadIconStr, mCitySTR, 0, null);
+        // 数据库操作要放到子线程
+        Config.execute(new Runnable()
+        {
+            @Override
+            public void run()
+            {
+                mPersonInfoDB.insertData(bean);
+            }
+        });
 
         // 2.上传到服务器
         UpLoadUserBasicInfoRequestData requestData = new UpLoadUserBasicInfoRequestData(this, mHeadIconStr, "辽宁  沈阳",
@@ -280,13 +402,16 @@ public class YellowpagePersonalInfoActivity extends BaseActivity implements OnCl
     /**
      * 初始化数据 void
      */
-    private void initData()
+    private void initCommonInfoData()
     {
-        String imageUrl = mPersonInfoDB.queryImgUrl();
-        if (!TextUtils.isEmpty(imageUrl) && mImageLoader != null)
+        // 设置已绑定的手机号码
+        String bindPhone ="";
+        RelateUser relateUser = AccountManager.getInstance().getRelateUser(RelateUser.TYPE_PHONE);
+        if (relateUser != null)
         {
-            mImageLoader.loadData(imageUrl, mHeadImageView);
+            bindPhone = AccountManager.getInstance().getDisplayName(relateUser);
         }
+        mBindPhoneTextView.setText(bindPhone);
     }
 
     /**
@@ -363,6 +488,8 @@ public class YellowpagePersonalInfoActivity extends BaseActivity implements OnCl
      */
     private void initGenderInfoView()
     {
+        male = getString(R.string.putao_personal_data_male);
+        female = getString(R.string.putao_personal_data_femel);
         // 性别
         mGenderLayout = (RelativeLayout) findViewById(R.id.putao_personal_data_gender_ll);
         mGenderLayout.setOnClickListener(this);
@@ -374,50 +501,188 @@ public class YellowpagePersonalInfoActivity extends BaseActivity implements OnCl
      */
     private void initCityInfoView()
     {
-        // 地区
         mCityDataLayout = (RelativeLayout) findViewById(R.id.putao_personal_data_city_ll);
         mCityDataLayout.setOnClickListener(this);
         mCityTextView = (TextView) findViewById(R.id.putao_personal_data_city_tv);
+    }
 
-        mCityDialog = CommonDialogFactory.getDialog(this, R.style.Theme_Ptui_Dialog_Wheel);
-        mCityDialog.setTitle(getString(R.string.putao_personal_data_area));
-        mCityDialog.setNegativeButton(getString(R.string.putao_cancel), new OnClickListener()
+    /**
+     * 显示省份城市滑轮 void
+     */
+    private void showCityDialog()
+    {
+        // 加载省份城市数据,如果已经加载过就不再加载
+        if (mProvinceItems.size() == 0 || mProvinceItems.isEmpty())
         {
-            @Override
-            public void onClick(View view)
+            Config.execute(new Runnable()
             {
-                mCityDialog.dismiss();
-            }
-        });
-        mCityDialog.setPositiveButton(getString(R.string.putao_confirm), new OnClickListener()
+
+                @Override
+                public void run()
+                {
+                    // 从数据库加载数据
+                    loadCityData();
+                    // 数据加载完毕之后再显示滑轮框
+                    mHandler.sendEmptyMessage(CODE_SHOW_WHEEL_CITY_DIALOG);
+                }
+            });
+        }
+        else
         {
+            showWheelCityDialog();
+        }
 
-            @Override
-            public void onClick(View view)
+    }
+
+    private void showWheelCityDialog()
+    {
+        if (mCityDialog == null)
+        {
+            mCityDialog = CommonDialogFactory.getDialog(this, R.style.Theme_Ptui_Dialog_Wheel);
+            mCityDialog.setTitle(getString(R.string.putao_personal_data_area));
+            mCityDialog.setNegativeButton(getString(R.string.putao_cancel), new OnClickListener()
             {
-                mCityDialog.dismiss();
+                @Override
+                public void onClick(View view)
+                {
+                    mCityDialog.dismiss();
+                }
+            });
+            mCityDialog.setPositiveButton(getString(R.string.putao_confirm), new OnClickListener()
+            {
+
+                @Override
+                public void onClick(View view)
+                {
+                    mCityDialog.dismiss();
+                    mChangeFlag = true;
+                    // 提取滑轮中的省份和城市
+                    ProvinceItem provinceItem = mProvinceItems.get(0);
+                    String city = "";
+                    int provinceIndex = mProvinceWheelView.getCurrentItem();
+                    if (provinceIndex >= 0 && provinceIndex < mProvinceItems.size())
+                    {
+                        provinceItem = mProvinceItems.get(provinceIndex);
+                        mCitiesList.clear();
+                        mCitiesList.addAll(provinceItem.cityList);
+                        int cityIndex = mCityWheelView.getCurrentItem();
+                        if (cityIndex >= 0 && cityIndex < mCitiesList.size())
+                        {
+                            city = mCitiesList.get(cityIndex);
+                            if ("---".equals(city))
+                            {
+                                city = "";
+                            }
+                        }
+                        StringBuilder sb = new StringBuilder();
+                        sb.append(provinceItem.provinceName).append("  ").append(city);
+                        mCitySTR = sb.toString();
+                        mCityTextView.setText(mCitySTR);
+                    }
+
+                }
+            });
+
+            LinearLayout wheelContainer = (LinearLayout) mCityDialog.getContainerLayout();
+            // 只有省市两级联动，把中间的wheelview去掉
+            wheelContainer.findViewById(R.id.wheel_center).setVisibility(View.GONE);
+            mProvinceWheelView = (WheelView) wheelContainer.findViewById(R.id.wheel_left);
+            mProvinceWheelView.setVisibleItems(3);
+            mProvinceAdapter = new WheelTextAdapter(this, mProvincesList);
+            mProvinceWheelView.setViewAdapter(mProvinceAdapter);
+            mProvinceWheelView.addChangingListener(this);
+
+            mCityWheelView = (WheelView) wheelContainer.findViewById(R.id.wheel_right);
+            mCityWheelView.setVisibleItems(3);
+            mCityAdapter = new WheelTextAdapter(this, mCitiesList);
+            mCityWheelView.setViewAdapter(mCityAdapter);
+            mCityWheelView.addChangingListener(this);
+        }
+
+        // 显示已设定的城市，或显示默认第一个
+        if (!TextUtils.isEmpty(mCitySTR))
+        {
+            // 省份和城市之间是以两个空格来分开的
+            String[] area = mCitySTR.split("  ");
+            String province = "";
+            String city = "";
+            if (area.length > 0)
+            {
+                province = area[0];
             }
-        });
+            if (area.length > 1)
+            {
+                city = area[1];
+            }
+            // 遍历省份列表
+            if (!mProvinceItems.isEmpty() && !TextUtils.isEmpty(province))
+            {
+                for (int i = 0; i < mProvinceItems.size(); i++)
+                {
+                    if (mProvinceItems.get(i).provinceName.equals(province))
+                    {
+                        mProvinceWheelView.setCurrentItem(i);
+                        mCitiesList.clear();
+                        mCitiesList.addAll(mProvinceItems.get(i).cityList);
+                        break;
+                    }
+                }
+            }
+            // 遍历城市列表
+            if (!mCitiesList.isEmpty() && TextUtils.isEmpty(city))
+            {
+                for (int j = 0; j < mCitiesList.size(); j++)
+                {
+                    if (mCitiesList.get(j).equals(city))
+                    {
+                        mCityWheelView.setCurrentItem(j);
+                        break;
+                    }
+                }
+            }
+        }
+        else
+        {
+            mProvinceWheelView.setCurrentItem(0);
+            mProvinceAdapter.setData(mProvincesList);
+            mCityWheelView.setCurrentItem(0);
+            mCityAdapter.setData(mCitiesList);
+        }
 
-        LinearLayout wheelContainer = (LinearLayout) mCityDialog.getContainerLayout();
-        // 只有省市两级联动，把中间的wheelview去掉
-        wheelContainer.findViewById(R.id.wheel_center).setVisibility(View.GONE);
-        mProvinceWheelView = (WheelView) wheelContainer.findViewById(R.id.wheel_left);
-        mProvincesList = new ArrayList<String>();
-        String[] items =
-        { "北京", "上海", "广州", "深圳", "天津", "郑州" };
-        mProvinceWheelView.setViewAdapter(new ArrayWheelAdapter<String>(this, items));
-        mProvinceWheelView.addChangingListener(this);
+        mCityDialog.show();
+    }
 
-        mCityWheelView = (WheelView) wheelContainer.findViewById(R.id.wheel_right);
-        mCitiesList = new ArrayList<String>();
-        String[] itemsCity =
-        { "广州", "深圳", "东莞", "惠州", "中山", "肇庆" };
-        mCityWheelView.setViewAdapter(new ArrayWheelAdapter<String>(this, itemsCity));
-        mCityWheelView.addChangingListener(this);
-
-        mProvinceWheelView.setVisibility(3);
-        mCityWheelView.setVisibility(3);
+    /**
+     * 加载省份城市数据 void
+     */
+    private void loadCityData()
+    {
+        if (mProvinceItems != null && !mProvinceItems.isEmpty())
+        {
+            return;
+        }
+        LinkedList<String> provinceList = mCityListDB.getDistrictNameByParentId(this, 0);
+        if (provinceList != null && provinceList.size() > 0)
+        {
+            mProvincesList.clear();
+            mProvincesList.addAll(provinceList);
+            mProvinceItems.clear();
+            for (String province : provinceList)
+            {
+                ProvinceItem provinceItem = new ProvinceItem();
+                provinceItem.provinceName = province;
+                // 根据省份名字去查询省份id
+                int provinceId = mCityListDB.getCityIdByCityName(province);
+                // 获取每个省份对应的城市列表
+                LinkedList<String> cityList = mCityListDB.getDistrictNameByParentId(this, provinceId);
+                if (cityList != null && cityList.size() > 0)
+                {
+                    provinceItem.cityList.addAll(cityList);
+                }
+                // provinceItem.cityList.add("---");
+                mProvinceItems.add(provinceItem);
+            }
+        }
     }
 
     /**
@@ -657,9 +922,7 @@ public class YellowpagePersonalInfoActivity extends BaseActivity implements OnCl
                 logOut();
                 break;
             case R.id.putao_personal_data_city_ll:
-                mProvinceWheelView.setCurrentItem(0);
-                mCityWheelView.setCurrentItem(0);
-                mCityDialog.show();
+                showCityDialog();
             default:
                 break;
         }
@@ -713,7 +976,7 @@ public class YellowpagePersonalInfoActivity extends BaseActivity implements OnCl
         }
         else if (wheel == mCityWheelView)
         {
-
+            // 改变选中条目的字体颜色
         }
     }
 
@@ -722,7 +985,28 @@ public class YellowpagePersonalInfoActivity extends BaseActivity implements OnCl
      */
     private void updateCities()
     {
-
+        // 获取当前选中省份的索引
+        int currentIndex = mProvinceWheelView.getCurrentItem();
+        ProvinceItem currentProvince = mProvinceItems.get(currentIndex);
+        LinkedList<String> cityList = currentProvince.cityList;
+        // 清空城市列表
+        mCitiesList.clear();
+        if (cityList != null && cityList.size() > 0)
+        {
+            mCitiesList.addAll(cityList);
+        }
+        else
+        {
+            mCitiesList.add("---");
+        }
+        mCityAdapter.setData(mCitiesList);
+        mCityWheelView.setCurrentItem(0);
     }
 
+    class ProvinceItem
+    {
+        private String provinceName = "";
+
+        private LinkedList<String> cityList = new LinkedList<String>();
+    }
 }

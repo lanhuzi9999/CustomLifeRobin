@@ -97,4 +97,30 @@ public class Config
      * 获取用户基础数据
      */
     public static final String GET_BASIC_INFO_URL = NEW_BIZ_SERVER_HOST + "/user/get_baisc_info";
+    
+    /**
+     * 获取静态文件下载地址
+     */
+    public static final String URL_GET_STATIC_FILE = "http://dl.putao.so/file/?name=";
+    
+    // 快递静态资源文件名
+    public static final String KEY_EXPRESS_NEW = "putao_express.txt";
+
+    // 城市列表静态资源文件名
+    public static final String KEY_CITY_LIST_NEW = "putao_citylist.txt";
+
+    // 归属地静态资源文件名
+    public static final String KEY_TELAREA_NEW = "putao_telArea.sf";
+
+    // 火车票静态资源文件名
+    public static final String KEY_TRAIN_TICKET_NEW = "putao_train_ticket.txt";
+
+    // 水电煤静态资源文件名
+    public static final String KEY_WEG_DATA_NEW = "putao_weg_data.txt";
+
+    // 违章城市静态资源文件名
+    public static final String KEY_VIOLATION_CITY_NEW = "putao_violation_city.txt";
+
+    // 飞机票城市列表资源文件名
+    public static final String KEY_FLIGHT_CITY_NEW = "putao_flight_city.txt";
 }

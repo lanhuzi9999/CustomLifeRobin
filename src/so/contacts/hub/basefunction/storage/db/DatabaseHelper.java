@@ -16,6 +16,8 @@ public class DatabaseHelper extends SQLiteOpenHelper
 
     private PersonInfoDB mPersonaInfoDB;
 
+    private CityListDB mCityListDB;
+    
     public static synchronized DatabaseHelper getInstance(Context context)
     {
         if (mInstance == null)
@@ -49,6 +51,15 @@ public class DatabaseHelper extends SQLiteOpenHelper
         return mPersonaInfoDB;
     }
 
+    public synchronized CityListDB getCityListDB()
+    {
+        if(mCityListDB == null)
+        {
+            mCityListDB = new CityListDB(this);
+        }
+        return mCityListDB;
+    }
+    
     @Override
     public void onCreate(SQLiteDatabase db)
     {
@@ -57,6 +68,7 @@ public class DatabaseHelper extends SQLiteOpenHelper
         db.execSQL(CMSDataDB.getCreateCommonServicesTableSQL());
         db.execSQL(CMSDataDB.getCreateContentConfigTableSQL());
         db.execSQL(PersonInfoDB.getCreatePersonalInfoDBSQL());
+        db.execSQL(CityListDB.getCreateCityListDbTableSQL());
         db.setTransactionSuccessful();
         db.endTransaction();
     }

@@ -23,7 +23,8 @@ import java.util.LinkedList;
 import java.util.List;
 
 import com.putao.live.R;
-import so.contacts.hub.basefunction.widget.wheel.adapters.WheelViewAdapter;
+
+import so.contacts.hub.basefunction.widget.wheel.adapter.WheelViewAdapter;
 import android.content.Context;
 import android.database.DataSetObserver;
 import android.graphics.Canvas;
@@ -78,7 +79,7 @@ public class WheelView extends View {
 	private GradientDrawable bottomShadow;
 
 	// Draw Shadows
-	private boolean drawShadows = true;
+	private boolean drawShadows = false;
 
 	// Scrolling
 	private WheelScroller scroller;
@@ -647,11 +648,14 @@ public class WheelView extends View {
 	/**
 	 * Draws rect for current value
 	 * @param canvas the canvas for drawing
+	 * 这里修改画中间的两条线
 	 */
 	private void drawCenterRect(Canvas canvas) {
 		int center = getHeight() / 2;
-		int offset = (int) (getItemHeight() / 2 * 1.2);
-		centerDrawable.setBounds(0, center - offset, getWidth(), center + offset);
+		int offset = (int) (getItemHeight() / 2);
+		centerDrawable.setBounds(0, center - offset - 1, getWidth() , center - offset + 1);
+		centerDrawable.draw(canvas);
+		centerDrawable.setBounds(0, center + offset - 1, getWidth() , center + offset + 1);
 		centerDrawable.draw(canvas);
 	}
 

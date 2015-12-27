@@ -8,7 +8,7 @@
     <color name="putao_text_color_second">#7b7b7b</color><!--  辅助文字颜色  深灰色的-->
     <color name="putao_text_color_secondary">#bdbdbd</color><!-- 次要文字颜色 浅灰色的-->
     <color name="putao_normal_red">#ff6653</color><!-- 通用的红色 -->
-    <color name="putao_yellow_page_line_color">#e0e0e0</color><!-- 黄页数据分割线背景色 -->
+    <color name="putao_yellow_page_line_color">#ffe2e2e2</color><!-- 黄页数据分割线背景色 -->
     <color name="putao_screen_background_light">#f5f5f5</color><!-- 背景色 -->
     <!-- 通用样式 end -->
     

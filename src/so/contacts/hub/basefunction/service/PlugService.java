@@ -1,12 +1,14 @@
 package so.contacts.hub.basefunction.service;
 
-import com.putao.live.aidl.IPutaoService;
 import so.contacts.hub.basefunction.utils.YellowUtil;
+import so.contacts.hub.basefunction.utils.staticresource.LoadStaticResourceUtils;
 import android.app.Service;
 import android.content.Context;
 import android.content.Intent;
 import android.os.IBinder;
 import android.os.RemoteException;
+import com.putao.live.aidl.IPutaoService;
+import com.putao.live.aidl.*;
 
 public class PlugService extends Service
 {
@@ -25,13 +27,21 @@ public class PlugService extends Service
 
     /**
      * 
-     * 从资产文件中加载默认数据，并存储到数据库当中
-     * void
+     * 从资产文件中加载默认数据，并存储到数据库当中 void
      */
     private void initData()
     {
-        //加载cms默认数据
-        YellowUtil.loadCmsDefaultData();
+        new Thread(new Runnable()
+        {
+
+            @Override
+            public void run()
+            {
+                // 加载cms默认数据
+                YellowUtil.loadCmsDefaultData();
+                LoadStaticResourceUtils.initStaticYellowPageData();
+            }
+        }).start();
     }
 
     @Override

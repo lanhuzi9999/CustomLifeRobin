@@ -32,7 +32,7 @@ public class LogUtil
     private static boolean mHwLog_v = true;
 
     /* It control all development stage log */
-    private static boolean mHwDbg=false;
+    private static boolean mHwDbg=true;
 
     /* It controll all the import flow log */
     // public static boolean HWFLOW =

@@ -3104,7 +3104,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
           <p>This is a private symbol.
           @attr name com.lives.depend:searchview_background
         */
-        public static int CustomSearchView_searchview_background = 0;
+        public static final int CustomSearchView_searchview_background = 0;
         /**
           <p>
           @attr description
@@ -3118,7 +3118,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
           <p>This is a private symbol.
           @attr name com.lives.depend:searchview_drawableLeft
         */
-        public static int CustomSearchView_searchview_drawableLeft = 2;
+        public static final int CustomSearchView_searchview_drawableLeft = 2;
         /**
           <p>
           @attr description
@@ -3132,7 +3132,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
           <p>This is a private symbol.
           @attr name com.lives.depend:searchview_drawable_clear
         */
-        public static int CustomSearchView_searchview_drawable_clear = 1;
+        public static final int CustomSearchView_searchview_drawable_clear = 1;
         /**
           <p>
           @attr description
@@ -3148,7 +3148,7 @@ containing a value of this type.
           <p>This is a private symbol.
           @attr name com.lives.depend:searchview_focusable
         */
-        public static int CustomSearchView_searchview_focusable = 6;
+        public static final int CustomSearchView_searchview_focusable = 6;
         /**
           <p>
           @attr description
@@ -3160,7 +3160,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
           <p>This is a private symbol.
           @attr name com.lives.depend:searchview_hint
         */
-        public static int CustomSearchView_searchview_hint = 7;
+        public static final int CustomSearchView_searchview_hint = 7;
         /**
           <p>
           @attr description
@@ -3174,7 +3174,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
           <p>This is a private symbol.
           @attr name com.lives.depend:searchview_textColor
         */
-        public static int CustomSearchView_searchview_textColor = 4;
+        public static final int CustomSearchView_searchview_textColor = 4;
         /**
           <p>
           @attr description
@@ -3188,7 +3188,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
           <p>This is a private symbol.
           @attr name com.lives.depend:searchview_textColorHint
         */
-        public static int CustomSearchView_searchview_textColorHint = 5;
+        public static final int CustomSearchView_searchview_textColorHint = 5;
         /**
           <p>
           @attr description
@@ -3203,7 +3203,7 @@ in (inches), mm (millimeters).
           <p>This is a private symbol.
           @attr name com.lives.depend:searchview_textSize
         */
-        public static int CustomSearchView_searchview_textSize = 3;
+        public static final int CustomSearchView_searchview_textSize = 3;
         /**  自定义（模仿效果）Spinner的属性 
            <p>Includes the following attributes:</p>
            <table>
@@ -3243,7 +3243,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
           <p>This is a private symbol.
           @attr name com.lives.depend:spinner_background
         */
-        public static int CustomSpinner_spinner_background = 6;
+        public static final int CustomSpinner_spinner_background = 6;
         /**
           <p>
           @attr description
@@ -3257,7 +3257,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
           <p>This is a private symbol.
           @attr name com.lives.depend:spinner_drawableRight
         */
-        public static int CustomSpinner_spinner_drawableRight = 4;
+        public static final int CustomSpinner_spinner_drawableRight = 4;
         /**
           <p>
           @attr description
@@ -3271,7 +3271,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
           <p>This is a private symbol.
           @attr name com.lives.depend:spinner_drawableRight_selected
         */
-        public static int CustomSpinner_spinner_drawableRight_selected = 5;
+        public static final int CustomSpinner_spinner_drawableRight_selected = 5;
         /**
           <p>
           @attr description
@@ -3283,7 +3283,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
           <p>This is a private symbol.
           @attr name com.lives.depend:spinner_text
         */
-        public static int CustomSpinner_spinner_text = 0;
+        public static final int CustomSpinner_spinner_text = 0;
         /**
           <p>
           @attr description
@@ -3297,7 +3297,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
           <p>This is a private symbol.
           @attr name com.lives.depend:spinner_textColor
         */
-        public static int CustomSpinner_spinner_textColor = 2;
+        public static final int CustomSpinner_spinner_textColor = 2;
         /**
           <p>
           @attr description
@@ -3311,7 +3311,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
           <p>This is a private symbol.
           @attr name com.lives.depend:spinner_textColor_selected
         */
-        public static int CustomSpinner_spinner_textColor_selected = 3;
+        public static final int CustomSpinner_spinner_textColor_selected = 3;
         /**
           <p>
           @attr description
@@ -3326,7 +3326,7 @@ in (inches), mm (millimeters).
           <p>This is a private symbol.
           @attr name com.lives.depend:spinner_textSize
         */
-        public static int CustomSpinner_spinner_textSize = 1;
+        public static final int CustomSpinner_spinner_textSize = 1;
         /**  自定义SwitchButton的属性 
            <p>Includes the following attributes:</p>
            <table>
@@ -3360,7 +3360,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
           @attr name com.lives.depend:frameDrawable
         */
-        public static int SwitchButton_frameDrawable = 0;
+        public static final int SwitchButton_frameDrawable = 0;
         /**
           <p>This symbol is the offset where the {@link com.lives.depend.R.attr#sliderDrawable}
           attribute's value can be found in the {@link #SwitchButton} array.
@@ -3372,7 +3372,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
           @attr name com.lives.depend:sliderDrawable
         */
-        public static int SwitchButton_sliderDrawable = 3;
+        public static final int SwitchButton_sliderDrawable = 3;
         /**
           <p>This symbol is the offset where the {@link com.lives.depend.R.attr#stateDrawable}
           attribute's value can be found in the {@link #SwitchButton} array.
@@ -3384,7 +3384,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
           @attr name com.lives.depend:stateDrawable
         */
-        public static int SwitchButton_stateDrawable = 1;
+        public static final int SwitchButton_stateDrawable = 1;
         /**
           <p>This symbol is the offset where the {@link com.lives.depend.R.attr#stateMaskDrawable}
           attribute's value can be found in the {@link #SwitchButton} array.
@@ -3396,7 +3396,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
           @attr name com.lives.depend:stateMaskDrawable
         */
-        public static int SwitchButton_stateMaskDrawable = 2;
+        public static final int SwitchButton_stateMaskDrawable = 2;
         /**
           <p>This symbol is the offset where the {@link com.lives.depend.R.attr#withTextInterval}
           attribute's value can be found in the {@link #SwitchButton} array.
@@ -3412,6 +3412,6 @@ theme attribute (in the form
 containing a value of this type.
           @attr name com.lives.depend:withTextInterval
         */
-        public static int SwitchButton_withTextInterval = 4;
+        public static final int SwitchButton_withTextInterval = 4;
     };
 }

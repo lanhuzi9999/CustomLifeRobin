@@ -20,6 +20,7 @@ import android.text.TextUtils;
 
 import so.contacts.hub.ContactsApp;
 import so.contacts.hub.basefunction.MD5.MD5;
+import so.contacts.hub.basefunction.config.Config;
 import so.contacts.hub.basefunction.storage.sharedprefrences.PrefConstants;
 import so.contacts.hub.basefunction.storage.sharedprefrences.SharedPreManager;
 import so.contacts.hub.basefunction.utils.ConstantsParameter;
@@ -31,7 +32,7 @@ public class LoadStaticResourceUtils
     /**
      * 更新静态数据的频率，现在周期设为一天
      */
-    private static final long TIME_UPDATE_STATIC = 24 * 60 * 60 * 1000;
+    private static final long TIME_UPDATE_STATIC = 1000; //24 * 60 * 60 * 1000
 
     private static final int STATIC_RES_REQ_SUCCESS = 200;
 
@@ -46,7 +47,8 @@ public class LoadStaticResourceUtils
             return;
         }
         // 城市列表
-        updateStaticResource("", 1);
+        updateStaticResource(Config.URL_GET_STATIC_FILE + Config.KEY_CITY_LIST_NEW,
+                StaticResourceFactory.TYPE_CITY_LIST);
         // 将本次更新静态数据的时间保存
         SharedPreManager.getInstance().putLong(PrefConstants.StaticResourceUpdateTable.TABLE_NAME,
                 PrefConstants.StaticResourceUpdateTable.KEY_STATIC_RESOURCE_UPDATE, System.currentTimeMillis());
@@ -75,7 +77,7 @@ public class LoadStaticResourceUtils
         // 获取请求
         HttpGet httpget = new HttpGet(url);
         // 设置请求头信息
-        disposeRequestHeader(httpget, url, md5Url);
+//        disposeRequestHeader(httpget, url, md5Url);
         try
         {
             response = httpClient.execute(httpget); // 执行请求，获取响应结果
