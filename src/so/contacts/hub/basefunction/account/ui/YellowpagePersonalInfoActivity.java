@@ -112,6 +112,8 @@ public class YellowpagePersonalInfoActivity extends BaseActivity implements OnCl
 
     private RelativeLayout mBirthdayLayout;
 
+    private CommonDialog mGenderDialog;
+
     // 生日
     private TextView mBirthdayTextView;
 
@@ -156,14 +158,14 @@ public class YellowpagePersonalInfoActivity extends BaseActivity implements OnCl
     // 保存头像的uri
     private Uri mHeadIconUri = null;
 
-    // 头像上传到七牛服务器后返回的图片地址
-    private String mHeadIconStr;
-
     // 头像加载器
     private DataLoader mImageLoader;
 
     // 是否已经设置过密码
     private int mHasSetPassword;
+
+    // 头像上传到七牛服务器后返回的图片地址
+    private String mHeadPicSTR;
 
     // 选中的地区
     private String mCitySTR;
@@ -215,7 +217,7 @@ public class YellowpagePersonalInfoActivity extends BaseActivity implements OnCl
                 case CODE_UPLOAD_SUCCESS:
                     if (mImageLoader != null)
                     {
-                        mImageLoader.loadData(mHeadIconStr, mHeadImageView);
+                        mImageLoader.loadData(mHeadPicSTR, mHeadImageView);
                     }
                     break;
                 case CODE_UPLOAD_FIAL:
@@ -291,6 +293,7 @@ public class YellowpagePersonalInfoActivity extends BaseActivity implements OnCl
         String imageUrl = mBasicUserInfoBean.getHead_pic();
         if (!TextUtils.isEmpty(imageUrl) && mImageLoader != null)
         {
+            mHeadPicSTR = imageUrl;
             mImageLoader.loadData(imageUrl, mHeadImageView);
         }
         else
@@ -348,8 +351,26 @@ public class YellowpagePersonalInfoActivity extends BaseActivity implements OnCl
      */
     private void saveUserBasicInfo()
     {
+        // 将更新后的信息备份到本地数据库
+        int sex = -1;
+        if (!TextUtils.isEmpty(mGenderSTR))
+        {
+            if (mGenderSTR.equals(male))
+            {
+                sex = 0;
+            }
+            else if (mGenderSTR.equals(female))
+            {
+                sex = 1;
+            }
+            else
+            {
+                sex = -1;
+            }
+        }
+
         // 1.保存到数据库里面
-        final BasicUserInfoBean bean = new BasicUserInfoBean(0, mHeadIconStr, mCitySTR, 0, null);
+        final BasicUserInfoBean bean = new BasicUserInfoBean(0, mHeadPicSTR, mCitySTR, sex, null);
         // 数据库操作要放到子线程
         Config.execute(new Runnable()
         {
@@ -361,8 +382,8 @@ public class YellowpagePersonalInfoActivity extends BaseActivity implements OnCl
         });
 
         // 2.上传到服务器
-        UpLoadUserBasicInfoRequestData requestData = new UpLoadUserBasicInfoRequestData(this, mHeadIconStr, "辽宁  沈阳",
-                1 + "", "1991-1-1");
+        UpLoadUserBasicInfoRequestData requestData = new UpLoadUserBasicInfoRequestData(this, mHeadPicSTR, mCitySTR,
+                sex + "", mBirthdaySTR);
         PTHTTPManager.getHttp().asynPost(Config.UPLOAD_BASIC_INFO_URL, requestData, new IResponse()
         {
 
@@ -405,7 +426,7 @@ public class YellowpagePersonalInfoActivity extends BaseActivity implements OnCl
     private void initCommonInfoData()
     {
         // 设置已绑定的手机号码
-        String bindPhone ="";
+        String bindPhone = "";
         RelateUser relateUser = AccountManager.getInstance().getRelateUser(RelateUser.TYPE_PHONE);
         if (relateUser != null)
         {
@@ -629,7 +650,7 @@ public class YellowpagePersonalInfoActivity extends BaseActivity implements OnCl
                 }
             }
             // 遍历城市列表
-            if (!mCitiesList.isEmpty() && TextUtils.isEmpty(city))
+            if (!mCitiesList.isEmpty() && !TextUtils.isEmpty(city))
             {
                 for (int j = 0; j < mCitiesList.size(); j++)
                 {
@@ -699,34 +720,6 @@ public class YellowpagePersonalInfoActivity extends BaseActivity implements OnCl
         mHeadDataLayout = (RelativeLayout) findViewById(R.id.putao_personal_data_icon_rl);
         mHeadDataLayout.setOnClickListener(this);
         mHeadImageView = (ImageView) findViewById(R.id.putao_personal_data_icon_iv);
-
-        mHeadImageDialog = CommonDialogFactory.getDialog(this, R.style.Theme_Ptui_Dialog_ListView);
-        mHeadImageDialog.setTitle(R.string.putao_personal_data_icon);
-        String[] imageList = new String[]
-        { getString(R.string.putao_personal_data_get_icon_from_gallery),
-                getString(R.string.putao_personal_data_get_icon_from_camera) };
-        mHeadImageDialog.setListViewDatas(imageList);
-        mHeadImageDialog.setListViewItemClickListener(new OnItemClickListener()
-        {
-
-            @Override
-            public void onItemClick(AdapterView<?> parent, View view, int position, long id)
-            {
-                mHeadImageDialog.dismiss();
-                // 很据position的不同,选中相册还是相机
-                if (position == 0)
-                {
-                    // 相册
-                    chooseImageFromGallery();
-                }
-                else
-                {
-                    // 相机
-                    takePictureByCamera();
-                }
-
-            }
-        });
     }
 
     /**
@@ -856,7 +849,7 @@ public class YellowpagePersonalInfoActivity extends BaseActivity implements OnCl
                         if (info.isOK())
                         {
                             // 上传成功,存储于七牛服务器中的图片地址
-                            mHeadIconStr = Config.BUCKET_NAME_URL + key;
+                            mHeadPicSTR = Config.BUCKET_NAME_URL + key;
                             // handler发消息到主线程更新ui
                             if (mHandler != null)
                             {
@@ -916,22 +909,95 @@ public class YellowpagePersonalInfoActivity extends BaseActivity implements OnCl
                 onBackPressed();
                 break;
             case R.id.putao_personal_data_icon_rl:
-                mHeadImageDialog.show();
+                showHeadImageDialog();
                 break;
             case R.id.login_out_btn:
-                logOut();
+                showLogOutDialog();
                 break;
             case R.id.putao_personal_data_city_ll:
                 showCityDialog();
+            case R.id.putao_personal_data_gender_ll:
+                showGenderDialog();
             default:
                 break;
         }
     }
 
     /**
+     * 显示性别弹出框 void
+     */
+    private void showGenderDialog()
+    {
+        if (mGenderDialog == null)
+        {
+            mGenderDialog = CommonDialogFactory.getDialog(this, R.style.Theme_Ptui_Dialog_ListView);
+            mGenderDialog.setTitle(getString(R.string.putao_personal_data_gender));
+            ArrayList<String> genderList = new ArrayList<String>();
+            genderList.add(male);
+            genderList.add(female);
+            mGenderDialog.setSingleChoiceListViewDatas(genderList);
+            mGenderDialog.setListViewItemClickListener(new OnItemClickListener()
+            {
+                @Override
+                public void onItemClick(AdapterView<?> parent, View view, int position, long id)
+                {
+                    mGenderDialog.dismiss();
+                    mChangeFlag = true;
+                    // 0是男，1是女
+                    if (position == 0)
+                    {
+                        mGenderSTR = male;
+                        mGenderTextView.setText(male);
+                    }
+                    else if (position == 1)
+                    {
+                        mGenderSTR = female;
+                        mGenderTextView.setText(female);
+                    }
+                }
+            });
+        }
+    }
+
+    /**
+     * 设置头像弹出框 void
+     */
+    private void showHeadImageDialog()
+    {
+        mHeadImageDialog = CommonDialogFactory.getDialog(this, R.style.Theme_Ptui_Dialog_ListView);
+        mHeadImageDialog.setTitle(R.string.putao_personal_data_icon);
+        String[] imageList = new String[]
+        { getString(R.string.putao_personal_data_get_icon_from_gallery),
+                getString(R.string.putao_personal_data_get_icon_from_camera) };
+        mHeadImageDialog.setListViewDatas(imageList);
+        mHeadImageDialog.setListViewItemClickListener(new OnItemClickListener()
+        {
+
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id)
+            {
+                mHeadImageDialog.dismiss();
+                // 很据position的不同,选中相册还是相机
+                if (position == 0)
+                {
+                    // 相册
+                    chooseImageFromGallery();
+                }
+                else
+                {
+                    // 相机
+                    takePictureByCamera();
+                }
+
+            }
+        });
+        mHeadImageDialog.show();
+    }
+
+    /**
      * 退出登录:弹框，退出登录清空ptuser的信息即可 void
      */
-    private void logOut()
+    private void showLogOutDialog()
     {
         mLogOutDialog = CommonDialogFactory.getDialog(YellowpagePersonalInfoActivity.this,
                 R.style.Theme_Ptui_Dialog_OkCancel);

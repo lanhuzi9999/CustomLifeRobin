@@ -1063,7 +1063,7 @@ public final class R {
 		public static final int msg = 0x7f0a011a;
 		public static final int popupwin_line = 0x7f0a0162;
 		public static final int popupwin_list_item_text = 0x7f0a0161;
-		public static final int progress = 0x7f0a003b;
+		public static final int progress = 0x7f0a0022;
 		public static final int putao_getvoucherfail_tv = 0x7f0a00f9;
 		public static final int putao_progress_dialog_bg = 0x7f0a0119;
 		public static final int putao_scrolldialog_layout = 0x7f0a00d2;
