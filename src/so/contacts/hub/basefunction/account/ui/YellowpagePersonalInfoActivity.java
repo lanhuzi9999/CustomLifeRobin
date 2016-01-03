@@ -5,6 +5,7 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Calendar;
 import java.util.HashMap;
 import java.util.LinkedList;
 import java.util.List;
@@ -15,6 +16,8 @@ import org.json.JSONObject;
 
 import com.lives.depend.theme.dialog.CommonDialog;
 import com.lives.depend.theme.dialog.CommonDialogFactory;
+import com.lives.depend.theme.dialog.progress.AbstractProgressDialog;
+import com.lives.depend.utils.LogUtil;
 import com.putao.live.R;
 import com.qiniu.android.http.ResponseInfo;
 import com.qiniu.android.storage.UpCompletionHandler;
@@ -32,6 +35,7 @@ import android.os.Message;
 import android.provider.MediaStore;
 import android.provider.MediaStore.Images.Media;
 import android.text.TextUtils;
+import android.text.style.DynamicDrawableSpan;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.AdapterView;
@@ -43,6 +47,7 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 import so.contacts.hub.BaseActivity;
+import so.contacts.hub.basefunction.account.adapter.WheelNumericAdapter;
 import so.contacts.hub.basefunction.account.adapter.WheelTextAdapter;
 import so.contacts.hub.basefunction.account.bean.BasicUserInfoBean;
 import so.contacts.hub.basefunction.account.manager.AccountManager;
@@ -119,6 +124,24 @@ public class YellowpagePersonalInfoActivity extends BaseActivity implements OnCl
 
     private RelativeLayout mCommInfoLayout;
 
+    private CommonDialog mBirthdayDialog;
+    
+    private WheelView mYearWheelView;
+    
+    private int mCurrentYear;
+    
+    private WheelNumericAdapter mYearAdapter;
+    
+    private WheelView mMonthWheelView;
+    
+    private WheelNumericAdapter mMonthAdapter;
+    
+    private WheelView mDayWheelView;
+    
+    private int mMaxDay;
+    
+    private WheelNumericAdapter mDayAdapter;
+    
     // 常用信息
     private TextView mCommInfoTextView;
 
@@ -215,18 +238,21 @@ public class YellowpagePersonalInfoActivity extends BaseActivity implements OnCl
             switch (msg.what)
             {
                 case CODE_UPLOAD_SUCCESS:
+                    dismissLoadingDialog();
                     if (mImageLoader != null)
                     {
                         mImageLoader.loadData(mHeadPicSTR, mHeadImageView);
                     }
                     break;
                 case CODE_UPLOAD_FIAL:
+                    dismissLoadingDialog();
                     Toast.makeText(YellowpagePersonalInfoActivity.this,
                             getString(R.string.putao_personal_data_upload_icon_fail), Toast.LENGTH_SHORT).show();
                     break;
                 case CODE_SHOW_WHEEL_CITY_DIALOG:
                     showWheelCityDialog();
                 case CODE_INIT_BASIC_USER_DATA:
+                    dismissLoadingDialog();
                     initBasicInfoData();
                 default:
                     break;
@@ -259,6 +285,10 @@ public class YellowpagePersonalInfoActivity extends BaseActivity implements OnCl
      */
     private void updateBasicInfoData()
     {
+        if(mBasicUserInfoBean == null)
+        {
+            showLoadingDialog();
+        }
         // 1.从数据库获取用户基本数据 2.handler发送message到界面显示
         Config.execute(new Runnable()
         {
@@ -535,6 +565,7 @@ public class YellowpagePersonalInfoActivity extends BaseActivity implements OnCl
         // 加载省份城市数据,如果已经加载过就不再加载
         if (mProvinceItems.size() == 0 || mProvinceItems.isEmpty())
         {
+            showLoadingDialog();
             Config.execute(new Runnable()
             {
 
@@ -557,6 +588,7 @@ public class YellowpagePersonalInfoActivity extends BaseActivity implements OnCl
 
     private void showWheelCityDialog()
     {
+        dismissLoadingDialog();
         if (mCityDialog == null)
         {
             mCityDialog = CommonDialogFactory.getDialog(this, R.style.Theme_Ptui_Dialog_Wheel);
@@ -804,6 +836,12 @@ public class YellowpagePersonalInfoActivity extends BaseActivity implements OnCl
      */
     private void uploadImgFile(final Bitmap photo)
     {
+        if(mProgressDialog == null)
+        {
+            mProgressDialog = CommonDialogFactory.getProgressDialog(this, R.style.Theme_Ptui_Dialog_Progress);
+            mProgressDialog.setMessage(getString(R.string.putao_personal_data_uploading_icon));
+        }
+        mProgressDialog.show();
         mChangeFlag = true;
         Config.execute(new Runnable()
         {
@@ -916,11 +954,166 @@ public class YellowpagePersonalInfoActivity extends BaseActivity implements OnCl
                 break;
             case R.id.putao_personal_data_city_ll:
                 showCityDialog();
+                break;
             case R.id.putao_personal_data_gender_ll:
                 showGenderDialog();
+                break;
+            case R.id.putao_personal_data_birthday_ll:
+                showBirthdayDialog();
+                break;
+            case R.id.putao_set_password:
+                setPassWord();
+                break;
             default:
                 break;
         }
+    }
+    
+    /**
+     * 设置密码
+     * void
+     */
+    private void setPassWord()
+    {
+        Intent intent = new Intent(YellowpagePersonalInfoActivity.this, ModifyPasswordActivity.class);
+        RelateUser relateUser = AccountManager.getInstance().getRelateUser(RelateUser.TYPE_PHONE);
+        String showStr = relateUser.accName.substring(0, 3) + " " + relateUser.accName.substring(3, 7) + " "
+                + relateUser.accName.substring(7);
+        intent.putExtra("old_phone", showStr);
+        startActivity(intent);
+    }
+
+    /**
+     * 弹出生日选择框
+     * void
+     */
+    private void showBirthdayDialog()
+    {
+        if (mBirthdayDialog == null)
+        {
+            mBirthdayDialog = CommonDialogFactory.getDialog(this, R.style.Theme_Ptui_Dialog_Wheel);
+            mBirthdayDialog.setTitle(getString(R.string.putao_personal_data_birthday));
+            mBirthdayDialog.setNegativeButton(R.string.putao_cancel, new OnClickListener()
+            {
+                @Override
+                public void onClick(View view)
+                {
+                   mBirthdayDialog.dismiss();
+                }
+            });
+            mBirthdayDialog.setPositiveButton(R.string.putao_confirm, new OnClickListener()
+            {
+                @Override
+                public void onClick(View view)
+                {
+                    mBirthdayDialog.dismiss();
+                    mChangeFlag = true;
+                    int year = mYearWheelView.getCurrentItem() + mCurrentYear - 100;
+                    int month = mMonthWheelView.getCurrentItem() + 1;
+                    int day = mDayWheelView.getCurrentItem() + 1;
+                    StringBuilder sb = new StringBuilder();
+                    sb.append(year).append("-").append(month).append("-").append(day);
+                    mBirthdaySTR = sb.toString();
+                    mBirthdayTextView.setText(mBirthdaySTR);
+                }
+            });
+            LinearLayout wheelContainer = (LinearLayout) mBirthdayDialog.getContainerLayout();
+            // 年，年月的滚动控件不用设置滚动事件监听
+            Calendar calendar = Calendar.getInstance();
+            mCurrentYear = calendar.get(Calendar.YEAR);
+            mYearWheelView = (WheelView) wheelContainer.findViewById(R.id.wheel_left);
+            mYearWheelView.setVisibleItems(3);
+            mYearAdapter = new WheelNumericAdapter(this, mCurrentYear-100, mCurrentYear, getString(R.string.putao_personal_data_year));
+            mYearWheelView.setViewAdapter(mYearAdapter);
+            //月
+            mMonthWheelView = (WheelView) wheelContainer.findViewById(R.id.wheel_center);
+            mMonthWheelView.setVisibleItems(3);
+            mMonthAdapter = new WheelNumericAdapter(this, 1, 12, getString(R.string.putao_personal_data_month));
+            mMonthWheelView.setViewAdapter(mMonthAdapter);
+            //日
+            mDayWheelView = (WheelView) wheelContainer.findViewById(R.id.wheel_right);
+            mDayWheelView.setVisibleItems(3);
+            OnWheelChangedListener listener = new OnWheelChangedListener()
+            {
+                @Override
+                public void onChanged(WheelView wheel, int oldValue, int newValue)
+                {
+                  //只要是年月发生变化，就要去检查日是否也联动发生变化
+                  updateDays(mYearWheelView, mMonthWheelView, mDayWheelView);
+                }
+            };
+            mYearWheelView.addChangingListener(listener);
+            mMonthWheelView.addChangingListener(listener);
+            updateDays(mYearWheelView, mMonthWheelView, mDayWheelView);
+        }
+        //mBirthdaySTR是否为空
+        if (!TextUtils.isEmpty(mBirthdaySTR))
+        {
+            try
+            {
+                String[] date = mBirthdaySTR.split("-");
+                String year = "";
+                String month = "";
+                String day = "";
+                if (date.length > 0)
+                {
+                    year = date[0];
+                }
+                // 将year转为为year index
+                if (!TextUtils.isEmpty(year))
+                {
+                    int yearIndex = Integer.parseInt(year) - (mCurrentYear - 100);
+                    mYearWheelView.setCurrentItem(yearIndex);
+                }
+                if (date.length > 1)
+                {
+                    month = date[1];
+                }
+                //将month转化为month index
+                if(!TextUtils.isEmpty(month))
+                {
+                    int monthIndex = Integer.parseInt(month) - 1;
+                    mMonthWheelView.setCurrentItem(monthIndex);
+                }
+                if(date.length > 2)
+                {
+                    day = date[2];
+                }
+                //将day转化为day index
+                if(!TextUtils.isEmpty(day))
+                {
+                    int dayIndex = Integer.parseInt(day) - 1;
+                    mDayWheelView.setCurrentItem(dayIndex);
+                }
+            }
+            catch (Exception e)
+            {
+                LogUtil.w("YellowpagePersonalInfoActivity", "catch Exception throw by choosePicture", e);
+            }
+        }
+        else
+        {
+            mYearWheelView.setCurrentItem(73);
+        }
+        mBirthdayDialog.show();
+    }
+    
+    /**
+     * 只要是年月发生变化，就要去检查日是否也联动发生变化(比如有些年份二月28天，有些年份是29天)
+     * 
+     * @param mYearWheelView2
+     * @param mMonthWheelView2
+     * @param mDayWheelView2 void
+     */
+    private void updateDays(WheelView year, WheelView month, WheelView day)
+    {
+        // 选择的年月对应的那个月总共有多少天
+        Calendar calendar = Calendar.getInstance();
+        calendar.set(Calendar.YEAR, year.getCurrentItem());
+        calendar.set(Calendar.MONTH, month.getCurrentItem());
+        mMaxDay = calendar.getActualMaximum(Calendar.DAY_OF_MONTH);
+        mDayAdapter = new WheelNumericAdapter(this, 1, mMaxDay, getString(R.string.putao_personal_data_day));
+        mDayWheelView.setViewAdapter(mDayAdapter);
     }
 
     /**
@@ -957,6 +1150,23 @@ public class YellowpagePersonalInfoActivity extends BaseActivity implements OnCl
                 }
             });
         }
+        //默认选择的是男吧
+        if (!TextUtils.isEmpty(mGenderSTR))
+        {
+            if (mGenderSTR.equals(male))
+            {
+                mGenderDialog.getListView().setItemChecked(0, true);
+            }
+            else if (mGenderSTR.equals(female))
+            {
+                mGenderDialog.getListView().setItemChecked(1, true);
+            }
+        }
+        else
+        {
+            mGenderDialog.getListView().setItemChecked(0, true);
+        }
+        mGenderDialog.show();
     }
 
     /**
@@ -1009,13 +1219,17 @@ public class YellowpagePersonalInfoActivity extends BaseActivity implements OnCl
             @Override
             public void onClick(View view)
             {
+                mLogOutDialog.dismiss();
+                // 登出加载框
+                showLoadingDialog(false);
                 // 如果个人信息有改动，需要保存个人信息
                 if (mChangeFlag)
                 {
                     saveUserBasicInfo();
+                    mChangeFlag = false;
                 }
                 AccountManager.getInstance().logout(YellowpagePersonalInfoActivity.this);
-                mLogOutDialog.dismiss();
+                dismissLoadingDialog();
                 // 直接返回menufragment
                 setResult(RESULT_OK);
                 finish();
