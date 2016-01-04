@@ -12,6 +12,9 @@ import android.content.DialogInterface.OnDismissListener;
 import android.content.DialogInterface.OnKeyListener;
 import android.text.TextUtils;
 import android.view.View;
+import android.view.Window;
+import android.view.WindowManager;
+import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
@@ -41,6 +44,8 @@ public class CustomProgressDialog extends AbstractProgressDialog
 
     private TextView mOkBtn, mCancelBtn;
 
+    private ImageView mProgressImage;
+
     public CustomProgressDialog(Context context, int theme, int resLayout, boolean hasBackground)
     {
         this.mContext = context;
@@ -61,16 +66,28 @@ public class CustomProgressDialog extends AbstractProgressDialog
         }
         else if (resLayout == R.layout.putao_progress_dialog)
         {
+            //设置dialog不能获取焦点
+            Window dialogWindow = mDialog.getWindow();
+            WindowManager.LayoutParams lParams = dialogWindow.getAttributes();
+            lParams.dimAmount = 0.1f;
+            lParams.flags = WindowManager.LayoutParams.FLAG_NOT_TOUCH_MODAL
+                    | WindowManager.LayoutParams.FLAG_NOT_TOUCHABLE | WindowManager.LayoutParams.FLAG_DIM_BEHIND;
+            dialogWindow.setAttributes(lParams);
+            
             mMessageTv = (TextView) mDialog.findViewById(R.id.message_tv);
-            View dialogBackground = mDialog.findViewById(R.id.putao_progress_dialog_layout);
+            View dialog = mDialog.findViewById(R.id.putao_progress_dialog);
+            View dialogWithbg = mDialog.findViewById(R.id.putao_progress_dialog_with_bg);
             if (mHasBackground)
             {
-                dialogBackground.setBackgroundResource(R.drawable.putao_bg_card_yindao);
-                mMessageTv.setTextColor(mContext.getResources().getColor(R.color.putao_progress_dialog_text_white));
+                mProgressImage = (ImageView) mDialog.findViewById(R.id.putao_progress_image);
+                dialogWithbg.setVisibility(View.VISIBLE);
+                dialog.setVisibility(View.GONE);
             }
             else
             {
-                dialogBackground.setBackgroundResource(R.color.putao_transparent);
+                dialogWithbg.setVisibility(View.GONE);
+                dialog.setVisibility(View.VISIBLE);
+                dialog.setBackgroundResource(R.color.putao_transparent);
                 mMessageTv.setTextColor(mContext.getResources().getColor(R.color.putao_progress_dialog_text_grey));
             }
             setCanceledOnTouchOutside(true);
