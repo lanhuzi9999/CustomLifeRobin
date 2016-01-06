@@ -114,7 +114,7 @@ public class BaseActivity extends BaseUIActivity {
 					.setMessage(getString(R.string.putao_yellow_page_loading));
 			mProgressDialog.setCanceledOnTouchOutside(false);
 		}
-		if (mProgressDialog.isShowing()) {
+		if (!mProgressDialog.isShowing()) {
 			mProgressDialog.show();
 		}
 	}

@@ -98,6 +98,12 @@
             android:launchMode="singleTop" >
         </activity>
 
+        <activity
+            android:name="so.contacts.hub.basefunction.account.ui.SetPasswordActivity"
+            android:theme="@style/Theme.Ptui.NoTitle"
+            android:launchMode="singleTop" >
+        </activity>
+        
         <service android:name="so.contacts.hub.basefunction.service.PlugService" >
         </service>
     </application>

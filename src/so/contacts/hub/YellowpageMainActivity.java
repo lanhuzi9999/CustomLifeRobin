@@ -116,10 +116,10 @@ public class YellowpageMainActivity extends BaseActivity implements OnClickListe
     private void registerListeners()
     {
         mMainViewPager.setOnPageChangeListener(this);
-        mTabLifeTxtView.setOnClickListener(this);
-        mTabNaviTxtView.setOnClickListener(this);
-        mTabMyTxtView.setOnClickListener(this);
-        mTabFindTxtView.setOnClickListener(this);
+        findViewById(R.id.putao_main_tab_my).setOnClickListener(this);
+        findViewById(R.id.putao_main_tab_life).setOnClickListener(this);
+        findViewById(R.id.putao_main_tab_navigation).setOnClickListener(this);
+        findViewById(R.id.putao_main_tab_find).setOnClickListener(this);
     }
 
     private void initViews()
@@ -183,16 +183,16 @@ public class YellowpageMainActivity extends BaseActivity implements OnClickListe
         int id = view.getId();
         switch (id)
         {
-            case R.id.putao_main_tab_life_text:
+            case R.id.putao_main_tab_life:
                 mMainViewPager.setCurrentItem(0, true);
                 break;
             case R.id.putao_main_tab_find:
                 mMainViewPager.setCurrentItem(1, true);
                 break;
-            case R.id.putao_main_tab_navigation_text:
+            case R.id.putao_main_tab_navigation:
                 mMainViewPager.setCurrentItem(2, true);
                 break;
-            case R.id.putao_main_tab_my_text:
+            case R.id.putao_main_tab_my:
                 mMainViewPager.setCurrentItem(3, true);
                 break;
             default:

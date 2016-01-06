@@ -229,6 +229,8 @@ public class CityListDB
                 {
 
                     String cityName = cursor.getString(cursor.getColumnIndex(CityListDbTable.CITY_NAME));
+                    //需要去除后缀
+                    cityName = cutSuffix(context, cityName);
                     list.add(cityName);
                     cursor.moveToNext();
                 }
@@ -246,6 +248,27 @@ public class CityListDB
             }
         }
         return list;
+    }
+    
+    /**
+     * 去除“省”“市”“自治区”等后缀
+     * @param context
+     * @param cityName
+     * @return
+     * String
+     */
+    public static String cutSuffix(Context context, String cityName)
+    {
+        if (cityName.endsWith(context.getString(R.string.putao_common_province))
+                || cityName.endsWith(context.getString(R.string.putao_common_city)))
+        {
+            cityName = cityName.substring(0, cityName.length() - 1);
+        }
+        else if (cityName.endsWith(context.getString(R.string.putao_common_autonomous_regions)))
+        {
+            cityName = cityName.substring(0, 2);
+        }
+        return cityName;
     }
 
     /**

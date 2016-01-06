@@ -16,6 +16,8 @@ import so.contacts.hub.basefunction.net.bean.GetCaptchaRequestData;
 import so.contacts.hub.basefunction.net.bean.GetCaptchaResponseData;
 import so.contacts.hub.basefunction.net.bean.LoginByPasswordRequestData;
 import so.contacts.hub.basefunction.net.bean.LoginByPasswordResponseData;
+import so.contacts.hub.basefunction.net.bean.VerifyCaptchaRequestData;
+import so.contacts.hub.basefunction.net.bean.VerifyCaptchaResponseData;
 import so.contacts.hub.basefunction.net.manager.PTHTTPManager;
 import so.contacts.hub.basefunction.storage.sharedprefrences.PrefConstants;
 import so.contacts.hub.basefunction.storage.sharedprefrences.SharedPreManager;
@@ -173,7 +175,7 @@ public class AccountImpl implements IAccountAction
             }
         });
     }
-    
+
     /**
      * 清除账户信息
      * 
@@ -378,5 +380,39 @@ public class AccountImpl implements IAccountAction
         {
             mAccChangeListeners.remove(listener);
         }
+    }
+
+    @Override
+    public void verifyCaptchar(Context context, final String actionCode, final String accName, final String checkCode,
+            final IAccCallback cb)
+    {
+        mIAccCallback = cb;
+        Config.execute(new Runnable()
+        {
+            @Override
+            public void run()
+            {
+                VerifyCaptchaRequestData requestData = new VerifyCaptchaRequestData(actionCode, checkCode, accName);
+
+                String content = PTHTTPManager.getHttp().syncPostString(Config.SERVER, requestData);
+
+                VerifyCaptchaResponseData response = requestData.getObject(content);
+                if (response != null && response.isSuccess())
+                {
+                    if (VerifyCaptchaResponseData.CHECK_CODE_SUCCESS.equals(response.code))
+                    {
+                        mainHandler.sendEmptyMessage(MSG_LOGIN_SUCCESS);
+                    }
+                    else
+                    {
+
+                    }
+                }
+                else
+                {
+
+                }
+            }
+        });
     }
 }

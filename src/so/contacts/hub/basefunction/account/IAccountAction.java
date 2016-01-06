@@ -48,6 +48,17 @@ public interface IAccountAction
     public void loginByCaptcha(Context context, String accName, int checkCode, IAccCallback cb);
 
     /**
+     * 
+     * 修改密码时获取验证码
+     * @param context
+     * @param accName
+     * @param checkCode
+     * @param cb
+     * void
+     */
+    public void verifyCaptchar(Context context, String actionCode, String accName, String checkCode, IAccCallback cb);
+    
+    /**
      * 账号密码登陆
      * @param context
      * @param accName

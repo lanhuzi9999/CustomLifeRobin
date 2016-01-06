@@ -266,7 +266,7 @@ public class YellowpageLoginByCaptureActivity extends BaseActivity implements On
         @Override
         public void onTick(long millisUntilFinished)
         {
-            mGetCaptcharButton.setText(+millisUntilFinished / 1000 + "秒后重发");
+            mGetCaptcharButton.setText(millisUntilFinished / 1000 + "秒后重发");
             mGetCaptcharButton.getBackground().setAlpha(255);
             mGetCaptcharButton.setEnabled(false);
             mGetCaptcharButton.setClickable(false);

@@ -98,6 +98,10 @@ public class AccountManager
         mPutaoAccount.loginByCaptcha(context, accName, checkCode, cb);
     }
 
+    public void verifyCaptchar(Context context, String actionCode, String accName, String checkCode, IAccCallback cb)
+    {
+        mPutaoAccount.verifyCaptchar(context, actionCode, accName, checkCode, cb);
+    }
     /**
      * 方法表述
      * 
