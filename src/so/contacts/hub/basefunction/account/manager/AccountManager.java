@@ -97,11 +97,35 @@ public class AccountManager
     {
         mPutaoAccount.loginByCaptcha(context, accName, checkCode, cb);
     }
-
+    
+    /**
+     * 修改密码的时候验证验证码是否正确
+     * @param context
+     * @param actionCode
+     * @param accName
+     * @param checkCode
+     * @param cb
+     * void
+     */
     public void verifyCaptchar(Context context, String actionCode, String accName, String checkCode, IAccCallback cb)
     {
         mPutaoAccount.verifyCaptchar(context, actionCode, accName, checkCode, cb);
     }
+    
+    /**
+     * 根据验证码设置密码
+     * @param context
+     * @param accName
+     * @param passWord
+     * @param captchar
+     * @param cb
+     * void
+     */
+    public void resetPasswordByCaptchar(Context context, String accName, String passWord, String captchar, IAccCallback cb)
+    {
+        mPutaoAccount.resetPasswordByCaptchar(context, accName, passWord, captchar, cb);
+    }
+    
     /**
      * 方法表述
      * 

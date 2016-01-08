@@ -16,12 +16,15 @@ import so.contacts.hub.basefunction.net.bean.GetCaptchaRequestData;
 import so.contacts.hub.basefunction.net.bean.GetCaptchaResponseData;
 import so.contacts.hub.basefunction.net.bean.LoginByPasswordRequestData;
 import so.contacts.hub.basefunction.net.bean.LoginByPasswordResponseData;
+import so.contacts.hub.basefunction.net.bean.ResetPasswordRequestData;
+import so.contacts.hub.basefunction.net.bean.ResetPasswordResponseData;
 import so.contacts.hub.basefunction.net.bean.VerifyCaptchaRequestData;
 import so.contacts.hub.basefunction.net.bean.VerifyCaptchaResponseData;
 import so.contacts.hub.basefunction.net.manager.PTHTTPManager;
 import so.contacts.hub.basefunction.storage.sharedprefrences.PrefConstants;
 import so.contacts.hub.basefunction.storage.sharedprefrences.SharedPreManager;
 import so.contacts.hub.basefunction.utils.HexUtil;
+import android.R.integer;
 import android.content.Context;
 import android.os.Handler;
 import android.os.Looper;
@@ -43,19 +46,26 @@ public class AccountImpl implements IAccountAction
 
     private IAccCallback mIAccCallback;
 
-    // 账号变更接口list，用于账号变更时逐一通知做变更处理
+    /** 账号变更接口list，用于账号变更时逐一通知做变更处理 */
     private List<IAccChangeListener> mAccChangeListeners = new ArrayList<IAccChangeListener>();
-
-    public AccountImpl()
-    {
-
-    }
 
     private static final int MSG_LOGIN_SUCCESS = 100;
 
     private static final int MSG_LOGIN_FAIL = 101;
 
     private static final int MSG_LOGIN_CANCEL = 102;
+
+    private static final int MSG_NORMAL_SUCCESS = 103;
+
+    private static final int MSG_NORMAL_FAIL = 104;
+
+    /** 请求失败fail的错误标识码 */
+    private int mErrorCode = -1;
+
+    public AccountImpl()
+    {
+
+    }
 
     private Handler mainHandler = new Handler(Looper.getMainLooper())
     {
@@ -72,10 +82,42 @@ public class AccountImpl implements IAccountAction
                     loginSuccess();
                     break;
                 case MSG_LOGIN_FAIL:
-
+                    String errorMsg = "";
+                    mErrorCode = msg.arg1;
+                    if (msg.obj != null)
+                    {
+                        errorMsg = (String) msg.obj;
+                    }
+                    if (mIAccCallback != null)
+                    {
+                        mIAccCallback.onFail(mErrorCode, errorMsg);
+                    }
+                    mErrorCode = -1;
                     break;
                 case MSG_LOGIN_CANCEL:
-
+                    if (mIAccCallback != null)
+                    {
+                        mIAccCallback.onCancel();
+                    }
+                    break;
+                case MSG_NORMAL_SUCCESS:
+                    if (mIAccCallback != null)
+                    {
+                        mIAccCallback.onSuccess();
+                    }
+                    break;
+                case MSG_NORMAL_FAIL:
+                    String normalMsg = "";
+                    mErrorCode = msg.arg1;
+                    if (msg.obj != null)
+                    {
+                        normalMsg = (String) msg.obj;
+                    }
+                    if (mIAccCallback != null)
+                    {
+                        mIAccCallback.onFail(mErrorCode, normalMsg);
+                    }
+                    mErrorCode = -1;
                     break;
                 default:
                     break;
@@ -247,20 +289,31 @@ public class AccountImpl implements IAccountAction
                 String content = PTHTTPManager.getHttp().syncPostString(Config.SERVER, requestData);
 
                 CheckCaptchaResponseData response = requestData.getObject(content);
-                if (response != null && response.isSuccess())
+                if (response != null)
                 {
-                    // 清除账户信息
-                    cleanPtUser(PrefConstants.PrefAccountTable.TABLE_NAME, PrefConstants.PrefAccountTable.KEY_PT_USER);
-                    // 保存最新的账户信息
-                    savePtUser(content);
-                    // 通知主线程，登录成功
-                    mainHandler.sendEmptyMessage(MSG_LOGIN_SUCCESS);
+                    if (response.isSuccess())
+                    {
+                        // 清除账户信息
+                        cleanPtUser(PrefConstants.PrefAccountTable.TABLE_NAME,
+                                PrefConstants.PrefAccountTable.KEY_PT_USER);
+                        // 保存最新的账户信息
+                        savePtUser(content);
+                        // 通知主线程，登录成功
+                        sendMainLoopMessage(MSG_LOGIN_SUCCESS, -1, null);
+                    }
+                    else if (CheckCaptchaResponseData.LOGIN_FAILED_CODE_TIMES_LIMIT.equals(response.ret_code))
+                    {
+                        // 验证码输入次数过多
+                        sendMainLoopMessage(MSG_LOGIN_FAIL, IAccCallback.LOGIN_FAILED_CODE_TIMES_LIMIT,
+                                response.error_remark);
+                    }
+                    else
+                    {
+                        // 验证码不正确
+                        sendMainLoopMessage(MSG_LOGIN_FAIL, IAccCallback.LOGIN_FAILED_CODE_CODE_WRONG,
+                                response.error_remark);
+                    }
                 }
-                else
-                {
-
-                }
-
             }
         });
     }
@@ -309,20 +362,35 @@ public class AccountImpl implements IAccountAction
                     String content = PTHTTPManager.getHttp().syncPostString(Config.SERVER, requestData);
                     LoginByPasswordResponseData responseData = requestData.getObject(content);
 
-                    if (responseData != null && responseData.isSuccess())
+                    if (responseData != null)
                     {
-                        // 清除账户信息
-                        cleanPtUser(PrefConstants.PrefAccountTable.TABLE_NAME,
-                                PrefConstants.PrefAccountTable.KEY_PT_USER);
-                        // 保存最新的账户信息
-                        savePtUser(content);
-                        // 通知主线程，登录成功
-                        mainHandler.sendEmptyMessage(MSG_LOGIN_SUCCESS);
+                        if (responseData.isSuccess())
+                        {
+                            // 请求成功还需要对返回码做分类处理
+                            if (LoginByPasswordResponseData.LOGIN_OK_CODE.equals(responseData.login_code))
+                            {
+                                // 清除账户信息
+                                cleanPtUser(PrefConstants.PrefAccountTable.TABLE_NAME,
+                                        PrefConstants.PrefAccountTable.KEY_PT_USER);
+                                // 保存最新的账户信息
+                                savePtUser(content);
+                                // 通知主线程，登录成功
+                                sendMainLoopMessage(MSG_LOGIN_SUCCESS, -1, null);
+                            }
+                            else if (LoginByPasswordResponseData.USER_NOT_HAVE_PASSWORD.equals(responseData.login_code))
+                            {
+                                sendMainLoopMessage(MSG_LOGIN_FAIL, IAccCallback.LOGIN_FAILED_CODE_NO_PASSWORD,
+                                        responseData.error_remark);
+                            }
+                        }
+                        else
+                        {
+                            mainHandler.sendEmptyMessage(MSG_LOGIN_FAIL);
+                            sendMainLoopMessage(MSG_LOGIN_FAIL, IAccCallback.LOGIN_FAILED_CODE_CODE_WRONG,
+                                    responseData.error_remark);
+                        }
                     }
-                    else
-                    {
-                        mainHandler.sendEmptyMessage(MSG_LOGIN_FAIL);
-                    }
+
                 }
                 catch (NoSuchAlgorithmException e)
                 {
@@ -397,22 +465,131 @@ public class AccountImpl implements IAccountAction
                 String content = PTHTTPManager.getHttp().syncPostString(Config.SERVER, requestData);
 
                 VerifyCaptchaResponseData response = requestData.getObject(content);
-                if (response != null && response.isSuccess())
+                if (response != null)
                 {
-                    if (VerifyCaptchaResponseData.CHECK_CODE_SUCCESS.equals(response.code))
+                    if (response.isSuccess())
                     {
-                        mainHandler.sendEmptyMessage(MSG_LOGIN_SUCCESS);
+                        // 请求成功
+                        if (VerifyCaptchaResponseData.CHECK_CODE_SUCCESS.equals(response.code))
+                        {
+                            // 验证码正确
+                            sendMainLoopMessage(MSG_NORMAL_SUCCESS, -1, null);
+                        }
+                        else if (VerifyCaptchaResponseData.CHECK_NOT_AUTH_USER.equals(response.code))
+                        {
+                            // 非鉴权用户
+                            sendMainLoopMessage(MSG_NORMAL_FAIL, IAccCallback.LOGIN_FAILED_CODE_NO_ACCOUNT,
+                                    response.error_remark);
+                        }
+                        else if (VerifyCaptchaResponseData.CHECK_CODE_IS_FAILED.equals(response.code))
+                        {
+                            // 验证码错误
+                            sendMainLoopMessage(MSG_NORMAL_FAIL, IAccCallback.LOGIN_FAILED_CODE_CODE_WRONG,
+                                    response.error_remark);
+                        }
+                        else if (CheckCaptchaResponseData.LOGIN_FAILED_CODE_TIMES_LIMIT.equals(response.code))
+                        {
+                            // 输入验证码次数超过三次
+                            sendMainLoopMessage(MSG_NORMAL_FAIL, IAccCallback.LOGIN_FAILED_CODE_TIMES_LIMIT,
+                                    response.error_remark);
+                        }
+                        else
+                        {
+                            // 服务端异常
+                            sendMainLoopMessage(MSG_NORMAL_FAIL, IAccCallback.LOGIN_FAILED_CODE_SERVER_EXCEPTION,
+                                    response.error_remark);
+                        }
                     }
                     else
                     {
-
+                        // 服务端异常
+                        sendMainLoopMessage(MSG_NORMAL_FAIL, IAccCallback.LOGIN_FAILED_CODE_SERVER_EXCEPTION,
+                                response.error_remark);
                     }
-                }
-                else
-                {
-
                 }
             }
         });
+    }
+
+    @Override
+    public void resetPasswordByCaptchar(Context context, final String accName, final String passWord,
+            final String captchar, IAccCallback cb)
+    {
+        mIAccCallback = cb;
+        Config.execute(new Runnable()
+        {
+            @Override
+            public void run()
+            {
+                String encryPwdStr = "";
+                try
+                {
+                    encryPwdStr = encryptPassword(passWord);
+                }
+                catch (NoSuchAlgorithmException e)
+                {
+                    // TODO Auto-generated catch block
+                    e.printStackTrace();
+                }
+                ResetPasswordRequestData requestData = new ResetPasswordRequestData(accName, encryPwdStr, captchar);
+                String content = PTHTTPManager.getHttp().syncPostString(Config.SERVER, requestData);
+                ResetPasswordResponseData responseData = requestData.getObject(content);
+                if (responseData != null)
+                {
+                    if (responseData.isSuccess())
+                    {
+                        if (ResetPasswordResponseData.SET_PASSWORD_SUCCESS_CODE.equals(responseData.code))
+                        {
+                            // 修改密码成功
+                            sendMainLoopMessage(MSG_NORMAL_SUCCESS, -1, null);
+                        }
+                        else if (ResetPasswordResponseData.CHECK_CODE_IS_FAILED.equals(responseData.code))
+                        {
+                            // 验证码错误
+                            sendMainLoopMessage(MSG_NORMAL_FAIL, IAccCallback.LOGIN_FAILED_CODE_CODE_WRONG,
+                                    responseData.error_remark);
+                        }
+                        else if (ResetPasswordResponseData.CHECK_NOT_AUTH_USER.equals(responseData.code))
+                        {
+                            // 非鉴权用户
+                            sendMainLoopMessage(MSG_NORMAL_FAIL, IAccCallback.LOGIN_FAILED_CODE_NO_ACCOUNT,
+                                    responseData.error_remark);
+                        }
+                        else if (ResetPasswordResponseData.USER_NOT_EXISTS_CODE.equals(responseData.code))
+                        {
+                            // 非鉴权用户
+                            sendMainLoopMessage(MSG_NORMAL_FAIL, IAccCallback.LOGIN_FAILED_CODE_NO_ACCOUNT,
+                                    responseData.error_remark);
+                        }
+                        else
+                        {
+                            // 服务端异常
+                            sendMainLoopMessage(MSG_NORMAL_FAIL, IAccCallback.LOGIN_FAILED_CODE_SERVER_EXCEPTION,
+                                    responseData.error_remark);
+                        }
+                    }
+                    else
+                    {
+                        sendMainLoopMessage(MSG_NORMAL_FAIL, IAccCallback.LOGIN_FAILED_CODE_SERVER_EXCEPTION,
+                                responseData.error_remark);
+                    }
+                }
+            }
+        });
+    }
+
+    /**
+     * 向主线程发送消息
+     * 
+     * @param what
+     * @param obj void
+     */
+    private void sendMainLoopMessage(int what, int errorCode, Object obj)
+    {
+        Message message = new Message();
+        message.what = what;
+        message.obj = obj;
+        message.arg1 = errorCode;
+        mainHandler.sendMessage(message);
     }
 }

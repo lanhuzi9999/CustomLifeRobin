@@ -297,7 +297,7 @@ public class YellowpageLoginByCaptureActivity extends BaseActivity implements On
      * 登录失败
      */
     @Override
-    public void onFail(int failed_code)
+    public void onFail(int errorCode, String errorMsg)
     {
 
     }

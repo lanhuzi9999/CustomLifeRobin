@@ -169,7 +169,7 @@ public class YellowpageLoginByPasswordActivity extends BaseActivity implements O
     }
 
     @Override
-    public void onFail(int failed_code)
+    public void onFail(int errorCode, String errorMsg)
     {
         setNotLoginStatus();
     }

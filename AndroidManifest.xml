@@ -93,13 +93,13 @@
         </activity>
         
         <activity
-            android:name="so.contacts.hub.basefunction.account.ui.ModifyPasswordActivity"
+            android:name="so.contacts.hub.basefunction.account.ui.YellowpageModifyPasswordActivity"
             android:theme="@style/Theme.Ptui.NoTitle"
             android:launchMode="singleTop" >
         </activity>
 
         <activity
-            android:name="so.contacts.hub.basefunction.account.ui.SetPasswordActivity"
+            android:name="so.contacts.hub.basefunction.account.ui.YellowpageSetPasswordActivity"
             android:theme="@style/Theme.Ptui.NoTitle"
             android:launchMode="singleTop" >
         </activity>

@@ -975,7 +975,7 @@ public class YellowpagePersonalInfoActivity extends BaseActivity implements OnCl
      */
     private void setPassWord()
     {
-        Intent intent = new Intent(YellowpagePersonalInfoActivity.this, ModifyPasswordActivity.class);
+        Intent intent = new Intent(YellowpagePersonalInfoActivity.this, YellowpageModifyPasswordActivity.class);
         RelateUser relateUser = AccountManager.getInstance().getRelateUser(RelateUser.TYPE_PHONE);
         String showStr = relateUser.accName.substring(0, 3) + " " + relateUser.accName.substring(3, 7) + " "
                 + relateUser.accName.substring(7);

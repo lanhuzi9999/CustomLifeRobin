@@ -59,6 +59,17 @@ public interface IAccountAction
     public void verifyCaptchar(Context context, String actionCode, String accName, String checkCode, IAccCallback cb);
     
     /**
+     * 根据验证码设置密码
+     * @param context
+     * @param accName
+     * @param passWord
+     * @param captchar
+     * @param cb
+     * void
+     */
+    public void resetPasswordByCaptchar(Context context, String accName, String passWord, String captchar, IAccCallback cb);
+    
+    /**
      * 账号密码登陆
      * @param context
      * @param accName
