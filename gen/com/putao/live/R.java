@@ -117,11 +117,12 @@ public final class R {
 
  用noPrefix_表示此字符串显示时没有前缀 如其他的为： 输入关键字搜索，比如 开锁
          此条为 ：可直接搜索公司或号码
+
         
          */
         public static final int putao_serch_hotword=0x7f06000b;
         /**  酒店、国内机票、火车票热门城市 modified by lxh 2015-5-15 
- 酒店、国内机票、火车票热门城市 modified by lxh 2015-5-15  
+ 酒店、国内机票、火车票热门城市 modified by lxh 2015-5-15 
          */
         public static final int putao_special_cities=0x7f060002;
         /**  end 2015-5-15 by lxh 
@@ -167,7 +168,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int Inside_Interval=0x7f01001a;
+        public static final int Inside_Interval=0x7f010025;
         /**  画笔宽度，填充模式下无效，会被重置为0 
          <p>Must be an integer value, such as "<code>100</code>".
 <p>This may also be a reference to a resource (in the form
@@ -176,7 +177,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int Paint_Color=0x7f010017;
+        public static final int Paint_Color=0x7f010022;
         /**  是否填充圆形区域 
          <p>Must be an integer value, such as "<code>100</code>".
 <p>This may also be a reference to a resource (in the form
@@ -185,7 +186,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int Paint_Width=0x7f010016;
+        public static final int Paint_Width=0x7f010021;
         /**  画笔颜色 
          <p>Must be an integer value, such as "<code>100</code>".
 <p>This may also be a reference to a resource (in the form
@@ -194,7 +195,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int Secondary_Paint_Color=0x7f010018;
+        public static final int Secondary_Paint_Color=0x7f010023;
         /**  圆形颜色 
          <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
 <p>This may also be a reference to a resource (in the form
@@ -203,7 +204,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int Show_Bottom=0x7f010019;
+        public static final int Show_Bottom=0x7f010024;
         /** <p>Must be an integer value, such as "<code>100</code>".
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -211,11 +212,11 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int animationDuration=0x7f010046;
+        public static final int animationDuration=0x7f010051;
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
-        public static final int bg_selector=0x7f010039;
+        public static final int bg_selector=0x7f010044;
         /**  Whether or not the indicators should be centered. 
          <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
 <p>This may also be a reference to a resource (in the form
@@ -224,12 +225,12 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int centered=0x7f01001f;
+        public static final int centered=0x7f01002a;
         /**  Style of the circle indicator. 
          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
-        public static final int circlePageIndicatorStyle=0x7f01001d;
+        public static final int circlePageIndicatorStyle=0x7f010028;
         /**  Screen edge padding. 
          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
 Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
@@ -240,24 +241,24 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int clipPadding=0x7f010026;
+        public static final int clipPadding=0x7f010031;
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
-        public static final int customAbsSpinnerStyle=0x7f01004b;
+        public static final int customAbsSpinnerStyle=0x7f010056;
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
-        public static final int ecoGalleryStyle=0x7f010049;
+        public static final int ecoGalleryStyle=0x7f010054;
         /** <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
          */
-        public static final int empty_string=0x7f01003a;
+        public static final int empty_string=0x7f010045;
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
-        public static final int entries=0x7f01004a;
+        public static final int entries=0x7f010055;
         /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -265,7 +266,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int fill=0x7f010015;
+        public static final int fill=0x7f010020;
         /**  Color of the filled circle that represents the current page. 
          <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
@@ -275,7 +276,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int fillColor=0x7f010020;
+        public static final int fillColor=0x7f01002b;
         /**  Color of the footer line and indicator. 
          <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
@@ -285,7 +286,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int footerColor=0x7f010027;
+        public static final int footerColor=0x7f010032;
         /**  Height of the indicator above the footer line. 
          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
 Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
@@ -296,7 +297,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int footerIndicatorHeight=0x7f01002a;
+        public static final int footerIndicatorHeight=0x7f010035;
         /**  Style of the indicator. Default is triangle. 
          <p>Must be one of the following constant values.</p>
 <table>
@@ -309,7 +310,7 @@ containing a value of this type.
 <tr><td><code>underline</code></td><td>2</td><td></td></tr>
 </table>
          */
-        public static final int footerIndicatorStyle=0x7f010029;
+        public static final int footerIndicatorStyle=0x7f010034;
         /**  Left and right padding of the underline indicator. 
          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
 Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
@@ -320,7 +321,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int footerIndicatorUnderlinePadding=0x7f01002b;
+        public static final int footerIndicatorUnderlinePadding=0x7f010036;
         /**  Height of the footer line. 
          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
 Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
@@ -331,7 +332,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int footerLineHeight=0x7f010028;
+        public static final int footerLineHeight=0x7f010033;
         /**  Padding between the bottom of the title and the footer. 
          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
 Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
@@ -342,7 +343,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int footerPadding=0x7f01002c;
+        public static final int footerPadding=0x7f010037;
         /** <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
@@ -356,12 +357,12 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int gravity=0x7f010045;
+        public static final int gravity=0x7f010050;
         /** <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
          */
-        public static final int groupTxt=0x7f010044;
+        public static final int groupTxt=0x7f01004f;
         /** <p>Must be an integer value, such as "<code>100</code>".
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -369,7 +370,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int id=0x7f01003b;
+        public static final int id=0x7f010046;
         /** <p>Must be an integer value, such as "<code>100</code>".
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -377,7 +378,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int max=0x7f010014;
+        public static final int max=0x7f01001f;
         /**  圆形区域向里缩进的距离 
          <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
 <p>This may also be a reference to a resource (in the form
@@ -386,22 +387,22 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int mode=0x7f01001b;
+        public static final int mode=0x7f010026;
         /** <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a boolean value, either "<code>true</code>" or "<code>false</code>".
          */
-        public static final int needJudgeNet=0x7f01003e;
+        public static final int needJudgeNet=0x7f010049;
         /** <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
          */
-        public static final int noDataTxt=0x7f010040;
+        public static final int noDataTxt=0x7f01004b;
         /** <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
          */
-        public static final int noNetworkTxt=0x7f01003f;
+        public static final int noNetworkTxt=0x7f01004a;
         /**  Orientation of the indicator. 
          <p>Must be one of the following constant values.</p>
 <table>
@@ -413,23 +414,16 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 <tr><td><code>vertical</code></td><td>1</td><td></td></tr>
 </table>
          */
-        public static final int orientation=0x7f010021;
-        /** <p>Must be an integer value, such as "<code>100</code>".
+        public static final int orientation=0x7f01002c;
+        /** <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int putao_activeDot=0x7f0100a0;
-        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
-or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-         */
-        public static final int putao_defaultSrc=0x7f01009c;
-        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
-or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-         */
-        public static final int putao_dividerDrawable=0x7f010094;
+        public static final int pstsDividerColor=0x7f010016;
         /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
 Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
 in (inches), mm (millimeters).
@@ -439,19 +433,16 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int putao_dividerWidth=0x7f010095;
-        /** <p>Must be an integer value, such as "<code>100</code>".
+        public static final int pstsDividerPadding=0x7f010019;
+        /** <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int putao_dotCount=0x7f01009f;
-        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
-or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-         */
-        public static final int putao_dotDrawable=0x7f0100a1;
+        public static final int pstsIndicatorColor=0x7f010014;
         /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
 Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
 in (inches), mm (millimeters).
@@ -461,7 +452,114 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int putao_dotSpacing=0x7f0100a2;
+        public static final int pstsIndicatorHeight=0x7f010017;
+        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int pstsScrollOffset=0x7f01001b;
+        /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int pstsShouldExpand=0x7f01001d;
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int pstsTabBackground=0x7f01001c;
+        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int pstsTabPaddingLeftRight=0x7f01001a;
+        /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int pstsTextAllCaps=0x7f01001e;
+        /** <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int pstsUnderlineColor=0x7f010015;
+        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int pstsUnderlineHeight=0x7f010018;
+        /** <p>Must be an integer value, such as "<code>100</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int putao_activeDot=0x7f0100ab;
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int putao_defaultSrc=0x7f0100a7;
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int putao_dividerDrawable=0x7f01009f;
+        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int putao_dividerWidth=0x7f0100a0;
+        /** <p>Must be an integer value, such as "<code>100</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int putao_dotCount=0x7f0100aa;
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int putao_dotDrawable=0x7f0100ac;
+        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int putao_dotSpacing=0x7f0100ad;
         /** <p>Must be one of the following constant values.</p>
 <table>
 <colgroup align="left" />
@@ -472,11 +570,11 @@ containing a value of this type.
 <tr><td><code>multiple</code></td><td>1</td><td></td></tr>
 </table>
          */
-        public static final int putao_dotType=0x7f0100a4;
+        public static final int putao_dotType=0x7f0100af;
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
-        public static final int putao_drawable=0x7f01008f;
+        public static final int putao_drawable=0x7f01009a;
         /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -484,23 +582,23 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int putao_enabled=0x7f01008c;
+        public static final int putao_enabled=0x7f010097;
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
-        public static final int putao_gdActionBarApplicationDrawable=0x7f01007a;
+        public static final int putao_gdActionBarApplicationDrawable=0x7f010085;
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
-        public static final int putao_gdActionBarBackground=0x7f010076;
+        public static final int putao_gdActionBarBackground=0x7f010081;
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
-        public static final int putao_gdActionBarDividerDrawable=0x7f010078;
+        public static final int putao_gdActionBarDividerDrawable=0x7f010083;
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
-        public static final int putao_gdActionBarDividerStyle=0x7f010081;
+        public static final int putao_gdActionBarDividerStyle=0x7f01008c;
         /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
 Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
 in (inches), mm (millimeters).
@@ -510,31 +608,31 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int putao_gdActionBarDividerWidth=0x7f010079;
+        public static final int putao_gdActionBarDividerWidth=0x7f010084;
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
-        public static final int putao_gdActionBarHomeDrawable=0x7f01007b;
+        public static final int putao_gdActionBarHomeDrawable=0x7f010086;
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
-        public static final int putao_gdActionBarItemBackground=0x7f010077;
+        public static final int putao_gdActionBarItemBackground=0x7f010082;
         /** <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
          */
-        public static final int putao_gdActionBarItemColorAlt=0x7f01007d;
+        public static final int putao_gdActionBarItemColorAlt=0x7f010088;
         /** <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
          */
-        public static final int putao_gdActionBarItemColorNormal=0x7f01007c;
+        public static final int putao_gdActionBarItemColorNormal=0x7f010087;
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
-        public static final int putao_gdActionBarItemStyle=0x7f010082;
+        public static final int putao_gdActionBarItemStyle=0x7f01008d;
         /** <p>Must be an integer value, such as "<code>100</code>".
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -542,11 +640,11 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int putao_gdActionBarMaxItems=0x7f01007e;
+        public static final int putao_gdActionBarMaxItems=0x7f010089;
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
-        public static final int putao_gdActionBarStyle=0x7f01007f;
+        public static final int putao_gdActionBarStyle=0x7f01008a;
         /**  ActionBar related attributes 
          <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
@@ -556,15 +654,15 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int putao_gdActionBarTitleColor=0x7f010075;
+        public static final int putao_gdActionBarTitleColor=0x7f010080;
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
-        public static final int putao_gdActionBarTitleStyle=0x7f010080;
+        public static final int putao_gdActionBarTitleStyle=0x7f01008b;
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
-        public static final int putao_gdDescriptionItemViewStyle=0x7f01005d;
+        public static final int putao_gdDescriptionItemViewStyle=0x7f010068;
         /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
 Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
 in (inches), mm (millimeters).
@@ -574,19 +672,19 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int putao_gdDrawableHeight=0x7f010052;
+        public static final int putao_gdDrawableHeight=0x7f01005d;
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
-        public static final int putao_gdDrawableItemViewStyle=0x7f010062;
+        public static final int putao_gdDrawableItemViewStyle=0x7f01006d;
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
-        public static final int putao_gdDrawableItemViewStyleDrawable=0x7f010064;
+        public static final int putao_gdDrawableItemViewStyleDrawable=0x7f01006f;
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
-        public static final int putao_gdDrawableItemViewStyleText=0x7f010063;
+        public static final int putao_gdDrawableItemViewStyleText=0x7f01006e;
         /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
 Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
 in (inches), mm (millimeters).
@@ -596,7 +694,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int putao_gdDrawableMargin=0x7f010053;
+        public static final int putao_gdDrawableMargin=0x7f01005e;
         /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
 Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
 in (inches), mm (millimeters).
@@ -606,7 +704,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int putao_gdDrawableWidth=0x7f010051;
+        public static final int putao_gdDrawableWidth=0x7f01005c;
         /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
 Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
 in (inches), mm (millimeters).
@@ -616,7 +714,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int putao_gdItemViewPreferredHalfHeight=0x7f010058;
+        public static final int putao_gdItemViewPreferredHalfHeight=0x7f010063;
         /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
 Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
 in (inches), mm (millimeters).
@@ -626,7 +724,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int putao_gdItemViewPreferredHeight=0x7f010057;
+        public static final int putao_gdItemViewPreferredHeight=0x7f010062;
         /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
 Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
 in (inches), mm (millimeters).
@@ -636,16 +734,16 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int putao_gdItemViewPreferredPaddingLeft=0x7f010059;
+        public static final int putao_gdItemViewPreferredPaddingLeft=0x7f010064;
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
-        public static final int putao_gdLongTextItemViewStyle=0x7f01005c;
+        public static final int putao_gdLongTextItemViewStyle=0x7f010067;
         /**  PageIndicator related attributes 
          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
-        public static final int putao_gdPageIndicatorStyle=0x7f01008b;
+        public static final int putao_gdPageIndicatorStyle=0x7f010096;
         /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
 Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
 in (inches), mm (millimeters).
@@ -655,7 +753,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int putao_gdProgressBarHeight=0x7f010055;
+        public static final int putao_gdProgressBarHeight=0x7f010060;
         /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
 Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
 in (inches), mm (millimeters).
@@ -665,7 +763,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int putao_gdProgressBarMargin=0x7f010056;
+        public static final int putao_gdProgressBarMargin=0x7f010061;
         /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
 Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
 in (inches), mm (millimeters).
@@ -675,7 +773,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int putao_gdProgressBarWidth=0x7f010054;
+        public static final int putao_gdProgressBarWidth=0x7f01005f;
         /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
 Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
 in (inches), mm (millimeters).
@@ -685,7 +783,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int putao_gdProgressItemViewStyle=0x7f01005f;
+        public static final int putao_gdProgressItemViewStyle=0x7f01006a;
         /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
 Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
 in (inches), mm (millimeters).
@@ -695,7 +793,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int putao_gdProgressItemViewStyleProgressBar=0x7f010061;
+        public static final int putao_gdProgressItemViewStyleProgressBar=0x7f01006c;
         /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
 Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
 in (inches), mm (millimeters).
@@ -705,32 +803,32 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int putao_gdProgressItemViewStyleText=0x7f010060;
+        public static final int putao_gdProgressItemViewStyleText=0x7f01006b;
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
-        public static final int putao_gdQuickActionBarItemStyle=0x7f010088;
+        public static final int putao_gdQuickActionBarItemStyle=0x7f010093;
         /**  QuickAction related attributes 
          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
-        public static final int putao_gdQuickActionBarStyle=0x7f010087;
+        public static final int putao_gdQuickActionBarStyle=0x7f010092;
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
-        public static final int putao_gdQuickActionGridItemStyle=0x7f01008a;
+        public static final int putao_gdQuickActionGridItemStyle=0x7f010095;
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
-        public static final int putao_gdQuickActionGridStyle=0x7f010089;
+        public static final int putao_gdQuickActionGridStyle=0x7f010094;
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
-        public static final int putao_gdSegmentBackground=0x7f010071;
+        public static final int putao_gdSegmentBackground=0x7f01007c;
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
-        public static final int putao_gdSegmentCheckmark=0x7f010072;
+        public static final int putao_gdSegmentCheckmark=0x7f01007d;
         /**  SegmentedBar related attributes 
          <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
@@ -740,7 +838,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int putao_gdSegmentTextColor=0x7f01006f;
+        public static final int putao_gdSegmentTextColor=0x7f01007a;
         /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
 Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
 in (inches), mm (millimeters).
@@ -750,15 +848,15 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int putao_gdSegmentTextSize=0x7f010070;
+        public static final int putao_gdSegmentTextSize=0x7f01007b;
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
-        public static final int putao_gdSegmentedBarStyle=0x7f010073;
+        public static final int putao_gdSegmentedBarStyle=0x7f01007e;
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
-        public static final int putao_gdSegmentedHostStyle=0x7f010074;
+        public static final int putao_gdSegmentedHostStyle=0x7f01007f;
         /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
 Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
 in (inches), mm (millimeters).
@@ -768,39 +866,39 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int putao_gdSeparatorItemViewPreferredHeight=0x7f01005a;
+        public static final int putao_gdSeparatorItemViewPreferredHeight=0x7f010065;
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
-        public static final int putao_gdSeparatorItemViewStyle=0x7f01005e;
+        public static final int putao_gdSeparatorItemViewStyle=0x7f010069;
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
-        public static final int putao_gdSubtextItemViewStyle=0x7f010068;
+        public static final int putao_gdSubtextItemViewStyle=0x7f010073;
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
-        public static final int putao_gdSubtextItemViewStyleSubtext=0x7f01006a;
+        public static final int putao_gdSubtextItemViewStyleSubtext=0x7f010075;
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
-        public static final int putao_gdSubtextItemViewStyleText=0x7f010069;
+        public static final int putao_gdSubtextItemViewStyleText=0x7f010074;
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
-        public static final int putao_gdSubtitleItemViewStyle=0x7f010065;
+        public static final int putao_gdSubtitleItemViewStyle=0x7f010070;
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
-        public static final int putao_gdSubtitleItemViewStyleSubtitle=0x7f010067;
+        public static final int putao_gdSubtitleItemViewStyleSubtitle=0x7f010072;
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
-        public static final int putao_gdSubtitleItemViewStyleText=0x7f010066;
+        public static final int putao_gdSubtitleItemViewStyleText=0x7f010071;
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
-        public static final int putao_gdTabIndicatorBackground=0x7f010085;
+        public static final int putao_gdTabIndicatorBackground=0x7f010090;
         /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
 Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
 in (inches), mm (millimeters).
@@ -810,56 +908,56 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int putao_gdTabIndicatorHeight=0x7f010083;
+        public static final int putao_gdTabIndicatorHeight=0x7f01008e;
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
-        public static final int putao_gdTabIndicatorStyle=0x7f010086;
+        public static final int putao_gdTabIndicatorStyle=0x7f010091;
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
-        public static final int putao_gdTabIndicatorTextAppearance=0x7f010084;
+        public static final int putao_gdTabIndicatorTextAppearance=0x7f01008f;
         /**  Item-based lists related attributes 
          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
-        public static final int putao_gdTextAppearance=0x7f01004c;
+        public static final int putao_gdTextAppearance=0x7f010057;
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
-        public static final int putao_gdTextAppearanceLarge=0x7f01004d;
+        public static final int putao_gdTextAppearanceLarge=0x7f010058;
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
-        public static final int putao_gdTextAppearanceMedium=0x7f01004e;
+        public static final int putao_gdTextAppearanceMedium=0x7f010059;
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
-        public static final int putao_gdTextAppearanceSeparator=0x7f010050;
+        public static final int putao_gdTextAppearanceSeparator=0x7f01005b;
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
-        public static final int putao_gdTextAppearanceSmall=0x7f01004f;
+        public static final int putao_gdTextAppearanceSmall=0x7f01005a;
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
-        public static final int putao_gdTextItemViewStyle=0x7f01005b;
+        public static final int putao_gdTextItemViewStyle=0x7f010066;
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
-        public static final int putao_gdThumbnailItemViewStyle=0x7f01006b;
+        public static final int putao_gdThumbnailItemViewStyle=0x7f010076;
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
-        public static final int putao_gdThumbnailItemViewStyleSubtitle=0x7f01006d;
+        public static final int putao_gdThumbnailItemViewStyleSubtitle=0x7f010078;
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
-        public static final int putao_gdThumbnailItemViewStyleText=0x7f01006c;
+        public static final int putao_gdThumbnailItemViewStyleText=0x7f010077;
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
-        public static final int putao_gdThumbnailItemViewStyleThumbnail=0x7f01006e;
+        public static final int putao_gdThumbnailItemViewStyleThumbnail=0x7f010079;
         /** <p>Must be one or more (separated by '|') of the following constant values.</p>
 <table>
 <colgroup align="left" />
@@ -875,11 +973,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 <tr><td><code>center</code></td><td>0x11</td><td></td></tr>
 </table>
          */
-        public static final int putao_gravity=0x7f0100a3;
+        public static final int putao_gravity=0x7f0100ae;
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
-        public static final int putao_homeDrawable=0x7f01009a;
+        public static final int putao_homeDrawable=0x7f0100a5;
         /** <p>Must be one of the following constant values.</p>
 <table>
 <colgroup align="left" />
@@ -892,7 +990,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 <tr><td><code>xhdpi</code></td><td>320</td><td></td></tr>
 </table>
          */
-        public static final int putao_inDensity=0x7f01009e;
+        public static final int putao_inDensity=0x7f0100a9;
         /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -900,7 +998,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int putao_isInProgress=0x7f01008e;
+        public static final int putao_isInProgress=0x7f010099;
         /** <p>Must be an integer value, such as "<code>100</code>".
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -908,15 +1006,15 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int putao_maxItems=0x7f01009b;
+        public static final int putao_maxItems=0x7f0100a6;
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
-        public static final int putao_segmentedBar=0x7f010096;
+        public static final int putao_segmentedBar=0x7f0100a1;
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
-        public static final int putao_segmentedContentView=0x7f010097;
+        public static final int putao_segmentedContentView=0x7f0100a2;
         /** <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -924,7 +1022,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int putao_subtext=0x7f010091;
+        public static final int putao_subtext=0x7f01009c;
         /** <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -932,7 +1030,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int putao_subtitle=0x7f010090;
+        public static final int putao_subtitle=0x7f01009b;
         /** <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -940,11 +1038,11 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int putao_text=0x7f01008d;
+        public static final int putao_text=0x7f010098;
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
-        public static final int putao_thumbnail=0x7f010092;
+        public static final int putao_thumbnail=0x7f01009d;
         /** <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -952,7 +1050,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int putao_thumbnailURL=0x7f010093;
+        public static final int putao_thumbnailURL=0x7f01009e;
         /** <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -960,7 +1058,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int putao_title=0x7f010098;
+        public static final int putao_title=0x7f0100a3;
         /** <p>Must be one of the following constant values.</p>
 <table>
 <colgroup align="left" />
@@ -972,7 +1070,7 @@ containing a value of this type.
 <tr><td><code>empty</code></td><td>2</td><td></td></tr>
 </table>
          */
-        public static final int putao_type=0x7f010099;
+        public static final int putao_type=0x7f0100a4;
         /** <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -980,7 +1078,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int putao_url=0x7f01009d;
+        public static final int putao_url=0x7f0100a8;
         /**  Radius of the circles. This is also the spacing between circles. 
          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
 Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
@@ -991,17 +1089,17 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int radius=0x7f010022;
+        public static final int radius=0x7f01002d;
         /** <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a boolean value, either "<code>true</code>" or "<code>false</code>".
          */
-        public static final int reloadWithNoData=0x7f010041;
+        public static final int reloadWithNoData=0x7f01004c;
         /** <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
          */
-        public static final int sdk_name=0x7f010038;
+        public static final int sdk_name=0x7f010043;
         /**  背景色 
          <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
@@ -1067,7 +1165,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int selectedBold=0x7f01002e;
+        public static final int selectedBold=0x7f010039;
         /**  Color of the selected title. 
          <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
@@ -1077,7 +1175,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int selectedColor=0x7f01002d;
+        public static final int selectedColor=0x7f010038;
         /** <p>Must be an integer value, such as "<code>100</code>".
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -1085,26 +1183,26 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int selected_txt_color=0x7f01003c;
+        public static final int selected_txt_color=0x7f010047;
         /** <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a boolean value, either "<code>true</code>" or "<code>false</code>".
          */
-        public static final int showBottomDivider=0x7f010042;
+        public static final int showBottomDivider=0x7f01004d;
         /** <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a boolean value, either "<code>true</code>" or "<code>false</code>".
          */
-        public static final int showImage=0x7f01003d;
+        public static final int showImage=0x7f010048;
         /** <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a boolean value, either "<code>true</code>" or "<code>false</code>".
          */
-        public static final int showTopDivider=0x7f010043;
+        public static final int showTopDivider=0x7f01004e;
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
-        public static final int slideBackView=0x7f010033;
+        public static final int slideBackView=0x7f01003e;
         /** <p>Must be one or more (separated by '|') of the following constant values.</p>
 <table>
 <colgroup align="left" />
@@ -1117,7 +1215,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 <tr><td><code>rightToLeft</code></td><td>3</td><td></td></tr>
 </table>
          */
-        public static final int slideDirect=0x7f010037;
+        public static final int slideDirect=0x7f010042;
         /** <p>Must be an integer value, such as "<code>100</code>".
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -1125,15 +1223,15 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int slideDuration=0x7f010035;
+        public static final int slideDuration=0x7f010040;
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
-        public static final int slideForeView=0x7f010034;
+        public static final int slideForeView=0x7f01003f;
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
-        public static final int slideInterpolator=0x7f010036;
+        public static final int slideInterpolator=0x7f010041;
         /** <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
@@ -1148,7 +1246,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int snap=0x7f010023;
+        public static final int snap=0x7f01002e;
         /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
 Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
 in (inches), mm (millimeters).
@@ -1158,7 +1256,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int spacing=0x7f010048;
+        public static final int spacing=0x7f010053;
         /**  背景色 
          <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
@@ -1228,7 +1326,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int strokeColor=0x7f010024;
+        public static final int strokeColor=0x7f01002f;
         /**  Width of the stroke used to draw the circles. 
          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
 Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
@@ -1239,7 +1337,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int strokeWidth=0x7f010025;
+        public static final int strokeWidth=0x7f010030;
         /**  Color of regular titles. 
          <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
@@ -1249,7 +1347,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int textColor=0x7f01002f;
+        public static final int textColor=0x7f01003a;
         /**  Size of title text. 
          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
 Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
@@ -1260,7 +1358,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int textSize=0x7f010030;
+        public static final int textSize=0x7f01003b;
         /**  Padding between titles when bumping into each other. 
          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
 Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
@@ -1271,12 +1369,12 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int titlePadding=0x7f010031;
+        public static final int titlePadding=0x7f01003c;
         /**  Style of the title indicator. 
          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
-        public static final int titlePageIndicatorStyle=0x7f01001e;
+        public static final int titlePageIndicatorStyle=0x7f010029;
         /**  Padding between titles and the top of the View. 
          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
 Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
@@ -1287,7 +1385,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int topPadding=0x7f010032;
+        public static final int topPadding=0x7f01003d;
         /** <p>Must be a floating point value, such as "<code>1.2</code>".
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -1295,7 +1393,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int unselectedAlpha=0x7f010047;
+        public static final int unselectedAlpha=0x7f010052;
         /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
 Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
 in (inches), mm (millimeters).
@@ -1313,7 +1411,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int zoomRatio=0x7f01001c;
+        public static final int zoomRatio=0x7f010027;
     }
     public static final class bool {
         public static final int putao_default_circle_indicator_centered=0x7f0c0000;
@@ -2881,125 +2979,127 @@ containing a value of this type.
         public static final int ad_view_layout_top=0x7f0a0075;
         public static final int add=0x7f0a004b;
         public static final int add_contacts=0x7f0a004d;
-        public static final int address_layout=0x7f0a0189;
-        public static final int address_select=0x7f0a018a;
-        public static final int addressdetail_layout=0x7f0a018b;
+        public static final int address_layout=0x7f0a018d;
+        public static final int address_select=0x7f0a018e;
+        public static final int addressdetail_layout=0x7f0a018f;
         public static final int all_services_gridView=0x7f0a00a4;
         public static final int attribution=0x7f0a004f;
         public static final int auto_focus=0x7f0a006b;
         public static final int back=0x7f0a0058;
-        public static final int back_layout=0x7f0a0102;
+        public static final int back_layout=0x7f0a0103;
         public static final int back_separator=0x7f0a0065;
         public static final int background_layout=0x7f0a0025;
         public static final int base_profile_group=0x7f0a0040;
         public static final int bind=0x7f0a0051;
-        public static final int birthday=0x7f0a00f4;
-        public static final int birthday_card=0x7f0a00eb;
-        public static final int birthday_cards=0x7f0a00ea;
-        public static final int birthday_layout=0x7f0a00f3;
+        public static final int birthday=0x7f0a00f5;
+        public static final int birthday_card=0x7f0a00ec;
+        public static final int birthday_cards=0x7f0a00eb;
+        public static final int birthday_layout=0x7f0a00f4;
         public static final int bottom=0x7f0a008b;
-        public static final int bt_traveller_commit=0x7f0a00f7;
-        public static final int bt_traveller_delete=0x7f0a00f8;
-        public static final int calendar_item_tag=0x7f0a00a6;
-        public static final int calendar_item_text=0x7f0a00a5;
+        public static final int bt_traveller_commit=0x7f0a00f8;
+        public static final int bt_traveller_delete=0x7f0a00f9;
+        public static final int calendar_item_tag=0x7f0a00a7;
+        public static final int calendar_item_text=0x7f0a00a6;
         public static final int call=0x7f0a003e;
         public static final int call_log_listview=0x7f0a0013;
         public static final int category_name=0x7f0a00a1;
         public static final int center=0x7f0a008c;
         public static final int center_horizontal=0x7f0a008d;
         public static final int center_vertical=0x7f0a008e;
-        public static final int centre=0x7f0a016f;
-        public static final int city_btn=0x7f0a010a;
+        public static final int centre=0x7f0a0171;
+        public static final int city_btn=0x7f0a010c;
         public static final int company=0x7f0a005b;
         public static final int conracts_mood=0x7f0a002b;
         public static final int contact=0x7f0a0033;
         public static final int contact_group=0x7f0a0036;
         public static final int container=0x7f0a0052;
         public static final int count=0x7f0a004a;
-        public static final int custom_list_view_foot_contentview=0x7f0a0116;
-        public static final int custom_list_view_foot_divider=0x7f0a0115;
-        public static final int custom_spinner_content=0x7f0a00e3;
-        public static final int custom_spinner_layout=0x7f0a00e2;
+        public static final int custom_list_view_foot_contentview=0x7f0a0118;
+        public static final int custom_list_view_foot_divider=0x7f0a0117;
+        public static final int custom_spinner_content=0x7f0a00e4;
+        public static final int custom_spinner_layout=0x7f0a00e3;
         public static final int dashboard=0x7f0a0084;
         public static final int decode=0x7f0a006c;
         public static final int decode_failed=0x7f0a006d;
         public static final int decode_succeeded=0x7f0a006e;
         public static final int description=0x7f0a0062;
-        public static final int detail_address=0x7f0a018c;
-        public static final int detail_text=0x7f0a00ab;
+        public static final int detail_address=0x7f0a0190;
+        public static final int detail_text=0x7f0a00ac;
         public static final int dialerpad=0x7f0a0011;
-        public static final int dialog_bootom_cancel_btn=0x7f0a00cb;
-        public static final int dialog_bootom_ok_btn=0x7f0a00cc;
-        public static final int dialog_bottom_layout=0x7f0a00ca;
-        public static final int dialog_gridview=0x7f0a00a7;
-        public static final int dialog_more_action=0x7f0a00c7;
-        public static final int dialog_screenad_layout=0x7f0a0179;
-        public static final int dialog_title_divider=0x7f0a00cd;
-        public static final int dialog_title_tv=0x7f0a00c8;
-        public static final int dialog_twogridview_layout=0x7f0a018d;
-        public static final int dialog_update_progress=0x7f0a018e;
-        public static final int dialog_update_progress_txt=0x7f0a018f;
-        public static final int dialog_yearandmonth_layout=0x7f0a0196;
-        public static final int discount_voucher_list=0x7f0a00e4;
+        public static final int dialog_bootom_cancel_btn=0x7f0a00cc;
+        public static final int dialog_bootom_ok_btn=0x7f0a00cd;
+        public static final int dialog_bottom_layout=0x7f0a00cb;
+        public static final int dialog_gridview=0x7f0a00a8;
+        public static final int dialog_more_action=0x7f0a00c8;
+        public static final int dialog_screenad_layout=0x7f0a017b;
+        public static final int dialog_title_divider=0x7f0a00ce;
+        public static final int dialog_title_tv=0x7f0a00c9;
+        public static final int dialog_twogridview_layout=0x7f0a0191;
+        public static final int dialog_update_progress=0x7f0a0192;
+        public static final int dialog_update_progress_txt=0x7f0a0193;
+        public static final int dialog_yearandmonth_layout=0x7f0a019a;
+        public static final int discount_voucher_list=0x7f0a00e5;
         public static final int downToUp=0x7f0a0080;
         public static final int edit=0x7f0a0039;
         public static final int edit_separator=0x7f0a0050;
         public static final int eight=0x7f0a000c;
         public static final int email=0x7f0a0042;
         public static final int empty=0x7f0a0085;
-        public static final int empty_desc_imv=0x7f0a00c5;
-        public static final int empty_desc_txt=0x7f0a00c6;
+        public static final int empty_desc_imv=0x7f0a00c6;
+        public static final int empty_desc_txt=0x7f0a00c7;
         public static final int empty_layout=0x7f0a0078;
         public static final int empty_tip_one=0x7f0a0079;
         public static final int empty_tip_two=0x7f0a007a;
-        public static final int empty_view=0x7f0a017c;
+        public static final int empty_view=0x7f0a017e;
         public static final int error=0x7f0a0068;
-        public static final int exception_desc=0x7f0a0146;
-        public static final int exception_refresh=0x7f0a0145;
+        public static final int exception_desc=0x7f0a0148;
+        public static final int exception_refresh=0x7f0a0147;
         public static final int exit=0x7f0a005c;
         public static final int fans=0x7f0a004e;
-        public static final int fee=0x7f0a0136;
+        public static final int fee=0x7f0a0138;
         public static final int five=0x7f0a0009;
         public static final int forword=0x7f0a0054;
         public static final int four=0x7f0a0008;
         public static final int front_bg=0x7f0a0024;
         public static final int front_view=0x7f0a0023;
-        public static final int goods_current_price=0x7f0a00be;
-        public static final int goods_desc=0x7f0a00bc;
-        public static final int goods_img=0x7f0a00ba;
-        public static final int goods_title=0x7f0a00bb;
+        public static final int goods_current_price=0x7f0a00bf;
+        public static final int goods_desc=0x7f0a00bd;
+        public static final int goods_img=0x7f0a00bb;
+        public static final int goods_title=0x7f0a00bc;
         public static final int group=0x7f0a0032;
         public static final int group_name=0x7f0a004c;
         public static final int guide=0x7f0a005a;
-        public static final int guide_viewpager=0x7f0a00fa;
+        public static final int guide_viewpager=0x7f0a00fb;
         public static final int hdpi=0x7f0a0087;
-        public static final int head_arrowImageView=0x7f0a00fe;
-        public static final int head_contentLayout=0x7f0a00fb;
-        public static final int head_lastUpdatedTextView=0x7f0a0101;
-        public static final int head_layout=0x7f0a00ec;
-        public static final int head_progressBar=0x7f0a00ff;
-        public static final int head_tipsTextView=0x7f0a0100;
+        public static final int head_arrowImageView=0x7f0a00ff;
+        public static final int head_contentLayout=0x7f0a00fc;
+        public static final int head_lastUpdatedTextView=0x7f0a0102;
+        public static final int head_layout=0x7f0a00ed;
+        public static final int head_layout_viewstub=0x7f0a00a5;
+        public static final int head_progressBar=0x7f0a0100;
+        public static final int head_tipsTextView=0x7f0a0101;
         public static final int header=0x7f0a0031;
-        public static final int history_list=0x7f0a0169;
+        public static final int header_divider=0x7f0a010a;
+        public static final int history_list=0x7f0a016b;
         public static final int home_viewpager=0x7f0a0004;
         public static final int horizontal=0x7f0a007b;
-        public static final int hot_gridview=0x7f0a0187;
-        public static final int hot_railway=0x7f0a0186;
-        public static final int hotword_bottom_line=0x7f0a0172;
-        public static final int hotword_right_line=0x7f0a0171;
-        public static final int hotword_title=0x7f0a0170;
+        public static final int hot_gridview=0x7f0a018b;
+        public static final int hot_railway=0x7f0a018a;
+        public static final int hotword_bottom_line=0x7f0a0174;
+        public static final int hotword_right_line=0x7f0a0173;
+        public static final int hotword_title=0x7f0a0172;
         public static final int icon=0x7f0a0026;
         public static final int icon1=0x7f0a0028;
-        public static final int id_layout=0x7f0a00f1;
-        public static final int id_number_layout=0x7f0a00f5;
-        public static final int idnumber=0x7f0a00f6;
-        public static final int idtype=0x7f0a00f2;
+        public static final int id_layout=0x7f0a00f2;
+        public static final int id_number_layout=0x7f0a00f6;
+        public static final int idnumber=0x7f0a00f7;
+        public static final int idtype=0x7f0a00f3;
         /**  From Putao 
          */
         public static final int image=0x7f0a0021;
-        public static final int image_vhicle=0x7f0a0183;
+        public static final int image_vhicle=0x7f0a0185;
         public static final int invite_group=0x7f0a0045;
-        public static final int iv=0x7f0a0114;
+        public static final int iv=0x7f0a0116;
         public static final int key=0x7f0a0069;
         public static final int keyboard_back=0x7f0a0018;
         public static final int keyboard_dial=0x7f0a0014;
@@ -3011,200 +3111,203 @@ containing a value of this type.
         public static final int ldpi=0x7f0a0088;
         public static final int left=0x7f0a008f;
         public static final int leftToRight=0x7f0a0081;
-        public static final int line=0x7f0a00ac;
-        public static final int line_bottom=0x7f0a00aa;
-        public static final int line_top=0x7f0a00a8;
+        public static final int line=0x7f0a00ad;
+        public static final int line_bottom=0x7f0a00ab;
+        public static final int line_top=0x7f0a00a9;
         public static final int list=0x7f0a0030;
-        public static final int list_container=0x7f0a0168;
-        public static final int listview=0x7f0a00c9;
-        public static final int load_more=0x7f0a0118;
+        public static final int list_container=0x7f0a016a;
+        public static final int listview=0x7f0a00ca;
+        public static final int load_more=0x7f0a011a;
         public static final int loading=0x7f0a0067;
         public static final int loading_layout=0x7f0a002e;
         public static final int location=0x7f0a0041;
-        public static final int login_out_btn=0x7f0a0167;
-        public static final int logo=0x7f0a00b1;
-        public static final int lottery_setting=0x7f0a012a;
-        public static final int main_viewpager=0x7f0a0197;
+        public static final int login_out_btn=0x7f0a0169;
+        public static final int logo=0x7f0a00b2;
+        public static final int lottery_setting=0x7f0a012c;
+        public static final int main_viewpager=0x7f0a019c;
         public static final int mdpi=0x7f0a0089;
-        public static final int menu_aboutus=0x7f0a0144;
-        public static final int menu_acc_head_icon=0x7f0a0139;
-        public static final int menu_acc_logintip=0x7f0a013b;
-        public static final int menu_acc_name=0x7f0a013c;
-        public static final int menu_my_voucher=0x7f0a0142;
-        public static final int menu_mygroupon=0x7f0a0143;
-        public static final int menu_myorder=0x7f0a0141;
-        public static final int menu_myremind=0x7f0a013d;
-        public static final int menu_myremind_container=0x7f0a0140;
-        public static final int message_tv=0x7f0a00ce;
+        public static final int menu_aboutus=0x7f0a0146;
+        public static final int menu_acc_head_icon=0x7f0a013b;
+        public static final int menu_acc_logintip=0x7f0a013d;
+        public static final int menu_acc_name=0x7f0a013e;
+        public static final int menu_my_voucher=0x7f0a0144;
+        public static final int menu_mygroupon=0x7f0a0145;
+        public static final int menu_myorder=0x7f0a0143;
+        public static final int menu_myremind=0x7f0a013f;
+        public static final int menu_myremind_container=0x7f0a0142;
+        public static final int message_tv=0x7f0a00cf;
         public static final int mobile_spinner=0x7f0a0048;
-        public static final int money=0x7f0a00b7;
-        public static final int more_station=0x7f0a0188;
-        public static final int msg=0x7f0a011a;
+        public static final int money=0x7f0a00b8;
+        public static final int more_station=0x7f0a018c;
+        public static final int msg=0x7f0a011c;
         public static final int multiple=0x7f0a0092;
-        public static final int my_nodata_layout=0x7f0a0134;
+        public static final int my_nodata_layout=0x7f0a0136;
         public static final int name=0x7f0a0027;
         public static final int name1=0x7f0a0029;
-        public static final int name_layout=0x7f0a00ed;
+        public static final int name_layout=0x7f0a00ee;
         public static final int name_sns=0x7f0a0066;
-        public static final int network_exception_layout=0x7f0a00e5;
-        public static final int next_setp_layout=0x7f0a0105;
-        public static final int next_step_btn=0x7f0a0107;
-        public static final int next_step_img=0x7f0a0106;
+        public static final int network_exception_layout=0x7f0a00e6;
+        public static final int next_setp_layout=0x7f0a0106;
+        public static final int next_step_btn=0x7f0a0108;
+        public static final int next_step_img=0x7f0a0107;
         public static final int nine=0x7f0a000d;
         public static final int none=0x7f0a007d;
         public static final int normal=0x7f0a0086;
         /**  IDS FOR DialpadFragment 
          */
         public static final int one=0x7f0a0005;
-        public static final int operator_logo=0x7f0a00b5;
-        public static final int orderdetail_movie_logo=0x7f0a0193;
-        public static final int orderlist_hotel_img=0x7f0a0113;
-        public static final int orderlist_hotel_in_date=0x7f0a0111;
-        public static final int orderlist_hotel_in_layout=0x7f0a0110;
-        public static final int orderlist_hotel_info_layout=0x7f0a010e;
-        public static final int orderlist_hotel_out_date=0x7f0a0112;
-        public static final int orderlist_hotel_roomname=0x7f0a010f;
-        public static final int payed=0x7f0a00b6;
-        public static final int personal_data_interest_label_tv=0x7f0a0149;
+        public static final int operator_logo=0x7f0a00b6;
+        public static final int orderdetail_movie_logo=0x7f0a0197;
+        public static final int orderlist_hotel_img=0x7f0a0115;
+        public static final int orderlist_hotel_in_date=0x7f0a0113;
+        public static final int orderlist_hotel_in_layout=0x7f0a0112;
+        public static final int orderlist_hotel_info_layout=0x7f0a0110;
+        public static final int orderlist_hotel_out_date=0x7f0a0114;
+        public static final int orderlist_hotel_roomname=0x7f0a0111;
+        public static final int pager=0x7f0a0189;
+        public static final int pagerindicator=0x7f0a0188;
+        public static final int payed=0x7f0a00b7;
+        public static final int personal_data_interest_label_tv=0x7f0a014b;
         public static final int personal_info=0x7f0a0046;
-        public static final int phone=0x7f0a00f0;
+        public static final int phone=0x7f0a00f1;
         public static final int phone_addr=0x7f0a002f;
         public static final int phone_group=0x7f0a003f;
-        public static final int phone_layout=0x7f0a00ef;
+        public static final int phone_layout=0x7f0a00f0;
         public static final int phone_local=0x7f0a003c;
-        public static final int point=0x7f0a00a9;
-        public static final int popupwin_line=0x7f0a016b;
-        public static final int popupwin_list_item_text=0x7f0a016a;
+        public static final int point=0x7f0a00aa;
+        public static final int popupwin_line=0x7f0a016d;
+        public static final int popupwin_list_item_text=0x7f0a016c;
         public static final int pound=0x7f0a0010;
-        public static final int preview_view=0x7f0a0177;
+        public static final int preview_view=0x7f0a0179;
         public static final int profile=0x7f0a003a;
         public static final int progress=0x7f0a0022;
-        public static final int pull_to_refresh_progress=0x7f0a0117;
-        public static final int putao_arrow=0x7f0a014e;
-        public static final int putao_arrow1=0x7f0a0151;
-        public static final int putao_arrow2=0x7f0a0154;
-        public static final int putao_arrow3=0x7f0a0157;
-        public static final int putao_arrow4=0x7f0a015a;
-        public static final int putao_arrow5=0x7f0a015d;
-        public static final int putao_arrow6=0x7f0a0160;
-        public static final int putao_arrow7=0x7f0a0165;
-        public static final int putao_btn_use_immediately=0x7f0a00e8;
+        public static final int pull_to_refresh_progress=0x7f0a0119;
+        public static final int putao_arrow=0x7f0a0150;
+        public static final int putao_arrow1=0x7f0a0153;
+        public static final int putao_arrow2=0x7f0a0156;
+        public static final int putao_arrow3=0x7f0a0159;
+        public static final int putao_arrow4=0x7f0a015c;
+        public static final int putao_arrow5=0x7f0a015f;
+        public static final int putao_arrow6=0x7f0a0162;
+        public static final int putao_arrow7=0x7f0a0167;
+        public static final int putao_btn_use_immediately=0x7f0a00e9;
         public static final int putao_category_left=0x7f0a00a2;
         public static final int putao_category_right=0x7f0a00a3;
-        public static final int putao_clear_confirm_password_iv=0x7f0a0182;
-        public static final int putao_clear_password_iv=0x7f0a0122;
-        public static final int putao_clear_phone_num_iv=0x7f0a0130;
-        public static final int putao_clear_username_iv=0x7f0a011f;
-        public static final int putao_clear_verify_code_iv=0x7f0a0133;
-        public static final int putao_common_info=0x7f0a0159;
-        public static final int putao_common_info_hint_tv=0x7f0a015b;
-        public static final int putao_confirm_bt=0x7f0a0123;
-        public static final int putao_confirm_password_et=0x7f0a0181;
-        public static final int putao_confirm_password_tv=0x7f0a0180;
-        public static final int putao_content_imageView=0x7f0a00bf;
-        public static final int putao_content_listView=0x7f0a01a3;
-        public static final int putao_cp_info=0x7f0a0148;
-        public static final int putao_cp_prefix=0x7f0a0147;
-        public static final int putao_ctorderdtl_available_time=0x7f0a00db;
-        public static final int putao_ctorderdtl_ticketname=0x7f0a00da;
-        public static final int putao_description_textView=0x7f0a00c1;
-        public static final int putao_distance_textView=0x7f0a00c4;
-        public static final int putao_driver_distance_info=0x7f0a00e9;
-        public static final int putao_forget_password_tv=0x7f0a0128;
-        public static final int putao_get_captchar_bt=0x7f0a011e;
-        public static final int putao_getvoucherfail_tv=0x7f0a00f9;
-        public static final int putao_header_fl=0x7f0a0138;
-        public static final int putao_hotel_detail_viewpager_item_img=0x7f0a010c;
-        public static final int putao_hotel_service_item=0x7f0a010d;
+        public static final int putao_clear_confirm_password_iv=0x7f0a0184;
+        public static final int putao_clear_password_iv=0x7f0a0124;
+        public static final int putao_clear_phone_num_iv=0x7f0a0132;
+        public static final int putao_clear_username_iv=0x7f0a0121;
+        public static final int putao_clear_verify_code_iv=0x7f0a0135;
+        public static final int putao_common_info=0x7f0a015b;
+        public static final int putao_common_info_hint_tv=0x7f0a015d;
+        public static final int putao_confirm_bt=0x7f0a0125;
+        public static final int putao_confirm_password_et=0x7f0a0183;
+        public static final int putao_confirm_password_tv=0x7f0a0182;
+        public static final int putao_content_imageView=0x7f0a00c0;
+        public static final int putao_content_listView=0x7f0a01a8;
+        public static final int putao_cp_info=0x7f0a014a;
+        public static final int putao_cp_prefix=0x7f0a0149;
+        public static final int putao_ctorderdtl_available_time=0x7f0a00dc;
+        public static final int putao_ctorderdtl_ticketname=0x7f0a00db;
+        public static final int putao_description_textView=0x7f0a00c2;
+        public static final int putao_distance_textView=0x7f0a00c5;
+        public static final int putao_driver_distance_info=0x7f0a00ea;
+        public static final int putao_forget_password_tv=0x7f0a012a;
+        public static final int putao_get_captchar_bt=0x7f0a0120;
+        public static final int putao_getvoucherfail_tv=0x7f0a00fa;
+        public static final int putao_header_fl=0x7f0a013a;
+        public static final int putao_hotel_detail_viewpager_item_img=0x7f0a010e;
+        public static final int putao_hotel_service_item=0x7f0a010f;
         public static final int putao_indicator_container=0x7f0a00a0;
-        public static final int putao_item_icon=0x7f0a0184;
-        public static final int putao_item_name=0x7f0a0185;
-        public static final int putao_list=0x7f0a00dd;
-        public static final int putao_login=0x7f0a013a;
-        public static final int putao_login_captchar_tv=0x7f0a0129;
-        public static final int putao_login_password_tv=0x7f0a0126;
-        public static final int putao_main_tab=0x7f0a0198;
-        public static final int putao_main_tab_find=0x7f0a019b;
-        public static final int putao_main_tab_find_remind=0x7f0a019d;
-        public static final int putao_main_tab_find_text=0x7f0a019c;
-        public static final int putao_main_tab_life=0x7f0a0199;
-        public static final int putao_main_tab_life_text=0x7f0a019a;
-        public static final int putao_main_tab_my=0x7f0a01a0;
-        public static final int putao_main_tab_my_remind=0x7f0a01a2;
-        public static final int putao_main_tab_my_text=0x7f0a01a1;
-        public static final int putao_main_tab_navigation=0x7f0a019e;
-        public static final int putao_main_tab_navigation_text=0x7f0a019f;
-        public static final int putao_my_layout_stub=0x7f0a012b;
-        public static final int putao_my_nodata_layout=0x7f0a00de;
-        public static final int putao_myremind=0x7f0a013e;
-        public static final int putao_next=0x7f0a0124;
-        public static final int putao_not_safty=0x7f0a0166;
-        public static final int putao_password_et=0x7f0a0121;
-        public static final int putao_password_tv=0x7f0a0120;
-        public static final int putao_personal_bind_mobile_rl=0x7f0a0162;
-        public static final int putao_personal_data_birthday_ll=0x7f0a0156;
-        public static final int putao_personal_data_birthday_tv=0x7f0a0158;
-        public static final int putao_personal_data_city_ll=0x7f0a0150;
-        public static final int putao_personal_data_city_tv=0x7f0a0152;
-        public static final int putao_personal_data_gender_ll=0x7f0a0153;
-        public static final int putao_personal_data_gender_tv=0x7f0a0155;
-        public static final int putao_personal_data_hint_disappear_iv=0x7f0a014c;
-        public static final int putao_personal_data_hint_ll=0x7f0a014a;
-        public static final int putao_personal_data_hint_tv=0x7f0a014b;
-        public static final int putao_personal_data_home_address_hint_tv=0x7f0a015e;
-        public static final int putao_personal_data_home_address_rl=0x7f0a015c;
-        public static final int putao_personal_data_icon_iv=0x7f0a014f;
-        public static final int putao_personal_data_icon_rl=0x7f0a014d;
-        public static final int putao_personal_data_license_number_hint_tv=0x7f0a0161;
-        public static final int putao_personal_data_license_number_rl=0x7f0a015f;
-        public static final int putao_personal_data_phone_number_tv=0x7f0a0163;
-        public static final int putao_phone_num_et=0x7f0a012f;
-        public static final int putao_phone_num_tv=0x7f0a012e;
-        public static final int putao_price_textView=0x7f0a00c2;
-        public static final int putao_progress_dialog=0x7f0a016e;
-        public static final int putao_progress_dialog_bg=0x7f0a0119;
-        public static final int putao_progress_dialog_with_bg=0x7f0a016c;
-        public static final int putao_progress_image=0x7f0a016d;
-        public static final int putao_remind_divider=0x7f0a013f;
-        public static final int putao_remind_layout=0x7f0a0173;
-        public static final int putao_scrolldialog_layout=0x7f0a00d2;
-        public static final int putao_service_desc=0x7f0a00b0;
-        public static final int putao_service_img=0x7f0a00ad;
-        public static final int putao_service_name=0x7f0a00af;
-        public static final int putao_set_password=0x7f0a0164;
-        public static final int putao_set_password_tv=0x7f0a0125;
-        public static final int putao_show_password=0x7f0a0127;
-        public static final int putao_source_price_textView=0x7f0a00c3;
-        public static final int putao_status_layout=0x7f0a011b;
-        public static final int putao_svrcomment_list=0x7f0a017b;
+        public static final int putao_item_icon=0x7f0a0186;
+        public static final int putao_item_name=0x7f0a0187;
+        public static final int putao_list=0x7f0a00de;
+        public static final int putao_login=0x7f0a013c;
+        public static final int putao_login_captchar_tv=0x7f0a012b;
+        public static final int putao_login_password_tv=0x7f0a0128;
+        public static final int putao_main_tab=0x7f0a019d;
+        public static final int putao_main_tab_find=0x7f0a01a0;
+        public static final int putao_main_tab_find_remind=0x7f0a01a2;
+        public static final int putao_main_tab_find_text=0x7f0a01a1;
+        public static final int putao_main_tab_life=0x7f0a019e;
+        public static final int putao_main_tab_life_text=0x7f0a019f;
+        public static final int putao_main_tab_my=0x7f0a01a5;
+        public static final int putao_main_tab_my_remind=0x7f0a01a7;
+        public static final int putao_main_tab_my_text=0x7f0a01a6;
+        public static final int putao_main_tab_navigation=0x7f0a01a3;
+        public static final int putao_main_tab_navigation_text=0x7f0a01a4;
+        public static final int putao_my_layout_stub=0x7f0a012d;
+        public static final int putao_my_nodata_layout=0x7f0a00df;
+        public static final int putao_myremind=0x7f0a0140;
+        public static final int putao_next=0x7f0a0126;
+        public static final int putao_not_safty=0x7f0a0168;
+        public static final int putao_password_et=0x7f0a0123;
+        public static final int putao_password_tv=0x7f0a0122;
+        public static final int putao_personal_bind_mobile_rl=0x7f0a0164;
+        public static final int putao_personal_data_birthday_ll=0x7f0a0158;
+        public static final int putao_personal_data_birthday_tv=0x7f0a015a;
+        public static final int putao_personal_data_city_ll=0x7f0a0152;
+        public static final int putao_personal_data_city_tv=0x7f0a0154;
+        public static final int putao_personal_data_gender_ll=0x7f0a0155;
+        public static final int putao_personal_data_gender_tv=0x7f0a0157;
+        public static final int putao_personal_data_hint_disappear_iv=0x7f0a014e;
+        public static final int putao_personal_data_hint_ll=0x7f0a014c;
+        public static final int putao_personal_data_hint_tv=0x7f0a014d;
+        public static final int putao_personal_data_home_address_hint_tv=0x7f0a0160;
+        public static final int putao_personal_data_home_address_rl=0x7f0a015e;
+        public static final int putao_personal_data_icon_iv=0x7f0a0151;
+        public static final int putao_personal_data_icon_rl=0x7f0a014f;
+        public static final int putao_personal_data_license_number_hint_tv=0x7f0a0163;
+        public static final int putao_personal_data_license_number_rl=0x7f0a0161;
+        public static final int putao_personal_data_phone_number_tv=0x7f0a0165;
+        public static final int putao_phone_num_et=0x7f0a0131;
+        public static final int putao_phone_num_tv=0x7f0a0130;
+        public static final int putao_price_textView=0x7f0a00c3;
+        public static final int putao_progress_dialog=0x7f0a0170;
+        public static final int putao_progress_dialog_bg=0x7f0a011b;
+        public static final int putao_progress_dialog_with_bg=0x7f0a016e;
+        public static final int putao_progress_image=0x7f0a016f;
+        public static final int putao_remind_divider=0x7f0a0141;
+        public static final int putao_remind_layout=0x7f0a0175;
+        public static final int putao_scrolldialog_layout=0x7f0a00d3;
+        public static final int putao_service_desc=0x7f0a00b1;
+        public static final int putao_service_img=0x7f0a00ae;
+        public static final int putao_service_name=0x7f0a00b0;
+        public static final int putao_set_password=0x7f0a0166;
+        public static final int putao_set_password_tv=0x7f0a0127;
+        public static final int putao_show_password=0x7f0a0129;
+        public static final int putao_source_price_textView=0x7f0a00c4;
+        public static final int putao_status_layout=0x7f0a011d;
+        public static final int putao_svrcomment_list=0x7f0a017d;
         public static final int putao_tag_first=0x7f0a0000;
         public static final int putao_tag_second=0x7f0a0001;
-        public static final int putao_title_textView=0x7f0a00c0;
-        public static final int putao_tv_show_all=0x7f0a00dc;
-        public static final int putao_username_et=0x7f0a011d;
-        public static final int putao_username_tv=0x7f0a011c;
-        public static final int putao_verify_code_et=0x7f0a0132;
-        public static final int putao_verify_code_tv=0x7f0a0131;
-        public static final int putao_verify_step_one=0x7f0a012c;
-        public static final int putao_verify_step_two=0x7f0a012d;
+        public static final int putao_title_textView=0x7f0a00c1;
+        public static final int putao_tv_show_all=0x7f0a00dd;
+        public static final int putao_username_et=0x7f0a011f;
+        public static final int putao_username_tv=0x7f0a011e;
+        public static final int putao_verify_code_et=0x7f0a0134;
+        public static final int putao_verify_code_tv=0x7f0a0133;
+        public static final int putao_verify_step_one=0x7f0a012e;
+        public static final int putao_verify_step_two=0x7f0a012f;
         public static final int putao_view_pager=0x7f0a009f;
-        public static final int putao_voucher_center_closedialog_img=0x7f0a00d0;
-        public static final int putao_voucher_center_lookdetail=0x7f0a00d4;
-        public static final int putao_voucher_center_userimmediately=0x7f0a00d3;
-        public static final int putao_voucher_container=0x7f0a00e6;
-        public static final int putao_voucher_content_container=0x7f0a00e7;
-        public static final int putao_voucher_dialog_desc_tv=0x7f0a0194;
-        public static final int putao_wheel_dialog_text_item=0x7f0a00d9;
+        public static final int putao_voucher_center_closedialog_img=0x7f0a00d1;
+        public static final int putao_voucher_center_lookdetail=0x7f0a00d5;
+        public static final int putao_voucher_center_userimmediately=0x7f0a00d4;
+        public static final int putao_voucher_container=0x7f0a00e7;
+        public static final int putao_voucher_content_container=0x7f0a00e8;
+        public static final int putao_voucher_dialog_desc_tv=0x7f0a0198;
+        public static final int putao_wheel_dialog_text_item=0x7f0a00da;
         public static final int quanzi_name=0x7f0a0020;
+        public static final int question=0x7f0a019b;
         public static final int quit=0x7f0a0070;
         public static final int refresh=0x7f0a0035;
         public static final int remark=0x7f0a0060;
         public static final int remark_layout=0x7f0a0061;
-        public static final int remind_icon_point=0x7f0a0108;
-        public static final int remind_point_digit_view=0x7f0a0176;
-        public static final int remind_point_view=0x7f0a0175;
-        public static final int remind_view=0x7f0a0174;
-        public static final int remind_view_layout=0x7f0a00ae;
+        public static final int remind_icon_point=0x7f0a0109;
+        public static final int remind_point_digit_view=0x7f0a0178;
+        public static final int remind_point_view=0x7f0a0177;
+        public static final int remind_view=0x7f0a0176;
+        public static final int remind_view_layout=0x7f0a00af;
         public static final int restart_preview=0x7f0a0071;
         public static final int return_scan_result=0x7f0a0072;
         public static final int review=0x7f0a0055;
@@ -3214,19 +3317,19 @@ containing a value of this type.
         public static final int room_tab_file=0x7f0a001d;
         public static final int room_tab_photo=0x7f0a001f;
         public static final int school=0x7f0a0043;
-        public static final int scrollview=0x7f0a00d1;
+        public static final int scrollview=0x7f0a00d2;
         public static final int search_book_contents_failed=0x7f0a0073;
         public static final int search_book_contents_succeeded=0x7f0a0074;
-        public static final int search_clear=0x7f0a00e1;
-        public static final int search_content=0x7f0a010b;
-        public static final int search_edittext=0x7f0a00e0;
-        public static final int search_head_layout=0x7f0a0109;
-        public static final int search_layout=0x7f0a00df;
-        public static final int service_name=0x7f0a00bd;
+        public static final int search_clear=0x7f0a00e2;
+        public static final int search_content=0x7f0a010d;
+        public static final int search_edittext=0x7f0a00e1;
+        public static final int search_head_layout=0x7f0a010b;
+        public static final int search_layout=0x7f0a00e0;
+        public static final int service_name=0x7f0a00be;
         public static final int seven=0x7f0a000b;
         public static final int show_contact=0x7f0a0094;
-        public static final int show_content=0x7f0a00fd;
-        public static final int show_content_img=0x7f0a00fc;
+        public static final int show_content=0x7f0a00fe;
+        public static final int show_content_img=0x7f0a00fd;
         public static final int sina=0x7f0a0059;
         public static final int single=0x7f0a0093;
         public static final int six=0x7f0a000a;
@@ -3240,7 +3343,7 @@ containing a value of this type.
         public static final int sns_logo=0x7f0a002a;
         public static final int sns_name=0x7f0a005f;
         public static final int star=0x7f0a000f;
-        public static final int subtitle=0x7f0a0104;
+        public static final int subtitle=0x7f0a0105;
         public static final int sync=0x7f0a0056;
         public static final int sync_to_native=0x7f0a0047;
         public static final int tab_circle=0x7f0a001c;
@@ -3250,46 +3353,46 @@ containing a value of this type.
         public static final int tag_calendar=0x7f0a0003;
         public static final int tag_position=0x7f0a0002;
         public static final int tags=0x7f0a005e;
-        public static final int telephone_num=0x7f0a00b4;
-        public static final int telephone_subject=0x7f0a00b3;
+        public static final int telephone_num=0x7f0a00b5;
+        public static final int telephone_subject=0x7f0a00b4;
         public static final int tencent=0x7f0a0057;
         public static final int text=0x7f0a0037;
         public static final int three=0x7f0a0007;
         public static final int time=0x7f0a0053;
         public static final int tips=0x7f0a0038;
-        public static final int title=0x7f0a00b2;
-        public static final int title_layout=0x7f0a0103;
-        public static final int title_tv=0x7f0a00cf;
+        public static final int title=0x7f0a00b3;
+        public static final int title_layout=0x7f0a0104;
+        public static final int title_tv=0x7f0a00d0;
         public static final int top=0x7f0a0091;
-        public static final int top_divider=0x7f0a00b8;
-        public static final int top_storke_line=0x7f0a00b9;
+        public static final int top_divider=0x7f0a00b9;
+        public static final int top_storke_line=0x7f0a00ba;
         public static final int triangle=0x7f0a007e;
-        public static final int tv_filmseat=0x7f0a0192;
-        public static final int tv_filmtime=0x7f0a0191;
-        public static final int tv_moviename=0x7f0a0190;
-        public static final int tview=0x7f0a017a;
+        public static final int tv_filmseat=0x7f0a0196;
+        public static final int tv_filmtime=0x7f0a0195;
+        public static final int tv_moviename=0x7f0a0194;
+        public static final int tview=0x7f0a017c;
         public static final int two=0x7f0a0006;
         public static final int type=0x7f0a0049;
-        public static final int type_logo=0x7f0a0135;
+        public static final int type_logo=0x7f0a0137;
         public static final int underline=0x7f0a007f;
         public static final int upToDown=0x7f0a0083;
-        public static final int user_id=0x7f0a0137;
-        public static final int username=0x7f0a00ee;
+        public static final int user_id=0x7f0a0139;
+        public static final int username=0x7f0a00ef;
         public static final int value=0x7f0a006a;
         public static final int vertical=0x7f0a007c;
-        public static final int viewfinder_view=0x7f0a0178;
+        public static final int viewfinder_view=0x7f0a017a;
         public static final int viewflipper_myScrollview=0x7f0a009e;
-        public static final int webView=0x7f0a0195;
+        public static final int webView=0x7f0a0199;
         public static final int website=0x7f0a0044;
         public static final int weibo=0x7f0a003b;
-        public static final int wheel_center=0x7f0a00d7;
-        public static final int wheel_container_ll=0x7f0a00d5;
-        public static final int wheel_left=0x7f0a00d6;
-        public static final int wheel_right=0x7f0a00d8;
+        public static final int wheel_center=0x7f0a00d8;
+        public static final int wheel_container_ll=0x7f0a00d6;
+        public static final int wheel_left=0x7f0a00d7;
+        public static final int wheel_right=0x7f0a00d9;
         public static final int xhdpi=0x7f0a008a;
-        public static final int yellow_page_img_item=0x7f0a017d;
-        public static final int yellow_page_item=0x7f0a017f;
-        public static final int yellow_page_item_remind_layout=0x7f0a017e;
+        public static final int yellow_page_img_item=0x7f0a017f;
+        public static final int yellow_page_item=0x7f0a0181;
+        public static final int yellow_page_item_remind_layout=0x7f0a0180;
         public static final int zero=0x7f0a000e;
     }
     public static final class integer {
@@ -3380,18 +3483,21 @@ containing a value of this type.
         public static final int putao_set_password_activity=0x7f030051;
         public static final int putao_show_vehicle_popwindow=0x7f030052;
         public static final int putao_simple_list_item=0x7f030053;
-        public static final int putao_train_common_dialog_gridview_item=0x7f030054;
-        public static final int putao_train_common_gridview_dialog=0x7f030055;
-        public static final int putao_train_edittraveller_address_layout=0x7f030056;
-        public static final int putao_twogridview_dialog=0x7f030057;
-        public static final int putao_version_update_download=0x7f030058;
-        public static final int putao_view_order_filmticket=0x7f030059;
-        public static final int putao_voucher_dialog_listitem=0x7f03005a;
-        public static final int putao_webview_dialog=0x7f03005b;
-        public static final int putao_yearandmonth_dialog=0x7f03005c;
-        public static final int putao_yellow_page_category_item=0x7f03005d;
-        public static final int putao_yellow_page_main_layout=0x7f03005e;
-        public static final int putao_yellow_page_plug_home=0x7f03005f;
+        public static final int putao_tab_head_layout=0x7f030054;
+        public static final int putao_titled_fragment_tab_activity=0x7f030055;
+        public static final int putao_train_common_dialog_gridview_item=0x7f030056;
+        public static final int putao_train_common_gridview_dialog=0x7f030057;
+        public static final int putao_train_edittraveller_address_layout=0x7f030058;
+        public static final int putao_twogridview_dialog=0x7f030059;
+        public static final int putao_version_update_download=0x7f03005a;
+        public static final int putao_view_order_filmticket=0x7f03005b;
+        public static final int putao_voucher_dialog_listitem=0x7f03005c;
+        public static final int putao_webview_dialog=0x7f03005d;
+        public static final int putao_yearandmonth_dialog=0x7f03005e;
+        public static final int putao_yellow_page_category_item=0x7f03005f;
+        public static final int putao_yellow_page_charge_new=0x7f030060;
+        public static final int putao_yellow_page_main_layout=0x7f030061;
+        public static final int putao_yellow_page_plug_home=0x7f030062;
     }
     public static final class raw {
         public static final int putao_beep=0x7f050000;
@@ -5917,8 +6023,8 @@ containing a value of this type.
            @see #ActionBar_putao_type
          */
         public static final int[] ActionBar = {
-            0x7f010094, 0x7f010095, 0x7f010098, 0x7f010099,
-            0x7f01009a, 0x7f01009b
+            0x7f01009f, 0x7f0100a0, 0x7f0100a3, 0x7f0100a4,
+            0x7f0100a5, 0x7f0100a6
         };
         /**
           <p>This symbol is the offset where the {@link com.putao.live.R.attr#putao_dividerDrawable}
@@ -6017,7 +6123,7 @@ containing a value of this type.
            @see #AsyncImageView_putao_url
          */
         public static final int[] AsyncImageView = {
-            0x7f01009c, 0x7f01009d, 0x7f01009e
+            0x7f0100a7, 0x7f0100a8, 0x7f0100a9
         };
         /**
           <p>This symbol is the offset where the {@link com.putao.live.R.attr#putao_defaultSrc}
@@ -6073,7 +6179,7 @@ containing a value of this type.
            @see #CustomAbsSpinner_entries
          */
         public static final int[] CustomAbsSpinner = {
-            0x7f01004a
+            0x7f010055
         };
         /**
           <p>This symbol is the offset where the {@link com.putao.live.R.attr#entries}
@@ -6365,7 +6471,7 @@ in (inches), mm (millimeters).
            @see #DrawableItem_putao_drawable
          */
         public static final int[] DrawableItem = {
-            0x7f01008f
+            0x7f01009a
         };
         /**
           <p>This symbol is the offset where the {@link com.putao.live.R.attr#putao_drawable}
@@ -6394,7 +6500,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            @see #EcoGallery_unselectedAlpha
          */
         public static final int[] EcoGallery = {
-            0x7f010045, 0x7f010046, 0x7f010047, 0x7f010048
+            0x7f010050, 0x7f010051, 0x7f010052, 0x7f010053
         };
         /**
           <p>This symbol is the offset where the {@link com.putao.live.R.attr#animationDuration}
@@ -6468,7 +6574,7 @@ containing a value of this type.
            @see #Item_putao_enabled
          */
         public static final int[] Item = {
-            0x7f01008c
+            0x7f010097
         };
         /**
           <p>This symbol is the offset where the {@link com.putao.live.R.attr#putao_enabled}
@@ -6510,8 +6616,8 @@ containing a value of this type.
            @see #PageIndicator_putao_gravity
          */
         public static final int[] PageIndicator = {
-            0x7f01009f, 0x7f0100a0, 0x7f0100a1, 0x7f0100a2,
-            0x7f0100a3, 0x7f0100a4
+            0x7f0100aa, 0x7f0100ab, 0x7f0100ac, 0x7f0100ad,
+            0x7f0100ae, 0x7f0100af
         };
         /**
           <p>This symbol is the offset where the {@link com.putao.live.R.attr#putao_activeDot}
@@ -6606,6 +6712,204 @@ containing a value of this type.
           @attr name com.putao.live:putao_gravity
         */
         public static final int PageIndicator_putao_gravity = 4;
+        /** Attributes that can be used with a PagerSlidingTabStrip.
+           <p>Includes the following attributes:</p>
+           <table>
+           <colgroup align="left" />
+           <colgroup align="left" />
+           <tr><th>Attribute</th><th>Description</th></tr>
+           <tr><td><code>{@link #PagerSlidingTabStrip_pstsDividerColor com.putao.live:pstsDividerColor}</code></td><td></td></tr>
+           <tr><td><code>{@link #PagerSlidingTabStrip_pstsDividerPadding com.putao.live:pstsDividerPadding}</code></td><td></td></tr>
+           <tr><td><code>{@link #PagerSlidingTabStrip_pstsIndicatorColor com.putao.live:pstsIndicatorColor}</code></td><td></td></tr>
+           <tr><td><code>{@link #PagerSlidingTabStrip_pstsIndicatorHeight com.putao.live:pstsIndicatorHeight}</code></td><td></td></tr>
+           <tr><td><code>{@link #PagerSlidingTabStrip_pstsScrollOffset com.putao.live:pstsScrollOffset}</code></td><td></td></tr>
+           <tr><td><code>{@link #PagerSlidingTabStrip_pstsShouldExpand com.putao.live:pstsShouldExpand}</code></td><td></td></tr>
+           <tr><td><code>{@link #PagerSlidingTabStrip_pstsTabBackground com.putao.live:pstsTabBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #PagerSlidingTabStrip_pstsTabPaddingLeftRight com.putao.live:pstsTabPaddingLeftRight}</code></td><td></td></tr>
+           <tr><td><code>{@link #PagerSlidingTabStrip_pstsTextAllCaps com.putao.live:pstsTextAllCaps}</code></td><td></td></tr>
+           <tr><td><code>{@link #PagerSlidingTabStrip_pstsUnderlineColor com.putao.live:pstsUnderlineColor}</code></td><td></td></tr>
+           <tr><td><code>{@link #PagerSlidingTabStrip_pstsUnderlineHeight com.putao.live:pstsUnderlineHeight}</code></td><td></td></tr>
+           </table>
+           @see #PagerSlidingTabStrip_pstsDividerColor
+           @see #PagerSlidingTabStrip_pstsDividerPadding
+           @see #PagerSlidingTabStrip_pstsIndicatorColor
+           @see #PagerSlidingTabStrip_pstsIndicatorHeight
+           @see #PagerSlidingTabStrip_pstsScrollOffset
+           @see #PagerSlidingTabStrip_pstsShouldExpand
+           @see #PagerSlidingTabStrip_pstsTabBackground
+           @see #PagerSlidingTabStrip_pstsTabPaddingLeftRight
+           @see #PagerSlidingTabStrip_pstsTextAllCaps
+           @see #PagerSlidingTabStrip_pstsUnderlineColor
+           @see #PagerSlidingTabStrip_pstsUnderlineHeight
+         */
+        public static final int[] PagerSlidingTabStrip = {
+            0x7f010014, 0x7f010015, 0x7f010016, 0x7f010017,
+            0x7f010018, 0x7f010019, 0x7f01001a, 0x7f01001b,
+            0x7f01001c, 0x7f01001d, 0x7f01001e
+        };
+        /**
+          <p>This symbol is the offset where the {@link com.putao.live.R.attr#pstsDividerColor}
+          attribute's value can be found in the {@link #PagerSlidingTabStrip} array.
+
+
+          <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.putao.live:pstsDividerColor
+        */
+        public static final int PagerSlidingTabStrip_pstsDividerColor = 2;
+        /**
+          <p>This symbol is the offset where the {@link com.putao.live.R.attr#pstsDividerPadding}
+          attribute's value can be found in the {@link #PagerSlidingTabStrip} array.
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.putao.live:pstsDividerPadding
+        */
+        public static final int PagerSlidingTabStrip_pstsDividerPadding = 5;
+        /**
+          <p>This symbol is the offset where the {@link com.putao.live.R.attr#pstsIndicatorColor}
+          attribute's value can be found in the {@link #PagerSlidingTabStrip} array.
+
+
+          <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.putao.live:pstsIndicatorColor
+        */
+        public static final int PagerSlidingTabStrip_pstsIndicatorColor = 0;
+        /**
+          <p>This symbol is the offset where the {@link com.putao.live.R.attr#pstsIndicatorHeight}
+          attribute's value can be found in the {@link #PagerSlidingTabStrip} array.
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.putao.live:pstsIndicatorHeight
+        */
+        public static final int PagerSlidingTabStrip_pstsIndicatorHeight = 3;
+        /**
+          <p>This symbol is the offset where the {@link com.putao.live.R.attr#pstsScrollOffset}
+          attribute's value can be found in the {@link #PagerSlidingTabStrip} array.
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.putao.live:pstsScrollOffset
+        */
+        public static final int PagerSlidingTabStrip_pstsScrollOffset = 7;
+        /**
+          <p>This symbol is the offset where the {@link com.putao.live.R.attr#pstsShouldExpand}
+          attribute's value can be found in the {@link #PagerSlidingTabStrip} array.
+
+
+          <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.putao.live:pstsShouldExpand
+        */
+        public static final int PagerSlidingTabStrip_pstsShouldExpand = 9;
+        /**
+          <p>This symbol is the offset where the {@link com.putao.live.R.attr#pstsTabBackground}
+          attribute's value can be found in the {@link #PagerSlidingTabStrip} array.
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          @attr name com.putao.live:pstsTabBackground
+        */
+        public static final int PagerSlidingTabStrip_pstsTabBackground = 8;
+        /**
+          <p>This symbol is the offset where the {@link com.putao.live.R.attr#pstsTabPaddingLeftRight}
+          attribute's value can be found in the {@link #PagerSlidingTabStrip} array.
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.putao.live:pstsTabPaddingLeftRight
+        */
+        public static final int PagerSlidingTabStrip_pstsTabPaddingLeftRight = 6;
+        /**
+          <p>This symbol is the offset where the {@link com.putao.live.R.attr#pstsTextAllCaps}
+          attribute's value can be found in the {@link #PagerSlidingTabStrip} array.
+
+
+          <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.putao.live:pstsTextAllCaps
+        */
+        public static final int PagerSlidingTabStrip_pstsTextAllCaps = 10;
+        /**
+          <p>This symbol is the offset where the {@link com.putao.live.R.attr#pstsUnderlineColor}
+          attribute's value can be found in the {@link #PagerSlidingTabStrip} array.
+
+
+          <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.putao.live:pstsUnderlineColor
+        */
+        public static final int PagerSlidingTabStrip_pstsUnderlineColor = 1;
+        /**
+          <p>This symbol is the offset where the {@link com.putao.live.R.attr#pstsUnderlineHeight}
+          attribute's value can be found in the {@link #PagerSlidingTabStrip} array.
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.putao.live:pstsUnderlineHeight
+        */
+        public static final int PagerSlidingTabStrip_pstsUnderlineHeight = 4;
         /** Attributes that can be used with a ProgressItem.
            <p>Includes the following attributes:</p>
            <table>
@@ -6617,7 +6921,7 @@ containing a value of this type.
            @see #ProgressItem_putao_isInProgress
          */
         public static final int[] ProgressItem = {
-            0x7f01008e
+            0x7f010099
         };
         /**
           <p>This symbol is the offset where the {@link com.putao.live.R.attr#putao_isInProgress}
@@ -6646,7 +6950,7 @@ containing a value of this type.
            @see #SegmentedBar_putao_dividerWidth
          */
         public static final int[] SegmentedBar = {
-            0x7f010094, 0x7f010095
+            0x7f01009f, 0x7f0100a0
         };
         /**
           <p>This symbol is the offset where the {@link com.putao.live.R.attr#putao_dividerDrawable}
@@ -6687,7 +6991,7 @@ containing a value of this type.
            @see #SegmentedHost_putao_segmentedContentView
          */
         public static final int[] SegmentedHost = {
-            0x7f010096, 0x7f010097
+            0x7f0100a1, 0x7f0100a2
         };
         /**
           <p>This symbol is the offset where the {@link com.putao.live.R.attr#putao_segmentedBar}
@@ -6733,8 +7037,8 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            @see #SlideView_slideInterpolator
          */
         public static final int[] SlideView = {
-            0x7f010033, 0x7f010034, 0x7f010035, 0x7f010036,
-            0x7f010037
+            0x7f01003e, 0x7f01003f, 0x7f010040, 0x7f010041,
+            0x7f010042
         };
         /**
           <p>This symbol is the offset where the {@link com.putao.live.R.attr#slideBackView}
@@ -6810,7 +7114,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            @see #SubtextItem_putao_subtext
          */
         public static final int[] SubtextItem = {
-            0x7f010091
+            0x7f01009c
         };
         /**
           <p>This symbol is the offset where the {@link com.putao.live.R.attr#putao_subtext}
@@ -6837,7 +7141,7 @@ containing a value of this type.
            @see #SubtitleItem_putao_subtitle
          */
         public static final int[] SubtitleItem = {
-            0x7f010090
+            0x7f01009b
         };
         /**
           <p>This symbol is the offset where the {@link com.putao.live.R.attr#putao_subtitle}
@@ -6955,7 +7259,7 @@ containing a value of this type.
            @see #TextItem_putao_text
          */
         public static final int[] TextItem = {
-            0x7f01008d
+            0x7f010098
         };
         /**
           <p>This symbol is the offset where the {@link com.putao.live.R.attr#putao_text}
@@ -6984,7 +7288,7 @@ containing a value of this type.
            @see #ThumbnailItem_putao_thumbnailURL
          */
         public static final int[] ThumbnailItem = {
-            0x7f010092, 0x7f010093
+            0x7f01009d, 0x7f01009e
         };
         /**
           <p>This symbol is the offset where the {@link com.putao.live.R.attr#putao_thumbnail}
@@ -7029,8 +7333,8 @@ containing a value of this type.
            @see #empty_view_styleable_showImage
          */
         public static final int[] empty_view_styleable = {
-            0x7f01003d, 0x7f01003e, 0x7f01003f, 0x7f010040,
-            0x7f010041
+            0x7f010048, 0x7f010049, 0x7f01004a, 0x7f01004b,
+            0x7f01004c
         };
         /**
           <p>This symbol is the offset where the {@link com.putao.live.R.attr#needJudgeNet}
@@ -7102,7 +7406,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            @see #group_view_styleable_showTopDivider
          */
         public static final int[] group_view_styleable = {
-            0x7f010042, 0x7f010043, 0x7f010044
+            0x7f01004d, 0x7f01004e, 0x7f01004f
         };
         /**
           <p>This symbol is the offset where the {@link com.putao.live.R.attr#groupTxt}
@@ -7160,8 +7464,8 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            @see #putao_CirclePageIndicator_strokeWidth
          */
         public static final int[] putao_CirclePageIndicator = {
-            0x7f01001f, 0x7f010020, 0x7f010021, 0x7f010022,
-            0x7f010023, 0x7f010024, 0x7f010025
+            0x7f01002a, 0x7f01002b, 0x7f01002c, 0x7f01002d,
+            0x7f01002e, 0x7f01002f, 0x7f010030
         };
         /**
           <p>
@@ -7295,7 +7599,7 @@ containing a value of this type.
            @see #putao_ParallaxScrollView_zoomRatio
          */
         public static final int[] putao_ParallaxScrollView = {
-            0x7f01001c
+            0x7f010027
         };
         /**
           <p>This symbol is the offset where the {@link com.putao.live.R.attr#zoomRatio}
@@ -7330,8 +7634,8 @@ containing a value of this type.
            @see #putao_PaymentView_selected_txt_color
          */
         public static final int[] putao_PaymentView = {
-            0x7f010038, 0x7f010039, 0x7f01003a, 0x7f01003b,
-            0x7f01003c
+            0x7f010043, 0x7f010044, 0x7f010045, 0x7f010046,
+            0x7f010047
         };
         /**
           <p>This symbol is the offset where the {@link com.putao.live.R.attr#bg_selector}
@@ -7418,8 +7722,8 @@ containing a value of this type.
            @see #putao_RoundProgressBar_mode
          */
         public static final int[] putao_RoundProgressBar = {
-            0x7f010014, 0x7f010015, 0x7f010016, 0x7f010017,
-            0x7f010018, 0x7f010019, 0x7f01001a, 0x7f01001b
+            0x7f01001f, 0x7f010020, 0x7f010021, 0x7f010022,
+            0x7f010023, 0x7f010024, 0x7f010025, 0x7f010026
         };
         /**
           <p>
@@ -7580,10 +7884,10 @@ containing a value of this type.
            @see #putao_TitlePageIndicator_topPadding
          */
         public static final int[] putao_TitlePageIndicator = {
-            0x7f010026, 0x7f010027, 0x7f010028, 0x7f010029,
-            0x7f01002a, 0x7f01002b, 0x7f01002c, 0x7f01002d,
-            0x7f01002e, 0x7f01002f, 0x7f010030, 0x7f010031,
-            0x7f010032
+            0x7f010031, 0x7f010032, 0x7f010033, 0x7f010034,
+            0x7f010035, 0x7f010036, 0x7f010037, 0x7f010038,
+            0x7f010039, 0x7f01003a, 0x7f01003b, 0x7f01003c,
+            0x7f01003d
         };
         /**
           <p>
@@ -7829,7 +8133,7 @@ containing a value of this type.
            @see #putao_ViewPagerIndicator_titlePageIndicatorStyle
          */
         public static final int[] putao_ViewPagerIndicator = {
-            0x7f01001d, 0x7f01001e
+            0x7f010028, 0x7f010029
         };
         /**
           <p>

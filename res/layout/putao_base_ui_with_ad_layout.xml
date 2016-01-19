@@ -2,19 +2,22 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:background="@color/putao_screen_background_light">
+    android:background="@color/putao_screen_background_light"
+    android:orientation="vertical" >
 
     <!-- 标题栏 -->
-
-    <include layout="@layout/putao_header_view" />
+    <ViewStub
+        android:id="@+id/head_layout_viewstub"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/putao_title_bar_and_status_hight"
+        android:layout="@layout/putao_header_view" />
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent" 
+        android:layout_height="match_parent"
+        android:fadeScrollbars="true"
         android:fillViewport="true"
-        android:scrollbars="none"
-        android:fadeScrollbars="true">
+        android:scrollbars="none" >
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -32,7 +35,7 @@
                 android:id="@+id/container"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
-                android:layout_weight="1">
+                android:layout_weight="1" >
             </FrameLayout>
         </LinearLayout>
     </ScrollView>

@@ -52,9 +52,9 @@ public class YellowpageMainActivity extends BaseActivity implements OnClickListe
 
     private SharedPreferences mSharedPreferences;
 
-//    private EditText mEditText = null;
+    // private EditText mEditText = null;
 
-//    private TextView mPosition;
+    // private TextView mPosition;
 
     private RelativeLayout mTabMyLayout;
 
@@ -72,7 +72,7 @@ public class YellowpageMainActivity extends BaseActivity implements OnClickListe
     private YellowPageServicesFragment servicesFragment;
 
     private YellowpageDiscoverFragment mDiscoverFragment;
-    
+
     private YellowPageNaviFragment naviFragment;
 
     private MenuFragment menuFragment;
@@ -130,7 +130,7 @@ public class YellowpageMainActivity extends BaseActivity implements OnClickListe
         mTabLifeTxtView = (TextView) findViewById(R.id.putao_main_tab_life_text);
         mTabNaviTxtView = (TextView) findViewById(R.id.putao_main_tab_navigation_text);
         mTabFindTxtView = (TextView) findViewById(R.id.putao_main_tab_find_text);
-        
+
         mTabMyRemindImgView = (ImageView) findViewById(R.id.putao_main_tab_my_remind);
 
         mMainViewPager = (ViewPager) findViewById(R.id.main_viewpager);
@@ -149,19 +149,19 @@ public class YellowpageMainActivity extends BaseActivity implements OnClickListe
         mViewPagerAdapter = new ViewPagerAdapter(fragmentManager, mFragmentList);
         mMainViewPager.setCurrentItem(0);
         mMainViewPager.setAdapter(mViewPagerAdapter);
-        mMainViewPager.setOffscreenPageLimit(mFragmentList.size()-1);
-        
-//        if (mEditText == null)
-//        {
-//            mEditText = (EditText) findViewById(R.id.search_content);
-//            mEditText.setOnClickListener(this);
-//        }
-//        if (mPosition == null)
-//        {
-//            mPosition = (TextView) findViewById(R.id.city_btn);
-//            mPosition.setOnClickListener(this);
-//        }
-        
+        mMainViewPager.setOffscreenPageLimit(mFragmentList.size() - 1);
+
+        // if (mEditText == null)
+        // {
+        // mEditText = (EditText) findViewById(R.id.search_content);
+        // mEditText.setOnClickListener(this);
+        // }
+        // if (mPosition == null)
+        // {
+        // mPosition = (TextView) findViewById(R.id.city_btn);
+        // mPosition.setOnClickListener(this);
+        // }
+
         mSharedPreferences = getSharedPreferences(SHARED_PREFS_YELLOW_PAGE, Context.MODE_PRIVATE);
     }
 
@@ -257,7 +257,8 @@ public class YellowpageMainActivity extends BaseActivity implements OnClickListe
                 mTabFindTxtView.setTextColor(defaultColor);
                 mTabFindTxtView.setCompoundDrawablesWithIntrinsicBounds(0, R.drawable.putao_tab_icon_discover, 0, 0);
                 mTabNaviTxtView.setTextColor(selectColor);
-                mTabNaviTxtView.setCompoundDrawablesWithIntrinsicBounds(0, R.drawable.putao_tab_icon_navigation_p, 0, 0);
+                mTabNaviTxtView
+                        .setCompoundDrawablesWithIntrinsicBounds(0, R.drawable.putao_tab_icon_navigation_p, 0, 0);
                 mTabMyTxtView.setTextColor(defaultColor);
                 mTabMyTxtView.setCompoundDrawablesWithIntrinsicBounds(0, R.drawable.putao_tab_icon_me, 0, 0);
                 break;
@@ -282,6 +283,12 @@ public class YellowpageMainActivity extends BaseActivity implements OnClickListe
         return true;
     }
 
+    @Override
+    protected boolean needShowHeadLayout()
+    {
+        return false;
+    }
+
     private Handler mHandler = new Handler()
     {
         public void handleMessage(Message msg)
@@ -290,9 +297,9 @@ public class YellowpageMainActivity extends BaseActivity implements OnClickListe
             {
                 case MSG_LOCATION_SUCCESS_ACTION:
                     String city = (String) msg.obj;
-                    //首页header显示定位城市
+                    // 首页header显示定位城市
                     showLocationText(LOCATION_STATE_SUCCESS, city);
-                    //定位为止变化后，通知各个fragment刷新数据
+                    // 定位为止变化后，通知各个fragment刷新数据
                     sendLocationChangedBroadCast();
                     break;
 
@@ -307,7 +314,7 @@ public class YellowpageMainActivity extends BaseActivity implements OnClickListe
         switch (locationState)
         {
             case LOCATION_STATE_SUCCESS:
-//                mPosition.setText(city);
+                // mPosition.setText(city);
                 break;
 
             default:
@@ -316,16 +323,15 @@ public class YellowpageMainActivity extends BaseActivity implements OnClickListe
     }
 
     /**
-     * 定位发生变化,通知各个fragment刷新数据
-     * void
+     * 定位发生变化,通知各个fragment刷新数据 void
      */
     private void sendLocationChangedBroadCast()
     {
-        if(mFragmentList != null)
+        if (mFragmentList != null)
         {
-            for(BaseFragment fragment : mFragmentList )
+            for (BaseFragment fragment : mFragmentList)
             {
-                if(fragment != null)
+                if (fragment != null)
                 {
                     fragment.refreshDataByLocationChanged();
                 }

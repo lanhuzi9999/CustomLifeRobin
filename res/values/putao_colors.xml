@@ -112,8 +112,8 @@
     
     <color name="putao_common_white">#FFFFFF</color>
     <!-- For suggestions -->
-    <color name="putao_tab_indicator_text_selected">#ffffff</color>
-    <color name="putao_tab_indicator_text_unselected">#afffffff</color>
+    <color name="putao_tab_indicator_text_selected">#46c578</color>
+    <color name="putao_tab_indicator_text_unselected">#d9000000</color>
     <!-- <color name="putao_tab_indicator_text_unselected">#aac5d7</color> -->
     <color name="putao_page_viewer_margin_color">#ffffff</color>
     

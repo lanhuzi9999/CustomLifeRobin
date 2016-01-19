@@ -3,129 +3,213 @@ package so.contacts.hub;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import so.contacts.hub.basefunction.utils.ActivityMgr;
 import so.contacts.hub.basefunction.utils.YellowUtil;
+import so.contacts.hub.basefunction.utils.constant.IntentKeyConstants;
 import so.contacts.hub.services.baseservices.bean.YellowParams;
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.View;
+import android.view.ViewGroup.LayoutParams;
+import android.widget.FrameLayout;
 import android.widget.TextView;
 
 import com.lives.depend.theme.dialog.CommonDialogFactory;
 import com.lives.depend.theme.dialog.progress.AbstractProgressDialog;
 import com.putao.live.R;
 
+public class BaseActivity extends BaseUIActivity
+{
 
-public class BaseActivity extends BaseUIActivity {
-	
-	private static final String TAG = BaseActivity.class.getSimpleName();
-	
-	protected AbstractProgressDialog mProgressDialog = null;
+    private static final String TAG = BaseActivity.class.getSimpleName();
 
-	// CommonDialog commonDialog = null;
+    private FrameLayout mContainer;
 
-	protected String mTitleContent = null;
+    protected AbstractProgressDialog mProgressDialog = null;
 
-	protected int mRemindCode = -1;
+    // CommonDialog commonDialog = null;
 
-	protected YellowParams mYellowParams = null;
+    protected String mTitleContent = null;
 
-	public String cpInfo;// cpInfo结构 add by hyl 2015-3-26
-	public String cpName;// cp名称 add by hyl 2015-3-26
+    protected int mRemindCode = -1;
 
-	/**
-	 * 服务点击跳转时传入的参数[Json格式] add by zjh 2015-03-21
-	 */
-	protected String mClickParams = null;
+    protected YellowParams mYellowParams = null;
 
-	/**
-	 * 加载广告数据 add by zjh 2015-05-19
-	 */
-	// protected AdViewCreator mAdViewCreator = null;
+    /**
+     * 是否需要触发定位
+     */
+    protected boolean mNeedInitLocation = false;
 
-	@Override
-	protected void onCreate(Bundle arg0) {
-		// TODO Auto-generated method stub
-		super.onCreate(arg0);
-		Intent intent = getIntent();
-		// 解析cp,跳转信息
-		if (intent != null) {
-			mTitleContent = intent.getStringExtra("title");
-			mClickParams = intent.getStringExtra(YellowUtil.ClickIntentParams);
-			mYellowParams = (YellowParams) intent
-					.getSerializableExtra(YellowUtil.TargetIntentParams);
-			mServiceId = intent.getLongExtra(YellowUtil.ServiceIdParams, 0);
-			if (mServiceId == 0 && mYellowParams != null) {
-				mServiceId = mYellowParams.getCategory_id();
-			}
-			if (TextUtils.isEmpty(mTitleContent) && mYellowParams != null) {
-				mTitleContent = mYellowParams.getTitle();
-			}
+    public String cpInfo;// cpInfo结构 add by hyl 2015-3-26
 
-			cpInfo = intent.getStringExtra(YellowUtil.CP_INFO_PARAMS);
-			try {
-				if (cpInfo != null) {
-					JSONObject jsonObject = new JSONObject(cpInfo);
-					if (jsonObject.has("provider")) {
-						cpName = jsonObject.getString("provider");
-					}
-				}
-			} catch (JSONException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			}
-		}
-	}
+    public String cpName;// cp名称 add by hyl 2015-3-26
 
-	/**
-	 * 显示cp信息
-	 */
-	private void showCpInfo() {
-		TextView subTitle = (TextView) findViewById(R.id.subtitle);
-		if (subTitle != null && !TextUtils.isEmpty(cpName)) {
-			subTitle.setText(cpName);
-			subTitle.setVisibility(View.VISIBLE);
-		}
-	}
+    /**
+     * 服务点击跳转时传入的参数[Json格式] add by zjh 2015-03-21
+     */
+    protected String mClickParams = null;
 
-	@Override
-	protected void onResume() {
-		showCpInfo();
-		super.onResume();
-	}
+    @Override
+    public void setContentView(int layoutResID)
+    {
+        if (needReset())
+        {
+            super.setContentView(layoutResID);
+        }
+        else
+        {
+            // 这里暂时不考虑广告
+            super.setContentView(R.layout.putao_base_ui_layout);
+            View view = getLayoutInflater().inflate(layoutResID, null);
+            mContainer = (FrameLayout) findViewById(R.id.container);
+            mContainer.addView(view);
+        }
+        // 初始化headerview
+        initHeadLayout();
+    }
 
-	@Override
-	protected void onDestroy() {
-		dismissLoadingDialog();
-		super.onDestroy();
-	}
+    @Override
+    public void setContentView(View view)
+    {
+        if (needReset())
+        {
+            super.setContentView(view);
+            initHeadLayout();
+            return;
+        }
+        setContentView(R.layout.putao_base_ui_layout);
+        mContainer = (FrameLayout) findViewById(R.id.container);
+        mContainer.addView(view);
+    }
 
-	public void showLoadingDialog() {
-		showLoadingDialog(true);
-	}
+    @Override
+    public void setContentView(View view, LayoutParams params)
+    {
+        if (needReset())
+        {
+            super.setContentView(view, params);
+            initHeadLayout();
+            return;
+        }
+        setContentView(R.layout.putao_base_ui_layout);
+        mContainer = (FrameLayout) findViewById(R.id.container);
+        mContainer.addView(view, params);
+    }
 
-	public void showLoadingDialog(boolean isHaveContent) {
-		if (isFinishing()) {
-			return;
-		}
-		if (mProgressDialog == null) {
-			mProgressDialog = CommonDialogFactory.getProgressDialog(this, R.style.Theme_Ptui_Dialog_Progress);
-			mProgressDialog
-					.setMessage(getString(R.string.putao_yellow_page_loading));
-			mProgressDialog.setCanceledOnTouchOutside(false);
-		}
-		if (!mProgressDialog.isShowing()) {
-			mProgressDialog.show();
-		}
-	}
+    @Override
+    protected void onCreate(Bundle arg0)
+    {
+        super.onCreate(arg0);
+        ActivityMgr.getInstance().addActivity(this);
+        Intent intent = getIntent();
+        // 解析cp,跳转信息
+        if (intent != null)
+        {
+            mTitleContent = intent.getStringExtra(IntentKeyConstants.EXTRA_CLICK_INTENT_TITLE);
+            mClickParams = intent.getStringExtra(IntentKeyConstants.EXTRA_CLICK_INTENT_PARAMS);
+            Object object = intent.getSerializableExtra(IntentKeyConstants.EXTRA_TARGET_INTENT_PARAMS);
+            if (object != null && object instanceof YellowParams)
+            {
+                mYellowParams = (YellowParams) object;
+            }
+            mServiceId = intent.getLongExtra(IntentKeyConstants.EXTRA_SERVICEID_PARAMS, 0);
+            if (mServiceId == 0 && mYellowParams != null)
+            {
+                mServiceId = mYellowParams.getCategory_id();
+            }
+            if (TextUtils.isEmpty(mTitleContent) && mYellowParams != null)
+            {
+                mTitleContent = mYellowParams.getTitle();
+            }
+            mNeedInitLocation = intent.getBooleanExtra(IntentKeyConstants.EXTRA_NEED_INIT_LOCATION, false);
 
-	public void dismissLoadingDialog() {
-		if (isFinishing()) {
-			return;
-		}
-		if (mProgressDialog != null) {
-			mProgressDialog.dismiss();
-			mProgressDialog = null;
-		}
-	}
+            cpInfo = intent.getStringExtra(YellowUtil.CP_INFO_PARAMS);
+            try
+            {
+                if (cpInfo != null)
+                {
+                    JSONObject jsonObject = new JSONObject(cpInfo);
+                    if (jsonObject.has("provider"))
+                    {
+                        cpName = jsonObject.getString("provider");
+                    }
+                }
+            }
+            catch (JSONException e)
+            {
+                // TODO Auto-generated catch block
+                e.printStackTrace();
+            }
+        }
+    }
+
+
+    @Override
+    protected void onResume()
+    {
+        super.onResume();
+    }
+
+    @Override
+    protected void onDestroy()
+    {
+        dismissLoadingDialog();
+        ActivityMgr.getInstance().removeActivity(this);
+        super.onDestroy();
+    }
+
+    /**
+     * 如果子类不用提供的好的布局方式，则重写此方法，返回true
+     * 
+     * @return
+     */
+    protected boolean needReset()
+    {
+        return false;
+    }
+
+    /**
+     * 显示加载框 void
+     */
+    public void showLoadingDialog()
+    {
+        showLoadingDialog(true);
+    }
+
+    /**
+     * 显示加载框，是否有内容
+     * 
+     * @param isHaveContent void
+     */
+    public void showLoadingDialog(boolean isHaveContent)
+    {
+        if (isFinishing())
+        {
+            return;
+        }
+        if (mProgressDialog == null)
+        {
+            mProgressDialog = CommonDialogFactory.getProgressDialog(this, R.style.Theme_Ptui_Dialog_Progress);
+            mProgressDialog.setMessage(getString(R.string.putao_yellow_page_loading));
+            mProgressDialog.setCanceledOnTouchOutside(false);
+        }
+        if (!mProgressDialog.isShowing())
+        {
+            mProgressDialog.show();
+        }
+    }
+
+    public void dismissLoadingDialog()
+    {
+        if (isFinishing())
+        {
+            return;
+        }
+        if (mProgressDialog != null)
+        {
+            mProgressDialog.dismiss();
+            mProgressDialog = null;
+        }
+    }
 }

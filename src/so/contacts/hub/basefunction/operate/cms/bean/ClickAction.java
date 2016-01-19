@@ -7,6 +7,12 @@ public class ClickAction implements Serializable
 
     private static final long serialVersionUID = 1L;
 
+    /** 本地界面加载 */
+    public static final int CLICK_TYPE_NATIVE = 1;
+
+    /** 通过H5加载 */
+    public static final int CLICK_TYPE_H5 = 2;
+    
     private String click_link; // 点击跳转url
 
     private String click_activity;// 点击跳转的activity

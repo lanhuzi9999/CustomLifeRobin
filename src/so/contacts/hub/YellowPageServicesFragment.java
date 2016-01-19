@@ -30,6 +30,7 @@ import so.contacts.hub.basefunction.operate.cms.manager.CMSContentConfigManager;
 import so.contacts.hub.basefunction.operate.cms.manager.CMSContentConfigManager.ContentConfigResultListener;
 import so.contacts.hub.basefunction.storage.db.CMSDataDB.CommonServicesTable;
 import so.contacts.hub.basefunction.storage.db.CMSDataDB.ContentConfigTable;
+import so.contacts.hub.basefunction.utils.ServiceClickAgentUtil;
 import so.contacts.hub.basefunction.widget.CustomListView;
 import so.contacts.hub.basefunction.widget.ExpandGridView;
 
@@ -105,6 +106,7 @@ public class YellowPageServicesFragment extends BaseFragment implements ContentC
             public void onItemClick(AdapterView<?> arg0, View arg1, int position, long arg3)
             {
                 CommonView bean = (CommonView) mCommonServicesAdapter.getItem(position);
+                ServiceClickAgentUtil.doClickAction(getContext(), bean);
             }
         });
 
