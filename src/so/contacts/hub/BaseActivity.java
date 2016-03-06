@@ -199,7 +199,9 @@ public class BaseActivity extends BaseUIActivity
             mProgressDialog.show();
         }
     }
-
+    /**
+     *加上注释，加载提消失
+     ***/
     public void dismissLoadingDialog()
     {
         if (isFinishing())
